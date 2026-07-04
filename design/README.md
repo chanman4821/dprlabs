@@ -23,6 +23,7 @@ build.mjs                   Style Dictionary build
 lint-tokens.mjs             tier-contract gate
 contrast-audit.mjs          WCAG 2.2 gate
 dist/tokens.css             THE single token file (:root dark + [data-theme=light] + reduced-motion)
+AUDIT.md                    current-site audit — what is inconsistent/cheap/broken (file:line)
 DESIGN-LANGUAGE.md          how to use the system (read this first)
 MIGRATION.md                old -> new codemod map + what to delete
 ```

@@ -42,8 +42,8 @@
   --palette-paper-text-secondary: #5F574E; /** hsl(30 10% 34%) — light secondary text (6.7:1 on paper) */
   --palette-paper-text-primary: #26211D; /** hsl(28 14% 13%) — light primary text (15:1 on paper) */
   --font-display: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; /** Display / headings / eyebrows. ONE display family. */
-  --font-body: 'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; /** Body / UI / ALL figures (prices, %, counters). */
-  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; /** Code / config / IDs ONLY. Never prices, labels, headings. */
+  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; /** Body / UI / ALL figures (prices, %, counters). ONE body family (authoritative brief: body=Inter). */
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; /** Code / config / IDs ONLY. Never prices, labels, headings. JetBrains Mono pairs with Inter and fully purges the IBM Plex family. */
   --font-numeric: tabular-nums; /** font-variant-numeric applied globally so every figure aligns. */
   --fw-regular: 400;
   --fw-medium: 500;
@@ -203,33 +203,33 @@
  */
 
 [data-theme="light"] {
-  --color-bg: var(--palette-paper-canvas);
-  --color-bg-sunken: var(--palette-paper-sunken);
-  --color-surface: var(--palette-paper-surface);
-  --color-surface-raised: var(--palette-paper-surface);
-  --color-overlay: var(--palette-warm-overlay);
-  --color-border: var(--palette-paper-hairline);
-  --color-border-strong: var(--palette-paper-hairline-strong);
-  --color-border-interactive: var(--palette-paper-border);
-  --color-text-primary: var(--palette-paper-text-primary);
-  --color-text-secondary: var(--palette-paper-text-secondary);
-  --color-text-tertiary: var(--palette-paper-text-tertiary);
-  --color-text-on-accent: var(--palette-warm-900);
-  --color-accent: var(--palette-amber-500); /** FILL stays bright; dark text sits on it */
-  --color-accent-hover: var(--palette-amber-600);
-  --color-accent-text: var(--palette-amber-ink); /** amber as TEXT on paper (4.6:1) */
-  --color-accent-secondary: var(--palette-amber-ink); /** orange is too light on paper — use dark amber */
-  --color-number: var(--palette-amber-ink);
-  --color-link: var(--palette-amber-ink);
-  --color-link-hover: var(--palette-amber-ink);
-  --color-focus: var(--palette-amber-ink); /** focus ring on paper (4.6:1) */
-  --color-status-positive: var(--palette-positive-ink); /** 5.7:1 on paper */
-  --color-status-positive-ui: var(--palette-positive-ink);
-  --color-status-critical: var(--palette-critical-ink); /** 5.9:1 on paper */
-  --color-status-critical-ui: var(--palette-critical-ink);
-  --color-status-attention: var(--palette-amber-ink);
-  --color-selection-bg: var(--palette-amber-500);
-  --color-selection-text: var(--palette-warm-900);
+  --color-bg: #FAF8F5;
+  --color-bg-sunken: #F3F0EC;
+  --color-surface: #FDFDFB;
+  --color-surface-raised: #FDFDFB;
+  --color-overlay: hsl(30 10% 4% / 0.72);
+  --color-border: #E4DFD7;
+  --color-border-strong: #D0C7BE;
+  --color-border-interactive: #7E7467;
+  --color-text-primary: #26211D;
+  --color-text-secondary: #5F574E;
+  --color-text-tertiary: #756B61;
+  --color-text-on-accent: #131210;
+  --color-accent: #F6AA28; /** FILL stays bright; dark text sits on it */
+  --color-accent-hover: #E6900F;
+  --color-accent-text: #A46104; /** amber as TEXT on paper (4.6:1) */
+  --color-accent-secondary: #A46104; /** orange is too light on paper — use dark amber */
+  --color-number: #A46104;
+  --color-link: #A46104;
+  --color-link-hover: #A46104;
+  --color-focus: #A46104; /** focus ring on paper (4.6:1) */
+  --color-status-positive: #1E7147; /** 5.7:1 on paper */
+  --color-status-positive-ui: #1E7147;
+  --color-status-critical: #BA261C; /** 5.9:1 on paper */
+  --color-status-critical-ui: #BA261C;
+  --color-status-attention: #A46104;
+  --color-selection-bg: #F6AA28;
+  --color-selection-text: #131210;
 }
 
 /* Reduced-motion: collapse every motion token so all durations run instantly. */

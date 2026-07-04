@@ -12,14 +12,14 @@ into one CSS file: `design/dist/tokens.css`. Rebuild with `npm run build` inside
 
 ## How to use it
 
-1. Load Space Grotesk + IBM Plex Sans + IBM Plex Mono once (see MIGRATION.md for the exact tag).
+1. Load Space Grotesk + Inter + JetBrains Mono once (see MIGRATION.md for the exact tag).
 2. Link ONE token file: `design/dist/tokens.css`. Nothing else defines colors, type, or spacing.
 3. Dark is the default. For a light reading area (e.g. blog), set `data-theme="light"` on a wrapper.
 4. Use the CSS variables. Never hardcode a hex, a px font size, or a font family in a page or component.
 
 ```css
 /* good */   color: var(--color-text-primary); background: var(--color-bg);
-/* banned */ color: #F4F0EB;  font-family: 'Inter';  font-size: 44px;
+/* banned */ color: #F4F0EB;  font-family: 'Geist';  font-size: 44px;
 ```
 
 ---
@@ -77,8 +77,8 @@ or glassmorphism.
 One family per job. Hierarchy comes from **size + weight + tracking + opacity — never from swapping fonts.**
 
 - Display / headings / eyebrows: **Space Grotesk** — `var(--font-display)`
-- Body / UI / **all figures** (prices, %, counters): **IBM Plex Sans** — `var(--font-body)`
-- Code / config / IDs **only**: **IBM Plex Mono** — `var(--font-mono)`. Never use mono for prices,
+- Body / UI / **all figures** (prices, %, counters): **Inter** — `var(--font-body)`
+- Code / config / IDs **only**: **JetBrains Mono** — `var(--font-mono)`. Never use mono for prices,
   percentages, counters, labels, or headings.
 - Every figure uses tabular numbers. Apply `font-variant-numeric: var(--font-numeric)` on the root.
 

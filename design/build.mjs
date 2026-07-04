@@ -19,11 +19,11 @@ const banner = (title) =>
   `   Tiers: palette (primitive) -> color roles (semantic) -> components.\n` +
   `   ===================================================================== */\n`;
 
-function config({ source, cssFile, selector, jsonFile, cssFilter }) {
+function config({ source, cssFile, selector, jsonFile, cssFilter, outputReferences = true }) {
   const cssFileEntry = {
     destination: cssFile,
     format: 'css/variables',
-    options: { selector, outputReferences: true },
+    options: { selector, outputReferences },
   };
   if (cssFilter) cssFileEntry.filter = cssFilter;
   return {
@@ -57,12 +57,15 @@ async function build() {
   await dark.buildAllPlatforms();
 
   // Light: primitives + light semantics (same paths) -> [data-theme="light"]
+  // outputReferences:false resolves each role to its concrete paper/ink value so the
+  // light block is self-contained (and avoids the SD filter+outputReferences warning).
   const light = new StyleDictionary(
     config({
       source: ['tokens/primitive.json', 'tokens/semantic.light.json'],
       cssFile: '_light.css',
       selector: '[data-theme="light"]',
       jsonFile: 'tokens.light.json',
+      outputReferences: false,
       cssFilter: (token) => (token.filePath || '').replace(/\\/g, '/').endsWith('tokens/semantic.light.json'),
     }),
   );

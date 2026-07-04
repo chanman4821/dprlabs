@@ -23,14 +23,14 @@ Remove BOTH font `<link>` tags on every page (Fraunces+IBM Plex line AND Geist+I
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 ```
 
 Pages to fix (both links each): `index.html`, `about.html`, `contact.html`, `method.html`,
 `proof.html`, `jarvis.html`, `blog/index.html`, `blog/no-lock-in.html`, `blog/the-one-number.html`,
 `blog/two-week-pilot.html` (backups `index.new.html`, `index.cream-backup.html` too if kept).
 
-This purges **Fraunces, Geist, and Inter** and leaves ONE system: Space Grotesk + IBM Plex Sans + IBM Plex Mono.
+This purges **Fraunces, Geist, Inter-as-a-second-system, and the IBM Plex family** and leaves ONE system: Space Grotesk (display) + Inter (body/UI/figures) + JetBrains Mono (code/IDs only).
 
 ## Step 2 — Link one token file
 
