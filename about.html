@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<script>document.documentElement.classList.add('js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — DPR Labs</title>
+<meta name="description" content="A small, senior AI studio. Real people, verifiable links, and an honesty ethos: we measure what we ship and we don't fake proof." />
+<meta name="theme-color" content="#07090D" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&family=Inter:wght@300..800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="tokens.css" />
+<link rel="icon" href="assets/icons/logo-orb.png" />
+<link rel="stylesheet" href="hero.css" />
+<link rel="stylesheet" href="sections.css" />
+</head>
+
+<body id="top">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="brand" aria-label="DPR Labs — home">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-word">DPR Labs</span>
+    <span class="brand-by">AI studio</span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="method.html">How it works</a>
+    <a href="proof.html">Proof</a>
+    <a href="jarvis.html">Built on Jarvis</a>
+    <a href="blog/index.html">Field Notes</a>
+    <a href="about.html" aria-current="page">About</a>
+  </nav>
+  <a href="contact.html" class="btn btn-primary nav-cta magnetic" data-magnetic>Book a call</a>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false"
+    aria-controls="mobileMenu" aria-label="Open menu">
+    <span class="nt-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <div class="mm-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+    <button class="mm-close" id="mmClose" type="button" aria-label="Close menu">&times;</button>
+    <nav class="mm-links" aria-label="Mobile">
+      <a href="method.html">How it works</a>
+      <a href="proof.html">Proof</a>
+      <a href="jarvis.html">Built on Jarvis</a>
+      <a href="blog/index.html">Field Notes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="mm-cta">Book a call</a>
+    </nav>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="about page-hero" aria-labelledby="page-h">
+    <canvas class="band-canvas band-canvas--back" data-agents="field" aria-hidden="true"></canvas>
+    <div class="section-wrap">
+      <p class="eyebrow">About</p>
+      <h1 class="page-hero__h" id="page-h">Senior people.<br /><em>No middle layers.</em></h1>
+      <p class="page-hero__lead">DPR Labs is a small, senior AI studio. You work directly with the people
+        doing the building &mdash; not an account manager. We started it because too much AI consulting
+        sells slideware and disappears. We&rsquo;d rather ship one honest, measured thing and hand you the keys.</p>
+    </div>
+  </section>
+
+  <!-- ============ WHY WE WORK THIS WAY ============ -->
+  <section class="proof" aria-labelledby="why-h">
+    <div class="section-wrap section-wrap--narrow">
+      <header class="section-head reveal">
+        <p class="eyebrow">Why we work this way</p>
+        <h2 class="section-title" id="why-h">A result you can&rsquo;t measure and own<br /><em>isn&rsquo;t worth selling.</em></h2>
+      </header>
+      <div class="prose reveal">
+        <p>Every choice in this studio comes from one belief: a result you can&rsquo;t measure and own
+          isn&rsquo;t worth selling. So we keep pilots small, agree the number first, build on your own
+          systems, and leave you able to fire us and keep everything.</p>
+        <p>The guarantee isn&rsquo;t a marketing flourish &mdash; it&rsquo;s how we put the risk where
+          it belongs: on us.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHO YOU'LL WORK WITH ============ -->
+  <section class="method" aria-labelledby="who-h">
+    <canvas class="band-canvas band-canvas--back" data-agents="dispatch" aria-hidden="true"></canvas>
+    <div class="section-wrap section-wrap--narrow">
+      <header class="section-head reveal">
+        <p class="eyebrow">Who you&rsquo;ll work with</p>
+        <h2 class="section-title" id="who-h">One senior team.<br /><em>Links you can check.</em></h2>
+      </header>
+      <article class="founder reveal">
+        <h3>Judge us by the method &mdash; not by faces</h3>
+        <p>We won&rsquo;t put invented names or stock faces here. Real founder profiles with verifiable
+          links &mdash; GitHub, talks, shipped work &mdash; go in this space as we publish them. Until
+          then, judge us by the method we publish and the pilot we&rsquo;ll run for you. That&rsquo;s the
+          same standard we hold our work to.</p>
+        <ul class="about__links">
+          <li><a href="#" aria-label="GitHub (link coming soon)">GitHub <span aria-hidden="true">&rarr;</span></a><span class="about__soon">link soon</span></li>
+          <li><a href="#" aria-label="Talks and writing (link coming soon)">Talks &amp; writing <span aria-hidden="true">&rarr;</span></a><span class="about__soon">link soon</span></li>
+          <li><a href="contact.html" aria-label="Contact the team">Contact the team <span aria-hidden="true">&rarr;</span></a></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ HONESTY PRINCIPLES ============ -->
+  <section class="proof" aria-labelledby="honesty-h">
+    <canvas class="band-canvas band-canvas--back" data-agents="field" aria-hidden="true"></canvas>
+    <div class="section-wrap section-wrap--narrow">
+      <div class="honesty reveal">
+        <h3 class="honesty__title" id="honesty-h">Our honesty principles</h3>
+        <ul class="honesty__list">
+          <li>Every number on this site traces to a method we&rsquo;d publish.</li>
+          <li>No invented clients, quotes, logos, founders, or round stats &mdash; ever.</li>
+          <li>We tell you when a pilot won&rsquo;t help, even if it costs us the work.</li>
+          <li>Your data stays on your systems; you own everything we build.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="contact page-cta" aria-labelledby="cta-h">
+    <canvas class="band-canvas band-canvas--full" data-agents="constellation" aria-hidden="true"></canvas>
+    <div class="section-wrap">
+      <p class="eyebrow">Start a conversation</p>
+      <h2 class="section-title" id="cta-h">Judge us<br /><em>by the work.</em></h2>
+      <p class="section-lead">Tell us one task your team dreads, and we&rsquo;ll show you what we&rsquo;d do.</p>
+      <a href="contact.html" class="btn-primary magnetic" data-magnetic>Talk to us <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="section-wrap">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-word">DPR Labs</span>
+        <p class="footer__line">Agentic AI that ships, measured by one honest number.</p>
+      </div>
+      <div class="footer__col"><h3>Studio</h3>
+        <a href="method.html">How it works</a><a href="proof.html">Proof</a>
+        <a href="jarvis.html">How we build</a><a href="about.html">About</a></div>
+      <div class="footer__col"><h3>Field Notes</h3>
+        <a href="blog/index.html">All posts</a>
+        <a href="blog/the-one-number.html">The one number</a>
+        <a href="blog/no-lock-in.html">No lock-in</a>
+        <a href="blog/two-week-pilot.html">The two-week pilot</a></div>
+      <div class="footer__col"><h3>Get started</h3>
+        <a href="contact.html">Book a scoping call</a>
+        <a href="mailto:hello@dprlabs.io">Email us</a></div>
+    </div>
+    <p class="footer__muted">&copy; <span id="year">2026</span> DPR Labs. Real proof only — we publish how we measure.</p>
+  </div>
+</footer>
+
+<script src="dpr.js" defer></script>
+<script src="agents-anim.js" defer></script>
+
+</body>
+</html>
+

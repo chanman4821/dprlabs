@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<script>document.documentElement.classList.add('js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How it works — DPR Labs</title>
+<meta name="description" content="The pilot method in depth: the one-number principle, a two-to-four-week timeline, open measurement, ownership and handover, and when we say no." />
+<meta name="theme-color" content="#07090D" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&family=Inter:wght@300..800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="tokens.css" />
+<link rel="icon" href="assets/icons/logo-orb.png" />
+<link rel="stylesheet" href="hero.css" />
+<link rel="stylesheet" href="sections.css" />
+</head>
+
+<body id="top">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="nav" id="nav">
+  <a href="index.html" class="brand" aria-label="DPR Labs — home">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-word">DPR Labs</span>
+    <span class="brand-by">AI studio</span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="method.html" aria-current="page">How it works</a>
+    <a href="proof.html">Proof</a>
+    <a href="jarvis.html">Built on Jarvis</a>
+    <a href="blog/index.html">Field Notes</a>
+    <a href="about.html">About</a>
+  </nav>
+  <a href="contact.html" class="btn btn-primary nav-cta magnetic" data-magnetic>Book a call</a>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false"
+    aria-controls="mobileMenu" aria-label="Open menu">
+    <span class="nt-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <div class="mm-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+    <button class="mm-close" id="mmClose" type="button" aria-label="Close menu">&times;</button>
+    <nav class="mm-links" aria-label="Mobile">
+      <a href="method.html">How it works</a>
+      <a href="proof.html">Proof</a>
+      <a href="jarvis.html">Built on Jarvis</a>
+      <a href="blog/index.html">Field Notes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="mm-cta">Book a call</a>
+    </nav>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="method page-hero" aria-labelledby="page-h">
+    <canvas class="band-canvas band-canvas--back" data-agents="dispatch" aria-hidden="true"></canvas>
+    <div class="section-wrap">
+      <p class="eyebrow">How it works</p>
+      <h1 class="page-hero__h" id="page-h">One workflow. One number.<br /><em>Two to four weeks.</em></h1>
+      <p class="page-hero__lead">A pilot is deliberately small and deliberately measurable. We pick your
+        biggest time-sink, agree the single number that decides success before we start, and build a
+        working system you own at the end. Here&rsquo;s exactly how.</p>
+    </div>
+  </section>
+
+  <!-- ============ THE ONE-NUMBER PRINCIPLE ============ -->
+  <section class="proof" aria-labelledby="onenum-h">
+    <div class="section-wrap section-wrap--narrow">
+      <header class="section-head reveal">
+        <p class="eyebrow">The one-number principle</p>
+        <h2 class="section-title" id="onenum-h">If we can&rsquo;t name the number,<br /><em>the pilot isn&rsquo;t ready.</em></h2>
+      </header>
+      <div class="prose reveal">
+        <p>Most AI projects fail because nobody agreed what &ldquo;working&rdquo; means. So we
+          don&rsquo;t start until we&rsquo;ve written down one measurable outcome &mdash; reply time,
+          minutes per invoice, hours saved per week &mdash; with the exact way we&rsquo;ll measure it.</p>
+        <p>That number is agreed in writing before any build. If we can&rsquo;t name it, the pilot
+          isn&rsquo;t ready, and we&rsquo;ll tell you plainly instead of taking the work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WEEK-BY-WEEK TIMELINE (spine) ============ -->
+  <section class="method" aria-labelledby="timeline-h">
+    <canvas class="band-canvas" data-agents="telemetry" aria-hidden="true"></canvas>
+    <div class="section-wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">A pilot, week by week</p>
+        <h2 class="section-title" id="timeline-h">Four honest steps.<br /><em>No slide deck at the end.</em></h2>
+        <p class="section-lead">You see real output every few days &mdash; not a reveal at the end.
+          Every step has a fixed output and no lock-in waiting behind it.</p>
+      </header>
+
+      <ol class="spine" data-spine>
+        <li class="spine__step reveal">
+          <span class="spine__dot" aria-hidden="true"><i>1</i></span>
+          <div class="spine__body">
+            <h3 class="spine__title">Agree the number</h3>
+            <p class="spine__text">We pick the one workflow and the one metric, set the baseline from
+              your real data, and write the target and the measurement method down. Fixed price quoted
+              here &mdash; before any build.</p>
+          </div>
+          <aside class="spine__note" aria-hidden="true">
+            <span class="spine__note-k">When</span><span class="spine__note-v num">Week 0</span>
+            <span class="spine__note-k">Output</span><span class="spine__note-v">Scoped number</span>
+          </aside>
+        </li>
+        <li class="spine__step reveal">
+          <span class="spine__dot" aria-hidden="true"><i>2</i></span>
+          <div class="spine__body">
+            <h3 class="spine__title">Build on your real systems</h3>
+            <p class="spine__text">We build the working system inside your infrastructure, your repo,
+              your accounts &mdash; not a sandbox. Real, working agentic AI against the number we agreed.</p>
+          </div>
+          <aside class="spine__note" aria-hidden="true">
+            <span class="spine__note-k">When</span><span class="spine__note-v num">Wks 1&ndash;2</span>
+            <span class="spine__note-k">Price</span><span class="spine__note-v num">$8k&ndash;$15k</span>
+          </aside>
+        </li>
+        <li class="spine__step reveal">
+          <span class="spine__dot" aria-hidden="true"><i>3</i></span>
+          <div class="spine__body">
+            <h3 class="spine__title">Measure honestly</h3>
+            <p class="spine__text">We run it against the agreed number on a real, human-checked sample,
+              and publish the method so you can re-check it yourself. If it didn&rsquo;t move, we say so.</p>
+          </div>
+          <aside class="spine__note" aria-hidden="true">
+            <span class="spine__note-k">When</span><span class="spine__note-v num">Wks 2&ndash;3</span>
+            <span class="spine__note-k">Output</span><span class="spine__note-v">Scorecard</span>
+          </aside>
+        </li>
+        <li class="spine__step reveal">
+          <span class="spine__dot" aria-hidden="true"><i>4</i></span>
+          <div class="spine__body">
+            <h3 class="spine__title">Hand it over &mdash; you own it</h3>
+            <p class="spine__text">We harden what works, write the playbook, and train your team to run
+              and change it. Code, weights, and docs are yours &mdash; no license to renew, no seat to rent.</p>
+          </div>
+          <aside class="spine__note" aria-hidden="true">
+            <span class="spine__note-k">When</span><span class="spine__note-v num">Wks 3&ndash;4</span>
+            <span class="spine__note-k">Lock-in</span><span class="spine__note-v num">None</span>
+          </aside>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ OPEN MEASUREMENT + WHEN WE SAY NO ============ -->
+  <section class="proof" aria-labelledby="honest-h">
+    <canvas class="band-canvas band-canvas--back" data-agents="field" aria-hidden="true"></canvas>
+    <div class="section-wrap section-wrap--narrow">
+      <header class="section-head reveal">
+        <p class="eyebrow">Open measurement &amp; ownership</p>
+        <h2 class="section-title" id="honest-h">A number you can&rsquo;t re-check<br /><em>isn&rsquo;t proof.</em></h2>
+      </header>
+      <div class="prose reveal">
+        <p>We set the baseline from your real data before we touch anything, then report the same number
+          the same way at the end. We write the method down so you &mdash; or anyone &mdash; can reproduce
+          it. When we hand off, you own the code and the knowledge; you can fire us and keep everything.</p>
+      </div>
+
+      <div class="honesty reveal">
+        <h3 class="honesty__title">When a pilot won&rsquo;t help &mdash; we say no</h3>
+        <ul class="honesty__list">
+          <li>If a simple script would fix it, you don&rsquo;t need a pilot &mdash; and we&rsquo;ll tell you.</li>
+          <li>If the data isn&rsquo;t there yet, there&rsquo;s no clean number to move. We wait.</li>
+          <li>If no one on your side will own the result, the handover has nowhere to land.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="contact page-cta" aria-labelledby="cta-h">
+    <canvas class="band-canvas band-canvas--full" data-agents="constellation" aria-hidden="true"></canvas>
+    <div class="section-wrap">
+      <p class="eyebrow">Start a conversation</p>
+      <h2 class="section-title" id="cta-h">Know the time-sink<br /><em>you&rsquo;d start with?</em></h2>
+      <p class="section-lead">Tell us, and we&rsquo;ll reply with the number we&rsquo;d aim to move and a
+        fixed quote &mdash; within one business day.</p>
+      <a href="contact.html" class="btn-primary magnetic" data-magnetic>Book a 2-week pilot <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="section-wrap">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-word">DPR Labs</span>
+        <p class="footer__line">Agentic AI that ships, measured by one honest number.</p>
+      </div>
+      <div class="footer__col"><h3>Studio</h3>
+        <a href="method.html">How it works</a><a href="proof.html">Proof</a>
+        <a href="jarvis.html">How we build</a><a href="about.html">About</a></div>
+      <div class="footer__col"><h3>Field Notes</h3>
+        <a href="blog/index.html">All posts</a>
+        <a href="blog/the-one-number.html">The one number</a>
+        <a href="blog/no-lock-in.html">No lock-in</a>
+        <a href="blog/two-week-pilot.html">The two-week pilot</a></div>
+      <div class="footer__col"><h3>Get started</h3>
+        <a href="contact.html">Book a scoping call</a>
+        <a href="mailto:hello@dprlabs.io">Email us</a></div>
+    </div>
+    <p class="footer__muted">&copy; <span id="year">2026</span> DPR Labs. Real proof only — we publish how we measure.</p>
+  </div>
+</footer>
+
+<script src="dpr.js" defer></script>
+<script src="agents-anim.js" defer></script>
+
+</body>
+</html>
+

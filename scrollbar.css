@@ -1,0 +1,41 @@
+/* scrollbar.css — futuristic scroll-reactive scrollbar.
+   Thumb hue shifts cyan -> yellow with scroll position (driven by scrollbar.js).
+   Glows, brightens on hover/active. Falls back to a static cyan bar without JS. */
+:root {
+  --sb-hue: 190;                 /* updated live by scrollbar.js */
+  --sb-track: #06080b;
+  --sb-thumb: hsl(190 92% 56%);
+}
+
+/* WebKit / Chromium / Edge */
+html::-webkit-scrollbar { width: 12px; height: 12px; }
+html::-webkit-scrollbar-track {
+  background: var(--sb-track);
+  border-left: 1px solid rgba(255, 255, 255, .04);
+}
+html::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  border: 2px solid var(--sb-track);
+  background: linear-gradient(180deg,
+      hsl(var(--sb-hue) 95% 62%),
+      hsl(calc(var(--sb-hue) + 26) 92% 52%));
+  box-shadow:
+      0 0 10px hsl(var(--sb-hue) 95% 60% / .75),
+      inset 0 0 5px rgba(255, 255, 255, .45);
+  transition: filter 140ms ease;
+}
+html::-webkit-scrollbar-thumb:hover   { filter: brightness(1.28) saturate(1.15); }
+html::-webkit-scrollbar-thumb:active  { filter: brightness(1.5)  saturate(1.25); }
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--sb-hue) 92% 56%) var(--sb-track);
+}
+
+/* Top progress bar recolors too (scrollbar.js sets width + gradient). */
+.scroll-progress {
+  background: linear-gradient(90deg,
+      hsl(190 92% 56%), hsl(var(--sb-hue) 92% 56%));
+  box-shadow: 0 0 12px hsl(var(--sb-hue) 92% 56% / .9);
+}

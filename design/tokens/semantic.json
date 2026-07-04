@@ -1,0 +1,46 @@
+{
+  "$description": "DPR Labs — TIER 2 SEMANTIC color roles (DARK, default mode). Aliases ONLY — every $value points at a tier-1 palette token; no raw hex/hsl lives here. These are the roles pages and components consume. Light-mode values live in semantic.light.json (same paths). FILL roles are paired with text.on-accent; GRAPHIC/TEXT accent roles sit on the page background and are contrast-verified against it.",
+  "color": {
+    "$type": "color",
+
+    "bg":              { "$value": "{palette.warm.900}", "$description": "page canvas" },
+    "bg-sunken":       { "$value": "{palette.warm.950}", "$description": "wells / code recesses" },
+    "surface":         { "$value": "{palette.warm.850}", "$description": "panels / cards" },
+    "surface-raised":  { "$value": "{palette.warm.800}", "$description": "raised / hovered surface" },
+    "overlay":         { "$value": "{palette.warm.overlay}", "$description": "modal scrim (dark in both modes)" },
+
+    "border":             { "$value": "{palette.warm.700}", "$description": "dividers / hairlines" },
+    "border-strong":      { "$value": "{palette.warm.600}", "$description": "emphasised hairline" },
+    "border-interactive": { "$value": "{palette.warm.500}", "$description": "input / control outline (>=3:1)" },
+
+    "text": {
+      "primary":   { "$value": "{palette.warm.100}", "$description": "headings + body (16.5:1)" },
+      "secondary": { "$value": "{palette.warm.300}", "$description": "sub-copy (10.1:1)" },
+      "tertiary":  { "$value": "{palette.warm.400}", "$description": "meta / captions (6.7:1)" },
+      "on-accent": { "$value": "{palette.warm.900}", "$description": "text ON an amber fill" }
+    },
+
+    "accent":           { "$value": "{palette.amber.500}", "$description": "FILL role — pair with text.on-accent" },
+    "accent-hover":     { "$value": "{palette.amber.600}", "$description": "FILL hover" },
+    "accent-text":      { "$value": "{palette.amber.500}", "$description": "amber as TEXT/ICON/HAIRLINE on page bg (9.5:1)" },
+    "accent-secondary": { "$value": "{palette.orange.500}", "$description": "orange flourish on dark (7.1:1)" },
+
+    "number":     { "$value": "{palette.amber.500}", "$description": "the ONE honest number — amber, body font, tabular" },
+    "link":       { "$value": "{palette.amber.400}", "$description": "inline link (12:1)" },
+    "link-hover": { "$value": "{palette.amber.500}" },
+    "focus":      { "$value": "{palette.amber.400}", "$description": "focus ring (12:1)" },
+
+    "status": {
+      "positive":     { "$value": "{palette.positive.text}", "$description": "healthy — TEXT tone (9.9:1)" },
+      "positive-ui":  { "$value": "{palette.positive.ui}",   "$description": "healthy — UI/graphic tone (6.5:1)" },
+      "critical":     { "$value": "{palette.critical.text}", "$description": "failing — TEXT tone (7.0:1)" },
+      "critical-ui":  { "$value": "{palette.critical.ui}",   "$description": "failing — UI/graphic tone (4.2:1)" },
+      "attention":    { "$value": "{palette.amber.500}",     "$description": "awaiting decision = the reserved amber" }
+    },
+
+    "selection": {
+      "bg":   { "$value": "{palette.amber.500}" },
+      "text": { "$value": "{palette.warm.900}" }
+    }
+  }
+}

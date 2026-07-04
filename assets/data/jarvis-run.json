@@ -1,0 +1,99 @@
+{
+  "provenance": {
+    "source": "Jarvis mesh state.db (dispatches)",
+    "exported_at": "2026-06-30T17:36:35",
+    "note": "Real, sanitized run records. Roles are mapped from real agent slugs. No client data."
+  },
+  "roles": [
+    "planner",
+    "dispatcher",
+    "builder",
+    "grader",
+    "healer"
+  ],
+  "nodes": [
+    {
+      "id": "backend",
+      "role": "builder",
+      "status": "ok",
+      "duration_ms": 201743,
+      "files": 11
+    },
+    {
+      "id": "docs-writer",
+      "role": "builder",
+      "status": "ok",
+      "duration_ms": 217687,
+      "files": 35
+    },
+    {
+      "id": "trivial-probe-runner",
+      "role": "grader",
+      "status": "ok",
+      "duration_ms": 142964,
+      "files": 1
+    },
+    {
+      "id": "debugger",
+      "role": "grader",
+      "status": "ok",
+      "duration_ms": 416677,
+      "files": 3
+    },
+    {
+      "id": "architect",
+      "role": "planner",
+      "status": "ok",
+      "duration_ms": 462945,
+      "files": 1
+    },
+    {
+      "id": "planner",
+      "role": "planner",
+      "status": "ok",
+      "duration_ms": 549671,
+      "files": 1
+    },
+    {
+      "id": "dispatcher",
+      "role": "dispatcher",
+      "status": "ok",
+      "duration_ms": 0,
+      "files": 0
+    },
+    {
+      "id": "healer",
+      "role": "healer",
+      "status": "ok",
+      "duration_ms": 0,
+      "files": 0
+    }
+  ],
+  "totals": {
+    "dispatches_sampled": 60,
+    "files_changed": 305,
+    "compute_seconds": 66255
+  },
+  "edges": [
+    [
+      "planner",
+      "dispatcher"
+    ],
+    [
+      "dispatcher",
+      "builder"
+    ],
+    [
+      "builder",
+      "grader"
+    ],
+    [
+      "grader",
+      "healer"
+    ],
+    [
+      "grader",
+      "dispatcher"
+    ]
+  ]
+}

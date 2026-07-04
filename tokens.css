@@ -1,0 +1,492 @@
+/* =====================================================================
+   DPR LABS — UNIFIED DESIGN SYSTEM  ·  tokens.css
+   Single source of truth. Direction C "Living System": bespoke, premium,
+   confident-dark, hairline-precision — an engineered instrument, not AI slop.
+
+   ONE token file. ONE type system. ONE accent. No teal, no glow, no orbs,
+   no particle fields, no neon mesh, no rainbow gradients. Depth comes from
+   VALUE + LIGHT and 1px hairlines — never from stacked drop-shadows or
+   glassmorphism. Every visual value below is a named token; pages reference
+   tokens only (no raw hex / magic px in page CSS).
+
+   THREE TIERS (W3C DTCG):  (1) Primitive -> (2) Semantic -> (3) Type.
+   Authoritative seeds (design direction): primary hsl(36 92% 56%) amber,
+   accent hsl(20 82% 54%) orange, canvas hsl(220 16% 7%) graphite.
+
+   ── CONTRAST AUDIT (WCAG 2.2 · computed in artifacts/color_science.py) ──
+   Every ratio here is machine-computed on the delivered hex, not asserted.
+     text-primary   #F2F5F7 on bg #0F1115 -> 17.26:1  AA body            ok
+     text-secondary #AEB6C2 on bg #0F1115 ->  9.26:1  AA body            ok
+     text-tertiary  #818C9C on bg #0F1115 ->  5.56:1  AA body/large/UI   ok
+     text-faint     #606976 on bg #0F1115 ->  3.41:1  large/UI/disabled  ok
+     accent amber   #F6A328 on bg #0F1115 ->  9.20:1  AA body + graphic  ok
+     accent-strong  #FBC14B on bg #0F1115 -> 11.53:1  focus ring         ok
+     accent-2 orange#EA6A2A on bg #0F1115 ->  5.92:1  large/UI + graphic ok
+     border-ui      #5F6977 on bg #0F1115 ->  3.39:1  control boundary   ok
+     amber-ink      #DF830C on surface    ->  6.25:1  AA body on panel    ok
+     on-amber ink   #1D140C on amber fill ->  8.82:1  AA button label     ok
+   (Hairline #2D3239 = 1.46:1 is a DECORATIVE divider, exempt from 1.4.11.)
+
+   ── WEB FONTS — paste in <head> BEFORE this stylesheet ──────────────
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet"
+       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300..800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+   Purge the old dual system entirely: Fraunces, IBM Plex Sans/Mono, Geist,
+   Geist Mono. Display = Space Grotesk. Body/UI/figures = Inter. Mono
+   (code/config/IDs ONLY) = JetBrains Mono. Hierarchy from size/weight/
+   tracking/opacity — NEVER from swapping font family.
+   ===================================================================== */
+
+
+/* ===================================================================
+   TIER 1 — PRIMITIVE TOKENS  (raw values; never referenced by pages)
+   OKLCH equivalents noted for the re-theming story; hex is delivered
+   for universal support and is what the contrast audit above measured.
+   =================================================================== */
+:root {
+
+  /* ── Neutral graphite ramp — the canvas. Depth = value steps. ──── */
+  --p-graphite-950: #0A0C0F;  /* oklch(15.4% .007 264)  sunken / footer well */
+  --p-graphite-900: #0F1115;  /* oklch(17.7% .008 264)  page canvas (seed)   */
+  --p-graphite-850: #16181D;  /* oklch(21.0% .010 264)  raised panel         */
+  --p-graphite-800: #1F2228;  /* oklch(25.3% .012 261)  highest raised/hover */
+  --p-graphite-700: #2D3239;  /* oklch(31.4% .015 258)  hairline / grid line */
+  --p-graphite-600: #3F4650;  /* oklch(39.2% .019 255)  strong divider       */
+  --p-graphite-500: #5F6977;  /* oklch(51.7% .025 258)  interactive boundary */
+
+  /* ── Cool near-white text ramp ─────────────────────────────────── */
+  --p-ink-050: #F2F5F7;  /* oklch(96.8% .004 248)  primary text / headings   */
+  --p-ink-300: #AEB6C2;  /* oklch(77.4% .019 255)  secondary copy            */
+  --p-ink-500: #818C9C;  /* oklch(63.7% .027 258)  tertiary / meta           */
+  --p-ink-600: #606976;  /* oklch(51.8% .023 258)  faint / disabled          */
+
+  /* ── Warm signal family — the ONE reserved accent (amber + orange) ─ */
+  --p-amber-400:  #FBC14B; /* oklch(84.3% .146 81)  hover lift / focus ring   */
+  --p-amber-500:  #F6A328; /* oklch(78.0% .158 71)  THE accent (seed)         */
+  --p-amber-600:  #DF830C; /* oklch(69.5% .156 63)  amber text on light panel */
+  --p-orange-500: #EA6A2A; /* oklch(67.1% .175 44)  secondary warm (seed)     */
+  --p-orange-600: #D14B1A; /* oklch(59.0% .179 38)  gradient far-stop/pressed */
+  --p-warm-ink:   #1D140C; /* oklch(20.1% .020 66)  ink on amber fills        */
+
+  /* ── Fixed / functional ────────────────────────────────────────── */
+  --p-black:       #000000;
+  --p-white:       #FFFFFF;
+  --p-danger:      #E5484D; /* honest error — used with icon+text, never color alone */
+  --p-positive:    #3DD68C; /* honest confirmation (sparingly)                       */
+
+  /* ── Space primitives — 4px base unit, 8px baseline rhythm ──────── */
+  --p-space-0:   0;
+  --p-space-2:   0.125rem; /*  2px  hairline gaps            */
+  --p-space-4:   0.25rem;  /*  4px  base unit                */
+  --p-space-8:   0.5rem;   /*  8px  rhythm unit              */
+  --p-space-12:  0.75rem;  /* 12px                           */
+  --p-space-16:  1rem;     /* 16px                           */
+  --p-space-24:  1.5rem;   /* 24px                           */
+  --p-space-32:  2rem;     /* 32px                           */
+  --p-space-48:  3rem;     /* 48px                           */
+  --p-space-64:  4rem;     /* 64px                           */
+  --p-space-96:  6rem;     /* 96px                           */
+  --p-space-128: 8rem;     /* 128px                          */
+
+  /* ── Radius — restrained, crisp. Instrument, not pill-soup. ────── */
+  --p-radius-0:    0;
+  --p-radius-xs:   2px;   /* hairline chips / inputs         */
+  --p-radius-sm:   4px;   /* buttons / tags                  */
+  --p-radius-md:   8px;   /* panels / cards                  */
+  --p-radius-lg:   14px;  /* the focal instrument surface    */
+  --p-radius-pill: 999px;
+
+  /* ── Type scale — Major-third (1.25) on a 16px body, fluid at top ─
+     13 / 14 / 16 / 20 / 25 / 31 / 39 / 49 / 61 px                    */
+  --p-fs-2xs:  0.8125rem; /* 13px eyebrow / micro-label      */
+  --p-fs-xs:   0.875rem;  /* 14px caption / meta             */
+  --p-fs-sm:   1rem;      /* 16px body / base                */
+  --p-fs-md:   1.25rem;   /* 20px lead paragraph             */
+  --p-fs-lg:   1.5625rem; /* 25px h3                         */
+  --p-fs-xl:   1.9375rem; /* 31px h2                         */
+  --p-fs-2xl:  2.4375rem; /* 39px h1                         */
+  --p-fs-3xl:  3.0625rem; /* 49px display-sub                */
+  --p-fs-4xl:  3.8125rem; /* 61px display                    */
+
+  /* ── Line-height ───────────────────────────────────────────────── */
+  --p-lh-display: 1.04;  /* oversized display — tight        */
+  --p-lh-tight:   1.14;  /* h2 / h3                          */
+  --p-lh-lead:    1.4;   /* lead paragraphs                  */
+  --p-lh-body:    1.6;   /* body copy                        */
+  --p-lh-mono:    1.55;  /* code blocks                      */
+
+  /* ── Letter-spacing — hierarchy tool, tight display ────────────── */
+  --p-ls-display: -0.028em;
+  --p-ls-heading: -0.018em;
+  --p-ls-body:    -0.008em;
+  --p-ls-label:    0.14em;  /* UPPERCASE eyebrows              */
+  --p-ls-mono:     0;
+
+  /* ── Motion — slow, purposeful, eased. NO bounce / NO overshoot. ─ */
+  --p-ease-standard: cubic-bezier(0.4, 0, 0.2, 1);   /* in-out       */
+  --p-ease-out:      cubic-bezier(0.22, 1, 0.36, 1);  /* enter (decel)*/
+  --p-ease-in:       cubic-bezier(0.64, 0, 0.78, 0);  /* exit (accel) */
+  --p-dur-micro:     150ms; /* hovers, focus, small toggles    */
+  --p-dur-base:      300ms; /* standard enters / accordions    */
+  --p-dur-slow:      500ms; /* complex reveals                 */
+  --p-dur-choreo:    800ms; /* hero / scroll choreography       */
+
+  /* ── Z-index ───────────────────────────────────────────────────── */
+  --p-z-below:   -1;
+  --p-z-base:     0;
+  --p-z-raised:  10;
+  --p-z-sticky:  50;
+  --p-z-nav:    100;
+  --p-z-overlay:200;
+  --p-z-modal:  300;
+  --p-z-toast:  400;
+
+  /* ── Texture — fine SVG grain over flats (kills the AI-flat look,
+     keeps DOM light). Layer at ~3-5% opacity; never a gradient blur. */
+  --p-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+
+
+/* ===================================================================
+   TIER 2 — SEMANTIC TOKENS  (intent -> primitive; consumed by pages)
+   =================================================================== */
+
+  /* ── Surface / background roles ────────────────────────────────── */
+  --color-bg:            var(--p-graphite-900); /* page canvas                */
+  --color-bg-sunken:     var(--p-graphite-950); /* footer / deep wells        */
+  --color-surface:       var(--p-graphite-850); /* raised panel / card        */
+  --color-surface-high:  var(--p-graphite-800); /* hover / highest surface    */
+  --color-overlay:       hsl(220 16% 4% / 0.72); /* modal scrim               */
+
+  /* ── Hairline / border roles ───────────────────────────────────── */
+  --color-hairline:      var(--p-graphite-700); /* 1px rules, grid, dividers  */
+  --color-border:        var(--p-graphite-700); /* default border             */
+  --color-border-subtle: hsl(220 12% 20% / 0.55); /* de-emphasised rule       */
+  --color-border-strong: var(--p-graphite-600); /* emphasised divider         */
+  --color-border-ui:     var(--p-graphite-500); /* interactive control >=3:1  */
+
+  /* ── Text roles ────────────────────────────────────────────────── */
+  --color-text-primary:   var(--p-ink-050);  /* headings + body               */
+  --color-text-secondary: var(--p-ink-300);  /* sub-copy                      */
+  --color-text-tertiary:  var(--p-ink-500);  /* captions / meta               */
+  --color-text-faint:     var(--p-ink-600);  /* disabled / placeholder        */
+  --color-text-on-accent: var(--p-warm-ink); /* ink on amber fills            */
+
+  /* ── Accent — the ONE reserved signal (warm amber family) ──────── */
+  --color-accent:         var(--p-amber-500); /* THE accent: number, active   */
+  --color-accent-strong:  var(--p-amber-400); /* hover / active lift          */
+  --color-accent-ink:     var(--p-amber-600); /* amber text on light surface  */
+  --color-accent-2:       var(--p-orange-500);/* secondary warm — single jolt */
+  --color-accent-2-deep:  var(--p-orange-600);/* gradient far-stop / pressed  */
+  --color-accent-wash:    hsl(36 92% 56% / 0.10); /* faint fill behind number */
+  --color-accent-line:    hsl(36 92% 56% / 0.32); /* hairline in accent hue   */
+
+  /* ── Focus role — always visible, >=3:1, never removed ─────────── */
+  --color-focus:          var(--p-amber-400); /* 11.53:1 on canvas             */
+
+  /* ── "The one number" — reserved warmth (unified with accent) ──── */
+  --color-number:         var(--p-amber-500);
+
+  /* ── Status roles — always paired with icon/text, never color alone */
+  --color-danger:         var(--p-danger);
+  --color-positive:       var(--p-positive);
+
+  /* ── Interactive — primary CTA = amber fill + dark ink ─────────── */
+  --color-btn-primary-bg:    var(--p-amber-500);
+  --color-btn-primary-text:  var(--p-warm-ink);
+  --color-btn-primary-hover: var(--p-amber-400);
+  --color-btn-ghost-border:  var(--p-graphite-500);
+  --color-btn-ghost-text:    var(--p-ink-050);
+  --color-link:              var(--p-ink-050); /* links = underline, not color */
+  --color-link-hover:        var(--p-amber-500);
+
+  /* ── Selection ─────────────────────────────────────────────────── */
+  --color-selection-bg:   var(--p-amber-500);
+  --color-selection-text: var(--p-warm-ink);
+
+  /* ── Elevation — VALUE + LIGHT, not shadow stacks. A single soft
+     ambient reserved for the ONE focal instrument; hairline top-light
+     for panels. Restrained on purpose. ──────────────────────────── */
+  --elevation-hairline: inset 0 1px 0 hsl(0 0% 100% / 0.04); /* top light   */
+  --elevation-panel:    inset 0 1px 0 hsl(0 0% 100% / 0.04),
+                        0 1px 0 hsl(220 16% 4% / 0.6);
+  --elevation-focal:    0 24px 64px -32px hsl(220 30% 2% / 0.8),
+                        inset 0 1px 0 hsl(0 0% 100% / 0.05);
+  /* Back-compat shadow aliases (kept restrained) */
+  --shadow-sm: var(--elevation-hairline);
+  --shadow-md: var(--elevation-panel);
+  --shadow-lg: var(--elevation-focal);
+
+  /* ── Layout ────────────────────────────────────────────────────── */
+  --layout-maxw:        1200px;  /* readable content column          */
+  --layout-wide:        1344px;  /* the instrument / full-bleed grid  */
+  --layout-reading-max:  680px;  /* blog measure                     */
+  --layout-gutter:      clamp(1.25rem, 4vw, 4.5rem);
+  --layout-rail:        62%;      /* editorial asymmetry: visual share */
+  --layout-nav-h:       72px;     /* fixed slim nav                   */
+
+  /* ── Motion semantic ───────────────────────────────────────────── */
+  --ease:         var(--p-ease-standard);
+  --ease-out:     var(--p-ease-out);
+  --ease-in:      var(--p-ease-in);
+  --motion-micro: var(--p-dur-micro);
+  --motion-base:  var(--p-dur-base);
+  --motion-slow:  var(--p-dur-slow);
+  --motion-choreo:var(--p-dur-choreo);
+
+  /* ── Z semantic ────────────────────────────────────────────────── */
+  --z-nav:     var(--p-z-nav);
+  --z-overlay: var(--p-z-overlay);
+  --z-modal:   var(--p-z-modal);
+  --z-toast:   var(--p-z-toast);
+
+
+/* ===================================================================
+   TIER 3 — TYPE TOKENS
+   =================================================================== */
+
+  /* ── Families — ONE system. Hierarchy never from family swaps. ─── */
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system,
+                  'Segoe UI', Arial, sans-serif;
+  --font-body:    'Inter', ui-sans-serif, system-ui, -apple-system,
+                  'Segoe UI', Arial, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono',
+                  Menlo, Consolas, 'Liberation Mono', monospace;
+
+  /* ── Font-size aliases ─────────────────────────────────────────── */
+  --fs-2xs: var(--p-fs-2xs);
+  --fs-xs:  var(--p-fs-xs);
+  --fs-sm:  var(--p-fs-sm);
+  --fs-md:  var(--p-fs-md);
+  --fs-lg:  var(--p-fs-lg);
+  --fs-xl:  var(--p-fs-xl);
+  --fs-2xl: var(--p-fs-2xl);
+  --fs-3xl: var(--p-fs-3xl);
+  --fs-4xl: var(--p-fs-4xl);
+  /* Fluid, oversized display for the bold-but-expensive hero */
+  --fs-display: clamp(2.5rem, 1.1rem + 5.4vw, 4.75rem);   /* 40 -> 76px */
+  --fs-h1:      clamp(1.9375rem, 1.3rem + 2.6vw, 3.0625rem); /* 31 -> 49 */
+  --fs-h2:      clamp(1.5625rem, 1.2rem + 1.5vw, 2.4375rem); /* 25 -> 39 */
+
+  /* ── Line-height aliases ───────────────────────────────────────── */
+  --lh-display: var(--p-lh-display);
+  --lh-tight:   var(--p-lh-tight);
+  --lh-lead:    var(--p-lh-lead);
+  --lh-body:    var(--p-lh-body);
+  --lh-mono:    var(--p-lh-mono);
+
+  /* ── Letter-spacing aliases ────────────────────────────────────── */
+  --ls-display: var(--p-ls-display);
+  --ls-heading: var(--p-ls-heading);
+  --ls-body:    var(--p-ls-body);
+  --ls-label:   var(--p-ls-label);
+  --ls-mono:    var(--p-ls-mono);
+
+  /* ── Numeric — tabular everywhere figures appear (global on body) ─ */
+  --fvn-tabular: tabular-nums lining-nums;
+  --ffs-tabular: "tnum" 1, "lnum" 1, "cv01" 1;
+
+  /* ── Spacing (semantic, t-shirt scale on 4px base / 8px rhythm) ── */
+  --space-3xs: var(--p-space-2);   /*  2px */
+  --space-2xs: var(--p-space-4);   /*  4px */
+  --space-xs:  var(--p-space-8);   /*  8px */
+  --space-sm:  var(--p-space-12);  /* 12px */
+  --space-md:  var(--p-space-16);  /* 16px */
+  --space-lg:  var(--p-space-24);  /* 24px */
+  --space-xl:  var(--p-space-32);  /* 32px */
+  --space-2xl: var(--p-space-48);  /* 48px */
+  --space-3xl: var(--p-space-64);  /* 64px */
+  --space-4xl: var(--p-space-96);  /* 96px */
+  --space-5xl: var(--p-space-128); /*128px */
+  /* Fluid vertical section rhythm — roomy, lets artifacts breathe */
+  --space-section: clamp(4rem, 2.5rem + 7vw, 8.5rem);
+
+  /* ── Radius aliases ────────────────────────────────────────────── */
+  --radius-xs:   var(--p-radius-xs);
+  --radius-sm:   var(--p-radius-sm);
+  --radius-md:   var(--p-radius-md);
+  --radius-lg:   var(--p-radius-lg);
+  --radius-pill: var(--p-radius-pill);
+
+  /* =================================================================
+     DEPRECATED BACK-COMPAT ALIASES  (do not use in new/rebuilt CSS)
+     Kept only so pre-refactor pages keep parsing until the refactorer
+     swaps them out. GLOW tokens are neutralised to transparent so the
+     legacy teal glow-blobs disappear immediately.
+     ================================================================= */
+  --color-accent-glow:    transparent; /* DEPRECATED: was teal glow  */
+  --color-accent-glow-lg: transparent; /* DEPRECATED: was hero glow  */
+  --dur-fast:      var(--p-dur-micro);   /* DEPRECATED -> --motion-micro */
+  --dur-base:      var(--p-dur-base);    /* DEPRECATED -> --motion-base  */
+  --dur-slow:      var(--p-dur-slow);    /* DEPRECATED -> --motion-slow  */
+  --dur-cinematic: var(--p-dur-choreo);  /* DEPRECATED -> --motion-choreo*/
+  --radius-xl:     var(--p-radius-lg);   /* DEPRECATED -> --radius-lg    */
+  --space-1:  var(--p-space-8);   /* DEPRECATED legacy ordinal scale */
+  --space-2:  var(--p-space-12);
+  --space-3:  var(--p-space-16);
+  --space-4:  var(--p-space-24);
+  --space-5:  var(--p-space-24);
+  --space-6:  var(--p-space-32);
+  --space-7:  var(--p-space-48);
+  --space-8:  var(--p-space-48);
+  --space-9:  var(--p-space-64);
+  --space-10: var(--p-space-96);
+  --space-11: var(--p-space-96);
+  --space-12: var(--p-space-128);
+
+} /* end :root */
+
+
+/* ===================================================================
+   GLOBAL BASE  (consumes Tier 2 + Tier 3 tokens only)
+   =================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  scroll-padding-top: calc(var(--layout-nav-h) + var(--space-md));
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+  font-weight: 400;
+  letter-spacing: var(--ls-body);
+  /* Global tabular figures — every price/percent/counter aligns */
+  font-variant-numeric: var(--fvn-tabular);
+  font-feature-settings: var(--ffs-tabular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* Headings — display face, hierarchy via size/weight/tracking (not family) */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+  color: var(--color-text-primary);
+  text-wrap: balance;
+}
+h2, h3 { line-height: var(--lh-tight); letter-spacing: var(--ls-heading); }
+h4, h5, h6 { line-height: var(--lh-tight); letter-spacing: var(--ls-heading); font-weight: 600; }
+
+p { margin: 0; text-wrap: pretty; }
+ol, ul { margin: 0; padding: 0; list-style: none; }
+img, video, svg, canvas { display: block; max-width: 100%; }
+a { color: var(--color-link); text-decoration: none;
+    transition: color var(--motion-micro) var(--ease); }
+a:hover { color: var(--color-link-hover); }
+button { font: inherit; color: inherit; cursor: pointer; background: none; border: 0; }
+
+/* Mono strictly for code/config/IDs — never prices, %, counters, labels */
+code, pre, kbd, samp { font-family: var(--font-mono); letter-spacing: var(--ls-mono); }
+
+::selection { background: var(--color-selection-bg); color: var(--color-selection-text); }
+
+/* Focus ring — amber-bright, 11.53:1 on canvas. Never remove below 3:1. */
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+:focus:not(:focus-visible) { outline: none; }
+
+/* Scroll targets clear the fixed nav */
+:where(section[id], [id]) { scroll-margin-top: calc(var(--layout-nav-h) + var(--space-md)); }
+
+
+/* ── Utilities ─────────────────────────────────────────────────── */
+
+/* "The one number" — Inter heavy + tabular + amber. NEVER mono. */
+.num, .num-display {
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--color-number);
+  font-variant-numeric: var(--fvn-tabular);
+  font-feature-settings: var(--ffs-tabular);
+  letter-spacing: var(--ls-display);
+}
+
+/* Eyebrow / micro-label — uppercase, tracked, restrained */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--fs-2xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-label);
+  color: var(--color-text-tertiary);
+}
+
+/* Mono texture for IDs / timestamps / config — the "built by engineers" cue */
+.mono {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--ls-mono);
+  color: var(--color-text-tertiary);
+  font-variant-numeric: var(--fvn-tabular);
+}
+
+.text-secondary { color: var(--color-text-secondary); }
+.text-tertiary  { color: var(--color-text-tertiary);  }
+
+/* Hairline rule — 1px, the primary structural device (not heavy borders) */
+.hairline { border: 0; border-top: 1px solid var(--color-hairline); height: 0; margin: 0; }
+
+/* Content container + editorial wide grid */
+.container { width: 100%; max-width: var(--layout-maxw);
+  margin-inline: auto; padding-inline: var(--layout-gutter); }
+.container--wide { max-width: var(--layout-wide); }
+
+/* Reading measure for prose */
+.prose { max-width: var(--layout-reading-max); line-height: var(--lh-body); }
+
+/* Fine grain texture layer (opt-in) — never a glow blob */
+.grain::after {
+  content: ''; position: absolute; inset: 0; z-index: var(--p-z-below);
+  pointer-events: none; background-image: var(--p-noise);
+  opacity: 0.035; mix-blend-mode: overlay;
+}
+
+/* Primary + ghost button primitives (state detail owned by component CSS) */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--space-xs); min-height: 44px; padding: 0 var(--space-lg);
+  border-radius: var(--radius-sm); font-family: var(--font-body);
+  font-weight: 600; font-size: var(--fs-sm); letter-spacing: var(--ls-body);
+  transition: background-color var(--motion-micro) var(--ease),
+              color var(--motion-micro) var(--ease),
+              border-color var(--motion-micro) var(--ease),
+              transform var(--motion-micro) var(--ease);
+}
+.btn--primary { background: var(--color-btn-primary-bg); color: var(--color-btn-primary-text); }
+.btn--primary:hover { background: var(--color-btn-primary-hover); }
+.btn--primary:active { transform: translateY(1px); }
+.btn--ghost { background: transparent; color: var(--color-btn-ghost-text);
+  border: 1px solid var(--color-btn-ghost-border); }
+.btn--ghost:hover { border-color: var(--color-text-secondary); }
+
+
+/* ===================================================================
+   REDUCED MOTION — collapse ALL motion to a clean static final state.
+   The living-system hero, count-ups, and choreography must honour this.
+   =================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

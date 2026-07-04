@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<script>document.documentElement.classList.add('js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The one number: how we pick the metric that decides a pilot — DPR Labs</title>
+<meta name="description" content="A good AI pilot lives or dies by a single honest metric chosen before any code is written. Here are the rules we use to pick it — and the vanity metrics we refuse." />
+<meta name="theme-color" content="#07090D" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The one number: how we pick the metric that decides a pilot" />
+<meta property="og:description" content="Choosing a single honest measure before we write a line of code — and the vanity metrics we refuse." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&family=Inter:wght@300..800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="../tokens.css" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<link rel="stylesheet" href="../hero.css" />
+<link rel="stylesheet" href="../sections.css" />
+<link rel="stylesheet" href="blog.css" />
+</head>
+
+<body id="top">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a href="../index.html" class="brand" aria-label="DPR Labs — home">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-word">DPR Labs</span>
+    <span class="brand-by">AI studio</span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="../method.html">How it works</a>
+    <a href="../proof.html">Proof</a>
+    <a href="../jarvis.html">Built on Jarvis</a>
+    <a href="index.html">Field Notes</a>
+    <a href="../about.html">About</a>
+    <button id="readmodeBtn" class="readmode" type="button" aria-pressed="false"
+      aria-label="Toggle light reading mode">
+      <span class="readmode__t">Light reading</span>
+    </button>
+  </nav>
+  <a href="../contact.html" class="btn btn-primary nav-cta">Book a call</a>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false"
+    aria-controls="mobileMenu" aria-label="Open menu">
+    <span class="nt-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <div class="mm-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+    <button class="mm-close" id="mmClose" type="button" aria-label="Close menu">&times;</button>
+    <nav class="mm-links" aria-label="Mobile">
+      <a href="../method.html">How it works</a>
+      <a href="../proof.html">Proof</a>
+      <a href="../jarvis.html">Built on Jarvis</a>
+      <a href="index.html">Field Notes</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html" class="mm-cta">Book a call</a>
+    </nav>
+  </div>
+</div>
+
+<main id="main">
+  <article class="post fn-wrap" id="article" data-theme="dark">
+    <div class="post__col">
+      <p class="post__breadcrumb"><a href="index.html">Field Notes</a> &rsaquo; Pilot method &amp; honest measurement</p>
+      <p class="post__tag">Pilot method &amp; honest measurement</p>
+      <h1 class="post__title">The one number: how we pick the metric that decides a pilot</h1>
+      <p class="post__dek">Every pilot we run is scored against a single number we agree on before we
+        build anything. Picking that number well is half the work. Here&rsquo;s how we do it.</p>
+      <div class="post__meta">
+        <time class="post__time" datetime="2026-06-24">June 24, 2026</time>
+        <span class="dot" aria-hidden="true"></span>
+        <span class="post__time">6 min read</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>DPR Labs team</span>
+      </div>
+
+      <div class="post__body">
+        <p>If a pilot has five goals, it has none. The moment success is fuzzy, every result can be spun as
+          a win, and nobody learns anything. So before we write a line of code, we agree on one number —
+          the number that, if it moves, makes the project obviously worth it, and if it doesn&rsquo;t, tells us
+          to stop. Choosing it is the most important hour of the whole pilot.</p>
+
+        <h2>What a good number looks like</h2>
+        <p>We test every candidate metric against four questions:</p>
+        <ul>
+          <li><strong>Does the business already care about it?</strong> The number should be one your team
+            would recognise on a Monday — hours spent, cost per case, error rate, time-to-answer. Not a
+            metric we invented to make AI look good.</li>
+          <li><strong>Can it move in weeks, not quarters?</strong> A pilot has two weeks. &ldquo;Revenue&rdquo; is real
+            but too slow and too noisy. &ldquo;Minutes to process one invoice&rdquo; moves now and points at revenue.</li>
+          <li><strong>Can you measure it without us?</strong> If only we can compute the number, you can&rsquo;t
+            trust it. We pick something your own team can re-measure after we&rsquo;re gone.</li>
+          <li><strong>Does it translate to money, time, or risk?</strong> The number has to ladder up to
+            something that matters: hours given back, money saved, mistakes avoided.</li>
+        </ul>
+
+        <div class="methodnote">
+          <span class="methodnote__k">Method note — the counting rules</span>
+          <p>Same definition before and after. A fresh sample the system hasn&rsquo;t seen. A human checks a
+            slice of the results. We write down the sample size and the caveats next to the number — a win
+            on <code>400</code> cases means something; a win on <code>4</code> means nothing.</p>
+        </div>
+
+        <p>A number that passes all four usually sounds boring. That&rsquo;s the point. Boring and countable beats
+          exciting and vague.</p>
+
+        <div class="pullstat">
+          <span class="pullstat__num" aria-hidden="true">1</span>
+          <span class="pullstat__label">One number, agreed before the build, measured the same way before
+            and after — on a sample the system has never seen.</span>
+        </div>
+
+        <h2>The vanity metrics we refuse</h2>
+        <p>Some numbers look like progress and measure nothing useful:</p>
+        <ul>
+          <li><strong>Model accuracy on a clean test set.</strong> Your data is not clean. A model that
+            scores 95% on a tidy benchmark can fall apart on your real Tuesday inputs.</li>
+          <li><strong>Benchmark scores.</strong> &ldquo;Beats GPT-X on Y&rdquo; is a press release, not a business
+            outcome. Nobody&rsquo;s afternoon got shorter because of it.</li>
+          <li><strong>Engagement / usage.</strong> People clicking the AI thing is not people getting work
+            done faster. We measure the work, not the tool.</li>
+          <li><strong>A single cherry-picked example.</strong> One amazing output proves the system can be
+            right, not that it usually is. We measure over a sample, never an anecdote.</li>
+        </ul>
+
+        <h2>How we count it honestly</h2>
+        <p>Once the number is chosen, the integrity is in the counting. We write down, in advance, what
+          would count as a <em>failure</em>. Naming the stop condition before we start is how we keep
+          ourselves honest when we&rsquo;re tempted to round a disappointing result up to a success.</p>
+
+        <h2>An example</h2>
+        <p>Take invoice processing. The tempting metric is &ldquo;extraction accuracy.&rdquo; The honest one is
+          <strong>minutes of human time per invoice</strong>, measured over a real batch, because that&rsquo;s
+          what the business feels and what your team can re-measure themselves. Accuracy is a means; the
+          minutes are the number. If the minutes drop and the error rate holds, that&rsquo;s a real win you can
+          bank — not a benchmark you have to take on faith.</p>
+
+        <h2>Why this protects you</h2>
+        <p>Agreeing the number up front moves the power to you. You&rsquo;re not being sold a feeling about AI;
+          you&rsquo;re being shown a measurement you helped define and can reproduce. It&rsquo;s also why we can offer
+          a guarantee: when &ldquo;did it work&rdquo; has one clear answer, we&rsquo;re comfortable tying our final invoice
+          to it.</p>
+      </div>
+
+      <div class="author">
+        <span class="author__avatar" aria-hidden="true"></span>
+        <div class="author__body">
+          <strong>Written by the DPR Labs team.</strong> We build AI systems that run in production and we
+          score them against one honest number. We publish the method so you can check it.
+          <span class="author__links">
+            <a href="../about.html">About the studio</a>
+            <a href="../proof.html">See our proof</a>
+            <a href="index.html">More Field Notes</a>
+          </span>
+        </div>
+      </div>
+
+      <aside class="postcta">
+        <h2>Not sure what your number is?</h2>
+        <p>That&rsquo;s the first thing we&rsquo;d work out together. Tell us the workflow that eats your team&rsquo;s time
+          and we&rsquo;ll propose the one number we&rsquo;d aim to move — and exactly how we&rsquo;d measure it.</p>
+        <a href="../contact.html" class="btn btn-primary">Book a scoping call <span aria-hidden="true">&rarr;</span></a>
+      </aside>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="section-wrap">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-word">DPR Labs</span>
+        <p class="footer__line">Agentic AI that ships, measured by one honest number.</p>
+      </div>
+      <div class="footer__col"><h3>Studio</h3>
+        <a href="../method.html">How it works</a><a href="../proof.html">Proof</a>
+        <a href="../jarvis.html">How we build</a><a href="../about.html">About</a></div>
+      <div class="footer__col"><h3>Field Notes</h3>
+        <a href="index.html">All posts</a>
+        <a href="the-one-number.html">The one number</a>
+        <a href="no-lock-in.html">No lock-in</a>
+        <a href="two-week-pilot.html">The two-week pilot</a></div>
+      <div class="footer__col"><h3>Get started</h3>
+        <a href="../contact.html">Book a scoping call</a>
+        <a href="mailto:hello@dprlabs.io">Email us</a></div>
+    </div>
+    <p class="footer__muted">&copy; <span id="year">2026</span> DPR Labs. Real proof only — we publish how we measure.</p>
+  </div>
+</footer>
+
+<script src="blog.js" defer></script>
+</body>
+</html>

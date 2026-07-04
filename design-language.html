@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DPR Labs — Design System Reference</title>
+<meta name="description" content="The single design language for DPR Labs: tokens, type, colour, spacing, motion. Rendered proof of tokens.css." />
+<meta name="robots" content="noindex" />
+
+<!-- ONE type system: Space Grotesk (display) · Inter (body) · JetBrains Mono (code/IDs) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" />
+
+<link rel="stylesheet" href="tokens.css" />
+<style>
+  /* Page-local layout for the reference only — all values from tokens. */
+  body { padding-bottom: var(--space-5xl); }
+
+  .sg-nav {
+    position: sticky; top: 0; z-index: var(--z-nav);
+    height: var(--layout-nav-h); display: flex; align-items: center;
+    gap: var(--space-lg); padding-inline: var(--layout-gutter);
+    background: hsl(220 16% 7% / 0.72); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+  .sg-nav b { font-family: var(--font-display); font-weight: 600; letter-spacing: var(--ls-heading); }
+  .sg-nav .dot { display: inline-block; width: 8px; height: 8px; border-radius: var(--radius-pill);
+    background: var(--color-accent); margin-right: var(--space-xs); vertical-align: middle; }
+  .sg-nav .mono { margin-left: auto; }
+
+  /* Hero: ONE dominant zone, asymmetric, oversized display + vast space */
+  .sg-hero { position: relative; padding-block: var(--space-4xl) var(--space-3xl); }
+  .sg-hero .eyebrow { color: var(--color-accent); margin-bottom: var(--space-lg); }
+  .sg-hero h1 { font-size: var(--fs-display); max-width: 16ch; margin-bottom: var(--space-lg); }
+  .sg-hero h1 em { font-style: normal; color: var(--color-accent); }
+  .sg-hero p { color: var(--color-text-secondary); font-size: var(--fs-md);
+    line-height: var(--lh-lead); max-width: 52ch; }
+  .sg-hero .actions { display: flex; gap: var(--space-md); margin-top: var(--space-xl); flex-wrap: wrap; }
+
+  section.block { padding-block: var(--space-2xl); border-top: 1px solid var(--color-hairline); }
+  .block > .head { display: flex; align-items: baseline; gap: var(--space-md); margin-bottom: var(--space-xl); }
+  .block > .head h2 { font-size: var(--fs-h2); }
+  .block > .head .mono { margin-left: auto; }
+
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: var(--space-md); }
+  .swatch { border: 1px solid var(--color-hairline); border-radius: var(--radius-md); overflow: hidden; background: var(--color-surface); }
+  .swatch .chip { height: 88px; }
+  .swatch .meta { padding: var(--space-sm) var(--space-md); }
+  .swatch .name { font-weight: 600; font-size: var(--fs-xs); }
+  .swatch .val { color: var(--color-text-tertiary); font-size: var(--fs-2xs); }
+  .swatch .ratio { display: inline-block; margin-top: var(--space-2xs); font-family: var(--font-mono);
+    font-size: 11px; color: var(--color-text-secondary); }
+
+  .type-row { display: grid; grid-template-columns: 92px 1fr; gap: var(--space-lg);
+    align-items: baseline; padding-block: var(--space-sm); border-bottom: 1px solid var(--color-border-subtle); }
+  .type-row .mono { color: var(--color-text-tertiary); }
+  .display-xl { font-family: var(--font-display); font-size: var(--fs-display); line-height: var(--lh-display); letter-spacing: var(--ls-display); }
+  .display-1 { font-family: var(--font-display); font-size: var(--fs-2xl); }
+  .display-2 { font-family: var(--font-display); font-size: var(--fs-xl); }
+  .body-lead { font-size: var(--fs-md); color: var(--color-text-secondary); line-height: var(--lh-lead); }
+  .body { font-size: var(--fs-sm); color: var(--color-text-secondary); }
+  .code { font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--color-text-secondary); }
+
+  .space-scale { display: flex; flex-direction: column; gap: var(--space-sm); }
+  .space-scale .row { display: grid; grid-template-columns: 96px 1fr; align-items: center; gap: var(--space-md); }
+  .space-scale .bar { height: 14px; background: var(--color-accent-line); border-left: 2px solid var(--color-accent); border-radius: 0 var(--radius-xs) var(--radius-xs) 0; }
+
+  /* The ONE number — dominant focal figure */
+  .number-demo { display: grid; grid-template-columns: var(--layout-rail) 1fr; gap: var(--space-2xl); align-items: end; }
+  .number-demo .big { font-family: var(--font-body); font-weight: 700; color: var(--color-number);
+    font-size: clamp(3.5rem, 2rem + 8vw, 7rem); line-height: 0.92; letter-spacing: var(--ls-display);
+    font-variant-numeric: var(--fvn-tabular); }
+  .number-demo .cap { color: var(--color-text-secondary); }
+  .number-demo .cap b { color: var(--color-text-primary); font-weight: 600; }
+
+  .motion-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap: var(--space-md); }
+  .motion-card { border: 1px solid var(--color-hairline); border-radius: var(--radius-md); padding: var(--space-md); background: var(--color-surface); }
+  .motion-card .mono { color: var(--color-accent); }
+
+  .rules { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); }
+  .rules .col h3 { font-size: var(--fs-lg); margin-bottom: var(--space-md); }
+  .rules li { display: flex; gap: var(--space-sm); color: var(--color-text-secondary); padding-block: var(--space-2xs); }
+  .rules li::before { content: ''; flex: 0 0 auto; width: 6px; height: 6px; margin-top: 9px; border-radius: var(--radius-pill); }
+  .rules .do li::before { background: var(--color-positive); }
+  .rules .dont li::before { background: var(--color-danger); }
+
+  @media (max-width: 720px) {
+    .number-demo, .rules { grid-template-columns: 1fr; }
+    .type-row { grid-template-columns: 64px 1fr; }
+  }
+</style>
+</head>
+<body class="grain">
+
+<nav class="sg-nav">
+  <b><span class="dot"></span>DPR Labs</b>
+  <span class="text-tertiary" style="font-size:var(--fs-xs)">Design System</span>
+  <span class="mono">tokens.css · v1</span>
+</nav>
+
+<header class="sg-hero container">
+  <p class="eyebrow">Direction C — Living System</p>
+  <h1>An engineered <em>instrument</em>, not another AI hero.</h1>
+  <p>One token file. One type system. One reserved accent. Depth from value and light,
+     hairline detail over heavy borders, motion that is slow and purposeful. This page
+     renders <span class="mono">tokens.css</span> — it is the proof the system is real.</p>
+  <div class="actions">
+    <button class="btn btn--primary">Book a 2-week pilot</button>
+    <button class="btn btn--ghost">See how a pilot works →</button>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="block" id="color">
+    <div class="head"><h2>Colour</h2><span class="mono">graphite canvas · one warm accent · WCAG 2.2 AA</span></div>
+    <div class="swatches">
+      <div class="swatch"><div class="chip" style="background:var(--color-bg)"></div><div class="meta"><div class="name">bg / canvas</div><div class="val">#0F1115</div></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-surface)"></div><div class="meta"><div class="name">surface</div><div class="val">#16181D</div></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-surface-high)"></div><div class="meta"><div class="name">surface-high</div><div class="val">#1F2228</div></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-hairline)"></div><div class="meta"><div class="name">hairline</div><div class="val">#2D3239</div></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-border-ui)"></div><div class="meta"><div class="name">border-ui</div><div class="val">#5F6977</div><span class="ratio">3.39:1 UI</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-text-primary)"></div><div class="meta"><div class="name">text-primary</div><div class="val">#F2F5F7</div><span class="ratio">17.3:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-text-secondary)"></div><div class="meta"><div class="name">text-secondary</div><div class="val">#AEB6C2</div><span class="ratio">9.26:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-text-tertiary)"></div><div class="meta"><div class="name">text-tertiary</div><div class="val">#818C9C</div><span class="ratio">5.56:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-accent)"></div><div class="meta"><div class="name">accent (amber)</div><div class="val">#F6A328</div><span class="ratio">9.20:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-accent-strong)"></div><div class="meta"><div class="name">accent-strong / focus</div><div class="val">#FBC14B</div><span class="ratio">11.5:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-accent-2)"></div><div class="meta"><div class="name">accent-2 (orange)</div><div class="val">#EA6A2A</div><span class="ratio">5.92:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-danger)"></div><div class="meta"><div class="name">danger</div><div class="val">#E5484D</div><span class="ratio">icon+text</span></div></div>
+    </div>
+  </section>
+
+  <section class="block" id="type">
+    <div class="head"><h2>Type</h2><span class="mono">Space Grotesk · Inter · JetBrains Mono</span></div>
+    <div class="type-row"><span class="mono">display<br>76→40</span><span class="display-xl">Agentic AI that ships.</span></div>
+    <div class="type-row"><span class="mono">h1 · 39</span><span class="display-1">Proven by one honest number</span></div>
+    <div class="type-row"><span class="mono">h2 · 31</span><span class="display-2">Four honest steps, week by week</span></div>
+    <div class="type-row"><span class="mono">lead · 20</span><span class="body-lead">We run a two-week pilot on your biggest time-sink and agree the number before we start.</span></div>
+    <div class="type-row"><span class="mono">body · 16</span><span class="body">Body copy is Inter with tabular figures on by default, so every 305, 42%, and $8k–$15k aligns.</span></div>
+    <div class="type-row"><span class="mono">mono · 14</span><span class="code">run_id=8fb6403b · step 04/12 · 2026-07-04T09:41Z · files_written=305</span></div>
+  </section>
+
+  <section class="block" id="number">
+    <div class="head"><h2>The one number</h2><span class="mono">Inter heavy · tabular · amber · never mono</span></div>
+    <div class="number-demo">
+      <div class="big">305</div>
+      <p class="cap"><b>files shipped in one real run.</b> The reserved accent is spent on the figure that
+      carries the pitch — nowhere decorative. Hierarchy is earned by size, weight and space, not colour swaps.</p>
+    </div>
+  </section>
+
+  <section class="block" id="space">
+    <div class="head"><h2>Spacing</h2><span class="mono">4px base · 8px rhythm</span></div>
+    <div class="space-scale">
+      <div class="row"><span class="mono">xs · 8</span><div class="bar" style="width:8px"></div></div>
+      <div class="row"><span class="mono">sm · 12</span><div class="bar" style="width:12px"></div></div>
+      <div class="row"><span class="mono">md · 16</span><div class="bar" style="width:16px"></div></div>
+      <div class="row"><span class="mono">lg · 24</span><div class="bar" style="width:24px"></div></div>
+      <div class="row"><span class="mono">xl · 32</span><div class="bar" style="width:32px"></div></div>
+      <div class="row"><span class="mono">2xl · 48</span><div class="bar" style="width:48px"></div></div>
+      <div class="row"><span class="mono">3xl · 64</span><div class="bar" style="width:64px"></div></div>
+      <div class="row"><span class="mono">4xl · 96</span><div class="bar" style="width:96px"></div></div>
+    </div>
+  </section>
+
+  <section class="block" id="motion">
+    <div class="head"><h2>Motion</h2><span class="mono">slow · eased · no bounce · reduced-motion collapses</span></div>
+    <div class="motion-grid">
+      <div class="motion-card"><div class="mono">micro · 150ms</div><p class="body">Hover, focus, toggles.</p></div>
+      <div class="motion-card"><div class="mono">base · 300ms</div><p class="body">Enters, accordions.</p></div>
+      <div class="motion-card"><div class="mono">slow · 500ms</div><p class="body">Complex reveals.</p></div>
+      <div class="motion-card"><div class="mono">choreo · 800ms</div><p class="body">Hero / scroll sequence.</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="rules">
+    <div class="head"><h2>House rules</h2><span class="mono">strip the chrome, hierarchy still reads</span></div>
+    <div class="rules">
+      <div class="col do"><h3>Do</h3><ul>
+        <li>One zone dominates each screen (60%+ of attention).</li>
+        <li>Hairline 1px detail; depth from value and light.</li>
+        <li>Restrained palette; spend the amber only on the number and one active state.</li>
+        <li>Honest, anonymised-but-real proof only.</li>
+      </ul></div>
+      <div class="col dont"><h3>Never</h3><ul>
+        <li>Glow orbs, neon mesh, particle fields, rainbow gradients.</li>
+        <li>Symmetric equal-card bento or cockpit rails.</li>
+        <li>Mono for prices, percentages, counters or headings.</li>
+        <li>Hierarchy from swapping font family.</li>
+      </ul></div>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

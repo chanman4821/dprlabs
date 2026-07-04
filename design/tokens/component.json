@@ -1,0 +1,91 @@
+{
+  "$description": "DPR Labs — TIER 3 COMPONENT tokens (W3C DTCG). One direction only: component -> semantic (never straight to a palette primitive) for COLOR; dimension/motion component tokens reference tier-1 scales. Mode-agnostic: color references resolve through the semantic roles, so components adapt to light/dark   automatically. Top-level groups are the component names (no wrapper) so CSS vars read --button-*, --nav-*, etc.",
+      "button": {
+      "primary": {
+        "bg":       { "$type": "color", "$value": "{color.accent}" },
+        "bg-hover": { "$type": "color", "$value": "{color.accent-hover}" },
+        "text":     { "$type": "color", "$value": "{color.text.on-accent}" },
+        "radius":   { "$type": "dimension", "$value": "{radius.md}" },
+        "pad-y":    { "$type": "dimension", "$value": "{space.3}" },
+        "pad-x":    { "$type": "dimension", "$value": "{space.5}" }
+      },
+      "secondary": {
+        "bg":       { "$type": "color", "$value": "{color.surface-raised}" },
+        "bg-hover": { "$type": "color", "$value": "{color.surface}" },
+        "text":     { "$type": "color", "$value": "{color.text.primary}" },
+        "border":   { "$type": "color", "$value": "{color.border-interactive}" }
+      }
+    },
+
+    "nav": {
+      "bg":     { "$type": "color", "$value": "{color.surface}" },
+      "border": { "$type": "color", "$value": "{color.border}" },
+      "text":   { "$type": "color", "$value": "{color.text.secondary}" },
+      "text-active": { "$type": "color", "$value": "{color.text.primary}" },
+      "height": { "$type": "dimension", "$value": "{layout.nav-height}" }
+    },
+
+    "card": {
+      "bg":      { "$type": "color", "$value": "{color.surface}" },
+      "border":  { "$type": "color", "$value": "{color.border}" },
+      "radius":  { "$type": "dimension", "$value": "{radius.lg}" },
+      "padding": { "$type": "dimension", "$value": "{space.6}" }
+    },
+
+    "input": {
+      "bg":            { "$type": "color", "$value": "{color.surface}" },
+      "text":          { "$type": "color", "$value": "{color.text.primary}" },
+      "placeholder":   { "$type": "color", "$value": "{color.text.tertiary}" },
+      "border":        { "$type": "color", "$value": "{color.border-interactive}" },
+      "border-focus":  { "$type": "color", "$value": "{color.focus}" },
+      "radius":        { "$type": "dimension", "$value": "{radius.md}" },
+      "pad-y":         { "$type": "dimension", "$value": "{space.3}" },
+      "pad-x":         { "$type": "dimension", "$value": "{space.4}" }
+    },
+
+    "badge": {
+      "bg":     { "$type": "color", "$value": "{color.surface-raised}" },
+      "text":   { "$type": "color", "$value": "{color.text.secondary}" },
+      "border": { "$type": "color", "$value": "{color.border}" },
+      "radius": { "$type": "dimension", "$value": "{radius.pill}" }
+    },
+
+    "accordion": {
+      "border": { "$type": "color", "$value": "{color.border}" },
+      "text":   { "$type": "color", "$value": "{color.text.primary}" },
+      "marker": { "$type": "color", "$value": "{color.accent-text}" }
+    },
+
+    "focus-ring": {
+      "color":  { "$type": "color", "$value": "{color.focus}" },
+      "width":  { "$type": "dimension", "$value": "{space.2xs}" },
+      "offset": { "$type": "dimension", "$value": "{space.2xs}" }
+    },
+
+    "code": {
+      "bg":     { "$type": "color", "$value": "{color.bg-sunken}" },
+      "text":   { "$type": "color", "$value": "{color.text.secondary}" },
+      "border": { "$type": "color", "$value": "{color.border}" },
+      "font":   { "$type": "fontFamily", "$value": "{font.mono}" }
+    },
+
+    "figure": {
+      "number-color":   { "$type": "color", "$value": "{color.number}", "$description": "the honest number" },
+      "number-font":    { "$type": "fontFamily", "$value": "{font.body}", "$description": "body font, NOT mono" },
+      "number-weight":  { "$type": "fontWeight", "$value": "{fw.semibold}" },
+      "label-color":    { "$type": "color", "$value": "{color.text.tertiary}" },
+      "label-tracking": { "$type": "dimension", "$value": "{ls.label}" }
+    },
+
+    "status": {
+      "positive-fg":  { "$type": "color", "$value": "{color.status.positive}" },
+      "critical-fg":  { "$type": "color", "$value": "{color.status.critical}" },
+      "attention-fg": { "$type": "color", "$value": "{color.status.attention}" },
+      "surface":      { "$type": "color", "$value": "{color.surface}" }
+    },
+
+    "link": {
+      "color":       { "$type": "color", "$value": "{color.link}" },
+      "color-hover": { "$type": "color", "$value": "{color.link-hover}" }
+    }
+}

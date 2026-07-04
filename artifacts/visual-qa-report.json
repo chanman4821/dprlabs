@@ -1,0 +1,116 @@
+{
+  "http_status": 200,
+  "console": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x6584001b9a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x6584001b9a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x6584001b9a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x6584001b9a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ],
+  "failed_requests": [],
+  "http_errors": [],
+  "diag": {
+    "canvasCount": 3,
+    "canvases": [
+      {
+        "id": "bg-gl",
+        "cssW": 1440,
+        "cssH": 926.71875,
+        "pxW": 1440,
+        "pxH": 900
+      },
+      {
+        "id": "bg-parts",
+        "cssW": 1440,
+        "cssH": 926.71875,
+        "pxW": 1440,
+        "pxH": 900
+      },
+      {
+        "id": "meshCanvas",
+        "cssW": 1440,
+        "cssH": 926.71875,
+        "pxW": 1440,
+        "pxH": 927
+      }
+    ],
+    "bgGlPresent": true,
+    "bgGlHasWebGL": true,
+    "heroBg": "rgba(248, 246, 241, 0.82)",
+    "h1Text": "Agentic AI that ships real systems, proven by one honest number.",
+    "h1Color": "rgb(232, 238, 245)",
+    "bodyBg": "rgb(247, 244, 238)",
+    "ctaCandidates": [
+      {
+        "t": "Skip to content",
+        "cls": "skip-link"
+      },
+      {
+        "t": "DPR Labs\nAI STUDIO",
+        "cls": "brand"
+      },
+      {
+        "t": "How it works",
+        "cls": ""
+      },
+      {
+        "t": "Proof",
+        "cls": ""
+      },
+      {
+        "t": "Built on Jarvis",
+        "cls": ""
+      },
+      {
+        "t": "Field Notes",
+        "cls": ""
+      },
+      {
+        "t": "About",
+        "cls": ""
+      },
+      {
+        "t": "Book a call",
+        "cls": "btn btn-primary nav-cta magnetic"
+      },
+      {
+        "t": "Book a 2-week pilot",
+        "cls": "hero__btn-primary"
+      },
+      {
+        "t": "See how a pilot works\n\u2192",
+        "cls": "hero__btn-quiet"
+      },
+      {
+        "t": "See how we work \u2192",
+        "cls": ""
+      },
+      {
+        "t": "Book a pilot\n\u2192",
+        "cls": "btn btn-primary btn-block magnetic"
+      }
+    ],
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "overflow": false,
+    "bodyTextSample": "Skip to content\nDPR Labs\nAI STUDIO\nHow it works\nProof\nBuilt on Jarvis\nField Notes\nAbout\nBook a call\n\nAGENTIC AI CONSULTING \u00b7 MEASURED HONESTLY\n\nAgentic AI that ships real systems, proven by one honest number.\n\nWe run a two-week pilot on your biggest time-sink. We agree one number before we start. We build a working AI system and hand it to your team to own \u2014 no lock-in, no slide deck.\n\nConnect founders to the right investors\nShip your product\n\n305\ndays to a working pilot\nBook a 2-week pilot\nSee how a pilot works\n\u2192\n\nA small senior team. A few pilots so far. We publish exactly how we measure\u00a0\u2014 a",
+    "hasNaN": false,
+    "hasUndefined": false
+  },
+  "mobile_overflow": {
+    "sw": 390,
+    "iw": 390,
+    "over": false
+  }
+}

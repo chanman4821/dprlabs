@@ -1,0 +1,8 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Transient tool output
+.playwright-mcp/
+__pycache__/
+*.pyc
