@@ -19,7 +19,13 @@ const banner = (title) =>
   `   Tiers: palette (primitive) -> color roles (semantic) -> components.\n` +
   `   ===================================================================== */\n`;
 
-function config({ source, cssFile, selector, jsonFile }) {
+function config({ source, cssFile, selector, jsonFile, cssFilter }) {
+  const cssFileEntry = {
+    destination: cssFile,
+    format: 'css/variables',
+    options: { selector, outputReferences: true },
+  };
+  if (cssFilter) cssFileEntry.filter = cssFilter;
   return {
     source,
     log: { warnings: 'warn', errors: 'throw', verbosity: 'verbose' },
@@ -27,13 +33,7 @@ function config({ source, cssFile, selector, jsonFile }) {
       css: {
         transforms: NAME_ONLY,
         buildPath: `${DIST}/`,
-        files: [
-          {
-            destination: cssFile,
-            format: 'css/variables',
-            options: { selector, outputReferences: true },
-          },
-        ],
+        files: [cssFileEntry],
       },
       json: {
         transforms: NAME_ONLY,
@@ -63,6 +63,7 @@ async function build() {
       cssFile: '_light.css',
       selector: '[data-theme="light"]',
       jsonFile: 'tokens.light.json',
+      cssFilter: (token) => (token.filePath || '').replace(/\\/g, '/').endsWith('tokens/semantic.light.json'),
     }),
   );
   await light.buildAllPlatforms();
