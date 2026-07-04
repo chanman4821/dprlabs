@@ -41,7 +41,7 @@ Maps to **"inconsistent execution"** and non-negotiable **#2 (one token file)**.
 | --- | --- | --- | --- |
 | Cool graphite + amber | `tokens.css` (linked by every live page) | `--p-graphite-*`, teal glow remnants | **linked, but wrong palette** |
 | Cream paper + green + Fraunces | `styles.css` (63 KB) | `--primary` green, `--accent` `#C6913E` | **dead** — only `index.cream-backup.html:20` links it |
-| Warm near-black + amber (new) | `design/dist/tokens.css` | warm `#131210` + amber `#F6AA28`, DTCG-built | **the target** — this phase |
+| Warm near-black + amber + slate (new) | `design/dist/tokens.css` | warm `#131210` + amber `#EFA22E` + slate accent `#8FA7B7`, DTCG-built | **the target** — this phase |
 
 The linked `tokens.css` still carries deprecated glow tokens neutralised to `transparent`
 (`tokens.css:317` `--color-accent-glow`, `:318` `--color-accent-glow-lg` — "was teal glow" /
@@ -115,9 +115,31 @@ older CSS (`index.new.html:23–26` tokens/hero/sections; `index.cream-backup.ht
 
 ---
 
+---
+
+## Finding 7 — Prior token build targeted the WRONG brief direction
+Maps to **"inconsistent execution"** and non-negotiable **#2 (use the design tokens)**.
+
+The repo's first token build (commits `f846f81`, `d708a14`) implemented the **Direction A**
+palette from the *operator cockpit* screen — primary amber `hsl(38 92% 56%)` + a warm **orange**
+secondary `hsl(30 86% 52%)` (`primitive.json` labelled both "AUTHORITATIVE"). But this task is the
+**Direction B** *DPR Labs buyer site*, whose authoritative `DESIGN TOKENS` block specifies primary
+amber **`36 86% 56%`** and a cool slate-blue accent **`205 22% 64%`** (body **Inter**). Two warm
+accents (amber + orange) also risk the "warm-glow / too-AI" read the owner banned; a cool slate
+complements the amber and reads as engineered restraint.
+
+**Fix (this phase):** re-anchor amber to `36 86% 56%`, replace orange with a `205` slate ramp, add
+the missing `--primary-foreground` / `--accent-foreground` inks, and emit the exact shadcn HSL
+triplets from the same source. See `MIGRATION.md §0`.
+
+---
+
 ## Resolution (this phase)
 One DTCG token system under `design/` is now the single source of truth:
 `primitive → semantic → component`, built to `design/dist/tokens.css`, gated by `npm run verify`
-(lint: 0 violations · contrast: 38/38 pairings WCAG 2.2 AA in dark + light). Type is Space Grotesk
-+ Inter + JetBrains Mono. `design-language.html` renders this file as living proof. The consolidation
-and page phases execute `MIGRATION.md` on top of it — they do not invent new colours, fonts, or sizes.
+(lint: 0 violations · contrast: **42/42** pairings WCAG 2.2 AA in dark + light). Palette is the
+authoritative Direction-B set — warm canvas `#131210`, amber primary `#EFA22E` (36 86% 56%), cool
+slate accent `#8FA7B7` (205 22% 64%) — with a shadcn/ui HSL-triplet compatibility layer asserted
+equal to the DTCG primitives. Type is Space Grotesk + Inter + JetBrains Mono. `design-language.html`
+renders this file as living proof. The consolidation and page phases execute `MIGRATION.md` on top
+of it — they do not invent new colours, fonts, or sizes.

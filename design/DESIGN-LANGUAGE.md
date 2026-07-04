@@ -43,28 +43,40 @@ the wrong way. The contrast audit (`npm run contrast`) fails if any text/UI pair
 
 ## Color
 
-Warm, dark, expensive-restraint. Near-black warm canvas, ONE reserved accent: amber.
-All brand values below come from the brief and are fixed.
+Warm, dark, expensive-restraint. Near-black warm canvas, ONE reserved brand accent (amber) plus
+ONE cool complementary accent (slate-blue) for secondary emphasis and data. All brand values below
+come from the DPR Labs brief (Direction B) and are fixed.
 
 | Role | Token | Dark | Light |
 | --- | --- | --- | --- |
 | Canvas | `--color-bg` | `#131210` (hsl 30 9% 7%) | warm paper `#FAF8F5` |
-| Surface / raised | `--color-surface` / `--color-surface-raised` | `#1A1816` / `#22201D` | `#FDFDFB` |
-| Text primary / secondary / tertiary | `--color-text-primary/-secondary/-tertiary` | `#F4F0EB` / `#C5BDB5` / `#A29990` | dark inks |
+| Surface / raised | `--color-surface` / `--color-surface-raised` | `#1C1A17` (30 8% 10%) / `#24211E` (28 8% 13%) | `#FDFDFB` |
+| Text primary / secondary / tertiary | `--color-text-primary/-secondary/-tertiary` | `#F1EEE9` / `#C5BDB5` / `#A79F95` | dark inks |
 | Hairline / strong / interactive border | `--color-border` / `--color-border-strong` / `--color-border-interactive` | warm grays | paper grays |
-| **Accent (amber)** | `--color-accent` | `#F6AA28` (hsl 38 92% 56%) | same fill |
-| Accent secondary (orange) | `--color-accent-secondary` | `#EE851B` (hsl 30 86% 52%) | dark amber |
-| The one honest number | `--color-number` | `#F6AA28` | `#A46104` |
+| **Accent (amber, primary)** | `--color-accent` | `#EFA22E` (hsl 36 86% 56%) | same fill |
+| **Accent (slate, cool secondary)** | `--color-accent-secondary` / `--color-accent-cool` | `#8FA7B7` (hsl 205 22% 64%) | dark slate `#405A6D` (text) / same chip |
+| The one honest number | `--color-number` | `#EFA22E` | `#955B04` |
 
 **Two amber roles — do not mix them up:**
-- `--color-accent` is a **fill**. Put `--color-text-on-accent` (dark) on top of it. Buttons, chips.
+- `--color-accent` is a **fill**. Put `--color-text-on-accent` (dark `#1D140C`) on top of it. Buttons, chips.
 - `--color-accent-text` / `--color-number` / `--color-link` / `--color-focus` are amber used as **text,
-  icons, hairlines, or the number** directly on the page. In light mode they darken to `#A46104` so they
+  icons, hairlines, or the number** directly on the page. In light mode they darken to `#955B04` so they
   stay readable on paper. Never draw amber text with `--color-accent`.
 
+**Cool slate accent (the reserved secondary):** `#8FA7B7` (hsl 205 22% 64%) is the complementary cool
+tone — use `--color-accent-secondary` for slate text/graphics on the dark canvas (flips to `#405A6D` on
+paper), and `--color-accent-cool` as a slate chip/hover fill with `--color-text-on-accent-cool` (`#17232C`)
+text. It exists to balance the warm amber without a second warm hue; keep it restrained.
+
 **Status (functional only, never brand):** `--color-status-positive` (green), `--color-status-critical`
-(red), `--color-status-attention` (= the amber, for "awaiting a decision"). Each has a text tone and a
-`-ui` tone for graphics. **Never rely on color alone** — pair it with an icon, label, or shape.
+(red), `--color-status-attention` (= the amber, for "awaiting a decision"), and `--color-danger` (dark-red
+destructive fill with `--color-text-on-danger`). Each status has a text tone and a `-ui` tone for graphics.
+**Never rely on color alone** — pair it with an icon, label, or shape.
+
+**shadcn/ui components** consume the same palette via HSL-triplet aliases (`hsl(var(--primary))`,
+`hsl(var(--background))`, `hsl(var(--accent))`, `--ring`, `--destructive`, …). Those variables are emitted
+in the same `tokens.css` and are asserted at build time to equal the DTCG primitives they mirror — so
+shadcn and the hand-written `--color-*` roles can never drift.
 
 **Banned (brand rule):** teal/cyan glow, neon gradient mesh, glowing orbs, particle fields, rainbow
 gradients. There are no glow tokens. Depth comes from surface value + a 1px hairline, not stacked shadows
@@ -116,6 +128,6 @@ Slow, purposeful, eased. No bounce, no gratuitous parallax.
 ## Accessibility floor (built in)
 
 - Body text and the number: contrast >= 4.5:1. Large text, UI, focus rings, interactive borders: >= 3:1.
-  Verified in both modes by `npm run contrast` (38 pairings, all pass).
+  Verified in both modes by `npm run contrast` (42 pairings, all pass).
 - Focus ring: `--focus-ring-color` (amber), `--focus-ring-width` (2px), `--focus-ring-offset` (2px). Always visible.
 - Never use color as the only signal. Keep semantic HTML and one H1 per page (page phase).

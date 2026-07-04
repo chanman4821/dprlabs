@@ -1,5 +1,4 @@
 {
-  "$description": "DPR Labs — TIER 3 COMPONENT tokens (W3C DTCG). One direction only: component -> semantic (never straight to a palette primitive) for COLOR; dimension/motion component tokens reference tier-1 scales. Mode-agnostic: color references resolve through the semantic roles, so components adapt to light/dark   automatically. Top-level groups are the component names (no wrapper) so CSS vars read --button-*, --nav-*, etc.",
       "button": {
       "primary": {
         "bg":       { "$type": "color", "$value": "{color.accent}" },

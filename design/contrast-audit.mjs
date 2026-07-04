@@ -48,9 +48,12 @@ const pairs = [
   // Text sitting on an amber fill
   ['on-accent on accent fill',  'color-text-on-accent', 'color-accent',       BODY],
   ['on-accent on accent-hover', 'color-text-on-accent', 'color-accent-hover', BODY],
+  ['on-accent-cool on cool chip','color-text-on-accent-cool','color-accent-cool', BODY],
+  ['on-danger on danger fill',  'color-text-on-danger', 'color-danger',       BODY],
   ['selection text on selection', 'color-selection-text','color-selection-bg', BODY],
+  // Cool slate accent as TEXT/graphic on the page canvas (flips per mode)
+  ['accent-cool text on bg',    'color-accent-secondary','color-bg', BODY],
   // UI / graphic / focus / border (>= 3:1)
-  ['accent-secondary on bg',    'color-accent-secondary','color-bg', UI],
   ['status-positive-ui on bg',  'color-status-positive-ui','color-bg', UI],
   ['status-critical-ui on bg',  'color-status-critical-ui','color-bg', UI],
   ['focus ring on bg',          'color-focus',          'color-bg', UI],

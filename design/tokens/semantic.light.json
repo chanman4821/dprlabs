@@ -1,5 +1,4 @@
 {
-  "$description": "DPR Labs — TIER 2 SEMANTIC color roles (LIGHT / reading mode). Same paths as semantic.json so EVERY adaptable role has a value in BOTH declared modes (no wrong-fallback gaps). Emitted under [data-theme='light']. Amber GRAPHIC/TEXT roles flip to the darker amber.ink so they stay >=4.5:1 on warm paper; FILL roles keep the bright amber with dark on-accent text.",
   "color": {
     "$type": "color",
 
@@ -17,13 +16,13 @@
       "primary":   { "$value": "{palette.paper.text-primary}" },
       "secondary": { "$value": "{palette.paper.text-secondary}" },
       "tertiary":  { "$value": "{palette.paper.text-tertiary}" },
-      "on-accent": { "$value": "{palette.warm.900}" }
+      "on-accent": { "$value": "{palette.amber.on}" }
     },
 
     "accent":           { "$value": "{palette.amber.500}", "$description": "FILL stays bright; dark text sits on it" },
     "accent-hover":     { "$value": "{palette.amber.600}" },
-    "accent-text":      { "$value": "{palette.amber.ink}", "$description": "amber as TEXT on paper (4.6:1)" },
-    "accent-secondary": { "$value": "{palette.amber.ink}", "$description": "orange is too light on paper — use dark amber" },
+    "accent-text":      { "$value": "{palette.amber.ink}", "$description": "amber as TEXT on paper (5.24:1)" },
+    "accent-secondary": { "$value": "{palette.slate.700}", "$description": "cool slate accent as TEXT/graphic on paper (6.79:1); dark slate for legibility" },
 
     "number":     { "$value": "{palette.amber.ink}" },
     "link":       { "$value": "{palette.amber.ink}" },

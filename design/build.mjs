@@ -19,6 +19,119 @@ const banner = (title) =>
   `   Tiers: palette (primitive) -> color roles (semantic) -> components.\n` +
   `   ===================================================================== */\n`;
 
+// ---- shadcn/ui compatibility layer ------------------------------------------
+// The DPR brief supplies its palette as shadcn-style HSL triplets (e.g.
+// `--primary: 36 86% 56%`) consumed as `hsl(var(--primary))`. We emit those exact
+// variables so shadcn components "just work", but each one is proven to equal the
+// DTCG primitive its role resolves to (assertion below) — one source of truth, two
+// access conventions. dark triplets are the brief-authoritative values; light
+// triplets are derived from the built light palette.
+const SHADCN_DARK = [
+  // [shadcn var, flat token key it must equal, authoritative HSL triplet]
+  ['--background', 'color-bg', '30 9% 7%'],
+  ['--foreground', 'color-text-primary', '38 22% 93%'],
+  ['--card', 'color-surface', '30 8% 10%'],
+  ['--card-foreground', 'color-text-primary', '38 22% 93%'],
+  ['--popover', 'color-surface', '30 8% 10%'],
+  ['--popover-foreground', 'color-text-primary', '38 22% 93%'],
+  ['--primary', 'color-accent', '36 86% 56%'],
+  ['--primary-foreground', 'color-text-on-accent', '30 40% 8%'],
+  ['--secondary', 'color-surface-raised', '28 8% 13%'],
+  ['--secondary-foreground', 'color-text-primary', '38 22% 93%'],
+  ['--muted', 'color-surface-raised', '28 8% 13%'],
+  ['--muted-foreground', 'color-text-tertiary', '34 9% 62%'],
+  ['--accent', 'color-accent-cool', '205 22% 64%'],
+  ['--accent-foreground', 'color-text-on-accent-cool', '205 32% 13%'],
+  ['--border', 'color-border', '30 8% 18%'],
+  ['--input', 'color-border-interactive', '34 9% 48%'],
+  ['--ring', 'color-focus', '38 92% 66%'],
+  ['--destructive', 'color-danger', '4 74% 42%'],
+  ['--destructive-foreground', 'color-text-on-danger', '38 22% 93%'],
+  ['--radius', null, '8px'],
+];
+// Light-mode overrides (page-bg-relative roles only). Values are DERIVED from the
+// built light palette (tokens.light.json), not hand-authored.
+const SHADCN_LIGHT_KEYS = [
+  ['--background', 'color-bg'],
+  ['--foreground', 'color-text-primary'],
+  ['--card', 'color-surface'],
+  ['--card-foreground', 'color-text-primary'],
+  ['--popover', 'color-surface'],
+  ['--popover-foreground', 'color-text-primary'],
+  ['--secondary', 'color-surface-raised'],
+  ['--secondary-foreground', 'color-text-primary'],
+  ['--muted', 'color-surface-raised'],
+  ['--muted-foreground', 'color-text-tertiary'],
+  ['--border', 'color-border'],
+  ['--input', 'color-border-interactive'],
+  ['--ring', 'color-focus'],
+];
+
+// HSL(triplet) -> rgb, mirroring artifacts/color_science.py hsl_to_rgb (same math).
+function hslToRgb(h, s, l) {
+  h /= 360; s /= 100; l /= 100;
+  const f = (n) => {
+    const k = (n + h * 12) % 12;
+    const a = s * Math.min(l, 1 - l);
+    return l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1));
+  };
+  return [f(0), f(8), f(4)].map((c) => Math.round(Math.max(0, Math.min(1, c)) * 255));
+}
+const parseTriplet = (t) => t.split(/\s+/).map((p) => parseFloat(p));
+const hexToRgb = (hex) => {
+  const h = hex.trim().replace('#', '');
+  return [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16));
+};
+function rgbToHslTriplet([r, g, b]) {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b), d = max - min;
+  let h = 0;
+  if (d) {
+    if (max === r) h = ((g - b) / d) % 6;
+    else if (max === g) h = (b - r) / d + 2;
+    else h = (r - g) / d + 4;
+    h *= 60; if (h < 0) h += 360;
+  }
+  const l = (max + min) / 2;
+  const s = d === 0 ? 0 : d / (1 - Math.abs(2 * l - 1));
+  return `${Math.round(h)} ${Math.round(s * 100)}% ${Math.round(l * 100)}%`;
+}
+
+function shadcnBlock(selector, entries) {
+  const lines = entries.map(([v, triplet]) => `  ${v}: ${triplet};`).join('\n');
+  return `${selector} {\n${lines}\n}\n`;
+}
+
+// Emit the dark shadcn block AFTER asserting every triplet equals its DTCG primitive.
+function buildShadcnDark(flatDark) {
+  const out = [];
+  for (const [v, key, triplet] of SHADCN_DARK) {
+    if (key) {
+      const want = flatDark[key];
+      if (!want) throw new Error(`shadcn map: token ${key} missing from tokens.dark.json`);
+      const a = hslToRgb(...parseTriplet(triplet));
+      const b = hexToRgb(want);
+      const drift = Math.max(...a.map((x, i) => Math.abs(x - b[i])));
+      if (drift > 1) {
+        throw new Error(
+          `shadcn drift: ${v} (${triplet} -> rgb ${a}) != ${key} (${want} -> rgb ${b}), drift ${drift}`,
+        );
+      }
+    }
+    out.push([v, triplet]);
+  }
+  console.log(`OK  shadcn compat: ${out.length} vars, every color triplet matches its DTCG primitive (<=1/255 drift)`);
+  return shadcnBlock(':root', out);
+}
+function buildShadcnLight(flatLight) {
+  const out = SHADCN_LIGHT_KEYS.map(([v, key]) => {
+    const hex = flatLight[key];
+    if (!hex) throw new Error(`shadcn light map: token ${key} missing from tokens.light.json`);
+    return [v, rgbToHslTriplet(hexToRgb(hex))];
+  });
+  return shadcnBlock('[data-theme="light"]', out);
+}
+
 function config({ source, cssFile, selector, jsonFile, cssFilter, outputReferences = true }) {
   const cssFileEntry = {
     destination: cssFile,
@@ -75,6 +188,16 @@ async function build() {
   const root = await fs.readFile(`${DIST}/_root.css`, 'utf8');
   const lightCss = await fs.readFile(`${DIST}/_light.css`, 'utf8');
 
+  // shadcn compat blocks (built from the just-emitted flat JSON, dark asserted).
+  const flatDark = JSON.parse(await fs.readFile(`${DIST}/tokens.dark.json`, 'utf8'));
+  const flatLight = JSON.parse(await fs.readFile(`${DIST}/tokens.light.json`, 'utf8'));
+  const shadcnHeader =
+    `\n/* ---- shadcn/ui compatibility layer ----------------------------------\n` +
+    `   HSL triplets consumed as hsl(var(--token)). Brief-authoritative values,\n` +
+    `   asserted equal to the DTCG primitives they alias (design/build.mjs). */\n`;
+  const shadcnDark = buildShadcnDark(flatDark);
+  const shadcnLight = buildShadcnLight(flatLight);
+
   const reduced =
     `\n/* Reduced-motion: collapse every motion token so all durations run instantly. */\n` +
     `@media (prefers-reduced-motion: reduce) {\n` +
@@ -86,7 +209,9 @@ async function build() {
     `    --dur-cinematic: 0.01ms;\n` +
     `  }\n}\n`;
 
-  const merged = `${banner('Unified Design Tokens · tokens.css')}\n${root}\n${lightCss}${reduced}`;
+  const merged =
+    `${banner('Unified Design Tokens · tokens.css')}\n${root}\n` +
+    `${shadcnHeader}${shadcnDark}\n${lightCss}${shadcnLight}${reduced}`;
   await fs.writeFile(`${DIST}/tokens.css`, merged, 'utf8');
 
   // Clean up the two intermediate layer files.
@@ -94,7 +219,7 @@ async function build() {
   await fs.rm(`${DIST}/_light.css`);
 
   // Tailwind preset: bind theme keys to the CSS custom properties (mode-adaptive).
-  const flat = JSON.parse(await fs.readFile(`${DIST}/tokens.dark.json`, 'utf8'));
+  const flat = flatDark;
   const pick = (prefix) =>
     Object.keys(flat)
       .filter((k) => k.startsWith(prefix))

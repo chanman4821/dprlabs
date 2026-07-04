@@ -16,6 +16,47 @@ Every page also loads **two** font sets at once (e.g. `index.html:18` and `index
 
 ---
 
+## Step 0 — Palette realignment: Direction A -> Direction B (internal to the token system)
+
+The earlier build (`f846f81`, `d708a14`) used the *operator cockpit* palette. This task is the
+*DPR Labs buyer site* (Direction B). These tokens changed **inside** `design/tokens/*.json`; they are
+already built into `design/dist/tokens.css`. No page consumes `--palette-*` directly, so the impact
+on markup is limited to the automatic re-resolution of the semantic roles below.
+
+| Old primitive (Direction A) | New primitive (Direction B) | Reason |
+| --- | --- | --- |
+| `--palette-amber-500` `#F6AA28` (38 92% 56%) | `#EFA22E` (**36 86% 56%**) | brief `--primary` |
+| `--palette-amber-600` `#E6900F` | `#E18D0E` (36 88% 47%) | re-anchored hover |
+| `--palette-amber-400` `#FBC456` | `#F8BE59` (38 92% 66%) | re-anchored focus/link |
+| `--palette-amber-ink` `#A46104` | `#955B04` (36 95% 30%) | more paper margin (5.2:1) |
+| `--palette-orange-500` `#EE851B` | **REMOVED** → `--palette-slate-*` | replaced warm 2nd accent with cool slate |
+| — (new) | `--palette-slate-700/500/400/300/ink` | cool accent ramp, hue 205; `-400` = brief `--accent` `205 22% 64%` |
+| — (new) | `--palette-amber-on` `#1D140C` (30 40% 8%) | brief `--primary-foreground` |
+
+**Semantic-role codemod (names mostly stable; values change):**
+
+| Role | Before | After | Downstream impact |
+| --- | --- | --- | --- |
+| `--color-accent-secondary` | orange `#EE851B` | slate `#8FA7B7` (dark) / `#405A6D` (paper) | name kept → **any page using it auto-updates**, no markup edit |
+| `--color-text-on-accent` | `{warm.900}` | `{amber.on}` `#1D140C` | slightly warmer ink on amber fills |
+| `--color-accent-cool` | — (new) | slate chip fill `#8FA7B7` | pair with `--color-text-on-accent-cool` `#17232C` |
+| `--color-text-on-accent-cool` | — (new) | `#17232C` | ink on the slate chip |
+| `--color-danger` / `--color-text-on-danger` | — (new) | dark-red `#BA261C` / `#F1EEE9` | shadcn `--destructive` fill (mid-red fails AA, so uses the dark-red ink tone) |
+
+**Deprecated / removed token:** `--palette-orange-500`. **Downstream references** (grep): none in any
+linked site CSS/HTML; only generated artefacts (`design/dist/*`, rebuilt), this doc, and the offline
+asset script `generate_projects.py` (image generation, not the site). Deprecation window: removed now,
+in the same commit as its replacement (`--palette-slate-400`); revert is one `git` step.
+
+**shadcn/ui compatibility (new):** the brief supplies its palette as shadcn HSL triplets. `build.mjs`
+now emits `--background --foreground --card(-foreground) --popover(-foreground) --primary(-foreground)
+--secondary(-foreground) --muted(-foreground) --accent(-foreground) --border --input --ring
+--destructive(-foreground) --radius` into the same `tokens.css`, and **asserts** each color triplet
+equals the DTCG primitive its role resolves to (build fails on >1/255 drift). Consume shadcn parts with
+`hsl(var(--primary))` etc.; consume hand-written CSS with the `--color-*` roles. One source, two surfaces.
+
+---
+
 ## Step 1 — Fonts: replace the two links with one
 
 Remove BOTH font `<link>` tags on every page (Fraunces+IBM Plex line AND Geist+Inter line) and use:

@@ -1,28 +1,33 @@
 {
-  "$description": "DPR Labs — TIER 1 PRIMITIVE tokens (W3C DTCG). Raw values only, no aliases. Never consumed directly for COLOR (always via a tier-2 semantic role); non-color scales (space, type, radius, motion, z) are used directly by their friendly names. Authoritative brand values come from the design brief and MUST NOT be altered. Neutrals are derived from the brand background hue (30deg) as a warm-gray ramp; every derived neutral is contrast-verified in contrast-audit.mjs.",
+  "$description": "DPR Labs — TIER 1 PRIMITIVE tokens (W3C DTCG). Raw values only, no aliases. Never consumed directly for COLOR (always via a tier-2 semantic role); non-color scales (space, type, radius, motion, z) are used directly by their friendly names. Authoritative brand values come from the DPR Labs design brief (Direction B): --background 30 9% 7%, --primary amber 36 86% 56%, --accent slate-blue 205 22% 64%, body Inter. Warm neutrals are derived from the 30deg background hue; the single cool accent is a 205deg slate that complements the amber. Every derived neutral and accent is contrast-verified in contrast-audit.mjs (numbers in the notes are computed, not hand-set).",
   "palette": {
     "$type": "color",
     "warm": {
       "950": { "$value": "#0D0B0A", "$description": "hsl(30 10% 4.5%) — sunken well / deepest recess" },
-      "900": { "$value": "#131210", "$description": "hsl(30 9% 7%) — AUTHORITATIVE page canvas (brief bg)" },
-      "850": { "$value": "#1A1816", "$description": "hsl(30 9% 9.5%) — surface / panel base" },
-      "800": { "$value": "#22201D", "$description": "hsl(30 8% 12.5%) — raised surface" },
-      "700": { "$value": "#322E2A", "$description": "hsl(30 8% 18%) — hairline / divider" },
+      "900": { "$value": "#131210", "$description": "hsl(30 9% 7%) — AUTHORITATIVE --background / page canvas (brief bg)" },
+      "850": { "$value": "#1C1A17", "$description": "hsl(30 8% 10%) — AUTHORITATIVE --card / --popover / surface (brief card)" },
+      "800": { "$value": "#24211E", "$description": "hsl(28 8% 13%) — AUTHORITATIVE --secondary / --muted / raised surface (brief)" },
+      "700": { "$value": "#322E2A", "$description": "hsl(30 8% 18%) — hairline / divider / --border" },
       "600": { "$value": "#47423E", "$description": "hsl(30 7% 26%) — strong hairline" },
-      "500": { "$value": "#857C6F", "$description": "hsl(34 9% 48%) — interactive/control border (>=3:1 on canvas)" },
-      "400": { "$value": "#A29990", "$description": "hsl(30 9% 60%) — tertiary text (6.7:1 on canvas)" },
-      "300": { "$value": "#C5BDB5", "$description": "hsl(30 12% 74%) — secondary text (10.1:1 on canvas)" },
-      "100": { "$value": "#F4F0EB", "$description": "hsl(34 28% 94%) — primary text (16.5:1 on canvas)" },
+      "500": { "$value": "#857C6F", "$description": "hsl(34 9% 48%) — interactive/control border / --input (4.56:1 on canvas)" },
+      "400": { "$value": "#A79F95", "$description": "hsl(34 9% 62%) — AUTHORITATIVE --muted-foreground / tertiary text (7.18:1 on canvas)" },
+      "300": { "$value": "#C5BDB5", "$description": "hsl(30 12% 74%) — secondary text (10.06:1 on canvas)" },
+      "100": { "$value": "#F1EEE9", "$description": "hsl(38 22% 93%) — AUTHORITATIVE --foreground / primary text (16.20:1 on canvas)" },
       "overlay": { "$value": "hsl(30 10% 4% / 0.72)", "$description": "modal/scrim backdrop, translucent near-black" }
     },
     "amber": {
-      "600": { "$value": "#E6900F", "$description": "hsl(36 88% 48%) — accent hover (darker)" },
-      "500": { "$value": "#F6AA28", "$description": "hsl(38 92% 56%) — AUTHORITATIVE brand accent / the-number (brief primary)" },
-      "400": { "$value": "#FBC456", "$description": "hsl(40 95% 66%) — focus ring / lighter accent" },
-      "ink":  { "$value": "#A46104", "$description": "hsl(35 95% 33%) — dark amber for accent TEXT on light paper (4.6:1)" }
+      "600": { "$value": "#E18D0E", "$description": "hsl(36 88% 47%) — --primary hover (darker); on-fill ink 6.92:1" },
+      "500": { "$value": "#EFA22E", "$description": "hsl(36 86% 56%) — AUTHORITATIVE --primary / --ring / the-number (8.82:1 as text on canvas)" },
+      "400": { "$value": "#F8BE59", "$description": "hsl(38 92% 66%) — focus ring / link / lighter accent (11.11:1 on canvas)" },
+      "ink":  { "$value": "#955B04", "$description": "hsl(36 95% 30%) — dark amber for accent TEXT on light paper (5.24:1 canvas / 5.45:1 surface)" },
+      "on":   { "$value": "#1D140C", "$description": "hsl(30 40% 8%) — AUTHORITATIVE --primary-foreground: ink ON an amber fill (8.54:1)" }
     },
-    "orange": {
-      "500": { "$value": "#EE851B", "$description": "hsl(30 86% 52%) — AUTHORITATIVE secondary accent (brief accent-2)" }
+    "slate": {
+      "700": { "$value": "#405A6D", "$description": "hsl(205 26% 34%) — dark slate: cool accent TEXT/UI on light paper (6.79:1)" },
+      "500": { "$value": "#6789A2", "$description": "hsl(205 24% 52%) — mid slate: cool UI fill / hairline accent" },
+      "400": { "$value": "#8FA7B7", "$description": "hsl(205 22% 64%) — AUTHORITATIVE --accent: cool accent graphic/TEXT on dark canvas (7.44:1)" },
+      "300": { "$value": "#B6CAD8", "$description": "hsl(205 30% 78%) — lighter slate: high-contrast cool accent text on dark (11.05:1)" },
+      "ink":  { "$value": "#17232C", "$description": "hsl(205 32% 13%) — AUTHORITATIVE-derived --accent-foreground: ink ON the slate accent chip (6.37:1)" }
     },
     "positive": {
       "text": { "$value": "#6CD09E", "$description": "hsl(150 52% 62%) — healthy status TEXT on dark (9.9:1)" },
