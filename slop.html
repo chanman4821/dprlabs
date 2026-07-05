@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The AI slop problem — DPR Labs</title>
+<meta name="description" content="Seven kinds of AI slop, and the tell that gives each away. Plus the Slop Sniff-Test you can run on any vendor — including us." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" href="assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a>
+    </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-ghost">Talk to us</a><a href="pilot.html" class="btn btn-primary">Book a pilot</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="pilot.html">Book a pilot</a>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap reveal">
+      <p class="eyebrow">The AI slop problem</p>
+      <h1>Most AI shipped today is slop.</h1>
+      <p class="lead">Measured, owned, and senior, or it is not AI. It is theater you rent forever.</p>
+      <div style="margin-top:24px"><img src="assets/mascot/cut/bot-peace.png" width="104" height="104" alt="DPR Labs gold robot mascot" /></div>
+      <div class="prose" style="margin-top:24px">
+        <p>AI slop is output that looks like work and costs like work but was never measured, never owned, and never touched by anyone senior. It is a demo that survives exactly one path. It is a prompt wrapped in a logo. It is a model that gets vaguer the harder you press it.</p>
+        <p>Slop passes the eye test in the meeting and fails the second question in production. You can spot it by what is missing: no baseline, no error rate, no named owner, no incident history, no proof that last week's change made the system better instead of louder.</p>
+        <div class="callout"><strong>The DPR line:</strong> if an AI system cannot name the number it moves, show the evals that guard it, and survive inside your real workflow, it is not transformation. It is a subscription to ambiguity.</div>
+      </div>
+      <div style="margin-top:26px"><a href="pilot.html" class="btn btn-primary">Run a two-week proof <span class="arrow" aria-hidden="true">→</span></a> <a href="#sniff" class="btn btn-ghost">Take the sniff test</a></div>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap center reveal">
+      <p class="eyebrow">Reference bar</p>
+      <h2 style="margin-top:14px">Clean like Vercel. Serious like Harness. Direct like Devin.</h2>
+      <p class="lead">The category does not need more neon dashboards. It needs senior builders who can sit beside revenue, operations, support, legal, and engineering, then ship one useful capability that keeps working after the sales call ends.</p>
+    </div>
+  </section>
+
+  <section class="sec sec-invert">
+    <div class="wrap reveal">
+      <p class="eyebrow">Seven slop types</p>
+      <h2 style="margin-top:14px">The tell always shows up before the invoice.</h2>
+      <p class="lead">Lazy vendors sell mystery because mystery protects margin. Senior teams sell measurement because measurement survives procurement, board questions, and production traffic.</p>
+      <div class="slop-list">
+        <article class="slop-item"><h3>The Bolt-On Bot</h3><p class="tell">A GPT wrapper stapled to the page. <b>Tell:</b> it cannot touch your real data, permissions, approvals, or workflow.</p></article>
+        <article class="slop-item"><h3>The Dead Demo</h3><p class="tell">Flawless on the call, absent from production. <b>Tell:</b> no live metric, no user count, no incident history.</p></article>
+        <article class="slop-item"><h3>The Rented Brain</h3><p class="tell">You pay per call forever and own nothing. <b>Tell:</b> no weights, no code, no prompts, no exit path in the contract.</p></article>
+        <article class="slop-item"><h3>The Vanity Accuracy</h3><p class="tell">They say “98% accurate” with no floor under it. <b>Tell:</b> no sample size, no comparison group, no confidence interval.</p></article>
+        <article class="slop-item"><h3>AI-First Theater</h3><p class="tell">A rebrand with the word AI and no behavior change. <b>Tell:</b> the roadmap is slides, not commits.</p></article>
+        <article class="slop-item"><h3>The Transformation Retainer</h3><p class="tell">A monthly agency wrapper around a generic model. <b>Tell:</b> deliverables are decks and “strategy,” never a moved number.</p></article>
+        <article class="slop-item"><h3>The Eval-Free Ship</h3><p class="tell">A model in production with no test suite. <b>Tell:</b> nobody can say if last week's change made it better or worse.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="sniff">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">The Slop Sniff-Test</p>
+        <h2 style="margin-top:14px">Run this on any vendor. Run it on us first.</h2>
+        <p class="lead">Founders do not need a PhD to detect fake AI. They need eight blunt questions and the patience to wait through the silence after each one.</p>
+      </div>
+      <div class="prose reveal" style="margin-top:28px">
+        <ul>
+          <li><strong>Ask for the baseline.</strong> What was the error rate, cycle time, cost, or conversion rate before AI, and what is it now?</li>
+          <li><strong>Ask who is senior and named.</strong> If the senior person only appears during sales, you are buying supervision theater.</li>
+          <li><strong>Send three off-path inputs.</strong> Change the wording, add a messy exception, include missing data, and watch what happens.</li>
+          <li><strong>Ask what happens when it is unsure.</strong> Serious systems refuse, route, or ask. Slop guesses with confidence.</li>
+          <li><strong>Ask what you own if you cancel tomorrow.</strong> Code, prompts, evals, fine-tune, docs, deployment path, and runbook should not disappear.</li>
+          <li><strong>Ask for the eval set.</strong> The answer should include the last five failures it caught before shipping.</li>
+          <li><strong>Ask how they know it improved last month.</strong> “The model is newer” is not an answer. A repeatable measurement is.</li>
+          <li><strong>Ask the failure mode they fear most.</strong> Be suspicious of anyone who names none. They have not operated it long enough.</li>
+        </ul>
+        <div class="callout">A good vendor will welcome this test because it makes the work smaller, sharper, and safer. A slop vendor will call it “enterprise complexity” and try to move you back to the deck.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap reveal">
+      <p class="eyebrow">Their slop vs our discipline</p>
+      <h2 style="margin-top:14px">The difference is not taste. It is ownership.</h2>
+      <div class="versus">
+        <div class="versus-row versus-head"><div class="them">AI slop</div><div class="us">DPR discipline</div></div>
+        <div class="versus-row"><div class="them">Ships a demo that survives one scripted path.</div><div class="us">Ships against an eval set that covers your eight worst cases before go-live.</div></div>
+        <div class="versus-row"><div class="them">Calls it intelligent with no number attached.</div><div class="us">States a baseline and the error rate, then reports the change the same way each time.</div></div>
+        <div class="versus-row"><div class="them">Hands you a junior team and a Slack channel.</div><div class="us">Names the senior builder who owns the work and writes production code.</div></div>
+        <div class="versus-row"><div class="them">Guards a single prompt as the whole product.</div><div class="us">Gives you the prompts, evals, code, and runbook so the capability is yours.</div></div>
+        <div class="versus-row"><div class="them">Answers every question at full confidence.</div><div class="us">Designs refusal, escalation, and human review for the cases that need it.</div></div>
+        <div class="versus-row"><div class="them">Points at a stale benchmark and calls it proof.</div><div class="us">Measures on your traffic and shows the failures caught before release.</div></div>
+        <div class="versus-row"><div class="them">Prices automation, delivers hidden manual rewrites.</div><div class="us">Tells you exactly where a human is in the loop and why.</div></div>
+        <div class="versus-row"><div class="them">Locks capability behind a forever invoice.</div><div class="us">Builds so that if you fire us, the working system keeps working.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">The Owned-AI Method</p>
+        <h2 style="margin-top:14px">Number. Baseline. Build inside. Evals. Handover. Proof.</h2>
+      </div>
+      <div class="prose reveal" style="margin-top:24px">
+        <p>The antidote is not a bigger model. The antidote is a smaller promise, made in public, with a scoreboard attached. We begin by choosing one number worth moving: hours saved, tickets resolved, quote time reduced, error rate lowered, lead quality improved. If a number does not matter enough to measure, it does not matter enough for AI.</p>
+        <p>Then we establish the baseline before writing the solution. We build inside your systems, not beside them, because the hard part is rarely the model call. The hard part is permissions, messy edge cases, human approval, audit trails, rollback, latency, and the boring path that keeps the work alive on Tuesday morning.</p>
+        <p>Evals come before victory laps. We write the cases your users will actually send, including ugly inputs and adversarial examples. We track regressions. We log failure modes. We build the handover while we build the system, so your team receives the code, the prompts, the runbook, the measurement method, and the right to fire us without losing the capability.</p>
+        <ul>
+          <li><strong>Number:</strong> one business metric, chosen before the build.</li>
+          <li><strong>Baseline:</strong> the current state measured from real work, not a guess.</li>
+          <li><strong>Build inside:</strong> integrated with the workflow, data, permissions, and people who use it.</li>
+          <li><strong>Evals:</strong> tests for quality, refusals, drift, and the failure cases that cost money.</li>
+          <li><strong>Handover:</strong> repo, docs, runbook, measurement, and operating ownership.</li>
+          <li><strong>Proof:</strong> the same number reported after launch, with caveats in plain sight.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-invert">
+    <div class="wrap center reveal">
+      <p class="eyebrow">The closing test</p>
+      <h2 style="margin:14px auto 0">If nobody owns it, nobody built it.</h2>
+      <p class="lead">Run the sniff test on your current vendor. Then run it on us. If we cannot show you a baseline, an error rate, an eval set, and a named senior who owns the work, walk away. That is the standard, and it is the whole pitch.</p>
+      <div style="margin-top:30px"><a href="pilot.html" class="btn btn-primary">Book a pilot <span class="arrow" aria-hidden="true">→</span></a> <a href="contact.html" class="btn btn-ghost">Talk to us</a></div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand"><a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div>
+      <div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="about.html">About</a></div>
+      <div class="foot-col"><h4>Playbooks</h4><a href="slop.html" aria-current="page">The slop problem</a><a href="playbook.html">AI-readiness scorecard</a><a href="pilot.html">The two-week pilot</a><a href="blog/index.html">Field Notes</a></div>
+      <div class="foot-col"><h4>Get started</h4><a href="pilot.html">Book a pilot</a><a href="contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div>
+    </div>
+    <div class="foot-bottom"><small>© 2026 DPR Labs — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

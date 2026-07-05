@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The AI playbook — DPR Labs</title>
+<meta name="description" content="Score AI readiness, choose build versus buy versus wait, and find the workflows DPR Labs would automate first without buying AI slop." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" href="assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a>
+    </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-ghost">Talk to us</a><a href="pilot.html" class="btn btn-primary">Book a pilot</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="pilot.html">Book a pilot</a>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap prose reveal">
+      <p class="eyebrow">The anti-slop playbook</p>
+      <h1>The automation field guide most vendors will not hand you.</h1>
+      <p class="lead">A blunt way to decide what to automate, what to buy, and what to leave alone. If your process fails the tests below, we would rather tell you now than bill you later.</p>
+      <p>Most AI pages sell motion. This one sells friction. The useful question is not “where can we add AI?” It is “where does a senior operator already know the rule, hate repeating it, and need the result checked before it reaches a customer?” That is where custom AI earns its keep.</p>
+      <p>DPR Labs is an elite senior AI studio, but the honest answer is often not “hire us.” Sometimes you should buy a mature tool. Sometimes you should wait six months. Sometimes the correct first build is not a model at all, but a metric, an owner, and a boring review queue.</p>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Field rule</p>
+      <h2>AI slop starts when nobody can name the number.</h2>
+      <p>The market is full of teams confusing a demo with a business system. They show a chatbot, avoid the messy edge cases, and call the result transformation. Then the real work shows up: permissions, bad inputs, human overrides, audit trails, exception queues, and one angry manager asking why the “AI” made the job slower.</p>
+      <p>Our filter is harsher. A first automation candidate should be high-volume, rules-heavy, human-checkable, boring, and universally hated. If the work is glamorous, rare, political, or impossible to review, do not start there. Billion-dollar companies are built by deleting expensive repetition, not by putting a sparkle layer on unclear work.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap reveal">
+      <div class="prose">
+        <p class="eyebrow">Widget 01</p>
+        <h2>AI-readiness scorecard.</h2>
+        <p>Answer like an operator, not a deck writer. A “somewhat” means the weakness will show up in production. A “no” means you have scope work before you have automation work.</p>
+      </div>
+      <div class="tool" id="readinessScorecard">
+        <p class="tool-lead">Score the workflow you are tempted to automate.</p>
+        <h3>Data, metric, owner, guardrails.</h3>
+        <div class="score-q" data-w="3"><div class="sq-t"><b>DATA</b> Does the process run on data that already lives in a system you can query?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-q" data-w="2"><div class="sq-t"><b>DATA</b> Is the input consistent enough that two people read the same record the same way?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-q" data-w="2"><div class="sq-t"><b>DATA</b> Can the data stay inside approved privacy, security, and contract boundaries?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-q" data-w="3"><div class="sq-t"><b>METRIC</b> Can you state the number that would prove the automation worked?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-q" data-w="2"><div class="sq-t"><b>METRIC</b> Do you measure that number today, so there is a before-and-after?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-q" data-w="2"><div class="sq-t"><b>METRIC</b> Would a 50 percent improvement be noticed by someone with a budget?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-q" data-w="3"><div class="sq-t"><b>OWNER</b> Is one named person accountable for this process and able to approve changes?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-q" data-w="2"><div class="sq-t"><b>OWNER</b> Will that owner still care about the result six months from now?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-q" data-w="1"><div class="sq-t"><b>OWNER</b> Can the owner hand you three recent real examples in the next hour?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-q" data-w="3"><div class="sq-t"><b>GUARDRAILS</b> If the system is wrong, is the damage recoverable instead of permanent or public?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-q" data-w="2"><div class="sq-t"><b>GUARDRAILS</b> Can a human review or reverse the output before it reaches a customer or ledger?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-q" data-w="2"><div class="sq-t"><b>GUARDRAILS</b> Are the rules stable enough that they will not be rewritten next week?</div><div class="opts"><button type="button" data-v="2" aria-pressed="false">Yes</button><button type="button" data-v="1" aria-pressed="false">Somewhat</button><button type="button" data-v="0" aria-pressed="false">No</button></div></div>
+        <div class="score-num"><b id="scoreVal">0</b><span>/ 100</span></div>
+        <div class="score-bar"><i id="scoreBar"></i></div>
+        <div class="tool-result" id="scoreResult" role="status" aria-live="polite"><p class="verdict"></p><p class="rec"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap reveal">
+      <div class="prose">
+        <p class="eyebrow">Widget 02</p>
+        <h2>Build, buy, or wait.</h2>
+        <p>Custom software is not a trophy. If a mature tool handles commodity plumbing, buy it. If the workflow changes every month, wait. Build when the work is central, frequent, measurable, and worth owning.</p>
+      </div>
+      <div class="tool">
+        <p class="tool-lead">Choose the closest answer. The tree is intentionally opinionated.</p>
+        <div id="tree"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap reveal">
+      <div class="prose">
+        <p class="eyebrow">Start here</p>
+        <h2>Five workflows to automate first.</h2>
+        <p>The shared signal is boring and powerful: high-volume, rules-heavy, human-checkable, boring, and universally hated. That combination beats almost every “AI strategy” workshop.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card"><h3>1. Inbound triage and routing.</h3><p>Support tickets, leads, applications, and forms arrive constantly. The rules are visible, the output is easy to check, and the backlog annoys everyone.</p></div>
+        <div class="card"><h3>2. Re-keying between systems.</h3><p>If humans copy the same fields because two tools never got connected, automate the bridge before buying another dashboard.</p></div>
+        <div class="card"><h3>3. Recurring report assembly.</h3><p>Weekly ops, finance, and status roll-ups usually have the same shape. Let people review the story, not rebuild the spreadsheet.</p></div>
+        <div class="card"><h3>4. Document and invoice extraction.</h3><p>Pull fields into structure, keep a review step for totals and approvals, and measure the error rate before touching the ledger.</p></div>
+        <div class="card"><h3>5. Reconciliation and exception flags.</h3><p>Let automation find mismatches and queue the weird cases. Humans are better used judging exceptions than hunting for them.</p></div>
+        <div class="card"><h3>The disqualifier.</h3><p>If nobody owns the process, do not automate it. AI without an owner becomes another orphaned internal tool with a login nobody remembers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap prose reveal">
+      <p class="eyebrow">The senior answer</p>
+      <h2>Sometimes the right move is to walk away.</h2>
+      <p>A workflow that scores “Not yet” is not a failed company. It is a warning label. Standardize the inputs, assign an owner, decide what a mistake may cost, and come back in a quarter. That is cheaper than paying experts to automate confusion.</p>
+      <p class="callout"><strong>Contrarian promise:</strong> if your best candidate does not clear the scorecard, we will say so. DPR Labs is built for serious automation, not AI theater.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap center prose reveal">
+      <p class="eyebrow">Bring one ugly workflow</p>
+      <h2>If the score is real, the pilot can be small.</h2>
+      <p class="lead">Bring us the process you scored, the metric you would judge it by, and the person who owns it. If those three are real, so is the automation.</p>
+      <p><a href="pilot.html" class="btn btn-primary">Book a pilot <span class="arrow" aria-hidden="true">→</span></a></p>
+      <p><a href="method.html" class="txt-link">See the DPR method <span class="arrow" aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+        <p>A senior AI consulting studio — we build it, measure it, and hand it over. You own what we build.</p>
+      </div>
+      <div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="about.html">About</a></div>
+      <div class="foot-col"><h4>Playbooks</h4><a href="slop.html">AI slop</a><a href="playbook.html">The AI playbook</a><a href="pilot.html">Pilot guide</a><a href="blog/index.html">Field Notes</a></div>
+      <div class="foot-col"><h4>Get started</h4><a href="pilot.html">Book a pilot</a><a href="contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div>
+    </div>
+    <div class="foot-bottom"><small>© 2026 DPR Labs — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+<script>
+(function(){
+  var tool=document.getElementById('readinessScorecard');
+  if(!tool) return;
+  var rows=Array.prototype.slice.call(tool.querySelectorAll('.score-q'));
+  var scoreVal=document.getElementById('scoreVal');
+  var scoreBar=document.getElementById('scoreBar');
+  var result=document.getElementById('scoreResult');
+  if(!rows.length||!scoreVal||!scoreBar||!result) return;
+  var verdict=result.querySelector('.verdict');
+  var rec=result.querySelector('.rec');
+  var max=rows.reduce(function(sum,row){return sum+(Number(row.getAttribute('data-w'))||0)*2;},0);
+  var current=0;
+  function band(score,answered){
+    if(answered<rows.length){return ['Keep scoring. '+answered+' of '+rows.length+' answered.','Answer every row before treating the score as a decision. Early scores are useful for spotting the weak pillar, not for approving spend.','warn'];}
+    if(score>=70){return ['Build now.','The data is real, the metric is named, an owner exists, and mistakes are survivable. Scope one workflow, keep a human review step, and measure the first version hard.','good'];}
+    if(score>=40){return ['Scope first.','There is probably value here, but one pillar is soft. Fix the metric, owner, data boundary, or review path before writing automation.','warn'];}
+    return ['Not yet.','Do not hire us for this yet. Standardize the input, name the owner, and decide what a mistake is allowed to cost before AI amplifies the mess.',''];
+  }
+  function animateScore(next){
+    var start=current;
+    var diff=next-start;
+    var startTime=null;
+    function step(ts){
+      if(!startTime) startTime=ts;
+      var p=Math.min((ts-startTime)/250,1);
+      var value=Math.round(start+(diff*p));
+      scoreVal.textContent=String(value);
+      if(p<1){requestAnimationFrame(step);}else{current=next;}
+    }
+    requestAnimationFrame(step);
+  }
+  function update(){
+    var raw=0,answered=0;
+    rows.forEach(function(row){
+      var active=row.querySelector('button[aria-pressed="true"]');
+      if(active){answered++;raw+=(Number(active.getAttribute('data-v'))||0)*(Number(row.getAttribute('data-w'))||0);}
+    });
+    var score=max?Math.round((raw/max)*100):0;
+    animateScore(score);
+    scoreBar.style.width=score+'%';
+    var b=band(score,answered);
+    result.className='tool-result show '+b[2];
+    verdict.textContent=b[0];
+    rec.textContent=b[1];
+  }
+  rows.forEach(function(row){
+    var buttons=row.querySelectorAll('.opts button');
+    buttons.forEach(function(button){
+      button.addEventListener('click',function(){
+        buttons.forEach(function(other){other.setAttribute('aria-pressed','false');});
+        button.setAttribute('aria-pressed','true');
+        update();
+      });
+    });
+  });
+})();
+(function(){
+  var mount=document.getElementById('tree');
+  if(!mount) return;
+  var nodes={
+    root:{q:'Is this workflow central to how you win, or commodity plumbing every company runs?',opts:[['It is central to how we win','volume'],['It is commodity plumbing','commodity']]},
+    commodity:{q:'Does a mature tool already cover about 80 percent of it?',opts:[['Yes, a proven tool exists','buy'],['No, the tools do not fit our data','thin']]},
+    volume:{q:'How much volume does the workflow carry?',opts:[['High volume every week','risk'],['Low volume, a handful of cases','waitLow']]},
+    risk:{q:'What happens when the system is wrong?',opts:[['A human can catch and reverse it','build'],['The mistake is public, regulated, or expensive','humanLoop']]},
+    thin:{q:'How often do the rules change?',opts:[['Stable for months','thinBuild'],['Rewritten every few weeks','waitRules']]}
+  };
+  var leaves={
+    buy:['Buy off-the-shelf','Do not custom-build commodity plumbing when a mature tool already does the job. Configure it, integrate it, and save custom work for where you compete.'],
+    thinBuild:['Build a thin custom layer','This is integration work, not a monument. Keep the scope small, own the data path, and avoid rebuilding a full product around one annoying gap.'],
+    waitRules:['Wait 6 months','A moving process will punish every automation choice. Let the rules stabilize for a quarter, then automate the version that survived.'],
+    waitLow:['Wait, or leave it manual','Low-volume work rarely pays back a custom system. A checklist, spreadsheet, or better handoff may beat software you must maintain.'],
+    build:['Build it','This is the sweet spot: central, frequent, measurable, and safe to review. Start with one workflow and one metric, then expand only after the numbers hold.'],
+    humanLoop:['Build an assistant, not an autopilot','Draft, classify, summarize, and recommend, but keep a person on approval until the error rate is measured and boring.']
+  };
+  function renderNode(key){
+    var node=nodes[key];
+    mount.innerHTML='';
+    var q=document.createElement('p');
+    q.className='tree-q';
+    q.textContent=node.q;
+    var opts=document.createElement('div');
+    opts.className='tree-opts';
+    node.opts.forEach(function(opt){
+      var button=document.createElement('button');
+      button.type='button';
+      button.innerHTML='<span>'+opt[0]+'</span><span class="arrow" aria-hidden="true">→</span>';
+      button.addEventListener('click',function(){
+        if(nodes[opt[1]]){renderNode(opt[1]);}else{renderLeaf(opt[1]);}
+      });
+      opts.appendChild(button);
+    });
+    mount.appendChild(q);
+    mount.appendChild(opts);
+  }
+  function renderLeaf(key){
+    var leaf=leaves[key];
+    mount.innerHTML='<div class="tree-verdict"><p class="k">Recommendation</p><h4></h4><p></p><button type="button" class="tree-restart">Start over</button></div>';
+    mount.querySelector('h4').textContent=leaf[0];
+    mount.querySelector('.tree-verdict p:nth-of-type(2)').textContent=leaf[1];
+    mount.querySelector('.tree-restart').addEventListener('click',function(){renderNode('root');});
+  }
+  renderNode('root');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book a two-week pilot — DPR Labs</title>
+<meta name="description" content="Book a two-week DPR Labs AI pilot: two weeks, one number agreed up front, no move no pay, and you own everything we build." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" href="assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a>
+    </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-ghost">Talk to us</a><a href="pilot.html" class="btn btn-primary">Book a pilot</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="pilot.html">Book a pilot</a>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Two-week pilot</p>
+      <h1>One number, moved in two weeks, or you pay nothing.</h1>
+      <p class="lead">DPR Labs is the senior AI studio for teams tired of demos, dashboards, and rented black boxes. We agree on one business number before we start. We move it on your real data, prove the move with a frozen check, then hand you the system.</p>
+      <p>Most AI work is slop with a nicer deck: a chatbot nobody asked for, a private dashboard nobody can audit, a model score that falls apart when the messy inputs arrive. Our gold mascot is not a hype animal. It is a warning label. If the work cannot survive measurement, ownership, and handoff, it is not elite work.</p>
+      <p><a href="contact.html" class="btn btn-primary">Book the 20-minute scoping call <span class="arrow" aria-hidden="true">→</span></a></p>
+      <p><a href="method.html" class="txt-link">See the method first <span class="arrow" aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap prose reveal">
+      <p class="eyebrow">The contract</p>
+      <h2>Steal this sentence before you buy any AI pilot.</h2>
+      <p>Every pilot starts with a metric contract. Not a strategy doc. Not “make us AI-first.” One sentence that can be read by finance, operations, and the person who will inherit the work. If the sentence sounds vague, the pilot is not ready.</p>
+      <p class="callout"><strong>Template:</strong> We will move ___ from ___ to ___ within two weeks, measured on ___, checked by ___.</p>
+      <p><strong>Example:</strong> We will move support-ticket first-response resolution rate from 41% to 60% within two weeks, measured on a frozen holdout of 500 real tickets, checked by your ops lead running the eval suite we hand over.</p>
+      <p>The number is agreed in writing and does not change mid-pilot. It has to be something you already measure or can measure without theater. No moving goalposts. No basket of vanity stats. No blended “quality score” that lets everyone argue after the invoice.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Metric contract builder</p>
+      <h2>Write the scoreboard before the model exists.</h2>
+      <p>Use this in the scoping call. If the blanks are hard to fill, that is useful information. A weak metric is not a small detail. It is the crack where the whole pilot leaks out.</p>
+      <div class="tool">
+        <p class="mc">We will move <input id="mc-metric" placeholder="metric" aria-label="metric"> from <input id="mc-today" placeholder="today" aria-label="current value"> to <input id="mc-target" placeholder="target" aria-label="target value"> within two weeks, measured on <input id="mc-data" placeholder="real data" aria-label="measurement source">, checked by <input id="mc-checker" placeholder="your person" aria-label="checker">.</p>
+        <div class="mc-preview" id="mcPreview">We will move metric from today to target within two weeks, measured on real data, checked by your person.</div>
+        <p><button class="btn btn-ghost" id="mcCopy" type="button">Copy the sentence</button></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap reveal">
+      <div class="prose">
+        <p class="eyebrow">Ownership</p>
+        <h2>You own the system, not a login.</h2>
+        <p>When the two weeks end, you own the whole thing. We do not hide the useful parts behind our account, our runtime, or our private prompts. If a vendor will not hand over the pieces, you are not buying an AI asset. You are renting a dependency with better branding.</p>
+      </div>
+      <div class="roles">
+        <div class="role"><h3>Source code</h3><p>Every line we wrote, in your repo, under your license, with no obfuscation and no mystery binary you cannot rebuild.</p></div>
+        <div class="role"><h3>Weights and adapters</h3><p>Any fine-tuned weights, LoRA adapters, and exact base-model references needed to re-serve the work without us.</p></div>
+        <div class="role"><h3>Eval suite</h3><p>The scoring harness and frozen test set that decides whether the number moved, so your team can rerun the verdict.</p></div>
+        <div class="role"><h3>Prompts and config</h3><p>All prompts, system messages, decoding settings, and parameter files, versioned with the reason each choice exists.</p></div>
+        <div class="role"><h3>Deploy scripts</h3><p>Containers or infrastructure scripts that stand the system up from zero in your accounts, not ours.</p></div>
+        <div class="role"><h3>Data pipeline</h3><p>The ingest, cleaning, and formatting code that turns raw operational data into what the model sees.</p></div>
+        <div class="role"><h3>Runbook</h3><p>A plain-English operating guide: how it works, how to refresh it, how to roll back, and what to inspect when the number drifts.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Honest limits</p>
+      <h2>What two weeks cannot buy.</h2>
+      <p>A two-week pilot can prove and hand over one owned improvement. It cannot make your company “AI-native.” That phrase mostly means nobody has agreed who owns the work after the demo.</p>
+      <ul>
+        <li>It cannot fix more than one metric. A second number is a second pilot.</li>
+        <li>It cannot rebuild broken data. If the data to move the number does not exist, we decline the pilot.</li>
+        <li>It cannot deliver a fully hardened, on-call platform with a 99.99% service promise.</li>
+        <li>It cannot guarantee the gain holds forever. Models drift, workflows change, and the eval suite is how you catch it.</li>
+        <li>It cannot pass your formal compliance, security, or legal audit inside the same window.</li>
+        <li>It cannot move a number nobody can measure. No honest scoreboard, no pilot.</li>
+      </ul>
+      <p>This is the controversial part: saying no is part of the product. We would rather reject a bad pilot in twenty minutes than sell you a beautiful failure.</p>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap prose reveal">
+      <p class="eyebrow">ROI calculator</p>
+      <h2>Check whether the bet is even worth making.</h2>
+      <p>Not every workflow deserves a model. If the math cannot pay back a small pilot, the right answer may be a checklist, a script, or leaving the work alone.</p>
+      <div class="tool">
+        <div class="calc-grid">
+          <div class="calc-field"><label for="roiHours">Hours saved per week</label><input type="number" id="roiHours" min="0" step="0.1" inputmode="decimal"></div>
+          <div class="calc-field"><label for="roiCost">Loaded hourly cost ($)</label><input type="number" id="roiCost" min="0" step="1" inputmode="decimal"></div>
+          <div class="calc-field"><label for="roiPeople">People affected</label><input type="number" id="roiPeople" min="0" step="1" inputmode="numeric"></div>
+          <div class="calc-field"><label for="roiPrice">Pilot price ($)</label><input type="number" id="roiPrice" min="0" step="100" inputmode="decimal"></div>
+        </div>
+        <div class="calc-out"><div class="co hero"><span class="k">Payback</span><span class="v" id="payback">—</span></div><div class="co"><span class="k">Annual saving</span><span class="v" id="annual">—</span></div></div>
+        <p class="calc-note">This calculator runs only in your browser. Nothing is sent anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap reveal">
+      <div class="prose">
+        <p class="eyebrow">Price</p>
+        <h2>Fixed price. No move, no pay.</h2>
+        <p>Most pilots land between <span class="gold-text">$8,000 and $15,000</span>, depending on how much data plumbing the one number needs. No hourly meter. No surprise line items. No scope-creep invoice after everyone is already emotionally committed.</p>
+        <p>If the agreed number does not reach the agreed target on the agreed check within two weeks, you owe nothing and keep every artifact produced along the way. The refund is real because the scoreboard is set before we take the work, and your data checks it. We only accept pilots where the number looks movable. We are betting our time against your outcome.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap reveal">
+      <div class="prose">
+        <p class="eyebrow">20-minute scoping call</p>
+        <h2>The call decides if there is a real pilot.</h2>
+        <p>You leave with a fixed price and start date, or an honest no. Both are useful. The agenda is intentionally narrow.</p>
+      </div>
+      <div class="roles">
+        <div class="role"><h3>0-3 minutes</h3><p>Name the one number and why it matters commercially.</p></div>
+        <div class="role"><h3>3-8 minutes</h3><p>Set the baseline, target, and current measurement path.</p></div>
+        <div class="role"><h3>8-13 minutes</h3><p>Inspect the data source, access path, and whether it is clean enough for two weeks.</p></div>
+        <div class="role"><h3>13-17 minutes</h3><p>Define the frozen check that decides pass or fail.</p></div>
+        <div class="role"><h3>17-20 minutes</h3><p>Choose go or no-go, fixed price, start date, and owner.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap center prose reveal">
+      <p class="eyebrow">Close</p>
+      <h2>Book the 20-minute scoping call.</h2>
+      <p class="lead">Bring one ugly workflow and one number you care about. We will tell you if AI can move it, how we would prove it, what you will own, and what we refuse to pretend.</p>
+      <p><a href="contact.html" class="btn btn-primary">Book the scoping call <span class="arrow" aria-hidden="true">→</span></a></p>
+      <p><a href="teardowns.html" class="txt-link">Read the pilot autopsies <span class="arrow" aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+        <p>A senior AI consulting studio — we build it, measure it, and hand it over. You own what we build.</p>
+      </div>
+      <div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="about.html">About</a></div>
+      <div class="foot-col"><h4>Playbooks</h4><a href="slop.html">Anti-slop</a><a href="playbook.html">Playbook</a><a href="pilot.html">Pilot</a><a href="blog/index.html">Field Notes</a></div>
+      <div class="foot-col"><h4>Get started</h4><a href="pilot.html">Book a pilot</a><a href="contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div>
+    </div>
+    <div class="foot-bottom"><small>© 2026 DPR Labs — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+<script>
+(function () {
+  var fields = {
+    metric: document.getElementById('mc-metric'),
+    today: document.getElementById('mc-today'),
+    target: document.getElementById('mc-target'),
+    data: document.getElementById('mc-data'),
+    checker: document.getElementById('mc-checker')
+  };
+  var preview = document.getElementById('mcPreview');
+  var copy = document.getElementById('mcCopy');
+  if (!preview || !copy || !fields.metric || !fields.today || !fields.target || !fields.data || !fields.checker) return;
+  function value(field, fallback) {
+    return field.value.trim() || fallback;
+  }
+  function sentence() {
+    return 'We will move ' + value(fields.metric, 'metric') + ' from ' + value(fields.today, 'today') + ' to ' + value(fields.target, 'target') + ' within two weeks, measured on ' + value(fields.data, 'real data') + ', checked by ' + value(fields.checker, 'your person') + '.';
+  }
+  function render() {
+    preview.textContent = sentence();
+  }
+  Object.keys(fields).forEach(function (key) {
+    fields[key].addEventListener('input', render);
+  });
+  copy.addEventListener('click', function () {
+    if (!navigator.clipboard) return;
+    navigator.clipboard.writeText(preview.textContent);
+  });
+  render();
+}());
+
+(function () {
+  var hours = document.getElementById('roiHours');
+  var cost = document.getElementById('roiCost');
+  var people = document.getElementById('roiPeople');
+  var price = document.getElementById('roiPrice');
+  var payback = document.getElementById('payback');
+  var annual = document.getElementById('annual');
+  if (!hours || !cost || !people || !price || !payback || !annual) return;
+  function numberFrom(input) {
+    var parsed = Number(input.value);
+    return Number.isFinite(parsed) && parsed > 0 ? parsed : 0;
+  }
+  function dollars(value) {
+    return '$' + Math.round(value).toLocaleString('en-US');
+  }
+  function render() {
+    var weeklySaving = numberFrom(hours) * numberFrom(cost) * numberFrom(people);
+    var pilotPrice = numberFrom(price);
+    if (!weeklySaving || !pilotPrice) {
+      payback.textContent = '—';
+      annual.textContent = '—';
+      return;
+    }
+    var paybackWeeks = pilotPrice / weeklySaving;
+    payback.textContent = paybackWeeks.toFixed(paybackWeeks < 10 ? 1 : 0) + ' weeks';
+    annual.textContent = dollars(weeklySaving * 52);
+  }
+  [hours, cost, people, price].forEach(function (input) {
+    input.addEventListener('input', render);
+  });
+  render();
+}());
+</script>
+</body>
+</html>
