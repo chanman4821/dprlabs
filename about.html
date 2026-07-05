@@ -12,6 +12,16 @@
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+
+<style>
+  .dpr-visual-card{margin-top:34px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,#f8f9ff);box-shadow:var(--shadow-1);padding:clamp(20px,4vw,34px);overflow:hidden}
+  .dpr-visual-kicker{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#3b5bdb;margin:0 0 16px}
+  .dpr-buddy-wrap{position:relative;display:flex;justify-content:center;margin:28px auto 0;min-height:150px;pointer-events:none}
+  .dpr-buddy{width:clamp(120px,18vw,176px);height:auto;filter:drop-shadow(0 22px 34px rgba(59,91,219,.18));animation:dprBuddyFloat 5.5s ease-in-out infinite}
+  @keyframes dprBuddyFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}}
+  @media(max-width:640px){.dpr-visual-card{padding:18px;margin-top:24px}.dpr-buddy-wrap{min-height:122px;margin-top:20px}.dpr-buddy{width:128px}}
+  @media(prefers-reduced-motion:reduce){.dpr-buddy{animation:none}}
+</style>
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -26,7 +36,7 @@
   <div class="mobile-menu" id="mobileMenu"><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="pilot.html">Book a pilot</a></div>
 </header>
 <main id="main">
-  <section class="page-hero">
+  <section class="page-hero" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">About</p>
       <h1>A small, senior team allergic to theater.</h1>
@@ -36,7 +46,7 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Small by design</p>
       <h2 style="margin-top:14px">Small, senior, and allergic to theater.</h2>
@@ -46,7 +56,7 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">No-list</p>
       <h2 style="margin-top:14px">What we will not do.</h2>
@@ -63,14 +73,14 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap reveal">
       <div class="prose">
         <p class="eyebrow">Principles</p>
         <h2 style="margin-top:14px">Our five principles, and what each costs us.</h2>
         <p style="margin-top:16px">Principles are cheap when they are only adjectives. Ours matter only because each one makes some money harder to take.</p>
       </div>
-      <div class="grid-2">
+      <div class="grid-2" data-stagger>
         <div class="card"><span class="tag">One number</span><h3>Agreed up front.</h3><p>We write the metric before we build, even when a vague scope would be easier to sell and easier to declare a win.</p></div>
         <div class="card"><span class="tag">You own it</span><h3>No rented black box.</h3><p>You get the code, prompts, evals, docs, and handoff. Lock-in would be more profitable. It would also make the work weaker.</p></div>
         <div class="card"><span class="tag">Honest measurement</span><h3>Caveats in plain sight.</h3><p>We show baselines, sample sizes, misses, and limits, even when a prettier number would close faster.</p></div>
@@ -81,7 +91,7 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Pricing</p>
       <h2 style="margin-top:14px">How we price, and why.</h2>
@@ -93,14 +103,14 @@
   </section>
 
   <!-- WHO WE ARE -->
-  <section class="sec" id="team">
+  <section class="sec" id="team" data-reveal>
     <div class="wrap">
       <div class="sec-head reveal">
         <p class="mark">Who we are</p>
         <h2 style="margin-top:18px">Three people. Microsoft, PayPal, <span class="gold-text">and a real investor network.</span></h2>
         <p class="lead" style="margin-top:16px;max-width:62ch">No junior pyramid, no account managers, no offshore hand-off. You work with the people whose names are on the work — a senior builder, a senior product leader, and a genuine super-connector.</p>
       </div>
-      <div class="team">
+      <div class="team" data-stagger>
         <div class="member reveal">
           <div class="avatar" aria-hidden="true">DH</div>
           <h3>Dennis Ha</h3>
@@ -124,12 +134,13 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap center prose reveal">
       <p class="eyebrow">If this sounds familiar</p>
       <h2 style="margin-top:14px">Bring us the workflow nobody wants to own.</h2>
       <p class="lead" style="margin-top:16px">If it has a baseline, an owner, and a number worth moving, we can usually tell in one call whether a two-week pilot is a good bet.</p>
       <p><a href="contact.html" class="btn btn-primary">Book a pilot <span class="arrow" aria-hidden="true">→</span></a></p>
+      <div class="dpr-buddy-wrap" data-reveal aria-hidden="true"><img class="dpr-buddy" src="assets/mascot/cut/bot-welcome.png" alt="" loading="lazy" decoding="async"></div>
     </div>
   </section>
 </main>

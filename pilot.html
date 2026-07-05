@@ -12,6 +12,16 @@
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+
+<style>
+  .dpr-visual-card{margin-top:34px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,#f8f9ff);box-shadow:var(--shadow-1);padding:clamp(20px,4vw,34px);overflow:hidden}
+  .dpr-visual-kicker{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#3b5bdb;margin:0 0 16px}
+  .dpr-buddy-wrap{position:relative;display:flex;justify-content:center;margin:28px auto 0;min-height:150px;pointer-events:none}
+  .dpr-buddy{width:clamp(120px,18vw,176px);height:auto;filter:drop-shadow(0 22px 34px rgba(59,91,219,.18));animation:dprBuddyFloat 5.5s ease-in-out infinite}
+  @keyframes dprBuddyFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}}
+  @media(max-width:640px){.dpr-visual-card{padding:18px;margin-top:24px}.dpr-buddy-wrap{min-height:122px;margin-top:20px}.dpr-buddy{width:128px}}
+  @media(prefers-reduced-motion:reduce){.dpr-buddy{animation:none}}
+</style>
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -30,7 +40,7 @@
   </div>
 </header>
 <main id="main">
-  <section class="page-hero">
+  <section class="page-hero" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Two-week pilot</p>
       <h1>One number, moved in two weeks, or you pay nothing.</h1>
@@ -41,7 +51,7 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">The contract</p>
       <h2>Steal this sentence before you buy any AI pilot.</h2>
@@ -49,10 +59,14 @@
       <p class="callout"><strong>Template:</strong> We will move ___ from ___ to ___ within two weeks, measured on ___, checked by ___.</p>
       <p><strong>Example:</strong> We will move support-ticket first-response resolution rate from 41% to 60% within two weeks, measured on a frozen holdout of 500 real tickets, checked by your ops lead running the eval suite we hand over.</p>
       <p>The number is agreed in writing and does not change mid-pilot. It has to be something you already measure or can measure without theater. No moving goalposts. No basket of vanity stats. No blended “quality score” that lets everyone argue after the invoice.</p>
+      <div class="dpr-visual-card" data-reveal>
+        <p class="dpr-visual-kicker">Two-week pilot path</p>
+        <div data-diagram="timeline" data-config='{"items":[{"when":"Day 1","label":"Metric contract"},{"when":"Day 3","label":"Data + baseline"},{"when":"Day 7","label":"First eval"},{"when":"Day 14","label":"Ship or refund"}]}'></div>
+      </div>
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Metric contract builder</p>
       <h2>Write the scoreboard before the model exists.</h2>
@@ -65,14 +79,14 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap reveal">
       <div class="prose">
         <p class="eyebrow">Ownership</p>
         <h2>You own the system, not a login.</h2>
         <p>When the two weeks end, you own the whole thing. We do not hide the useful parts behind our account, our runtime, or our private prompts. If a vendor will not hand over the pieces, you are not buying an AI asset. You are renting a dependency with better branding.</p>
       </div>
-      <div class="roles">
+      <div class="roles" data-stagger>
         <div class="role"><h3>Source code</h3><p>Every line we wrote, in your repo, under your license, with no obfuscation and no mystery binary you cannot rebuild.</p></div>
         <div class="role"><h3>Weights and adapters</h3><p>Any fine-tuned weights, LoRA adapters, and exact base-model references needed to re-serve the work without us.</p></div>
         <div class="role"><h3>Eval suite</h3><p>The scoring harness and frozen test set that decides whether the number moved, so your team can rerun the verdict.</p></div>
@@ -84,7 +98,7 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Honest limits</p>
       <h2>What two weeks cannot buy.</h2>
@@ -101,7 +115,7 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">ROI calculator</p>
       <h2>Check whether the bet is even worth making.</h2>
@@ -119,7 +133,7 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap reveal">
       <div class="prose">
         <p class="eyebrow">Price</p>
@@ -130,14 +144,14 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap reveal">
       <div class="prose">
         <p class="eyebrow">20-minute scoping call</p>
         <h2>The call decides if there is a real pilot.</h2>
         <p>You leave with a fixed price and start date, or an honest no. Both are useful. The agenda is intentionally narrow.</p>
       </div>
-      <div class="roles">
+      <div class="roles" data-stagger>
         <div class="role"><h3>0-3 minutes</h3><p>Name the one number and why it matters commercially.</p></div>
         <div class="role"><h3>3-8 minutes</h3><p>Set the baseline, target, and current measurement path.</p></div>
         <div class="role"><h3>8-13 minutes</h3><p>Inspect the data source, access path, and whether it is clean enough for two weeks.</p></div>
@@ -147,13 +161,14 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap center prose reveal">
       <p class="eyebrow">Close</p>
       <h2>Book the 20-minute scoping call.</h2>
       <p class="lead">Bring one ugly workflow and one number you care about. We will tell you if AI can move it, how we would prove it, what you will own, and what we refuse to pretend.</p>
       <p><a href="contact.html" class="btn btn-primary">Book the scoping call <span class="arrow" aria-hidden="true">→</span></a></p>
       <p><a href="teardowns.html" class="txt-link">Read the pilot autopsies <span class="arrow" aria-hidden="true">→</span></a></p>
+      <div class="dpr-buddy-wrap" data-reveal aria-hidden="true"><img class="dpr-buddy" src="assets/mascot/cut/bot-peace.png" alt="" loading="lazy" decoding="async"></div>
     </div>
   </section>
 </main>
@@ -174,6 +189,41 @@
 <script src="site.js" defer></script>
 <script src="assets/anim.js" defer></script>
 <script src="assets/diagrams.js" defer></script>
+
+<script>
+(function () {
+  function armDiagramDraws() {
+    var draws = Array.prototype.slice.call(document.querySelectorAll('[data-diagram] [data-draw]'));
+    if (!draws.length) return;
+    draws.forEach(function (el) {
+      try {
+        var len = el.getTotalLength ? el.getTotalLength() : 1000;
+        el.style.setProperty('--len', Math.ceil(len));
+      } catch (e) {}
+    });
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      draws.forEach(function (el) { el.classList.add('is-in'); });
+      return;
+    }
+    if (!('IntersectionObserver' in window)) {
+      draws.forEach(function (el) { el.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.18 });
+    draws.forEach(function (el) { if (!el.classList.contains('is-in')) io.observe(el); });
+  }
+  function ready() { window.requestAnimationFrame(function () { window.requestAnimationFrame(armDiagramDraws); }); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ready);
+  else ready();
+}());
+</script>
 <script>
 (function () {
   var fields = {

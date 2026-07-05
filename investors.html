@@ -12,6 +12,16 @@
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+
+<style>
+  .dpr-visual-card{margin-top:34px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,#f8f9ff);box-shadow:var(--shadow-1);padding:clamp(20px,4vw,34px);overflow:hidden}
+  .dpr-visual-kicker{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#3b5bdb;margin:0 0 16px}
+  .dpr-buddy-wrap{position:relative;display:flex;justify-content:center;margin:28px auto 0;min-height:150px;pointer-events:none}
+  .dpr-buddy{width:clamp(120px,18vw,176px);height:auto;filter:drop-shadow(0 22px 34px rgba(59,91,219,.18));animation:dprBuddyFloat 5.5s ease-in-out infinite}
+  @keyframes dprBuddyFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}}
+  @media(max-width:640px){.dpr-visual-card{padding:18px;margin-top:24px}.dpr-buddy-wrap{min-height:122px;margin-top:20px}.dpr-buddy{width:128px}}
+  @media(prefers-reduced-motion:reduce){.dpr-buddy{animation:none}}
+</style>
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -26,7 +36,7 @@
   <div class="mobile-menu" id="mobileMenu"><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="pilot.html">Book a pilot</a></div>
 </header>
 <main id="main">
-  <section class="page-hero">
+  <section class="page-hero" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Investment matching</p>
       <h1>We do not sell introductions.</h1>
@@ -36,7 +46,7 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">The rule</p>
       <h2 style="margin-top:14px">We only introduce founders we have built with.</h2>
@@ -47,14 +57,14 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap reveal">
       <div class="prose">
         <p class="eyebrow">Readiness</p>
         <h2 style="margin-top:14px">What makes an intro worth sending.</h2>
         <p style="margin-top:16px">Before we send a founder to an investor, we look for six things. You can use the same checklist even if we never work together. It will save you from burning good names on a weak ask.</p>
       </div>
-      <div class="roles">
+      <div class="roles" data-stagger>
         <div class="role"><span class="tag">Working thing</span><h3>Not just a deck.</h3><p>A demo, pilot, workflow, or product path someone can touch. Investors discount nouns and pay attention to behavior.</p></div>
         <div class="role"><span class="tag">One number</span><h3>Already moving.</h3><p>Cycle time, activation, retention, revenue, cost-to-serve, accuracy with a baseline. Pick the number the business lives or dies by.</p></div>
         <div class="role"><span class="tag">Specific ask</span><h3>No “happy to chat.”</h3><p>Round size, timing, use of funds, and what kind of partner helps. Vague asks create vague replies.</p></div>
@@ -62,20 +72,24 @@
         <div class="role"><span class="tag">No obvious red flags</span><h3>Clean enough to diligence.</h3><p>Cap table, legal, cofounder alignment, customer claims, data rights. A fixable mess is still worth fixing before the intro.</p></div>
         <div class="role"><span class="tag">Why now</span><h3>Timing beats a polished memo.</h3><p>A market shift, new distribution path, regulatory opening, or proof point that just changed. The note needs urgency without theatrics.</p></div>
       </div>
+      <div class="dpr-visual-card" data-reveal>
+        <p class="dpr-visual-kicker">Warm-intro readiness</p>
+        <div data-diagram="framework" data-config='{"items":[{"n":"01","label":"Working thing"},{"n":"02","label":"One number"},{"n":"03","label":"Specific ask"},{"n":"04","label":"Stage fit"},{"n":"05","label":"No obvious red flags"},{"n":"06","label":"Why now"}]}'></div>
+      </div>
       <div class="prose" style="margin-top:28px">
         <p>After a DPR pilot, at least one box should be easier to check: one number is moving on real work. That is the part we can help manufacture honestly.</p>
       </div>
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap reveal">
       <div class="prose">
         <p class="eyebrow">Stage fit</p>
         <h2 style="margin-top:14px">Seed vs A vs B: what each actually expects.</h2>
         <p style="margin-top:16px">Founders waste months pitching the right company with the wrong evidence. The bar changes by stage. A strong seed story can look thin at Series A. A good Series A metric can look inefficient at Series B.</p>
       </div>
-      <div class="grid-3">
+      <div class="grid-3" data-stagger>
         <div class="card"><span class="tag">Seed</span><h3>A wedge and early signal.</h3><p>Investors want a believable team, a painful narrow opening, and evidence that someone cares. The product can be rough. The insight cannot be.</p></div>
         <div class="card"><span class="tag">Series A</span><h3>Repeatable motion.</h3><p>The question becomes whether early pull can repeat. Retention, sales motion, payback shape, and one number that compounds matter more than a crowded feature list.</p></div>
         <div class="card"><span class="tag">Series B</span><h3>Efficient growth.</h3><p>Growth needs a machine behind it: unit economics, durable channels, improving margins, and signs a moat is forming. “Big market” is no longer enough.</p></div>
@@ -86,7 +100,7 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Contrarian take</p>
       <h2 style="margin-top:14px">One relevant intro beats fifty cold ones.</h2>
@@ -97,12 +111,13 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap center prose reveal">
       <p class="eyebrow">Start with proof</p>
       <h2 style="margin-top:14px">Build the reason first.</h2>
       <p class="lead" style="margin-top:16px">If we build together and the evidence is real, we may be able to make the right introduction. If the evidence is not there, we will say that too.</p>
       <p><a href="contact.html" class="btn btn-primary">Book a scoping call <span class="arrow" aria-hidden="true">→</span></a></p>
+      <div class="dpr-buddy-wrap" data-reveal aria-hidden="true"><img class="dpr-buddy" src="assets/mascot/cut/bot-wave.png" alt="" loading="lazy" decoding="async"></div>
     </div>
   </section>
 </main>
@@ -110,5 +125,40 @@
 <script src="site.js" defer></script>
 <script src="assets/anim.js" defer></script>
 <script src="assets/diagrams.js" defer></script>
+
+<script>
+(function () {
+  function armDiagramDraws() {
+    var draws = Array.prototype.slice.call(document.querySelectorAll('[data-diagram] [data-draw]'));
+    if (!draws.length) return;
+    draws.forEach(function (el) {
+      try {
+        var len = el.getTotalLength ? el.getTotalLength() : 1000;
+        el.style.setProperty('--len', Math.ceil(len));
+      } catch (e) {}
+    });
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      draws.forEach(function (el) { el.classList.add('is-in'); });
+      return;
+    }
+    if (!('IntersectionObserver' in window)) {
+      draws.forEach(function (el) { el.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.18 });
+    draws.forEach(function (el) { if (!el.classList.contains('is-in')) io.observe(el); });
+  }
+  function ready() { window.requestAnimationFrame(function () { window.requestAnimationFrame(armDiagramDraws); }); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ready);
+  else ready();
+}());
+</script>
 </body>
 </html>
