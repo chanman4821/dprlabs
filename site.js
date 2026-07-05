@@ -14,9 +14,19 @@
     });
   });
 
-  // reveal on scroll
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  // reveal on scroll — robust: never leave content hidden
+  var revEls=document.querySelectorAll('.reveal');
+  if(revEls.length){
+    var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+    if(rm||!('IntersectionObserver' in window)){
+      revEls.forEach(function(el){el.classList.add('in');});
+    }else{
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.01,rootMargin:'0px 0px -8% 0px'});
+      revEls.forEach(function(el){io.observe(el);});
+      // safety net: nothing stays invisible, ever (cards can't "disappear")
+      setTimeout(function(){revEls.forEach(function(el){el.classList.add('in');});},1500);
+    }
+  }
 
   // count up
   function countUp(el){
@@ -92,7 +102,7 @@
   var R={
     ready:["Pilot-ready. You have a real number to move.","You\u2019ve got a countable metric, a baseline, real stakes, and a way to check the AI \u2014 exactly what a two-week pilot needs. The only thing left is agreeing the target in writing.","Book a 2-week pilot","contact.html"],
     scope:["You have a scoping problem, not an AI problem.","The gap isn\u2019t the model \u2014 it\u2019s that \u201cworking\u201d isn\u2019t defined yet. Name the number, set a baseline, decide who checks it. That\u2019s the work we do in week one, before writing a line of code.","See how we scope it","pilot-scoping-guide.html"],
-    notyet:["Not yet \u2014 measure before you automate.","With no number and no baseline, AI just helps you be wrong faster. Make the outcome countable first \u2014 here\u2019s the free playbook. Don\u2019t hire anyone, us included, until you can name the number.","Read the playbook","playbook.html"]
+    notyet:["Not yet \u2014 measure before you automate.","With no number and no baseline, AI just helps you be wrong faster. Make the outcome countable first \u2014 here\u2019s the free guide. Don\u2019t hire anyone, us included, until you can name the number.","Read the scoping guide","pilot-scoping-guide.html"]
   };
   function update(){
     var answered=0,yes=0;
