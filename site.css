@@ -1,13 +1,15 @@
 :root{
     --bg:#ffffff; --bg-soft:#f7f7f8; --bg-softer:#f0f0f2;
-    --ink:#0a0a0b; --ink-2:#18181b; --muted:#52525b; --faint:#8a8a93;
-    --line:#e7e7ea; --line-2:#dedee2;
+    --ink:#0a0a0b; --ink-2:#18181b; --muted:#3a3f47; --faint:#767b85;
+    --line:rgba(15,17,20,.09); --line-2:rgba(15,17,20,.15);
     --gold:#c8912b; --gold-bright:#e9c46a; --gold-deep:#52525b; --gold-soft:#f7f2e6; --gold-hi:#8a6416;
     --accent:#3b5bdb; --accent-strong:#2f49b0; --accent-soft:#eef1fb;
     --blue:#3b5bdb;
     --sans:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
     --mono:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
-    --maxw:1160px; --radius:14px;
+    --maxw:1200px; --radius:16px;
+    --shadow-1:0 1px 2px rgba(10,12,16,.05), 0 1px 1px rgba(10,12,16,.03);
+    --shadow-2:0 2px 6px rgba(10,12,16,.04), 0 16px 40px rgba(10,12,16,.08);
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -24,10 +26,25 @@
   .num{font-variant-numeric:tabular-nums}
   .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);margin:0}
   h1,h2,h3{letter-spacing:-.03em;font-weight:600;margin:0}
-  h1{font-size:clamp(40px,6vw,76px);line-height:1.01;letter-spacing:-.045em;font-weight:600}
-  h2{font-size:clamp(29px,4.4vw,50px);line-height:1.04}
+  h1{font-size:clamp(44px,6.6vw,86px);line-height:.97;letter-spacing:-.045em;font-weight:700}
+  h2{font-size:clamp(30px,4.6vw,54px);line-height:1.02;font-weight:700;letter-spacing:-.038em}
   .lead{color:var(--muted);font-size:clamp(16px,1.4vw,19px);line-height:1.6}
   .gold-text{color:var(--accent)}
+  /* signature — the Measurement Mark: an indigo tick + mono readout */
+  .mark{display:inline-flex;align-items:center;gap:11px;font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  .mark::before{content:"";width:clamp(30px,5vw,56px);height:2px;background:currentColor;border-radius:2px;display:inline-block;transform-origin:left;animation:markdraw .6s cubic-bezier(.16,1,.3,1) both}
+  @keyframes markdraw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  .sec-invert .mark{color:#9aa4ff}
+  .rule-mark{height:1px;background:var(--line);margin:0;border:0}
+  /* who we are / team */
+  .team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:44px}
+  .member{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:#fff;box-shadow:var(--shadow-1);transition:.2s ease}
+  .member:hover{box-shadow:var(--shadow-2);transform:translateY(-2px)}
+  .member .avatar{width:54px;height:54px;border-radius:14px;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:17px;font-weight:600;letter-spacing:.02em;margin-bottom:20px}
+  .member h3{font-size:19px;letter-spacing:-.02em;margin:0}
+  .member .cred{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:7px 0 13px;line-height:1.5}
+  .member p{color:var(--muted);font-size:14.5px;line-height:1.6;margin:0}
+  @media(max-width:760px){.team{grid-template-columns:1fr}}
   .skip-link{position:absolute;left:-999px;top:0;background:#fff;padding:10px 16px;border:1px solid var(--line);border-radius:8px;z-index:200}
   .skip-link:focus{left:12px;top:12px}
 
@@ -95,7 +112,7 @@
 
   /* generic section */
   section{position:relative}
-  .sec{padding:104px 0}
+  .sec{padding:128px 0}
   .sec-head{max-width:640px}
   .sec-head .lead{margin-top:16px}
   .center{text-align:center;margin:0 auto}
@@ -125,7 +142,7 @@
   /* cards + offer */
   .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:52px}
   .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:52px}
-  .card{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:#fff;transition:.2s ease}
+  .card{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:#fff;box-shadow:var(--shadow-1);transition:.2s ease}
   .card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 12px 34px rgba(154,107,30,.09)}
   .card .tag{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep)}
   .card h3{font-size:20px;margin:14px 0 8px}
@@ -212,7 +229,7 @@
   .status .d{width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px rgba(0,104,214,.18)}
 
   /* reveal */
-  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+  .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s cubic-bezier(.16,1,.3,1),transform .5s cubic-bezier(.16,1,.3,1)}
   .reveal.in{opacity:1;transform:none}
 
   @media (max-width:900px){
