@@ -81,3 +81,34 @@
   }
   setTimeout(step,2600);
 })();
+
+/* One-Number Test — homepage self-diagnostic */
+(function(){
+  var t=document.getElementById("oneNumberTest"); if(!t) return;
+  var rows=t.querySelectorAll("[data-q]");
+  var res=document.getElementById("ontResult");
+  if(!res) return;
+  var verdict=res.querySelector(".verdict"), rec=res.querySelector(".rec"), link=res.querySelector(".txt-link");
+  var R={
+    ready:["Pilot-ready. You have a real number to move.","You\u2019ve got a countable metric, a baseline, real stakes, and a way to check the AI \u2014 exactly what a two-week pilot needs. The only thing left is agreeing the target in writing.","Book a 2-week pilot","contact.html"],
+    scope:["You have a scoping problem, not an AI problem.","The gap isn\u2019t the model \u2014 it\u2019s that \u201cworking\u201d isn\u2019t defined yet. Name the number, set a baseline, decide who checks it. That\u2019s the work we do in week one, before writing a line of code.","See how we scope it","pilot-scoping-guide.html"],
+    notyet:["Not yet \u2014 measure before you automate.","With no number and no baseline, AI just helps you be wrong faster. Make the outcome countable first \u2014 here\u2019s the free playbook. Don\u2019t hire anyone, us included, until you can name the number.","Read the playbook","playbook.html"]
+  };
+  function update(){
+    var answered=0,yes=0;
+    rows.forEach(function(r){var p=r.querySelector("[aria-pressed=\"true\"]");if(p){answered++;yes+=+p.getAttribute("data-v");}});
+    if(answered<rows.length){res.className="tool-result";return;}
+    var k=yes===4?"ready":(yes>=2?"scope":"notyet"),d=R[k];
+    res.className="tool-result show "+(k==="ready"?"good":(k==="scope"?"warn":""));
+    verdict.textContent=d[0]; rec.textContent=d[1];
+    if(link){link.firstChild.textContent=d[2]+" "; link.setAttribute("href",d[3]);}
+  }
+  t.querySelectorAll(".yn").forEach(function(g){
+    g.querySelectorAll("button").forEach(function(b){
+      b.addEventListener("click",function(){
+        g.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed","false");});
+        b.setAttribute("aria-pressed","true"); update();
+      });
+    });
+  });
+})();

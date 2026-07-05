@@ -122,6 +122,39 @@
     </div>
   </section>
 
+  <!-- ONE-NUMBER TEST -->
+  <section class="sec" id="pilot-ready">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">30-second self-check</p>
+        <h2 style="margin-top:14px">Is your workflow actually <span class="gold-text">pilot-ready?</span></h2>
+        <p class="lead">Most "AI didn't work" stories are really "nobody agreed what working meant" stories. Answer four questions about your own workflow — you'll know in thirty seconds whether you have an AI problem or a scoping problem.</p>
+      </div>
+      <div class="tool reveal" id="oneNumberTest" style="max-width:800px">
+        <p class="tool-lead">Answer honestly — there are no wrong answers, only useful ones.</p>
+        <div class="qrow" data-q>
+          <div class="qtext">Is there a number?<small>Does this workflow produce something you can count — minutes, volume, error rate, cost?</small></div>
+          <div class="yn"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" class="no" data-v="0" aria-pressed="false">No</button></div>
+        </div>
+        <div class="qrow" data-q>
+          <div class="qtext">Is it measured today?<small>Could you tell me its current value this week, from real data?</small></div>
+          <div class="yn"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" class="no" data-v="0" aria-pressed="false">No</button></div>
+        </div>
+        <div class="qrow" data-q>
+          <div class="qtext">Would moving it 20% matter?<small>Would a fifth less time, or a fifth fewer errors, change a real decision or free real hours?</small></div>
+          <div class="yn"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" class="no" data-v="0" aria-pressed="false">No</button></div>
+        </div>
+        <div class="qrow" data-q>
+          <div class="qtext">Can a human check the answer?<small>Can someone on your team look at one output and tell whether the AI got it right?</small></div>
+          <div class="yn"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" class="no" data-v="0" aria-pressed="false">No</button></div>
+        </div>
+        <div class="tool-result" id="ontResult" role="status" aria-live="polite">
+          <p class="verdict"></p><p class="rec"></p><a class="txt-link" href="contact.html">Book a 2-week pilot <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- BIG NUMBER / GUARANTEE -->
   <section class="sec">
     <div class="wrap bignum reveal">

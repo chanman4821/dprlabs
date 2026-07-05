@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Teardowns — DPR Labs</title>
+<meta name="description" content="Anonymized autopsies of AI pilots that died — the six ways they fail, with the numbers and the fix for each. Credibility without a logo wall." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" href="assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="method.html">How it works</a><a href="proof.html">Proof</a>
+      <a href="blog/index.html">Field Notes</a><a href="about.html">About</a>
+    </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-ghost">Talk to us</a><a href="contact.html" class="btn btn-primary">Book a pilot</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="method.html">How it works</a><a href="proof.html">Proof</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="contact.html">Book a pilot</a>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Teardowns</p>
+      <h1>Most AI pilots do not die in the model.</h1>
+      <p class="lead" style="margin-top:20px">We once shipped a support-triage model that hit 94% accuracy in testing and got used by exactly nobody.</p>
+      <p>The model was never the problem. It lived in a separate tab, and the support agents already had eleven tabs open. We moved one inference call into the tool they already stared at all day, changed nothing about the model, and usage went from 0% to 80% in a week. Most “AI did not work” stories are actually “we forgot it had to live where the work happens” stories.</p>
+      <p>This page is our logo wall replacement: anonymized autopsies, the numbers that mattered, and the fix. No named clients. No victory lap. Just the ways pilots fail when smart people confuse a demo with a working system.</p>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Autopsy 01</p>
+      <h2 style="margin-top:14px">The 94%-accurate bot nobody used.</h2>
+      <p style="margin-top:16px">A support team had a real triage problem. Tickets came in messy. Agents lost time deciding priority, routing, and whether a refund policy applied. The model did the narrow job well: on a held-out sample, it matched the human routing label 94% of the time. In a room, the demo looked obvious. In production, usage was zero.</p>
+      <p>The reason was embarrassing and useful. The AI lived one click too far away. Agents worked in the ticketing tool. The model lived in a separate tab with a login, a search field, and a copy button. The team already had the help center, CRM, refund sheet, queue view, chat, and internal notes open. “One more tab” was not one more tab. It was one more place to forget.</p>
+      <p>We did not retrain. We did not swap models. We moved the inference call into the existing ticket sidebar and wrote the result into the field the team already used. The label appeared where the handoff happened. Usage went from 0% to roughly 80% in the first week, and the remaining gap was mostly edge cases the team wanted humans to own.</p>
+      <p>The lesson is blunt: the last mile is a product problem, not a model problem. If the output is not inside the workflow, the model is theater with a login screen. We spend unusual time on the boring integration layer because that is where pilots quietly die.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Autopsy 02</p>
+      <h2 style="margin-top:14px">When we deleted the vector database.</h2>
+      <p style="margin-top:16px">A fintech's AP team wanted “RAG” over policy docs, vendor rules, and approval notes. The first build had the shape everyone expects now: embeddings, chunks, a vector database, a reranker, and a chat box. It was expensive enough to notice and accurate enough to be dangerous. On a 120-question test set, the system often found a semantically similar paragraph and still missed the exact rule.</p>
+      <p>The corpus was not web scale. It was a few hundred pages, with stable headings, repeated terms, and document names people already knew. The fancy stack was solving the wrong problem. We rewrote the retrieval layer with good chunking, document-aware grep, strict citation rules, and a small model call only after the exact passages were found. Accuracy went up, cost went down, and the answer became easier for a controller to audit.</p>
+      <p>The usable rule: reach for embeddings when meaning differs from wording, the language is varied, or the corpus is too large for exact matching to be sane. Start with search when the docs are small, structured, and full of terms humans actually use. A boring baseline is not anti-AI. It is how you avoid paying rent on complexity.</p>
+      <p>Senior judgment sometimes looks like removing a tool from the diagram. We are not trying to make the architecture impressive. We are trying to move the number with the fewest pieces you will still understand after handoff.</p>
+      <p class="callout" style="margin-top:22px"><strong>A quick test:</strong> before approving a vector database, ask the vendor to beat keyword search on a blind set of real questions. If they cannot show the sample size, misses, and baseline, you are buying vibes.</p>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap reveal">
+      <div class="prose">
+        <p class="eyebrow">Eval Theater</p>
+        <h2 style="margin-top:14px">How to spot fake accuracy.</h2>
+        <p style="margin-top:16px">A founder does not need to be a machine-learning researcher to interrogate an accuracy claim. You need eight plain questions. Use them on any vendor, including us. If the answers get slippery, the metric is probably decoration.</p>
+      </div>
+      <div class="roles">
+        <div class="role"><span class="tag">01</span><h3>No holdout set</h3><p>If the examples used to tune the system are also used to score it, the number is not evidence.</p></div>
+        <div class="role"><span class="tag">02</span><h3>Cherry-picked wins</h3><p>A demo that only shows successes is a sales reel. Ask for misses and borderline cases.</p></div>
+        <div class="role"><span class="tag">03</span><h3>Training-data overlap</h3><p>Public FAQs, old tickets, and copied examples can make recall look like reasoning.</p></div>
+        <div class="role"><span class="tag">04</span><h3>No human spot-check</h3><p>Someone who knows the work should review a sample and mark false confidence.</p></div>
+        <div class="role"><span class="tag">05</span><h3>No baseline</h3><p>“87% accurate” means little if a rules script, grep, or the current team already gets 85%.</p></div>
+        <div class="role"><span class="tag">06</span><h3>No sample size</h3><p>A single number without n is a magic trick. Ten examples and 1,000 examples are not the same claim.</p></div>
+        <div class="role"><span class="tag">07</span><h3>Internal tests only</h3><p>“It passed our tests” is not a method. Ask what failed, who graded it, and how labels were made.</p></div>
+        <div class="role"><span class="tag">08</span><h3>Demo-safe workflow</h3><p>If the demo path avoids messy inputs, permissions, handoffs, and exceptions, it is not your job yet.</p></div>
+      </div>
+      <div class="prose" style="margin-top:28px">
+        <p>We teach clients to catch this because clean measurement protects both sides. If we cannot win on a real baseline, you should know before a second invoice exists.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap reveal">
+      <div class="prose">
+        <p class="eyebrow">Death certificate</p>
+        <h2 style="margin-top:14px">The six ways AI pilots die.</h2>
+        <p style="margin-top:16px">Most failures are not mysterious. They fall into a small set of repeatable patterns. Naming the pattern early keeps the pilot small enough to save.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card"><span class="tag">No Metric</span><h3>“Working” became opinion.</h3><p>Symptom: every meeting debates quality. Root cause: nobody agreed the number. Fix: a written metric contract on day one.</p></div>
+        <div class="card"><span class="tag">Boil-the-Ocean</span><h3>The mandate was “make us AI-first.”</h3><p>Symptom: weeks of workshops, no shipped workflow. Root cause: scope was a slogan. Fix: one workflow, one number.</p></div>
+        <div class="card"><span class="tag">Vendor Lock</span><h3>You rent the system forever.</h3><p>Symptom: every change needs the vendor. Root cause: the code, prompts, evals, or weights never leave. Fix: take the assets.</p></div>
+        <div class="card"><span class="tag">Eval Theater</span><h3>The accuracy number was fake.</h3><p>Symptom: the demo wins and production misses. Root cause: no real test set. Fix: a holdout set plus human spot-check.</p></div>
+        <div class="card"><span class="tag">Last-Mile Gap</span><h3>It worked where nobody worked.</h3><p>Symptom: good model, no usage. Root cause: the output lived outside the job. Fix: put it in the tool they already use.</p></div>
+        <div class="card"><span class="tag">Orphaned Owner</span><h3>Nobody owned it after handoff.</h3><p>Symptom: three weeks later, it is stale. Root cause: no internal owner. Fix: name the owner before you start.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap center prose reveal">
+      <p class="eyebrow">A better bet</p>
+      <h2 style="margin-top:14px">Bring one ugly workflow.</h2>
+      <p class="lead" style="margin-top:16px">We will tell you which death mode is most likely before we build. If the number is real and the owner exists, a two-week pilot is enough to learn something honest.</p>
+      <p><a href="contact.html" class="btn btn-primary">Book a 2-week pilot <span class="arrow" aria-hidden="true">→</span></a></p>
+      <p><a href="method.html" class="txt-link">Read how the pilot works <span class="arrow" aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+        <p>A senior AI consulting studio — we build it, measure it, and hand it over. You own what we build.</p>
+      </div>
+      <div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="proof.html">Proof</a><a href="about.html">About</a></div>
+      <div class="foot-col"><h4>Field Notes</h4><a href="blog/the-one-number.html">The one number</a><a href="blog/no-lock-in.html">No lock-in</a><a href="blog/two-week-pilot.html">Two-week pilot</a><a href="blog/index.html">All posts</a></div>
+      <div class="foot-col"><h4>Get started</h4><a href="contact.html">Book a scoping call</a><a href="contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div>
+    </div>
+    <div class="foot-bottom"><small>© 2026 DPR Labs — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>
