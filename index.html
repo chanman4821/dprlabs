@@ -113,8 +113,28 @@
     </div>
   </div>
 
-  <!-- PROBLEM -->
-  <section class="sec problem">
+  <!-- THE SLOP PROBLEM (dark) -->
+  <section class="sec sec-invert" id="slop">
+    <div class="wrap">
+      <div class="sec-head reveal" style="max-width:780px">
+        <p class="eyebrow">The state of the industry</p>
+        <h2 style="margin-top:14px">The industry is drowning in <span class="gold-text">AI slop.</span></h2>
+        <p class="lead">Dead demos. Chatbots bolted on the side. Endpoints you rent forever. "Accuracy" with no baseline. Most "AI transformation" is theater billed as progress. Here are six kinds — and the tell that gives each one away.</p>
+      </div>
+      <div class="slop-list">
+        <div class="slop-item reveal"><h3>The Bolt-On Bot</h3><p class="tell">A GPT wrapper stapled to the corner of your page. <b>Tell:</b> it can't touch your real data or workflow.</p></div>
+        <div class="slop-item reveal"><h3>The Dead Demo</h3><p class="tell">Flawless on the sales call, never seen in production. <b>Tell:</b> no live metric, no user count, no incident history.</p></div>
+        <div class="slop-item reveal"><h3>The Rented Brain</h3><p class="tell">You pay per call forever and own nothing. <b>Tell:</b> no weights, no code, no exit path in the contract.</p></div>
+        <div class="slop-item reveal"><h3>The Vanity Accuracy</h3><p class="tell">"98% accurate" with no baseline. <b>Tell:</b> no sample size, no comparison group, no confidence interval.</p></div>
+        <div class="slop-item reveal"><h3>AI-First Theater</h3><p class="tell">A rebrand with the word "AI" and zero shipped behavior change. <b>Tell:</b> the roadmap is slides, not commits.</p></div>
+        <div class="slop-item reveal"><h3>The Eval-Free Ship</h3><p class="tell">A model in production with no test suite. <b>Tell:</b> nobody can say if last week's change made it better or worse.</p></div>
+      </div>
+      <p class="reveal" style="margin-top:26px"><a href="slop.html" class="txt-link">See all seven, plus the Slop Sniff-Test you can run on any vendor <span class="arrow" aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
+  <!-- (legacy problem block, hidden) -->
+  <section class="sec problem" hidden>
     <div class="wrap center reveal">
       <p class="eyebrow">Why most AI projects stall</p>
       <h2 style="margin:16px auto 0">Most AI projects die as a demo.</h2>
@@ -164,6 +184,26 @@
         <h3>If the pilot doesn't move the number we agreed, you don't pay the fee — and you keep the code.</h3>
         <p class="lead">We're a small studio early in our story. The guarantee is how we make hiring us safe: the risk sits with us, not you. One workflow, one number agreed in writing before we start, a working system at the end that you own.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- OWNED-AI METHOD -->
+  <section class="sec" id="owned-method">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">The Owned-AI Method</p>
+        <h2 style="margin-top:14px">A system, <span class="gold-text">not a slide deck.</span></h2>
+        <p class="lead">Six steps that turn "AI" from theater into a moved number. Every engagement runs the same order — and ends at Proof you can re-check.</p>
+      </div>
+      <div class="modules">
+        <div class="module reveal"><div class="mnum">01</div><h3>Number</h3><p>Agree the one honest metric up front — the number the whole job is judged on.</p></div>
+        <div class="module reveal"><div class="mnum">02</div><h3>Baseline</h3><p>Measure today's real performance on your real data, so improvement is provable.</p></div>
+        <div class="module reveal"><div class="mnum">03</div><h3>Build-Inside</h3><p>Embed the model into your actual workflow and data — no bolt-on bot.</p></div>
+        <div class="module reveal"><div class="mnum">04</div><h3>Evals</h3><p>A test harness grades every change against ground truth before users see it.</p></div>
+        <div class="module reveal"><div class="mnum">05</div><h3>Handover</h3><p>Full ownership transfers: code, weights, evals, deploy. Zero lock-in.</p></div>
+        <div class="module reveal"><div class="mnum">06</div><h3>Proof</h3><p>Report with baseline, sample size, and honest caveats. The number stands on its own.</p></div>
+      </div>
+      <p class="reveal" style="margin-top:28px"><a href="method.html" class="txt-link">See how each step runs, day by day <span class="arrow" aria-hidden="true">→</span></a></p>
     </div>
   </section>
 
@@ -241,6 +281,25 @@
     </div>
   </section>
 
+  <!-- FLAGSHIP CASE STUDY -->
+  <section class="sec" id="case">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Case study · anonymized</p>
+        <h2 style="margin-top:14px">One honest number cut handling time <span class="gold-text">74% in two weeks.</span></h2>
+        <p class="lead">A 40-person logistics ops team was drowning in freight exceptions — ~1,200 a week, ~38 minutes each. We agreed one number before writing code, then built a classifier and retrieval agent inside their ticketing system. They own all of it.</p>
+      </div>
+      <div class="metric-band reveal">
+        <div class="mb"><div class="mv"><span data-count="10">10</span> min</div><div class="mk">Median handling time, down from 38 min</div><span class="mtag">-74% · illustrative</span></div>
+        <div class="mb"><div class="mv"><span data-count="61">61</span>%</div><div class="mk">Exceptions resolved with no human touch</div><span class="mtag">from 0% · illustrative</span></div>
+        <div class="mb"><div class="mv">n=<span data-count="2431">2431</span></div><div class="mk">Live exceptions measured over two weeks</div><span class="mtag">held-out set of 500 · anonymized</span></div>
+        <div class="mb"><div class="mv">100%</div><div class="mk">Code, weights, and evals handed over</div><span class="mtag">real term of every pilot</span></div>
+      </div>
+      <p class="margin-note" style="margin-top:22px"><b>Why we show the caveat:</b> this reflects one team's ticket mix over two weeks; peak-season volume needs eval-guided retraining — which is exactly why they own the eval suite. Slop hides its limits. We label them.</p>
+      <p class="reveal" style="margin-top:14px"><a href="case-studies.html" class="txt-link">Read the full teardown, with baseline and sample size <span class="arrow" aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
   <!-- WHAT WE DO / OFFERINGS -->
   <section class="sec" id="offerings">
     <div class="wrap">
@@ -275,6 +334,24 @@
           <p>No account managers, no offshore hand-off, no black box. A small senior studio that prices the work up front, says no to work it can't win, and leaves you owning everything it builds.</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO (dark) -->
+  <section class="sec sec-invert" id="manifesto">
+    <div class="wrap">
+      <p class="eyebrow reveal">What we stand on</p>
+      <p class="statement reveal" style="margin-top:16px">Measured, owned, and senior — <em>or it isn't AI, it's theater you rent forever.</em></p>
+      <ul class="manifesto">
+        <li class="reveal"><b>AI slop is the default.</b> We are the antidote.</li>
+        <li class="reveal">If it can't move one honest number, it's a demo with a pulse.</li>
+        <li class="reveal">A chatbot bolted to the side of your business is a costume, not a strategy.</li>
+        <li class="reveal">Renting an endpoint forever is a subscription to someone else's leverage.</li>
+        <li class="reveal">Accuracy without a baseline is a marketing number, not a result.</li>
+        <li class="reveal">We name the metric before we write the code — then we let it judge us.</li>
+        <li class="reveal">If the pilot doesn't move the number, you don't pay.</li>
+        <li class="reveal">Build it inside your business, or don't call it yours.</li>
+      </ul>
     </div>
   </section>
 
