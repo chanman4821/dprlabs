@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DPR Labs — We Build Your AI. We Find Your Funding.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#fff; --ink:#0b0a08; --muted:#6a655c; --faint:#767065;
+    --line:#ece7db; --line2:#e0d9c9;
+    --gold:#d4af37; --gold-bright:#f0d066; --gold-deep:#8a6510; --gold-ink:#2a1e00; --gold-soft:#faf5e6;
+    --sans:'Geist',system-ui,sans-serif; --mono:'Geist Mono',ui-monospace,monospace; --serif:'Fraunces',Georgia,serif;
+    --maxw:1200px;
+  }
+  *{box-sizing:border-box} html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;
+       font-variant-numeric:tabular-nums lining-nums;line-height:1.5}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep)}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;gap:28px;height:64px;position:relative}
+  .mnav-t{display:none} .mnav-btn{display:none;width:36px;height:36px;border:1px solid var(--line2);border-radius:9px;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:#fff}
+  .mnav-btn span{display:block;width:16px;height:2px;background:var(--ink);border-radius:2px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.02em}
+  .brand .mk{width:18px;height:18px;border-radius:6px;background:linear-gradient(135deg,#f3d778,#d4af37 50%,#a67c15);box-shadow:0 1px 4px rgba(160,120,30,.45)}
+  .nav nav{display:flex;gap:22px;margin-left:8px}
+  .nav nav a{font-size:14px;color:var(--muted)} .nav nav a:hover{color:var(--ink)}
+  .nav .sp{flex:1}
+  .btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 18px;border-radius:999px;font-size:14px;font-weight:600;border:1px solid transparent;white-space:nowrap}
+  .btn-primary{background:linear-gradient(135deg,#f3d778,#d9b84a 45%,#b98f28);color:var(--gold-ink);box-shadow:0 2px 14px rgba(185,143,40,.40)}
+  .btn-primary:hover{filter:brightness(1.05)}
+  .btn-ghost{border-color:var(--line2);color:var(--ink);background:#fff} .btn-ghost:hover{border-color:var(--gold)}
+
+  .hero{position:relative;padding:96px 0 64px}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.98fr);gap:44px;align-items:center}
+  h1{font-size:clamp(42px,5.4vw,74px);line-height:.98;letter-spacing:-.035em;font-weight:700;margin:0}
+  h1 .g{background:linear-gradient(120deg,#8a6510,#a9781a,#a97c22);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{margin:26px 0 0;max-width:34ch;font-size:18px;color:var(--muted);letter-spacing:-.01em}
+  .cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+  .right{display:flex;flex-direction:column;align-items:center;gap:26px}
+  .goldart{width:100%;max-width:460px;aspect-ratio:1/1;object-fit:contain;
+           filter:drop-shadow(0 22px 40px rgba(170,130,40,.20))}
+  .labels{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;max-width:540px}
+  .labels .eyebrow{color:#4b463c;font-size:12px}
+  .labels .eyebrow b{color:var(--gold-deep);font-weight:600}
+
+  .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;margin-top:52px;background:var(--gold-soft)}
+  .trust .row{display:flex;gap:28px;justify-content:center;flex-wrap:wrap}
+
+  .sec{padding:96px 0}
+  .sec h2{font-family:var(--serif);font-size:clamp(30px,4vw,52px);line-height:1.04;letter-spacing:-.01em;font-weight:600;margin:0 0 8px;max-width:18ch}
+  .sec h2 em{font-style:italic;color:var(--gold-deep)}
+  .sec .lede{color:var(--muted);font-size:17px;max-width:54ch;margin:0 0 46px}
+  .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+  .card{border:1px solid var(--line);border-radius:16px;padding:28px;background:#fff;transition:border-color .2s,transform .2s,box-shadow .2s}
+  .card:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:0 10px 30px rgba(180,140,40,.10)}
+  .card .tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep)}
+  .card h3{font-size:21px;letter-spacing:-.02em;margin:14px 0 8px;font-weight:600}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  .card .n{float:right;font-family:var(--mono);font-size:12px;color:var(--gold-deep)}
+
+  footer{border-top:1px solid var(--line);padding:40px 0;color:var(--faint)}
+  .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-size:13px}
+
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:36px}
+    .right{order:-1}
+    .cards{grid-template-columns:1fr}
+  }
+  @media(max-width:640px){
+    .nav{gap:12px} .mnav-btn{display:flex} .nav nav{display:none} .nav .btn-ghost{display:none}
+    #mnav:checked ~ nav{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:14px 18px;gap:12px;z-index:60;box-shadow:0 12px 24px rgba(0,0,0,.07)}
+    #mnav:checked ~ nav a{font-size:16px;color:var(--ink)}
+    h1{font-size:clamp(38px,11vw,58px)} .wrap{padding:0 18px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#"><span class="mk"></span> DPR&nbsp;Labs</a>
+    <input type="checkbox" id="mnav" class="mnav-t" />
+    <label for="mnav" class="mnav-btn" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <nav>
+      <a href="#work">How we work</a>
+      <a href="#capital">Capital</a>
+      <a href="#proof">Proof</a>
+      <a href="#about">About</a>
+    </nav>
+    <span class="sp"></span>
+    <a class="btn btn-ghost" href="#contact">Talk to us</a>
+    <a class="btn btn-primary" href="#contact">Start your build</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>We Build Your AI.<br />We Find Your Funding.</h1>
+        <p class="sub">Done-for-you AI agents — planned, architected, and shipped — plus access to one of the largest pools of investors to fund your growth.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#contact">Start your build</a>
+          <a class="btn btn-ghost" href="#work">See how we work</a>
+        </div>
+      </div>
+      <div class="right">
+        <img class="goldart" src="artifacts/visual-test/goldbrain/brain-blocks.png" alt="Golden brain built from gold blocks" />
+        <div class="labels">
+          <p class="eyebrow">We <b>build + implement</b> AI agents</p>
+          <p class="eyebrow">We <b>find you investors</b> + funding</p>
+          <p class="eyebrow">You <b>own the code</b> + IP</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust">
+      <div class="wrap row">
+        <span class="eyebrow">AI Consulting</span>
+        <span class="eyebrow">Agent Engineering</span>
+        <span class="eyebrow">Capital &amp; Investor Access</span>
+        <span class="eyebrow">You Own It</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="work">
+    <div class="wrap">
+      <p class="eyebrow" style="margin-bottom:14px">What we do</p>
+      <h2>We build it. And we help you <em>raise it.</em></h2>
+      <p class="lede">We don't sell you tools to figure out yourself. We ship production AI agents inside your business — then open the door to the investors and funding to scale them.</p>
+      <div class="cards">
+        <div class="card"><span class="n">01</span><span class="tag">Production, not prototypes</span><h3>Agents that do the work</h3><p>We build and implement production AI agents that execute real tasks inside your operations. Working systems, not demos.</p></div>
+        <div class="card"><span class="n">02</span><span class="tag">End to end</span><h3>Plan, architect, execute</h3><p>From the first whiteboard to shipped software, one team owns the full arc: strategy, system design, and hands-on delivery.</p></div>
+        <div class="card"><span class="n">03</span><span class="tag">Investors + funding</span><h3>We find your funding</h3><p>You pay us to build — and we connect you to one of the largest pools of investors and help bring in the capital to grow.</p></div>
+        <div class="card"><span class="n">04</span><span class="tag">Your code, your IP</span><h3>You own the outcome</h3><p>The agents, the code, and the IP belong to you — systems your team can run, extend, and defend long after we ship.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 DPR Labs — AI builds &amp; capital.</span>
+    <span class="eyebrow">Built to ship. Funded to scale.</span>
+  </div>
+</footer>
+
+</body>
+</html>

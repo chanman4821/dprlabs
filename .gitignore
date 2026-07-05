@@ -6,3 +6,24 @@ node_modules/
 .playwright-mcp/
 __pycache__/
 *.pyc
+
+# build tooling & dev cruft
+artifacts/
+dark-backup/
+*.dark-backup.html
+index.white-backup.html
+brain-test.html
+brain-blocks.js
+
+# stray screenshots / renders
+dpr-*.png
+verify-*.png
+hub-hero.png
+*-full.png
+*-render.png
+brain-test-frame.png
+mascot-contact-sheet.png
+
+# heavy unused source assets
+assets/_raw/
+assets/video/

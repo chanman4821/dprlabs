@@ -2,580 +2,202 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<script>document.documentElement.classList.add('js');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>DPR Labs — AI consulting that ships, measured by a number.</title>
-<meta name="description" content="DPR Labs is a senior AI consulting studio. We build real, working AI systems — proven in weeks, measured by one honest number. A few pilots so far. If a pilot doesn't move its number, you don't pay." />
-<meta name="theme-color" content="#07090D" />
-
+<title>DPR Labs — We build your AI. Proven in weeks, owned by you.</title>
+<meta name="description" content="DPR Labs is a senior AI consulting studio. We build AI for your business, prove it in a two-week pilot on one honest number, and hand it over — you own it. If it doesn't move the number, you don't pay." />
+<meta name="theme-color" content="#ffffff" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="DPR Labs — Agentic AI that ships, measured by one number." />
-<meta property="og:description" content="Real agentic AI consulting. We run a 2-week pilot on your biggest time-sink, agree one number up front, and if we don't move it — you don't pay." />
+<meta property="og:title" content="DPR Labs — We build your AI. Proven in weeks, owned by you." />
+<meta property="og:description" content="A senior AI consulting studio. We build AI for your business, prove it in a two-week pilot on one honest number, and hand it over — you own it. No lock-in." />
 
-<!-- Existing page fonts (Fraunces + IBM Plex) -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<!-- Hero dark-theme fonts: Geist (display) + Inter (body/numbers) -->
-<!-- tokens.css requires these; fallback stacks work without them -->
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&family=Inter:wght@300..800&display=swap" rel="stylesheet" />
-
-<link rel="stylesheet" href="tokens.css?v=2" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
-<link rel="stylesheet" href="hero.css?v=2" />
-<link rel="stylesheet" href="sections.css?v=3" />
-<link rel="stylesheet" href="scrollbar.css?v=2" />
-<link rel="stylesheet" href="appshell.css?v=1" />
-<link rel="stylesheet" href="workspace.css?v=3" />
-<link rel="stylesheet" href="reasoning.css?v=3" />
+
+<link rel="stylesheet" href="site.css" />
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "DPR Labs",
-  "alternateName": "DPR",
-  "description": "Senior AI consulting studio building agentic AI systems that ship and get smarter every week.",
-  "url": "https://dprlabs.io/"
-}
+{"@context":"https://schema.org","@type":"Organization","name":"DPR Labs","alternateName":"DPR",
+"description":"Senior AI consulting studio. Two-week pilots, one honest number, systems you own.","url":"https://dprlabs.io/"}
 </script>
+<noscript><style>.reveal{opacity:1;transform:none}.mascot{animation:none}</style></noscript>
 </head>
 
 <body id="top">
-
 <a class="skip-link" href="#main">Skip to content</a>
 
-<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-
-<!-- ============ HEADER / NAV ============ -->
-<header class="nav" id="nav">
-  <a href="#top" class="brand" aria-label="DPR Labs — home">
-    <span class="brand-mark" aria-hidden="true"></span>
-    <span class="brand-word">DPR Labs</span>
-    <span class="brand-by">AI studio</span>
-  </a>
-  <nav class="nav-links" aria-label="Primary">
-    <a href="method.html">How it works</a>
-    <a href="proof.html">Proof</a>
-    <a href="jarvis.html">Built on Jarvis</a>
-    <a href="blog/index.html">Field Notes</a>
-    <a href="about.html">About</a>
-  </nav>
-  <a href="contact.html" class="btn btn-primary nav-cta magnetic" data-magnetic>Book a call</a>
-  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false"
-    aria-controls="mobileMenu" aria-label="Open menu">
-    <span class="nt-bars" aria-hidden="true"><i></i><i></i><i></i></span>
-  </button>
-</header>
-
-<div class="mobile-menu" id="mobileMenu" hidden>
-  <div class="mm-panel" role="dialog" aria-modal="true" aria-label="Site menu">
-    <button class="mm-close" id="mmClose" type="button" aria-label="Close menu">&times;</button>
-    <nav class="mm-links" aria-label="Mobile">
-      <a href="method.html">How it works</a>
-      <a href="proof.html">Proof</a>
-      <a href="jarvis.html">Built on Jarvis</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#method">How it works</a>
+      <a href="#proof">Proof</a>
+      
       <a href="blog/index.html">Field Notes</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="mm-cta">Book a call</a>
+      <a href="#about">About</a>
     </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-ghost">Talk to us</a>
+      <a href="#contact" class="btn btn-primary">Book a pilot</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-</div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#method">How it works</a><a href="#proof">Proof</a>
+    <a href="blog/index.html">Field Notes</a><a href="#about">About</a><a href="#contact">Book a pilot</a>
+  </div>
+</header>
 
 <main id="main">
 
-  <!-- ============================================================
-       HERO — 3-layer WebGL/Canvas + copy
-       aria-labelledby: one <h1 id="hero-h"> names the section.
-       Canvases are aria-hidden (decorative; copy is the substance).
-       ============================================================ -->
-  <section class="hero" id="hero" aria-labelledby="hero-h">
-
-    <!-- ── Cinematic pipeline centerpiece — the hero visual ──────────
-         Full-bleed glowing teal conduit with flowing data packets.
-         <video> loops with the still poster as fallback; if the mp4
-         is still rendering / 404s, the poster PNG carries the frame.
-         prefers-reduced-motion shows ONLY the still (video hidden via
-         hero.css). data-hero-parallax → soft pointer/scroll parallax. -->
-    <div class="hero__stage" aria-hidden="true" data-hero-parallax>
-      <canvas class="hero__particles" id="particles"></canvas>
-      <img class="hero__poster"
-        src="assets/images/cinematic/hero-pipeline.png"
-        alt="" decoding="async" fetchpriority="high" />
-      <video class="hero__video" id="heroVideo"
-        autoplay muted loop playsinline preload="auto"
-        poster="assets/images/cinematic/hero-pipeline.png">
-        <source src="assets/video/hero-pipeline.webm" type="video/webm" />
-        <source src="assets/video/hero-pipeline.mp4" type="video/mp4" />
-      </video>
-      <div class="hero__vignette"></div>
-      <div class="hero__grain"></div>
-    </div>
-
-    <!-- ── Copy ───────────────────────────────────────────────────── -->
-    <div class="hero__inner">
-
-      <!-- Eyebrow / kicker -->
-      <p class="hero__eyebrow" aria-hidden="true">
-        Agentic AI consulting &middot; measured honestly
-      </p>
-
-      <!-- ONE <h1> on the page — names the section via aria-labelledby -->
-      <h1 class="hero__h" id="hero-h">
-        Agentic AI that ships real systems,
-        <em>proven by one honest number.</em>
-      </h1>
-
-      <!-- Primary positioning paragraph -->
-      <p class="hero__sub">
-        We run a two-week pilot on your biggest time-sink. We agree one
-        number before we start. We build a working AI system and hand it
-        to your team to own — no lock-in, no slide deck.
-      </p>
-
-      <!-- Supporting pillars — secondary, not equal to primary -->
-      <p class="hero__pillars" aria-label="What we also do">
-        <span>Connect founders to the right investors</span>
-        <span>Ship your product</span>
-      </p>
-
-      <!-- Amber number — from Jarvis run JSON (mesh-hero.js drives it).
-           Fallback value: 14 (days in a pilot — always true).
-           OWNER NOTE: update default once real run data is live.
-           aria-live="off": count-up is decorative; AT reads the final
-           value already in the DOM. (INTERACTION-SPEC §3)            -->
-      <div class="hero__stat"
-        aria-label="305 files changed in one real build run">
-        <span class="hero__stat-num"
-          id="meshNumber"
-          data-count="305"
-          aria-live="off">305</span>
-        <span class="hero__stat-unit" id="meshUnit">files shipped in one real run</span>
+  <!-- HERO — interactive hub -->
+  <section class="hero hero-hub" id="hero">
+    <div class="wrap">
+      <p class="eyebrow">AI consulting &amp; investment matching</p>
+      <h1>We build your AI. <em>We match you with investors.</em></h1>
+      <p class="lead">A senior AI studio. We take your biggest time-sink and build a working system you own in a two-week pilot — then, when it fits, open warm doors to the investors who fund what's next.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary">Book a 2-week pilot <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="method.html" class="btn btn-ghost">See how it works</a>
       </div>
 
-      <!-- CTAs — keyboard-reachable, visible focus ring (hero.css) -->
-      <div class="hero__actions">
-        <a href="contact.html"
-          class="hero__btn-primary">Book a 2-week pilot</a>
-        <a href="method.html"
-          class="hero__btn-quiet">See how a pilot works
-          <span aria-hidden="true">&rarr;</span></a>
-      </div>
-
-      <!-- Honest guarantee line — verbatim from existing hero -->
-      <p class="hero__honest">
-        A small senior team. A few pilots so far. We publish exactly how
-        we measure&nbsp;&mdash; and if a pilot doesn&rsquo;t move its
-        number, you don&rsquo;t pay.
-      </p>
-
-    </div><!-- /.hero__inner -->
-
-    <!-- Scroll nudge (decorative, aria-hidden) -->
-    <div class="hero__scroll" aria-hidden="true">
-      <div class="hero__scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-
-    <!-- Hero → page-light gradient transition -->
-    <div class="hero__fade" aria-hidden="true"></div>
-
-  </section><!-- /#hero -->
-
-  <!-- ============ INTELLIGENCE — cinematic band ============ -->
-  <section class="cineband" id="intelligence" aria-labelledby="cine-h">
-    <div class="cineband__bg" aria-hidden="true">
-      <video class="amb-vid cineband__vid" muted loop playsinline preload="none"
-        poster="assets/images/cinematic/reason-converge-poster.jpg">
-        <source src="assets/video/reason-converge.webm" type="video/webm" />
-        <source src="assets/video/reason-converge.mp4" type="video/mp4" />
-      </video>
-      <div class="cineband__scrim"></div>
-    </div>
-    <div class="cineband__inner reveal">
-      <p class="eyebrow">Under the hood</p>
-      <h2 class="cineband__h" id="cine-h">Intelligence that <em>reasons, decides, and checks itself.</em></h2>
-      <p class="cineband__sub">Every pilot runs on a mesh of agents that explore options, weigh the
-        evidence, and correct their own work — not a single prompt. Here's what that looks like.</p>
-    </div>
-  </section>
-
-  <!-- ============ AGENT WORKSPACE — live product demo ============ -->
-  <section class="ws" id="workspace" aria-labelledby="ws-h">
-    <div class="section-wrap">
-      <header class="section-head reveal">
-        <p class="eyebrow">Inside a run</p>
-        <h2 class="section-title" id="ws-h">Watch the mesh <em>ship a build.</em></h2>
-        <p class="section-lead">Planner scopes the work, the builder writes code, the grader
-          runs the checks, the healer fixes what's flaky — then it ships. This is the same
-          pipeline behind our pilots.</p>
-      </header>
-
-      <!-- The animated app screen. Decorative motion → aria-hidden. -->
-      <div class="app" data-ws aria-hidden="true">
-        <aside class="app-side">
-          <div class="app-ws">
-            <span class="app-ws-avatar">M</span>
-            <span class="app-ws-name">mesh</span>
-            <svg class="app-ws-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </div>
-          <nav class="app-nav">
-            <span class="app-nav-item is-active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="lbl">Runs</span></span>
-            <span class="app-nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v9H4z"/><path d="M4 14l4 4h8l4-4"/></svg><span class="lbl">Inbox</span></span>
-            <span class="app-nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span class="lbl">Reviews</span></span>
-            <span class="app-nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg><span class="lbl">Pulse</span></span>
-          </nav>
-          <div class="app-side-label">Active runs</div>
-          <ul class="app-side-list">
-            <li><span class="app-dot is-run"></span><span class="txt">Invoice sync</span></li>
-            <li><span class="app-dot is-review"></span><span class="txt">Billing webhook</span></li>
-            <li><span class="app-dot is-done"></span><span class="txt">Auth tests</span></li>
-            <li><span class="app-dot is-idle"></span><span class="txt">Payout keys</span></li>
-          </ul>
-          <div class="app-side-spacer"></div>
-          <div class="app-side-foot">
-            <span class="app-avatar mono" data-role="you">You</span>
-            <span class="app-you">Operator</span>
-          </div>
-        </aside>
-
-        <div class="app-main">
-          <header class="app-bar">
-            <span class="app-crumb">Runs</span>
-            <span class="app-crumb-sep">/</span>
-            <span class="app-crumb-cur">Invoice sync</span>
-            <svg class="app-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.6 5.6L20 9.3l-4 4 1 5.7L12 16l-5 3 1-5.7-4-4 5.4-.7z"/></svg>
-            <div class="app-bar-sp"></div>
-            <span class="app-pill"><i></i>Live</span>
-            <span class="app-pager"><b data-ws-page>02</b> / 60</span>
-            <button class="app-bar-btn" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
-            <button class="app-bar-btn" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
-            <button class="app-bar-btn" tabindex="-1"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></button>
-          </header>
-
-          <div class="app-content">
-            <div class="ws-metrics">
-              <span class="ws-metric"><b data-m="files">305</b><span>files changed</span></span>
-              <span class="ws-metric"><b data-m="checks">720</b><span>checks passed</span></span>
-              <span class="ws-metric"><b data-m="agents">3</b><span>agents active</span></span>
-            </div>
-
-            <div class="ws-body">
-              <div class="ws-board">
-                <div class="ws-cols">
-                  <div class="ws-col" data-col="plan">
-                    <div class="ws-col-head">Plan<span class="ws-col-n" data-count="plan">1</span></div>
-                    <div class="ws-col-lane" data-lane="plan"></div>
-                  </div>
-                  <div class="ws-col" data-col="build">
-                    <div class="ws-col-head">Build<span class="ws-col-n" data-count="build">1</span></div>
-                    <div class="ws-col-lane" data-lane="build"></div>
-                  </div>
-                  <div class="ws-col" data-col="grade">
-                    <div class="ws-col-head">Grade<span class="ws-col-n" data-count="grade">1</span></div>
-                    <div class="ws-col-lane" data-lane="grade"></div>
-                  </div>
-                  <div class="ws-col" data-col="heal">
-                    <div class="ws-col-head">Heal<span class="ws-col-n" data-count="heal">0</span></div>
-                    <div class="ws-col-lane" data-lane="heal"></div>
-                  </div>
-                  <div class="ws-col" data-col="shipped">
-                    <div class="ws-col-head">Shipped<span class="ws-col-n" data-count="shipped">0</span></div>
-                    <div class="ws-col-lane" data-lane="shipped"></div>
-                  </div>
-                </div>
-              </div>
-
-              <aside class="ws-rail">
-                <div class="ws-rail-head">Activity</div>
-                <ul class="ws-log" data-ws-log></ul>
-                <div class="ws-diff">
-                  <div class="ws-diff-head"><span data-ws-diff-title>billing/webhook.ts</span></div>
-                  <pre class="ws-diff-body" data-ws-diff-body></pre>
-                </div>
-              </aside>
-            </div>
-          </div>
+      <div class="hub" id="hub" role="group" aria-label="What we do — the gold bot reacts as you explore each offering">
+        <svg class="hub-web" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <line data-line="0" x1="50" y1="50" x2="50" y2="12" />
+          <line data-line="1" x1="50" y1="50" x2="82" y2="31" />
+          <line data-line="2" x1="50" y1="50" x2="82" y2="69" />
+          <line data-line="3" x1="50" y1="50" x2="50" y2="88" />
+          <line data-line="4" x1="50" y1="50" x2="18" y2="69" />
+          <line data-line="5" x1="50" y1="50" x2="18" y2="31" />
+        </svg>
+        <div class="hub-core">
+          <img class="hub-bot" id="botMain" src="assets/mascot/cut/bot-peace.png" alt="DPR Labs gold robot mascot" />
+        </div>
+        <div class="hub-nodes">
+          <button class="hub-node" type="button" data-node="0" style="left:50%;top:12%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8.5 4.9v9.8L12 21.6 3.5 16.7V6.9z"/><path d="M12 12l8.5-5M12 12v9.6M12 12L3.5 7"/></svg></span>
+            <span class="nt">We build your AI</span><span class="nd">AI builds</span></button>
+          <button class="hub-node" type="button" data-node="1" style="left:82%;top:31%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 14.5l5-5"/><path d="M8 11l-2 2a3 3 0 0 0 4.2 4.2l2-2"/><path d="M16 13l2-2a3 3 0 0 0-4.2-4.2l-2 2"/></svg></span>
+            <span class="nt">We find your investors</span><span class="nd">Investment matching</span></button>
+          <button class="hub-node" type="button" data-node="2" style="left:82%;top:69%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11l-1 8.5L19 10h-6.5z"/></svg></span>
+            <span class="nt">Proven in weeks</span><span class="nd">Two-week pilot</span></button>
+          <button class="hub-node" type="button" data-node="3" style="left:50%;top:88%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="4.5"/><path d="M11.2 11.2 20 20M16.5 16.5l2.2-2.2M13.8 18.8l2.2-2.2"/></svg></span>
+            <span class="nt">No lock-in</span><span class="nd">You own it</span></button>
+          <button class="hub-node" type="button" data-node="4" style="left:18%;top:69%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2"/></svg></span>
+            <span class="nt">One honest number</span><span class="nd">Measured</span></button>
+          <button class="hub-node" type="button" data-node="5" style="left:18%;top:31%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 14.5c-1.8 1.8-2 5.5-2 5.5s3.7-.2 5.5-2"/><path d="M12.5 15 9 11.5a13 13 0 0 1 8-9c2.8.2 2.8 2.8 3 3a13 13 0 0 1-9 8z"/><circle cx="14.5" cy="9.5" r="1.3"/></svg></span>
+            <span class="nt">Idea to shipped</span><span class="nd">Product shipping</span></button>
         </div>
       </div>
-
-      <p class="ws-caption">An illustration of how our mesh runs a build — planner, builder,
-        grader, healer. A depiction of the real workflow and architecture, not live client data.</p>
     </div>
   </section>
 
-  <!-- ============ REASONING CONSOLE — how the mesh thinks ============ -->
-  <section class="rs" id="reasoning" aria-labelledby="rs-h">
-    <div class="section-wrap">
-      <header class="section-head reveal">
-        <p class="eyebrow">Inside the thinking</p>
-        <h2 class="section-title" id="rs-h">Watch the mesh <em>reason it out.</em></h2>
-        <p class="section-lead">Not just cards moving — the actual deliberation. It streams a
-          chain of thought, sprouts and prunes options on a decision graph, weighs the
-          evidence, catches its own mistake, and lands on one number it can defend.</p>
-      </header>
+  <!-- VALUE STRIP -->
+  <div class="strip">
+    <div class="wrap strip-in">
+      <span class="lbl">What we do</span>
+      <b>AI built for you</b><span class="sep">·</span>
+      <b>Measured honestly</b><span class="sep">·</span>
+      <b>You own the code</b><span class="sep">·</span>
+      <b>No lock-in</b><span class="sep">·</span>
+      <b>Senior people only</b>
+    </div>
+  </div>
 
-      <!-- Animated reasoning console. Decorative motion → aria-hidden. -->
-      <div class="app rs-app" data-rs aria-hidden="true">
-        <aside class="app-side">
-          <div class="app-ws">
-            <span class="app-ws-avatar">M</span>
-            <span class="app-ws-name">mesh</span>
-            <svg class="app-ws-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-          </div>
-          <nav class="app-nav">
-            <span class="app-nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span class="lbl">Runs</span></span>
-            <span class="app-nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v9H4z"/><path d="M4 14l4 4h8l4-4"/></svg><span class="lbl">Inbox</span></span>
-            <span class="app-nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4L19 6"/></svg><span class="lbl">Reviews</span></span>
-            <span class="app-nav-item is-active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg><span class="lbl">Pulse</span></span>
-          </nav>
-          <div class="app-side-label">Deliberations</div>
-          <ul class="app-side-list">
-            <li><span class="app-dot is-run"></span><span class="txt">Pilot metric</span></li>
-            <li><span class="app-dot is-review"></span><span class="txt">Retry policy</span></li>
-            <li><span class="app-dot is-done"></span><span class="txt">Cache scope</span></li>
-            <li><span class="app-dot is-idle"></span><span class="txt">Queue design</span></li>
-          </ul>
-          <div class="app-side-spacer"></div>
-          <div class="app-side-foot">
-            <span class="app-avatar mono" data-role="you">You</span>
-            <span class="app-you">Operator</span>
-          </div>
-        </aside>
+  <!-- PROBLEM -->
+  <section class="sec problem">
+    <div class="wrap center reveal">
+      <p class="eyebrow">Why most AI projects stall</p>
+      <h2 style="margin:16px auto 0">Most AI projects die as a demo.</h2>
+      <p class="lead">Not because the tech can't work — because nobody agreed what "working" meant. A vendor sells a deck, runs a flashy proof of concept, and hands you something that never reaches production. Six months later you're still paying, still dependent, no closer to owning it. We built DPR Labs to be the opposite: small scope, one agreed number, fast, and yours to keep.</p>
+    </div>
+  </section>
 
-        <div class="app-main">
-          <header class="app-bar">
-            <span class="app-crumb">Pulse</span>
-            <span class="app-crumb-sep">/</span>
-            <span class="app-crumb-cur">Pilot metric</span>
-            <svg class="app-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.6 5.6L20 9.3l-4 4 1 5.7L12 16l-5 3 1-5.7-4-4 5.4-.7z"/></svg>
-            <div class="app-bar-sp"></div>
-            <span class="app-pill" data-rs-status><i></i>Thinking</span>
-            <span class="app-pager"><b data-rs-page>01</b> / 12</span>
-            <button class="app-bar-btn" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
-            <button class="app-bar-btn" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
-            <button class="app-bar-btn" tabindex="-1"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg></button>
-          </header>
-
-          <div class="app-content">
-            <div class="rs-metrics">
-              <span class="rs-metric"><b data-m="steps">0</b><span>reasoning steps</span></span>
-              <span class="rs-metric"><b data-m="branches">0</b><span>branches explored</span></span>
-              <span class="rs-metric"><b data-m="pruned">0</b><span>branches pruned</span></span>
-              <span class="rs-metric"><b data-m="conf">0.34</b><span>confidence</span></span>
-            </div>
-
-            <div class="rs-body">
-              <!-- Live chain-of-thought stream (monospace) -->
-              <div class="rs-stream-wrap">
-                <div class="rs-pane-head">
-                  Chain of thought
-                  <span class="rs-phase" data-rs-phase data-tone="default">Observe</span>
-                </div>
-                <div class="rs-stream" data-rs-stream></div>
-              </div>
-
-              <!-- Reasoning rail: graph + scoring + agents + tools -->
-              <aside class="rs-rail">
-                <div class="rs-rail-block rs-graph">
-                  <p class="rs-block-title">Decision graph <small>explore · prune · choose</small></p>
-                  <canvas class="rs-canvas" data-rs-canvas width="480" height="176"></canvas>
-                </div>
-
-                <div class="rs-rail-block">
-                  <p class="rs-block-title">Confidence &amp; candidates</p>
-                  <div class="rs-score">
-                    <div class="rs-dial">
-                      <svg viewBox="0 0 76 76" aria-hidden="true">
-                        <circle class="rs-dial-track" cx="38" cy="38" r="32" fill="none" stroke-width="6"></circle>
-                        <circle class="rs-dial-arc" data-rs-dial-arc cx="38" cy="38" r="32" fill="none" stroke-width="6"></circle>
-                      </svg>
-                      <span class="rs-dial-val" data-rs-dial-val>0.34</span>
-                      <span class="rs-dial-lab">conf</span>
-                    </div>
-                    <div class="rs-cands">
-                      <div class="rs-cand" data-cand="A">
-                        <div class="rs-cand-top"><span class="rs-cand-name">Auto-clear %</span><span class="rs-cand-score">0.58</span></div>
-                        <div class="rs-cand-bar"><i></i></div>
-                      </div>
-                      <div class="rs-cand" data-cand="B">
-                        <div class="rs-cand-top"><span class="rs-cand-name">Cycle time</span><span class="rs-cand-score">0.52</span></div>
-                        <div class="rs-cand-bar"><i></i></div>
-                      </div>
-                      <div class="rs-cand" data-cand="C">
-                        <div class="rs-cand-top"><span class="rs-cand-name">Invoices / hr</span><span class="rs-cand-score">0.44</span></div>
-                        <div class="rs-cand-bar"><i></i></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="rs-rail-block">
-                  <p class="rs-block-title">Agents deliberating</p>
-                  <div class="rs-agents" data-rs-agents></div>
-                </div>
-
-                <div class="rs-rail-block">
-                  <p class="rs-block-title">Tool calls</p>
-                  <div class="rs-tools">
-                    <span class="rs-tool" data-tool="search">search()</span>
-                    <span class="rs-tool" data-tool="read">read(400)</span>
-                    <span class="rs-tool" data-tool="tests">run_tests</span>
-                    <span class="rs-tool" data-tool="verify">verify</span>
-                    <span class="rs-tool" data-tool="commit">commit</span>
-                  </div>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </div>
+  <!-- BIG NUMBER / GUARANTEE -->
+  <section class="sec">
+    <div class="wrap bignum reveal">
+      <div class="fig"><small>$</small>0</div>
+      <div>
+        <p class="k">The guarantee</p>
+        <h3>If the pilot doesn't move the number we agreed, you don't pay the fee — and you keep the code.</h3>
+        <p class="lead">We're a small studio early in our story. The guarantee is how we make hiring us safe: the risk sits with us, not you. One workflow, one number agreed in writing before we start, a working system at the end that you own.</p>
       </div>
-
-      <p class="rs-caption">An illustration of how our mesh reasons through a decision —
-        explore, weigh, decide, revise. A depiction of the real workflow and architecture,
-        not live client data.</p>
     </div>
   </section>
 
-  <!-- ============ METHOD — HOW A PILOT WORKS ============ -->
-  <section class="method" id="method" aria-labelledby="method-h">
-    <canvas class="band-canvas" data-agents="dispatch" aria-hidden="true"></canvas>
-    <div class="section-wrap">
-      <header class="section-head reveal">
+  <!-- METHOD -->
+  <section class="sec problem" id="method">
+    <div class="wrap">
+      <div class="sec-head reveal">
         <p class="eyebrow">How a pilot works</p>
-        <h2 class="section-title" id="method-h">Four honest steps.<br /><em>No slide deck at the end.</em></h2>
-        <p class="section-lead">We find the task eating the most time, build a working AI system in
-          two weeks, measure it honestly, and hand it over. You own everything we ship.</p>
-      </header>
-
-      <ol class="spine" data-spine>
-        <li class="spine__step reveal">
-          <span class="spine__dot" aria-hidden="true"><i>1</i></span>
-          <div class="spine__body">
-            <h3 class="spine__title">Find the biggest time-sink</h3>
-            <p class="spine__text">We sit with your team and pick the one repetitive workflow that
-              costs the most hours. One target — not a platform.</p>
-          </div>
-          <aside class="spine__note" aria-hidden="true">
-            <span class="spine__note-k">Duration</span><span class="spine__note-v num">~2 days</span>
-            <span class="spine__note-k">Output</span><span class="spine__note-v">Scoped target</span>
-          </aside>
-        </li>
-        <li class="spine__step reveal">
-          <span class="spine__dot" aria-hidden="true"><i>2</i></span>
-          <div class="spine__body">
-            <h3 class="spine__title">Run a two-week paid pilot</h3>
-            <p class="spine__text">We build a real, working agentic AI system against the number we
-              agreed — not a prototype, not a mock.</p>
-          </div>
-          <aside class="spine__note" aria-hidden="true">
-            <span class="spine__note-k">Duration</span><span class="spine__note-v num">2&ndash;4 wks</span>
-            <span class="spine__note-k">Price</span><span class="spine__note-v num">$8k&ndash;$15k</span>
-          </aside>
-        </li>
-        <li class="spine__step reveal">
-          <span class="spine__dot" aria-hidden="true"><i>3</i></span>
-          <div class="spine__body">
-            <h3 class="spine__title">Measure it honestly</h3>
-            <p class="spine__text">We report the number against a real baseline, with sample size and
-              caveats in plain sight. If it didn't move, we say so.</p>
-          </div>
-          <aside class="spine__note" aria-hidden="true">
-            <span class="spine__note-k">Output</span><span class="spine__note-v">Scorecard</span>
-            <span class="spine__note-k">Method</span><span class="spine__note-v">Published</span>
-          </aside>
-        </li>
-        <li class="spine__step reveal">
-          <span class="spine__dot" aria-hidden="true"><i>4</i></span>
-          <div class="spine__body">
-            <h3 class="spine__title">Hand it off — you own it</h3>
-            <p class="spine__text">Code, weights, and docs go to your team. No license to renew, no
-              seat to rent, no dependency on us.</p>
-          </div>
-          <aside class="spine__note" aria-hidden="true">
-            <span class="spine__note-k">Output</span><span class="spine__note-v">Your repo</span>
-            <span class="spine__note-k">Lock-in</span><span class="spine__note-v num">None</span>
-          </aside>
-        </li>
-      </ol>
+        <h2 style="margin-top:14px">Four honest steps. <span class="gold-text">No slide deck at the end.</span></h2>
+        <p class="lead">We find the task eating the most time, build a working AI system in two weeks, measure it honestly, and hand it over. You own everything we ship.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="step-n">01</div>
+          <div><h3>Find the biggest time-sink</h3><p>We sit with your team and pick the one repetitive workflow that costs the most hours. One target, not a platform.</p></div>
+          <div class="step-meta"><span>Duration</span><b>~2 days</b><span>Output</span><b>Scoped target</b></div></div>
+        <div class="step reveal"><div class="step-n">02</div>
+          <div><h3>Run a two-week paid pilot</h3><p>We build a real, working agentic AI system against the number we agreed — not a prototype, not a mock — inside your own systems.</p></div>
+          <div class="step-meta"><span>Duration</span><b>2–4 wks</b><span>Price</span><b>$8k–$15k</b></div></div>
+        <div class="step reveal"><div class="step-n">03</div>
+          <div><h3>Measure it honestly</h3><p>We report the number against a real baseline, with sample size and caveats in plain sight. If it didn't move, we say so.</p></div>
+          <div class="step-meta"><span>Output</span><b>Scorecard</b><span>Method</span><b>Published</b></div></div>
+        <div class="step reveal"><div class="step-n">04</div>
+          <div><h3>Hand it off — you own it</h3><p>Code, weights, and docs go to your team. No license to renew, no seat to rent, no dependency on us.</p></div>
+          <div class="step-meta"><span>Output</span><b>Your repo</b><span>Lock-in</span><b>None</b></div></div>
+      </div>
     </div>
   </section>
 
-  <!-- ============ OFFER + GUARANTEE ============ -->
-  <section class="offer" id="offer" aria-labelledby="offer-h">
-    <canvas class="band-canvas" data-agents="telemetry" aria-hidden="true"></canvas>
-    <div class="section-wrap offer__wrap">
-      <div class="offer__intro reveal">
+  <!-- OFFER -->
+  <section class="sec" id="offer">
+    <div class="wrap offer">
+      <div class="reveal">
         <p class="eyebrow">The offer</p>
-        <h2 class="section-title" id="offer-h">A two-week pilot,<br /><em>priced up front.</em></h2>
-        <p class="section-lead">One workflow. One number we agree on before we start. A working
-          system at the end that you own — not a slide deck.</p>
-        <aside class="offer__margin">
-          <span class="offer__margin-k">Why a guarantee?</span>
-          We're a small studio early in our story. The guarantee is how we make that safe for you —
-          the risk sits with us, not you.
-        </aside>
+        <h2 style="margin-top:14px">A two-week pilot, <span class="gold-text">priced up front.</span></h2>
+        <p class="lead">One workflow. One number we agree on before we start. A working system at the end that you own — not a slide deck.</p>
+        <p class="margin-note"><b>Why a guarantee?</b> We're a small studio early in our story. The guarantee is how we make that safe for you — the risk sits with us, not you.</p>
       </div>
-
-      <div class="scorecard reveal" role="group" aria-label="Pilot scorecard">
-        <p class="scorecard__eyebrow">Pilot scorecard</p>
-        <ol class="scorecard__rows">
-          <li><span class="scorecard__k">Scope</span><span class="scorecard__v">One workflow, chosen for the biggest time saving.</span></li>
-          <li><span class="scorecard__k">Price band</span><span class="scorecard__v num">$8,000&ndash;$15,000</span></li>
-          <li><span class="scorecard__k">Timeline</span><span class="scorecard__v num">~2&ndash;4 weeks</span></li>
-          <li><span class="scorecard__k">The number</span><span class="scorecard__v">Agreed in writing before we start.</span></li>
-        </ol>
-        <p class="scorecard__guarantee">
-          <span class="scorecard__seal" aria-hidden="true">&#10003;</span>
-          <span><strong>The guarantee.</strong> If the pilot doesn't move the number we agreed,
-            you don't pay the fee &mdash; and you keep the code.</span>
-        </p>
-        <a href="#contact" class="btn-primary btn-block magnetic" data-magnetic>Book a pilot
-          <span aria-hidden="true">&rarr;</span></a>
+      <div class="scorecard reveal">
+        <p class="sc-eyebrow">Pilot scorecard</p>
+        <ul class="sc-rows">
+          <li><span class="k">Scope</span><span class="v">One workflow, biggest time saving</span></li>
+          <li><span class="k">Price band</span><span class="v num">$8,000–$15,000</span></li>
+          <li><span class="k">Timeline</span><span class="v num">~2–4 weeks</span></li>
+          <li><span class="k">The number</span><span class="v">Agreed in writing, up front</span></li>
+        </ul>
+        <div class="guarantee"><span class="seal" aria-hidden="true">✓</span>
+          <span><strong>The guarantee.</strong> If the pilot doesn't move the number we agreed, you don't pay the fee — and you keep the code.</span></div>
+        <a href="#contact" class="btn btn-primary btn-block">Book a pilot <span class="arrow" aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
 
-  <!-- ============ HONEST PROOF ============ -->
-  <section class="proof" id="proof" aria-labelledby="proof-h">
-    <canvas class="band-canvas band-canvas--back" data-agents="field" aria-hidden="true"></canvas>
-    <div class="section-wrap">
-      <header class="section-head reveal">
+  <!-- PROOF -->
+  <section class="sec problem" id="proof">
+    <div class="wrap">
+      <div class="sec-head reveal">
         <p class="eyebrow">Honest proof</p>
-        <h2 class="section-title" id="proof-h">One anonymized pilot.<br /><em>Numbers you can check.</em></h2>
-        <p class="section-lead">We only publish what we can stand behind. Below is a sanitized pilot,
-          labelled as an illustration — not a promise about your workflow.</p>
-      </header>
-
-      <div class="scorecard scorecard--proof reveal">
-        <p class="scorecard__tag">Anonymized logistics pilot &middot; illustration</p>
-        <div class="proof__figures">
-          <div class="proof__fig">
-            <span class="proof__label">Before</span>
-            <span class="proof__num num"><span data-count="11">11</span> min</span>
-            <span class="proof__cap">per manual handoff</span>
-          </div>
-          <span class="proof__arrow" aria-hidden="true">&rarr;</span>
-          <div class="proof__fig proof__fig--after">
-            <span class="proof__label">After</span>
-            <span class="proof__num num"><span data-count="90">90</span> sec</span>
-            <span class="proof__cap">automated handoff</span>
-          </div>
-          <div class="proof__fig">
-            <span class="proof__label">Sample</span>
-            <span class="proof__num num">n=<span data-count="400">400</span></span>
-            <span class="proof__cap">handoffs measured</span>
-          </div>
-        </div>
-        <ol class="scorecard__rows">
-          <li><span class="scorecard__k">Method</span><span class="scorecard__v">Timed against a two-week pre-pilot baseline, same operators.</span></li>
-          <li><span class="scorecard__k">Caveat</span><span class="scorecard__v">One workflow, one client. Not a guarantee your numbers match.</span></li>
-        </ol>
+        <h2 style="margin-top:14px">One anonymized pilot. <span class="gold-text">Numbers you can check.</span></h2>
+        <p class="lead">We only publish what we can stand behind. Below is a sanitized pilot, labelled as an illustration — not a promise about your workflow.</p>
       </div>
-
-      <div class="honesty reveal">
-        <h3 class="honesty__title">What could go wrong</h3>
-        <ul class="honesty__list">
+      <div class="proofstats reveal">
+        <div class="pstat"><p class="k">Before</p><div class="big num"><span data-count="11">11</span> min</div><p class="cap">per manual handoff</p></div>
+        <div class="pstat after"><p class="k">After</p><div class="big num"><span data-count="90">90</span> sec</div><p class="cap">automated handoff</p></div>
+        <div class="pstat"><p class="k">Sample</p><div class="big num">n=<span data-count="400">400</span></div><p class="cap">handoffs measured</p></div>
+      </div>
+      <span class="proof-tag reveal">Anonymized logistics pilot · illustration · timed vs. a two-week baseline, same operators</span>
+      <div class="gowrong reveal">
+        <h3>What could go wrong</h3>
+        <ul style="margin:0;padding:0;display:grid;gap:10px">
           <li>Your workflow may not have a clean number to move. We'll tell you before you pay.</li>
           <li>Some tasks need judgment a model can't yet be trusted with. We say no to those.</li>
           <li>A two-week pilot proves direction, not a five-year SLA. Scale is a separate conversation.</li>
@@ -584,238 +206,123 @@
     </div>
   </section>
 
-  <!-- ============ WHAT WE DO — 3-OFFERING STORY ============ -->
-  <section class="wwd" id="what-we-do" aria-labelledby="wwd-h">
-    <canvas class="band-canvas" data-agents="dispatch" aria-hidden="true"></canvas>
-    <div class="section-wrap">
-      <header class="section-head reveal">
+  <!-- WHAT WE DO -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
         <p class="eyebrow">What we do</p>
-        <h2 class="section-title" id="wwd-h">One thing we're built for.<br /><em>Two ways we help after.</em></h2>
-      </header>
-
-      <div class="wwd__list">
-        <article class="wwd__primary reveal">
-          <p class="wwd__rank">Primary</p>
-          <h3 class="wwd__title">Agentic AI that ships</h3>
-          <p class="wwd__text">We build real, working AI systems that do the job in production —
-            measured by one honest number, handed to your team to own. This is the work; everything
-            else supports it.</p>
-          <a href="method.html" class="wwd__link">See how a pilot works
-            <span aria-hidden="true">&rarr;</span></a>
+        <h2 style="margin-top:14px">One thing we're built for. <span class="gold-text">Two ways we help after.</span></h2>
+        <p class="lead">Buyers don't buy agents — they buy fewer hours, a real connection, a launched product. So every offering leads with the outcome.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card reveal" style="grid-column:1/-1">
+          <span class="rank">Primary</span><span class="tag">We build your AI</span>
+          <h3>A working system doing a real job in your production</h3>
+          <p>We build it for you — owned by your team, measured by one honest number. Specialised agents plan, build, grade, and repair the work, wired into your actual systems, not a chatbot bolted on the side. This is the work; everything else supports it. You could fire us tomorrow and it keeps running.</p>
+          <p style="margin-top:14px"><a href="method.html" class="txt-link">See how a pilot works <span class="arrow" aria-hidden="true">→</span></a></p>
         </article>
-
-        <div class="wwd__pillars">
-          <article class="wwd__pillar reveal">
-            <p class="wwd__rank">Supporting</p>
-            <h3 class="wwd__pillar-title">Investor intros</h3>
-            <p class="wwd__text">When it fits, we connect founders to the right investors and
-              resources — warm, relevant, no spray-and-pray.</p>
-          </article>
-          <article class="wwd__pillar reveal">
-            <p class="wwd__rank">Supporting</p>
-            <h3 class="wwd__pillar-title">Product shipping</h3>
-            <p class="wwd__text">We help founders go from idea to a shipped product with the same
-              senior team that runs the pilots.</p>
-          </article>
-        </div>
+        <article class="card reveal">
+          <span class="rank">Supporting</span><span class="tag">Investor intros</span>
+          <h3>Warm, relevant introductions</h3>
+          <p>When it genuinely fits, we connect founders we already work with to investors who match your stage and sector. No spray-and-pray. An introduction is an introduction — never a promised raise.</p>
+        </article>
+        <article class="card reveal">
+          <span class="rank">Supporting</span><span class="tag">Product shipping</span>
+          <h3>Idea to a shipped product</h3>
+          <p>Built by the same senior team that runs the pilots, on your stack, handed over so your team owns and can extend it. The same one-number discipline wherever a number makes sense.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ YOUR FEARS, ANSWERED — ACCORDION ============ -->
-  <section class="fears" id="fears" aria-labelledby="fears-h">
-    <canvas class="band-canvas band-canvas--back" data-agents="field" aria-hidden="true"></canvas>
-    <div class="section-wrap section-wrap--narrow">
-      <header class="section-head reveal">
+  <!-- FAQ -->
+  <section class="sec problem" id="faq">
+    <div class="wrap" style="max-width:820px">
+      <div class="sec-head reveal" style="margin:0 auto;text-align:center">
         <p class="eyebrow">Your fears, answered</p>
-        <h2 class="section-title" id="fears-h">The four questions<br /><em>everyone asks first.</em></h2>
-      </header>
-
-      <div class="faq reveal" data-faq>
-        <div class="faq__item">
-          <h3 class="faq__h">
-            <button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-1-panel" id="faq-1-btn">
-              <span>Will this actually reach production?</span>
-              <span class="faq__chevron" aria-hidden="true"></span>
-            </button>
-          </h3>
-          <div class="faq__panel" id="faq-1-panel" role="region" aria-labelledby="faq-1-btn" hidden>
-            <p>Yes — that's the whole point. A pilot ends with a working system running against a
-              real number, not a demo. If it can't reach production, we say so before you pay.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <h3 class="faq__h">
-            <button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-2-panel" id="faq-2-btn">
-              <span>Am I locked in to you?</span>
-              <span class="faq__chevron" aria-hidden="true"></span>
-            </button>
-          </h3>
-          <div class="faq__panel" id="faq-2-panel" role="region" aria-labelledby="faq-2-btn" hidden>
-            <p>No. You get the code, the weights, and the docs. No license to renew, no seat to rent.
-              You can walk away with everything the day the pilot ends.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <h3 class="faq__h">
-            <button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-3-panel" id="faq-3-btn">
-              <span>Is my data safe?</span>
-              <span class="faq__chevron" aria-hidden="true"></span>
-            </button>
-          </h3>
-          <div class="faq__panel" id="faq-3-panel" role="region" aria-labelledby="faq-3-btn" hidden>
-            <p>We work inside your boundaries — your cloud, your keys where possible. We don't train
-              shared models on your data, and we agree the handling rules in writing up front.</p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <h3 class="faq__h">
-            <button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-4-panel" id="faq-4-btn">
-              <span>Will I stay dependent on you?</span>
-              <span class="faq__chevron" aria-hidden="true"></span>
-            </button>
-          </h3>
-          <div class="faq__panel" id="faq-4-panel" role="region" aria-labelledby="faq-4-btn" hidden>
-            <p>Our aim is to hand off and leave. We document the system so your team can run and
-              extend it. We're happy to help later — but by choice, never by lock-in.</p>
-          </div>
-        </div>
+        <h2 style="margin-top:14px">The four questions everyone asks first.</h2>
+      </div>
+      <div class="faq" data-faq>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Will this actually reach production?<span class="chev" aria-hidden="true"></span></button>
+          <div class="faq-panel"><p>Yes — that's the whole point. A pilot ends with a working system running against a real number, not a demo. If it can't reach production, we say so before you pay.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Am I locked in to you?<span class="chev" aria-hidden="true"></span></button>
+          <div class="faq-panel"><p>No. You get the code, the weights, and the docs. No license to renew, no seat to rent. You can walk away with everything the day the pilot ends.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Is my data safe?<span class="chev" aria-hidden="true"></span></button>
+          <div class="faq-panel"><p>We work inside your boundaries — your cloud, your keys where possible. We don't train shared models on your data, and we agree the handling rules in writing up front.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Will I stay dependent on you?<span class="chev" aria-hidden="true"></span></button>
+          <div class="faq-panel"><p>Our aim is to hand off and leave. We document the system so your team can run and extend it. We're happy to help later — but by choice, never by lock-in.</p></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ============ ABOUT ============ -->
-  <section class="about" id="about" aria-labelledby="about-h">
-    <div class="section-wrap section-wrap--narrow">
-      <header class="section-head reveal">
+  <!-- ABOUT + FIELD NOTES -->
+  <section class="sec" id="about">
+    <div class="wrap split">
+      <div class="reveal">
         <p class="eyebrow">About</p>
-        <h2 class="section-title" id="about-h">A small, senior team.</h2>
-      </header>
-      <div class="about__body reveal">
-        <p>DPR Labs is a senior AI studio. We've run a handful of pilots so far and we'd rather show
-          real work than borrowed logos. We publish how we measure, and you own what we build.</p>
-        <ul class="about__links">
-          <li><a href="#" aria-label="GitHub (link coming soon)">GitHub <span aria-hidden="true">&rarr;</span></a><span class="about__soon">link soon</span></li>
-          <li><a href="#" aria-label="Talks (link coming soon)">Talks &amp; writing <span aria-hidden="true">&rarr;</span></a><span class="about__soon">link soon</span></li>
-        </ul>
+        <h2 style="margin-top:14px">A small, senior team.</h2>
+        <p class="lead" style="margin-top:16px">DPR Labs is a senior AI studio. We've run a handful of pilots so far and we'd rather show real work than borrowed logos. We publish how we measure, and you own what we build.</p>
+        <div class="about-links">
+          <a href="proof.html" class="txt-link">How we measure <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ FIELD NOTES TEASER ============ -->
-  <section class="notes" id="field-notes" aria-labelledby="notes-h">
-    <div class="section-wrap">
-      <header class="section-head reveal">
+      <div class="reveal">
         <p class="eyebrow">Field notes</p>
-        <h2 class="section-title" id="notes-h">How we think, in the open.</h2>
-      </header>
-      <ul class="notes__rail">
-        <li class="notes__item notes__item--lg reveal">
-          <p class="notes__tag">AI pilots</p>
-          <a href="blog/the-one-number.html" class="notes__link"><h3 class="notes__title">The one number that decides a pilot</h3></a>
-          <p class="notes__read"><span class="num">6</span> min read</p>
-        </li>
-        <li class="notes__item reveal">
-          <p class="notes__tag">Ownership</p>
-          <a href="blog/no-lock-in.html" class="notes__link"><h3 class="notes__title">Why we hand you the code and leave</h3></a>
-          <p class="notes__read"><span class="num">4</span> min read</p>
-        </li>
-        <li class="notes__item notes__item--sm reveal">
-          <p class="notes__tag">Method</p>
-          <a href="blog/two-week-pilot.html" class="notes__link"><h3 class="notes__title">What two weeks actually buys you</h3></a>
-          <p class="notes__read"><span class="num">3</span> min read</p>
-        </li>
-      </ul>
+        <h2 style="margin-top:14px;font-size:clamp(24px,3vw,34px)">How we think, in the open.</h2>
+        <div class="notes-list">
+          <a href="blog/the-one-number.html" class="note"><span class="note-tag">AI pilots</span><span class="note-t">The one number that decides a pilot</span><span class="note-read">6 min</span></a>
+          <a href="blog/no-lock-in.html" class="note"><span class="note-tag">Ownership</span><span class="note-t">No lock-in, on purpose</span><span class="note-read">7 min</span></a>
+          <a href="blog/two-week-pilot.html" class="note"><span class="note-tag">Method</span><span class="note-t">What a two-week pilot actually looks like</span><span class="note-read">8 min</span></a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ============ FINAL CTA + CONTACT ============ -->
-  <section class="contact" id="contact" aria-labelledby="contact-h">
-    <canvas class="band-canvas band-canvas--full" data-agents="constellation" aria-hidden="true"></canvas>
-    <div class="section-wrap contact__wrap">
-      <div class="contact__lede reveal">
+  <!-- CONTACT -->
+  <section class="sec contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="reveal">
         <p class="eyebrow">Start a conversation</p>
-        <h2 class="section-title" id="contact-h">Let's find the deep work<br /><em>a machine should do.</em></h2>
-        <p class="section-lead">Agentic AI that ships, measured by one honest number. One business
-          day to a real answer — no sales script, no obligation.</p>
-        <ul class="contact__notes">
-          <li><b class="num">1</b><span>business-day reply</span></li>
-          <li><b>Free</b><span>opportunity read</span></li>
-        </ul>
+        <h2 style="margin-top:14px">Let's find the deep work <span class="gold-text">a machine should do.</span></h2>
+        <p class="lead" style="margin-top:16px">Agentic AI that ships, measured by one honest number. One business day to a real answer — no sales script, no obligation.</p>
+        <div class="chips">
+          <div><b class="num">1</b><span>business-day reply</span></div>
+          <div><b>Free</b><span>opportunity read</span></div>
+        </div>
+        <p class="direct">Prefer email? <a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></p>
       </div>
-      <form class="contact__form reveal" id="contactForm" data-contact="hello@dprlabs.io" novalidate>
-        <div class="field">
-          <label for="cf-name">Name</label>
-          <input id="cf-name" type="text" name="name" required autocomplete="name"
-            aria-describedby="cf-name-err" placeholder="Your name" />
-          <span class="field-error" id="cf-name-err">Please tell us your name.</span>
-        </div>
-        <div class="field">
-          <label for="cf-email">Work email</label>
-          <input id="cf-email" type="email" name="email" required autocomplete="email"
-            aria-describedby="cf-email-err" placeholder="you@company.com" />
-          <span class="field-error" id="cf-email-err">Enter a valid work email.</span>
-        </div>
-        <div class="field field--wide">
-          <label for="cf-message">What should we look at?</label>
-          <textarea id="cf-message" name="message" rows="3"
-            placeholder="The task, workflow, or idea on your mind…"></textarea>
-        </div>
-        <button type="submit" class="btn-primary btn-block magnetic" data-magnetic>Send <span aria-hidden="true">&rarr;</span></button>
+      <form class="form reveal" id="contactForm" novalidate>
+        <div class="field"><label for="cf-name">Name</label><input id="cf-name" type="text" name="name" placeholder="Your name" autocomplete="name" required /></div>
+        <div class="field"><label for="cf-email">Work email</label><input id="cf-email" type="email" name="email" placeholder="you@company.com" autocomplete="email" required /></div>
+        <div class="field"><label for="cf-msg">What should we look at?</label><textarea id="cf-msg" name="message" rows="3" placeholder="The task, workflow, or idea on your mind…"></textarea></div>
+        <button type="submit" class="btn btn-primary btn-block">Send <span class="arrow" aria-hidden="true">→</span></button>
         <p class="form-note" id="formNote" role="status" hidden>Thanks — we'll be in touch within one business day.</p>
       </form>
     </div>
   </section>
-
 </main>
 
-<footer class="footer">
-  <div class="section-wrap">
-    <div class="footer__grid">
-      <div class="footer__col footer__col--brand">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-word">DPR Labs</span>
-        <p class="footer__line">Agentic AI that ships, measured by one honest number.</p>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+        <p>A senior AI consulting studio — we build it, measure it, and hand it over. You own what we build.</p>
       </div>
-      <div class="footer__col"><h3>Studio</h3>
-        <a href="method.html">How it works</a><a href="proof.html">Proof</a>
-        <a href="jarvis.html">How we build</a><a href="about.html">About</a></div>
-      <div class="footer__col"><h3>Field Notes</h3>
-        <a href="blog/index.html">All posts</a>
-        <a href="blog/the-one-number.html">The one number</a>
-        <a href="blog/no-lock-in.html">No lock-in</a>
-        <a href="blog/two-week-pilot.html">The two-week pilot</a></div>
-      <div class="footer__col"><h3>Get started</h3>
-        <a href="contact.html">Book a scoping call</a>
-        <a href="mailto:hello@dprlabs.io">Email us</a></div>
+      <div class="foot-col"><h4>Studio</h4>
+        <a href="#method">How it works</a><a href="#proof">Proof</a><a href="#about">About</a></div>
+      <div class="foot-col"><h4>Field Notes</h4>
+        <a href="blog/the-one-number.html">The one number</a><a href="blog/no-lock-in.html">No lock-in</a><a href="blog/two-week-pilot.html">Two-week pilot</a><a href="blog/index.html">All posts</a></div>
+      <div class="foot-col"><h4>Get started</h4>
+        <a href="#contact">Book a scoping call</a><a href="#contact">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div>
     </div>
-    <p class="footer__muted">&copy; <span id="year">2026</span> DPR Labs. Real proof only — we publish how we measure.</p>
+    <div class="foot-bottom">
+      <small>© 2026 DPR Labs — AI builds you own.</small>
+      <span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span>
+    </div>
   </div>
 </footer>
 
-<!-- Script load order is significant:
-     1. hero.js   — sets window.__heroPaused, __heroMobile (must be first)
-     2. dpr.js    — existing page JS (nav, scroll reveals, counters, etc.)
-     3. agents-anim.js — section band canvases
-     The old hero canvases (bg.js caustics + mesh-hero.js constellation)
-     were retired: the cinematic pipeline video/poster is the hero visual.
--->
-<script src="hero.js" defer></script>
-<script src="particles.js?v=2" defer></script>
-<script src="scrollbar.js?v=2" defer></script>
-<script src="media.js" defer></script>
-<script src="dpr.js" defer></script>
-<script src="agents-anim.js" defer></script>
-<script src="workspace.js?v=3" defer></script>
-<script src="reasoning.js?v=3" defer></script>
-
-<!-- Premium scroll motion — GSAP + ScrollTrigger + Lenis (industry
-     standard for scrub parallax + smooth scroll). Loaded async; scroll.js
-     degrades gracefully to the static page if any CDN fails to load. -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
-<script src="scroll.js" defer></script>
-
+<script src="site.js" defer></script>
 </body>
 </html>

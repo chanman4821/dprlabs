@@ -1,37 +1,40 @@
 # design/ — DPR Labs unified design tokens (Phase 1)
 
-Owned by `design-token-mgr`. The ONE source of truth for color, type, space, radius,
-elevation, and motion. Every page and component consumes `dist/tokens.css` — no page
-hardcodes a hex, a font, or a px size.
+Owned by `design-token-mgr`. The ONE source of truth is the root **`../tokens.css`**
+(graphite dark canvas, single amber accent, Space Grotesk / Inter / JetBrains Mono).
+Per DESIGN-LANGUAGE.md §8.5 this folder regenerates `dist/tokens.css` FROM that root file
+so there is one token source on disk, not two. Every page and component consumes tokens —
+no page hardcodes a hex, a font, or a px size.
 
 ## Commands (run inside `design/`)
 ```
-npm install        # once — installs Style Dictionary
-npm run build      # DTCG JSON -> dist/tokens.css (+ flat JSON + Tailwind preset)
-npm run lint       # alias contract: no dangling/cyclic/raw/wrong-direction tokens
-npm run contrast   # WCAG 2.2 AA gate over built values, dark + light
+npm run build      # ../tokens.css -> dist/tokens.css (@import root + styleguide/component bridge)
+npm run lint       # single-source contract: bridge aliases resolve, no raw/second-accent, page coverage
+npm run contrast   # WCAG 2.2 AA gate over the built values (dark-canonical palette)
 npm run verify     # lint + build + contrast (the full green gate)
 ```
+No `npm install` is required — the build is dependency-free plain Node, so a fresh checkout
+runs `npm run build` with nothing installed.
 
 ## Layout
 ```
-tokens/primitive.json       tier 1 — raw palette + scales (the only place a hex lives)
-tokens/semantic.json        tier 2 — color roles, DARK (default)
-tokens/semantic.light.json  tier 2 — color roles, LIGHT (same paths -> mode completeness)
-tokens/component.json       tier 3 — per-component tokens (alias semantic roles)
-build.mjs                   Style Dictionary build (+ shadcn/ui HSL-triplet compat layer)
-lint-tokens.mjs             tier-contract gate
-contrast-audit.mjs          WCAG 2.2 gate (42 pairings, dark + light)
-palette-derive.py           palette provenance — computes every hex + WCAG ratio from HSL
-dist/tokens.css             THE single token file (:root dark + [data-theme=light] + reduced-motion)
+bridge.mjs                  the styleguide/component BRIDGE table (names -> root tokens) + audit pairs
+build.mjs                   dependency-free build: @import ../../tokens.css + bridge -> dist/tokens.css
+lint-tokens.mjs             single-source contract gate (dangling/raw/cycle/second-accent/page coverage)
+contrast-audit.mjs          WCAG 2.2 AA gate over dist/tokens.dark.json (dark canonical)
+dist/tokens.css             GENERATED — @import root tokens.css + the resolved bridge (do not hand-edit)
+dist/tokens.dark.json       GENERATED — flat name -> resolved value map (fed to the contrast audit)
+dist/tokens.tailwind.cjs    GENERATED — Tailwind preset bound to the CSS custom properties
+tokens/*.json               original W3C DTCG authoring source (kept for provenance; NOT the build input)
+palette-derive.py           palette provenance — computes hex + WCAG ratios from HSL
 AUDIT.md                    current-site audit — what is inconsistent/cheap/broken (file:line)
 DESIGN-LANGUAGE.md          how to use the system (read this first)
 MIGRATION.md                old -> new codemod map + what to delete
 ```
 
-**Palette provenance.** Values are the DPR Labs brief (Direction B): warm canvas `30 9% 7%`, amber
-primary `36 86% 56%`, cool slate accent `205 22% 64%`, body Inter. `python palette-derive.py` re-derives
-every hex from HSL and prints the computed WCAG ratios (it reuses `../artifacts/color_science.py`, so no
-color math is duplicated). shadcn parts read `hsl(var(--primary))`; hand-written CSS reads `--color-*`.
+**Palette provenance.** The authoritative palette lives in the root `../tokens.css`
+(primitive → semantic → type tiers): graphite canvas `hsl(220 16% 7%)`, one reserved amber
+accent (`#F6A328`, hover/focus `#FBC14B`). `dist/tokens.css` never forks those values — it
+`@import`s the root file and only bridges the styleguide/component names onto it. Edit the
+root `../tokens.css`, then rebuild here; the gates must stay green.
 
-Edit tokens in `tokens/*.json`, never `dist/`. Rebuild and the gates must stay green.

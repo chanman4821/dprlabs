@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DPR — Building Blocks (animated)</title>
+<style>
+  html,body{margin:0;height:100%;background:#fff;display:grid;place-items:center;font-family:system-ui,sans-serif}
+  .stage{position:relative;width:min(560px,92vw);aspect-ratio:1/1;display:grid;place-items:center}
+  .glow{position:absolute;width:78%;height:78%;border-radius:50%;filter:blur(52px);opacity:.85;
+    background:
+      radial-gradient(closest-side at 40% 38%,rgba(99,102,241,.60),transparent 70%),
+      radial-gradient(closest-side at 66% 34%,rgba(14,165,233,.55),transparent 70%),
+      radial-gradient(closest-side at 62% 66%,rgba(16,185,129,.50),transparent 70%),
+      radial-gradient(closest-side at 34% 64%,rgba(244,63,94,.50),transparent 70%),
+      radial-gradient(closest-side at 50% 50%,rgba(168,85,247,.42),transparent 72%);
+    animation:spin 20s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  svg{position:relative;width:82%;height:82%;overflow:visible}
+  .grp{transform-box:fill-box;transform-origin:center;animation:floaty 5.5s ease-in-out infinite 1.2s}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+  .cube{transform-box:fill-box;transform-origin:center bottom;
+        animation:drop .7s cubic-bezier(.2,.75,.25,1) both var(--d),
+                  pulse 3.6s ease-in-out infinite calc(var(--d) + 1.2s)}
+  @keyframes drop{0%{transform:translateY(-52px) scale(.9);opacity:0}55%{opacity:1}100%{transform:none;opacity:1}}
+  @keyframes pulse{0%,70%,100%{filter:none}18%{filter:brightness(1.35) drop-shadow(0 0 7px rgba(124,92,255,.55))}}
+  @media(prefers-reduced-motion:reduce){
+    .glow{animation:none}.grp{animation:none}
+    .cube{animation:none;opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="glow"></div>
+  <svg id="svg" viewBox="0 0 400 440" aria-label="Animated building blocks"><g class="grp" id="grp"></g></svg>
+</div>
+<script>
+const NS='http://www.w3.org/2000/svg', grp=document.getElementById('grp');
+const A=54,B=27,C=66;                         // iso tile half-width, half-depth, body height
+const COL={top:'#6d5ce6',left:'#3a2ea3',right:'#4f3ecb'};
+function cube(cx,cy,delay){
+  const g=document.createElementNS(NS,'g'); g.setAttribute('class','cube'); g.style.setProperty('--d',delay+'s');
+  const faces=[
+    [[cx,cy-B],[cx+A,cy],[cx,cy+B],[cx-A,cy], COL.top],
+    [[cx-A,cy],[cx,cy+B],[cx,cy+B+C],[cx-A,cy+C], COL.left],
+    [[cx+A,cy],[cx,cy+B],[cx,cy+B+C],[cx+A,cy+C], COL.right],
+  ];
+  for(const f of faces){
+    const p=document.createElementNS(NS,'polygon');
+    p.setAttribute('points', f.slice(0,4).map(q=>q.join(',')).join(' '));
+    p.setAttribute('fill', f[4]); p.setAttribute('stroke', f[4]);
+    p.setAttribute('stroke-width','3'); p.setAttribute('stroke-linejoin','round');
+    g.appendChild(p);
+  }
+  grp.appendChild(g);
+}
+const BX=200, BASE=270;               // bottom row top-center y
+cube(BX-A, BASE, 0.00);               // bottom-left
+cube(BX+A, BASE, 0.16);               // bottom-right
+cube(BX,   BASE-C, 0.34);             // top (nestled in the valley)
+</script>
+</body>
+</html>

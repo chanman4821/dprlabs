@@ -1,18 +1,17 @@
-// DPR Labs contrast audit — WCAG 2.2 gate over the BUILT token values (dist/tokens.*.json).
-// Runs the same pairing set against dark (:root) and light ([data-theme="light"]) because
-// each role name resolves to its per-mode value. Thresholds:
-//   body text  >= 4.5:1   |   large text / UI components / focus / borders >= 3.0:1
+// DPR Labs contrast audit — WCAG 2.2 AA gate over the BUILT token values (dist/tokens.*.json).
+// The system is dark-canonical (root tokens.css sets color-scheme: dark), so the pairing set
+// runs against the single graphite + amber palette. Thresholds:
+//   body text >= 4.5:1   |   large text / UI component / focus / border >= 3.0:1
 // Exit 1 on any failure. No hand-entered ratios — every number is computed here from the hex.
 
 import { promises as fs } from 'node:fs';
+import { CONTRAST_PAIRS, BODY, UI } from './bridge.mjs';
 
 const dark = JSON.parse(await fs.readFile('dist/tokens.dark.json', 'utf8'));
 const light = JSON.parse(await fs.readFile('dist/tokens.light.json', 'utf8'));
-// Light JSON only carries the semantic overrides + palette; fall back to dark for shared roles.
-const lightFull = { ...dark, ...light };
 
 function toRgb(hex) {
-  const h = hex.trim().replace('#', '');
+  const h = String(hex).trim().replace('#', '');
   if (!/^[0-9a-fA-F]{6}$/.test(h)) throw new Error(`not a hex color: ${hex}`);
   return [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16));
 }
@@ -30,44 +29,12 @@ const ratio = (a, b) => {
   return (hi + 0.05) / (lo + 0.05);
 };
 
-// Pairing set (role names resolve per mode). kind => threshold.
-const BODY = 4.5, UI = 3.0;
-const pairs = [
-  // Text on the page canvas
-  ['text-primary on bg',        'color-text-primary',   'color-bg', BODY],
-  ['text-secondary on bg',      'color-text-secondary', 'color-bg', BODY],
-  ['text-tertiary on bg',       'color-text-tertiary',  'color-bg', BODY],
-  ['the-number on bg',          'color-number',         'color-bg', BODY],
-  ['link on bg',                'color-link',           'color-bg', BODY],
-  ['accent-text on bg',         'color-accent-text',    'color-bg', BODY],
-  ['status-positive on bg',     'color-status-positive','color-bg', BODY],
-  ['status-critical on bg',     'color-status-critical','color-bg', BODY],
-  // Text on a raised surface
-  ['text-primary on surface',   'color-text-primary',   'color-surface', BODY],
-  ['text-secondary on surface', 'color-text-secondary', 'color-surface', BODY],
-  // Text sitting on an amber fill
-  ['on-accent on accent fill',  'color-text-on-accent', 'color-accent',       BODY],
-  ['on-accent on accent-hover', 'color-text-on-accent', 'color-accent-hover', BODY],
-  ['on-accent-cool on cool chip','color-text-on-accent-cool','color-accent-cool', BODY],
-  ['on-danger on danger fill',  'color-text-on-danger', 'color-danger',       BODY],
-  ['selection text on selection', 'color-selection-text','color-selection-bg', BODY],
-  // Cool slate accent as TEXT/graphic on the page canvas (flips per mode)
-  ['accent-cool text on bg',    'color-accent-secondary','color-bg', BODY],
-  // UI / graphic / focus / border (>= 3:1)
-  ['status-positive-ui on bg',  'color-status-positive-ui','color-bg', UI],
-  ['status-critical-ui on bg',  'color-status-critical-ui','color-bg', UI],
-  ['focus ring on bg',          'color-focus',          'color-bg', UI],
-  ['interactive border on bg',  'color-border-interactive','color-bg', UI],
-  ['interactive border on surface','color-border-interactive','color-surface', UI],
-];
-
-function runMode(name, map) {
-  console.log(`\n=== ${name} mode ===`);
+function runPairs(map) {
   console.log('pair'.padEnd(32) + 'ratio'.padEnd(9) + 'min'.padEnd(6) + 'result');
   let failed = 0;
-  for (const [label, fgKey, bgKey, min] of pairs) {
+  for (const [label, fgKey, bgKey, min] of CONTRAST_PAIRS) {
     const fg = map[fgKey], bg = map[bgKey];
-    if (!fg || !bg) throw new Error(`missing token ${fgKey} or ${bgKey} in ${name}`);
+    if (!fg || !bg) throw new Error(`missing token ${fgKey} or ${bgKey}`);
     const r = ratio(fg, bg);
     const ok = r >= min;
     if (!ok) failed++;
@@ -81,15 +48,19 @@ function runMode(name, map) {
   return failed;
 }
 
-const failDark = runMode('DARK (:root)', dark);
-const failLight = runMode('LIGHT ([data-theme=light])', lightFull);
-const total = failDark + failLight;
+console.log(`=== DARK (:root) — canonical palette · thresholds body ${BODY}:1 / UI ${UI}:1 ===`);
+const failed = runPairs(dark);
 
-console.log(`\n${pairs.length * 2} pairings checked across 2 modes.`);
-if (total === 0) {
-  console.log('PASS — every text/bg and UI pairing meets WCAG 2.2 AA in both modes.');
+// Dark is canonical; the light artifact must mirror it (no divergent second palette on disk).
+const parity = JSON.stringify(dark) === JSON.stringify(light);
+console.log(`\nmode-parity: dist/tokens.light.json ${parity ? 'mirrors' : 'DIVERGES FROM'} dist/tokens.dark.json (dark-canonical)`);
+
+console.log(`\n${CONTRAST_PAIRS.length} pairings checked.`);
+if (failed === 0 && parity) {
+  console.log('PASS — every text/bg and UI pairing meets WCAG 2.2 AA, and the light artifact mirrors dark.');
   process.exit(0);
 } else {
-  console.error(`FAIL — ${total} pairing(s) below threshold.`);
+  if (failed) console.error(`FAIL — ${failed} pairing(s) below threshold.`);
+  if (!parity) console.error('FAIL — light artifact diverges from the canonical dark palette.');
   process.exit(1);
 }

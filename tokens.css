@@ -158,6 +158,14 @@
   --color-surface-high:  var(--p-graphite-800); /* hover / highest surface    */
   --color-overlay:       hsl(220 16% 4% / 0.72); /* modal scrim               */
 
+  /* ── Neutral surface overlays — cool near-white washes over graphite
+     for row hovers, chip fills, tracks and progress rails. The interim
+     component sheet references these instead of raw hsl overlays. ──── */
+  --color-overlay-faint:  hsl(213 22% 76% / 0.04); /* subtlest hover / fill   */
+  --color-overlay-subtle: hsl(213 22% 76% / 0.06); /* chip / lane fill        */
+  --color-overlay-soft:   hsl(213 22% 76% / 0.08); /* track / raised fill     */
+  --color-overlay-strong: hsl(213 22% 76% / 0.28); /* filled bar / progress   */
+
   /* ── Hairline / border roles ───────────────────────────────────── */
   --color-hairline:      var(--p-graphite-700); /* 1px rules, grid, dividers  */
   --color-border:        var(--p-graphite-700); /* default border             */

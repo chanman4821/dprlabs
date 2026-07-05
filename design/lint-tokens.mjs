@@ -1,136 +1,99 @@
-// DPR Labs token lint — enforces the tier contract on the DTCG SOURCE (tokens/*.json).
-// Gates (exit 1 on any violation):
-//   1. No dangling refs   — every {alias} resolves to a defined token path.
-//   2. No cycles          — the alias graph is a DAG.
-//   3. No raw values above the primitive tier — every semantic/component token value
-//      is a pure single {alias}, never an inline hex/px/rem.
-//   4. One direction only — semantic COLOR -> palette (primitive); component COLOR ->
-//      color (semantic), never straight to a palette primitive.
-// This is independent of the Style Dictionary build and catches issues SD does not.
+// DPR Labs token lint — enforces the SINGLE-SOURCE bridge contract.
+// The root ../tokens.css is the one source of truth; design/dist/tokens.css @imports it and
+// adds the styleguide/component BRIDGE (bridge.mjs). This lint proves (exit 1 on any fail):
+//   1. No dangling alias — every bridge `var(--x)` resolves to a token defined in the root
+//      tokens.css (or to another bridge name).
+//   2. No raw palette values in the bridge — a bridge value is either an alias or a plain
+//      literal (weight / dimension / transparent), never an inline hex / hsl / rgb colour.
+//   3. No cycles — the bridge+root alias graph is a DAG.
+//   4. No second accent — the bridge introduces no cool-slate / accent-cool token.
+//   5. Consumer coverage — every custom property used by design-language.html and the
+//      previews is defined by the root tokens.css OR the bridge (no dangling var on a page).
 
 import { promises as fs } from 'node:fs';
+import { BRIDGE } from './bridge.mjs';
 
-const FILES = [
-  'tokens/primitive.json',
-  'tokens/semantic.json',
-  'tokens/semantic.light.json',
-  'tokens/component.json',
-];
-const isPrimitive = (fp) => fp.endsWith('primitive.json');
-const isSemantic = (fp) => fp.endsWith('semantic.json') || fp.endsWith('semantic.light.json');
-const isComponent = (fp) => fp.endsWith('component.json');
+const ROOT = '../tokens.css';
+const CONSUMERS = ['../design-language.html'];
 
-const REF = /\{([^}]+)\}/g;
-const PURE_ALIAS = /^\{[^}]+\}$/;
-
-function flatten(obj, filePath, prefix = [], inheritedType = null, out = []) {
-  const type = obj.$type || inheritedType;
-  for (const [key, val] of Object.entries(obj)) {
-    if (key.startsWith('$')) continue;
-    if (val && typeof val === 'object' && '$value' in val) {
-      out.push({
-        path: [...prefix, key].join('.'),
-        value: String(val.$value),
-        type: val.$type || type,
-        filePath,
-      });
-    } else if (val && typeof val === 'object') {
-      flatten(val, filePath, [...prefix, key], type, out);
-    }
-  }
-  return out;
-}
-
-function refsOf(value) {
-  const out = [];
+function parseDefs(css) {
+  const noComments = css.replace(/\/\*[\s\S]*?\*\//g, '');
+  const defs = new Map();
+  const re = /(--[A-Za-z0-9-]+)\s*:\s*([^;]+);/g;
   let m;
-  REF.lastIndex = 0;
-  while ((m = REF.exec(value)) !== null) out.push(m[1].trim());
-  return out;
+  while ((m = re.exec(noComments)) !== null) if (!defs.has(m[1])) defs.set(m[1], m[2].trim());
+  return defs;
 }
+
+const PURE_VAR = /^var\(\s*(--[A-Za-z0-9-]+)\s*\)$/;
+const LITERAL = /^(transparent|[0-9]+(\.[0-9]+)?(px|rem|em|%)?)$/; // weight / dimension / transparent
+const COLOR = /#[0-9a-fA-F]{3,8}\b|\bhsl\(|\brgb\(|\boklch\(/;
 
 const violations = [];
-const fail = (rule, path, msg) => violations.push({ rule, path, msg });
+const fail = (rule, where, msg) => violations.push({ rule, where, msg });
 
-const tokens = [];
-for (const f of FILES) {
-  const json = JSON.parse(await fs.readFile(f, 'utf8'));
-  flatten(json, f, [], null, tokens);
+const rootDefs = parseDefs(await fs.readFile(ROOT, 'utf8'));
+const rootNames = new Set(rootDefs.keys());
+const bridgeNames = new Set(BRIDGE.map(([n]) => n));
+
+// Combined universe for resolution (root + bridge).
+const defs = new Map(rootDefs);
+for (const [n, v] of BRIDGE) defs.set(n, v);
+
+function resolve(raw, seen = []) {
+  const v = String(raw).trim();
+  const hit = v.match(PURE_VAR);
+  if (!hit) return { value: v };
+  const name = hit[1];
+  if (seen.includes(name)) return { unresolved: name, cycle: [...seen, name] };
+  if (!defs.has(name)) return { unresolved: name };
+  return resolve(defs.get(name), [...seen, name]);
 }
 
-// Defined-path universe (union across modes).
-const defined = new Set(tokens.map((t) => t.path));
-const byPath = new Map();
-for (const t of tokens) if (!byPath.has(t.path)) byPath.set(t.path, t);
-
-// 1 + 3 + 4 — per-token checks
-for (const t of tokens) {
-  const refs = refsOf(t.value);
-
-  // 1. dangling
-  for (const r of refs) {
-    if (!defined.has(r)) fail('dangling-ref', t.path, `references undefined token {${r}}`);
+// 1 + 2 + 3 + 4 — per bridge entry
+for (const [name, value] of BRIDGE) {
+  const isVar = PURE_VAR.test(value);
+  if (isVar) {
+    const r = resolve(value);
+    if (r.unresolved) {
+      if (r.cycle) fail('cycle', name, `alias cycle: ${r.cycle.join(' -> ')}`);
+      else fail('dangling-alias', name, `references {${r.unresolved}} which no root/bridge token defines`);
+    }
+  } else if (COLOR.test(value) || !LITERAL.test(value)) {
+    fail('raw-value', name, `must alias a root token, not inline "${value}"`);
   }
-
-  const higherTier = isSemantic(t.filePath) || isComponent(t.filePath);
-  if (higherTier) {
-    // 3. no raw values above primitive tier — must be a single pure alias
-    if (!PURE_ALIAS.test(t.value.trim())) {
-      fail('raw-value', t.path, `inlines a raw value "${t.value}" instead of aliasing a lower tier`);
-    }
-    // 4. direction (color only)
-    if (t.type === 'color' && refs.length === 1) {
-      const target = refs[0];
-      if (isSemantic(t.filePath) && !target.startsWith('palette.')) {
-        fail('direction', t.path, `semantic color must alias a palette primitive, got {${target}}`);
-      }
-      if (isComponent(t.filePath)) {
-        if (target.startsWith('palette.')) {
-          fail('direction', t.path, `component color must alias a SEMANTIC role, not a palette primitive {${target}}`);
-        } else if (!target.startsWith('color.')) {
-          fail('direction', t.path, `component color must alias a color.* semantic role, got {${target}}`);
-        }
-      }
-    }
-  } else if (isPrimitive(t.filePath)) {
-    // primitives must NOT contain aliases (raw values only)
-    if (refs.length > 0) fail('primitive-alias', t.path, `primitive tokens must be raw, found alias in "${t.value}"`);
+  if (/slate|accent-cool/i.test(name) || /slate|accent-cool/i.test(value)) {
+    fail('second-accent', name, `reintroduces a cool-slate 2nd accent ("${value}") — one amber accent only`);
   }
 }
 
-// 2. cycles — DFS over the alias graph
-const WHITE = 0, GRAY = 1, BLACK = 2;
-const color = new Map([...defined].map((p) => [p, WHITE]));
-const edges = (p) => (byPath.has(p) ? refsOf(byPath.get(p).value).filter((r) => defined.has(r)) : []);
-const stack = [];
-function dfs(p) {
-  color.set(p, GRAY);
-  stack.push(p);
-  for (const n of edges(p)) {
-    if (color.get(n) === GRAY) {
-      const i = stack.indexOf(n);
-      fail('cycle', p, `alias cycle: ${[...stack.slice(i), n].join(' -> ')}`);
-    } else if (color.get(n) === WHITE) {
-      dfs(n);
+// 5 — consumer coverage: every var(--x) used on a styleguide/preview page must be defined.
+const previewFiles = (await fs.readdir('previews').catch(() => [])).filter((f) => f.endsWith('.html')).map((f) => `previews/${f}`);
+const pages = [...CONSUMERS, ...previewFiles];
+let usedCount = 0;
+for (const page of pages) {
+  const html = await fs.readFile(page, 'utf8').catch(() => null);
+  if (html == null) continue;
+  const re = /var\(\s*(--[A-Za-z0-9-]+)/g;
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    usedCount++;
+    const nm = m[1];
+    if (!rootNames.has(nm) && !bridgeNames.has(nm)) {
+      fail('page-dangling-var', page, `uses ${nm} which neither root tokens.css nor the bridge defines`);
     }
   }
-  stack.pop();
-  color.set(p, BLACK);
 }
-for (const p of defined) if (color.get(p) === WHITE) dfs(p);
 
 // Report
-const total = tokens.length;
-const semN = tokens.filter((t) => isSemantic(t.filePath)).length;
-const compN = tokens.filter((t) => isComponent(t.filePath)).length;
-console.log(`Token lint — ${total} tokens (${tokens.length - semN - compN} primitive, ${semN} semantic, ${compN} component)`);
-console.log(`Checks: dangling-ref, cycle, raw-value(no inline above primitive), direction(one-way)`);
+console.log(`Token lint — single source ${ROOT} (${rootNames.size} tokens) + bridge (${bridgeNames.size} names)`);
+console.log(`Checks: dangling-alias, raw-value, cycle, second-accent, page-dangling-var (${usedCount} page var() refs across ${pages.length} page(s))`);
 
 if (violations.length === 0) {
-  console.log(`\nPASS — 0 violations. All aliases resolve, graph is a DAG, no raw values or wrong-direction aliases above the primitive tier.`);
+  console.log(`\nPASS — 0 violations. Every bridge alias resolves into the root tokens, the bridge adds no raw palette value or second accent, and no styleguide/preview page references an undefined token.`);
   process.exit(0);
 } else {
   console.error(`\nFAIL — ${violations.length} violation(s):`);
-  for (const v of violations) console.error(`  [${v.rule}] ${v.path}: ${v.msg}`);
+  for (const v of violations) console.error(`  [${v.rule}] ${v.where}: ${v.msg}`);
   process.exit(1);
 }

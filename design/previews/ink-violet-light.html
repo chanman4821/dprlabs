@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>DPR Labs — Design System Reference</title>
-<meta name="description" content="The single design language for DPR Labs: tokens, type, colour, spacing, motion, component states. Rendered proof of tokens.css." />
+<title>ink-violet light - DPR Labs — Design System Reference</title>
+<meta name="description" content="The single design language for DPR Labs: tokens, type, colour, spacing, motion, component states. Rendered proof of design/dist/tokens.css." />
 <meta name="robots" content="noindex" />
 <meta name="color-scheme" content="dark" />
 
@@ -14,63 +14,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" />
 
 <!-- THE single token file — this page is the rendered proof it is real. -->
-<link rel="stylesheet" href="tokens.css" />
+<link rel="stylesheet" href="../dist/tokens.css" />
 
 <style>
-  /* =====================================================================
-     PROOF-PAGE TOKEN MAP — this styleguide renders the ONE authoritative
-     source, tokens.css (Direction C: graphite canvas + one reserved amber
-     accent). The names below are component/demo aliases onto that file's
-     semantic tokens, so buttons, inputs, badges and status pills render
-     without a second token system. Every colour resolves to a tokens.css
-     value; there is NO cool-slate second accent.
-     ===================================================================== */
-  :root {
-    /* semantic renames onto tokens.css */
-    --color-accent-text:        var(--color-accent);
-    --color-accent-secondary:   var(--color-accent-2);   /* orange jolt, same warm family — NOT a 2nd reserved accent */
-    --color-border-interactive: var(--color-border-ui);
-    --color-surface-raised:     var(--color-surface-high);
-    --color-status-positive:    var(--color-positive);
-    --color-status-positive-ui: var(--color-positive);
-    --color-status-critical:    var(--color-danger);
-    --color-status-critical-ui: var(--color-danger);
-    --color-status-attention:   var(--color-accent);
-    /* type + numeric */
-    --font-numeric: var(--fvn-tabular);
-    --fw-medium: 500; --fw-semibold: 600; --fw-bold: 700;
-    --fs-caption: var(--fs-2xs); --fs-small: var(--fs-xs); --fs-body: var(--fs-sm);
-    --fs-lead: var(--fs-md); --fs-h3: var(--fs-lg); --fs-h5: var(--fs-md);
-    --lh-heading: var(--lh-tight);
-    /* layout · motion · focus */
-    --layout-nav-height: var(--layout-nav-h);
-    --ease-standard: var(--ease);
-    --space-hair: 1px;
-    --focus-ring-width: 2px; --focus-ring-color: var(--color-focus); --focus-ring-offset: 3px;
-    /* buttons */
-    --button-primary-bg:        var(--color-btn-primary-bg);
-    --button-primary-text:      var(--color-btn-primary-text);
-    --button-primary-bg-hover:  var(--color-btn-primary-hover);
-    --button-primary-radius:    var(--radius-sm);
-    --button-primary-pad-x:     var(--space-lg); --button-primary-pad-y: var(--space-sm);
-    --button-secondary-bg:      var(--color-surface-high);
-    --button-secondary-bg-hover:var(--color-surface);
-    --button-secondary-border:  var(--color-border-ui);
-    --button-secondary-text:    var(--color-text-primary);
-    /* inputs */
-    --input-bg: var(--color-surface); --input-text: var(--color-text-primary);
-    --input-border: var(--color-border-ui); --input-border-focus: var(--color-focus);
-    --input-placeholder: var(--color-text-faint); --input-radius: var(--radius-sm);
-    --input-pad-x: var(--space-md); --input-pad-y: var(--space-sm);
-    /* badges · code · accordion · card */
-    --badge-bg: var(--color-surface-high); --badge-border: var(--color-border);
-    --badge-text: var(--color-text-secondary); --badge-radius: var(--radius-pill);
-    --code-bg: var(--color-surface); --code-border: var(--color-border); --code-text: var(--color-text-secondary);
-    --accordion-border: var(--color-border); --accordion-text: var(--color-text-secondary); --accordion-marker: var(--color-accent);
-    --card-radius: var(--radius-md); --card-padding: var(--space-lg);
-  }
-
-  /* Reference-only layout. Every value resolves to a token in tokens.css. */
+  /* Reference-only layout. Every value is a token; no raw hex or px lives here. */
   *, *::before, *::after { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
   body {
@@ -252,6 +199,28 @@
     .space-scale .row { grid-template-columns: 88px 1fr; }
   }
 </style>
+<style id="violet-light">
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-surface: #f7f7fb;
+    --color-surface-raised: #f1f1f8;
+    --color-border: #e6e6ef;
+    --color-border-strong: #cfcfe0;
+    --color-border-interactive: #5b4ad9;
+    --color-text-primary: #14131f;
+    --color-text-secondary: #4a4860;
+    --color-text-tertiary: #6b6982;
+    --color-accent: #4b3ac7;
+    --color-text-on-accent: #ffffff;
+    --color-accent-text: #4b3ac7;
+    --color-number: #4b3ac7;
+    --color-link: #4b3ac7;
+    --color-focus: #5b4ad9;
+    --color-accent-secondary: #3f3a52;
+    --color-accent-cool: #3f3a52;
+    --color-text-on-accent-cool: #ffffff;
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -259,7 +228,7 @@
 <nav class="nav" aria-label="Design system">
   <span class="wordmark"><span class="dot" aria-hidden="true"></span>DPR Labs</span>
   <span class="tag mono">Design System</span>
-  <span class="ver mono">tokens.css</span>
+  <span class="ver mono">design/dist/tokens.css · v1</span>
 </nav>
 
 <header class="hero container">
@@ -267,7 +236,7 @@
   <h1>An engineered <em>instrument</em>, not another AI hero.</h1>
   <p class="lead">One token file. One type system. One reserved accent. Depth from value and light,
      hairline detail over heavy borders, motion that is slow and purposeful. This page renders
-     <span class="mono">tokens.css</span> directly — it is the proof the system is real,
+     <span class="mono">design/dist/tokens.css</span> directly — it is the proof the system is real,
      not a description of it.</p>
   <div class="actions">
     <button class="btn btn--primary">Book a 2-week pilot</button>
@@ -278,21 +247,21 @@
 <main id="main" class="container">
 
   <section class="block" id="color">
-    <div class="head"><h2>Colour</h2><span class="mono">graphite canvas · one reserved amber accent · WCAG 2.2 AA (dark, canonical mode)</span></div>
+    <div class="head"><h2>Colour</h2><span class="mono">warm canvas · amber primary + cool-slate accent · WCAG 2.2 AA (dark mode)</span></div>
     <div class="swatches">
-      <div class="swatch"><div class="chip" style="background:var(--color-bg)"></div><div class="meta"><div class="name">bg / canvas</div><div class="val">#0F1115</div></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-surface)"></div><div class="meta"><div class="name">surface</div><div class="val">#16181D</div></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-surface-raised)"></div><div class="meta"><div class="name">surface-high</div><div class="val">#1F2228</div></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-border)"></div><div class="meta"><div class="name">border / hairline</div><div class="val">#2D3239</div></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-border-interactive)"></div><div class="meta"><div class="name">border-ui</div><div class="val">#5F6977</div><span class="ratio">3.39:1 UI</span></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-text-primary)"></div><div class="meta"><div class="name">text-primary</div><div class="val">#F2F5F7</div><span class="ratio">17.26:1</span></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-text-secondary)"></div><div class="meta"><div class="name">text-secondary</div><div class="val">#AEB6C2</div><span class="ratio">9.26:1</span></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-text-tertiary)"></div><div class="meta"><div class="name">text-tertiary</div><div class="val">#818C9C</div><span class="ratio">5.56:1</span></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-accent)"></div><div class="meta"><div class="name">accent (amber, fill)</div><div class="val">#F6A328</div><span class="ratio">9.20:1 as text</span></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-focus)"></div><div class="meta"><div class="name">focus ring</div><div class="val">#FBC14B</div><span class="ratio">11.53:1</span></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-accent-secondary)"></div><div class="meta"><div class="name">accent-2 (orange · single jolt)</div><div class="val">#EA6A2A</div><span class="ratio">5.92:1</span></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-status-positive)"></div><div class="meta"><div class="name">status-positive</div><div class="val">#3DD68C</div><span class="ratio">10.07:1</span></div></div>
-      <div class="swatch"><div class="chip" style="background:var(--color-status-critical)"></div><div class="meta"><div class="name">status-critical</div><div class="val">#E5484D</div><span class="ratio">4.83:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-bg)"></div><div class="meta"><div class="name">bg / canvas</div><div class="val">#131210</div></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-surface)"></div><div class="meta"><div class="name">surface</div><div class="val">#1C1A17</div></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-surface-raised)"></div><div class="meta"><div class="name">surface-raised</div><div class="val">#24211E</div></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-border)"></div><div class="meta"><div class="name">border / hairline</div><div class="val">#322E2A</div></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-border-interactive)"></div><div class="meta"><div class="name">border-interactive</div><div class="val">#857C6F</div><span class="ratio">4.56:1 UI</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-text-primary)"></div><div class="meta"><div class="name">text-primary</div><div class="val">#F1EEE9</div><span class="ratio">16.18:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-text-secondary)"></div><div class="meta"><div class="name">text-secondary</div><div class="val">#C5BDB5</div><span class="ratio">10.09:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-text-tertiary)"></div><div class="meta"><div class="name">text-tertiary</div><div class="val">#A79F95</div><span class="ratio">7.16:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-accent)"></div><div class="meta"><div class="name">accent (amber, fill)</div><div class="val">#EFA22E</div><span class="ratio">8.81:1 as text</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-link)"></div><div class="meta"><div class="name">link / focus</div><div class="val">#F8BE59</div><span class="ratio">11.14:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-accent-secondary)"></div><div class="meta"><div class="name">accent-2 (slate)</div><div class="val">#8FA7B7</div><span class="ratio">7.47:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-status-positive)"></div><div class="meta"><div class="name">status-positive</div><div class="val">#6CD09E</div><span class="ratio">9.94:1</span></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--color-status-critical)"></div><div class="meta"><div class="name">status-critical</div><div class="val">#F07C6A</div><span class="ratio">6.95:1</span></div></div>
     </div>
   </section>
 
@@ -363,27 +332,27 @@
   </section>
 
   <section class="block" id="space">
-    <div class="head"><h2>Spacing</h2><span class="mono">4px base · 8px rhythm · --space-3xs (2) → --space-5xl (128)</span></div>
+    <div class="head"><h2>Spacing</h2><span class="mono">8px base · --space-1 (4) → --space-13 (160)</span></div>
     <div class="space-scale">
-      <div class="row"><span class="mono">space-2xs · 4</span><div class="bar" style="width:4px"></div></div>
-      <div class="row"><span class="mono">space-xs · 8</span><div class="bar" style="width:8px"></div></div>
-      <div class="row"><span class="mono">space-sm · 12</span><div class="bar" style="width:12px"></div></div>
-      <div class="row"><span class="mono">space-md · 16</span><div class="bar" style="width:16px"></div></div>
-      <div class="row"><span class="mono">space-lg · 24</span><div class="bar" style="width:24px"></div></div>
-      <div class="row"><span class="mono">space-xl · 32</span><div class="bar" style="width:32px"></div></div>
-      <div class="row"><span class="mono">space-2xl · 48</span><div class="bar" style="width:48px"></div></div>
-      <div class="row"><span class="mono">space-3xl · 64</span><div class="bar" style="width:64px"></div></div>
-      <div class="row"><span class="mono">space-4xl · 96</span><div class="bar" style="width:96px"></div></div>
+      <div class="row"><span class="mono">space-1 · 4</span><div class="bar" style="width:4px"></div></div>
+      <div class="row"><span class="mono">space-2 · 8</span><div class="bar" style="width:8px"></div></div>
+      <div class="row"><span class="mono">space-3 · 12</span><div class="bar" style="width:12px"></div></div>
+      <div class="row"><span class="mono">space-4 · 16</span><div class="bar" style="width:16px"></div></div>
+      <div class="row"><span class="mono">space-5 · 24</span><div class="bar" style="width:24px"></div></div>
+      <div class="row"><span class="mono">space-6 · 32</span><div class="bar" style="width:32px"></div></div>
+      <div class="row"><span class="mono">space-8 · 48</span><div class="bar" style="width:48px"></div></div>
+      <div class="row"><span class="mono">space-9 · 64</span><div class="bar" style="width:64px"></div></div>
+      <div class="row"><span class="mono">space-11 · 96</span><div class="bar" style="width:96px"></div></div>
     </div>
   </section>
 
   <section class="block" id="motion">
     <div class="head"><h2>Motion</h2><span class="mono">slow · eased · no bounce · reduced-motion collapses every duration to ~0</span></div>
     <div class="motion">
-      <div class="card"><div class="mono">micro · 150ms</div><p>Hover, focus, toggles.</p></div>
-      <div class="card"><div class="mono">base · 300ms</div><p>Enters, accordions.</p></div>
-      <div class="card"><div class="mono">slow · 500ms</div><p>Complex reveals.</p></div>
-      <div class="card"><div class="mono">choreo · 800ms</div><p>Hero / scroll choreography.</p></div>
+      <div class="card"><div class="mono">fast · 160ms</div><p>Hover, focus, toggles.</p></div>
+      <div class="card"><div class="mono">base · 280ms</div><p>Enters, accordions.</p></div>
+      <div class="card"><div class="mono">slow · 480ms</div><p>Complex reveals.</p></div>
+      <div class="card"><div class="mono">cinematic · 800ms</div><p>Hero / scroll choreography.</p></div>
     </div>
   </section>
 
@@ -408,8 +377,8 @@
 </main>
 
 <footer class="container">
-  <p class="mono">DPR Labs — Design System Reference · dark is the one canonical mode · every value here resolves from <span style="color:var(--color-accent-text)">tokens.css</span>,
-  WCAG 2.2 AA contrast computed in <span style="color:var(--color-accent-text)">artifacts/color_science.py</span>.</p>
+  <p class="mono">DPR Labs — Design System Reference · dark default, add <span style="color:var(--color-accent-text)">data-theme="light"</span> for reading mode ·
+  gated by <span style="color:var(--color-accent-text)">npm run verify</span> (lint 0 · contrast 42/42 AA).</p>
 </footer>
 
 </body>

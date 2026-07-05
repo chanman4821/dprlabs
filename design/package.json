@@ -3,14 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "DPR Labs unified design-token system (W3C DTCG -> Style Dictionary -> CSS custom properties). Phase 1 deliverable owned by design-token-mgr.",
+  "description": "DPR Labs unified design-token system. The root ../tokens.css is the single source of truth; this build regenerates dist/tokens.css from it (@import + styleguide/component bridge). Dependency-free. Phase 1 deliverable owned by design-token-mgr.",
   "scripts": {
     "build": "node build.mjs",
     "lint": "node lint-tokens.mjs",
     "contrast": "node contrast-audit.mjs",
     "verify": "node lint-tokens.mjs && node build.mjs && node contrast-audit.mjs"
-  },
-  "devDependencies": {
-    "style-dictionary": "^4.3.0"
   }
 }

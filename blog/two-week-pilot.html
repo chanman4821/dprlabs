@@ -2,196 +2,81 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<script>document.documentElement.classList.add('js');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>What a two-week AI pilot actually looks like, day by day — DPR Labs</title>
-<meta name="description" content="Most AI projects die as a demo because nobody agreed what working means. Here is the real, day-by-day schedule of a two-week DPR Labs pilot — and the two moments you say go or stop." />
-<meta name="theme-color" content="#07090D" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="What a two-week AI pilot actually looks like, day by day" />
-<meta property="og:description" content="The real schedule — what we build on which day, and the two moments where you say go or stop." />
-
+<meta name="description" content="A two-week AI pilot is a short, specific, measured experiment with clear go or stop points." />
+<meta name="theme-color" content="#ffffff" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&family=Inter:wght@300..800&display=swap" rel="stylesheet" />
-
-<link rel="stylesheet" href="../tokens.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css" />
 <link rel="icon" href="../assets/icons/logo-orb.png" />
-<link rel="stylesheet" href="../hero.css" />
-<link rel="stylesheet" href="../sections.css" />
-<link rel="stylesheet" href="blog.css" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
-
 <body id="top">
-
 <a class="skip-link" href="#main">Skip to content</a>
-
-<header class="nav" id="nav">
-  <a href="../index.html" class="brand" aria-label="DPR Labs — home">
-    <span class="brand-mark" aria-hidden="true"></span>
-    <span class="brand-word">DPR Labs</span>
-    <span class="brand-by">AI studio</span>
-  </a>
-  <nav class="nav-links" aria-label="Primary">
-    <a href="../method.html">How it works</a>
-    <a href="../proof.html">Proof</a>
-    <a href="../jarvis.html">Built on Jarvis</a>
-    <a href="index.html">Field Notes</a>
-    <a href="../about.html">About</a>
-    <button id="readmodeBtn" class="readmode" type="button" aria-pressed="false"
-      aria-label="Toggle light reading mode">
-      <span class="readmode__t">Light reading</span>
-    </button>
-  </nav>
-  <a href="../contact.html" class="btn btn-primary nav-cta">Book a call</a>
-  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false"
-    aria-controls="mobileMenu" aria-label="Open menu">
-    <span class="nt-bars" aria-hidden="true"><i></i><i></i><i></i></span>
-  </button>
-</header>
-
-<div class="mobile-menu" id="mobileMenu" hidden>
-  <div class="mm-panel" role="dialog" aria-modal="true" aria-label="Site menu">
-    <button class="mm-close" id="mmClose" type="button" aria-label="Close menu">&times;</button>
-    <nav class="mm-links" aria-label="Mobile">
-      <a href="../method.html">How it works</a>
-      <a href="../proof.html">Proof</a>
-      <a href="../jarvis.html">Built on Jarvis</a>
-      <a href="index.html">Field Notes</a>
-      <a href="../about.html">About</a>
-      <a href="../contact.html" class="mm-cta">Book a call</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../method.html">How it works</a><a href="../proof.html">Proof</a>
+      <a href="index.html" aria-current="page">Field Notes</a><a href="../about.html">About</a>
     </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-ghost">Talk to us</a><a href="../contact.html" class="btn btn-primary">Book a pilot</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-</div>
-
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../method.html">How it works</a><a href="../proof.html">Proof</a><a href="index.html">Field Notes</a><a href="../about.html">About</a><a href="../contact.html">Book a pilot</a>
+  </div>
+</header>
 <main id="main">
-  <article class="post fn-wrap" id="article" data-theme="dark">
-    <div class="post__col">
-      <p class="post__breadcrumb"><a href="index.html">Field Notes</a> &rsaquo; Pilot method &amp; honest measurement</p>
-      <p class="post__tag">Pilot method &amp; honest measurement</p>
-      <h1 class="post__title">What a two-week AI pilot actually looks like, day by day</h1>
-      <p class="post__dek">Most AI projects die as a demo because nobody agreed what &ldquo;working&rdquo; means. A
-        pilot fixes that by being short, specific, and measured. Here is the real schedule we run.</p>
-      <div class="post__meta">
-        <time class="post__time" datetime="2026-06-24">June 24, 2026</time>
-        <span class="dot" aria-hidden="true"></span>
-        <span class="post__time">8 min read</span>
-        <span class="dot" aria-hidden="true"></span>
-        <span>DPR Labs team</span>
-      </div>
-
-      <div class="post__body">
-        <p>A pilot is not a smaller version of a big project. It is a single, honest experiment: pick one
-          workflow, agree on one number, and find out in two weeks whether AI moves it. Everything below
-          is built to protect that experiment from the two things that kill it — vague goals and a demo
-          that only works on a slide.</p>
-
-        <h2>Day 1–2 — Scope, and pick the one number</h2>
-        <p>We sit with the people who do the work, not just the people who buy the software. We watch the
-          actual task: where the time goes, where the mistakes happen, what gets re-done. By the end of
-          day two we have written down one workflow and one number we will try to move — and we have
-          measured that number <strong>today</strong>, before any AI exists. A pilot with no baseline is
-          not a pilot, it is a hope.</p>
-
-        <div class="methodnote">
-          <span class="methodnote__k">Method note — baseline first</span>
-          <p>We measure the &ldquo;before&rdquo; number on real, recent work (say, the last <code>200</code> cases)
-            and write down exactly how we counted it. If we can&rsquo;t measure it cheaply today, it&rsquo;s the wrong
-            number — we pick one we can.</p>
-        </div>
-
-        <h2>Day 3–4 — Build the thinnest slice that could possibly work</h2>
-        <p>We do not build the whole system. We build the smallest end-to-end path that touches your real
-          data and produces a real output — even if it only handles the easy 60% of cases. The point is
-          to learn where it breaks on <em>your</em> inputs, not on a clean sample. Ugly and real beats
-          polished and fake every time.</p>
-
-        <h2>Day 5 — First checkpoint: go or stop</h2>
-        <p>End of week one, we show you the thin slice running on your data and what it&rsquo;s getting right and
-          wrong. This is the first of two honest exits. If the signal isn&rsquo;t there — if the data is too
-          messy, the task too fuzzy, the value too small — we say so and you&rsquo;ve spent two weeks, not two
-          quarters. Most pilots pass this gate. The ones that don&rsquo;t were the most valuable to stop.</p>
-
-        <blockquote>The job of week one is to earn the right to build week two — or to fail cheaply.</blockquote>
-
-        <h2>Day 6–8 — Harden it on the cases that actually hurt</h2>
-        <p>Now we go after the hard 40%: the edge cases, the weird formats, the exceptions your team
-          handles on instinct. We add the checks that let the system know when it&rsquo;s unsure and hand those
-          cases back to a human instead of guessing. A system that says &ldquo;I&rsquo;m not sure, you look&rdquo; is worth
-          far more than one that&rsquo;s confidently wrong.</p>
-
-        <h2>Day 9 — Measure honestly, against the day-one number</h2>
-        <p>We re-run the same measurement from day one, on a fresh sample the system has never seen, with a
-          human checking the results. Same method, same definition, new data. Then we write down the
-          result <em>and</em> what it doesn&rsquo;t prove.</p>
-
-        <div class="pullstat">
-          <span class="pullstat__num" aria-hidden="true">2&nbsp;wks</span>
-          <span class="pullstat__label">From &ldquo;we think AI could help here&rdquo; to a measured number on your
-            real work — or an honest no, at a fraction of the cost of finding out the slow way.</span>
-        </div>
-
-        <h2>Day 10 — Hand it over and decide what&rsquo;s next</h2>
-        <p>You get three things: the working system (running on your accounts), a one-page scorecard
-          (before, after, sample size, method, caveats), and a plain recommendation — scale it, change it,
-          or stop. There is no lock-in and no cliff. If the number moved, scaling is a choice you make with
-          evidence in hand. If it didn&rsquo;t, you keep the code and the lesson.</p>
-
-        <h2>Why two weeks, and not two months</h2>
-        <p>Short is a feature, not a compromise. A two-week clock forces us to pick a real problem, cut the
-          scope to something testable, and confront the data early instead of after a big build. It keeps
-          the risk on us and the decision with you. The slow version of this — months of scoping decks and
-          a reveal at the end — is exactly how AI ends up as an expensive demo.</p>
-      </div>
-
-      <div class="author">
-        <span class="author__avatar" aria-hidden="true"></span>
-        <div class="author__body">
-          <strong>Written by the DPR Labs team.</strong> We&rsquo;re a small, senior studio that builds AI systems
-          that actually run in your business. We publish how we measure so you can check our work.
-          <span class="author__links">
-            <a href="../method.html">How the pilot works</a>
-            <a href="../proof.html">See our proof</a>
-            <a href="index.html">More Field Notes</a>
-          </span>
-        </div>
-      </div>
-
-      <aside class="postcta">
-        <h2>Recognise this time-sink?</h2>
-        <p>Tell us the one task your team dreads. In a two-week pilot we&rsquo;d agree the number we&rsquo;d aim to
-          move, then measure it honestly — and here&rsquo;s the exact scorecard we&rsquo;d use.</p>
-        <a href="../contact.html" class="btn btn-primary">Book a scoping call <span aria-hidden="true">&rarr;</span></a>
-      </aside>
+  <article class="post">
+    <div class="post-head">
+      <div class="meta"><span class="g">Method</span><span>June 24, 2026</span><span>8 min read</span></div>
+      <h1>What a two-week AI pilot actually looks like, day by day</h1>
+    </div>
+    <div class="post-body">
+      <p>Most AI projects die as a demo because nobody agreed what &ldquo;working&rdquo; means. A pilot fixes that by being short, specific, and measured. Here is the real schedule we run.</p>
+      <p>A pilot is not a smaller version of a big project. It is a single, honest experiment: pick one workflow, agree on one number, and find out in two weeks whether AI moves it. Everything below is built to protect that experiment from the two things that kill it — vague goals and a demo that only works on a slide.</p>
+      <h2>Day 1–2 — Scope, and pick the one number</h2>
+      <p>We sit with the people who do the work, not just the people who buy the software. We watch the actual task: where the time goes, where the mistakes happen, what gets re-done. By the end of day two we have written down one workflow and one number we will try to move — and we have measured that number <strong>today</strong>, before any AI exists. A pilot with no baseline is not a pilot, it is a hope.</p>
+      <p><strong>Method note — baseline first</strong> We measure the &ldquo;before&rdquo; number on real, recent work (say, the last 200 cases) and write down exactly how we counted it. If we can&rsquo;t measure it cheaply today, it&rsquo;s the wrong number — we pick one we can.</p>
+      <h2>Day 3–4 — Build the thinnest slice that could possibly work</h2>
+      <p>We do not build the whole system. We build the smallest end-to-end path that touches your real data and produces a real output — even if it only handles the easy 60% of cases. The point is to learn where it breaks on <em>your</em> inputs, not on a clean sample. Ugly and real beats polished and fake every time.</p>
+      <h2>Day 5 — First checkpoint: go or stop</h2>
+      <p>End of week one, we show you the thin slice running on your data and what it&rsquo;s getting right and wrong. This is the first of two honest exits. If the signal isn&rsquo;t there — if the data is too messy, the task too fuzzy, the value too small — we say so and you&rsquo;ve spent two weeks, not two quarters. Most pilots pass this gate. The ones that don&rsquo;t were the most valuable to stop.</p>
+      <blockquote>The job of week one is to earn the right to build week two — or to fail cheaply.</blockquote>
+      <h2>Day 6–8 — Harden it on the cases that actually hurt</h2>
+      <p>Now we go after the hard 40%: the edge cases, the weird formats, the exceptions your team handles on instinct. We add the checks that let the system know when it&rsquo;s unsure and hand those cases back to a human instead of guessing. A system that says &ldquo;I&rsquo;m not sure, you look&rdquo; is worth far more than one that&rsquo;s confidently wrong.</p>
+      <h2>Day 9 — Measure honestly, against the day-one number</h2>
+      <p>We re-run the same measurement from day one, on a fresh sample the system has never seen, with a human checking the results. Same method, same definition, new data. Then we write down the result <em>and</em> what it doesn&rsquo;t prove.</p>
+      <blockquote>2&nbsp;wks From &ldquo;we think AI could help here&rdquo; to a measured number on your real work — or an honest no, at a fraction of the cost of finding out the slow way.</blockquote>
+      <h2>Day 10 — Hand it over and decide what&rsquo;s next</h2>
+      <p>You get three things: the working system (running on your accounts), a one-page scorecard (before, after, sample size, method, caveats), and a plain recommendation — scale it, change it, or stop. There is no lock-in and no cliff. If the number moved, scaling is a choice you make with evidence in hand. If it didn&rsquo;t, you keep the code and the lesson.</p>
+      <h2>Why two weeks, and not two months</h2>
+      <p>Short is a feature, not a compromise. A two-week clock forces us to pick a real problem, cut the scope to something testable, and confront the data early instead of after a big build. It keeps the risk on us and the decision with you. The slow version of this — months of scoping decks and a reveal at the end — is exactly how AI ends up as an expensive demo.</p>
     </div>
   </article>
+  <div class="post-cta">
+    <span style="color:var(--muted)">Want a pilot like the ones we write about?</span>
+    <a href="../contact.html" class="btn btn-primary">Book a 2-week pilot <span aria-hidden="true">&rarr;</span></a>
+  </div>
 </main>
-
-<footer class="footer">
-  <div class="section-wrap">
-    <div class="footer__grid">
-      <div class="footer__col footer__col--brand">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-word">DPR Labs</span>
-        <p class="footer__line">Agentic AI that ships, measured by one honest number.</p>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+        <p>A senior AI consulting studio — we build it, measure it, and hand it over. You own what we build.</p>
       </div>
-      <div class="footer__col"><h3>Studio</h3>
-        <a href="../method.html">How it works</a><a href="../proof.html">Proof</a>
-        <a href="../jarvis.html">How we build</a><a href="../about.html">About</a></div>
-      <div class="footer__col"><h3>Field Notes</h3>
-        <a href="index.html">All posts</a>
-        <a href="the-one-number.html">The one number</a>
-        <a href="no-lock-in.html">No lock-in</a>
-        <a href="two-week-pilot.html">The two-week pilot</a></div>
-      <div class="footer__col"><h3>Get started</h3>
-        <a href="../contact.html">Book a scoping call</a>
-        <a href="mailto:hello@dprlabs.io">Email us</a></div>
+      <div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../proof.html">Proof</a><a href="../about.html">About</a></div>
+      <div class="foot-col"><h4>Field Notes</h4><a href="the-one-number.html">The one number</a><a href="no-lock-in.html">No lock-in</a><a href="two-week-pilot.html">Two-week pilot</a><a href="index.html">All posts</a></div>
+      <div class="foot-col"><h4>Get started</h4><a href="../contact.html">Book a scoping call</a><a href="../contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div>
     </div>
-    <p class="footer__muted">&copy; <span id="year">2026</span> DPR Labs. Real proof only — we publish how we measure.</p>
+    <div class="foot-bottom"><small>© 2026 DPR Labs — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
   </div>
 </footer>
-
-<script src="blog.js" defer></script>
+<script src="../site.js" defer></script>
 </body>
 </html>
