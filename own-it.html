@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>You own it: what client-owned AI really means — DPR Labs</title>
+<meta name="description" content="A practical guide to AI ownership: IP, prompts, evals, data, model choices, and the hidden cost of renting your own moat." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" href="assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="method.html" aria-current="page">How it works</a><a href="proof.html">Proof</a>
+      <a href="blog/index.html">Field Notes</a><a href="about.html">About</a>
+    </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-ghost">Talk to us</a><a href="contact.html" class="btn btn-primary">Book a pilot</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="method.html">How it works</a><a href="proof.html">Proof</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="contact.html">Book a pilot</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="prose reveal">
+        <p class="eyebrow">Ownership</p>
+        <h1>You own it: what client-owned AI really means.</h1>
+        <p class="lead" style="margin-top:20px">Client-owned AI is not a slogan. It means the repo, evals, prompts, deployment path, and operating knowledge sit inside your company when the pilot ends.</p>
+        <p>The easiest AI demo in the world is a rented wrapper: a vendor account, a few prompts, a polished screen, and a monthly bill. That can be fine for internal convenience. It becomes expensive when the workflow is core to your company. If the system teaches you how customers behave, how deals move, how support breaks, how underwriting decisions get made, or how your team executes, renting the whole thing means renting the learning curve.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap prose reveal">
+      <h2>What you should actually own</h2>
+      <p>Start with the code. You should have the application repo, the data adapters, the prompt files or prompt construction logic, the test harness, the deploy instructions, and the configuration needed to run it without asking the builder for permission. If someone says you own the “output” but not the code path that makes the output, you own a screenshot.</p>
+      <p>Next are the evals. An eval is the scoreboard that tells you whether the AI system is getting better or worse. It may be a small set of golden examples, a grading rubric, a human review sheet, a red-team list, or a cost-and-latency log. Evals are strategic because they encode taste. They say, “This answer is acceptable for our customers, our risk, our brand, and our margins.” If a vendor owns the evals, they own the definition of good.</p>
+      <p>You should also own the prompts and retrieval logic. A prompt is not magic copywriting; it is operating procedure. It captures how your company wants work done. Retrieval logic decides which facts the model sees, which sources are trusted, and which stale sources are excluded. Those choices become institutional memory.</p>
+      <p>Model ownership is more nuanced. Most companies do not need to train a private foundation model. Often the honest answer is: use the API, wrap it well, measure it hard, and keep the option to switch later. What you should own is the model boundary: the interface, fallback behavior, logs, routing rules, and eval suite that let you move from one provider to another without rebuilding the product.</p>
+      <p class="callout"><strong>The ownership test:</strong> if your vendor disappeared for 90 days, could your team run the system, inspect failures, change prompts, re-run evals, and deploy a fix? If not, you are renting more than software. You are renting your own ability to learn.</p>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap prose reveal">
+      <h2>What renting really costs</h2>
+      <p>Renting is not automatically bad. Rent commodity functions. Buy tools your team does not need to differentiate on. Use hosted APIs where they are the best economic choice. The mistake is renting the parts that compound.</p>
+      <p>The first loss is IP. Not just legal IP, but process IP: how you classify requests, resolve exceptions, handle edge cases, and turn messy inputs into trusted work. The second loss is the data moat. Every reviewed output, correction, escalation, and “that is wrong because…” note can improve your system. If those traces live only in a vendor dashboard, your moat is happening somewhere else.</p>
+      <p>The third loss is the investor story. A founder saying “we subscribe to an AI tool” sounds very different from “we own the workflow, the eval set, the cost curve, and the proprietary feedback loop.” Investors do not need every company to be a research lab. They do look for evidence that the product gets harder to copy as usage grows.</p>
+      <blockquote>Ownership is not about being anti-vendor. It is about knowing which layer is strategic before you sign away the learning.</blockquote>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap prose reveal">
+      <h2>AI vendor lock-in audit</h2>
+      <p>Run this against any current vendor, agency, or internal prototype. A “no” is not always fatal. Three or more “no” answers on a core workflow usually means you are building company knowledge outside the company.</p>
+      <p class="callout"><strong>Audit checklist:</strong> confirm the repo, deployment path, evals, data exports, cost logs, and handover documents live where your team can use them without the vendor.</p>
+      <ul>
+        <li>Do we have the full application source code in our own repo?</li>
+        <li>Can we deploy it from our own account without vendor access?</li>
+        <li>Are prompts, system instructions, and retrieval rules stored in version control?</li>
+        <li>Can we export every input, output, correction, and human review?</li>
+        <li>Do we own the eval set that defines acceptable quality?</li>
+        <li>Can a new engineer run the evals from a written command or playbook?</li>
+        <li>Do we know the per-task inference cost, not just the monthly invoice?</li>
+        <li>Can we switch model providers without changing the product experience?</li>
+        <li>Are failure modes logged in a way we can inspect and improve?</li>
+        <li>Do we control what customer data is sent to third-party services?</li>
+        <li>Is there a written handover doc for operations, monitoring, and rollback?</li>
+        <li>Can our team change the workflow without opening a paid ticket?</li>
+        <li>Do we own the domain-specific labels, taxonomies, and review rubrics?</li>
+        <li>Would this system still help our investor story if the vendor name were removed?</li>
+        <li>Can we fire the vendor and keep the learning curve?</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="steps">
+        <div class="step reveal"><div class="step-n">01</div><div><h3>Separate commodity from compounding</h3><p>Use off-the-shelf tools for generic work: meeting notes, simple search, first-draft copy, inbox summaries. Own workflows where every correction teaches your business something competitors cannot see.</p></div></div>
+        <div class="step reveal"><div class="step-n">02</div><div><h3>Own the scoreboard before the model</h3><p>A private model without evals is expensive theater. A hosted model with owned evals, owned data traces, and a clean switching boundary is often the smarter first move.</p></div></div>
+        <div class="step reveal"><div class="step-n">03</div><div><h3>Design the handover on day one</h3><p>The repo, docs, deploy path, monitoring, and review process should be shaped from the start as if your team will run it without the builder. That is what makes ownership real.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap center reveal">
+      <p class="eyebrow">Own the learning curve</p>
+      <h2 style="margin:14px auto 0">Want to know what you should own first?</h2>
+      <p class="lead">We can help scope one workflow, one number, and a handover plan before anyone writes code.</p>
+      <div class="hero-cta" style="justify-content:center"><a href="contact.html" class="btn btn-primary">Book a 2-week pilot <span class="arrow" aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+        <p>A senior AI consulting studio — we build it, measure it, and hand it over. You own what we build.</p>
+      </div>
+      <div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="proof.html">Proof</a><a href="about.html">About</a></div>
+      <div class="foot-col"><h4>Field Notes</h4><a href="blog/the-one-number.html">The one number</a><a href="blog/no-lock-in.html">No lock-in</a><a href="blog/two-week-pilot.html">Two-week pilot</a><a href="blog/index.html">All posts</a></div>
+      <div class="foot-col"><h4>Get started</h4><a href="contact.html">Book a scoping call</a><a href="contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div>
+    </div>
+    <div class="foot-bottom"><small>© 2026 DPR Labs — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

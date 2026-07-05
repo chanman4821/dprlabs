@@ -49,13 +49,7 @@
     border-bottom:1px solid var(--line)}
   .nav-in{display:flex;align-items:center;gap:28px;height:64px}
   .brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:-.02em;font-size:16px}
-  .brand .dot{width:26px;height:26px;border-radius:7px;position:relative;
-    background:
-      linear-gradient(180deg,var(--gold-bright),var(--gold-hi)) no-repeat 6px 14px / 4px 6px,
-      linear-gradient(180deg,var(--gold-bright),var(--gold-hi)) no-repeat 11px 10px / 4px 10px,
-      linear-gradient(180deg,var(--gold-bright),var(--gold-hi)) no-repeat 16px 6px / 4px 14px,
-      #111113;
-    box-shadow:inset 0 1px 0 rgba(255,255,255,.09),0 1px 5px rgba(0,0,0,.28)}
+  .brand .dot{display:none}
   .nav-links{display:flex;gap:24px;margin-left:6px}
   .nav-links a{font-size:14.5px;color:var(--muted);transition:color .15s}
   .nav-links a:hover{color:var(--ink)}

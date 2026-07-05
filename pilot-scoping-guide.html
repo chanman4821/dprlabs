@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to pick the ONE AI feature worth building first — DPR Labs</title>
+<meta name="description" content="A practical founder guide for choosing the first AI pilot: frequency, measurability, data boundaries, ownership, and demo value." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" href="assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="method.html" aria-current="page">How it works</a><a href="proof.html">Proof</a>
+      <a href="blog/index.html">Field Notes</a><a href="about.html">About</a>
+    </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-ghost">Talk to us</a><a href="contact.html" class="btn btn-primary">Book a pilot</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="method.html">How it works</a><a href="proof.html">Proof</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="contact.html">Book a pilot</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="prose reveal">
+        <p class="eyebrow">Playbook</p>
+        <h1>How to pick the ONE AI feature worth building first.</h1>
+        <p class="lead" style="margin-top:20px">The best first AI feature is not the flashiest idea. It is the smallest workflow that happens often, can be measured, has bounded data, and makes a buyer or board member say, “I understand why this matters.”</p>
+        <p>Most AI roadmaps fail because the first project tries to prove everything at once: product vision, data strategy, automation, personalization, and a future platform. That is too much weight for a pilot. A useful pilot should answer one question with evidence: can this workflow be improved enough to justify the next investment?</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap prose reveal">
+      <h2>The five filters</h2>
+      <p>Use these filters before choosing a feature. Score each idea from 1 to 5. Anything below 18 out of 25 is probably not your first pilot, even if it is interesting.</p>
+      <p><strong>High frequency.</strong> The workflow should happen many times per week. AI improves through examples, review, and repetition. A task that happens twice a quarter may matter, but it will not give you fast feedback.</p>
+      <p><strong>Measurable outcome.</strong> Pick something with a visible before-and-after number: minutes saved, tickets resolved, quote accuracy, review time, conversion lift, error rate, or cost per completed task. If you cannot measure it, you cannot defend it in a board meeting.</p>
+      <p><strong>Demoable in one minute.</strong> The result should be easy to show. A founder should be able to pull up one real-looking, sanitized example and explain the old way, the new way, and the number moved. A good demo is not theater; it is compressed evidence.</p>
+      <p><strong>Bounded data.</strong> The data should live in a known set of places: a CRM object, a folder of PDFs, a support queue, a database table, a few spreadsheets. “All company knowledge” is not bounded. “The last 500 support tickets and the refund policy” is bounded.</p>
+      <p><strong>Clear owner.</strong> Someone on the business side must care enough to review outputs, answer edge cases, and adopt the result. No owner means no feedback loop. No feedback loop means no improvement.</p>
+      <p class="callout"><strong>Simple scoring rule:</strong> first pilot candidates should be frequent, measurable, demoable, bounded, and owned. If one of those is missing, fix the scope before you build.</p>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap prose reveal">
+      <h2>Good vs bad first pilots</h2>
+      <p><strong>Bad first pilot:</strong> “Build an AI chief of staff for the whole company.” It sounds strategic, but the scope is foggy. The data is scattered. The owner is everyone and no one. Success becomes subjective: did it feel useful?</p>
+      <p><strong>Better first pilot:</strong> “Draft the weekly renewal-risk summary for customer success managers from CRM notes, support tickets, product usage, and billing status.” This is narrower. It happens often. The data sources are known. A customer success leader can review quality. The metric could be prep time per account or number of at-risk accounts reviewed before the weekly meeting.</p>
+      <p><strong>Bad first pilot:</strong> “Automate all investor research.” Too broad, too many edge cases, and too easy to generate confident nonsense.</p>
+      <p><strong>Better first pilot:</strong> “For each target investor, produce a one-page fit brief using only approved sources: fund stage, check size, sector focus, recent deals, and warm-intro paths.” The output is constrained, reviewable, and immediately useful for fundraising prep.</p>
+      <p><strong>Bad first pilot:</strong> “Replace our underwriting team.” That creates fear, legal risk, and a giant acceptance problem.</p>
+      <p><strong>Better first pilot:</strong> “Pre-check applications for missing documents, policy mismatches, and manual-review flags before an underwriter opens the file.” The human still decides. The system removes drag and creates a clean audit trail.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Selection framework</p>
+        <h2 style="margin-top:14px">Pick the first feature in four passes.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="step-n">01</div><div><h3>List painful workflows, not ideas</h3><p>Write down recurring work people complain about: copying data between tools, reading long documents, triaging inbound requests, preparing reports, checking compliance, summarizing customer history.</p></div></div>
+        <div class="step reveal"><div class="step-n">02</div><div><h3>Attach a number to each one</h3><p>For every workflow, name the current cost: hours per week, wait time, error rate, missed revenue, review backlog, or number of handoffs. Drop anything with no measurable baseline.</p></div></div>
+        <div class="step reveal"><div class="step-n">03</div><div><h3>Find the smallest useful slice</h3><p>Do not automate the department. Automate one decision-support step, one drafting step, one audit step, or one routing step. The slice should fit inside two weeks and still matter if it works.</p></div></div>
+        <div class="step reveal"><div class="step-n">04</div><div><h3>Choose the owner before the build</h3><p>The owner is the person who will say what good looks like, review misses, and drive adoption. If that person cannot make time during the pilot, pick a different workflow.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap prose reveal">
+      <h2>Copyable scoping worksheet</h2>
+      <p class="callout"><strong>Fill this in before your first build conversation:</strong><br />Workflow: What recurring task are we improving?<br />Owner: Who reviews quality and owns adoption?<br />Users: Who touches the workflow weekly?<br />Baseline: What number describes the current pain?<br />Target: What change would make the pilot worth it?<br />Data: Which exact systems or files are in scope?<br />Exclusions: Which sources, decisions, and edge cases are out of scope?<br />Human review: Where does a person approve, edit, or reject?<br />Demo: What one-minute example would prove the value?<br />Handover: Who runs it after the pilot?</p>
+      <p>One practical rule: if you cannot complete that worksheet in plain English, the scope is not ready. That does not mean the idea is bad. It means the first version is too foggy to build responsibly.</p>
+      <blockquote>The first pilot is not meant to become the whole product. It is meant to create one honest proof point your team can build on.</blockquote>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap center reveal">
+      <p class="eyebrow">Find the first slice</p>
+      <h2 style="margin:14px auto 0">Have three possible AI ideas?</h2>
+      <p class="lead">Bring them to a scoping call. We will help pick the one with the cleanest number and the least waste.</p>
+      <div class="hero-cta" style="justify-content:center"><a href="contact.html" class="btn btn-primary">Book a 2-week pilot <span class="arrow" aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+        <p>A senior AI consulting studio — we build it, measure it, and hand it over. You own what we build.</p>
+      </div>
+      <div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="proof.html">Proof</a><a href="about.html">About</a></div>
+      <div class="foot-col"><h4>Field Notes</h4><a href="blog/the-one-number.html">The one number</a><a href="blog/no-lock-in.html">No lock-in</a><a href="blog/two-week-pilot.html">Two-week pilot</a><a href="blog/index.html">All posts</a></div>
+      <div class="foot-col"><h4>Get started</h4><a href="contact.html">Book a scoping call</a><a href="contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div>
+    </div>
+    <div class="foot-bottom"><small>© 2026 DPR Labs — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

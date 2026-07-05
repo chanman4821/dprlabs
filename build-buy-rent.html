@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI: build vs buy vs rent — an honest decision tree — DPR Labs</title>
+<meta name="description" content="A neutral decision tree for choosing when to build, buy, or rent AI systems, with practical cost anchors and ownership tradeoffs." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="site.css" />
+<link rel="icon" href="assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="method.html" aria-current="page">How it works</a><a href="proof.html">Proof</a>
+      <a href="blog/index.html">Field Notes</a><a href="about.html">About</a>
+    </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-ghost">Talk to us</a><a href="contact.html" class="btn btn-primary">Book a pilot</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="method.html">How it works</a><a href="proof.html">Proof</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="contact.html">Book a pilot</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="prose reveal">
+        <p class="eyebrow">Strategy</p>
+        <h1>AI: build vs buy vs rent — an honest decision tree.</h1>
+        <p class="lead" style="margin-top:20px">Not every AI workflow should be custom-built. Sometimes the right answer is a SaaS tool, a model API, or a rented service. The trick is knowing which decision protects speed today without selling the learning curve tomorrow.</p>
+        <p>This guide is deliberately neutral. DPR Labs builds owned pilots, so we have an obvious bias. But a good strategy should still tell you when not to hire us. If the workflow is generic, low-risk, and not part of your moat, buy it. If the workflow is exploratory and temporary, rent it. If the workflow teaches your company something strategic every week, consider owning it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap prose reveal">
+      <h2>Define the three choices</h2>
+      <p><strong>Build</strong> means you own the code path, evals, data flow, deployment, and operating playbook. You may still use hosted models. Building does not mean training a model from scratch. It means the strategic workflow lives inside your company.</p>
+      <p><strong>Buy</strong> means a product already solves the job well enough. You accept its roadmap, interface, pricing, and limits because the workflow is not worth custom ownership. Buying is often the most mature choice.</p>
+      <p><strong>Rent</strong> means paying a vendor or service to produce outputs without fully owning the system behind them. Renting can be useful for speed, experiments, and non-core work. It becomes dangerous when the vendor owns the feedback loop that should be improving your business.</p>
+      <p class="callout"><strong>The key question:</strong> does this workflow create proprietary learning when repeated? If yes, ownership matters. If no, speed and price probably matter more.</p>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Decision tree</p>
+        <h2 style="margin-top:14px">Work through these in order.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="step-n">01</div><div><h3>Is the workflow core to differentiation?</h3><p>If customers choose you because this workflow is faster, safer, more accurate, more personalized, or cheaper, do not casually rent it. If it is payroll, meeting notes, generic copy drafts, or commodity search, buying is probably fine.</p></div></div>
+        <div class="step reveal"><div class="step-n">02</div><div><h3>Does repetition create proprietary data?</h3><p>If every run creates labels, corrections, preferences, risk decisions, or customer-specific patterns, owning the data loop has compounding value. If each run is disposable, renting may be enough.</p></div></div>
+        <div class="step reveal"><div class="step-n">03</div><div><h3>Can the outcome be measured in two weeks?</h3><p>If you can name a baseline and a target, an owned pilot can be rational. If success is still philosophical, buy a tool, prototype cheaply, or keep scoping until the number is clear.</p></div></div>
+        <div class="step reveal"><div class="step-n">04</div><div><h3>What is the risk of being wrong?</h3><p>For low-risk internal convenience, move fast. For regulated, customer-facing, revenue-critical, or brand-sensitive workflows, require evals, logs, human review, and rollback from the start.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap prose reveal">
+      <h2>When buying is the right answer</h2>
+      <p>Buy when the workflow is common, the vendor is mature, and your team does not need the underlying learning. A sales-call summarizer, help-desk draft assistant, meeting transcript tool, or generic document search product may be good enough. You can save weeks by accepting the vendor’s opinionated product.</p>
+      <p>Buying is also smart when adoption matters more than custom logic. If your team already lives in a tool and the AI feature is built into that tool, the lowest-friction option may win. A perfect custom system nobody opens is worse than a decent purchased feature that people actually use.</p>
+      <p>The buy risk is silent dependency. Watch for pricing that scales badly, weak export rights, limited audit logs, and workflows that become hard to leave after your team has shaped itself around them.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap prose reveal">
+      <h2>When renting is the right answer</h2>
+      <p>Rent when you need a temporary capability, a one-off analysis, or a fast test of demand. Maybe you need 200 investor-fit briefs before a raise. Maybe you need to clean a backlog before a migration. Maybe you need a prototype to learn what users ask for. Renting can create speed without pretending to be infrastructure.</p>
+      <p>Be honest about what you are not getting. You may not get the repo. You may not get portable evals. You may not get a system your team can modify. That is acceptable if the output is disposable. It is expensive if the output is the beginning of your moat.</p>
+      <blockquote>Rent the shortcut. Do not rent the learning curve unless you are comfortable losing it.</blockquote>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap prose reveal">
+      <h2>When building is the right answer</h2>
+      <p>Build when the workflow is frequent, strategic, measurable, and connected to proprietary context. Build when quality depends on your company’s judgment, not generic model skill. Build when each reviewed output can improve the next one. Build when investors, buyers, or executives will care that you own the system and can explain the cost curve.</p>
+      <p>Building can be smaller than people think. A first owned pilot does not need a giant platform, a private model, or a research team. It needs one workflow, one number, a bounded data set, an eval set, a deploy path, and a handover plan. That is why a fixed-price two-week pilot can make sense before a major hire.</p>
+      <p class="callout"><strong>Cost anchors to sanity-check the decision:</strong> a six-month agency retainer can drift into the high five or six figures without leaving you much you own; one senior ML hire can cost $200k+ per year before tools and management time; a rented wrapper can look cheap until you rebuild it under pressure. A fixed-price owned pilot should answer whether the workflow deserves more capital before you commit to any of those paths.</p>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap prose reveal">
+      <h2>A practical rule of thumb</h2>
+      <ul>
+        <li><strong>Buy</strong> if the workflow is generic and the tool is already good.</li>
+        <li><strong>Rent</strong> if the need is temporary, exploratory, or output-only.</li>
+        <li><strong>Build</strong> if the workflow is core, repeated, measurable, and improves with proprietary feedback.</li>
+        <li><strong>Wait</strong> if no one owns the workflow or the success number is vague.</li>
+      </ul>
+      <p>The underrated fourth option is waiting. Not every AI idea needs immediate spending. Sometimes the best move is to instrument the workflow for 30 days, collect examples, and come back when the number is obvious.</p>
+    </div>
+  </section>
+
+  <section class="sec problem">
+    <div class="wrap center reveal">
+      <p class="eyebrow">Choose the right path</p>
+      <h2 style="margin:14px auto 0">Unsure whether to build, buy, or rent?</h2>
+      <p class="lead">Bring one workflow. We will tell you plainly if it should be an owned pilot, a purchased tool, or nothing yet.</p>
+      <div class="hero-cta" style="justify-content:center"><a href="contact.html" class="btn btn-primary">Talk to us <span class="arrow" aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+        <p>A senior AI consulting studio — we build it, measure it, and hand it over. You own what we build.</p>
+      </div>
+      <div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="proof.html">Proof</a><a href="about.html">About</a></div>
+      <div class="foot-col"><h4>Field Notes</h4><a href="blog/the-one-number.html">The one number</a><a href="blog/no-lock-in.html">No lock-in</a><a href="blog/two-week-pilot.html">Two-week pilot</a><a href="blog/index.html">All posts</a></div>
+      <div class="foot-col"><h4>Get started</h4><a href="contact.html">Book a scoping call</a><a href="contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div>
+    </div>
+    <div class="foot-bottom"><small>© 2026 DPR Labs — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>
