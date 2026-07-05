@@ -11,6 +11,20 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
+<style>
+  .playbook-readiness-panel{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(18px,4vw,38px);align-items:center;margin-top:30px}
+  .playbook-rail{border:1px solid rgba(59,91,219,.2);border-radius:20px;background:linear-gradient(180deg,#fff,rgba(59,91,219,.035));box-shadow:0 20px 60px rgba(22,30,58,.07);padding:clamp(18px,3vw,26px);overflow:hidden}
+  .playbook-rail .diagram{min-height:190px}
+  .playbook-buddy-wrap{display:flex;justify-content:center;align-items:center}
+  .playbook-buddy{width:clamp(124px,16vw,178px);max-width:34vw;filter:drop-shadow(0 22px 30px rgba(22,30,58,.16));animation:playbookBuddyFloat 5.8s ease-in-out infinite}
+  @keyframes playbookBuddyFloat{0%,100%{transform:translateY(0) rotate(1deg)}50%{transform:translateY(-10px) rotate(-1deg)}}
+  @media (max-width:720px){
+    .playbook-readiness-panel{grid-template-columns:1fr;gap:14px}
+    .playbook-buddy-wrap{justify-content:flex-end;margin-top:-4px}
+    .playbook-buddy{width:132px}
+    .playbook-rail .diagram{min-height:170px}
+  }
+</style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body id="top">
@@ -31,7 +45,7 @@
 </header>
 <main id="main">
   <section class="page-hero">
-    <div class="wrap prose reveal">
+    <div class="wrap prose reveal" data-reveal>
       <p class="eyebrow">The anti-slop playbook</p>
       <h1>The automation field guide most vendors will not hand you.</h1>
       <p class="lead">A blunt way to decide what to automate, what to buy, and what to leave alone. If your process fails the tests below, we would rather tell you now than bill you later.</p>
@@ -41,7 +55,7 @@
   </section>
 
   <section class="sec problem">
-    <div class="wrap prose reveal">
+    <div class="wrap prose reveal" data-reveal>
       <p class="eyebrow">Field rule</p>
       <h2>AI slop starts when nobody can name the number.</h2>
       <p>The market is full of teams confusing a demo with a business system. They show a chatbot, avoid the messy edge cases, and call the result transformation. Then the real work shows up: permissions, bad inputs, human overrides, audit trails, exception queues, and one angry manager asking why the “AI” made the job slower.</p>
@@ -50,11 +64,19 @@
   </section>
 
   <section class="sec">
-    <div class="wrap reveal">
+    <div class="wrap reveal" data-reveal>
       <div class="prose">
         <p class="eyebrow">Widget 01</p>
         <h2>AI-readiness scorecard.</h2>
         <p>Answer like an operator, not a deck writer. A “somewhat” means the weakness will show up in production. A “no” means you have scope work before you have automation work.</p>
+      </div>
+      <div class="playbook-readiness-panel" data-reveal>
+        <div class="playbook-rail">
+          <div class="diagram" data-diagram="timeline" data-config='{"items":[{"when":"70–100","label":"Build now","sub":"Real data, named owner, measurable upside, reviewable mistakes."},{"when":"40–69","label":"Scope first","sub":"One weak pillar needs fixing before spend becomes safe."},{"when":"0–39","label":"Not yet","sub":"Standardize the workflow before automation amplifies the mess."}]}' aria-label="AI readiness bands: Build now, Scope first, Not yet"></div>
+        </div>
+        <div class="playbook-buddy-wrap" aria-hidden="true">
+          <img class="playbook-buddy" src="assets/mascot/cut/bot-wave.png" alt="" loading="lazy" />
+        </div>
       </div>
       <div class="tool" id="readinessScorecard">
         <p class="tool-lead">Score the workflow you are tempted to automate.</p>
@@ -79,7 +101,7 @@
   </section>
 
   <section class="sec problem">
-    <div class="wrap reveal">
+    <div class="wrap reveal" data-reveal>
       <div class="prose">
         <p class="eyebrow">Widget 02</p>
         <h2>Build, buy, or wait.</h2>
@@ -93,13 +115,13 @@
   </section>
 
   <section class="sec">
-    <div class="wrap reveal">
+    <div class="wrap reveal" data-reveal>
       <div class="prose">
         <p class="eyebrow">Start here</p>
         <h2>Five workflows to automate first.</h2>
         <p>The shared signal is boring and powerful: high-volume, rules-heavy, human-checkable, boring, and universally hated. That combination beats almost every “AI strategy” workshop.</p>
       </div>
-      <div class="grid-3">
+      <div class="grid-3" data-stagger>
         <div class="card"><h3>1. Inbound triage and routing.</h3><p>Support tickets, leads, applications, and forms arrive constantly. The rules are visible, the output is easy to check, and the backlog annoys everyone.</p></div>
         <div class="card"><h3>2. Re-keying between systems.</h3><p>If humans copy the same fields because two tools never got connected, automate the bridge before buying another dashboard.</p></div>
         <div class="card"><h3>3. Recurring report assembly.</h3><p>Weekly ops, finance, and status roll-ups usually have the same shape. Let people review the story, not rebuild the spreadsheet.</p></div>
@@ -111,7 +133,7 @@
   </section>
 
   <section class="sec problem">
-    <div class="wrap prose reveal">
+    <div class="wrap prose reveal" data-reveal>
       <p class="eyebrow">The senior answer</p>
       <h2>Sometimes the right move is to walk away.</h2>
       <p>A workflow that scores “Not yet” is not a failed company. It is a warning label. Standardize the inputs, assign an owner, decide what a mistake may cost, and come back in a quarter. That is cheaper than paying experts to automate confusion.</p>
@@ -120,7 +142,7 @@
   </section>
 
   <section class="sec">
-    <div class="wrap center prose reveal">
+    <div class="wrap center prose reveal" data-reveal>
       <p class="eyebrow">Bring one ugly workflow</p>
       <h2>If the score is real, the pilot can be small.</h2>
       <p class="lead">Bring us the process you scored, the metric you would judge it by, and the person who owns it. If those three are real, so is the automation.</p>
@@ -249,6 +271,26 @@
     mount.querySelector('.tree-restart').addEventListener('click',function(){renderNode('root');});
   }
   renderNode('root');
+})();
+(function(){
+  function armDraws(){
+    var draws=Array.prototype.slice.call(document.querySelectorAll('[data-diagram] [data-draw]'));
+    if(!draws.length) return;
+    draws.forEach(function(el){
+      try{var len=el.getTotalLength?el.getTotalLength():1000;el.style.setProperty('--len',Math.ceil(len));}catch(e){}
+    });
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window)){
+      draws.forEach(function(el){el.classList.add('is-in');});
+      return;
+    }
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){entry.target.classList.add('is-in');io.unobserve(entry.target);}
+      });
+    },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+    draws.forEach(function(el){io.observe(el);});
+  }
+  window.addEventListener('load',armDraws);
 })();
 </script>
 </body>

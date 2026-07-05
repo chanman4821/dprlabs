@@ -11,6 +11,20 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
+<style>
+  .method-framework-wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(18px,4vw,42px);align-items:end;margin-top:42px}
+  .method-framework-card{border:1px solid rgba(59,91,219,.22);border-radius:22px;background:linear-gradient(180deg,#fff,rgba(59,91,219,.04));box-shadow:0 24px 70px rgba(22,30,58,.08);padding:clamp(18px,3vw,28px);overflow:hidden}
+  .method-framework-card .diagram{min-height:220px}
+  .method-buddy{width:clamp(120px,16vw,176px);max-width:34vw;filter:drop-shadow(0 22px 30px rgba(22,30,58,.16));animation:methodBuddyFloat 5.5s ease-in-out infinite}
+  .method-buddy-card{align-self:center;display:flex;justify-content:center}
+  @keyframes methodBuddyFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}}
+  @media (max-width:720px){
+    .method-framework-wrap{grid-template-columns:1fr;gap:16px;margin-top:30px}
+    .method-buddy-card{justify-content:flex-end;margin-top:-8px}
+    .method-buddy{width:128px}
+    .method-framework-card .diagram{min-height:180px}
+  }
+</style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body id="top">
@@ -34,24 +48,32 @@
 <main id="main">
   <section class="page-hero">
     <div class="wrap">
-      <div class="prose reveal">
+      <div class="prose reveal" data-reveal>
         <p class="eyebrow">How it works</p>
         <h1>The Owned-AI Method</h1>
         <p class="lead" style="margin-top:20px">A six-module system that turns AI from theater into a moved number. No black boxes, no rented dashboard, no bolt-on bot pretending to be transformation.</p>
         <p>Most AI work fails because everyone lets the word "AI" do the selling. We do the opposite. DPR Labs starts with the number, builds inside the business, grades every change against real evidence, and hands the system over so you own the result.</p>
         <div style="margin-top:30px"><a href="pilot.html" class="btn btn-primary">Book a pilot</a> <a href="contact.html" class="btn btn-ghost">Talk to us</a></div>
       </div>
+      <div class="method-framework-wrap" data-reveal>
+        <div class="method-framework-card">
+          <div class="diagram" data-diagram="framework" data-config='{"items":[{"n":1,"label":"Number"},{"n":2,"label":"Baseline"},{"n":3,"label":"Build-Inside"},{"n":4,"label":"Evals"},{"n":5,"label":"Handover"},{"n":6,"label":"Proof"}]}' aria-label="The Owned-AI Method: Number, Baseline, Build-Inside, Evals, Handover, Proof"></div>
+        </div>
+        <div class="method-buddy-card" aria-hidden="true">
+          <img class="method-buddy" src="assets/mascot/cut/bot-peace.png" alt="" loading="lazy" />
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="sec">
-    <div class="wrap reveal">
+    <div class="wrap reveal" data-reveal>
       <div class="prose">
         <p class="eyebrow">The system</p>
         <h2 style="margin-top:14px">Six modules. One standard. <span class="gold-text">Own the AI or call it slop.</span></h2>
         <p class="lead">The Owned-AI Method front-loads the uncomfortable questions. What number moves? What is today's baseline? Where will the model live? How will quality be tested? Who owns it when we leave? What proof survives scrutiny?</p>
       </div>
-      <div class="modules">
+      <div class="modules" data-stagger>
         <div class="module"><div class="mnum">01</div><h3>Number</h3><p>We agree the single honest metric up front — the number the whole job is judged on. It kills slop because demos and vibes cannot outrun one public score.</p></div>
         <div class="module"><div class="mnum">02</div><h3>Baseline</h3><p>We measure today's real performance on real data before building. It kills slop because improvement has to beat a known starting line, not a memory.</p></div>
         <div class="module"><div class="mnum">03</div><h3>Build-Inside</h3><p>We embed the model into the actual workflow, repo, accounts, and data path. It kills slop because a sidecar bot is not owned software.</p></div>
@@ -63,7 +85,7 @@
   </section>
 
   <section class="sec problem">
-    <div class="wrap prose reveal">
+    <div class="wrap prose reveal" data-reveal>
       <p class="eyebrow">The one-number principle</p>
       <h2 style="margin-top:14px">If we cannot name the number, the pilot is not ready.</h2>
       <p style="margin-top:16px">Every engagement is anchored to exactly one number. Not a dashboard of vanity metrics, not a soft feeling that the team is "more AI-enabled," and not a list of features that sound impressive in a board update. One measurable outcome decides whether the work mattered: reply time, minutes per invoice, qualified leads per rep, analyst hours saved per week, error rate on a review queue, or revenue recovered from work that used to leak.</p>
@@ -74,12 +96,12 @@
 
   <section class="sec">
     <div class="wrap">
-      <div class="prose reveal">
+      <div class="prose reveal" data-reveal>
         <p class="eyebrow">Fourteen-day operating rhythm</p>
         <h2 style="margin-top:14px">You see the system forming in public.</h2>
         <p class="lead">A pilot is deliberately small and deliberately measurable. We do not disappear for a month and return with a polished demo. Each checkpoint produces an artifact you can inspect.</p>
       </div>
-      <div class="steps">
+      <div class="steps" data-stagger>
         <div class="step reveal"><div class="step-n">01</div>
           <div><h3>Metric contract</h3><p>Day 1 is the agreement that matters: one workflow, one metric, one baseline method, one success threshold, and one refund condition. Nothing else starts until the number is written down.</p></div>
           <div class="step-meta"><span>When</span><b>Day 1</b><span>Output</span><b>Metric contract</b></div></div>
@@ -97,7 +119,7 @@
   </section>
 
   <section class="sec problem">
-    <div class="wrap prose reveal">
+    <div class="wrap prose reveal" data-reveal>
       <p class="eyebrow">Ownership by default</p>
       <h2 style="margin-top:14px">"You own it" is architecture, not a promise.</h2>
       <p style="margin-top:16px">We build on your accounts from day one: your repository, your cloud, your data access, your deployment path, your monitoring. That choice is less convenient for us and better for you. It means there is no migration trap and no secret system only DPR Labs can operate. If you fire us after handover, the work keeps running.</p>
@@ -107,7 +129,7 @@
   </section>
 
   <section class="sec">
-    <div class="wrap prose reveal">
+    <div class="wrap prose reveal" data-reveal>
       <p class="eyebrow">When we say no</p>
       <h2 style="margin-top:14px">We would rather lose the work than sell a pilot that cannot win.</h2>
       <ul style="margin-top:20px">
@@ -123,7 +145,7 @@
   </section>
 
   <section class="sec problem">
-    <div class="wrap center reveal">
+    <div class="wrap center reveal" data-reveal>
       <p class="eyebrow">Start with the number</p>
       <h2 style="margin:14px auto 0">Bring us the number you need to move.</h2>
       <p class="lead">If it is real and measurable, we will define the contract, establish the baseline, and prove the result in fourteen days or you pay nothing.</p>
@@ -146,5 +168,27 @@
 <script src="site.js" defer></script>
 <script src="assets/anim.js" defer></script>
 <script src="assets/diagrams.js" defer></script>
+<script>
+(function(){
+  function armDraws(){
+    var draws=Array.prototype.slice.call(document.querySelectorAll('[data-diagram] [data-draw]'));
+    if(!draws.length) return;
+    draws.forEach(function(el){
+      try{var len=el.getTotalLength?el.getTotalLength():1000;el.style.setProperty('--len',Math.ceil(len));}catch(e){}
+    });
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window)){
+      draws.forEach(function(el){el.classList.add('is-in');});
+      return;
+    }
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){entry.target.classList.add('is-in');io.unobserve(entry.target);}
+      });
+    },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+    draws.forEach(function(el){io.observe(el);});
+  }
+  window.addEventListener('load',armDraws);
+})();
+</script>
 </body>
 </html>

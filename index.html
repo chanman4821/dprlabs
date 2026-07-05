@@ -21,6 +21,16 @@
 {"@context":"https://schema.org","@type":"Organization","name":"DPR Labs","alternateName":"DPR",
 "description":"Senior AI consulting studio. Two-week pilots, one honest number, systems you own.","url":"https://dprlabs.io/"}
 </script>
+<style>
+.pilot-run{position:relative;overflow:hidden}
+.pilot-run-card{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:28px;border:1px solid rgba(59,91,219,.18);border-radius:28px;background:linear-gradient(135deg,#fff,rgba(59,91,219,.05));box-shadow:0 24px 70px rgba(15,23,42,.08)}
+.pilot-run-card [data-diagram]{min-height:190px}
+.pilot-buddy{width:clamp(120px,13vw,176px);filter:drop-shadow(0 18px 26px rgba(210,154,45,.22));animation:pilotFloat 5.5s ease-in-out infinite}
+@keyframes pilotFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}}
+@media (max-width:700px){.pilot-run-card{grid-template-columns:1fr;padding:22px}.pilot-buddy{justify-self:end;width:118px}}
+@media (max-width:560px){.pilot-buddy{width:88px;justify-self:end}.pilot-run-card [data-diagram]{min-height:170px}}
+@media (prefers-reduced-motion:reduce){.pilot-buddy{animation:none}}
+</style>
 <noscript><style>.reveal{opacity:1;transform:none}.mascot{animation:none}</style></noscript>
 </head>
 
@@ -54,7 +64,7 @@
 
   <!-- HERO — interactive hub -->
   <section class="hero hero-hub" id="hero">
-    <div class="wrap">
+    <div class="wrap" data-reveal>
       <p class="eyebrow">The Owned-AI studio</p>
       <h1>Most AI is slop. <em>We build the kind you own.</em></h1>
       <p class="lead">A fixed-price two-week pilot, judged on one honest number you agree up front. If it doesn't move, you don't pay — and you keep the code, the weights, and the evals. No dead demos, no rented endpoints, no theater.</p>
@@ -63,7 +73,7 @@
         <a href="method.html" class="btn btn-ghost">See how it works</a>
       </div>
 
-      <div class="hub" id="hub" role="group" aria-label="What we do — the gold bot reacts as you explore each offering">
+      <div class="hub" id="hub" role="group" aria-label="What we do — the gold bot reacts as you explore each offering" data-reveal>
         <svg class="hub-web" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
           <line data-line="0" x1="50" y1="50" x2="50" y2="12" />
           <line data-line="1" x1="50" y1="50" x2="82" y2="31" />
@@ -121,7 +131,7 @@
         <h2 style="margin-top:14px">The industry is drowning in <span class="gold-text">AI slop.</span></h2>
         <p class="lead">Dead demos. Chatbots bolted on the side. Endpoints you rent forever. "Accuracy" with no baseline. Most "AI transformation" is theater billed as progress. Here are six kinds — and the tell that gives each one away.</p>
       </div>
-      <div class="slop-list">
+      <div class="slop-list" data-stagger>
         <div class="slop-item reveal"><h3>The Bolt-On Bot</h3><p class="tell">A GPT wrapper stapled to the corner of your page. <b>Tell:</b> it can't touch your real data or workflow.</p></div>
         <div class="slop-item reveal"><h3>The Dead Demo</h3><p class="tell">Flawless on the sales call, never seen in production. <b>Tell:</b> no live metric, no user count, no incident history.</p></div>
         <div class="slop-item reveal"><h3>The Rented Brain</h3><p class="tell">You pay per call forever and own nothing. <b>Tell:</b> no weights, no code, no exit path in the contract.</p></div>
@@ -195,7 +205,7 @@
         <h2 style="margin-top:14px">A system, <span class="gold-text">not a slide deck.</span></h2>
         <p class="lead">Six steps that turn "AI" from theater into a moved number. Every engagement runs the same order — and ends at Proof you can re-check.</p>
       </div>
-      <div class="modules">
+      <div class="modules" data-stagger>
         <div class="module reveal"><div class="mnum">01</div><h3>Number</h3><p>Agree the one honest metric up front — the number the whole job is judged on.</p></div>
         <div class="module reveal"><div class="mnum">02</div><h3>Baseline</h3><p>Measure today's real performance on your real data, so improvement is provable.</p></div>
         <div class="module reveal"><div class="mnum">03</div><h3>Build-Inside</h3><p>Embed the model into your actual workflow and data — no bolt-on bot.</p></div>
@@ -207,6 +217,21 @@
     </div>
   </section>
 
+  <!-- PILOT PIPELINE -->
+  <section class="sec pilot-run" aria-labelledby="pilot-run-title">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow">How a pilot runs</p>
+        <h2 id="pilot-run-title" style="margin-top:14px">Three checkpoints, one clean handoff.</h2>
+        <p class="lead">A pilot stays small on purpose: name the number, build inside the real workflow, then prove the result in a way your team can re-check.</p>
+      </div>
+      <div class="pilot-run-card" data-reveal>
+        <div data-diagram="pipeline" data-config='{"items":[{"n":1,"label":"Number","sub":"agree it"},{"n":2,"label":"Build-Inside","sub":"on your data"},{"n":3,"label":"Proof","sub":"re-checkable"}]}' aria-label="Pilot pipeline: Number, Build-Inside, Proof"></div>
+        <img class="pilot-buddy" src="assets/mascot/cut/bot-wave.png" width="176" height="176" alt="DPR Labs gold robot mascot guiding the pilot flow" />
+      </div>
+    </div>
+  </section>
+
   <!-- METHOD -->
   <section class="sec problem" id="method">
     <div class="wrap">
@@ -215,7 +240,7 @@
         <h2 style="margin-top:14px">Four honest steps. <span class="gold-text">No slide deck at the end.</span></h2>
         <p class="lead">We find the task eating the most time, build a working AI system in two weeks, measure it honestly, and hand it over. You own everything we ship.</p>
       </div>
-      <div class="steps">
+      <div class="steps" data-stagger>
         <div class="step reveal"><div class="step-n">01</div>
           <div><h3>Find the biggest time-sink</h3><p>We sit with your team and pick the one repetitive workflow that costs the most hours. One target, not a platform.</p></div>
           <div class="step-meta"><span>Duration</span><b>~2 days</b><span>Output</span><b>Scoped target</b></div></div>

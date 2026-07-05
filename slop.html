@@ -11,6 +11,28 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
+<style>
+.slop-compare{position:relative;overflow:hidden}
+.compare-shell{position:relative;margin-top:28px;--pos:50%;border:1px solid rgba(59,91,219,.18);border-radius:28px;background:#fff;box-shadow:0 24px 70px rgba(15,23,42,.08);overflow:hidden}
+.compare-stage{position:relative;min-height:330px;user-select:none;touch-action:none}
+.compare-pane{position:absolute;inset:0;display:grid;align-content:center;padding:34px}
+.compare-before{background:linear-gradient(135deg,#f8fafc,#eef2ff)}
+.compare-after{background:linear-gradient(135deg,#fff,rgba(59,91,219,.09));clip-path:inset(0 0 0 var(--pos))}
+.compare-card{max-width:520px;border:1px solid rgba(15,23,42,.1);border-radius:22px;background:rgba(255,255,255,.88);padding:22px;box-shadow:0 16px 40px rgba(15,23,42,.08)}
+.compare-card h3{margin:0 0 10px;font-size:clamp(22px,3vw,34px)}
+.compare-card p{margin:0;color:var(--muted);line-height:1.65}
+.compare-after .compare-card{margin-left:auto;border-color:rgba(59,91,219,.24)}
+.compare-divider{position:absolute;inset:0 auto 0 var(--pos);width:3px;transform:translateX(-50%);background:#3b5bdb;box-shadow:0 0 0 1px rgba(255,255,255,.9),0 0 28px rgba(59,91,219,.32);pointer-events:none}
+.compare-divider::after{content:"↔";position:absolute;top:50%;left:50%;display:grid;place-items:center;width:46px;height:46px;transform:translate(-50%,-50%);border-radius:999px;background:#3b5bdb;color:#fff;font-weight:800;box-shadow:0 12px 30px rgba(59,91,219,.28)}
+.compare-control{position:absolute;inset:0;cursor:ew-resize;outline:none}
+.compare-control:focus-visible{box-shadow:inset 0 0 0 3px #3b5bdb}
+.compare-labels{display:flex;justify-content:space-between;gap:12px;padding:14px 18px;border-top:1px solid rgba(15,23,42,.08);font-weight:800;color:#0f172a}
+.compare-buddy{position:absolute;right:clamp(18px,6vw,76px);top:8px;width:clamp(120px,14vw,178px);filter:drop-shadow(0 18px 26px rgba(210,154,45,.22));animation:peekFloat 5.5s ease-in-out infinite}
+@keyframes peekFloat{0%,100%{transform:translateY(0) rotate(1deg)}50%{transform:translateY(-9px) rotate(-1deg)}}
+@media (max-width:700px){.compare-stage{min-height:400px}.compare-pane{padding:22px}.compare-card{max-width:82%}.compare-after .compare-card{max-width:82%}.compare-buddy{width:118px;right:12px;top:-4px}}
+@media (max-width:560px){.compare-buddy{width:88px;right:10px;top:0}.compare-stage{min-height:430px}.compare-card h3{font-size:24px}}
+@media (prefers-reduced-motion:reduce){.compare-buddy{animation:none}}
+</style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body id="top">
@@ -58,7 +80,7 @@
       <p class="eyebrow">Seven slop types</p>
       <h2 style="margin-top:14px">The tell always shows up before the invoice.</h2>
       <p class="lead">Lazy vendors sell mystery because mystery protects margin. Senior teams sell measurement because measurement survives procurement, board questions, and production traffic.</p>
-      <div class="slop-list">
+      <div class="slop-list" data-stagger>
         <article class="slop-item"><h3>The Bolt-On Bot</h3><p class="tell">A GPT wrapper stapled to the page. <b>Tell:</b> it cannot touch your real data, permissions, approvals, or workflow.</p></article>
         <article class="slop-item"><h3>The Dead Demo</h3><p class="tell">Flawless on the call, absent from production. <b>Tell:</b> no live metric, no user count, no incident history.</p></article>
         <article class="slop-item"><h3>The Rented Brain</h3><p class="tell">You pay per call forever and own nothing. <b>Tell:</b> no weights, no code, no prompts, no exit path in the contract.</p></article>
@@ -66,6 +88,36 @@
         <article class="slop-item"><h3>AI-First Theater</h3><p class="tell">A rebrand with the word AI and no behavior change. <b>Tell:</b> the roadmap is slides, not commits.</p></article>
         <article class="slop-item"><h3>The Transformation Retainer</h3><p class="tell">A monthly agency wrapper around a generic model. <b>Tell:</b> deliverables are decks and “strategy,” never a moved number.</p></article>
         <article class="slop-item"><h3>The Eval-Free Ship</h3><p class="tell">A model in production with no test suite. <b>Tell:</b> nobody can say if last week's change made it better or worse.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec slop-compare" aria-labelledby="compare-title">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">Before / after</p>
+        <h2 id="compare-title" style="margin-top:14px">Drag the line from slop to owned.</h2>
+        <p class="lead">The difference is not polish. It is whether the answer can be checked, cited, owned, and improved.</p>
+      </div>
+      <img class="compare-buddy" src="assets/mascot/cut/bot-peek.png" width="178" height="178" alt="DPR Labs gold robot mascot peeking at the comparison" data-reveal />
+      <div class="compare-shell" data-compare data-reveal>
+        <div class="compare-stage">
+          <div class="compare-pane compare-before" aria-hidden="true">
+            <div class="compare-card">
+              <h3>AI slop output</h3>
+              <p>Generic answer. Confident tone. No baseline, no citation, no owner, and no way to tell whether it got better or worse after the next prompt change.</p>
+            </div>
+          </div>
+          <div class="compare-pane compare-after" aria-hidden="true">
+            <div class="compare-card">
+              <h3>Owned-AI output</h3>
+              <p>Measured answer. Cited source. Named owner. Failure mode captured. The code, prompts, evals, and runbook stay with your team.</p>
+            </div>
+          </div>
+          <div class="compare-divider" aria-hidden="true"></div>
+          <div class="compare-control" role="slider" tabindex="0" aria-label="Compare AI slop with Owned-AI output" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+        </div>
+        <div class="compare-labels" aria-hidden="true"><span>AI slop</span><span>Owned-AI</span></div>
       </div>
     </div>
   </section>
@@ -97,7 +149,7 @@
     <div class="wrap reveal">
       <p class="eyebrow">Their slop vs our discipline</p>
       <h2 style="margin-top:14px">The difference is not taste. It is ownership.</h2>
-      <div class="versus">
+      <div class="versus" data-stagger>
         <div class="versus-row versus-head"><div class="them">AI slop</div><div class="us">DPR discipline</div></div>
         <div class="versus-row"><div class="them">Ships a demo that survives one scripted path.</div><div class="us">Ships against an eval set that covers your eight worst cases before go-live.</div></div>
         <div class="versus-row"><div class="them">Calls it intelligent with no number attached.</div><div class="us">States a baseline and the error rate, then reports the change the same way each time.</div></div>
@@ -156,5 +208,40 @@
 <script src="site.js" defer></script>
 <script src="assets/anim.js" defer></script>
 <script src="assets/diagrams.js" defer></script>
+<script>
+(function () {
+  "use strict";
+  var shell = document.querySelector("[data-compare]");
+  if (!shell) return;
+  var control = shell.querySelector(".compare-control");
+  if (!control) return;
+  var value = 50;
+  function setValue(next) {
+    value = Math.max(0, Math.min(100, next));
+    shell.style.setProperty("--pos", value + "%");
+    control.setAttribute("aria-valuenow", String(Math.round(value)));
+  }
+  function setFromClientX(clientX) {
+    var rect = shell.getBoundingClientRect();
+    if (!rect.width) return;
+    setValue(((clientX - rect.left) / rect.width) * 100);
+  }
+  control.addEventListener("pointerdown", function (event) {
+    control.setPointerCapture(event.pointerId);
+    setFromClientX(event.clientX);
+  });
+  control.addEventListener("pointermove", function (event) {
+    if (control.hasPointerCapture(event.pointerId)) setFromClientX(event.clientX);
+  });
+  control.addEventListener("keydown", function (event) {
+    var step = event.shiftKey ? 10 : 5;
+    if (event.key === "ArrowLeft") { event.preventDefault(); setValue(value - step); }
+    if (event.key === "ArrowRight") { event.preventDefault(); setValue(value + step); }
+    if (event.key === "Home") { event.preventDefault(); setValue(0); }
+    if (event.key === "End") { event.preventDefault(); setValue(100); }
+  });
+  setValue(value);
+})();
+</script>
 </body>
 </html>
