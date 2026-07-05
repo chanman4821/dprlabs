@@ -5,6 +5,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
 <link rel="stylesheet" href="site.css" /><link rel="icon" href="assets/icons/logo-orb.png" />
+<style>
+  .case-visual{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(220px,.75fr);gap:28px;align-items:center;border:1px solid rgba(15,17,20,.12);border-radius:24px;background:#fff;padding:26px;box-shadow:0 18px 50px rgba(15,17,20,.06);margin-top:34px;overflow:hidden}
+  .case-chart{min-width:0}
+  .case-chart h3,.delta-card h3{font-size:18px;margin:0 0 8px;letter-spacing:-.02em}
+  .case-chart p,.delta-card p{font-size:14.5px;line-height:1.55;color:var(--muted);margin:0}
+  .delta-grid{display:grid;gap:14px}
+  .delta-card{border:1px solid rgba(59,91,219,.16);border-radius:18px;background:linear-gradient(180deg,#fff,#f8f9ff);padding:20px}
+  .delta-card strong{display:block;font-size:clamp(34px,5vw,54px);line-height:1;letter-spacing:-.05em;color:#3b5bdb;margin-bottom:10px}
+  .case-marker{display:flex;align-items:center;gap:24px;border:1px solid rgba(59,91,219,.14);border-radius:24px;background:linear-gradient(135deg,#fff 0%,#f7f8ff 100%);padding:22px 26px;margin-top:30px;overflow:hidden}
+  .case-buddy{width:clamp(120px,16vw,170px);height:auto;flex:0 0 auto;filter:drop-shadow(0 18px 28px rgba(59,91,219,.16));animation:caseFloat 5.8s ease-in-out infinite}
+  .case-marker p{margin:0;color:var(--muted);font-size:15px;line-height:1.6}
+  @keyframes caseFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+  @media(max-width:780px){.case-visual{grid-template-columns:1fr;padding:20px}.case-marker{align-items:flex-start}.case-buddy{width:128px}}
+  @media(max-width:520px){.case-marker{display:block}.case-buddy{float:right;width:116px;margin:0 0 10px 14px}.delta-card strong{font-size:38px}}
+  @media(prefers-reduced-motion:reduce){.case-buddy{animation:none}}
+</style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript></head>
 <body id="top"><a class="skip-link" href="#main">Skip to content</a>
 <header class="nav"><div class="wrap nav-in">
@@ -14,7 +30,7 @@
 <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
 <div class="mobile-menu" id="mobileMenu"><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="pilot.html">Book a pilot</a></div></header>
 <main id="main">
-  <section class="page-hero">
+  <section class="page-hero" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Anonymized case study</p>
       <h1>One number, agreed before we wrote a line of code.</h1>
@@ -23,18 +39,18 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap reveal">
-      <div class="metric-band">
-        <div class="mb"><div class="mv"><span data-count="10">10</span> min</div><div class="mk">Median handling time, down from 38 minutes</div><span class="mtag">Illustrative / anonymized</span></div>
-        <div class="mb"><div class="mv"><span data-count="61">61</span>%</div><div class="mk">Exceptions resolved with no human in the loop</div><span class="mtag">Illustrative / anonymized</span></div>
-        <div class="mb"><div class="mv">n=<span data-count="2431">2431</span></div><div class="mk">Live freight exceptions measured over two weeks</div><span class="mtag">Illustrative / anonymized</span></div>
+      <div class="metric-band" data-stagger>
+        <div class="mb"><div class="mv"><span data-count-to="10">0</span> min</div><div class="mk">Median handling time, down from 38 minutes</div><span class="mtag">Illustrative / anonymized</span></div>
+        <div class="mb"><div class="mv"><span data-count-to="61" data-suffix="%">0</span></div><div class="mk">Exceptions resolved with no human in the loop</div><span class="mtag">Illustrative / anonymized</span></div>
+        <div class="mb"><div class="mv">n=<span data-count-to="2431">0</span></div><div class="mk">Live freight exceptions measured over two weeks</div><span class="mtag">Illustrative / anonymized</span></div>
         <div class="mb"><div class="mv">100%</div><div class="mk">Code, weights, retrieval rules, and eval harness owned by the client</div><span class="mtag">Illustrative / anonymized</span></div>
       </div>
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">The problem</p>
       <h2 style="margin-top:14px">A 40-person logistics ops team was buried under exceptions.</h2>
@@ -44,7 +60,7 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">The build</p>
       <h2 style="margin-top:14px">Classifier first. Retrieval second. No chatbot theater.</h2>
@@ -54,10 +70,29 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Results</p>
       <h2 style="margin-top:14px">The number moved: 38 minutes to 10 minutes.</h2>
+      <div class="case-visual" data-reveal>
+        <div class="case-chart">
+          <h3>Flagship deltas, no invented numbers.</h3>
+          <p>Same baseline and rollout numbers from the text below: handling time moved from 38 minutes to 10 minutes, and no-human resolution moved from 0% to 61%.</p>
+          <div data-diagram="barDelta" data-config='{"items":[{"label":"Handling time","before":38,"after":10,"unit":" min"},{"label":"No-human resolution","before":0,"after":61,"unit":"%"}]}' style="margin-top:22px"></div>
+        </div>
+        <div class="delta-grid" data-stagger>
+          <div class="delta-card">
+            <strong><span data-count-to="74" data-prefix="-" data-suffix="%">0</span></strong>
+            <h3>Handling-time reduction</h3>
+            <p>38 minutes to 10 minutes on the agreed metric.</p>
+          </div>
+          <div class="delta-card">
+            <strong><span data-count-to="61" data-suffix="%">0</span></strong>
+            <h3>No-human resolution</h3>
+            <p>Only tickets that met the agreed standard counted.</p>
+          </div>
+        </div>
+      </div>
       <p style="margin-top:16px">Baseline was the team’s own pre-project measurement: roughly 1,200 freight-exception tickets per week, a 38-minute median handling time, and effectively 0% autonomous resolution. After rollout, measured across n=2,431 live exceptions over two weeks, median handling time fell to 10 minutes. That is a 74% reduction on the single number we wrote down before work began.</p>
       <p>Autonomous resolution moved from 0% to 61%. That does not mean the system pretended every ticket was safe. It means 61% met the agreed standard for no-human resolution, while the rest were escalated with context instead of dumped back into the queue cold. The operators still owned judgment. The machine owned repeat assembly, retrieval, and first-pass routing.</p>
       <p>Ownership was part of the result. The client owns 100% of the code, weights, eval set, prompts, retrieval rules, and handoff notes. There is no per-seat rent on their own workflow and no vendor hostage situation if they want to retrain, fork, or fire us.</p>
@@ -65,10 +100,14 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">What made it work</p>
       <h2 style="margin-top:14px">The system had a spine before it had a brain.</h2>
+      <div class="case-marker" data-reveal>
+        <img class="case-buddy" src="assets/mascot/cut/bot-peek.png" alt="DPR Labs robot inspecting the measurement plan" loading="lazy" />
+        <p><strong>Measure before magic.</strong> The mascot sits here as a visual checkpoint: one metric, one workflow, one held-out set, one place to work, one owner.</p>
+      </div>
       <ul style="margin-top:20px">
         <li><strong>One metric:</strong> median handling time, not a dashboard designed to find a win after the fact.</li>
         <li><strong>One workflow:</strong> freight exceptions, not a vague corporate AI transformation program.</li>
@@ -80,7 +119,7 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Mini case</p>
       <h2 style="margin-top:14px">A smaller support triage win we will not overclaim.</h2>
@@ -89,7 +128,7 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap center prose reveal">
       <p class="eyebrow">Bring one ugly queue</p>
       <h2 style="margin:14px auto 0">Agree the number first. See the eval before you scale.</h2>

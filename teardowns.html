@@ -11,6 +11,30 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
 <link rel="stylesheet" href="site.css" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
+<style>
+  .tear-annotated{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.72fr);gap:24px;align-items:start;border:1px solid rgba(15,17,20,.12);border-radius:24px;background:#fff;padding:24px;margin:30px 0;box-shadow:0 18px 50px rgba(15,17,20,.06)}
+  .tear-map{position:relative;min-height:250px;border:1px solid rgba(59,91,219,.16);border-radius:20px;background:linear-gradient(135deg,#fbfcff 0%,#eef1fb 100%);padding:22px;overflow:hidden}
+  .tear-map::before{content:"";position:absolute;inset:18px;border:1px dashed rgba(59,91,219,.24);border-radius:18px;pointer-events:none}
+  .tear-map h3{position:relative;margin:0;font-size:20px;letter-spacing:-.02em;max-width:15ch}
+  .tear-map p{position:relative;margin:10px 0 0;color:var(--muted);font-size:14.5px;line-height:1.55}
+  .tear-pin{position:absolute;display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(59,91,219,.28);border-radius:999px;background:#fff;color:#3b5bdb;font-family:var(--mono);font-size:12px;font-weight:600;box-shadow:0 12px 28px rgba(59,91,219,.16);cursor:pointer;transition:transform .16s ease,border-color .16s ease}
+  .tear-pin:hover,.tear-pin:focus-visible{transform:translateY(-2px);border-color:#3b5bdb;outline:0}
+  .tear-pin[aria-expanded="true"]{background:#3b5bdb;color:#fff}
+  .tear-pin.pin-a{right:28px;top:40px}.tear-pin.pin-b{left:34px;bottom:42px}.tear-pin.pin-c{right:46px;bottom:36px}
+  .tear-notes{display:grid;gap:12px}
+  .tear-note{border:1px solid var(--line);border-radius:16px;padding:16px 18px;background:#fff}
+  .tear-note[hidden]{display:none}
+  .tear-note strong{display:block;color:var(--ink-2);margin-bottom:5px}
+  .tear-note p{font-size:14.5px;line-height:1.55;margin:0;color:var(--muted)}
+  .tear-diagram{border:1px solid rgba(59,91,219,.14);border-radius:20px;background:#fff;padding:20px;margin:24px 0 4px;overflow:hidden}
+  .tear-buddy-row{display:flex;align-items:center;gap:22px;border:1px solid rgba(59,91,219,.14);border-radius:24px;background:linear-gradient(135deg,#fff 0%,#f7f8ff 100%);padding:22px 26px;margin-top:30px;overflow:hidden}
+  .tear-buddy{width:clamp(120px,15vw,168px);height:auto;flex:0 0 auto;filter:drop-shadow(0 18px 28px rgba(59,91,219,.16));animation:tearFloat 5.8s ease-in-out infinite}
+  .tear-buddy-row p{margin:0;color:var(--muted);font-size:15px;line-height:1.6}
+  @keyframes tearFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+  @media(max-width:820px){.tear-annotated{grid-template-columns:1fr}.tear-map{min-height:230px}.tear-buddy-row{align-items:flex-start}.tear-buddy{width:126px}}
+  @media(max-width:520px){.tear-annotated{padding:18px}.tear-map{min-height:220px}.tear-pin{width:38px;height:38px}.tear-buddy-row{display:block}.tear-buddy{float:right;width:116px;margin:0 0 10px 14px}}
+  @media(prefers-reduced-motion:reduce){.tear-buddy,.tear-pin{animation:none;transition:none}}
+</style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body id="top">
@@ -26,7 +50,7 @@
   <div class="mobile-menu" id="mobileMenu"><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="pilot.html">Book a pilot</a></div>
 </header>
 <main id="main">
-  <section class="page-hero">
+  <section class="page-hero" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Teardowns</p>
       <h1>Most AI pilots do not die in the model.</h1>
@@ -36,37 +60,68 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Autopsy 01</p>
       <h2 style="margin-top:14px">The 94%-accurate bot nobody used.</h2>
       <p style="margin-top:16px">A support team had a real triage problem. Tickets came in messy. Agents lost time deciding priority, routing, and whether a refund policy applied. The model did the narrow job well: on a held-out sample, it matched the human routing label 94% of the time. In a room, the demo looked obvious. In production, usage was zero.</p>
       <p>The reason was embarrassing and useful. The AI lived one click too far away. Agents worked in the ticketing tool. The model lived in a separate tab with a login, a search field, and a copy button. The team already had the help center, CRM, refund sheet, queue view, chat, and internal notes open. “One more tab” was not one more tab. It was one more place to forget.</p>
+      <div class="tear-annotated" data-reveal>
+        <div class="tear-map" aria-label="Annotated teardown for the unused support bot">
+          <h3>Failure map: good score, zero usage.</h3>
+          <p>Tap the numbered pins to see where the pilot broke.</p>
+          <button class="tear-pin pin-a" type="button" aria-expanded="false" aria-controls="note-a1">01</button>
+          <button class="tear-pin pin-b" type="button" aria-expanded="false" aria-controls="note-a2">02</button>
+          <button class="tear-pin pin-c" type="button" aria-expanded="false" aria-controls="note-a3">03</button>
+        </div>
+        <div class="tear-notes" aria-live="polite">
+          <div class="tear-note" id="note-a1" hidden><strong>Score was not the blocker.</strong><p>The held-out sample showed 94% label match, so retraining was not the first fix.</p></div>
+          <div class="tear-note" id="note-a2" hidden><strong>The tab killed adoption.</strong><p>The output sat behind another login, search field, and copy step while agents already had eleven tabs open.</p></div>
+          <div class="tear-note" id="note-a3" hidden><strong>The fix moved the work.</strong><p>The same inference call went into the ticket sidebar, and usage moved from 0% to roughly 80% in a week.</p></div>
+        </div>
+      </div>
+      <div class="tear-diagram" data-reveal>
+        <div data-diagram="pipeline" data-config='{"items":[{"n":"94%","label":"Model score","sub":"held-out sample"},{"n":"0%","label":"Production use","sub":"separate tab"},{"n":"80%","label":"Workflow use","sub":"existing sidebar"}]}'></div>
+      </div>
       <p>We did not retrain. We did not swap models. We moved the inference call into the existing ticket sidebar and wrote the result into the field the team already used. The label appeared where the handoff happened. Usage went from 0% to roughly 80% in the first week, and the remaining gap was mostly edge cases the team wanted humans to own.</p>
       <p>The lesson is blunt: the last mile is a product problem, not a model problem. If the output is not inside the workflow, the model is theater with a login screen. We spend unusual time on the boring integration layer because that is where pilots quietly die.</p>
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Autopsy 02</p>
       <h2 style="margin-top:14px">When we deleted the vector database.</h2>
       <p style="margin-top:16px">A fintech's AP team wanted “RAG” over policy docs, vendor rules, and approval notes. The first build had the shape everyone expects now: embeddings, chunks, a vector database, a reranker, and a chat box. It was expensive enough to notice and accurate enough to be dangerous. On a 120-question test set, the system often found a semantically similar paragraph and still missed the exact rule.</p>
       <p>The corpus was not web scale. It was a few hundred pages, with stable headings, repeated terms, and document names people already knew. The fancy stack was solving the wrong problem. We rewrote the retrieval layer with good chunking, document-aware grep, strict citation rules, and a small model call only after the exact passages were found. Accuracy went up, cost went down, and the answer became easier for a controller to audit.</p>
+      <div class="tear-annotated" data-reveal>
+        <div class="tear-map" aria-label="Annotated teardown for the removed vector database">
+          <h3>Failure map: impressive stack, wrong search.</h3>
+          <p>Tap the numbered pins to inspect the failure and fix.</p>
+          <button class="tear-pin pin-a" type="button" aria-expanded="false" aria-controls="note-b1">01</button>
+          <button class="tear-pin pin-b" type="button" aria-expanded="false" aria-controls="note-b2">02</button>
+          <button class="tear-pin pin-c" type="button" aria-expanded="false" aria-controls="note-b3">03</button>
+        </div>
+        <div class="tear-notes" aria-live="polite">
+          <div class="tear-note" id="note-b1" hidden><strong>The test set exposed it.</strong><p>On 120 real questions, similar paragraphs were not enough when the exact rule mattered.</p></div>
+          <div class="tear-note" id="note-b2" hidden><strong>The corpus was small.</strong><p>A few hundred structured pages did not need a rented maze of embeddings, chunks, and a reranker.</p></div>
+          <div class="tear-note" id="note-b3" hidden><strong>The fix became auditable.</strong><p>Document-aware grep, strict citations, and a small model call made the answer easier to check.</p></div>
+        </div>
+      </div>
       <p>The usable rule: reach for embeddings when meaning differs from wording, the language is varied, or the corpus is too large for exact matching to be sane. Start with search when the docs are small, structured, and full of terms humans actually use. A boring baseline is not anti-AI. It is how you avoid paying rent on complexity.</p>
       <p>Senior judgment sometimes looks like removing a tool from the diagram. We are not trying to make the architecture impressive. We are trying to move the number with the fewest pieces you will still understand after handoff.</p>
       <p class="callout" style="margin-top:22px"><strong>A quick test:</strong> before approving a vector database, ask the vendor to beat keyword search on a blind set of real questions. If they cannot show the sample size, misses, and baseline, you are buying vibes.</p>
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap reveal">
       <div class="prose">
         <p class="eyebrow">Eval Theater</p>
         <h2 style="margin-top:14px">How to spot fake accuracy.</h2>
         <p style="margin-top:16px">A founder does not need to be a machine-learning researcher to interrogate an accuracy claim. You need eight plain questions. Use them on any vendor, including us. If the answers get slippery, the metric is probably decoration.</p>
       </div>
-      <div class="roles">
+      <div class="roles" data-stagger>
         <div class="role"><span class="tag">01</span><h3>No holdout set</h3><p>If the examples used to tune the system are also used to score it, the number is not evidence.</p></div>
         <div class="role"><span class="tag">02</span><h3>Cherry-picked wins</h3><p>A demo that only shows successes is a sales reel. Ask for misses and borderline cases.</p></div>
         <div class="role"><span class="tag">03</span><h3>Training-data overlap</h3><p>Public FAQs, old tickets, and copied examples can make recall look like reasoning.</p></div>
@@ -82,14 +137,18 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec" data-reveal>
     <div class="wrap reveal">
       <div class="prose">
         <p class="eyebrow">Death certificate</p>
         <h2 style="margin-top:14px">The six ways AI pilots die.</h2>
         <p style="margin-top:16px">Most failures are not mysterious. They fall into a small set of repeatable patterns. Naming the pattern early keeps the pilot small enough to save.</p>
+        <div class="tear-buddy-row" data-reveal>
+          <img class="tear-buddy" src="assets/mascot/cut/bot-wave.png" alt="DPR Labs robot pointing at teardown notes" loading="lazy" />
+          <p><strong>Inspect the failure, then cut the part that does not move the number.</strong> The pattern matters more than the tool name.</p>
+        </div>
       </div>
-      <div class="grid-3">
+      <div class="grid-3" data-stagger>
         <div class="card"><span class="tag">No Metric</span><h3>“Working” became opinion.</h3><p>Symptom: every meeting debates quality. Root cause: nobody agreed the number. Fix: a written metric contract on day one.</p></div>
         <div class="card"><span class="tag">Boil-the-Ocean</span><h3>The mandate was “make us AI-first.”</h3><p>Symptom: weeks of workshops, no shipped workflow. Root cause: scope was a slogan. Fix: one workflow, one number.</p></div>
         <div class="card"><span class="tag">Vendor Lock</span><h3>You rent the system forever.</h3><p>Symptom: every change needs the vendor. Root cause: the code, prompts, evals, or weights never leave. Fix: take the assets.</p></div>
@@ -100,7 +159,7 @@
     </div>
   </section>
 
-  <section class="sec problem">
+  <section class="sec problem" data-reveal>
     <div class="wrap center prose reveal">
       <p class="eyebrow">A better bet</p>
       <h2 style="margin-top:14px">Bring one ugly workflow.</h2>
@@ -114,5 +173,24 @@
 <script src="site.js" defer></script>
 <script src="assets/anim.js" defer></script>
 <script src="assets/diagrams.js" defer></script>
+<script>
+(function(){
+  "use strict";
+  function toggle(btn){
+    var id=btn.getAttribute("aria-controls");
+    var panel=id&&document.getElementById(id);
+    if(!panel)return;
+    var open=btn.getAttribute("aria-expanded")==="true";
+    btn.setAttribute("aria-expanded",String(!open));
+    panel.hidden=open;
+  }
+  document.querySelectorAll(".tear-pin").forEach(function(btn){
+    btn.addEventListener("click",function(){toggle(btn);});
+    btn.addEventListener("keydown",function(e){
+      if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle(btn);}
+    });
+  });
+})();
+</script>
 </body>
 </html>
