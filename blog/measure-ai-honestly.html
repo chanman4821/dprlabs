@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to measure an AI system honestly: a field guide — DPR Labs</title>
+<meta name="description" content="A practical field guide to measuring AI systems with baselines, blind samples, guardrails, human review, and honest stop conditions." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../method.html">How it works</a><a href="../proof.html">Proof</a>
+      <a href="index.html" aria-current="page">Field Notes</a><a href="../about.html">About</a>
+    </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-ghost">Talk to us</a><a href="../contact.html" class="btn btn-primary">Book a pilot</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../method.html">How it works</a><a href="../proof.html">Proof</a><a href="index.html">Field Notes</a><a href="../about.html">About</a><a href="../contact.html">Book a pilot</a>
+  </div>
+</header>
+<main id="main">
+  <article class="post">
+    <div class="post-head">
+      <div class="meta"><span class="g">Measurement</span><span>July 5, 2026</span><span>11 min read</span></div>
+      <h1>How to measure an AI system honestly: a field guide</h1>
+    </div>
+    <div class="post-body">
+      <p>Measuring an AI system honestly is harder than building the first version. The system will produce impressive examples. People will remember the best answer and forgive the bad one. The team will want the work to be worth it. All of that creates pressure to measure loosely.</p>
+      <p>Honest measurement is not cynicism. It is respect for the business. If an AI system saves time, reduces errors, or improves decisions, careful measurement will show it. If it does not, careful measurement will save you from scaling a problem.</p>
+      <blockquote>The goal is not to prove the AI system is smart. The goal is to prove the work is better.</blockquote>
+      <h2>Measure the workflow, not the model</h2>
+      <p>Model scores can be useful for engineering, but leaders need workflow scores. A summarizer is not valuable because it produces fluent summaries. It is valuable if reviewers reach the right decision faster, miss fewer important facts, or handle more cases without burnout.</p>
+      <p>Start by writing the sentence: &ldquo;This system is successful if it changes <strong>this job</strong> in <strong>this measurable way</strong> without making <strong>this risk</strong> worse.&rdquo; That sentence becomes the spine of the measurement plan.</p>
+      <ul>
+        <li><strong>Support:</strong> reduce minutes to prepare a reply while keeping reopen rate stable.</li>
+        <li><strong>Operations:</strong> reduce manual data entry while keeping correction rate below the agreed limit.</li>
+        <li><strong>Investing:</strong> reduce first-pass research time while preserving source coverage and risk review.</li>
+        <li><strong>Sales:</strong> improve follow-up quality without increasing off-brand or inaccurate claims.</li>
+      </ul>
+      <h2>Build a baseline before the AI touches anything</h2>
+      <p>A baseline is the current performance of the workflow. Without it, you are guessing. Measure a normal batch before changing the process: time spent, errors found, rework, queue age, cost, user satisfaction, or whatever the workflow already cares about.</p>
+      <p>Do not use a perfect week. Do not use the cleanest cases. Use a real sample that includes the boring, messy, and annoying work. If the system only looks good on easy inputs, you need to know that early.</p>
+      <p>Write down the counting rules. Who starts the clock? When does the task end? What counts as an error? What gets excluded? If the rules change after the pilot, the result becomes a story instead of evidence.</p>
+      <h2>Use fresh, blind samples</h2>
+      <p>An AI system can look much better when it has already seen the pattern of the test. Use fresh examples that were not used to shape the system. When possible, have a reviewer judge outputs without knowing whether they came from the old process or the new one.</p>
+      <p>You do not need academic complexity. You need basic fairness. The old process and the new process should face comparable work. The reviewer should use the same rubric. The sample should be large enough that one lucky example does not carry the result.</p>
+      <blockquote>Anecdotes are where measurement starts. They are not where measurement ends.</blockquote>
+      <h2>Pair one success metric with guardrails</h2>
+      <p>Every AI system can cheat a badly chosen metric. If you measure speed only, quality may fall. If you measure accuracy only, the system may become too slow or too cautious. If you measure usage only, you may reward novelty instead of value.</p>
+      <p>Choose one primary metric and a few guardrails. The primary metric says what you want to improve. Guardrails say what must not be harmed.</p>
+      <ul>
+        <li><strong>Primary metric:</strong> human minutes per completed case.</li>
+        <li><strong>Quality guardrail:</strong> percentage of cases requiring correction.</li>
+        <li><strong>Risk guardrail:</strong> number of unsupported claims or missing citations.</li>
+        <li><strong>User guardrail:</strong> reviewer rating that the output was actually useful.</li>
+      </ul>
+      <p>Guardrails are not decoration. If the primary metric improves but a guardrail breaks, the system did not pass. That rule must be agreed before the test starts.</p>
+      <h2>Measure confidence separately from correctness</h2>
+      <p>AI systems often sound certain when they are wrong. That means you should measure not only whether the answer is correct, but whether the system knows when to slow down, cite sources, ask for help, or refuse to answer.</p>
+      <p>A useful rubric includes categories like: correct and supported, partially correct, unsupported, wrong, unsafe to use, and needs human judgment. This is more helpful than a single pass-or-fail label because it tells you what kind of failure you have.</p>
+      <p>For example, a hypothetical contract review tool might find the right clause but explain it too broadly. That is different from missing the clause entirely. Both matter, but they require different fixes.</p>
+      <h2>Watch for hidden labor</h2>
+      <p>Some systems move work instead of reducing it. The user spends less time drafting but more time checking. The manager spends less time assigning tasks but more time cleaning edge cases. The team saves minutes in one place and loses trust in another.</p>
+      <p>Measure the whole path. Include setup time, review time, correction time, escalation time, and the cost of maintaining the source material. If a system saves ten minutes for one person and creates ten minutes for another, the business has not improved.</p>
+      <h2>Write the stop condition</h2>
+      <p>Before the pilot begins, write what would make you stop. This is emotionally difficult and operationally necessary. Without a stop condition, every weak result becomes &ldquo;one more tweak.&rdquo;</p>
+      <ul>
+        <li>Stop if quality errors rise above the agreed limit.</li>
+        <li>Stop if users avoid the system after the novelty period.</li>
+        <li>Stop if source freshness cannot be maintained.</li>
+        <li>Stop if the cost per useful output is higher than the manual process.</li>
+        <li>Stop if the system cannot explain where important answers came from.</li>
+      </ul>
+      <p>A stop condition is not failure. It is how you protect focus. The best teams kill weak ideas early so strong ones get enough attention.</p>
+      <h2>The field guide in one page</h2>
+      <p>If you remember nothing else, use this sequence. Define the job. Measure the current baseline. Choose one primary metric. Add guardrails. Test on fresh examples. Use a simple review rubric. Count hidden labor. Write the stop condition before seeing results. Then decide.</p>
+      <p>Honest measurement makes AI less mysterious. It turns the conversation from &ldquo;Is the system impressive?&rdquo; into &ldquo;Is the work better enough to keep?&rdquo; That is the question worth answering.</p>
+    </div>
+  </article>
+  <div class="post-cta">
+    <span style="color:var(--muted)">Have an AI project you want to judge clearly?</span>
+    <a href="../contact.html" class="btn btn-primary">Book a 2-week pilot <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+        <p>A senior AI consulting studio — we build it, measure it, and hand it over. You own what we build.</p>
+      </div>
+      <div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../proof.html">Proof</a><a href="../about.html">About</a></div>
+      <div class="foot-col"><h4>Field Notes</h4><a href="the-one-number.html">The one number</a><a href="no-lock-in.html">No lock-in</a><a href="two-week-pilot.html">Two-week pilot</a><a href="index.html">All posts</a></div>
+      <div class="foot-col"><h4>Get started</h4><a href="../contact.html">Book a scoping call</a><a href="../contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div>
+    </div>
+    <div class="foot-bottom"><small>© 2026 DPR Labs — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>

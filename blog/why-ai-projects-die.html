@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Why most AI projects die as a demo (and the five questions that predict it) — DPR Labs</title>
+<meta name="description" content="The five practical questions that reveal whether an AI idea can become a real operating system or will stay a polished demo." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../method.html">How it works</a><a href="../proof.html">Proof</a>
+      <a href="index.html" aria-current="page">Field Notes</a><a href="../about.html">About</a>
+    </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-ghost">Talk to us</a><a href="../contact.html" class="btn btn-primary">Book a pilot</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../method.html">How it works</a><a href="../proof.html">Proof</a><a href="index.html">Field Notes</a><a href="../about.html">About</a><a href="../contact.html">Book a pilot</a>
+  </div>
+</header>
+<main id="main">
+  <article class="post">
+    <div class="post-head">
+      <div class="meta"><span class="g">Honest AI</span><span>July 5, 2026</span><span>10 min read</span></div>
+      <h1>Why most AI projects die as a demo (and the five questions that predict it)</h1>
+    </div>
+    <div class="post-body">
+      <p>Most AI projects do not fail because the model is bad. They fail because the demo was never connected to the way work actually happens. The first version looks clever in a meeting, everyone nods, and then the project slowly disappears because nobody can use it on a messy Tuesday.</p>
+      <p>A demo is allowed to be narrow. It is allowed to use clean inputs. It is allowed to show the happy path. A business system is not. It has to survive missing fields, unclear instructions, impatient users, slow approvals, and the boring parts of the job nobody included in the prompt.</p>
+      <blockquote>The danger is not a bad demo. The danger is mistaking a good demo for evidence that the work has changed.</blockquote>
+      <p>Before you fund, buy, or build an AI project, ask five questions. They are simple, but they expose most hidden risk.</p>
+      <h2>1. What job changes if this works?</h2>
+      <p>Start with the job, not the tool. &ldquo;Use AI for customer support&rdquo; is too broad. &ldquo;Draft the first response to refund requests so a human can approve or edit it in under two minutes&rdquo; is a job. It names the user, the action, the handoff, and the speed target.</p>
+      <p>If nobody can describe the before and after of the job, the project is still an idea. A useful test is to ask someone on the team to draw the current workflow on a whiteboard. Then ask where the AI system enters, where it exits, and who is accountable when it is wrong.</p>
+      <ul>
+        <li><strong>Weak answer:</strong> &ldquo;It helps the team work faster.&rdquo;</li>
+        <li><strong>Stronger answer:</strong> &ldquo;It turns a raw support email into a proposed reply, refund decision, and policy citation for a human reviewer.&rdquo;</li>
+        <li><strong>Best answer:</strong> &ldquo;It removes the first 12 minutes of triage while keeping the final decision with the support lead.&rdquo;</li>
+      </ul>
+      <h2>2. Where does the truth come from?</h2>
+      <p>Every serious AI system needs a source of truth. That might be policy documents, product catalogs, ticket history, contracts, call notes, or a database. If the system is expected to know facts, it must know where to look and when not to guess.</p>
+      <p>The common failure is a beautiful chat box with no authority. It answers confidently because confident language is easy. But if it cannot point to the document, field, or record behind an answer, it becomes a rumor machine with a friendly interface.</p>
+      <p>Ask what information the system is allowed to use, how fresh it must be, who owns it, and what happens when two sources disagree. A legal policy updated last week should beat an old training example. A current inventory record should beat a product description. The rules matter before the model does.</p>
+      <h2>3. Who checks the work?</h2>
+      <p>Human review is not a sign of failure. It is how most useful systems earn trust. The right question is not whether a person is involved; it is where their judgment adds the most value.</p>
+      <p>In a healthy workflow, the AI system handles repeatable preparation and the human handles judgment, exceptions, and accountability. For a hypothetical finance team, the system might categorize expense notes and flag policy conflicts. The manager still approves the reimbursement. For a recruiting team, the system might summarize interview notes. The hiring decision stays with people.</p>
+      <blockquote>Do not automate the decision before you have improved the evidence that supports the decision.</blockquote>
+      <p>Write down the review path. Who sees the output? What can they change? What must they approve? What gets logged? If the answer is &ldquo;the user will just know,&rdquo; the project is not ready for real use.</p>
+      <h2>4. What number decides whether it worked?</h2>
+      <p>A demo dies when success means applause. A pilot survives when success means a number chosen in advance. The number should be boring: time per case, error rate, cost per completed task, backlog age, response time, rework rate.</p>
+      <p>Pick one main number and one guardrail. The main number says what should improve. The guardrail says what must not get worse. For example, &ldquo;reduce time to draft a support reply&rdquo; is incomplete unless you also track complaint reopen rate or policy mistakes.</p>
+      <ul>
+        <li><strong>Main number:</strong> minutes of human work per request.</li>
+        <li><strong>Guardrail:</strong> percentage of replies that require correction for policy or tone.</li>
+        <li><strong>Stop condition:</strong> if corrections rise beyond the agreed limit, the pilot does not pass even if it saves time.</li>
+      </ul>
+      <p>This keeps the team honest. AI that makes a bad answer faster is not productivity. It is faster cleanup.</p>
+      <h2>5. What happens on day 31?</h2>
+      <p>The last question is the one teams skip: if the pilot works, what must be true for it to keep running? Someone must own the workflow, the data access, the cost, the updates, the review rules, and the failure path. Without that owner, the project becomes a folder of promising screenshots.</p>
+      <p>Day 31 questions are practical. Who pays the software bill? Who updates the source documents? Who handles a user complaint? Who notices if quality drops? Who can turn the system off? If those answers are missing, you do not have an operating plan.</p>
+      <h2>A simple pre-mortem</h2>
+      <p>Before you approve the next AI project, run this checklist in a 45-minute meeting:</p>
+      <ul>
+        <li>Write the exact job that changes.</li>
+        <li>Name the source of truth and the freshness rule.</li>
+        <li>Draw the human review path.</li>
+        <li>Choose one success number and one guardrail.</li>
+        <li>Name the day-31 owner and operating routine.</li>
+      </ul>
+      <p>If the team cannot answer these questions, do not cancel the project. Make it smaller. A narrow workflow with clear truth, clear review, and a clear number is worth more than a broad demo nobody trusts.</p>
+      <p>The best AI projects are rarely the flashiest. They are the ones that quietly remove friction from real work, prove it with honest measurement, and leave behind a system someone can own.</p>
+    </div>
+  </article>
+  <div class="post-cta">
+    <span style="color:var(--muted)">Have an AI project you want to judge clearly?</span>
+    <a href="../contact.html" class="btn btn-primary">Book a 2-week pilot <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+        <p>A senior AI consulting studio — we build it, measure it, and hand it over. You own what we build.</p>
+      </div>
+      <div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../proof.html">Proof</a><a href="../about.html">About</a></div>
+      <div class="foot-col"><h4>Field Notes</h4><a href="the-one-number.html">The one number</a><a href="no-lock-in.html">No lock-in</a><a href="two-week-pilot.html">Two-week pilot</a><a href="index.html">All posts</a></div>
+      <div class="foot-col"><h4>Get started</h4><a href="../contact.html">Book a scoping call</a><a href="../contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div>
+    </div>
+    <div class="foot-bottom"><small>© 2026 DPR Labs — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>

@@ -73,7 +73,9 @@
           <line data-line="5" x1="50" y1="50" x2="18" y2="31" />
         </svg>
         <div class="hub-core">
-          <img class="hub-bot" id="botMain" src="assets/mascot/cut/bot-peace.png" alt="DPR Labs gold robot mascot" />
+          <video class="hub-bot" id="botVideo" autoplay loop muted playsinline poster="assets/mascot/cut/bot-peace.png" aria-label="DPR Labs gold robot mascot dancing">
+            <source src="assets/mascot/bot-loop.mp4" type="video/mp4" />
+          </video>
         </div>
         <div class="hub-nodes">
           <button class="hub-node" type="button" data-node="0" style="left:50%;top:12%">
@@ -206,30 +208,38 @@
     </div>
   </section>
 
-  <!-- WHAT WE DO -->
-  <section class="sec">
+  <!-- WHAT WE DO / OFFERINGS -->
+  <section class="sec" id="offerings">
     <div class="wrap">
       <div class="sec-head reveal">
-        <p class="eyebrow">What we do</p>
-        <h2 style="margin-top:14px">One thing we're built for. <span class="gold-text">Two ways we help after.</span></h2>
-        <p class="lead">Buyers don't buy agents — they buy fewer hours, a real connection, a launched product. So every offering leads with the outcome.</p>
+        <p class="eyebrow">What we offer</p>
+        <h2 style="margin-top:14px">We build it. <span class="gold-text">We help you fund it.</span></h2>
+        <p class="lead">Two things we're built for — a working AI system inside your business, and a warm path to the capital that scales it. Senior-built, measured, priced up front, and yours to keep.</p>
       </div>
       <div class="grid-2">
-        <article class="card reveal" style="grid-column:1/-1">
-          <span class="rank">Primary</span><span class="tag">We build your AI</span>
-          <h3>A working system doing a real job in your production</h3>
-          <p>We build it for you — owned by your team, measured by one honest number. Specialised agents plan, build, grade, and repair the work, wired into your actual systems, not a chatbot bolted on the side. This is the work; everything else supports it. You could fire us tomorrow and it keeps running.</p>
+        <article class="card reveal">
+          <span class="tag">AI consulting &amp; builds</span>
+          <h3>We build the AI that does your real work</h3>
+          <p>A production system doing a real job inside your own tools — planned, built, and hardened by a senior team, measured by one honest number, and handed over so your team owns it. Not a demo, not a chatbot bolted on the side. It starts with a fixed-price two-week pilot, from $8k.</p>
           <p style="margin-top:14px"><a href="method.html" class="txt-link">See how a pilot works <span class="arrow" aria-hidden="true">→</span></a></p>
         </article>
         <article class="card reveal">
-          <span class="rank">Supporting</span><span class="tag">Investor intros</span>
-          <h3>Warm, relevant introductions</h3>
-          <p>When it genuinely fits, we connect founders we already work with to investors who match your stage and sector. No spray-and-pray. An introduction is an introduction — never a promised raise.</p>
+          <span class="tag">Investment matching</span>
+          <h3>We open doors to the right investors</h3>
+          <p>For the founders we build with, we make warm, relevant introductions to investors who fit your stage and sector — from a real network, not a spray-and-pray list. We won't promise a raise; we will make the introduction we'd stand behind on both sides.</p>
+          <p style="margin-top:14px"><a href="contact.html" class="txt-link">Talk about funding <span class="arrow" aria-hidden="true">→</span></a></p>
+        </article>
+      </div>
+      <div class="grid-2" style="margin-top:20px">
+        <article class="card reveal">
+          <span class="tag">Product shipping</span>
+          <h3>Idea to a shipped product</h3>
+          <p>Need more than a pilot? The same senior team takes you from idea to a launched product on your stack — owned by you, with the same one-number discipline wherever a number makes sense.</p>
         </article>
         <article class="card reveal">
-          <span class="rank">Supporting</span><span class="tag">Product shipping</span>
-          <h3>Idea to a shipped product</h3>
-          <p>Built by the same senior team that runs the pilots, on your stack, handed over so your team owns and can extend it. The same one-number discipline wherever a number makes sense.</p>
+          <span class="tag">Senior, on purpose</span>
+          <h3>You work with the builders</h3>
+          <p>No account managers, no offshore hand-off, no black box. A small senior studio that prices the work up front, says no to work it can't win, and leaves you owning everything it builds.</p>
         </article>
       </div>
     </div>
