@@ -55,3 +55,29 @@
     });
   });
 })();
+
+/* hero hub showcase — each service card auto-presents in turn, expanding to reveal the service (also on hover) */
+(function(){
+  var hub=document.getElementById('hub'); if(!hub) return;
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  if(window.matchMedia('(max-width:760px)').matches) return;
+  var nodes=Array.prototype.slice.call(hub.querySelectorAll('.hub-node'));
+  var lines=hub.querySelectorAll('.hub-web line');
+  if(!nodes.length) return;
+  var i=0, paused=false;
+  hub.addEventListener('mouseenter',function(){paused=true;});
+  hub.addEventListener('mouseleave',function(){paused=false;});
+  function step(){
+    if(paused){setTimeout(step,1500);return;}
+    var node=nodes[i], idx=+node.getAttribute('data-node');
+    node.classList.add('showcase');
+    if(lines[idx])lines[idx].classList.add('lit');
+    setTimeout(function(){
+      node.classList.remove('showcase');
+      if(lines[idx])lines[idx].classList.remove('lit');
+      i=(i+1)%nodes.length;
+      setTimeout(step,1000);
+    },3400);
+  }
+  setTimeout(step,2600);
+})();
