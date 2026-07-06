@@ -7,6 +7,12 @@ node_modules/
 __pycache__/
 *.pyc
 
+# Playwright harness output (keep committed baselines under tests/e2e/baseline/)
+tests/e2e/report/
+tests/e2e/test-results/
+playwright-report/
+/test-results/
+
 # build tooling & dev cruft
 artifacts/
 dark-backup/
@@ -27,3 +33,8 @@ mascot-contact-sheet.png
 # heavy unused source assets
 assets/_raw/
 assets/video/
+
+# Always keep the committed e2e visual baselines
+# (must be last: overrides *-full.png and friends above so full-page shots persist)
+!tests/e2e/baseline/
+!tests/e2e/baseline/**
