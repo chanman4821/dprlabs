@@ -31,10 +31,11 @@
 @media (max-width:560px){.pilot-buddy{width:88px;justify-self:end}.pilot-run-card [data-diagram]{min-height:170px}}
 @media (prefers-reduced-motion:reduce){.pilot-buddy{animation:none}}
 </style>
-<noscript><style>.reveal{opacity:1;transform:none}.mascot{animation:none}</style></noscript>
+<noscript><style>.reveal{opacity:1;transform:none}.mascot{animation:none}#calibrate{display:none!important}</style></noscript>
 </head>
 
 <body id="top">
+<div id="calibrate" aria-hidden="true"><div class="cal-inner"><div class="cal-mark"><span class="cal-tick"></span></div><div class="cal-read"><span id="calNum">0.00</span> <span class="cal-lbl">CALIBRATING</span></div></div></div>
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="nav">
@@ -469,6 +470,7 @@
 </footer>
 
 <script src="site.js" defer></script>
+<script src="assets/intro.js" defer></script>
 <script src="assets/anim.js" defer></script>
 <script src="assets/diagrams.js" defer></script>
 </body>
