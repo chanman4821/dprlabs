@@ -365,7 +365,7 @@
   @keyframes nodeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
   .hub-node:hover,.hub-node:focus-visible{scale:1.07;border-color:var(--gold);box-shadow:0 16px 36px rgba(154,107,30,.18);outline:none;z-index:5}
   .hub-node .nd-detail{display:block;max-height:0;overflow:hidden;opacity:0;margin-top:0;font-size:12.5px;line-height:1.5;color:var(--muted);max-width:30ch;text-align:center;transition:max-height .45s ease,opacity .35s ease,margin .45s ease}
-  .hub-node.showcase{animation:none!important;z-index:20;scale:1.09;box-shadow:0 24px 54px rgba(0,0,0,.16);border-color:var(--accent)}
+  .hub-node.showcase{animation-play-state:paused;z-index:20;scale:1.09;box-shadow:0 24px 54px rgba(0,0,0,.16);border-color:var(--accent)}
   .hub-node.showcase .nd-detail,.hub-node:hover .nd-detail,.hub-node:focus-visible .nd-detail{max-height:150px;opacity:1;margin-top:9px}
   .hub-node.showcase .nt{font-size:15px}
   .hub-node .ni{width:32px;height:32px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:2px}
