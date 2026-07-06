@@ -21,10 +21,15 @@
     if(rm||!('IntersectionObserver' in window)){
       revEls.forEach(function(el){el.classList.add('in');});
     }else{
-      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.01,rootMargin:'0px 0px -8% 0px'});
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0,rootMargin:'0px 0px 18% 0px'});
       revEls.forEach(function(el){io.observe(el);});
-      // safety net: nothing stays invisible, ever (cards can't "disappear")
-      setTimeout(function(){revEls.forEach(function(el){el.classList.add('in');});},1500);
+      // bulletproof: force-reveal anything at/above the viewport on scroll (catches IO misses on fast scroll/jumps)
+      var tk=false;
+      function sw(){tk=false;var vh=window.innerHeight||document.documentElement.clientHeight;for(var i=0;i<revEls.length;i++){var el=revEls[i];if(!el.classList.contains('in')&&el.getBoundingClientRect().top<vh+140)el.classList.add('in');}}
+      function os(){if(!tk){tk=true;requestAnimationFrame(sw);}}
+      window.addEventListener('scroll',os,{passive:true});window.addEventListener('resize',os,{passive:true});sw();
+      // final safety net: nothing stays invisible, ever (cards can't "disappear")
+      setTimeout(function(){revEls.forEach(function(el){el.classList.add('in');});},1400);
     }
   }
 

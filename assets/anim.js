@@ -45,18 +45,33 @@
     }
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
-    }, { threshold: 0.14, rootMargin: "0px 0px -8% 0px" });
+    }, { threshold: 0, rootMargin: "0px 0px 18% 0px" });
     reveals.forEach(function (el) { io.observe(el); });
     draws.forEach(function (el) { io.observe(el); });
     var cio = new IntersectionObserver(function (es) {
       es.forEach(function (e) { if (e.isIntersecting) { countUp(e.target); cio.unobserve(e.target); } });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.35 });
     counts.forEach(function (el) { cio.observe(el); });
-    // safety net: nothing stays hidden ever
+    // bulletproof: on scroll/resize, force-reveal anything at or above the viewport
+    // (catches IntersectionObserver misses on fast scroll, anchor jumps, or fling)
+    var ticking = false;
+    function sweep() {
+      ticking = false;
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      for (var i = 0; i < reveals.length; i++) {
+        var el = reveals[i];
+        if (!el.classList.contains("is-in") && el.getBoundingClientRect().top < vh + 140) el.classList.add("is-in");
+      }
+    }
+    function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(sweep); } }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+    sweep();
+    // final safety net: nothing stays hidden ever
     setTimeout(function () {
       reveals.forEach(function (el) { el.classList.add("is-in"); });
       draws.forEach(function (el) { el.classList.add("is-in"); });
-    }, 2500);
+    }, 1400);
   });
   window.DPRanim = { countUp: countUp };
 })();
