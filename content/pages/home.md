@@ -1,273 +1,335 @@
 # Home — `index.html`
 
-*One-scroll pitch. Goal: a skeptical founder or operator decides, in under a minute, that
-DPR Labs is real, honest, and worth a conversation — and knows exactly what to do next.*
+*One-scroll answer to a cold visitor's first question: **"What is DPR, and which door do I
+walk through — get owned AI built (and become fundable) as a founder, or get vetted,
+AI-validated dealflow as an investor?"** The page presents **one flywheel to two audiences**,
+interactively.*
 
-*Grounded in `LANDING-PAGE-PLAN.md`, `DESIGN-AND-BLOG-PLAN.md`, and the built `index.html`.
-Deeper than the current page: every section below carries fuller body copy, but adds no new
-claim the current site can't already stand behind.*
+*Source of truth: `BUSINESS-MODEL.md` (the dual-business model). Section 9, "What dprai.io must
+now say" (lines 225–241), is the authoritative site-copy guidance and is cited throughout. Every
+claim and number below carries a `BUSINESS-MODEL.md` line reference in the **Source traceability**
+table at the bottom. No claim appears here that the source cannot stand behind.*
 
----
-
-## Section 1 — Hero
-
-- **Eyebrow:** Agentic AI consulting · measured honestly
-- **Headline:** Agentic AI that ships real systems, proven by one honest number.
-- **Subhead:** We run a two-week pilot on your biggest time-sink. We agree on one number
-  before we start. We build a working AI system and hand it to your team to own — no
-  lock-in, no slide deck.
-- **Body (positioning line, secondary):** Most AI pitches end in a demo. Ours ends in a
-  system that does the job in your production, and a number you can re-check yourself.
-- **Supporting pillars (small, secondary):** Connect founders to the right investors ·
-  Ship your product
-- **Real number (the amber stat):** 305 — files shipped in one real run.
-  *(Source: `assets/data/jarvis-run.json`, sanitized. Real record, not a vanity figure.)*
-- **Honest credibility line:** A small senior team. A few pilots so far. We publish exactly
-  how we measure — and if a pilot doesn't move its number, you don't pay.
-- **Primary CTA:** Book a 2-week pilot → `contact.html`
-- **Secondary CTA:** See how a pilot works → `method.html`
+*This file is the **content foundation** for the home-page redesign. It defines what each section
+**says** and **does**; it does not build `index.html`. Design tokens and motion values are owned by
+the design-token worker (`design/motion.tokens.json`); generated imagery and the mascot are owned by
+the design/asset worker. This spec references those artifacts by name — it does not define them.*
 
 ---
 
-## Section 2 — The problem (empathy hook)
+## Page identity
 
-- **Eyebrow:** Why most AI projects stall
-- **Headline:** Most AI projects die as a demo.
-- **Subhead:** Not because the tech can't work — because nobody agreed what "working" meant.
-- **Body:** You have seen the pattern. A vendor sells a slide deck, runs a flashy proof of
-  concept, and hands you something that never reaches production. The pilot has no clean
-  number, so no one can say whether it worked. Six months later you are still paying, still
-  dependent, and no closer to owning the result. We built DPR Labs to be the opposite of
-  that: small scope, one agreed number, fast, and yours to keep.
-- **CTA:** none — this section earns the nod, then leads into the method.
-
----
-
-## Section 3 — Under the hood (intelligence band)
-
-- **Eyebrow:** Under the hood
-- **Headline:** Intelligence that reasons, decides, and checks itself.
-- **Subhead:** Every pilot runs on a mesh of agents that explore options, weigh the
-  evidence, and correct their own work — not a single prompt.
-- **Body:** A single model asked to do everything makes confident mistakes. Our delivery
-  engine, Jarvis, splits the work across specialised agents that plan, build, grade, and
-  repair each other's output. That discipline is why a few senior people can ship like a
-  much larger team — and why the work holds up when you check it. The next two panels show
-  what that looks like.
-- **CTA:** See how we build → `jarvis.html`
+- **`<title>`:** DPR Labs — Owned, measured AI. And the capital network behind it.
+- **Meta description:** DPR Labs runs two connected businesses as one flywheel: we build owned,
+  measured AI you keep — no lock-in — and we connect founders with the capital network that backs
+  them. Owned, measured, honest — proof over theater.
+- **Positioning line (one sentence, plain English):** We build owned, measured AI for companies —
+  and we connect the founders we help make fundable with an elite capital network. **Two
+  businesses, one flywheel.**
+- **Ethos (sits on every screen):** **Owned, measured, honest — proof over theater.**
+- **Shared shell:** reuse the existing site **nav** and **footer** unchanged (documented under
+  *Shared nav + footer* below). Do **not** rebuild them.
 
 ---
 
-## Section 4 — Inside a run (agent workspace, illustration)
+## Section 1 — Hero: the network flywheel (the ONE signature interactive piece)
 
-- **Eyebrow:** Inside a run
-- **Headline:** Watch the mesh ship a build.
-- **Subhead:** Planner scopes the work, the builder writes code, the grader runs the checks,
-  the healer fixes what's flaky — then it ships. This is the same pipeline behind our pilots.
-- **Body:** The board on screen is an **illustration** of how our mesh runs a build —
-  planner, builder, grader, healer moving one task from Plan to Shipped. It is a depiction of
-  the real workflow and architecture, not live client data. The real, sanitized run behind
-  it is on the Built on Jarvis page.
-- **Caption (must stay):** An illustration of how our mesh runs a build — planner, builder,
-  grader, healer. A depiction of the real workflow and architecture, not live client data.
+- **Eyebrow:** Two businesses. One flywheel.
+- **Headline:** We build the AI. We know the capital. The relationship is the moat.
+- **Subhead:** DPR builds owned, measured AI companies keep — then connects the founders we help
+  make fundable with an elite, high-trust capital network. Owned, measured, honest — proof over
+  theater.
+- **Audience toggle (top of hero, reframes the whole page):** **I'm building** · **I'm investing**.
+  Two states, one page. Default state: *I'm building*. The toggle is keyboard-operable and updates
+  the hero detail panel and the dual-path emphasis below.
 
----
+**The interactive flywheel (this is the focal zone — 60%+ of hero attention):**
+- **Two node clusters, clearly labelled:**
+  - **Build AI for customers** — nodes: *Automation*, *Compliance & governance*, *Low-code /
+    no-code*, *Integration* (the four build pillars).
+  - **Connect founders with capital** — nodes: *Founders*, *Investor network*, *Warm, vetted
+    introductions*.
+- **Cross-cluster edges** draw the founder ↔ capital relationship: a good build makes a founder
+  genuinely fundable on merit → a warm, vetted introduction to an investor in the network → wins
+  and warm intros deepen trust on both sides → better founders and better investors keep pulling in.
+- **Interaction:** hovering or focusing a node raises that single node and opens a **detail panel
+  inside the same composition** (not a separate table elsewhere on the page) with the node's one-
+  line meaning. Every node is reachable by keyboard; focus shows the same panel a hover does.
+- **The label removes doubt for scanners who won't hover:** the positioning line and ethos are
+  printed next to the flywheel, so the page reads even with all motion stripped.
 
-## Section 5 — Inside the thinking (reasoning console, illustration)
+- **Primary CTA (Founder state):** Get owned AI built → `contact.html`
+- **Primary CTA (Investor state):** Request dealflow access → `investors.html`
+- **Secondary CTA:** See how the flywheel works ↓ (scrolls to Section 4)
 
-- **Eyebrow:** Inside the thinking
-- **Headline:** Watch the mesh reason it out.
-- **Subhead:** Not just cards moving — the actual deliberation: a chain of thought, options
-  explored and pruned on a decision graph, evidence weighed, a mistake caught, and one number
-  it can defend.
-- **Body:** Choosing the right pilot metric is a judgment call, so we make the machine show
-  its work: it lists candidate numbers (auto-clear rate, cycle time, invoices per hour),
-  scores each against the evidence, and lands on the one it can defend. This panel is an
-  **illustration** of that reasoning, not a recording of a client's data.
-- **Caption (must stay):** An illustration of how our mesh reasons through a decision —
-  explore, weigh, decide, revise. A depiction of the real workflow and architecture, not
-  live client data.
-
----
-
-## Section 6 — How a pilot works (the method, four steps)
-
-- **Eyebrow:** How a pilot works
-- **Headline:** Four honest steps. No slide deck at the end.
-- **Subhead:** We find the task eating the most time, build a working AI system in two weeks,
-  measure it honestly, and hand it over. You own everything we ship.
-
-**Step 1 — Find the biggest time-sink.** We sit with your team and pick the one repetitive
-workflow that costs the most hours. One target, not a platform.
-- *Duration:* ~2 days · *Output:* Scoped target
-
-**Step 2 — Run a two-week paid pilot.** We build a real, working agentic AI system against
-the number we agreed — not a prototype, not a mock, inside your own systems.
-- *Duration:* 2–4 weeks · *Price:* $8k–$15k
-
-**Step 3 — Measure it honestly.** We report the number against a real baseline, with sample
-size and caveats in plain sight. If it didn't move, we say so.
-- *Output:* Scorecard · *Method:* Published
-
-**Step 4 — Hand it off — you own it.** Code, weights, and docs go to your team. No license to
-renew, no seat to rent, no dependency on us.
-- *Output:* Your repo · *Lock-in:* None
-
-- **CTA:** See the full method → `method.html`
+> **Builder note (interactive, not decorative):** this is the site's single signature motion
+> piece. All timing/parallax values come from `design/motion.tokens.json` (node drift/pulse period,
+> hover raise ≤15% over the token's ease-out, parallax cap). Under `prefers-reduced-motion` it
+> freezes to the `flywheel-rest` frame (nodes at layout-default, edges fully drawn, glow/wash pinned)
+> with instant opacity/colour hover feedback only. No wall-clock timers drive behaviour.
 
 ---
 
-## Section 7 — The offer + guarantee
+## Section 2 — Dual-path split: choose your door
 
-- **Eyebrow:** The offer
-- **Headline:** A two-week pilot, priced up front.
-- **Subhead:** One workflow. One number we agree on before we start. A working system at the
-  end that you own — not a slide deck.
-- **Margin note (why a guarantee?):** We're a small studio early in our story. The guarantee
-  is how we make that safe for you — the risk sits with us, not you.
+*Two audiences with opposite needs, each routed within seconds. This section is one interactive
+band with two distinct tracks — never one generic pitch.*
 
-**Pilot scorecard**
-- *Scope:* One workflow, chosen for the biggest time saving.
-- *Price band:* $8,000–$15,000
-- *Timeline:* ~2–4 weeks
-- *The number:* Agreed in writing before we start.
+- **Eyebrow:** Two doors, one firm.
+- **Headline:** Pick the door that's yours.
 
-- **The guarantee:** If the pilot doesn't move the number we agreed, you don't pay the fee —
-  and you keep the code.
-- **Primary CTA:** Book a pilot → `contact.html`
+**Track A — Founders & companies**
+- **Value line:** Get owned, measured AI built into your real systems — judged on one honest number
+  you agree up front, handed over so you own it. No lock-in. Good builds make you genuinely
+  fundable — on merit, not hype.
+- **Who it's for (today):** regulated, data-sensitive businesses — legal, healthcare, fintech,
+  insurance — where audit-ready AI is worth the premium.
+- **CTA:** Get owned AI built → `contact.html`
+- **Secondary:** See how a build works → `method.html`
 
----
+**Track B — Investors**
+- **Value line:** Curated, AI-validated, de-risked dealflow plus access to an elite founder network
+  — by **flat subscription**, verified-accredited only. Published scoring methodology, disclosed
+  conflicts, no spam, no promises. **Never a cut of a raise.**
+- **Who it's for:** angels and angel groups, micro-VCs and emerging managers, family offices,
+  syndicate leads.
+- **CTA:** Request dealflow access → `investors.html`
+- **Secondary:** What we screen on → `what-investors-screen.html`
 
-## Section 8 — Honest proof
-
-- **Eyebrow:** Honest proof
-- **Headline:** One anonymized pilot. Numbers you can check.
-- **Subhead:** We only publish what we can stand behind. Below is a sanitized pilot, labelled
-  as an illustration — not a promise about your workflow.
-
-**Scorecard (Anonymized logistics pilot · illustration)**
-- *Before:* 11 min per manual handoff
-- *After:* 90 sec automated handoff
-- *Sample:* n = 400 handoffs measured
-- *Method:* Timed against a two-week pre-pilot baseline, same operators.
-- *Caveat:* One workflow, one client. Not a guarantee your numbers match.
-
-**What could go wrong**
-- Your workflow may not have a clean number to move. We'll tell you before you pay.
-- Some tasks need judgment a model can't yet be trusted with. We say no to those.
-- A two-week pilot proves direction, not a five-year SLA. Scale is a separate conversation.
-
-- **CTA:** See how we measure → `proof.html`
+> **Builder note:** the top-of-hero toggle (Section 1) sets which track is emphasised first, but
+> **both tracks are always visible and reachable** — neither audience is hidden behind a click.
 
 ---
 
-## Section 9 — What we do (the four offerings)
+## Section 3 — The four build pillars (one interactive unit, honest number in-container)
 
-- **Eyebrow:** What we do
-- **Headline:** One thing we're built for. Two ways we help after.
+*This is the "owned, measured" proof, made concrete. Build it as **one** connected component: a
+rail of the four pillars you hover/click that updates a detail panel **in the same container**.
+Do **not** repeat the broken `method.html` pattern (a labelled box, a separate description table far
+below, and a mascot floating in its own column).*
 
-**Primary — Agentic AI that ships.**
-Outcome: a working AI system doing a real job in your production, owned by your team,
-measured by one honest number. This is the work; everything else supports it.
-- *Link:* See how a pilot works → `method.html`
+- **Eyebrow:** What we build — measured on one honest number.
+- **Headline:** Four pillars. One number each. You own the result.
+- **Subhead:** We wire real AI into your systems, judge it on a number you agree up front, and hand
+  it over. Every pillar is monitored, retrained, and yours to keep — sold as a retainer, not a
+  one-off project.
 
-**Supporting — Investor intros.**
-Outcome: when it fits, warm, relevant introductions to investors and resources who match your
-stage and sector — no spray-and-pray.
+**Pillar rail (each item, on hover/focus/click, updates the shared detail panel):**
 
-**Supporting — Product shipping.**
-Outcome: you go from idea to a shipped product, built by the same senior team that runs the
-pilots.
+| Pillar | What we actually do | The one honest number |
+|---|---|---|
+| **AI automation** | Wire real AI into your workflows; monitored, retrained, handed over so you own it | **Time / cost removed per cycle** |
+| **Compliance & governance** | Model-risk docs, audit trails, human-in-loop controls, regulatory guardrails baked in | **Findings closed / audit-ready** |
+| **Low-code / no-code** | Fast builds on tools you already own — shipped in weeks, no lock-in | **Weeks to live / adoption** |
+| **Integration** | Connect your data and systems so the AI runs on ground truth | **One source of truth** |
 
-- **CTA:** See how we build → `jarvis.html`
-- *(The full outcome-framed breakdown of all four offerings lives in
-  `content/pages/services.md` and feeds this section.)*
-
----
-
-## Section 10 — Your fears, answered
-
-- **Eyebrow:** Your fears, answered
-- **Headline:** The four questions everyone asks first.
-
-**Will this actually reach production?** Yes — that's the whole point. A pilot ends with a
-working system running against a real number, not a demo. If it can't reach production, we
-say so before you pay.
-
-**Am I locked in to you?** No. You get the code, the weights, and the docs. No license to
-renew, no seat to rent. You can walk away with everything the day the pilot ends.
-
-**Is my data safe?** We work inside your boundaries — your cloud, your keys where possible.
-We don't train shared models on your data, and we agree the handling rules in writing up
-front.
-
-**Will I stay dependent on you?** Our aim is to hand off and leave. We document the system so
-your team can run and extend it. We're happy to help later — but by choice, never by lock-in.
+- **Detail panel (shared, in-container):** shows the selected pillar's fuller "what we do" line and
+  its honest number. The mascot, if used, lives **inside** this composition as a companion anchored
+  to the panel — never floating in its own column.
+- **Entry engagement is a retainer from day one:** a setup fee stands the system up, then a monthly
+  retainer covers monitoring, retraining, eval upkeep, and a defined set of deliverables. You recur
+  from day one — you are not billed for a project that never ships.
+- **CTA:** See how a build works → `method.html`
 
 ---
 
-## Section 11 — About (teaser)
+## Section 4 — The relationship flywheel: why the network is the moat
 
-- **Eyebrow:** About
-- **Headline:** A small, senior team.
-- **Body:** DPR Labs is a senior AI studio. We've run a handful of pilots so far and we'd
-  rather show real work than borrowed logos. You can check us the honest way: read how we think
-  in Field Notes, see a real sanitized run of our delivery engine on Built on Jarvis, and read
-  the exact method we measure by. We publish how we measure, and you own what we build.
-- **Verifiable now (real links, live today):** Field Notes → `blog/index.html` · A real run →
-  `jarvis.html` · How we measure → `proof.html`
-- **CTA:** More about us → `about.html`
+*The strategic story that separates DPR from a generic AI agency and from a generic dealflow list.
+Told visually (a compounding loop) and in words.*
+
+- **Eyebrow:** The moat is the relationships.
+- **Headline:** Every build compounds the network. That's the whole game.
+- **Subhead:** Good builds create real, measured traction → traction makes a founder genuinely
+  fundable → a warm, vetted introduction on merit → wins deepen trust on both sides → better
+  founders and better investors keep pulling in.
+
+- **Body (plain English):** A pure AI-services shop lives project-to-project with no compounding
+  asset. A pure dealflow list has no proof — just deal spam. Together, the AI builds are the *proof
+  engine* that earns the right to make introductions, and the investor network is the *distribution*
+  that makes those builds more valuable. **The durable asset is the relationship network itself, not
+  any single deal.** Neither side is easy to copy, because both rest on the same slowly-earned thing:
+  trust.
+
+- **The honesty boundary, stated plainly (this is not fine print):**
+  - The capital side earns money exactly **one** way: a **flat, recurring dealflow subscription**
+    paid by investors. **Never a percentage of a raise, never a per-intro success fee, never any pay
+    tied to a financing event.**
+  - We take **equity/SAFE only as payment for build work delivered**, priced to the fair cash value
+    of those services. **We never grant or receive equity for making an introduction.**
+  - **The firewall:** we do **not** warm-introduce a company we hold equity in to any paying
+    subscriber. If such a match is genuinely investor-driven, it routes entirely through a
+    **registered broker-dealer partner** who contracts with and is paid directly — never DPR — with
+    the stake disclosed on the deal page.
+
+> **Builder note:** the flywheel loop here is an *explanatory* diagram (builds → traction → intros →
+> wins → reputation → more builds), distinct from the Section 1 signature hero. Keep it calm and
+> legible; the hero owns the signature motion.
 
 ---
 
-## Section 12 — Field Notes teaser
+## Section 5 — Honest cold-start proof (no fabricated anything)
 
-- **Eyebrow:** Field notes
-- **Headline:** How we think, in the open.
-- **Body:** We earn work by thinking in public. Each Field Note is useful even if you never
-  hire us — a method you can copy, not "AI is transformative" filler.
-- **Posts (the three live today, all dated June 24, 2026 — canonical titles and reading times
-  taken from the posts themselves):**
-  - AI pilots — *The one number: how we pick the metric that decides a pilot* · 6 min read →
-    `blog/the-one-number.html`
-  - Ownership — *No lock-in, on purpose: the setup that lets you fire us* · 7 min read →
-    `blog/no-lock-in.html`
-  - Method — *What a two-week AI pilot actually looks like, day by day* · 8 min read →
-    `blog/two-week-pilot.html`
-- **CTA:** Read Field Notes → `blog/index.html`
+*We are early with no client roster. Trust comes from a guarantee-grade promise, a concrete "what a
+first engagement looks like", published honesty principles, and one real, sanitized run of our own
+engine — **not** from fake logos, testimonials, or invented metrics.*
+
+- **Eyebrow:** Proof over theater.
+- **Headline:** No borrowed logos. Here's how you check us instead.
+
+**How we prove it honestly (four verifiable signals):**
+
+1. **You agree the number before we start.** We judge every build on one honest number the client
+   agrees to up front, report it against a real baseline with sample size and caveats in plain
+   sight, and if it didn't move, we say so.
+2. **You own it — no lock-in.** Code, configuration, and docs are handed over so your team can run
+   and extend the system. No license to renew, no seat to rent.
+3. **What a first engagement looks like (concrete, not a promise about your numbers):** we land on
+   one real workflow in your systems, stand it up with a setup fee, then run it on a monthly retainer
+   — monitoring, retraining, eval upkeep, a defined set of deliverables, and the one honest number.
+   Early on, the founder side is seeded by real paid builds and the investor side by **information,
+   not deals** (a free "what we're seeing" research memo), so nothing here rests on a two-sided
+   network that doesn't exist yet.
+4. **One real run of our delivery engine (labelled, sourced — not a client result):** a sanitized
+   export of our own mesh run shows **305 files changed**, **60 dispatches sampled**, **~18.4 hours
+   of compute** in a single run. *This is a depiction of our build capability from our own logs
+   (`assets/data/jarvis-run.json`, exported 2026-06-30, no client data) — not a claim about your
+   workflow.*
+
+**Our honesty principles (published, not decorative):**
+- No invented clients, logos, testimonials, or unverifiable stats — ever.
+- Every score and memo carries: *information, not a recommendation; not investment advice; do your
+  own diligence.*
+- We publish our scoring methodology and disclose every conflict on the deal page.
+
+- **CTA (Founder):** See how we measure → `proof.html`
+- **CTA (Investor):** What we screen on → `what-investors-screen.html`
 
 ---
 
-## Section 13 — Final CTA + contact
+## Section 6 — The compliance-honest promise (say it out loud)
 
-- **Eyebrow:** Start a conversation
-- **Headline:** Let's find the deep work a machine should do.
-- **Subhead:** Agentic AI that ships, measured by one honest number. One business day to a
-  real answer — no sales script, no obligation.
-- **Reassurance chips:** 1 business-day reply · Free opportunity read
-- **Form fields:** Name · Work email · "What should we look at?" (the task, workflow, or idea
-  on your mind)
-- **Primary CTA:** Send → posts to `hello@dprlabs.io`
-- **Direct line:** Prefer email? hello@dprlabs.io
+*Investors and regulator-minded founders need to see, in plain sight, that DPR is not a finder
+taking success fees.*
+
+- **Eyebrow:** What we never promise.
+- **Headline:** Subscription, not a cut. Equity only for build. No guaranteed raise.
+- **Body:** We are **not a broker-dealer** and we **do not guarantee any raise**. The capital side
+  is a flat recurring subscription — never a percentage of capital, never a success fee, and no DPR
+  fee is ever triggered by, contingent on, or timed to a financing event. Advisory that helps a
+  founder become fundable is sold as generic traction/ops instrumentation, billed and payable
+  whether or not you raise.
+- **Disclaimer stack (carried site-wide where deals are shown):** *Not a broker-dealer. Not
+  investment advice. No guaranteed raise. All investments are speculative and may lose value. Past
+  results don't predict the future.* This is not legal advice.
+
+---
+
+## Section 7 — Dual conversion (the two BLOCKING actions)
+
+*The page exists to start build engagements and to open the capital side. Give each audience its
+own qualified next step.*
+
+- **Eyebrow:** Walk through your door.
+- **Headline:** Two paths. One honest firm.
+
+**Founders / companies**
+- **Line:** Tell us the workflow eating your team's time. We'll scope one honest number and a build
+  you'll own.
+- **Primary CTA:** Get owned AI built → `contact.html`
+- **Secondary:** Book a scoping conversation → `pilot.html`
+
+**Investors**
+- **Line:** Request access to vetted, AI-validated dealflow and an elite founder network — flat
+  subscription, verified-accredited only.
+- **Primary CTA:** Request dealflow access → `investors.html`
+- **Reassurance chip:** Verified-accredited · published methodology · never a cut of a raise.
+
+- **Direct line (both):** Prefer email? `hello@dprlabs.io` — one business day to a real reply.
+
+---
+
+## Shared nav + footer (reuse — do not rebuild)
+
+The redesign reuses the **existing** site chrome. Documented here so the builder wires the same
+elements and does not fork them:
+
+- **Primary nav (as built in `index.html`):** How it works (`method.html`) · Case studies
+  (`case-studies.html`) · Teardowns (`teardowns.html`) · Field Notes (`blog/index.html`) · About
+  (`about.html`), with persistent CTAs **Talk to us** (`contact.html`) and **Book a pilot**
+  (`pilot.html`). A mobile menu mirrors these links.
+- **IA note (see `content/SITEMAP.md`):** the dual-audience redesign adds an **Investors**
+  destination (`investors.html`) to the primary nav so the capital path is reachable from every
+  page, not only the home hero.
+- **Footer (as built):** brand blurb + three columns (Studio · Field Notes · Get started) + bottom
+  line. Keep the footer's existing links; they all resolve.
+
+---
+
+## Interaction & accessibility notes (for the build worker)
+
+- **Every major section is interactive**, not a static band: the hero flywheel, the audience toggle,
+  the dual-path tracks, and the four-pillar rail all respond to hover/focus/click and update content
+  **in place**.
+- **Keyboard-operable throughout:** the toggle, every flywheel node, and every pillar in the rail
+  are focusable and operable by keyboard; focus reveals the same detail a hover does; visible focus
+  ring on every interactive element.
+- **`prefers-reduced-motion`:** honour it in **both** CSS and JS — freeze the hero to the
+  `flywheel-rest` frame, disable drift/parallax/scroll-draw, and keep instant opacity/colour feedback
+  only. All motion values come from `design/motion.tokens.json`; **no hardcoded wall-clock timers**
+  drive behaviour (motion is event/scroll/reduced-motion driven).
+- **Contrast:** meet WCAG 2.2 AA against the graphite canvas; the reserved amber accent is used
+  sparingly (one accent, capped), never as body text on low-contrast fills.
+- **Scroll-reveal** uses IntersectionObserver, animating `transform`/`opacity` only.
+
+---
+
+## Source traceability (every claim → `BUSINESS-MODEL.md`)
+
+| Home-page claim | Source line(s) |
+|---|---|
+| Ethos "owned, measured, honest — proof over theater"; sits on every screen | 11, 241 |
+| Two connected businesses forming one flywheel | 4, 13, 22 |
+| Line 1: owned, measured AI; judged on one honest number agreed up front; handed over; no lock-in; sold as retainers | 13 |
+| Four build pillars + what we do + honest number (site-facing) | 233–236 |
+| Line 2: connect founders with capital; introductions and information only; flat recurring subscription; never a cut of a raise / no per-intro success fee | 22, 101, 215 |
+| Equity/SAFE only as payment for build work; never for an introduction | 24 |
+| Firewall: don't warm-intro a company we hold equity in to a paying subscriber; route via registered broker-dealer partner; disclose the stake | 26, 217 |
+| The moat is the relationship network itself, not any single deal | 32 |
+| Why the combo beats either alone (proof engine + distribution) | 34, 36 |
+| Audience toggle "I'm building / I'm investing" reframes the page | 227 |
+| Interactive spine: flywheel diagram; audit/quiz returns your one honest number; gated deal rooms behind accredited verification | 241 |
+| Founder view / Investor view one-liners | 238, 239 |
+| Investors are verified-accredited; published methodology; disclosed conflicts; portfolio deals capped/unpaid | 66, 109 |
+| Wedge (today): regulated legal, healthcare, fintech, insurance | 40, 44 |
+| Retainer entry: setup fee (LUMPY) + monthly retainer (RECURRING) covering monitoring/retraining/evals/deliverables | 74 |
+| Advisory decoupled from any raise (sold as generic traction/ops, billed regardless) | 87, 219 |
+| Not a broker-dealer; do not guarantee any raise; zero contingent fee | 97 |
+| What we never promise + full disclaimer stack | 223 |
+| Seed founder side with real paid builds; seed investor side with information, not deals | 175, 177 |
+| Automation never negotiates/recommends/touches money; "information, not a recommendation" | 211 |
+
+Real proof numbers (305 files / 60 dispatches / 66,255 s ≈ 18.4 h): `assets/data/jarvis-run.json`
+`totals` (verified), provenance note "Real, sanitized run records… No client data."
 
 ---
 
 ## Facts to confirm before publishing
 
-- **"A few pilots so far" / "a handful of pilots so far."** True-regardless phrasing. Replace
-  with an exact count only when the team can defend it (e.g., "three pilots so far").
-- **The 305 / 60 / 66,255 run figures.** Real as of the 2026-06-30 export in
-  `assets/data/jarvis-run.json`. Re-export before a relaunch so the number is current.
-- **Price band $8,000–$15,000 and ~2–4 week timeline.** Studio-set offer terms; confirm they
-  are still current before publishing.
-- **The logistics scorecard (11 min → 90 sec, n = 400).** Ships **only** with the word
-  "illustration". Swap for a real anonymized pilot scorecard once one is cleared to publish.
-- **Founder links (GitHub, talks).** When the team publishes real profile URLs, add them to the
-  About section as extra proof. Until then, credibility rests on the verifiable-today links used
-  above (Field Notes, the real Jarvis run, the published method) — never on an invented profile
-  or an empty "coming soon" stub.
-- **Field Notes teaser titles and reading times.** The three titles and times in Section 12 are
-  the canonical ones from the live posts (6 / 7 / 8 min, all dated 2026-06-24). The current
-  `index.html` teaser shows shortened titles and two stale reading times — 4 min for `no-lock-in`
-  and 3 min for `two-week-pilot`, where the posts read 7 and 8 min. Use the canonical values when
-  wiring this copy in, and correct the live teaser to match.
+- **Domain / email consistency.** `BUSINESS-MODEL.md` line 11 names the site **dprai.io**, while the
+  live footer and this content dir use **`hello@dprlabs.io`** as the contact of record and "DPR Labs
+  (dprlabs.io)". Confirm the canonical domain and email before launch; this spec keeps the existing
+  live contact of record (`hello@dprlabs.io`) rather than inventing a new one.
+- **Launch SKUs.** `BUSINESS-MODEL.md` §3 (line 70) launches with **three** packages — Starter,
+  Growth, and the Signal investor tier — not the full menu. If the home page names prices, show only
+  the launch three; the rest is the ladder the firm grows into.
+- **Firewall vs. "build them then fund them."** `BUSINESS-MODEL.md`'s own pressure-test (line 248)
+  flags that the firewall forbids self-introducing equity-held companies to paid subscribers. This
+  spec resolves it honestly: introductions are **on merit**, the moat is the **relationship network**
+  (not self-dealt portfolio deals), and equity-held companies route only through a registered
+  broker-dealer partner. Keep that framing; do not imply DPR funds its own book.
+- **The real-run figures.** 305 / 60 / 66,255 are current as of the 2026-06-30 export
+  (`assets/data/jarvis-run.json`). Re-export before a relaunch so the number is current, and always
+  ship it **labelled** as a depiction of our engine, not a client result.
+- **No client proof yet.** Until a real, cleared case study exists, keep Section 5 to the four
+  verifiable signals above; do **not** add logos, testimonials, or client numbers.

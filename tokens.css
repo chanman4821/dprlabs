@@ -3,11 +3,20 @@
    Single source of truth. Direction C "Living System": bespoke, premium,
    confident-dark, hairline-precision — an engineered instrument, not AI slop.
 
-   ONE token file. ONE type system. ONE accent. No teal, no glow, no orbs,
-   no particle fields, no neon mesh, no rainbow gradients. Depth comes from
-   VALUE + LIGHT and 1px hairlines — never from stacked drop-shadows or
-   glassmorphism. Every visual value below is a named token; pages reference
-   tokens only (no raw hex / magic px in page CSS).
+   ONE token file. ONE type system. ONE accent (warm amber). No teal, no
+   orbs, no particle fields, no neon mesh, no rainbow/multi-hue gradients.
+   Depth comes from VALUE + LIGHT and 1px hairlines — never from stacked
+   drop-shadows or glassmorphism. Every visual value below is a named token;
+   pages reference tokens only (no raw hex / magic px in page CSS).
+
+   SIGNATURE EXCEPTION (owner-approved 2026-07-06, home page): a single,
+   tightly-capped amber system is now permitted for the ONE signature
+   interactive zone — see the "SIGNATURE" token block below. Hard caps:
+     · gradient = single-hue amber directional wash, ONE axis, 2-6% opacity
+       (NO multi-hue, NO radial, NO glassmorphism);
+     · glow     = amber only, blur <= 12px at 15-30% opacity (no shadow stacks);
+     · motion   = sourced from design/motion.tokens.json (mirrored below).
+   prefers-reduced-motion pins wash -> 3% and glow -> 8px/15% (flywheel-rest).
 
    THREE TIERS (W3C DTCG):  (1) Primitive -> (2) Semantic -> (3) Type.
    Authoritative seeds (design direction): primary hsl(36 92% 56%) amber,
@@ -317,6 +326,37 @@
   --radius-pill: var(--p-radius-pill);
 
   /* =================================================================
+     SIGNATURE — owner-approved, tightly-capped amber for the ONE
+     interactive focal zone (home hero + relationship flywheel).
+     Numeric motion values MIRROR design/motion.tokens.json exactly;
+     home.js reads that JSON at runtime and re-asserts these vars, so the
+     JSON stays the single source of truth and this block is the no-JS
+     fallback. Do NOT exceed the caps documented in the header.
+     ================================================================= */
+
+  /* Amber directional WASH — single hue, one axis, capped 2-6% opacity.  */
+  --sig-wash-opacity: 0.05;                       /* within [0.02, 0.06]   */
+  --sig-wash: linear-gradient(176deg,
+              hsl(36 92% 56% / var(--sig-wash-opacity)) 0%,
+              transparent 60%);                   /* one axis, no radial   */
+
+  /* Amber GLOW — amber only, blur <=12px, opacity 15-30%. No stacks.      */
+  --sig-glow-blur:    12px;                        /* <= 12px cap          */
+  --sig-glow-opacity: 0.26;                        /* within [0.15, 0.30]  */
+  --sig-glow:        0 0 var(--sig-glow-blur) hsl(36 92% 56% / var(--sig-glow-opacity));
+  --sig-glow-node:   0 0 10px hsl(36 92% 56% / 0.28); /* single node halo   */
+  --sig-line-active: hsl(36 92% 56% / 0.55);       /* lit edge stroke       */
+  --sig-line-idle:   hsl(213 22% 76% / 0.14);      /* idle edge stroke      */
+
+  /* MOTION — mirror of design/motion.tokens.json (source of truth).       */
+  --sig-node-period:   3.6s;   /* node_period_seconds  in [2.5, 5.0]        */
+  --sig-pulse-period:  4.2s;   /* flywheel ring pulse   in [2.5, 5.0]       */
+  --sig-hover-ms:      200ms;  /* hover_transition_ms   in [150, 250]       */
+  --sig-hover-scale:   1.15;   /* hover_lift_pct 15%    => <= 1.15          */
+  --sig-parallax-max:  18px;   /* parallax_max_px       <= 20               */
+  --sig-edge-draw-ms:  640ms;  /* edge_draw_ms (scroll-driven)              */
+
+  /* =================================================================
      DEPRECATED BACK-COMPAT ALIASES  (do not use in new/rebuilt CSS)
      Kept only so pre-refactor pages keep parsing until the refactorer
      swaps them out. GLOW tokens are neutralised to transparent so the
@@ -496,5 +536,11 @@ code, pre, kbd, samp { font-family: var(--font-mono); letter-spacing: var(--ls-m
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+  /* SIGNATURE "flywheel-rest" frame: wash pinned 3%, glow pinned 8px/15%. */
+  :root {
+    --sig-wash-opacity: 0.03;
+    --sig-glow-blur:    8px;
+    --sig-glow-opacity: 0.15;
   }
 }

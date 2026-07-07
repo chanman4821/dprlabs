@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Teardowns — DPR Labs</title>
-<meta name="description" content="Anonymized autopsies of AI pilots that died — the six ways they fail, with the numbers and the fix for each. Credibility without a logo wall." />
+<title>Teardowns — DPR AI</title>
+<meta name="description" content="Plain-English autopsies of AI builds that failed — what broke, what everyone blamed, the real cause, and the fix. Plus a checklist to grade any AI vendor." />
 <meta name="theme-color" content="#ffffff" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,149 +12,180 @@
 <link rel="stylesheet" href="site.css?v=10" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
 <style>
-  .tear-annotated{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.72fr);gap:24px;align-items:start;border:1px solid rgba(15,17,20,.12);border-radius:24px;background:#fff;padding:24px;margin:30px 0;box-shadow:0 18px 50px rgba(15,17,20,.06)}
-  .tear-map{position:relative;min-height:250px;border:1px solid rgba(59,91,219,.16);border-radius:20px;background:linear-gradient(135deg,#fbfcff 0%,#eef1fb 100%);padding:22px;overflow:hidden}
-  .tear-map::before{content:"";position:absolute;inset:18px;border:1px dashed rgba(59,91,219,.24);border-radius:18px;pointer-events:none}
-  .tear-map h3{position:relative;margin:0;font-size:20px;letter-spacing:-.02em;max-width:15ch}
-  .tear-map p{position:relative;margin:10px 0 0;color:var(--muted);font-size:14.5px;line-height:1.55}
-  .tear-pin{position:absolute;display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(59,91,219,.28);border-radius:999px;background:#fff;color:#3b5bdb;font-family:var(--mono);font-size:12px;font-weight:600;box-shadow:0 12px 28px rgba(59,91,219,.16);cursor:pointer;transition:transform .16s ease,border-color .16s ease}
-  .tear-pin:hover,.tear-pin:focus-visible{transform:translateY(-2px);border-color:#3b5bdb;outline:0}
-  .tear-pin[aria-expanded="true"]{background:#3b5bdb;color:#fff}
-  .tear-pin.pin-a{right:28px;top:40px}.tear-pin.pin-b{left:34px;bottom:42px}.tear-pin.pin-c{right:46px;bottom:36px}
-  .tear-notes{display:grid;gap:12px}
-  .tear-note{border:1px solid var(--line);border-radius:16px;padding:16px 18px;background:#fff}
-  .tear-note[hidden]{display:none}
-  .tear-note strong{display:block;color:var(--ink-2);margin-bottom:5px}
-  .tear-note p{font-size:14.5px;line-height:1.55;margin:0;color:var(--muted)}
-  .tear-diagram{border:1px solid rgba(59,91,219,.14);border-radius:20px;background:#fff;padding:20px;margin:24px 0 4px;overflow:hidden}
-  .tear-buddy-row{display:flex;align-items:center;gap:22px;border:1px solid rgba(59,91,219,.14);border-radius:24px;background:linear-gradient(135deg,#fff 0%,#f7f8ff 100%);padding:22px 26px;margin-top:30px;overflow:hidden}
-  .tear-buddy{width:clamp(120px,15vw,168px);height:auto;flex:0 0 auto;filter:drop-shadow(0 18px 28px rgba(59,91,219,.16));animation:tearFloat 5.8s ease-in-out infinite}
-  .tear-buddy-row p{margin:0;color:var(--muted);font-size:15px;line-height:1.6}
-  @keyframes tearFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-  @media(max-width:820px){.tear-annotated{grid-template-columns:1fr}.tear-map{min-height:230px}.tear-buddy-row{align-items:flex-start}.tear-buddy{width:126px}}
-  @media(max-width:520px){.tear-annotated{padding:18px}.tear-map{min-height:220px}.tear-pin{width:38px;height:38px}.tear-buddy-row{display:block}.tear-buddy{float:right;width:116px;margin:0 0 10px 14px}}
-  @media(prefers-reduced-motion:reduce){.tear-buddy,.tear-pin{animation:none;transition:none}}
+  .autopsy{border:1px solid var(--line);border-radius:20px;background:#fff;padding:clamp(22px,3vw,30px);margin:20px 0;box-shadow:0 10px 34px rgba(15,17,20,.05)}
+  .au-tag{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-hi)}
+  .autopsy h3{font-size:clamp(20px,2.4vw,26px);letter-spacing:-.02em;margin:8px 0 0}
+  /* before / after toggle */
+  .ba{margin:22px 0 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--bg-soft)}
+  .ba-toggle{display:flex;gap:4px;padding:6px;background:var(--bg-softer)}
+  .ba-toggle button{flex:1;border:0;background:transparent;padding:10px;border-radius:11px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);cursor:pointer;transition:.15s}
+  .ba-toggle button.is-on{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(15,17,20,.1)}
+  .ba-panel{padding:22px 24px}
+  .ba-panel[hidden]{display:none}
+  .ba-num{font-size:clamp(30px,5vw,42px);font-weight:800;letter-spacing:-.03em;line-height:1}
+  .ba-panel[data-panel="before"] .ba-num b{color:#c0392b}
+  .ba-panel[data-panel="after"] .ba-num b{color:var(--accent)}
+  .ba-panel p{margin:8px 0 0;color:var(--muted);font-size:15px;line-height:1.55;max-width:52ch}
+  /* autopsy rows */
+  .au-details{margin-top:18px;border-top:1px solid var(--line)}
+  .au-details summary{cursor:pointer;list-style:none;padding:16px 0 4px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:8px}
+  .au-details summary::-webkit-details-marker{display:none}
+  .au-details summary::after{content:"+";margin-left:auto;font-size:18px;color:var(--faint)}
+  .au-details[open] summary::after{content:"–"}
+  .au-rows{display:grid;gap:2px;margin-top:12px}
+  .au-row{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+  .au-row .k{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint)}
+  .au-row p{margin:0;font-size:15px;line-height:1.55;color:var(--ink-2)}
+  @media(max-width:600px){.au-row{grid-template-columns:1fr;gap:4px}}
+  /* vendor grader */
+  .grader{border:1px solid var(--line);border-radius:20px;background:#fff;padding:clamp(22px,3vw,30px);margin-top:30px;box-shadow:0 10px 34px rgba(15,17,20,.05)}
+  .grader-q{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line)}
+  .grader-q:first-of-type{border-top:0}
+  .grader-q input{width:22px;height:22px;flex:0 0 auto;margin-top:1px;accent-color:var(--gold);cursor:pointer}
+  .grader-q label{font-size:15.5px;line-height:1.5;color:var(--ink-2);cursor:pointer}
+  .grader-out{margin-top:22px;padding:18px 20px;border-radius:14px;background:var(--bg-soft);border:1px solid var(--line);font-size:16px;line-height:1.5}
+  .grader-out b{font-size:20px}
+  .grader-out.warn{background:#fff6ec;border-color:#f0c58a}
+  .grader-out.bad{background:#fdecea;border-color:#f0b3ab}
+  .death-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+  @media(max-width:820px){.death-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.death-grid{grid-template-columns:1fr}}
+  .death{border:1px solid var(--line);border-radius:16px;padding:20px;background:#fff}
+  .death .tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-hi)}
+  .death h4{margin:8px 0 6px;font-size:16px;letter-spacing:-.01em}
+  .death p{margin:0;font-size:13.5px;line-height:1.5;color:var(--muted)}
+  .toc{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .toc a{font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);border:1px solid var(--line-2);border-radius:999px;padding:8px 15px;transition:.15s}
+  .toc a:hover{border-color:var(--accent);color:var(--accent)}
 </style>
-<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<noscript><style>.reveal{opacity:1;transform:none}.ba-panel[hidden]{display:block!important}.ba-toggle{display:none}</style></noscript>
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="nav">
   <div class="wrap nav-in">
-    <a href="index.html" class="brand" aria-label="DPR Labs — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a>
+    <a href="index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
     <nav class="nav-links" aria-label="Primary"><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html" aria-current="page">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a></nav>
     <span class="nav-sp"></span>
-    <div class="nav-cta"><a href="contact.html" class="btn btn-ghost">Talk to us</a><a href="pilot.html" class="btn btn-primary">Book a pilot</a></div>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-ghost">Talk to us</a><a href="contact.html" class="btn btn-primary">Start a build</a></div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-  <div class="mobile-menu" id="mobileMenu"><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="pilot.html">Book a pilot</a></div>
+  <div class="mobile-menu" id="mobileMenu"><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="blog/index.html">Field Notes</a><a href="about.html">About</a><a href="contact.html">Start a build</a></div>
 </header>
 <main id="main">
   <section class="page-hero" data-reveal>
     <div class="wrap prose reveal">
       <p class="eyebrow">Teardowns</p>
-      <h1>Most AI pilots do not die in the model.</h1>
-      <p class="lead" style="margin-top:20px">We once shipped a support-triage model that hit 94% accuracy in testing and got used by exactly nobody.</p>
-      <p>The model was never the problem. It lived in a separate tab, and the support agents already had eleven tabs open. We moved one inference call into the tool they already stared at all day, changed nothing about the model, and usage went from 0% to 80% in a week. Most “AI did not work” stories are actually “we forgot it had to live where the work happens” stories.</p>
-      <p>This page is our logo wall replacement: anonymized autopsies, the numbers that mattered, and the fix. No named clients. No victory lap. Just the ways pilots fail when smart people confuse a demo with a working system.</p>
-    </div>
-  </section>
-
-  <section class="sec problem" data-reveal>
-    <div class="wrap prose reveal">
-      <p class="eyebrow">Autopsy 01</p>
-      <h2 style="margin-top:14px">The 94%-accurate bot nobody used.</h2>
-      <p style="margin-top:16px">A support team had a real triage problem. Tickets came in messy. Agents lost time deciding priority, routing, and whether a refund policy applied. The model did the narrow job well: on a held-out sample, it matched the human routing label 94% of the time. In a room, the demo looked obvious. In production, usage was zero.</p>
-      <p>The reason was embarrassing and useful. The AI lived one click too far away. Agents worked in the ticketing tool. The model lived in a separate tab with a login, a search field, and a copy button. The team already had the help center, CRM, refund sheet, queue view, chat, and internal notes open. “One more tab” was not one more tab. It was one more place to forget.</p>
-      <div class="tear-annotated" data-reveal>
-        <div class="tear-map" aria-label="Annotated teardown for the unused support bot">
-          <h3>Failure map: good score, zero usage.</h3>
-          <p>Tap the numbered pins to see where the pilot broke.</p>
-          <button class="tear-pin pin-a" type="button" aria-expanded="false" aria-controls="note-a1">01</button>
-          <button class="tear-pin pin-b" type="button" aria-expanded="false" aria-controls="note-a2">02</button>
-          <button class="tear-pin pin-c" type="button" aria-expanded="false" aria-controls="note-a3">03</button>
-        </div>
-        <div class="tear-notes" aria-live="polite">
-          <div class="tear-note" id="note-a1" hidden><strong>Score was not the blocker.</strong><p>The held-out sample showed 94% label match, so retraining was not the first fix.</p></div>
-          <div class="tear-note" id="note-a2" hidden><strong>The tab killed adoption.</strong><p>The output sat behind another login, search field, and copy step while agents already had eleven tabs open.</p></div>
-          <div class="tear-note" id="note-a3" hidden><strong>The fix moved the work.</strong><p>The same inference call went into the ticket sidebar, and usage moved from 0% to roughly 80% in a week.</p></div>
-        </div>
-      </div>
-      <div class="tear-diagram" data-reveal>
-        <div data-diagram="pipeline" data-config='{"items":[{"n":"94%","label":"Model score","sub":"held-out sample"},{"n":"0%","label":"Production use","sub":"separate tab"},{"n":"80%","label":"Workflow use","sub":"existing sidebar"}]}'></div>
-      </div>
-      <p>We did not retrain. We did not swap models. We moved the inference call into the existing ticket sidebar and wrote the result into the field the team already used. The label appeared where the handoff happened. Usage went from 0% to roughly 80% in the first week, and the remaining gap was mostly edge cases the team wanted humans to own.</p>
-      <p>The lesson is blunt: the last mile is a product problem, not a model problem. If the output is not inside the workflow, the model is theater with a login screen. We spend unusual time on the boring integration layer because that is where pilots quietly die.</p>
-    </div>
-  </section>
-
-  <section class="sec" data-reveal>
-    <div class="wrap prose reveal">
-      <p class="eyebrow">Autopsy 02</p>
-      <h2 style="margin-top:14px">When we deleted the vector database.</h2>
-      <p style="margin-top:16px">A fintech's AP team wanted “RAG” over policy docs, vendor rules, and approval notes. The first build had the shape everyone expects now: embeddings, chunks, a vector database, a reranker, and a chat box. It was expensive enough to notice and accurate enough to be dangerous. On a 120-question test set, the system often found a semantically similar paragraph and still missed the exact rule.</p>
-      <p>The corpus was not web scale. It was a few hundred pages, with stable headings, repeated terms, and document names people already knew. The fancy stack was solving the wrong problem. We rewrote the retrieval layer with good chunking, document-aware grep, strict citation rules, and a small model call only after the exact passages were found. Accuracy went up, cost went down, and the answer became easier for a controller to audit.</p>
-      <div class="tear-annotated" data-reveal>
-        <div class="tear-map" aria-label="Annotated teardown for the removed vector database">
-          <h3>Failure map: impressive stack, wrong search.</h3>
-          <p>Tap the numbered pins to inspect the failure and fix.</p>
-          <button class="tear-pin pin-a" type="button" aria-expanded="false" aria-controls="note-b1">01</button>
-          <button class="tear-pin pin-b" type="button" aria-expanded="false" aria-controls="note-b2">02</button>
-          <button class="tear-pin pin-c" type="button" aria-expanded="false" aria-controls="note-b3">03</button>
-        </div>
-        <div class="tear-notes" aria-live="polite">
-          <div class="tear-note" id="note-b1" hidden><strong>The test set exposed it.</strong><p>On 120 real questions, similar paragraphs were not enough when the exact rule mattered.</p></div>
-          <div class="tear-note" id="note-b2" hidden><strong>The corpus was small.</strong><p>A few hundred structured pages did not need a rented maze of embeddings, chunks, and a reranker.</p></div>
-          <div class="tear-note" id="note-b3" hidden><strong>The fix became auditable.</strong><p>Document-aware grep, strict citations, and a small model call made the answer easier to check.</p></div>
-        </div>
-      </div>
-      <p>The usable rule: reach for embeddings when meaning differs from wording, the language is varied, or the corpus is too large for exact matching to be sane. Start with search when the docs are small, structured, and full of terms humans actually use. A boring baseline is not anti-AI. It is how you avoid paying rent on complexity.</p>
-      <p>Senior judgment sometimes looks like removing a tool from the diagram. We are not trying to make the architecture impressive. We are trying to move the number with the fewest pieces you will still understand after handoff.</p>
-      <p class="callout" style="margin-top:22px"><strong>A quick test:</strong> before approving a vector database, ask the vendor to beat keyword search on a blind set of real questions. If they cannot show the sample size, misses, and baseline, you are buying vibes.</p>
-    </div>
-  </section>
-
-  <section class="sec problem" data-reveal>
-    <div class="wrap reveal">
-      <div class="prose">
-        <p class="eyebrow">Eval Theater</p>
-        <h2 style="margin-top:14px">How to spot fake accuracy.</h2>
-        <p style="margin-top:16px">A founder does not need to be a machine-learning researcher to interrogate an accuracy claim. You need eight plain questions. Use them on any vendor, including us. If the answers get slippery, the metric is probably decoration.</p>
-      </div>
-      <div class="roles" data-stagger>
-        <div class="role"><span class="tag">01</span><h3>No holdout set</h3><p>If the examples used to tune the system are also used to score it, the number is not evidence.</p></div>
-        <div class="role"><span class="tag">02</span><h3>Cherry-picked wins</h3><p>A demo that only shows successes is a sales reel. Ask for misses and borderline cases.</p></div>
-        <div class="role"><span class="tag">03</span><h3>Training-data overlap</h3><p>Public FAQs, old tickets, and copied examples can make recall look like reasoning.</p></div>
-        <div class="role"><span class="tag">04</span><h3>No human spot-check</h3><p>Someone who knows the work should review a sample and mark false confidence.</p></div>
-        <div class="role"><span class="tag">05</span><h3>No baseline</h3><p>“87% accurate” means little if a rules script, grep, or the current team already gets 85%.</p></div>
-        <div class="role"><span class="tag">06</span><h3>No sample size</h3><p>A single number without n is a magic trick. Ten examples and 1,000 examples are not the same claim.</p></div>
-        <div class="role"><span class="tag">07</span><h3>Internal tests only</h3><p>“It passed our tests” is not a method. Ask what failed, who graded it, and how labels were made.</p></div>
-        <div class="role"><span class="tag">08</span><h3>Demo-safe workflow</h3><p>If the demo path avoids messy inputs, permissions, handoffs, and exceptions, it is not your job yet.</p></div>
-      </div>
-      <div class="prose" style="margin-top:28px">
-        <p>We teach clients to catch this because clean measurement protects both sides. If we cannot win on a real baseline, you should know before a second invoice exists.</p>
+      <h1>Most AI builds don't die in the model.</h1>
+      <p class="lead" style="margin-top:20px">They die in the boring stuff around it — where the answer shows up, who owns it, and whether anyone checked if it actually works.</p>
+      <p>Below are real failures we've seen (and fixed), in plain English. Flip the <strong>Before / After</strong> switch to see the one thing that changed. Open a card to read the full autopsy. Then use the checklist to grade any AI vendor — including us.</p>
+      <div class="toc">
+        <a href="#a1">The bot nobody used</a>
+        <a href="#a2">Deleting the vector DB</a>
+        <a href="#grade">Grade a vendor</a>
+        <a href="#modes">6 ways builds die</a>
       </div>
     </div>
   </section>
 
   <section class="sec" data-reveal>
-    <div class="wrap reveal">
-      <div class="prose">
-        <p class="eyebrow">Death certificate</p>
-        <h2 style="margin-top:14px">The six ways AI pilots die.</h2>
-        <p style="margin-top:16px">Most failures are not mysterious. They fall into a small set of repeatable patterns. Naming the pattern early keeps the pilot small enough to save.</p>
-        <div class="tear-buddy-row" data-reveal>
-          <img class="tear-buddy" src="assets/mascot/cut/bot-wave.png" alt="DPR Labs robot pointing at teardown notes" loading="lazy" />
-          <p><strong>Inspect the failure, then cut the part that does not move the number.</strong> The pattern matters more than the tool name.</p>
+    <div class="wrap" style="max-width:860px">
+
+      <article class="autopsy reveal" id="a1">
+        <span class="au-tag">Autopsy 01 · Last-mile gap</span>
+        <h3>The 94%‑accurate bot nobody used.</h3>
+        <div class="ba" data-ba>
+          <div class="ba-toggle" role="group" aria-label="Before or after the fix">
+            <button type="button" class="is-on" data-target="before">Before the fix</button>
+            <button type="button" data-target="after">After the fix</button>
+          </div>
+          <div class="ba-panel" data-panel="before">
+            <div class="ba-num"><b>0%</b> used</div>
+            <p>The AI opened in its own tab. The agents already had eleven tabs open. So they just… forgot it existed.</p>
+          </div>
+          <div class="ba-panel" data-panel="after" hidden>
+            <div class="ba-num"><b>~80%</b> used</div>
+            <p>We moved the same answer into the ticket they already worked in. Usage jumped in a week — and we changed nothing about the model.</p>
+          </div>
         </div>
+        <details class="au-details">
+          <summary>Read the full autopsy</summary>
+          <div class="au-rows">
+            <div class="au-row"><span class="k">Symptom</span><p>Great score in testing (it matched the human's choice 94% of the time), but almost nobody used it in real life.</p></div>
+            <div class="au-row"><span class="k">What everyone blamed</span><p>The model. "It must not be smart enough — let's retrain it."</p></div>
+            <div class="au-row"><span class="k">The real cause</span><p>The answer lived one click too far away, in a separate tab with its own login. That's one more place to forget.</p></div>
+            <div class="au-row"><span class="k">The fix</span><p>We put the exact same answer inside the ticket the team already stared at all day. No retrain, no new model — just moved it to where the work happens.</p></div>
+          </div>
+        </details>
+      </article>
+
+      <article class="autopsy reveal" id="a2">
+        <span class="au-tag">Autopsy 02 · Over-engineering</span>
+        <h3>When we deleted the "vector database."</h3>
+        <div class="ba" data-ba>
+          <div class="ba-toggle" role="group" aria-label="Before or after the fix">
+            <button type="button" class="is-on" data-target="before">Before the fix</button>
+            <button type="button" data-target="after">After the fix</button>
+          </div>
+          <div class="ba-panel" data-panel="before">
+            <div class="ba-num"><b>Wrong</b> answers</div>
+            <p>A fancy "meaning-based" search over a few hundred policy pages. It kept finding a paragraph that <em>sounded</em> related but wasn't the actual rule — close, but wrong where it counted.</p>
+          </div>
+          <div class="ba-panel" data-panel="after" hidden>
+            <div class="ba-num"><b>Exact</b> answers</div>
+            <p>We ripped it out and used plain keyword search to find the exact paragraph first, forced the AI to quote it, and only then let it write. More accurate, cheaper, and a human can audit it.</p>
+          </div>
+        </div>
+        <details class="au-details">
+          <summary>Read the full autopsy</summary>
+          <div class="au-rows">
+            <div class="au-row"><span class="k">Symptom</span><p>Expensive setup, confident answers, and it still missed the exact rule on real questions.</p></div>
+            <div class="au-row"><span class="k">What everyone blamed</span><p>The prompt. "We just need better prompting / a bigger model."</p></div>
+            <div class="au-row"><span class="k">The real cause</span><p>The docs were small and well-organized — a few hundred pages people already knew by name. The fancy search was solving a problem they didn't have.</p></div>
+            <div class="au-row"><span class="k">The fix</span><p>Plain keyword search to pull the exact passage, strict "quote your source" rules, then a small AI step to phrase the answer. Fewer moving parts, easier to trust.</p></div>
+          </div>
+        </details>
+        <p class="callout" style="margin-top:22px"><strong>Quick test:</strong> before you pay for a fancy "vector" search, ask the vendor to beat plain keyword search on a blind set of your real questions. If they can't show the score and the misses, you're buying vibes.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="sec problem" data-reveal>
+    <div class="wrap" style="max-width:820px" id="grade">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Grade any AI vendor</p>
+        <h2 style="margin-top:14px">Tick the boxes your vendor can't answer.</h2>
+        <p class="lead">You don't need to be technical. Eight plain questions. The more you tick, the more their "accuracy" is probably decoration. Use it on us too.</p>
       </div>
-      <div class="grid-3" data-stagger>
-        <div class="card"><span class="tag">No Metric</span><h3>“Working” became opinion.</h3><p>Symptom: every meeting debates quality. Root cause: nobody agreed the number. Fix: a written metric contract on day one.</p></div>
-        <div class="card"><span class="tag">Boil-the-Ocean</span><h3>The mandate was “make us AI-first.”</h3><p>Symptom: weeks of workshops, no shipped workflow. Root cause: scope was a slogan. Fix: one workflow, one number.</p></div>
-        <div class="card"><span class="tag">Vendor Lock</span><h3>You rent the system forever.</h3><p>Symptom: every change needs the vendor. Root cause: the code, prompts, evals, or weights never leave. Fix: take the assets.</p></div>
-        <div class="card"><span class="tag">Eval Theater</span><h3>The accuracy number was fake.</h3><p>Symptom: the demo wins and production misses. Root cause: no real test set. Fix: a holdout set plus human spot-check.</p></div>
-        <div class="card"><span class="tag">Last-Mile Gap</span><h3>It worked where nobody worked.</h3><p>Symptom: good model, no usage. Root cause: the output lived outside the job. Fix: put it in the tool they already use.</p></div>
-        <div class="card"><span class="tag">Orphaned Owner</span><h3>Nobody owned it after handoff.</h3><p>Symptom: three weeks later, it is stale. Root cause: no internal owner. Fix: name the owner before you start.</p></div>
+      <div class="grader reveal" id="grader">
+        <div class="grader-q"><input type="checkbox" id="g1"><label for="g1">They can't show a fresh batch of real cases the system <em>never saw</em> while they built it.</label></div>
+        <div class="grader-q"><input type="checkbox" id="g2"><label for="g2">The demo only shows wins — you never see the misses or the close calls.</label></div>
+        <div class="grader-q"><input type="checkbox" id="g3"><label for="g3">The examples could easily be things the AI already memorized from the internet.</label></div>
+        <div class="grader-q"><input type="checkbox" id="g4"><label for="g4">Nobody who actually knows the work has checked a sample by hand.</label></div>
+        <div class="grader-q"><input type="checkbox" id="g5"><label for="g5">There's no "compared to what?" — no baseline for what your team or a simple script already does.</label></div>
+        <div class="grader-q"><input type="checkbox" id="g6"><label for="g6">The number has no sample size ("87% accurate" — out of 10 cases, or 10,000?).</label></div>
+        <div class="grader-q"><input type="checkbox" id="g7"><label for="g7">"It passed our tests" — but they can't say what failed, who graded it, or how.</label></div>
+        <div class="grader-q"><input type="checkbox" id="g8"><label for="g8">The demo dodges the messy stuff: weird inputs, permissions, handoffs, exceptions.</label></div>
+        <div class="grader-out" id="graderOut" aria-live="polite"><b><span id="gScore">0</span> of 8</b> — <span id="gMsg">tick the ones your vendor can't answer.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" data-reveal>
+    <div class="wrap" id="modes">
+      <div class="sec-head reveal" style="max-width:760px">
+        <p class="eyebrow">The pattern index</p>
+        <h2 style="margin-top:14px">The six ways AI builds die.</h2>
+        <p class="lead">Almost every failure is one of these. Name it early and the build is still small enough to save.</p>
+      </div>
+      <div class="death-grid" data-stagger>
+        <div class="death"><span class="tag">No metric</span><h4>"Working" became an opinion.</h4><p>Every meeting argues about quality because nobody agreed on the number. Fix: write down the one number first.</p></div>
+        <div class="death"><span class="tag">Boil the ocean</span><h4>The goal was "make us AI‑first."</h4><p>Weeks of workshops, nothing shipped. Fix: one workflow, one number — not a slogan.</p></div>
+        <div class="death"><span class="tag">Vendor lock</span><h4>You rent it forever.</h4><p>Every change needs the vendor because the code and data never leave. Fix: take the assets home.</p></div>
+        <div class="death"><span class="tag">Fake accuracy</span><h4>The score was theater.</h4><p>Wins in the demo, misses in real life. Fix: a fresh test set plus a human spot‑check.</p></div>
+        <div class="death"><span class="tag">Last‑mile gap</span><h4>It worked where nobody worked.</h4><p>Good model, no usage. Fix: put the answer inside the tool they already use.</p></div>
+        <div class="death"><span class="tag">Orphaned owner</span><h4>Nobody owned it after handoff.</h4><p>Stale in three weeks. Fix: name the internal owner before you start.</p></div>
       </div>
     </div>
   </section>
@@ -162,34 +193,47 @@
   <section class="sec problem" data-reveal>
     <div class="wrap center prose reveal">
       <p class="eyebrow">A better bet</p>
-      <h2 style="margin-top:14px">Bring one ugly workflow.</h2>
-      <p class="lead" style="margin-top:16px">We will tell you which death mode is most likely before we build. If the number is real and the owner exists, a two-week pilot is enough to learn something honest.</p>
-      <p><a href="contact.html" class="btn btn-primary">Book a 2-week pilot <span class="arrow" aria-hidden="true">→</span></a></p>
-      <p><a href="method.html" class="txt-link">Read how the pilot works <span class="arrow" aria-hidden="true">→</span></a></p>
+      <h2 style="margin:14px auto 0">Bring us one ugly workflow.</h2>
+      <p class="lead" style="margin-top:16px">We'll tell you which of these six is most likely to kill it — before we build. If the number is real and someone owns it, the first build teaches you something honest.</p>
+      <p><a href="contact.html" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a></p>
+      <p><a href="method.html" class="txt-link">See how a build works <span class="arrow" aria-hidden="true">→</span></a></p>
     </div>
   </section>
 </main>
-<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;Labs</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="about.html">About</a></div><div class="foot-col"><h4>Playbooks</h4><a href="slop.html">The slop problem</a><a href="playbook.html">AI-readiness scorecard</a><a href="pilot.html">The two-week pilot</a><a href="blog/index.html">Field Notes</a></div><div class="foot-col"><h4>Get started</h4><a href="pilot.html">Book a pilot</a><a href="contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR Labs — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="about.html">About</a></div><div class="foot-col"><h4>Playbooks</h4><a href="slop.html">The slop problem</a><a href="playbook.html">AI-readiness scorecard</a><a href="contact.html">The first build</a><a href="blog/index.html">Field Notes</a></div><div class="foot-col"><h4>Get started</h4><a href="contact.html">Start a build</a><a href="contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
 <script src="site.js?v=10" defer></script>
 <script src="assets/anim.js?v=10" defer></script>
-<script src="assets/diagrams.js?v=10" defer></script>
 <script>
 (function(){
   "use strict";
-  function toggle(btn){
-    var id=btn.getAttribute("aria-controls");
-    var panel=id&&document.getElementById(id);
-    if(!panel)return;
-    var open=btn.getAttribute("aria-expanded")==="true";
-    btn.setAttribute("aria-expanded",String(!open));
-    panel.hidden=open;
-  }
-  document.querySelectorAll(".tear-pin").forEach(function(btn){
-    btn.addEventListener("click",function(){toggle(btn);});
-    btn.addEventListener("keydown",function(e){
-      if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle(btn);}
+  // Before / After toggles
+  document.querySelectorAll("[data-ba]").forEach(function(ba){
+    var btns=ba.querySelectorAll(".ba-toggle button");
+    var panels=ba.querySelectorAll(".ba-panel");
+    btns.forEach(function(btn){
+      btn.addEventListener("click",function(){
+        var t=btn.getAttribute("data-target");
+        btns.forEach(function(b){b.classList.toggle("is-on",b===btn);});
+        panels.forEach(function(p){p.hidden=(p.getAttribute("data-panel")!==t);});
+      });
     });
   });
+  // Vendor grader
+  var boxes=Array.prototype.slice.call(document.querySelectorAll("#grader input[type=checkbox]"));
+  var out=document.getElementById("graderOut"), score=document.getElementById("gScore");
+  function grade(){
+    var n=boxes.filter(function(b){return b.checked;}).length;
+    score.textContent=n;
+    var msg, cls="";
+    if(n===0){msg="tick the ones your vendor can't answer.";}
+    else if(n<=2){msg="mostly solid — dig into the ones you ticked.";}
+    else if(n<=5){msg="shaky. That \"accuracy\" number needs proof before you sign.";cls="warn";}
+    else{msg="that metric is decoration. Ask for a real test set or walk away.";cls="bad";}
+    document.getElementById("gMsg").textContent=msg;
+    out.className="grader-out"+(cls?" "+cls:"");
+  }
+  boxes.forEach(function(b){b.addEventListener("change",grade);});
+  grade();
 })();
 </script>
 </body>

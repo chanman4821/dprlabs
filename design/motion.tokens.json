@@ -1,0 +1,80 @@
+{
+  "$schema": "https://dprlabs.io/schema/motion.tokens.v1.json",
+  "meta": {
+    "name": "DPR Labs — signature motion tokens",
+    "owner": "design-system",
+    "surface": "home (index.html) signature interactive zone",
+    "approved": "2026-07-06",
+    "source_of_truth": true,
+    "mirrored_into": "tokens.css (--sig-* custom properties)",
+    "consumed_by": "assets/home.js (fetched at runtime, validated against caps, re-asserted as CSS vars)",
+    "note": "Motion is event/scroll/reduced-motion driven. No hardcoded wall-clock timers drive behavior; the only periods below are ambient rAF drift/pulse cycles."
+  },
+  "tokens": {
+    "node_period_seconds": {
+      "value": 3.6,
+      "unit": "s",
+      "range": [2.5, 5.0],
+      "desc": "Ambient drift/pulse period for a hero flywheel node."
+    },
+    "pulse_period_seconds": {
+      "value": 4.2,
+      "unit": "s",
+      "range": [2.5, 5.0],
+      "desc": "Ambient pulse period for the relationship-flywheel ring stations."
+    },
+    "hover_transition_ms": {
+      "value": 200,
+      "unit": "ms",
+      "range": [150, 250],
+      "desc": "Ease-out duration for a single node hover lift."
+    },
+    "hover_lift_pct": {
+      "value": 15,
+      "unit": "%",
+      "max": 15,
+      "scale_factor": 1.15,
+      "desc": "Max scale a hovered/focused node may lift (<=15%)."
+    },
+    "parallax_max_px": {
+      "value": 18,
+      "unit": "px",
+      "max": 20,
+      "desc": "Max pointer/scroll parallax offset for hero layers (<=20px)."
+    },
+    "edge_draw_ms": {
+      "value": 640,
+      "unit": "ms",
+      "desc": "Stroke-dashoffset draw time for a cross-cluster edge when scrolled into view."
+    },
+    "reveal_stagger_ms": {
+      "value": 90,
+      "unit": "ms",
+      "desc": "Per-item stagger for scroll-reveal groups."
+    }
+  },
+  "gradient_caps": {
+    "kind": "single-hue-amber-directional-wash",
+    "axes": 1,
+    "opacity_range": [0.02, 0.06],
+    "opacity_default": 0.05,
+    "forbidden": ["multi-hue", "radial", "glassmorphism"]
+  },
+  "glow_caps": {
+    "hue": "amber",
+    "blur_max_px": 12,
+    "blur_default_px": 12,
+    "opacity_range": [0.15, 0.30],
+    "opacity_default": 0.26,
+    "forbidden": ["drop-shadow-stacks"]
+  },
+  "reduced_motion": {
+    "frame": "flywheel-rest",
+    "description": "Nodes at layout-default, edges 100% drawn, glow pinned 8px/15%, wash pinned 3%, zero drift/parallax; instant opacity/color hover feedback only.",
+    "wash_opacity": 0.03,
+    "glow_blur_px": 8,
+    "glow_opacity": 0.15,
+    "drift": false,
+    "parallax": false
+  }
+}
