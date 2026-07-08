@@ -1,7 +1,7 @@
 # keep the deploy lean — exclude build tooling, backups, and heavy source assets
 artifacts/
 dark-backup/
-content/
+/content/
 .playwright-mcp/
 node_modules/
 __pycache__/
