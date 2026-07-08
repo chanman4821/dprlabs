@@ -1,11 +1,75 @@
 {
   "meta": {
-    "generated_at": "2026-07-08T21:15:35.590486+00:00",
+    "generated_at": "2026-07-08T23:14:56.217122+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "78b06f593102",
+      "headline": "Lovable reportedly in talks to double its valuation to $13.2B",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/",
+      "published_at": "2026-07-08T22:41:33+00:00",
+      "summary": "The $300 million round is expected to be led by Menlo Ventures, Sifted reported.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7935
+    },
+    {
+      "id": "2f695520e65f",
+      "headline": "Policy Statement Concerning the Suppression of Accuracy in AI Systems",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.federalregister.gov/documents/2026/07/07/2026-13628/policy-statement-concerning-the-suppression-of-accuracy-in-artificial-intelligence-systems",
+      "published_at": "2026-07-08T22:33:46+00:00",
+      "summary": "4 points and 1 comments on Hacker News.",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 2,
+      "credibility": 0.6,
+      "rank_score": 0.5814
+    },
+    {
+      "id": "da644624a093",
+      "headline": "A Roomba recorded a woman on the toilet. How did screenshots end up on Facebook?",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.technologyreview.com/2022/12/19/1065306/roomba-irobot-robot-vacuums-artificial-intelligence-training-data-privacy/",
+      "published_at": "2026-07-08T22:28:02+00:00",
+      "summary": "9 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5598
+    },
+    {
+      "id": "89886d706e78",
+      "headline": "Suspecting AI cheating, Ivy League prof ordered an in-person final; scores fell 50%",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/",
+      "published_at": "2026-07-08T21:42:44+00:00",
+      "summary": "AI cheating leads to \"a failed society,\" professor says.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7865
+    },
     {
       "id": "59a2edde9ec2",
       "headline": "Gov. Pritzker Signs Nation-Leading Artificial Intelligence Safety Law",
@@ -13,14 +77,14 @@
       "source_id": "hn",
       "url": "https://gov-pritzker-newsroom.prezly.com/gov-pritzker-signs-nation-leading-artificial-intelligence-safety-law",
       "published_at": "2026-07-08T21:03:47+00:00",
-      "summary": "3 points and 1 comments on Hacker News.",
+      "summary": "4 points and 1 comments on Hacker News.",
       "tags": [
         "Policy"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.7686
+      "rank_score": 0.7544
     },
     {
       "id": "8dd183ee3609",
@@ -36,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7929
+      "rank_score": 0.7788
     },
     {
       "id": "2949c6e364e2",
@@ -45,14 +109,14 @@
       "source_id": "hn",
       "url": "https://www.nytimes.com/2026/07/08/opinion/openai-anthropic-palantir-alex-karp.html",
       "published_at": "2026-07-08T20:04:52+00:00",
-      "summary": "7 points and 2 comments on Hacker News.",
+      "summary": "12 points and 4 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5557
+      "rank_score": 0.5449
     },
     {
       "id": "dec72a4f204c",
@@ -68,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.788
+      "rank_score": 0.7742
     },
     {
       "id": "67b034bb6c58",
@@ -84,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7849
+      "rank_score": 0.7712
     },
     {
       "id": "123ee15fa287",
@@ -100,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7836
+      "rank_score": 0.77
     },
     {
       "id": "6d2d955a63e4",
@@ -109,14 +173,14 @@
       "source_id": "hn",
       "url": "https://www.theguardian.com/commentisfree/2026/jul/09/ai-artificial-intelligence-benefits-costs-datacentres-energy-water-environment",
       "published_at": "2026-07-08T19:18:07+00:00",
-      "summary": "6 points and 0 comments on Hacker News.",
+      "summary": "8 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5496
+      "rank_score": 0.5372
     },
     {
       "id": "37ceddeee064",
@@ -132,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5451
+      "rank_score": 0.5315
     },
     {
       "id": "127f2e6c5796",
@@ -148,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.778
+      "rank_score": 0.7645
     },
     {
       "id": "a5342c550d44",
@@ -164,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7732
+      "rank_score": 0.7599
     },
     {
       "id": "9476dece600b",
@@ -180,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.769
+      "rank_score": 0.756
     },
     {
       "id": "963a6870c5aa",
@@ -196,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7678
+      "rank_score": 0.7548
     },
     {
       "id": "efaf55cef858",
@@ -212,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7678
+      "rank_score": 0.7548
     },
     {
       "id": "f3111ce02867",
@@ -228,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.53
+      "rank_score": 0.5171
     },
     {
       "id": "c28926501691",
@@ -244,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8255
+      "rank_score": 0.8126
     },
     {
       "id": "bd2837755c07",
@@ -260,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.799
+      "rank_score": 0.7862
     },
     {
       "id": "2f30f5e21698",
@@ -276,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8237
+      "rank_score": 0.8108
     },
     {
       "id": "967680726baf",
@@ -292,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7591
+      "rank_score": 0.7465
     },
     {
       "id": "41b85c9cdb7a",
@@ -308,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7803
+      "rank_score": 0.7682
     },
     {
       "id": "eaad4cbcfa7f",
@@ -324,71 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7772
-    },
-    {
-      "id": "690f05c71d21",
-      "headline": "Your gaming data could be the secret to AGI, according to this Bezos-backed startup",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/podcast/your-gaming-data-could-be-the-secret-to-agi-according-to-this-bezos-backed-startup/",
-      "published_at": "2026-07-08T13:00:00+00:00",
-      "summary": "When it comes to achieving artificial general intelligence (AGI), large language models just don’t have what it takes. Models like ChatGPT and Claude are great at text, but they’re less skilled at understanding how things actually move…",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7422
-    },
-    {
-      "id": "fcbb5886d3a9",
-      "headline": "Former OpenAI exec Kevin Weil is now on the board of Stoke Space",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/former-openai-exec-kevin-weil-is-now-on-the-board-of-stoke-space/",
-      "published_at": "2026-07-08T12:00:00+00:00",
-      "summary": "Kevin Weil's new role at Stoke Space suggests reusable rockets are the next hot thing in Silicon Valley.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7361
-    },
-    {
-      "id": "de9286311527",
-      "headline": "Helping K–12 educators build practical AI skills",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/k-12-educators-practical-skills",
-      "published_at": "2026-07-08T10:00:00+00:00",
-      "summary": "OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroom.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7593
-    },
-    {
-      "id": "2e1d33d54662",
-      "headline": "Hot French startup ZML releases free product to speed inference across lots of AI chips",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/",
-      "published_at": "2026-07-08T08:00:00+00:00",
-      "summary": "ZML, a hot French AI startup endorsed by Turing Award winner Yann LeCun, has now released ZML/LLMD, software that could make running AI less costly.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.713
+      "rank_score": 0.7652
     }
   ]
 }
