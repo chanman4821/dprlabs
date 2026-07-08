@@ -1,0 +1,25 @@
+{
+  "id": "m1",
+  "title": "Prompts That Actually Work",
+  "goal": "Write clear prompts that get usable results on the first try.",
+  "badge": { "id": "prompt_smith", "name": "Prompt Smith" },
+  "lessons": [
+    {
+      "id": "l0",
+      "title": "Anatomy of a Working Prompt",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>A working prompt isn't a magic phrase. It's four plain parts, and when you include them you stop getting vague junk back.</p><ul><li><b>Role</b> — who the AI should act as (for example, 'you are a coffee shop owner').</li><li><b>Context</b> — the situation ('launching a new oat-milk latte').</li><li><b>Task</b> — the exact thing to do ('write 3 Instagram captions').</li><li><b>Format</b> — what the answer should look like ('each under 15 words, friendly').</li></ul><p>Leave parts out and the AI guesses. Guessing is where slop comes from. Try the quick check below — pick an answer and you'll see exactly why it works or doesn't.</p>" },
+        { "type": "quiz", "id": "q1", "required": true, "question": "Which of these prompts will actually get you a usable result?", "options": [
+          { "id": "a", "text": "Write something about coffee.", "correct": false, "explain": "Too vague. No role, no real task, no format — you'll get generic filler." },
+          { "id": "b", "text": "You are a coffee shop owner launching an oat-milk latte. Write 3 Instagram captions, each under 15 words, friendly tone.", "correct": true, "explain": "Role, context, a clear task, and a format with limits. That's a prompt that returns something you can actually post." },
+          { "id": "c", "text": "Make it good.", "correct": false, "explain": "There's nothing to act on — no task, no context. The AI has to invent everything." },
+          { "id": "d", "text": "coffee latte captions please thanks", "correct": false, "explain": "A topic, but no role, no count, no length, no tone. The model still has to guess most of it." }
+        ] }
+      ]
+    },
+    { "id": "l1", "title": "Role, Context, and Output Format", "live": false },
+    { "id": "l2", "title": "Rewrite a Weak Prompt", "live": false },
+    { "id": "l3", "title": "Good vs Bad Prompt, Side by Side", "live": false }
+  ]
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lesson — Interactive AI Training | DPR AI</title>
+<meta name="description" content="A hands-on lesson in DPR AI's free interactive training. Read a little, then practice with clickable exercises and honest feedback." />
+<meta name="theme-color" content="#ffffff" />
+<meta name="robots" content="noindex, follow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=11" />
+<link rel="stylesheet" href="css/train.css?v=1" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../free/">Free tools</a><div class="learn"><button class="learn-trigger on" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="../guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="../kb/index.html">Knowledge Base<span class="desc">Reference articles &amp; how-tos.</span></a><a role="menuitem" href="../blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="index.html" aria-current="page">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="../news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a><a role="menuitem" href="../free/">Free tools<span class="desc">Download the agent — free.</span></a></div></div><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../free/">Free tools</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="index.html">Training</a><a href="../news/index.html">News</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="sec"><div class="wrap t-lesson">
+    <p class="t-crumbs"><a href="index.html">Training</a> / <a id="l-crumb-mod" href="#">Module</a> / <span id="l-title-crumb">Lesson</span></p>
+    <h1 id="l-title" style="margin:0 0 22px">Loading…</h1>
+    <div id="l-body"></div>
+    <div class="t-complete">
+      <button id="mark" class="btn btn-primary" disabled>Mark lesson complete</button>
+      <span class="hint" id="mark-hint"></span>
+      <a id="l-back" href="index.html" class="btn btn-ghost" style="margin-left:auto">← Back to module</a>
+    </div>
+  </div></section>
+</main>
+
+<div class="t-toast" id="toast" role="status" aria-live="polite"></div>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../case-studies.html">Case studies</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="../free/">Free tools</a><a href="index.html">Training</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<script src="../site.js?v=11" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+<script type="module">
+  import { renderLesson } from './js/render.js';
+  import { completeLesson, lessonComplete, moduleProgress } from './js/progress.js';
+  import { awardBadge } from './js/badges.js';
+
+  const params = new URLSearchParams(location.search);
+  const mid = params.get('m') || 'm1';
+  const lid = params.get('l') || 'l0';
+
+  fetch(`content/${mid}.json`).then((r) => r.json()).then((mod) => {
+    const lesson = mod.lessons.find((x) => x.id === lid);
+    if (!lesson || !lesson.blocks) { document.getElementById('l-title').textContent = 'This lesson is coming soon.'; document.getElementById('mark').remove(); return; }
+    const total = mod.lessons.length;
+    const crumb = document.getElementById('l-crumb-mod');
+    crumb.textContent = mod.title; crumb.href = `module.html?m=${mid}`;
+    document.getElementById('l-title-crumb').textContent = lesson.title;
+    document.getElementById('l-title').textContent = lesson.title;
+    document.getElementById('l-back').href = `module.html?m=${mid}`;
+
+    const btn = document.getElementById('mark');
+    const hint = document.getElementById('mark-hint');
+    let done = lessonComplete(mid, lid);
+    let state = { requiredMet: false, required: [] };
+
+    renderLesson(document.getElementById('l-body'), lesson, { mid, lid }, (s) => { state = s; sync(); });
+
+    function sync() {
+      const ready = done || state.requiredMet;
+      btn.disabled = !ready;
+      btn.textContent = done ? 'Completed \u2713' : 'Mark lesson complete';
+      hint.textContent = (ready || !state.required.length) ? '' : 'Finish the exercise above to unlock this.';
+    }
+    sync();
+
+    btn.addEventListener('click', () => {
+      if (btn.disabled || done) return;
+      completeLesson(mid, lid, total);
+      done = true;
+      let msg = 'Lesson complete \u2713';
+      if (moduleProgress(mid, total).percent === 100) {
+        if (awardBadge(mod.badge.id, mid)) msg = `Badge earned: ${mod.badge.name} \u2605`;
+      }
+      const t = document.getElementById('toast');
+      t.textContent = msg; t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3400);
+      sync();
+    });
+  }).catch(() => { document.getElementById('l-title').textContent = 'Could not load this lesson.'; });
+</script>
+</body>
+</html>

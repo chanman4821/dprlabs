@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "modules": [
+    { "id": "m1", "title": "Prompts That Actually Work", "goal": "Write clear prompts that get usable results on the first try.", "badge": { "id": "prompt_smith", "name": "Prompt Smith" }, "lessonCount": 4, "live": true },
+    { "id": "m2", "title": "The AI Tool Landscape", "goal": "Pick the right AI tool for each job and know how to drive it.", "badge": { "id": "tool_scout", "name": "Tool Scout" }, "lessonCount": 4, "live": false },
+    { "id": "m3", "title": "Reading & Changing Code with AI", "goal": "Safely read, understand, and edit your product's code using AI.", "badge": { "id": "code_whisperer", "name": "Code Whisperer" }, "lessonCount": 4, "live": false },
+    { "id": "m4", "title": "Getting Real Work Done with Claude", "goal": "Use Claude day to day for real business tasks.", "badge": { "id": "claude_operator", "name": "Claude Operator" }, "lessonCount": 4, "live": false },
+    { "id": "m5", "title": "Slop, Business Impact & Owning It", "goal": "Spot slop, apply AI to real work, and measure what you ship.", "badge": { "id": "ai_owner", "name": "AI Owner" }, "lessonCount": 4, "live": false }
+  ]
+}
