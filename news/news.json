@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "generated_at": "2026-07-08T18:24:36.796811+00:00",
+    "version": 1,
+    "count": 24,
+    "note": "Faithful, extractive summaries; every item links to its original source."
+  },
+  "items": [
+    {
+      "id": "a5342c550d44",
+      "headline": "Why this CEO thinks video games make better training data than the internet",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet/",
+      "published_at": "2026-07-08T17:47:55+00:00",
+      "summary": "When it comes to achieving artificial general intelligence (AGI), large language models just don’t have what it takes. Models like ChatGPT and Claude are great at text, but they’re less skilled at understanding how things actually move…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.7931
+    },
+    {
+      "id": "9476dece600b",
+      "headline": "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/",
+      "published_at": "2026-07-08T17:11:18+00:00",
+      "summary": "Meta is adding a new safeguard to stop people from secretly recording others with its AI glasses. But the update comes as the company continues to expand how much personal data its AI products collect and use.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.7887
+    },
+    {
+      "id": "963a6870c5aa",
+      "headline": "ChatGPT’s upgraded voice mode is better at shutting up",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/962856/chatgpt-upgraded-voice-mode-gpt-live",
+      "published_at": "2026-07-08T17:00:00+00:00",
+      "summary": "OpenAI is overhauling ChatGPT's voice mode with a new model that it says is more like \"talking to another person.\" The new GPT-Live-1 is designed to interrupt you less and will also wait for you to continue speaking if you pause…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.7874
+    },
+    {
+      "id": "efaf55cef858",
+      "headline": "OpenAI releases new voice models for more natural live conversations",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
+      "published_at": "2026-07-08T17:00:00+00:00",
+      "summary": "OpenAI says its new voice mode can speak and listen at the same time, a key ability for live translation.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.7874
+    },
+    {
+      "id": "f3111ce02867",
+      "headline": "Pritzker signs Illinois bill aimed at artificial intelligence accountability",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.cbsnews.com/chicago/news/pritzker-to-sign-illinois-bill-aimed-artificial-intelligence-accountability/",
+      "published_at": "2026-07-08T16:52:15+00:00",
+      "summary": "1 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "credibility": 0.6,
+      "rank_score": 0.5496
+    },
+    {
+      "id": "c28926501691",
+      "headline": "Google updates Android Bench with new LLMs, but Gemini still lags behind",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/google/2026/07/google-revamps-android-ai-dev-benchmark-adds-fable-5-and-other-agents/",
+      "published_at": "2026-07-08T16:39:48+00:00",
+      "summary": "Android Bench is evolving, and developers can help guide that process.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.845
+    },
+    {
+      "id": "bd2837755c07",
+      "headline": "EmTech AI 2026: The Rise of the AI Platform",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/08/1140223/emtech-ai-2026-the-rise-of-the-ai-platform/",
+      "published_at": "2026-07-08T16:26:10+00:00",
+      "summary": "EmTech AI 2026: The Rise of the AI Platform",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "credibility": 0.95,
+      "rank_score": 0.8184
+    },
+    {
+      "id": "2f30f5e21698",
+      "headline": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+      "published_at": "2026-07-08T16:22:38+00:00",
+      "summary": "Founded in 2024, Prime Intellect’s goal is to give organizations capabilities to train their own agentic systems without relying on frontier AI labs.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.843
+    },
+    {
+      "id": "967680726baf",
+      "headline": "These AI startups are growing revenue at faster and faster rates",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/08/these-ai-startups-are-growing-revenue-at-faster-and-faster-rates/",
+      "published_at": "2026-07-08T15:41:06+00:00",
+      "summary": "There are a lot of fast-growing AI startups, but some are growing even faster, they say.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.7782
+    },
+    {
+      "id": "690f05c71d21",
+      "headline": "Your gaming data could be the secret to AGI, according to this Bezos-backed startup",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/podcast/your-gaming-data-could-be-the-secret-to-agi-according-to-this-bezos-backed-startup/",
+      "published_at": "2026-07-08T13:00:00+00:00",
+      "summary": "When it comes to achieving artificial general intelligence (AGI), large language models just don’t have what it takes. Models like ChatGPT and Claude are great at text, but they’re less skilled at understanding how things actually move…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.7602
+    },
+    {
+      "id": "fcbb5886d3a9",
+      "headline": "Former OpenAI exec Kevin Weil is now on the board of Stoke Space",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/08/former-openai-exec-kevin-weil-is-now-on-the-board-of-stoke-space/",
+      "published_at": "2026-07-08T12:00:00+00:00",
+      "summary": "Kevin Weil's new role at Stoke Space suggests reusable rockets are the next hot thing in Silicon Valley.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.7537
+    },
+    {
+      "id": "de9286311527",
+      "headline": "Helping K–12 educators build practical AI skills",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/k-12-educators-practical-skills",
+      "published_at": "2026-07-08T10:00:00+00:00",
+      "summary": "OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroom.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "credibility": 0.95,
+      "rank_score": 0.7762
+    },
+    {
+      "id": "2e1d33d54662",
+      "headline": "Hot French startup ZML releases free product to speed inference across lots of AI chips",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/",
+      "published_at": "2026-07-08T08:00:00+00:00",
+      "summary": "ZML, a hot French AI startup endorsed by Turing Award winner Yann LeCun, has now released ZML/LLMD, software that could make running AI less costly.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.7293
+    },
+    {
+      "id": "4238b4b67de1",
+      "headline": "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+      "published_at": "2026-07-08T07:16:00+00:00",
+      "summary": "AI chip maker SambaNova has raised at an $11 billion valuation months after Intel was rumored to be trying to buy it for about $1.6 billion.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.785
+    },
+    {
+      "id": "85e90d55efed",
+      "headline": "Hackers can use 9 of the most popular AI tools to assemble massive botnets",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/",
+      "published_at": "2026-07-08T07:00:51+00:00",
+      "summary": "\"HalluSquatting\" weaponizes LLMs' inability to say \"I don't know.\"",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "credibility": 0.85,
+      "rank_score": 0.7235
+    },
+    {
+      "id": "13e85d8b87e9",
+      "headline": "Prompt-to-Paper: Agentic AI System for Bioinformatics",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.05456",
+      "published_at": "2026-07-08T04:00:00+00:00",
+      "summary": "arXiv:2607.05456v1 Announce Type: new Abstract: While recent advances in large language models have enabled end-to-end automated manuscript generation, existing systems suffer from three critical deficiencies: (i) generated claims are not…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "credibility": 0.9,
+      "rank_score": 0.7242
+    },
+    {
+      "id": "5a6352017520",
+      "headline": "From Graphs to Gradients: Physics-Inspired Structural Attribution for Cyber-Physical IoT Systems and Beyond",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.05563",
+      "published_at": "2026-07-08T04:00:00+00:00",
+      "summary": "arXiv:2607.05563v1 Announce Type: new Abstract: Interpretable explanation methods in Artificial Intelligence aim to uncover the underlying causes and their effects, enabling a deeper understanding of why a system behaves in a certain way…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "credibility": 0.9,
+      "rank_score": 0.7242
+    },
+    {
+      "id": "01af1d0f85ed",
+      "headline": "CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.05571",
+      "published_at": "2026-07-08T04:00:00+00:00",
+      "summary": "arXiv:2607.05571v1 Announce Type: new Abstract: Large language models are increasingly explored as AI tutors, yet deploying them in K-12 settings raises concerns around privacy, cost, and reliance on proprietary models. Small language…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "credibility": 0.9,
+      "rank_score": 0.7242
+    },
+    {
+      "id": "7182eca640dd",
+      "headline": "Foundation Models for Automatic CAD Generation",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.05573",
+      "published_at": "2026-07-08T04:00:00+00:00",
+      "summary": "arXiv:2607.05573v1 Announce Type: new Abstract: Recent advances in Large Language Models (LLMs) and Vision-Language Models (VLMs) enable the automatic generation of parametric 3D designs from natural-language specifications. This chapter…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "credibility": 0.9,
+      "rank_score": 0.7242
+    },
+    {
+      "id": "b7531c0c1e29",
+      "headline": "Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.05577",
+      "published_at": "2026-07-08T04:00:00+00:00",
+      "summary": "arXiv:2607.05577v1 Announce Type: new Abstract: Long-form fiction writers need memory that answers multi-hop questions about evolving story state: who knows a secret and when they learned it, whether an event preceded the narration that…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "credibility": 0.9,
+      "rank_score": 0.7242
+    },
+    {
+      "id": "309a25771085",
+      "headline": "FirstResearch: Auditable Question Formation for LLM Scientific Discovery Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.05682",
+      "published_at": "2026-07-08T04:00:00+00:00",
+      "summary": "arXiv:2607.05682v1 Announce Type: new Abstract: LLM systems for scientific discovery increasingly assist with ideation, literature synthesis, experiment planning, and report generation, but the first research question they propose can…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "credibility": 0.9,
+      "rank_score": 0.7242
+    },
+    {
+      "id": "1b817acf85f1",
+      "headline": "Memory in the Loop: In-Process Retrieval as ExtendedWorking Memory for Language Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.05690",
+      "published_at": "2026-07-08T04:00:00+00:00",
+      "summary": "arXiv:2607.05690v1 Announce Type: new Abstract: Language agents run a loop - observe, reason, act - but the memory they reason over sits outside it: a store queried at most once per turn. We study the regime where memory moves inside the…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "credibility": 0.9,
+      "rank_score": 0.7242
+    },
+    {
+      "id": "a24bc131c82a",
+      "headline": "Akashic: A Low-Overhead LLM Inference Service with MemAttention",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.05708",
+      "published_at": "2026-07-08T04:00:00+00:00",
+      "summary": "arXiv:2607.05708v1 Announce Type: new Abstract: Recent LLM-based agent systems continuously accumulate context across multi-turn interactions, tool invocations, and cross-session workflows. Replaying the full history for every request…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "credibility": 0.9,
+      "rank_score": 0.7242
+    },
+    {
+      "id": "3bbcc0d8c3e7",
+      "headline": "ArtisanCAD: An Industrial-Level CAD Agent with Expert-Grounded Knowledge Distillation",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.05750",
+      "published_at": "2026-07-08T04:00:00+00:00",
+      "summary": "arXiv:2607.05750v1 Announce Type: new Abstract: Computer-aided design (CAD) for industrial components requires long-horizon procedural modeling, robust feature dependencies, editable parametric geometry, and production-grade B-Rep…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "credibility": 0.9,
+      "rank_score": 0.7242
+    }
+  ]
+}

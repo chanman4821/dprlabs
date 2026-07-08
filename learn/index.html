@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Training — practice AI prompting hands-on | DPR AI</title>
+<meta name="description" content="A free, hands-on AI training center. Build strong prompts with a guided builder, get transparent feedback (visible rules, never a fake AI score), and save your best prompts to an exportable library. No sign-up." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=10" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<style>
+  .l-badge{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.11em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line-2);border-radius:999px;padding:6px 13px;background:var(--accent-soft)}
+  .l-hero{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+  .l-hero .txt{flex:1;min-width:280px}
+  .l-hero img{width:132px;height:auto;flex:0 0 auto}
+  .pb{border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);overflow:hidden;margin-top:8px}
+  .pb-head{display:flex;align-items:center;gap:12px;padding:20px 24px;border-bottom:1px solid var(--line)}
+  .pb-head img{width:34px;height:34px}
+  .pb-head h2{font-size:19px;margin:0}
+  .pb-head p{margin:2px 0 0;font-size:13px;color:var(--faint)}
+  .pb-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  .pb-fields{padding:22px 24px;border-right:1px solid var(--line)}
+  .pb-out{padding:22px 24px;background:var(--bg-soft)}
+  .pb-field{margin-bottom:16px}
+  .pb-field label{display:block;font-size:13px;font-weight:600;margin-bottom:5px}
+  .pb-field .hint{font-weight:400;color:var(--faint);font-size:12px}
+  .pb-field input,.pb-field textarea{width:100%;border:1px solid var(--line-2);border-radius:10px;padding:10px 12px;font:inherit;font-size:14px;background:#fff;color:var(--ink)}
+  .pb-field textarea{resize:vertical;min-height:56px}
+  .pb-field input:focus,.pb-field textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  .pb-out .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 8px;display:block}
+  #pb-preview{width:100%;min-height:210px;border:1px solid var(--line-2);border-radius:10px;padding:12px 14px;font-family:var(--mono);font-size:13px;line-height:1.6;background:#fff;color:var(--ink);resize:vertical}
+  .pb-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .pb-note{font-size:12px;color:var(--faint);margin-top:10px}
+  .pb-check{list-style:none;margin:16px 0 0;padding:0}
+  .pb-check li{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:var(--muted);margin-bottom:7px}
+  .pb-check .mk{width:18px;height:18px;flex:0 0 auto;border-radius:5px;border:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--faint);margin-top:1px}
+  .pb-check li.on{color:var(--ink-2)}
+  .pb-check li.on .mk{background:var(--accent);border-color:var(--accent);color:#fff}
+  .pb-check li.req.off .mk{border-color:#c0392b;color:#c0392b}
+  .lib{border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:22px 24px;margin-top:22px}
+  .lib-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .lib-head h2{font-size:18px;margin:0}
+  .lib-actions{display:flex;gap:8px;flex-wrap:wrap}
+  .lib-empty{color:var(--faint);font-size:14px;margin:14px 0 0}
+  .lib-list{list-style:none;margin:16px 0 0;padding:0}
+  .lib-item{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px;background:var(--bg-soft)}
+  .lib-item .t{font-size:14px;font-weight:600;margin:0}
+  .lib-item .d{font-family:var(--mono);font-size:11px;color:var(--faint);margin:2px 0 0}
+  .lib-item pre{white-space:pre-wrap;font-family:var(--mono);font-size:12px;color:var(--muted);margin:8px 0 0;max-height:80px;overflow:auto}
+  .lib-item .row{display:flex;gap:8px;margin-top:8px}
+  .btn-sm{font-size:12.5px;padding:6px 12px;border-radius:8px;border:1px solid var(--line-2);background:#fff;color:var(--ink);cursor:pointer;font:inherit;font-weight:500}
+  .btn-sm:hover{border-color:var(--accent);color:var(--accent)}
+  .btn-sm.danger:hover{border-color:#c0392b;color:#c0392b}
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:10px;font-size:13.5px;opacity:0;pointer-events:none;transition:.25s ease;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .more{border:1px dashed var(--line-2);border-radius:var(--radius);background:var(--bg-soft);padding:20px 24px;margin-top:22px}
+  .more h3{font-size:15px;margin:0 0 12px}
+  .more ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px;line-height:1.9}
+  .more .soon{font-family:var(--mono);font-size:10px;color:var(--faint);text-transform:uppercase;letter-spacing:.06em}
+  @media(max-width:760px){.pb-grid{grid-template-columns:1fr}.pb-fields{border-right:0;border-bottom:1px solid var(--line)}}
+</style>
+<link rel="canonical" href="https://dprai.io/learn/" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DPR AI" />
+<meta property="og:title" content="Training — practice AI prompting hands-on | DPR AI" />
+<meta property="og:description" content="A free, hands-on AI training center. Build strong prompts with a guided builder, get transparent feedback (visible rules, never a fake AI score), and save your best prompts to an exportable library. No sign-up." />
+<meta property="og:url" content="https://dprai.io/learn/" />
+<meta property="og:image" content="https://dprai.io/assets/og-default.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Training — practice AI prompting hands-on | DPR AI" />
+<meta name="twitter:description" content="A free, hands-on AI training center. Build strong prompts with a guided builder, get transparent feedback (visible rules, never a fake AI score), and save your best prompts to an exportable library. No sign-up." />
+<meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="../learn/index.html" aria-current="page">Training</a><a href="../news/index.html">News</a><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-ghost">Talk to us</a><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="../learn/index.html">Training</a><a href="../news/index.html">News</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal">
+      <div class="l-hero">
+        <div class="txt">
+          <p><span class="l-badge"><span aria-hidden="true" style="width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block"></span> Hands-on · no sign-up</span></p>
+          <h1 style="margin-top:18px">Practice AI. Don't just read about it.</h1>
+          <p class="lead" style="margin-top:16px">Build a strong prompt with a guided builder, see exactly what makes it work, and save your best ones to a library you can take anywhere. Everything runs in your browser — nothing is sent anywhere.</p>
+        </div>
+        <img src="../assets/learn/mascot_instrument_guide.png" alt="" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap reveal">
+
+      <div class="pb">
+        <div class="pb-head">
+          <img src="../assets/learn/icon_prompt_builder.png" alt="" loading="lazy">
+          <div><h2>Prompt Builder</h2><p>Fill the parts of a good prompt — a copy-ready prompt builds live.</p></div>
+        </div>
+        <div class="pb-grid">
+          <div class="pb-fields">
+            <div class="pb-field"><label for="pb-role">Role <span class="hint">— who the AI should act as</span></label><input id="pb-role" type="text" placeholder="a careful customer-support writer"></div>
+            <div class="pb-field"><label for="pb-task">Task <span class="hint">— the main thing you want (required)</span></label><textarea id="pb-task" placeholder="Write a short reply apologising for a late order and offering 10% off."></textarea></div>
+            <div class="pb-field"><label for="pb-context">Context <span class="hint">— background the AI can't guess</span></label><textarea id="pb-context" placeholder="Order #4471 shipped today. Customer name is Sam. We're a small bakery."></textarea></div>
+            <div class="pb-field"><label for="pb-constraints">Constraints <span class="hint">— limits, do's and don'ts</span></label><textarea id="pb-constraints" placeholder="Under 80 words. No emojis. Don't promise future discounts."></textarea></div>
+            <div class="pb-field"><label for="pb-format">Output format <span class="hint">— how you want the answer</span></label><input id="pb-format" type="text" placeholder="a plain email with a subject line"></div>
+            <div class="pb-field"><label for="pb-tone">Tone <span class="hint">— the voice</span></label><input id="pb-tone" type="text" placeholder="warm and sincere"></div>
+          </div>
+          <div class="pb-out">
+            <span class="k">Your prompt — copy into a real tool</span>
+            <textarea id="pb-preview" readonly aria-label="Your assembled prompt" placeholder="Fill in the fields — your prompt appears here…"></textarea>
+            <div class="pb-actions">
+              <button class="btn btn-primary" id="pb-copy" type="button">Copy prompt</button>
+              <button class="btn btn-ghost" id="pb-save" type="button">Save to library</button>
+              <button class="btn-sm" id="pb-clear" type="button">Clear fields</button>
+            </div>
+            <p class="pb-note">This tool only assembles your own words into a prompt. It never generates or fakes an AI answer — paste it into ChatGPT, Claude, or Gemini to run it.</p>
+            <ul class="pb-check" id="pb-check" aria-label="Prompt completeness checklist">
+              <li class="req off" data-k="task"><span class="mk" aria-hidden="true">✓</span><span><strong>Task</strong> — the one thing you want done. Without it the AI has nothing to do.</span></li>
+              <li class="off" data-k="role"><span class="mk" aria-hidden="true">✓</span><span><strong>Role</strong> — sets tone and focus in one line.</span></li>
+              <li class="off" data-k="context"><span class="mk" aria-hidden="true">✓</span><span><strong>Context</strong> — the details the AI can't know on its own.</span></li>
+              <li class="off" data-k="constraints"><span class="mk" aria-hidden="true">✓</span><span><strong>Constraints</strong> — length, do's and don'ts, boundaries.</span></li>
+              <li class="off" data-k="format"><span class="mk" aria-hidden="true">✓</span><span><strong>Format</strong> — the shape of the answer you want back.</span></li>
+              <li class="off" data-k="tone"><span class="mk" aria-hidden="true">✓</span><span><strong>Tone</strong> — the voice it should use.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lib">
+        <div class="lib-head">
+          <h2>Your Prompt Library</h2>
+          <div class="lib-actions">
+            <button class="btn-sm" id="lib-copyall" type="button">Copy all</button>
+            <button class="btn-sm" id="lib-export" type="button">Export</button>
+            <button class="btn-sm danger" id="lib-clear" type="button">Clear</button>
+          </div>
+        </div>
+        <p class="lib-empty" id="lib-empty">No saved prompts yet — build one above and hit “Save to library”. It's stored in your browser, and you can export it any time.</p>
+        <ul class="lib-list" id="lib-list"></ul>
+      </div>
+
+      <div class="more">
+        <h3>More exercises coming to Training</h3>
+        <ul>
+          <li>Fix-the-Prompt — improve a weak prompt, then compare to a curated stronger version <span class="soon">soon</span></li>
+          <li>Transparent Prompt Grader — check a prompt against visible rules <span class="soon">soon</span></li>
+          <li>Context &amp; constraint drills, and short quizzes <span class="soon">soon</span></li>
+          <li>Optional Live Sandbox — bring your own AI key and run a prompt in-page <span class="soon">soon</span></li>
+        </ul>
+      </div>
+
+      <p class="reveal" style="margin-top:22px;color:var(--faint);font-size:13.5px">New to prompting? Read <a href="../guide/index.html" class="txt-link" style="color:var(--accent)">the free Learn AI guide</a> first, or look up the details in the <a href="../kb/index.html" class="txt-link" style="color:var(--accent)">Knowledge Base</a>.</p>
+
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Learn</h4><a href="../guide/index.html">Learn AI (free guide)</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="index.html">Training</a></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+
+<script>
+(function(){
+  'use strict';
+  var ids = ['role','task','context','constraints','format','tone'];
+  var el = {};
+  ids.forEach(function(id){ el[id] = document.getElementById('pb-'+id); });
+  var preview = document.getElementById('pb-preview');
+  var check = document.getElementById('pb-check');
+  var toast = document.getElementById('toast');
+  var LKEY = 'dpr_prompt_library_v1';
+  var tmr;
+  function say(msg){ toast.textContent = msg; toast.classList.add('show'); clearTimeout(tmr); tmr = setTimeout(function(){ toast.classList.remove('show'); }, 1800); }
+  function val(id){ return (el[id].value || '').trim(); }
+
+  function build(){
+    var p = '';
+    if(val('role'))        p += 'You are ' + val('role') + '.\n\n';
+    if(val('task'))        p += val('task') + '\n\n';
+    if(val('context'))     p += 'Context:\n' + val('context') + '\n\n';
+    if(val('constraints')) p += 'Constraints:\n' + val('constraints') + '\n\n';
+    if(val('format'))      p += 'Format the response as: ' + val('format') + '.\n';
+    if(val('tone'))        p += 'Tone: ' + val('tone') + '.\n';
+    preview.value = p.trim();
+    var items = check.querySelectorAll('li');
+    for(var i=0;i<items.length;i++){
+      var k = items[i].getAttribute('data-k');
+      var on = !!val(k);
+      items[i].classList.toggle('on', on);
+      items[i].classList.toggle('off', !on);
+    }
+  }
+  ids.forEach(function(id){ el[id].addEventListener('input', build); });
+
+  document.getElementById('pb-copy').addEventListener('click', function(){
+    var t = preview.value.trim();
+    if(!t){ say('Add a task first.'); return; }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(t).then(function(){ say('Prompt copied.'); }, function(){ fallbackCopy(t); });
+    } else { fallbackCopy(t); }
+  });
+  function fallbackCopy(t){ preview.removeAttribute('readonly'); preview.select(); try{ document.execCommand('copy'); say('Prompt copied.'); }catch(e){ say('Select the text and copy manually.'); } preview.setAttribute('readonly',''); }
+
+  function loadLib(){ try{ return JSON.parse(localStorage.getItem(LKEY)) || []; }catch(e){ return []; } }
+  function saveLib(a){ try{ localStorage.setItem(LKEY, JSON.stringify(a)); }catch(e){} }
+  function fmtDate(d){ var x=new Date(d); return x.toLocaleDateString(undefined,{month:'short',day:'numeric'})+' '+x.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'}); }
+  function titleFrom(t){ var s = (val('task') || t.split('\n')[0] || 'Prompt'); s = s.trim(); return s.length>52 ? s.slice(0,52)+'…' : (s||'Prompt'); }
+  function renderLib(){
+    var list = document.getElementById('lib-list');
+    var empty = document.getElementById('lib-empty');
+    var lib = loadLib();
+    list.innerHTML = '';
+    empty.style.display = lib.length ? 'none' : 'block';
+    lib.forEach(function(item, idx){
+      var li = document.createElement('li'); li.className = 'lib-item';
+      var h = document.createElement('p'); h.className='t'; h.textContent = item.title;
+      var d = document.createElement('p'); d.className='d'; d.textContent = fmtDate(item.date);
+      var pre = document.createElement('pre'); pre.textContent = item.text;
+      var row = document.createElement('div'); row.className='row';
+      var cp = document.createElement('button'); cp.className='btn-sm'; cp.type='button'; cp.textContent='Copy';
+      cp.addEventListener('click', function(){ if(navigator.clipboard){ navigator.clipboard.writeText(item.text).then(function(){ say('Copied.'); }); } });
+      var del = document.createElement('button'); del.className='btn-sm danger'; del.type='button'; del.textContent='Delete';
+      del.addEventListener('click', function(){ var a=loadLib(); a.splice(idx,1); saveLib(a); renderLib(); say('Deleted.'); });
+      row.appendChild(cp); row.appendChild(del);
+      li.appendChild(h); li.appendChild(d); li.appendChild(pre); li.appendChild(row);
+      list.appendChild(li);
+    });
+  }
+  document.getElementById('pb-save').addEventListener('click', function(){
+    var t = preview.value.trim();
+    if(!t){ say('Build a prompt first.'); return; }
+    var lib = loadLib();
+    lib.unshift({ title: titleFrom(t), text: t, date: Date.now() });
+    saveLib(lib); renderLib(); say('Saved to your library.');
+  });
+  document.getElementById('pb-clear').addEventListener('click', function(){
+    ids.forEach(function(id){ el[id].value=''; }); build(); el.role.focus(); say('Cleared.');
+  });
+  document.getElementById('lib-copyall').addEventListener('click', function(){
+    var lib = loadLib(); if(!lib.length){ say('Nothing saved yet.'); return; }
+    var all = lib.map(function(x){ return '### '+x.title+'\n'+x.text; }).join('\n\n---\n\n');
+    if(navigator.clipboard){ navigator.clipboard.writeText(all).then(function(){ say('Copied all prompts.'); }); }
+  });
+  document.getElementById('lib-export').addEventListener('click', function(){
+    var lib = loadLib(); if(!lib.length){ say('Nothing to export.'); return; }
+    var blob = new Blob([JSON.stringify(lib, null, 2)], {type:'application/json'});
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a'); a.href=url; a.download='dpr-prompt-library.json'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
+    say('Exported.');
+  });
+  document.getElementById('lib-clear').addEventListener('click', function(){
+    if(!loadLib().length){ say('Already empty.'); return; }
+    localStorage.removeItem(LKEY); renderLib(); say('Library cleared.');
+  });
+
+  build(); renderLib();
+})();
+</script>
+<script src="../site.js?v=10" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+</body>
+</html>

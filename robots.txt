@@ -1,0 +1,10 @@
+# robots.txt — dprai.io
+User-agent: *
+Allow: /
+
+# No crawl of backup/experiment files
+Disallow: /*backup
+Disallow: /index.before-stepper.html
+Disallow: /index.pre-redesign-backup.html
+
+Sitemap: https://dprai.io/sitemap.xml
