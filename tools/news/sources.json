@@ -1,0 +1,17 @@
+{
+  "version": "1",
+  "updated_at": null,
+  "note": "Credible AI news source registry. Only real, reachable feeds. Managed by tools/news/agent.py (health) and tools/news/scout.py (discovery). Never invent a source or URL.",
+  "sources": [
+    {"id": "openai", "name": "OpenAI", "url": "https://openai.com/news/rss.xml", "type": "rss", "credibility": 0.95, "status": "active", "tier": "medium", "last_ok": null, "fails": 0, "added_by": "seed", "evidence": ["Official OpenAI news feed"]},
+    {"id": "deepmind", "name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "type": "rss", "credibility": 0.95, "status": "active", "tier": "medium", "last_ok": null, "fails": 0, "added_by": "seed", "evidence": ["Official DeepMind blog feed"]},
+    {"id": "theverge", "name": "The Verge", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "type": "rss", "credibility": 0.85, "status": "active", "tier": "high_velocity", "last_ok": null, "fails": 0, "added_by": "seed", "evidence": ["The Verge AI section feed"]},
+    {"id": "techcrunch", "name": "TechCrunch", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "type": "rss", "credibility": 0.85, "status": "active", "tier": "high_velocity", "last_ok": null, "fails": 0, "added_by": "seed", "evidence": ["TechCrunch AI category feed"]},
+    {"id": "arstechnica", "name": "Ars Technica", "url": "https://arstechnica.com/ai/feed/", "type": "rss", "credibility": 0.85, "status": "active", "tier": "high_velocity", "last_ok": null, "fails": 0, "added_by": "seed", "evidence": ["Ars Technica AI section feed"]},
+    {"id": "mittr", "name": "MIT Technology Review", "url": "https://www.technologyreview.com/feed/", "type": "rss", "credibility": 0.95, "status": "active", "tier": "medium", "last_ok": null, "fails": 0, "added_by": "seed", "evidence": ["MIT Technology Review main feed (AI-filtered)"]},
+    {"id": "arxiv", "name": "arXiv cs.AI", "url": "http://export.arxiv.org/rss/cs.AI", "type": "rss", "credibility": 0.90, "status": "active", "tier": "slow_lab_arxiv", "last_ok": null, "fails": 0, "added_by": "seed", "evidence": ["arXiv cs.AI category RSS"]},
+    {"id": "hn", "name": "Hacker News", "url": "https://hn.algolia.com/api/v1/search_by_date?tags=story&query=artificial%20intelligence&hitsPerPage=15", "type": "hn_algolia", "credibility": 0.6, "status": "active", "tier": "high_velocity", "last_ok": null, "fails": 0, "added_by": "seed", "evidence": ["Algolia HN Search API, AI query"]},
+    {"id": "anthropic", "name": "Anthropic", "url": "https://www.anthropic.com/news", "type": "html", "credibility": 0.95, "status": "candidate", "tier": "medium", "last_ok": null, "fails": 0, "added_by": "seed", "evidence": ["Lab; feed to be auto-discovered by scout"]},
+    {"id": "metaai", "name": "Meta AI", "url": "https://ai.meta.com/blog/", "type": "html", "credibility": 0.95, "status": "candidate", "tier": "medium", "last_ok": null, "fails": 0, "added_by": "seed", "evidence": ["Lab; feed to be auto-discovered by scout"]}
+  ]
+}
