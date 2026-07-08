@@ -172,14 +172,14 @@ window.DPR_FORM_ENDPOINT = window.DPR_FORM_ENDPOINT || 'https://formspree.io/f/Y
   // Investors nav item (desktop + mobile), inserted before About
   var nav = document.querySelector('.nav-links');
   if(nav && !nav.querySelector('[data-ir]')){
-    var about = nav.querySelector('a[href="about.html"]');
-    var a = document.createElement('a'); a.href='dataroom.html'; a.textContent='Investors'; a.setAttribute('data-ir','');
+    var about = nav.querySelector('a[href$="about.html"]');
+    var a = document.createElement('a'); a.href='/dataroom.html'; a.textContent='Investors'; a.setAttribute('data-ir','');
     about ? nav.insertBefore(a, about) : nav.appendChild(a);
   }
   var mm = document.getElementById('mobileMenu');
   if(mm && !mm.querySelector('[data-ir]')){
-    var lastM = mm.querySelector('a[href="contact.html"]');
-    var a2 = document.createElement('a'); a2.href='dataroom.html'; a2.textContent='Investors'; a2.setAttribute('data-ir','');
+    var lastM = mm.querySelector('a[href$="contact.html"]');
+    var a2 = document.createElement('a'); a2.href='/dataroom.html'; a2.textContent='Investors'; a2.setAttribute('data-ir','');
     lastM ? mm.insertBefore(a2, lastM) : mm.appendChild(a2);
   }
 
