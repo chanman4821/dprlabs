@@ -127,3 +127,15 @@
     });
   });
 })();
+
+/* Learn dropdown (desktop nav) */
+(function(){
+  var btn=document.getElementById('learnBtn'), menu=document.getElementById('learnMenu');
+  if(!btn||!menu) return;
+  function open(){menu.classList.add('open');btn.setAttribute('aria-expanded','true');}
+  function close(){menu.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+  btn.addEventListener('click',function(e){e.stopPropagation();(btn.getAttribute('aria-expanded')==='true')?close():open();});
+  document.addEventListener('click',function(e){if(!e.target.closest('.learn'))close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+})();

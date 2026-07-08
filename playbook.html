@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="site.css?v=10" />
+<link rel="stylesheet" href="site.css?v=11" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
 <style>
   .playbook-readiness-panel{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(18px,4vw,38px);align-items:center;margin-top:30px}
@@ -44,9 +44,9 @@
 <header class="nav">
   <div class="wrap nav-in">
     <a href="index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
-    <nav class="nav-links" aria-label="Primary"><a href="method.html">How it works</a><a href="guide/index.html">Learn AI</a><a href="kb/index.html">Knowledge Base</a><a href="blog/index.html">Field Notes</a><a href="learn/index.html">Training</a><a href="news/index.html">News</a><a href="about.html">About</a></nav>
+    <nav class="nav-links" aria-label="Primary"><a href="method.html">How it works</a><div class="learn"><button class="learn-trigger" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="guide/index.html">Learn AI<span class="desc">Free plain-English guide.</span></a><a role="menuitem" href="kb/index.html">Knowledge Base<span class="desc">Reference articles & how-tos.</span></a><a role="menuitem" href="blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="learn/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a></div></div><a href="about.html">About</a></nav>
     <span class="nav-sp"></span>
-    <div class="nav-cta"><a href="contact.html" class="btn btn-ghost">Talk to us</a><a href="contact.html" class="btn btn-primary">Start a build</a></div>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Start a build</a></div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobileMenu"><a href="method.html">How it works</a><a href="guide/index.html">Learn AI</a><a href="kb/index.html">Knowledge Base</a><a href="blog/index.html">Field Notes</a><a href="learn/index.html">Training</a><a href="news/index.html">News</a><a href="about.html">About</a><a href="contact.html">Start a build</a></div>
@@ -173,7 +173,7 @@
     <div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
   </div>
 </footer>
-<script src="site.js?v=10" defer></script>
+<script src="site.js?v=11" defer></script>
 <script src="assets/anim.js?v=10" defer></script>
 <script src="assets/diagrams.js?v=10" defer></script>
 <script>
