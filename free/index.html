@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Free AI tools you own — DPR AI</title>
+<meta name="description" content="Free, open-source AI tools that run on your own machine and your own API key. Start with the Inbox-to-Action Agent: paste a message thread, get a summary, a draft reply, and an action list. No account, no telemetry. MIT licensed." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="canonical" href="https://dprai.io/free/" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DPR AI" />
+<meta property="og:title" content="Free AI tools you own — DPR AI" />
+<meta property="og:description" content="Open-source AI tools that run locally on your own key. The Inbox-to-Action Agent turns any message thread into a summary, a draft reply, and an action list. No account, no telemetry. MIT." />
+<meta property="og:url" content="https://dprai.io/free/" />
+<meta property="og:image" content="https://dprai.io/assets/og-default.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Free AI tools you own — DPR AI" />
+<meta name="twitter:description" content="Open-source AI tools that run locally on your own key. The Inbox-to-Action Agent turns any thread into a summary, a draft reply, and an action list. MIT." />
+<meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=11" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Inbox-to-Action Agent",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Windows, macOS, Linux",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "A local, bring-your-own-key command-line tool that turns a message thread into a summary, a draft reply, and an action list. Python stdlib only, no telemetry, MIT licensed.",
+  "license": "https://opensource.org/licenses/MIT",
+  "downloadUrl": "https://github.com/chanman4821/inbox-to-action",
+  "author": { "@type": "Organization", "name": "DPR AI", "url": "https://dprai.io" }
+}
+</script>
+<style>
+  .tool{border:1px solid var(--accent);border-radius:var(--radius);background:#fff;box-shadow:0 18px 44px rgba(59,91,219,.12);padding:clamp(24px,4vw,38px);margin-top:8px;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(22px,4vw,40px);align-items:start}
+  .tool .badge{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:3px 10px}
+  .tool h2{font-size:clamp(23px,3vw,30px);letter-spacing:-.02em;margin:14px 0 6px}
+  .tool .lede{font-size:15.5px;color:var(--muted);line-height:1.6;margin:0 0 18px;max-width:52ch}
+  .does{list-style:none;margin:0 0 20px;padding:0}
+  .does li{position:relative;padding:9px 0 9px 30px;font-size:14.5px;color:var(--ink-2);line-height:1.5;border-top:1px solid var(--line)}
+  .does li:first-child{border-top:0}
+  .does li b{color:var(--ink)}
+  .does li::before{content:"";position:absolute;left:3px;top:15px;width:9px;height:9px;border-radius:50%;background:var(--accent-soft);border:1px solid var(--accent)}
+  .tool .btns{display:flex;gap:10px;flex-wrap:wrap}
+  .term{background:#0f1222;border:1px solid #232842;border-radius:14px;padding:18px 18px 16px;font-family:var(--mono);font-size:13px;line-height:1.7;color:#c9d1e6;overflow-x:auto}
+  .term .c{color:#7f8bb3}
+  .term .p{color:#7dd3a8}
+  .term b{color:#fff;font-weight:600}
+  .term .cap{display:block;color:#8b93b8;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
+  .why{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+  .why .c{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:var(--bg-soft)}
+  .why h3{font-size:14px;margin:0 0 5px}
+  .why p{font-size:13px;color:var(--muted);line-height:1.5;margin:0}
+  .bridge{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--gold-soft));padding:clamp(24px,4vw,34px);margin-top:26px}
+  .bridge h2{font-size:clamp(22px,3vw,28px);margin:6px 0 0}
+  .bridge p{color:var(--muted);margin:12px 0 18px;max-width:64ch;line-height:1.6}
+  .more{font-size:14px;color:var(--faint);margin-top:26px;text-align:center}
+  @media(max-width:860px){.tool{grid-template-columns:1fr}.why{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.why{grid-template-columns:1fr}}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><div class="learn"><button class="learn-trigger" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="../guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="../kb/index.html">Knowledge Base<span class="desc">Reference articles &amp; how-tos.</span></a><a role="menuitem" href="../blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="../learn/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="../news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a></div></div><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../free/">Free tools</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="../learn/index.html">Training</a><a href="../news/index.html">News</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Free tools</p>
+      <h1 style="margin-top:12px">Free AI you actually own.</h1>
+      <p class="lead" style="margin-top:16px;max-width:66ch">No sign-up. No server holding your data. These are small, open-source tools you download and run on your own machine, with your own API key. Read the code, keep it forever, change it if you like. This is the same standard we hold on paid work — you own what you use.</p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap reveal">
+
+      <div class="tool" data-stagger>
+        <div>
+          <span class="badge">Flagship · free forever</span>
+          <h2>Inbox-to-Action Agent</h2>
+          <p class="lede">Your inbox is full. This helps. Paste a message thread and get back three things you can use in under a minute.</p>
+          <ul class="does">
+            <li><b>A summary</b> — what the thread is really about, in a few bullets.</li>
+            <li><b>A draft reply</b> — ready to send, in your tone, with blanks marked <code>[like this]</code>.</li>
+            <li><b>An action list</b> — the next steps, who owns each, and what needs <em>you</em> to decide.</li>
+          </ul>
+          <div class="btns">
+            <a href="https://github.com/chanman4821/inbox-to-action" class="btn btn-primary" rel="noopener">Get it on GitHub <span class="arrow" aria-hidden="true">→</span></a>
+            <a href="../guide/index.html" class="btn btn-ghost">New to this? Start here</a>
+          </div>
+        </div>
+        <div class="term" aria-label="How to run it">
+          <span class="cap">Runs in your terminal</span>
+          <span class="c"># grab it</span><br />
+          <b>git clone</b> https://github.com/chanman4821/inbox-to-action.git<br />
+          <b>cd</b> inbox-to-action<br /><br />
+          <span class="c"># see exactly what it sends — no key needed</span><br />
+          <span class="p">python</span> inbox_to_action.py examples/sample-thread.txt --dry-run<br /><br />
+          <span class="c"># add your OpenAI or Anthropic key, then run it for real</span><br />
+          <span class="p">python</span> inbox_to_action.py examples/sample-thread.txt
+        </div>
+      </div>
+
+      <div class="why" data-stagger>
+        <div class="c"><h3>Runs local</h3><p>It's one Python file on your computer. Nothing installs a server or a background service.</p></div>
+        <div class="c"><h3>Your key, your bill</h3><p>Bring your own OpenAI or Anthropic key. You pay the provider directly — cents per thread on the default models.</p></div>
+        <div class="c"><h3>No telemetry</h3><p>Your text goes to the AI provider you pick and nowhere else. We never see it. Check the code — it's short.</p></div>
+        <div class="c"><h3>MIT licensed</h3><p>Yours to keep, fork, and change. If we disappear tomorrow, it still works.</p></div>
+      </div>
+
+      <div class="bridge reveal">
+        <p class="eyebrow">Why it's free</p>
+        <h2>We'd rather show than tell.</h2>
+        <p>This is the small, owned version of what we do. If you want AI built into your actual systems — measured on one honest number, handed over with the code and keys, no lock-in — that's the paid work. Same principle, bigger job.</p>
+        <a href="../pricing.html" class="btn btn-primary">See how we work <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="../method.html" class="btn btn-ghost">How a build works</a>
+      </div>
+
+      <p class="more">More free tools are on the way. We ship them when they're real — never before.</p>
+
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../case-studies.html">Case studies</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="../free/">Free tools</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../news/index.html">News</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<script src="../site.js?v=11" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+</body>
+</html>
