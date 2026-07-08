@@ -42,9 +42,16 @@
   var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){countUp(e.target);cio.unobserve(e.target);}})},{threshold:.6});
   document.querySelectorAll('[data-count]').forEach(function(el){cio.observe(el);});
 
-  // contact (no backend yet)
+  // contact — real capture via form service (falls back to mailto until endpoint is set)
   var f=document.getElementById('contactForm');
-  if(f)f.addEventListener('submit',function(e){e.preventDefault();var n=document.getElementById('formNote');if(n){n.hidden=false;}f.querySelector('button').textContent='Sent ✓';});
+  if(f)f.addEventListener('submit',function(e){e.preventDefault();
+    var btn=f.querySelector('button'), data={source:'contact-form',page:location.pathname,_subject:'Contact form'};
+    try{ new FormData(f).forEach(function(v,k){ if(v) data[k]=v; }); }catch(_){}
+    if(btn) btn.textContent='Sending\u2026';
+    (window.dprCapture?window.dprCapture(data):Promise.resolve()).then(function(){
+      var n=document.getElementById('formNote'); if(n){n.hidden=false;} if(btn){btn.textContent='Sent \u2713';}
+    }).catch(function(){ if(btn) btn.textContent='Try again'; });
+  });
 })();
 
 /* hero hub — bot dances; offerings light up when you explore them */
@@ -138,4 +145,84 @@
   document.addEventListener('click',function(e){if(!e.target.closest('.learn'))close();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
   menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+})();
+
+/* ── Lead capture + investor nav + caret polish (DPR, site-wide) ──────
+   Loaded on every page via site.js. Collected info goes to the form
+   service below; until the endpoint is set it falls back to email so
+   nothing is ever lost.
+   ▶▶ PASTE YOUR FORMSPREE (or Basin) ENDPOINT HERE: ▶▶ */
+window.DPR_FORM_ENDPOINT = window.DPR_FORM_ENDPOINT || 'https://formspree.io/f/YOUR_FORM_ID';
+(function(){
+  var ENDPOINT = window.DPR_FORM_ENDPOINT;
+  var configured = ENDPOINT.indexOf('YOUR_FORM_ID') === -1 && /^https?:\/\//.test(ENDPOINT);
+
+  // send a lead to the form service; falls back to a prefilled email if not yet configured
+  window.dprCapture = function(data){
+    if(configured){
+      return fetch(ENDPOINT, {method:'POST', headers:{'Accept':'application/json','Content-Type':'application/json'}, body:JSON.stringify(data)})
+        .then(function(r){ if(!r.ok) throw new Error('capture failed'); return true; });
+    }
+    var subj = encodeURIComponent(data._subject || ('New lead — ' + (data.source||location.pathname)));
+    var body = encodeURIComponent(Object.keys(data).filter(function(k){return k[0]!=='_';}).map(function(k){return k+': '+data[k];}).join('\n'));
+    window.location.href = 'mailto:hello@dprai.io?subject=' + subj + '&body=' + body;
+    return Promise.resolve(false);
+  };
+
+  // Investors nav item (desktop + mobile), inserted before About
+  var nav = document.querySelector('.nav-links');
+  if(nav && !nav.querySelector('[data-ir]')){
+    var about = nav.querySelector('a[href="about.html"]');
+    var a = document.createElement('a'); a.href='dataroom.html'; a.textContent='Investors'; a.setAttribute('data-ir','');
+    about ? nav.insertBefore(a, about) : nav.appendChild(a);
+  }
+  var mm = document.getElementById('mobileMenu');
+  if(mm && !mm.querySelector('[data-ir]')){
+    var lastM = mm.querySelector('a[href="contact.html"]');
+    var a2 = document.createElement('a'); a2.href='dataroom.html'; a2.textContent='Investors'; a2.setAttribute('data-ir','');
+    lastM ? mm.insertBefore(a2, lastM) : mm.appendChild(a2);
+  }
+
+  // swap the ▾ caret glyph for a clean chevron
+  Array.prototype.forEach.call(document.querySelectorAll('.caret'), function(c){
+    c.innerHTML = '<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true" focusable="false" style="vertical-align:middle;margin-top:-1px"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  });
+
+  // site-wide email capture strip, injected at the top of the footer
+  var fw = document.querySelector('footer .wrap');
+  if(fw && !document.getElementById('dprCapture')){
+    var wrap = document.createElement('div'); wrap.id='dprCapture'; wrap.className='dpr-capture';
+    wrap.innerHTML =
+      '<div class="dpr-capture-txt"><b>Get the occasional honest note.</b>'+
+      '<span>How we build AI you own — no spam, unsubscribe anytime.</span></div>'+
+      '<form class="dpr-capture-form" novalidate>'+
+      '<input type="email" required placeholder="you@company.com" aria-label="Your email" autocomplete="email" />'+
+      '<button type="submit" class="btn btn-primary">Keep me posted</button>'+
+      '<span class="dpr-capture-ok" hidden>Thanks — you\u2019re on the list.</span></form>';
+    fw.insertBefore(wrap, fw.firstChild);
+    var cf = wrap.querySelector('form'), ok = wrap.querySelector('.dpr-capture-ok'), inp = wrap.querySelector('input'), b = wrap.querySelector('button');
+    cf.addEventListener('submit', function(e){
+      e.preventDefault();
+      var email = (inp.value||'').trim();
+      if(!/.+@.+\..+/.test(email)){ inp.focus(); return; }
+      b.textContent = 'Sending\u2026';
+      window.dprCapture({email:email, source:'footer-capture', page:location.pathname, _subject:'Newsletter signup'})
+        .then(function(){ b.style.display='none'; inp.style.display='none'; ok.hidden=false; })
+        .catch(function(){ b.textContent='Try again'; });
+    });
+  }
+
+  // styles for the capture strip
+  var css =
+    '.dpr-capture{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;'+
+    'border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,#fff,rgba(59,91,219,.04));'+
+    'padding:20px 24px;margin:0 0 28px}'+
+    '.dpr-capture-txt{display:flex;flex-direction:column;gap:2px}'+
+    '.dpr-capture-txt b{font-size:16px}.dpr-capture-txt span{color:var(--muted);font-size:13px}'+
+    '.dpr-capture-form{display:flex;gap:10px;align-items:center;flex-wrap:wrap}'+
+    '.dpr-capture-form input{padding:10px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:15px;min-width:230px;background:#fff}'+
+    '.dpr-capture-form input:focus{outline:none;border-color:var(--accent,#3b5bdb);box-shadow:0 0 0 3px rgba(59,91,219,.15)}'+
+    '.dpr-capture-ok{color:#1f7a54;font-family:var(--mono);font-size:13px}'+
+    '@media(max-width:640px){.dpr-capture{flex-direction:column;align-items:flex-start}.dpr-capture-form{width:100%}.dpr-capture-form input{min-width:0;flex:1}}';
+  var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 })();

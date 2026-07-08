@@ -6,7 +6,7 @@
 <title>Investor room — DPR AI</title>
 <meta name="description" content="The honest investment case for DPR AI: an AI consulting firm that builds AI companies can measure and own, plus an investor network on the side. Every document behind it, in one place." />
 <meta name="theme-color" content="#ffffff" />
-<meta name="robots" content="noindex, nofollow" />
+<meta name="robots" content="index, follow" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
@@ -377,10 +377,12 @@
     try{ localStorage.setItem(KEY, JSON.stringify({name:name,firm:firm,email:email,at:Date.now()})); }catch(e){}
     unlock(false, name);
     closeModal();
-    var subject='DPR investor room — access request';
-    var body='Name: '+name+'\nFirm: '+(firm||'—')+'\nEmail: '+email+'\nRequested: '+new Date().toISOString()+
-             '\n\nI\u2019d like to view the confidential DPR investor documents.';
-    window.location.href='mailto:hello@dprai.io?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    if(window.dprCapture){
+      window.dprCapture({name:name, firm:(firm||''), email:email, source:'investor-room-access', page:location.pathname, _subject:'DPR investor room — access request'});
+    } else {
+      var body='Name: '+name+'\nFirm: '+(firm||'—')+'\nEmail: '+email+'\n\nI\u2019d like to view the confidential DPR investor documents.';
+      window.location.href='mailto:hello@dprai.io?subject='+encodeURIComponent('DPR investor room — access request')+'&body='+encodeURIComponent(body);
+    }
   });
 })();
 </script>
