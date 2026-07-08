@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to write a simple AI use policy for your team (what to include) — DPR AI Knowledge Base</title>
+<meta name="description" content="An AI use policy is a short document that tells your team what they can and can't do with AI — mostly what data is safe to paste, what needs a human check, and who to ask. Here's a one-page starting template." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=10" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<style>
+  .crumb{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--faint);margin:0 0 18px}
+  .crumb a{color:var(--accent)}
+  .kb-meta{font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);display:flex;flex-wrap:wrap;gap:14px;margin-top:16px}
+  .tldr{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;background:var(--accent-soft);padding:20px 24px;margin:30px 0 8px}
+  .tldr .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
+  .tldr p{margin:0;color:var(--ink-2);font-size:15.5px;line-height:1.6}
+  .checklist{list-style:none;margin:22px 0;padding:0;counter-reset:c}
+  .checklist li{counter-increment:c;position:relative;padding:14px 16px 14px 52px;border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:10px;font-size:14.5px;color:var(--ink-2);box-shadow:var(--shadow-1)}
+  .checklist li::before{content:counter(c);position:absolute;left:16px;top:12px;width:24px;height:24px;border-radius:7px;background:var(--accent-soft);color:var(--accent);font-family:var(--mono);font-weight:600;font-size:12px;display:flex;align-items:center;justify-content:center}
+  .checklist li strong{display:block;margin-bottom:2px}
+  .tpl{border:1px solid var(--line-2);border-radius:var(--radius);background:#0f1115;color:#e8eef5;padding:22px 24px;margin:26px 0;font-family:var(--mono);font-size:13px;line-height:1.85;overflow:auto}
+  .tpl .k{color:#9aa4ff;text-transform:uppercase;letter-spacing:.08em;font-size:10.5px;display:block;margin-bottom:12px}
+  .note{border:1px dashed var(--line-2);border-radius:var(--radius);background:var(--bg-soft);padding:18px 22px;margin:26px 0;color:var(--muted);font-size:13.5px;line-height:1.7}
+  .related{border-top:1px solid var(--line);margin-top:40px;padding-top:24px}
+  .related h3{font-size:13px;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:0 0 14px}
+  .related a{display:block;font-size:15px;color:var(--accent);margin-bottom:8px}
+  .kb-cta{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--gold-soft));padding:24px 26px;margin:26px 0 0}
+  .kb-cta .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  .kb-cta p{color:var(--muted);margin:0 0 16px;max-width:60ch}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../guide/index.html">Learn AI</a><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-ghost">Talk to us</a><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../guide/index.html">Learn AI</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="crumb"><a href="index.html">Knowledge Base</a> › Compliance &amp; Governance</p>
+      <p class="eyebrow">Compliance &amp; Governance</p>
+      <h1 style="margin-top:12px">How to write a simple AI use policy for your team</h1>
+      <p class="kb-meta"><span>How-to</span><span>Last reviewed Jul 8, 2026</span><span>5 min read</span></p>
+      <div class="tldr"><span class="k">In short</span><p>An AI use policy is a short document that tells your team what they can and can't do with AI tools — mostly <strong>what data is safe to paste in, what needs a human check, and who to ask.</strong> One page is enough to start, and it's better to have a short one people follow than a long one they ignore.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap prose reveal">
+      <p>Here's the uncomfortable truth: your team is probably already using AI at work, with or without your say-so. A use policy isn't about slowing them down — it's about drawing a couple of bright lines so nobody accidentally pastes a customer's private data into a public chatbot. You can write a useful one in an afternoon.</p>
+
+      <h2>What to include</h2>
+      <ul class="checklist">
+        <li><strong>Approved tools</strong>Which AI tools are okay to use for work, and which aren't. A short allow-list beats a vague "use good judgment."</li>
+        <li><strong>What never to paste in</strong>The clear red line: customer data, passwords, contracts, anything confidential — unless it's an approved tool with the right privacy settings.</li>
+        <li><strong>What needs a human check</strong>Which outputs a person must review before they're used — anything customer-facing, legal, financial, or a decision about a person.</li>
+        <li><strong>Disclosure</strong>When you'll tell customers or staff that AI was involved, if it matters for your work.</li>
+        <li><strong>Who owns the output</strong>A reminder that AI output is a draft your team is responsible for — not something to ship unread.</li>
+        <li><strong>Who to ask</strong>A named person for questions and exceptions, so people don't just guess.</li>
+        <li><strong>How to ask for an exception</strong>A simple way to say "can I use X for Y?" so the policy bends without breaking.</li>
+      </ul>
+
+      <h2>A one-page starting template</h2>
+      <div class="tpl">
+        <span class="k">AI use policy — [Company] — [date]</span>
+        1. Approved tools: [list]<br>
+        2. Never paste in: customer data, passwords, contracts, [add yours]<br>
+        3. Always human-checked before use: [customer-facing / legal / financial / …]<br>
+        4. Disclose AI use when: [cases, or "not required"]<br>
+        5. You own what you send: AI output is a draft you're responsible for.<br>
+        6. Questions &amp; exceptions: ask [name / channel]<br>
+        7. Review date: [every 6 months]
+      </div>
+
+      <h2>Keep it short and enforceable</h2>
+      <p>A policy nobody reads protects no one. Fit it on a page, use plain words, and make the two rules that actually matter — what not to paste, and what needs a human check — impossible to miss. You can always add detail later if a real situation calls for it.</p>
+
+      <h2>Review it as the tools change</h2>
+      <p>AI tools change monthly. Put a review date on the policy and actually keep it — a new tool, a new feature, or a new type of work can each move a bright line. A living one-pager beats a perfect document that's already out of date.</p>
+
+      <div class="note"><strong>Note:</strong> this is practical guidance, not legal advice. If you're in a regulated field or handling sensitive data, have a qualified professional review your policy before you rely on it.</div>
+
+      <div class="related">
+        <h3>Read next</h3>
+        <a href="ai-governance-framework.html">AI governance framework, explained in plain English →</a>
+        <a href="ai-governance-and-compliance.html">What is AI governance and compliance — and does your company need it yet? →</a>
+        <a href="../guide/index.html">Learn AI: the free guide (includes keeping data safe) →</a>
+      </div>
+
+      <div class="kb-cta">
+        <p class="k">Apply this</p>
+        <p>DPR builds the checks a policy asks for — data controls, human review, and logging — straight into your AI systems, so the policy isn't just paper. Especially for regulated teams.</p>
+        <a href="../method.html" class="btn btn-primary">See how a build works <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="../contact.html" class="btn btn-ghost">Talk to us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="index.html">Knowledge Base</a><a href="../guide/index.html">Learn AI (free guide)</a><a href="../blog/index.html">Field Notes</a><a href="../slop.html">The slop problem</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="../contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<script src="../site.js?v=10" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+<script src="../assets/diagrams.js?v=10" defer></script>
+</body>
+</html>
