@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to measure the ROI of an AI project (without fooling yourself) — DPR AI Knowledge Base</title>
+<meta name="description" content="A step-by-step, plain-English method for measuring AI ROI honestly: pick one number your business cares about, set a clean baseline, measure after on fresh human-checked data, and write down the sample size and caveats." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=10" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<style>
+  .crumb{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--faint);margin:0 0 18px}
+  .crumb a{color:var(--accent)}
+  .kb-meta{font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);display:flex;flex-wrap:wrap;gap:14px;margin-top:16px}
+  .tldr{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;background:var(--accent-soft);padding:20px 24px;margin:30px 0 8px}
+  .tldr .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
+  .tldr p{margin:0;color:var(--ink-2);font-size:15.5px;line-height:1.6}
+  .steps{list-style:none;counter-reset:s;margin:24px 0;padding:0}
+  .steps li{counter-increment:s;position:relative;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:20px 22px 20px 64px;margin-bottom:12px}
+  .steps li::before{content:counter(s);position:absolute;left:18px;top:18px;width:32px;height:32px;border-radius:9px;background:var(--accent-soft);color:var(--accent);font-family:var(--mono);font-weight:600;display:flex;align-items:center;justify-content:center}
+  .steps h3{font-size:16px;margin:0 0 6px}
+  .steps p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.65}
+  .test{border:1px dashed var(--line-2);border-radius:var(--radius);background:var(--bg-soft);padding:22px 26px;margin:26px 0}
+  .test .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+  .test p{margin:0;font-size:16px;color:var(--ink-2)}
+  .related{border-top:1px solid var(--line);margin-top:40px;padding-top:24px}
+  .related h3{font-size:13px;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:0 0 14px}
+  .related a{display:block;font-size:15px;color:var(--accent);margin-bottom:8px}
+  .kb-cta{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--gold-soft));padding:24px 26px;margin:26px 0 0}
+  .kb-cta .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  .kb-cta p{color:var(--muted);margin:0 0 16px;max-width:60ch}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../guide/index.html">Learn AI</a><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-ghost">Talk to us</a><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../guide/index.html">Learn AI</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="crumb"><a href="index.html">Knowledge Base</a> › Measuring AI</p>
+      <p class="eyebrow">Measuring AI</p>
+      <h1 style="margin-top:12px">How to measure the ROI of an AI project (without fooling yourself)</h1>
+      <p class="kb-meta"><span>How-to</span><span>Last reviewed Jul 8, 2026</span><span>7 min read</span></p>
+      <div class="tldr"><span class="k">In short</span><p>Real AI ROI is simple to state and easy to fake. Pick one number your business already cares about, measure it honestly <em>before</em> you build, measure it again <em>after</em> on fresh data a human checks, and write down the sample size and caveats. If you can't measure it that way, you can't honestly claim a return.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap prose reveal">
+      <p>Most "AI ROI" numbers fall apart the moment you poke them. They're measured on the demo, on cherry-picked examples, or against a "before" nobody actually recorded. Here is the method that stands up — the same one a careful team can reproduce without trusting anyone's word.</p>
+
+      <ol class="steps" data-stagger>
+        <li><h3>Pick one number your business already cares about</h3><p>Not five goals — one. Hours spent on a task, cost per case, error rate, time-to-answer. If a stranger on your team wouldn't recognise it as important, it's the wrong number.</p></li>
+        <li><h3>Set a clean baseline before you build</h3><p>"Before vs after" is meaningless without a real before. Measure how the task performs today, on real work, and write it down. This is the step almost everyone skips — and it's the one that makes the ROI believable.</p></li>
+        <li><h3>Measure after on fresh, human-checked data</h3><p>Test on work the system hasn't seen, not the examples it was tuned on. Have a person check a slice of the results by hand. A number the vendor computes in private isn't evidence.</p></li>
+        <li><h3>Write down the sample size and the caveats</h3><p>A win on 400 cases means something; a win on 4 means nothing. Note how big the sample was, who checked it, and what the number does <em>not</em> tell you. Honesty about limits is what makes the number trustworthy.</p></li>
+        <li><h3>Turn the number into money or time</h3><p>Translate it: minutes saved per case × cases per month × the cost of that time. Now the metric ladders up to something a budget owner feels — the actual return.</p></li>
+      </ol>
+
+      <h2>The vanity metrics that fake ROI</h2>
+      <p>These look like returns and measure almost nothing useful:</p>
+      <ul>
+        <li><strong>Model accuracy on a clean test set.</strong> Your real Tuesday inputs are messy; a tidy benchmark score doesn't survive them.</li>
+        <li><strong>Benchmark wins.</strong> "Beats model X on task Y" is a press release. Nobody's afternoon got shorter because of it.</li>
+        <li><strong>Usage and engagement.</strong> People clicking the AI button is not people getting work done faster. Measure the work, not the tool.</li>
+        <li><strong>A single amazing example.</strong> One great output proves it <em>can</em> be right, not that it usually is. Measure over a sample, never an anecdote.</li>
+      </ul>
+
+      <div class="test">
+        <p class="k">The honesty test</p>
+        <p>Before you start, write down what result would make you call the project a failure. If you can't name a number that would count as "it didn't work," you're not measuring ROI — you're setting up a story that can only end in success.</p>
+      </div>
+
+      <h2>Why the method is the point</h2>
+      <p>Anyone can show you a number. What makes a number trustworthy is a method you could run yourself and get the same answer. That's the whole game: a metric your business cares about, a real baseline, a fresh human-checked sample, and the caveats in plain sight. Get those right and the ROI is real. Skip any of them and it's theater with a decimal point.</p>
+
+      <div class="related">
+        <h3>Read next</h3>
+        <a href="../blog/the-one-number.html">Field Note: The one number — how we pick the metric that decides a build →</a>
+        <a href="../blog/measure-ai-honestly.html">Field Note: How to measure an AI system honestly — a field guide →</a>
+        <a href="../proof.html">See DPR's published measurement method →</a>
+      </div>
+
+      <div class="kb-cta">
+        <p class="k">Apply this</p>
+        <p>DPR agrees the one honest number with you before any build, sets the baseline, and publishes exactly how it's measured — so the return isn't something you have to take on faith.</p>
+        <a href="../method.html" class="btn btn-primary">See how a build works <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="../contact.html" class="btn btn-ghost">Talk to us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="index.html">Knowledge Base</a><a href="../guide/index.html">Learn AI (free guide)</a><a href="../blog/index.html">Field Notes</a><a href="../slop.html">The slop problem</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="../contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<script src="../site.js?v=10" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+<script src="../assets/diagrams.js?v=10" defer></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your first 15 minutes with an AI assistant — Learn AI | DPR AI</title>
+<meta name="description" content="Lesson 2 of the free Learn AI guide: how to set up an AI assistant and get a genuinely useful result in about 15 minutes, starting from zero." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=10" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<style>
+  .crumb{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--faint);margin:0 0 18px}
+  .crumb a{color:var(--accent)}
+  .l-meta{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);display:flex;gap:16px;margin-top:16px}
+  .goal{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;background:var(--accent-soft);padding:18px 22px;margin:30px 0 6px}
+  .goal p{margin:0;color:var(--ink-2);font-size:15.5px}
+  .goal .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:6px}
+  .steps{list-style:none;counter-reset:s;margin:26px 0;padding:0}
+  .steps li{counter-increment:s;position:relative;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:20px 22px 20px 66px;margin-bottom:14px}
+  .steps li::before{content:counter(s);position:absolute;left:18px;top:18px;width:34px;height:34px;border-radius:10px;background:var(--accent-soft);color:var(--accent);font-family:var(--mono);font-weight:600;display:flex;align-items:center;justify-content:center}
+  .steps h3{font-size:16px;margin:0 0 6px}
+  .steps p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.65}
+  .steps .t{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);float:right}
+  .example{border:1px dashed var(--line-2);border-radius:var(--radius);background:var(--bg-soft);padding:22px 26px;margin:26px 0}
+  .example .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}
+  .takeaway{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--gold-soft));padding:24px 26px;margin:32px 0}
+  .takeaway .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+  .lnav{display:flex;justify-content:space-between;gap:16px;margin-top:40px;border-top:1px solid var(--line);padding-top:24px}
+  .lnav a{font-size:14.5px}
+  .lnav .nx{margin-left:auto;text-align:right;font-weight:600;color:var(--accent)}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="index.html" aria-current="page">Learn AI</a><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-ghost">Talk to us</a><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="index.html">Learn AI</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="crumb"><a href="index.html">Learn AI</a> › Lesson 2</p>
+      <p class="eyebrow">Lesson 2 · Learn AI</p>
+      <h1 style="margin-top:12px">Your first 15 minutes with an AI assistant</h1>
+      <p class="l-meta"><span>6 min read</span><span>Plain English</span></p>
+      <div class="goal"><span class="k">By the end</span><p>You'll have gone from "I've never really used it" to getting a genuinely useful result — in about fifteen minutes.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap prose reveal">
+      <p>Setting up AI is far simpler than people expect. There's nothing to install and nothing to configure. You sign up on a website, type in a box, and read what comes back. That's the whole thing. Here it is, start to finish.</p>
+
+      <ol class="steps" data-stagger>
+        <li><span class="t">2 min</span><h3>Pick one tool</h3><p>Any of these free versions is a fine place to start: <strong>Claude</strong> (claude.ai), <strong>ChatGPT</strong> (chatgpt.com), or <strong>Gemini</strong> (gemini.google.com). Just pick one — you can try the others later. (We go deep on Claude in a separate post.)</p></li>
+        <li><span class="t">3 min</span><h3>Make an account</h3><p>Sign up with your email or a Google login. The free plan is more than enough for learning. No credit card needed to start.</p></li>
+        <li><span class="t">1 min</span><h3>Find the box</h3><p>You'll see one big text box that says something like "Message" or "Ask anything." That's where you type. That is the entire interface — don't overthink it.</p></li>
+        <li><span class="t">5 min</span><h3>Give it a real task</h3><p>Don't test it with trivia. Give it something from your actual day. For example: paste some messy notes and say, <em>"Turn these rough notes into a short, polite email to a customer."</em> Watch what it does.</p></li>
+        <li><span class="t">4 min</span><h3>Talk back to it</h3><p>You're not stuck with the first answer. Reply like you would to a person: <em>"Make it shorter." "Warmer tone." "Add a line about the refund."</em> Each reply improves it. This back-and-forth is where the real value is.</p></li>
+      </ol>
+
+      <div class="example">
+        <p class="k">What this looks like in real life</p>
+        <p style="margin:0 0 10px"><strong>You type:</strong> "Here are my notes — customer upset, order #4471 arrived late, I want to apologise, offer 10% off their next order, keep it short."</p>
+        <p style="margin:0 0 10px"><strong>It writes</strong> a clean apology email in seconds.</p>
+        <p style="margin:0"><strong>You reply:</strong> "A bit warmer, and add that we've shipped it today." It fixes it. Two minutes, done — and better than the blank page you were staring at.</p>
+      </div>
+
+      <h2 style="margin-top:8px">The three ways people get stuck</h2>
+      <ul>
+        <li><strong>Overthinking the setup.</strong> There's no install and no settings to master. Sign up and start typing.</li>
+        <li><strong>Starting with a vague one-liner.</strong> "Write an email" gives generic mush. Give it the details — Lesson 3 shows the simple recipe.</li>
+        <li><strong>Giving up after one reply.</strong> The first answer is a draft, not the final word. The good stuff comes from telling it what to change.</li>
+      </ul>
+
+      <div class="takeaway">
+        <p class="k">Takeaway</p>
+        <p style="margin:0">Setup is just three things: sign up, type a real task, and reply to improve it. Fifteen minutes is enough to get something you'd actually use.</p>
+        <p style="margin:14px 0 0"><strong>Try this today:</strong> take one small task you did this week and redo it with AI. Reply at least twice to shape the answer before you judge it.</p>
+      </div>
+
+      <div class="lnav">
+        <a href="what-ai-actually-is.html">← Lesson 1: What AI actually is</a>
+        <a class="nx" href="index.html">More lessons on the guide →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="index.html">Learn AI (free guide)</a><a href="../slop.html">The slop problem</a><a href="../playbook.html">AI-readiness scorecard</a><a href="../blog/index.html">Field Notes</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="../contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<script src="../site.js?v=10" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+<script src="../assets/diagrams.js?v=10" defer></script>
+</body>
+</html>

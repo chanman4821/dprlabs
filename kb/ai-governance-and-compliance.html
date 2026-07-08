@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>What is AI governance and compliance — and does your company need it yet? — DPR AI Knowledge Base</title>
+<meta name="description" content="A plain-English guide to AI governance and compliance: what they mean, the everyday risks, a minimum viable setup for a small company, and the honest signs you need it now versus later." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=10" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<style>
+  .crumb{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--faint);margin:0 0 18px}
+  .crumb a{color:var(--accent)}
+  .kb-meta{font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);display:flex;flex-wrap:wrap;gap:14px;margin-top:16px}
+  .tldr{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;background:var(--accent-soft);padding:20px 24px;margin:30px 0 8px}
+  .tldr .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
+  .tldr p{margin:0;color:var(--ink-2);font-size:15.5px;line-height:1.6}
+  .defs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+  .defs .card{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+  .defs h3{font-size:16px;margin:0 0 8px}
+  .defs p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.65}
+  .checklist{list-style:none;margin:22px 0;padding:0}
+  .checklist li{position:relative;padding:14px 16px 14px 48px;border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:10px;font-size:14.5px;color:var(--ink-2);box-shadow:var(--shadow-1)}
+  .checklist li::before{content:"✓";position:absolute;left:16px;top:13px;width:22px;height:22px;border-radius:6px;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+  .signal{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+  .signal .card{border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;background:#fff;box-shadow:var(--shadow-1)}
+  .signal h3{font-size:14.5px;margin:0 0 10px;font-family:var(--mono);letter-spacing:.04em;text-transform:uppercase}
+  .signal.now h3{color:var(--accent)}
+  .signal ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px;line-height:1.75}
+  .related{border-top:1px solid var(--line);margin-top:40px;padding-top:24px}
+  .related h3{font-size:13px;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:0 0 14px}
+  .related a{display:block;font-size:15px;color:var(--accent);margin-bottom:8px}
+  .kb-cta{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--gold-soft));padding:24px 26px;margin:26px 0 0}
+  .kb-cta .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  .kb-cta p{color:var(--muted);margin:0 0 16px;max-width:60ch}
+  @media(max-width:640px){.defs,.signal{grid-template-columns:1fr}}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../guide/index.html">Learn AI</a><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-ghost">Talk to us</a><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../guide/index.html">Learn AI</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="crumb"><a href="index.html">Knowledge Base</a> › Compliance &amp; Governance</p>
+      <p class="eyebrow">Compliance &amp; Governance</p>
+      <h1 style="margin-top:12px">What is AI governance and compliance — and does your company need it yet?</h1>
+      <p class="kb-meta"><span>Explainer</span><span>Last reviewed Jul 8, 2026</span><span>6 min read</span></p>
+      <div class="tldr"><span class="k">In short</span><p><strong>Governance</strong> is the set of simple controls that keep an AI system accountable — knowing what it does, catching when it's wrong, logging its decisions, and keeping a human in the loop where it matters. <strong>Compliance</strong> is being able to prove that to a regulator or auditor. Most small companies need a light version of both sooner than they expect — especially with customer data or decisions that affect people or money.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap prose reveal">
+      <p>"AI governance" sounds like something only banks worry about. It isn't. Strip away the jargon and it's just the handful of habits that stop an AI system from quietly doing the wrong thing in your name. Here's what it means, and how to tell whether you need it now.</p>
+
+      <div class="defs">
+        <div class="card"><h3>Governance</h3><p>Your own internal controls: what the AI is allowed to do, how you catch mistakes, what gets logged, and who is responsible when something goes wrong.</p></div>
+        <div class="card"><h3>Compliance</h3><p>Meeting outside rules: being able to show a regulator, auditor, or customer that your controls exist and actually work.</p></div>
+      </div>
+
+      <h2>The everyday risks, in plain terms</h2>
+      <ul>
+        <li><strong>Data.</strong> What goes into the AI, and where its outputs end up — the thing you least want leaking is often the thing someone pastes in first.</li>
+        <li><strong>Accuracy.</strong> AI can be confidently wrong. Without a check, a bad answer ships as if it were true.</li>
+        <li><strong>Accountability.</strong> If the AI makes a decision that affects a customer, someone on your side has to be able to explain and stand behind it.</li>
+      </ul>
+
+      <h2>A minimum viable governance setup</h2>
+      <p>You don't need a policy binder. A small company can cover the basics with five things:</p>
+      <ul class="checklist">
+        <li>Log what the AI decides, so there's a record you can review.</li>
+        <li>Put a human check on the high-stakes outputs — money, legal, customer-facing.</li>
+        <li>Write one page: what the system does and what can go wrong.</li>
+        <li>Control who can access it and what data it can touch.</li>
+        <li>Have a way to switch it off or roll it back if it misbehaves.</li>
+      </ul>
+      <p>When AI is built into your systems properly, these aren't extra work bolted on at the end — the audit trail, the human-in-the-loop step, and the docs are part of the build from day one. Adding them later, after something has gone wrong, is always harder.</p>
+
+      <h2>Do you need it now, or later?</h2>
+      <div class="signal now"><div class="card">
+        <h3>Signs you need it now</h3>
+        <ul>
+          <li>You work in a regulated field — health, finance, legal, insurance</li>
+          <li>The AI touches customer or personal data</li>
+          <li>Its output affects a decision about a person or money</li>
+          <li>A customer or partner has started asking how it works</li>
+        </ul>
+      </div></div>
+      <div class="signal"><div class="card">
+        <h3>Probably fine to keep light for now</h3>
+        <ul>
+          <li>Internal drafting and brainstorming with no sensitive data</li>
+          <li>A human reviews everything before it leaves the building</li>
+          <li>Low stakes if an answer is occasionally wrong</li>
+        </ul>
+      </div></div>
+      <p>The honest rule: the more your AI touches people, money, or private data, the sooner light governance stops being optional — and the cheaper it is to build in early.</p>
+
+      <div class="related">
+        <h3>Read next</h3>
+        <a href="what-you-own-means.html">What "you own it" actually means in an AI build →</a>
+        <a href="../guide/index.html">Learn AI: the free plain-English guide (incl. keeping data safe) →</a>
+      </div>
+
+      <div class="kb-cta">
+        <p class="k">Apply this</p>
+        <p>DPR builds compliance and governance into a system from the first day — audit trail, human checks, and documentation included — so "audit-ready" isn't a scramble later. It's especially built for regulated teams.</p>
+        <a href="../method.html" class="btn btn-primary">See how a build works <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="../contact.html" class="btn btn-ghost">Talk to us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="index.html">Knowledge Base</a><a href="../guide/index.html">Learn AI (free guide)</a><a href="../blog/index.html">Field Notes</a><a href="../slop.html">The slop problem</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="../contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<script src="../site.js?v=10" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+<script src="../assets/diagrams.js?v=10" defer></script>
+</body>
+</html>

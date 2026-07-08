@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Knowledge Base — build, measure, and own AI | DPR AI</title>
+<meta name="description" content="A plain-English reference library for building, measuring, and owning AI — and for evaluating AI companies. No theater, no invented numbers. Useful even if you never hire us." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=10" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}.kb-item{display:flex!important}</style></noscript>
+<style>
+  .kb-filter{display:flex;flex-wrap:wrap;gap:9px;margin:34px 0 8px;padding:0;list-style:none}
+  .kb-pill{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--muted);border:1px solid var(--line-2);border-radius:999px;padding:8px 15px;background:#fff;cursor:pointer;transition:.15s ease}
+  .kb-pill:hover{border-color:var(--accent);color:var(--accent)}
+  .kb-pill[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  .kb-list{margin:20px 0 0;display:flex;flex-direction:column;gap:14px}
+  .kb-item{display:flex;gap:18px;align-items:flex-start;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:22px 24px;transition:.2s ease;text-decoration:none;color:inherit}
+  .kb-item:hover{box-shadow:var(--shadow-2);transform:translateY(-2px)}
+  .kb-item .body{flex:1;min-width:0}
+  .kb-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:9px}
+  .kb-badges span{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:6px}
+  .kb-cat{background:var(--accent-soft);color:var(--accent)}
+  .kb-type{background:var(--bg-softer);color:var(--faint)}
+  .kb-aud{background:var(--gold-soft);color:var(--gold-hi)}
+  .kb-item h3{font-size:18px;letter-spacing:-.015em;margin:0 0 6px}
+  .kb-item p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.6}
+  .kb-item .read{font-family:var(--mono);font-size:11px;color:var(--faint);white-space:nowrap;padding-top:2px}
+  .kb-empty{display:none;color:var(--faint);font-size:14.5px;padding:20px 0}
+  .kb-cta{margin-top:40px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--gold-soft));padding:clamp(22px,4vw,34px)}
+  .kb-cta .eyebrow{margin-bottom:10px}
+  .kb-cta p{color:var(--muted);margin:12px 0 18px;max-width:60ch}
+  @media(max-width:640px){.kb-item{flex-direction:column;gap:10px}.kb-item .read{padding-top:0}}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../guide/index.html">Learn AI</a><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-ghost">Talk to us</a><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../guide/index.html">Learn AI</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Knowledge Base</p>
+      <h1 style="margin-top:12px">Build, measure, and own AI — the reference layer.</h1>
+      <p class="lead" style="margin-top:18px;max-width:64ch">Plain-English reference for founders putting AI into their operations and investors evaluating AI companies. No theater, no invented numbers — useful even if you never hire us.</p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap reveal">
+      <ul class="kb-filter" role="group" aria-label="Filter by topic">
+        <li><button type="button" class="kb-pill" data-cat="all" aria-pressed="true">All</button></li>
+        <li><button type="button" class="kb-pill" data-cat="measuring-ai" aria-pressed="false">Measuring AI</button></li>
+        <li><button type="button" class="kb-pill" data-cat="building-and-owning" aria-pressed="false">Building &amp; Owning</button></li>
+        <li><button type="button" class="kb-pill" data-cat="compliance-governance" aria-pressed="false">Compliance</button></li>
+        <li><button type="button" class="kb-pill" data-cat="for-investors" aria-pressed="false">For Investors</button></li>
+      </ul>
+
+      <div class="kb-list" id="kbList">
+        <a class="kb-item" href="what-custom-ai-automation-costs.html" data-cat="building-and-owning">
+          <span class="body">
+            <span class="kb-badges"><span class="kb-cat">Building &amp; Owning</span><span class="kb-type">Explainer</span><span class="kb-aud">Founder</span></span>
+            <h3>What does custom AI automation actually cost?</h3>
+            <p>Setup fee plus monthly retainer, explained — what each part buys, a real example of build scope, and how to estimate your own scope.</p>
+          </span>
+          <span class="read">6 min</span>
+        </a>
+        <a class="kb-item" href="how-to-measure-ai-roi.html" data-cat="measuring-ai">
+          <span class="body">
+            <span class="kb-badges"><span class="kb-cat">Measuring AI</span><span class="kb-type">How-to</span><span class="kb-aud">Founder</span></span>
+            <h3>How to measure the ROI of an AI project (without fooling yourself)</h3>
+            <p>Pick one number your business cares about, set a clean baseline, measure after on fresh human-checked data, and write down the sample size and caveats.</p>
+          </span>
+          <span class="read">7 min</span>
+        </a>
+        <a class="kb-item" href="what-you-own-means.html" data-cat="building-and-owning">
+          <span class="body">
+            <span class="kb-badges"><span class="kb-cat">Building &amp; Owning</span><span class="kb-type">Explainer</span><span class="kb-aud">Founder</span></span>
+            <h3>What "you own it" actually means in an AI build</h3>
+            <p>Real ownership is where the code, accounts, data, and know-how physically live — so you can run it, change it, or fire the vendor and keep everything.</p>
+          </span>
+          <span class="read">6 min</span>
+        </a>
+        <a class="kb-item" href="ai-governance-and-compliance.html" data-cat="compliance-governance">
+          <span class="body">
+            <span class="kb-badges"><span class="kb-cat">Compliance &amp; Governance</span><span class="kb-type">Explainer</span><span class="kb-aud">Founder</span></span>
+            <h3>What is AI governance and compliance — and does your company need it yet?</h3>
+            <p>Plain-English governance vs compliance, the everyday risks, a minimum viable setup for a small company, and the honest signs you need it now.</p>
+          </span>
+          <span class="read">6 min</span>
+        </a>
+        <a class="kb-item" href="flat-subscription-dealflow-explained.html" data-cat="for-investors">
+          <span class="body">
+            <span class="kb-badges"><span class="kb-cat">For Investors</span><span class="kb-type">Explainer</span><span class="kb-aud">Investor</span></span>
+            <h3>Flat-subscription dealflow vs. success fees: how a compliant investor service is priced</h3>
+            <p>Why a compliant dealflow service charges a flat subscription — never a cut of a raise — what a subscriber receives, and how it differs from finders and brokers.</p>
+          </span>
+          <span class="read">6 min</span>
+        </a>
+      </div>
+      <p class="kb-empty" id="kbEmpty" role="status">No articles in this topic yet — more are being added.</p>
+      <p class="reveal" style="margin-top:20px;color:var(--faint);font-size:13.5px">The knowledge base is growing — new reference articles publish here regularly across measuring, building &amp; owning, compliance, and evaluating AI companies.</p>
+
+      <div class="kb-cta">
+        <p class="eyebrow">Put it into practice</p>
+        <h2 style="font-size:clamp(24px,3vw,32px)">Want this applied to your own build?</h2>
+        <p>These methods are the same ones DPR uses on every engagement — agree one honest number, build on your accounts, measure it in the open, and hand it over.</p>
+        <a href="../method.html" class="btn btn-primary">See how a build works <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="../guide/index.html" class="btn btn-ghost">New to AI? Start with the free guide</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../teardowns.html">Teardowns</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="index.html">Knowledge Base</a><a href="../guide/index.html">Learn AI (free guide)</a><a href="../blog/index.html">Field Notes</a><a href="../slop.html">The slop problem</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="../contact.html">Contact</a><a href="mailto:hello@dprlabs.io">hello@dprlabs.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+
+<script>
+(function(){
+  var pills = Array.prototype.slice.call(document.querySelectorAll('.kb-pill'));
+  var items = Array.prototype.slice.call(document.querySelectorAll('.kb-item'));
+  var empty = document.getElementById('kbEmpty');
+  function apply(cat){
+    var shown = 0;
+    items.forEach(function(it){
+      var ok = cat === 'all' || it.getAttribute('data-cat') === cat;
+      it.style.display = ok ? 'flex' : 'none';
+      if(ok) shown++;
+    });
+    if(empty) empty.style.display = shown ? 'none' : 'block';
+  }
+  pills.forEach(function(p){
+    p.addEventListener('click', function(){
+      pills.forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+      p.setAttribute('aria-pressed','true');
+      apply(p.getAttribute('data-cat'));
+    });
+  });
+})();
+</script>
+<script src="../site.js?v=10" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+<script src="../assets/diagrams.js?v=10" defer></script>
+</body>
+</html>
