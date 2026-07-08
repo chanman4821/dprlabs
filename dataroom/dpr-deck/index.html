@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DPR AI — Investor Angel Deck</title>
+<meta name="description" content="DPR AI investor deck: AI consulting clients can measure and own, plus an honest investor network." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#ffffff; --wash:#f6f8ff; --ink:#12141a; --muted:#545a68; --faint:#7d8493;
+    --line:#e6e8f0; --line-soft:#eef0f7; --indigo:#3b5bdb; --deep:#2b45a8; --gold:#f6a328;
+    --panel:rgba(255,255,255,.78); --soft:#f8f9ff; --shadow:0 28px 80px -44px rgba(43,69,168,.38);
+    --sans:"Geist",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:var(--sans);color:var(--ink);background:#eef1fb;overflow:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+  #stage{position:fixed;left:50%;top:50%;width:1280px;height:720px;transform:translate(-50%,-50%) scale(var(--fit,1));transform-origin:center;overflow:hidden;background:var(--bg);box-shadow:0 40px 90px -45px rgba(18,20,26,.34);container-type:size}
+  #stage::before{content:"";position:absolute;inset:-22%;pointer-events:none;background:radial-gradient(700px 360px at 18% 12%,rgba(59,91,219,.09),transparent 60%),radial-gradient(700px 360px at 86% 88%,rgba(246,163,40,.11),transparent 62%),linear-gradient(140deg,#fff 0%,var(--wash) 100%);animation:wash 18s ease-in-out infinite alternate}
+  .deck{position:absolute;inset:0;z-index:1}
+  .slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:78px 112px 72px;opacity:0;visibility:hidden;transform:translateY(16px) scale(.996);transition:opacity .55s ease,transform .55s ease,visibility .55s;background:linear-gradient(180deg,rgba(255,255,255,.86),rgba(246,248,255,.74))}
+  .slide.active{opacity:1;visibility:visible;transform:none;z-index:2}
+  .slide.prev{transform:translateY(-16px) scale(.996)}
+  .slide.close{background:radial-gradient(760px 420px at 82% 14%,rgba(246,163,40,.22),transparent 64%),radial-gradient(780px 430px at 12% 92%,rgba(59,91,219,.22),transparent 66%),linear-gradient(135deg,#ffffff 0%,#f6f8ff 45%,#fff5e6 100%)}
+  .logo{position:absolute;top:48px;left:56px;display:flex;align-items:center;gap:12px;font-size:20px;letter-spacing:-.03em;color:var(--ink)}
+  .logo b{font-weight:800}.mark{width:38px;height:38px;display:inline-flex}
+  .kicker{font-family:var(--mono);font-size:12px;line-height:1;letter-spacing:.18em;text-transform:uppercase;color:var(--deep);font-weight:650;margin-bottom:22px;display:flex;align-items:center;gap:13px}
+  .kicker::before{content:"";width:35px;height:1px;background:var(--indigo);opacity:.85;transform-origin:left;animation:draw .8s ease both}
+  h1,h2{max-width:960px;font-weight:800;letter-spacing:-.055em;line-height:.98;color:var(--ink)}
+  h1{font-size:76px} h2{font-size:61px}.slide.compact h2{font-size:56px}
+  .grad{background:linear-gradient(98deg,var(--indigo),var(--deep) 45%,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{margin-top:26px;max-width:790px;color:var(--muted);font-size:24px;line-height:1.42;letter-spacing:-.015em}.body{margin-top:28px;max-width:875px;color:var(--muted);font-size:25px;line-height:1.42;letter-spacing:-.018em}.body strong,.lead strong{color:var(--ink);font-weight:650}
+  .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}.badge,.pill{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--deep);background:rgba(59,91,219,.08);border:1px solid rgba(59,91,219,.18);padding:8px 13px;border-radius:999px}.badge.gold{color:#9b5f07;background:rgba(246,163,40,.14);border-color:rgba(246,163,40,.28)}
+  .grid{display:grid;gap:22px;margin-top:42px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .card{position:relative;overflow:hidden;border:1px solid var(--line);background:rgba(255,255,255,.72);border-radius:22px;padding:28px 30px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}
+  .card::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--indigo),var(--gold));opacity:.72}.card h3{font-size:24px;letter-spacing:-.025em;margin-bottom:12px}.card p,.card li{font-size:18px;line-height:1.48;color:var(--muted)}.card b{color:var(--ink);font-weight:650}.card ul{list-style:none;display:grid;gap:10px}.card li{position:relative;padding-left:17px}.card li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:2px;background:var(--indigo)}
+  .statement{font-size:34px;line-height:1.22;max-width:920px;letter-spacing:-.03em;color:var(--ink);font-weight:650;margin-top:30px}.note{margin-top:20px;max-width:820px;color:var(--faint);font-size:15px;line-height:1.5}.mono{font-family:var(--mono);letter-spacing:.02em}.table{margin-top:34px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:rgba(255,255,255,.76);box-shadow:var(--shadow);max-width:980px}.row{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center;padding:21px 25px;border-top:1px solid var(--line-soft)}.row:first-child{border-top:0;background:linear-gradient(90deg,rgba(59,91,219,.08),rgba(246,163,40,.09))}.row .l{font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-.02em}.row .r{font-family:var(--mono);font-size:18px;color:var(--deep);font-variant-numeric:tabular-nums}.small{font-size:14px;color:var(--faint);line-height:1.45}.quote{display:inline-block;margin-top:26px;border-left:3px solid var(--gold);padding-left:18px;color:var(--muted);font-size:20px;line-height:1.45;max-width:760px}.use{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.use span{font-size:16px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 15px;box-shadow:0 16px 36px -30px rgba(18,20,26,.45)}
+  .brandmark{position:absolute;left:56px;bottom:30px;z-index:5;font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}.brandmark b{color:var(--ink)}.counter{position:absolute;right:56px;bottom:30px;z-index:5;font-family:var(--mono);font-size:12px;color:var(--faint)}.counter b{color:var(--deep)}.progress{position:absolute;left:0;top:0;height:3px;background:linear-gradient(90deg,var(--indigo),var(--gold));z-index:8;width:0;transition:width .4s ease}.dots{position:absolute;right:27px;top:50%;transform:translateY(-50%);z-index:7;display:flex;flex-direction:column;gap:9px}.dots button{width:8px;height:8px;border-radius:50%;border:1px solid rgba(43,69,168,.3);background:#fff;cursor:pointer;padding:0;transition:.25s ease}.dots button.on{background:var(--indigo);border-color:var(--indigo);transform:scale(1.45)}.dots button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.hint{position:absolute;right:54px;top:42px;font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.08em;text-transform:uppercase}.title .brandmark{display:none}.title .counter{display:none}.title .kicker{margin-top:42px}.waterline{position:absolute;left:112px;right:112px;bottom:85px;height:1px;background:linear-gradient(90deg,rgba(59,91,219,.4),transparent)}
+  @keyframes wash{from{transform:translate3d(-1.5%,0,0)}to{transform:translate3d(1.5%,-1%,0)}}@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.slide{transform:none!important}}
+  @media print{
+    @page{size:landscape;margin:0} html,body{height:auto;overflow:visible;background:#fff} #stage{position:static;width:100vw;height:auto;transform:none;box-shadow:none;overflow:visible} #stage::before,.progress,.dots,.counter,.brandmark,.hint{display:none!important}.deck{position:static}.slide{position:relative;visibility:visible;opacity:1;transform:none;width:100vw;height:56.25vw;page-break-after:always;break-after:page;box-shadow:none;background:#fff!important}.slide:last-child{page-break-after:auto}.logo{top:44px;left:56px} *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<div id="stage" aria-live="polite">
+  <div class="progress" id="progress"></div>
+  <div class="hint">click · arrows · space</div>
+  <div class="dots" id="dots" aria-label="Slide navigation"></div>
+  <div class="brandmark"><b>DPR AI</b> · investor deck</div>
+  <div class="counter"><b id="cur">1</b> / <span id="total">11</span></div>
+  <main class="deck" id="deck">
+    <section class="slide title active" data-title="Title">
+      <div class="logo"><span class="mark"><svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true"><defs><linearGradient id="dprg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b5bdb"/><stop offset="1" stop-color="#f6a328"/></linearGradient></defs><rect x="2" y="2" width="34" height="34" rx="10" fill="none" stroke="url(#dprg)" stroke-width="2.2"/><circle cx="14" cy="19" r="3.4" fill="url(#dprg)"/><circle cx="24" cy="19" r="3.4" fill="url(#dprg)"/><path d="M14 19h10" stroke="url(#dprg)" stroke-width="2.4"/></svg></span><b>DPR&nbsp;AI</b></div>
+      <p class="kicker">AI consulting · investor network</p>
+      <h1>We build AI that <span class="grad">works</span> — and we know the investors.</h1>
+      <p class="lead">An AI consulting firm that builds AI you can measure and own, and introduces the founders it works with to investors it knows.</p>
+      <div class="badges"><span class="badge">Pre-seed</span><span class="badge gold">dprai.io</span></div><div class="waterline"></div>
+    </section>
+    <section class="slide"><p class="kicker">Why now</p><h2>Companies want to <span class="grad">own</span> their AI, not rent a black box.</h2><p class="body">Spending on AI is up, but companies can’t tell what’s actually working. They are wary of vendors that lock them in. New rules are landing in exactly the regulated fields we focus on.</p></section>
+    <section class="slide compact"><p class="kicker">The problem</p><h2>AI that never ships. Capital that never <span class="grad">connects</span>.</h2><div class="grid two"><div class="card"><h3>For companies</h3><p>Most enterprise AI is slide decks and trials that die before production — billed by the hour, tied to one vendor, impossible to measure.</p></div><div class="card"><h3>For founders &amp; investors</h3><p>Good founders can’t reach the right investors; investors drown in cold pitches. Both are starved for the same thing: <b>someone they can trust.</b></p></div></div></section>
+    <section class="slide compact"><p class="kicker">What we do</p><h2>Two things, done <span class="grad">properly</span>.</h2><div class="grid two"><div class="card"><h3>Consulting</h3><ul><li>We build AI inside your own systems.</li><li>We agree on one number that shows whether it worked.</li><li>We hand it over on a monthly retainer, not a one-off.</li><li>Four kinds of work: automation, compliance &amp; governance, low-code tools, data integration.</li></ul></div><div class="card"><h3>Investor network</h3><p>We introduce the founders we work with to investors we know — introductions only, never a cut of a raise.</p></div></div></section>
+    <section class="slide"><p class="kicker">The way in</p><h2>Pick one number. We prove it moves. <span class="grad">You own the code.</span></h2><p class="body">A two-week pilot, fixed <span class="num">$8k–$15k</span> up front, one workflow and one success number agreed in writing, built inside your own systems. If the number doesn’t move, you don’t pay the fee — and you keep the code either way.</p><p class="quote">The risk sits with us.</p></section>
+    <section class="slide"><p class="kicker">How we deliver</p><h2>A small team that ships like a <span class="grad">big one</span>.</h2><p class="body">We build with NR3, a separate AI platform we help design and test on real client work. It plans, builds, checks, and fixes — so a few senior people cover a lot of ground.</p><p class="note mono">NR3 is its own company.</p></section>
+    <section class="slide compact"><p class="kicker">The moat</p><h2>The two sides <span class="grad">feed each other</span>.</h2><p class="statement">Good consulting work makes a founder worth backing. That lets us introduce them to investors we trust. When those bets pay off, investors trust our picks more, so better founders and clients come to us.</p><p class="note">It runs on relationships, which take years to earn. A consulting shop with no network has nothing to introduce; an intro service with no real work has no proof.</p></section>
+    <section class="slide compact"><p class="kicker">Market</p><h2>Where getting AI right <span class="grad">matters most</span>.</h2><div class="grid two"><div class="card"><h3>Consulting</h3><p>Regulated, data-heavy businesses — legal, healthcare, fintech, insurance — where a wrong AI answer is expensive.</p></div><div class="card"><h3>Capital</h3><p>Angels, small funds, family offices, syndicate leads — verified accredited only.</p></div></div></section>
+    <section class="slide compact"><p class="kicker">The model</p><h2>How we make money — <span class="grad">simple arithmetic</span>.</h2><div class="table"><div class="row"><div class="l">Revenue stream</div><div class="r">Range / rule</div></div><div class="row"><div class="l">Consulting retainers</div><div class="r">$1.5k–$20k / mo</div></div><div class="row"><div class="l">Investor memberships</div><div class="r">$3k–$12k / yr</div></div><div class="row"><div class="l">Equity only as payment for build work</div><div class="r">never for an intro</div></div></div><p class="note"><b>The ~$200k / month figure is a modeled target, not current revenue.</b><br />Not a broker — introductions and information only, never a cut of a raise. (Not legal advice.)</p></section>
+    <section class="slide"><p class="kicker">Team</p><h2>Small, senior, <span class="grad">honest</span>.</h2><p class="body">You work with the people who build, not an account manager. No invented clients, numbers, or logos. Named founders and the roles this round funds are placeholders until they’re real and checkable.</p></section>
+    <section class="slide close"><p class="kicker">The ask</p><h2>Help us turn early pilots into <span class="grad">steady revenue</span>.</h2><p class="body">Raising <span class="num">$[ ]</span> to hire the first senior builders and get the investor-membership side running.</p><div class="use"><span>Senior build hires</span><span>The membership side</span><span>Sales into regulated fields</span></div><p class="note mono">hello@dprai.io · dprai.io</p></section>
+  </main>
+</div>
+<script>
+(function(){
+  const stage=document.getElementById('stage'), deck=document.getElementById('deck'), slides=[...document.querySelectorAll('.slide')], dotsWrap=document.getElementById('dots'), progress=document.getElementById('progress'), cur=document.getElementById('cur'), total=document.getElementById('total');
+  let current=-1;
+  function startIndex(){const raw=(location.hash||'').replace(/^#slide-?/,'').replace(/^#/,'');const n=parseInt(raw,10);return Number.isFinite(n)?n-1:0;}
+  function fitStage(){const scale=Math.min(innerWidth/1280,innerHeight/720);stage.style.setProperty('--fit',scale.toFixed(4));}
+  addEventListener('resize',fitStage,{passive:true});fitStage();
+  total.textContent=String(slides.length);
+  slides.forEach((_,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Go to slide '+(i+1));b.addEventListener('click',e=>{e.stopPropagation();go(i);});dotsWrap.appendChild(b);});
+  const dots=[...dotsWrap.children];
+  function go(i){const next=Math.max(0,Math.min(slides.length-1,i));if(next===current)return;const old=current;current=next;slides.forEach((s,idx)=>{s.classList.toggle('active',idx===current);s.classList.toggle('prev',idx<current);});dots.forEach((d,idx)=>d.classList.toggle('on',idx===current));cur.textContent=String(current+1);progress.style.width=(current/(slides.length-1)*100)+'%';}
+  function next(){go(current+1)} function prev(){go(current-1)}
+  addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();next();}else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();prev();}else if(e.key==='Home'){e.preventDefault();go(0);}else if(e.key==='End'){e.preventDefault();go(slides.length-1);}else if(e.key==='Escape'){return;}});
+  deck.addEventListener('click',e=>{if(e.target.closest('button,a'))return;next();});
+  let sx=0;deck.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;},{passive:true});deck.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50){dx<0?next():prev();}},{passive:true});
+  go(startIndex());
+})();
+</script>
+</body>
+</html>
