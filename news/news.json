@@ -1,11 +1,139 @@
 {
   "meta": {
-    "generated_at": "2026-07-08T18:59:29.205913+00:00",
+    "generated_at": "2026-07-08T21:15:35.590486+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "59a2edde9ec2",
+      "headline": "Gov. Pritzker Signs Nation-Leading Artificial Intelligence Safety Law",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://gov-pritzker-newsroom.prezly.com/gov-pritzker-signs-nation-leading-artificial-intelligence-safety-law",
+      "published_at": "2026-07-08T21:03:47+00:00",
+      "summary": "3 points and 1 comments on Hacker News.",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.7686
+    },
+    {
+      "id": "8dd183ee3609",
+      "headline": "Google’s deepfake detector system used to debunk McConnell hoax pic",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/",
+      "published_at": "2026-07-08T20:37:03+00:00",
+      "summary": "Earlier this week, a picture seemed to show Kentucky Senator Mitch McConnell covered in tubes in a hospital bed in a state of extreme distress. It turned out to be an AI-generated fake.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7929
+    },
+    {
+      "id": "2949c6e364e2",
+      "headline": "Maybe Anthropic and OpenAI Are Not the Future of Artificial Intelligence",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.nytimes.com/2026/07/08/opinion/openai-anthropic-palantir-alex-karp.html",
+      "published_at": "2026-07-08T20:04:52+00:00",
+      "summary": "7 points and 2 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5557
+    },
+    {
+      "id": "dec72a4f204c",
+      "headline": "Lawsuit: Man used Grok to make 7K sex images of stepdaughter, then shot himself",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/tech-policy/2026/07/lawsuit-grok-user-made-7k-child-sex-images-xai-only-reported-one-gang-rape-prompt/",
+      "published_at": "2026-07-08T19:56:37+00:00",
+      "summary": "More young girls sue X over Grok CSAM; X accused of shielding child predators.",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.788
+    },
+    {
+      "id": "67b034bb6c58",
+      "headline": "SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
+      "published_at": "2026-07-08T19:30:16+00:00",
+      "summary": "Elon Musk's tech company released the newest version of Grok on Wednesday, promising a cheaper, more efficient alternative to other powerful AI models.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7849
+    },
+    {
+      "id": "123ee15fa287",
+      "headline": "This startup thinks robotics is about to have its ChatGPT moment",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment/",
+      "published_at": "2026-07-08T19:19:15+00:00",
+      "summary": "General Intuition is betting millions of hours of video game data can train the foundation models for physical AI, making it easier to build smarter robots with minimal real-world data.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7836
+    },
+    {
+      "id": "6d2d955a63e4",
+      "headline": "Datacentres are a ticking time bomb",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.theguardian.com/commentisfree/2026/jul/09/ai-artificial-intelligence-benefits-costs-datacentres-energy-water-environment",
+      "published_at": "2026-07-08T19:18:07+00:00",
+      "summary": "6 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5496
+    },
+    {
+      "id": "37ceddeee064",
+      "headline": "Organization is a bigger idea than intelligence – human, or artificial",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://shrsv.hexmos.com/post/organization-bigger-than-intelligence",
+      "published_at": "2026-07-08T19:05:12+00:00",
+      "summary": "1 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5451
+    },
     {
       "id": "127f2e6c5796",
       "headline": "Google Photos adds a new AI ‘Video Remix’ tool",
@@ -20,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.794
+      "rank_score": 0.778
     },
     {
       "id": "a5342c550d44",
@@ -36,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7889
+      "rank_score": 0.7732
     },
     {
       "id": "9476dece600b",
@@ -52,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7846
+      "rank_score": 0.769
     },
     {
       "id": "963a6870c5aa",
@@ -68,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7833
+      "rank_score": 0.7678
     },
     {
       "id": "efaf55cef858",
@@ -84,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7833
+      "rank_score": 0.7678
     },
     {
       "id": "f3111ce02867",
@@ -100,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5455
+      "rank_score": 0.53
     },
     {
       "id": "c28926501691",
@@ -116,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8409
+      "rank_score": 0.8255
     },
     {
       "id": "bd2837755c07",
@@ -132,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8144
+      "rank_score": 0.799
     },
     {
       "id": "2f30f5e21698",
@@ -148,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.839
+      "rank_score": 0.8237
     },
     {
       "id": "967680726baf",
@@ -164,7 +292,39 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7742
+      "rank_score": 0.7591
+    },
+    {
+      "id": "41b85c9cdb7a",
+      "headline": "Our approach to government and national security partnerships",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/government-national-security-partnerships",
+      "published_at": "2026-07-08T13:30:00+00:00",
+      "summary": "Learn how OpenAI approaches government and national security partnerships, with principles for responsible AI use, democratic accountability, and public safety.",
+      "tags": [
+        "Safety"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.7803
+    },
+    {
+      "id": "eaad4cbcfa7f",
+      "headline": "Separating signal from noise in coding evaluations",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+      "published_at": "2026-07-08T13:00:00+00:00",
+      "summary": "A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI models.",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.7772
     },
     {
       "id": "690f05c71d21",
@@ -180,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7564
+      "rank_score": 0.7422
     },
     {
       "id": "fcbb5886d3a9",
@@ -196,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7501
+      "rank_score": 0.7361
     },
     {
       "id": "de9286311527",
@@ -212,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7727
+      "rank_score": 0.7593
     },
     {
       "id": "2e1d33d54662",
@@ -228,167 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7259
-    },
-    {
-      "id": "4238b4b67de1",
-      "headline": "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
-      "published_at": "2026-07-08T07:16:00+00:00",
-      "summary": "AI chip maker SambaNova has raised at an $11 billion valuation months after Intel was rumored to be trying to buy it for about $1.6 billion.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7817
-    },
-    {
-      "id": "85e90d55efed",
-      "headline": "Hackers can use 9 of the most popular AI tools to assemble massive botnets",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/",
-      "published_at": "2026-07-08T07:00:51+00:00",
-      "summary": "\"HalluSquatting\" weaponizes LLMs' inability to say \"I don't know.\"",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7202
-    },
-    {
-      "id": "13e85d8b87e9",
-      "headline": "Prompt-to-Paper: Agentic AI System for Bioinformatics",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.05456",
-      "published_at": "2026-07-08T04:00:00+00:00",
-      "summary": "arXiv:2607.05456v1 Announce Type: new Abstract: While recent advances in large language models have enabled end-to-end automated manuscript generation, existing systems suffer from three critical deficiencies: (i) generated claims are not…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7211
-    },
-    {
-      "id": "5a6352017520",
-      "headline": "From Graphs to Gradients: Physics-Inspired Structural Attribution for Cyber-Physical IoT Systems and Beyond",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.05563",
-      "published_at": "2026-07-08T04:00:00+00:00",
-      "summary": "arXiv:2607.05563v1 Announce Type: new Abstract: Interpretable explanation methods in Artificial Intelligence aim to uncover the underlying causes and their effects, enabling a deeper understanding of why a system behaves in a certain way…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7211
-    },
-    {
-      "id": "01af1d0f85ed",
-      "headline": "CSTutorBench: Benchmarking Small Language Models as Tutors for Block-Based Programming",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.05571",
-      "published_at": "2026-07-08T04:00:00+00:00",
-      "summary": "arXiv:2607.05571v1 Announce Type: new Abstract: Large language models are increasingly explored as AI tutors, yet deploying them in K-12 settings raises concerns around privacy, cost, and reliance on proprietary models. Small language…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7211
-    },
-    {
-      "id": "7182eca640dd",
-      "headline": "Foundation Models for Automatic CAD Generation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.05573",
-      "published_at": "2026-07-08T04:00:00+00:00",
-      "summary": "arXiv:2607.05573v1 Announce Type: new Abstract: Recent advances in Large Language Models (LLMs) and Vision-Language Models (VLMs) enable the automatic generation of parametric 3D designs from natural-language specifications. This chapter…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7211
-    },
-    {
-      "id": "b7531c0c1e29",
-      "headline": "Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.05577",
-      "published_at": "2026-07-08T04:00:00+00:00",
-      "summary": "arXiv:2607.05577v1 Announce Type: new Abstract: Long-form fiction writers need memory that answers multi-hop questions about evolving story state: who knows a secret and when they learned it, whether an event preceded the narration that…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7211
-    },
-    {
-      "id": "309a25771085",
-      "headline": "FirstResearch: Auditable Question Formation for LLM Scientific Discovery Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.05682",
-      "published_at": "2026-07-08T04:00:00+00:00",
-      "summary": "arXiv:2607.05682v1 Announce Type: new Abstract: LLM systems for scientific discovery increasingly assist with ideation, literature synthesis, experiment planning, and report generation, but the first research question they propose can…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7211
-    },
-    {
-      "id": "1b817acf85f1",
-      "headline": "Memory in the Loop: In-Process Retrieval as ExtendedWorking Memory for Language Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.05690",
-      "published_at": "2026-07-08T04:00:00+00:00",
-      "summary": "arXiv:2607.05690v1 Announce Type: new Abstract: Language agents run a loop - observe, reason, act - but the memory they reason over sits outside it: a store queried at most once per turn. We study the regime where memory moves inside the…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7211
-    },
-    {
-      "id": "a24bc131c82a",
-      "headline": "Akashic: A Low-Overhead LLM Inference Service with MemAttention",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.05708",
-      "published_at": "2026-07-08T04:00:00+00:00",
-      "summary": "arXiv:2607.05708v1 Announce Type: new Abstract: Recent LLM-based agent systems continuously accumulate context across multi-turn interactions, tool invocations, and cross-session workflows. Replaying the full history for every request…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7211
+      "rank_score": 0.713
     }
   ]
 }
