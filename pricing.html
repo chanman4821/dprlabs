@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pricing — DPR AI</title>
+<meta name="description" content="Three steps, and you choose how far to go. A $500–$2,500 audit to find the win, a $3k–$15k fixed-price build, and a $2k–$10k+ monthly retainer only if you want us to stay. You own everything. Cancel any time." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="canonical" href="https://dprai.io/pricing.html" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DPR AI" />
+<meta property="og:title" content="Pricing — DPR AI" />
+<meta property="og:description" content="Start small, pay more only when it works. Audit ($500–$2,500), Build sprint ($3k–$15k), Monthly retainer ($2k–$10k+). You own everything. No lock-in." />
+<meta property="og:url" content="https://dprai.io/pricing.html" />
+<meta property="og:image" content="https://dprai.io/assets/og-default.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Pricing — DPR AI" />
+<meta name="twitter:description" content="Start small, pay more only when it works. Audit, Build sprint, Monthly retainer. You own everything. No lock-in." />
+<meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="site.css?v=11" />
+<link rel="icon" href="assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<style>
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+  .tier{position:relative;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:26px 24px;display:flex;flex-direction:column}
+  .tier.feature{border-color:var(--accent);box-shadow:0 18px 44px rgba(59,91,219,.12)}
+  .tier .step{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+  .tier.feature .step{color:var(--accent)}
+  .tier h2{font-size:21px;letter-spacing:-.02em;margin:8px 0 4px}
+  .tier .price{font-size:26px;font-weight:700;letter-spacing:-.02em;margin:10px 0 2px;font-variant-numeric:tabular-nums}
+  .tier .per{font-size:13px;color:var(--faint);margin-bottom:16px}
+  .tier .lede{font-size:14.5px;color:var(--muted);line-height:1.55;margin:0 0 16px}
+  .tier ul{list-style:none;margin:0 0 20px;padding:0;flex:1}
+  .tier li{position:relative;padding:7px 0 7px 24px;font-size:14px;color:var(--ink-2);line-height:1.5;border-top:1px solid var(--line)}
+  .tier li:first-child{border-top:0}
+  .tier li::before{content:"";position:absolute;left:2px;top:13px;width:8px;height:8px;border-radius:50%;background:var(--accent-soft);border:1px solid var(--accent)}
+  .tier .who{font-size:12.5px;color:var(--faint);margin:0 0 16px}
+  .ladder{border:1px solid var(--line);border-radius:var(--radius);background:var(--bg-soft);padding:26px 28px;margin-top:26px}
+  .ladder h2{font-size:22px;margin:0 0 8px}
+  .ladder .flow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 0;font-family:var(--mono);font-size:13px}
+  .ladder .flow b{color:var(--accent)}
+  .ladder .flow .ar{color:var(--faint)}
+  .honest{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+  .honest .c{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+  .honest h3{font-size:15px;margin:0 0 6px}
+  .honest p{font-size:14px;color:var(--muted);line-height:1.55;margin:0}
+  .p-cta{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--gold-soft));padding:clamp(24px,4vw,36px);margin-top:26px}
+  .p-cta h2{font-size:clamp(24px,3vw,32px);margin:6px 0 0}
+  .p-cta p{color:var(--muted);margin:12px 0 18px;max-width:60ch}
+  @media(max-width:820px){.tiers{grid-template-columns:1fr}.honest{grid-template-columns:1fr}}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="method.html">How it works</a><a href="pricing.html" aria-current="page">Pricing</a><div class="learn"><button class="learn-trigger" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="kb/index.html">Knowledge Base<span class="desc">Reference articles & how-tos.</span></a><a role="menuitem" href="blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="learn/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a></div></div><a href="about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="method.html">How it works</a><a href="pricing.html">Pricing</a><a href="guide/index.html">Learn AI</a><a href="kb/index.html">Knowledge Base</a><a href="blog/index.html">Field Notes</a><a href="learn/index.html">Training</a><a href="news/index.html">News</a><a href="about.html">About</a><a href="contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Pricing</p>
+      <h1 style="margin-top:12px">Start small. Pay more only when it works.</h1>
+      <p class="lead" style="margin-top:16px;max-width:64ch">Three steps, and you decide how far to go. A cheap audit to find the win. A fixed-price build to make it real. A monthly retainer only if you want us to keep going. You own everything we build, and you can stop any time.</p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap reveal">
+      <div class="tiers" data-stagger>
+
+        <div class="tier">
+          <span class="step">Step 1 · Land</span>
+          <h2>AI Audit</h2>
+          <div class="price">$500–$2,500</div>
+          <div class="per">one-time, fixed fee</div>
+          <p class="lede">Find the one workflow worth automating. Before anyone builds anything.</p>
+          <ul>
+            <li>We map your workflows and where AI actually pays off</li>
+            <li>A written scorecard: the first thing to fix, and the number it should move</li>
+            <li>A rough build cost, so there are no surprises</li>
+            <li>A straight go/no-go. Sometimes it's "don't build yet"</li>
+          </ul>
+          <p class="who">Best if you're not sure where to start. The fee credits toward a build if you go ahead.</p>
+          <a href="contact.html" class="btn btn-ghost">Book an audit</a>
+        </div>
+
+        <div class="tier feature">
+          <span class="step">Step 2 · Build</span>
+          <h2>Build sprint</h2>
+          <div class="price">$3,000–$15,000</div>
+          <div class="per">fixed price, fixed scope</div>
+          <p class="lede">One workflow, built into your systems and handed over. You own it.</p>
+          <ul>
+            <li>We agree one honest number up front, then build to move it</li>
+            <li>It runs on your accounts, wired into the tools you already use</li>
+            <li>You get the code, the keys, and the docs. No lock-in</li>
+            <li>A before/after scorecard proves it worked</li>
+          </ul>
+          <p class="who">Price tracks scope: a clean single workflow near $3k; an integrated or compliance-heavy build up to $15k.</p>
+          <a href="contact.html" class="btn btn-primary">Scope a build</a>
+        </div>
+
+        <div class="tier">
+          <span class="step">Step 3 · Keep</span>
+          <h2>Monthly retainer</h2>
+          <div class="price">$2,000–$10,000+</div>
+          <div class="per">per month, cancel any time</div>
+          <p class="lede">Keep it working. Build the next one. Only if you want us to stay.</p>
+          <ul>
+            <li>We watch it and fix it as your data shifts</li>
+            <li>We keep it current as the AI models change underneath</li>
+            <li>We build your next workflow on the same terms</li>
+            <li>Cancel any time. You keep everything</li>
+          </ul>
+          <p class="who">Light monitoring starts near $2k. Active build across several systems runs $10k and up.</p>
+          <a href="contact.html" class="btn btn-ghost">Talk retainer</a>
+        </div>
+
+      </div>
+
+      <div class="ladder reveal">
+        <h2>How the three fit together</h2>
+        <p style="color:var(--muted);max-width:70ch;margin:8px 0 0">Each step earns the next. The audit tells you whether a build is even worth it. The build proves it on a real number before you commit further. The retainer is optional, and it's month to month. You never buy the next step on faith.</p>
+        <div class="flow"><b>Audit</b> <span class="ar">→</span> <b>Build sprint</b> <span class="ar">→</span> <b>Retainer</b> <span class="ar">(optional)</span></div>
+      </div>
+
+      <div class="honest">
+        <div class="c"><h3>You own it</h3><p>Code, keys, docs, all of it. Fire us on a Friday and your team can run it Monday. That's the point.</p></div>
+        <div class="c"><h3>The guarantee</h3><p>We agree the number before we build. If a build doesn't move it, you don't pay the final invoice, and you keep the code.</p></div>
+        <div class="c"><h3>Fixed, not hourly</h3><p>Every price here is a fixed fee for a defined piece of work. No open meter, no "strategic learnings" invoice.</p></div>
+        <div class="c"><h3>We'll say no</h3><p>If a script would do the job, or your data isn't ready, we'll tell you. An honest no is cheaper than a bad build.</p></div>
+      </div>
+
+      <div class="p-cta reveal">
+        <p class="eyebrow">Get started</p>
+        <h2>Not sure which step you're on?</h2>
+        <p>Tell us the task your team dreads most. We'll reply within one business day with the number we'd aim to move and which step makes sense first.</p>
+        <a href="contact.html" class="btn btn-primary">Start with an audit <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="method.html" class="btn btn-ghost">See how a build works</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="pricing.html">Pricing</a><a href="case-studies.html">Case studies</a><a href="about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="guide/index.html">Learn AI</a><a href="kb/index.html">Knowledge Base</a><a href="blog/index.html">Field Notes</a><a href="news/index.html">News</a></div><div class="foot-col"><h4>Get started</h4><a href="contact.html">Start a build</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<script src="site.js?v=11" defer></script>
+<script src="assets/anim.js?v=10" defer></script>
+</body>
+</html>

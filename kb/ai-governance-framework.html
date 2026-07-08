@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AI governance framework, explained — DPR AI Knowledge Base</title>
-<meta name="description" content="An AI governance framework is a written, repeatable answer to four questions: what AI is allowed to do, how you check it's right, what you log, and who's accountable. Here's the version — plus where NIST and ISO fit." />
+<title>AI governance framework: the plain version — DPR AI Knowledge Base</title>
+<meta name="description" content="An AI governance framework answers four plain questions: what AI can do, how you catch wrong answers, what gets logged, and who owns the result. It also shows where NIST and ISO fit." />
 <meta name="theme-color" content="#ffffff" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,16 +38,16 @@
 <meta name="robots" content="index, follow" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="DPR AI" />
-<meta property="og:title" content="AI governance framework, explained — DPR AI Knowledge Base" />
-<meta property="og:description" content="An AI governance framework is a written, repeatable answer to four questions: what AI is allowed to do, how you check it's right, what you log, and who's accountable. Here's the version — plus where NIST and ISO fit." />
+<meta property="og:title" content="AI governance framework: the plain version — DPR AI Knowledge Base" />
+<meta property="og:description" content="An AI governance framework answers four plain questions: what AI can do, how you catch wrong answers, what gets logged, and who owns the result. It also shows where NIST and ISO fit." />
 <meta property="og:url" content="https://dprai.io/kb/ai-governance-framework.html" />
 <meta property="og:image" content="https://dprai.io/assets/og-default.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="AI governance framework, explained — DPR AI Knowledge Base" />
-<meta name="twitter:description" content="An AI governance framework is a written, repeatable answer to four questions: what AI is allowed to do, how you check it's right, what you log, and who's accountable. Here's the version — plus where NIST and ISO fit." />
+<meta name="twitter:title" content="AI governance framework: the plain version — DPR AI Knowledge Base" />
+<meta name="twitter:description" content="An AI governance framework answers four plain questions: what AI can do, how you catch wrong answers, what gets logged, and who owns the result. It also shows where NIST and ISO fit." />
 <meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "Article", "headline": "AI governance framework, explained — DPR AI Knowledge Base", "description": "An AI governance framework is a written, repeatable answer to four questions: what AI is allowed to do, how you check it's right, what you log, and who's accountable. Here's the version — plus where NIST and ISO fit.", "url": "https://dprai.io/kb/ai-governance-framework.html", "image": "https://dprai.io/assets/og-default.png", "publisher": {"@type": "Organization", "name": "DPR AI", "url": "https://dprai.io/"}, "mainEntityOfPage": "https://dprai.io/kb/ai-governance-framework.html"}
+{"@context": "https://schema.org", "@type": "Article", "headline": "AI governance framework: the plain version — DPR AI Knowledge Base", "description": "An AI governance framework answers four plain questions: what AI can do, how you catch wrong answers, what gets logged, and who owns the result. It also shows where NIST and ISO fit.", "url": "https://dprai.io/kb/ai-governance-framework.html", "image": "https://dprai.io/assets/og-default.png", "publisher": {"@type": "Organization", "name": "DPR AI", "url": "https://dprai.io/"}, "mainEntityOfPage": "https://dprai.io/kb/ai-governance-framework.html"}
 </script>
 </head>
 <body id="top">
@@ -55,12 +55,12 @@
 <header class="nav">
   <div class="wrap nav-in">
     <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
-    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><div class="learn"><button class="learn-trigger on" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="../guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="../kb/index.html" aria-current="page">Knowledge Base<span class="desc">Reference articles & how-tos.</span></a><a role="menuitem" href="../blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="../learn/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="../news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a></div></div><a href="../about.html">About</a></nav>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><div class="learn"><button class="learn-trigger on" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="../guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="../kb/index.html" aria-current="page">Knowledge Base<span class="desc">Reference articles & how-tos.</span></a><a role="menuitem" href="../blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="../learn/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="../news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a></div></div><a href="../about.html">About</a></nav>
     <span class="nav-sp"></span>
     <div class="nav-cta"><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="../learn/index.html">Training</a><a href="../news/index.html">News</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="../learn/index.html">Training</a><a href="../news/index.html">News</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
 </header>
 
 <main id="main">
@@ -68,34 +68,34 @@
     <div class="wrap prose reveal">
       <p class="crumb"><a href="index.html">Knowledge Base</a> › Compliance &amp; Governance</p>
       <p class="eyebrow">Compliance &amp; Governance</p>
-      <h1 style="margin-top:12px">AI governance framework, explained</h1>
+      <h1 style="margin-top:12px">AI governance framework: the plain version</h1>
       <p class="kb-meta"><span>Explainer</span><span>Last reviewed Jul 8, 2026</span><span>6 min read</span></p>
-      <div class="tldr"><span class="k">In short</span><p>An "AI governance framework" sounds heavy, but it's just a written, repeatable answer to four questions: <strong>what are we allowed to use AI for, how do we check it's right, what do we log, and who's accountable.</strong> You don't need a 50-page binder — you need those four answers written down and actually followed.</p></div>
+      <div class="tldr"><span class="k">In short</span><p>An "AI governance framework" sounds heavy. It isn't. It's a written answer to four questions you can settle in an afternoon. <strong>What can we use AI for? How do we catch a wrong answer? What do we log? And who's on the hook?</strong> You don't need a 50-page binder. You need clear answers people follow.</p></div>
     </div>
   </section>
 
   <section class="sec" style="padding-top:8px" data-reveal>
     <div class="wrap prose reveal">
-      <p>The word "framework" scares people into thinking they need a compliance department. They don't. A framework is simply the set of rules you'd want in place so that AI can't quietly do something dumb or risky in your company's name — written down once, so it's the same every time. Here's what actually goes in one.</p>
+      <p>The word "framework" makes people picture a compliance department. They don't need one. A framework is the written rulebook you'd want before AI drafts refund emails, screens leads, or summarizes contracts. It keeps the same check happening every time, even when the work gets busy.</p>
 
       <h2>The four questions every framework answers</h2>
       <ol class="steps" data-stagger>
-        <li><h3>What are we allowed to use AI for?</h3><p>Which tasks and tools are approved, and which are off-limits. Naming the green and red zones up front stops the "someone pasted the whole client list into a chatbot" problem.</p></li>
-        <li><h3>How do we check it's right?</h3><p>Where a human reviews the output before it's used, and how you'd catch a confident mistake. High-stakes work — money, legal, customer-facing — always gets a check.</p></li>
-        <li><h3>What do we log?</h3><p>A record of what the AI did and decided, so you can review it later, explain it to a customer, or show an auditor. If it's not written down, it didn't happen.</p></li>
-        <li><h3>Who's accountable?</h3><p>A named person who owns each AI use — not "the AI decided," but "this is ours and here's who stands behind it."</p></li>
+        <li><h3>What are we allowed to use AI for?</h3><p>Name the approved tools and banned uses. Don't wait for someone to paste the client list into a chatbot before drawing the line.</p></li>
+        <li><h3>How do we check it's right?</h3><p>Decide where a person checks output before it's used. Don't let a confident error approve a refund, quote policy, or email a customer.</p></li>
+        <li><h3>What do we log?</h3><p>Keep a record of what AI did and decided. You'll need it for a customer question, an audit, or a bad answer review. If it isn't written down, it didn't happen.</p></li>
+        <li><h3>Who's accountable?</h3><p>Name the owner for each AI use. Don't let "the AI decided" become the answer when a customer asks who approved it.</p></li>
       </ol>
 
       <h2>A minimal framework you can write in an afternoon</h2>
-      <p>Answer the four questions on a single page for each way you use AI: the approved tool, the data rule, the review step, and the owner. That one page <em>is</em> your framework. You can grow it later, but a short document that people actually follow beats a thick one that sits in a drawer.</p>
+      <p>Keep it short. For each AI use, write the approved tool, the data rule, the review step, and the owner. That one page <em>is</em> your framework. You'll grow it later, but a short document people follow beats a thick one nobody opens.</p>
 
       <div class="note">
         <p class="k">Where the big frameworks fit</p>
-        <p>If you want an established model to build on, the two most referenced are the <strong>NIST AI Risk Management Framework</strong> (a voluntary US government framework) and <strong>ISO/IEC 42001</strong> (an international standard for AI management systems). They're more detailed versions of the same four ideas — map your risks, measure them, manage them, and govern who's responsible. For most small companies, start with the one-pager above and reach for these when a customer, investor, or regulator asks for a recognised standard.</p>
+        <p>Use the big frameworks when you need them. They aren't magic. The two most referenced are the <strong>NIST AI Risk Management Framework</strong>. It's a voluntary US government framework. The other is <strong>ISO/IEC 42001</strong>, an international standard for AI management systems. They're detailed versions of the same work: map risk, measure it, manage it, and govern who's responsible. For most small companies, start with the one-pager above. Reach for these when a customer, investor, or regulator asks for a recognized standard.</p>
       </div>
 
-      <h2>Build it in, don't bolt it on</h2>
-      <p>The cheapest time to add governance is while the AI system is being built — the logging, the human-check step, and the access rules become part of the design instead of a scramble after something goes wrong. Retro-fitting controls onto a black box you already shipped is always harder and more expensive.</p>
+      <h2>Build it in. Don't bolt it on.</h2>
+      <p>The cheapest time to add governance is while the AI system is being built. Don't wait. Logging, human review, and access rules should sit inside the design from the start. Retrofitting controls onto a black box you already shipped is always harder and more expensive.</p>
 
       <div class="related">
         <h3>Read next</h3>
@@ -105,7 +105,7 @@
 
       <div class="kb-cta">
         <p class="k">Apply this</p>
-        <p>DPR builds the framework into the system — logging, human checks, and clear ownership from day one — so "governed" and "audit-ready" aren't a later scramble. Especially built for regulated teams.</p>
+        <p>DPR builds the framework into the system from day one. No drama. Logging, human checks, and clear ownership are part of the build, so "governed" and "audit-ready" aren't a later scramble. It's built for regulated teams.</p>
         <a href="../method.html" class="btn btn-primary">See how a build works <span class="arrow" aria-hidden="true">→</span></a>
         <a href="../contact.html" class="btn btn-ghost">Talk to us</a>
       </div>

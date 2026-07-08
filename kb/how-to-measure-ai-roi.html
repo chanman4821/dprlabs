@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>How to measure the ROI of an AI project (without fooling yourself) — DPR AI Knowledge Base</title>
-<meta name="description" content="A step-by-step, method for measuring AI ROI honestly: pick one number your business cares about, set a clean baseline, measure after on fresh human-checked data, and write down the sample size and caveats." />
+<title>Measure AI ROI without fooling yourself — DPR AI Knowledge Base</title>
+<meta name="description" content="Measure AI ROI without the theater. Pick one business number, record the baseline, test fresh work, and write down what didn't get measured." />
 <meta name="theme-color" content="#ffffff" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,16 +38,16 @@
 <meta name="robots" content="index, follow" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="DPR AI" />
-<meta property="og:title" content="How to measure the ROI of an AI project (without fooling yourself) — DPR AI Knowledge Base" />
-<meta property="og:description" content="A step-by-step, method for measuring AI ROI honestly: pick one number your business cares about, set a clean baseline, measure after on fresh human-checked data, and write down the sample size and caveats." />
+<meta property="og:title" content="Measure AI ROI without fooling yourself — DPR AI Knowledge Base" />
+<meta property="og:description" content="Measure AI ROI without the theater. Pick one business number, record the baseline, test fresh work, and write down what didn't get measured." />
 <meta property="og:url" content="https://dprai.io/kb/how-to-measure-ai-roi.html" />
 <meta property="og:image" content="https://dprai.io/assets/og-default.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="How to measure the ROI of an AI project (without fooling yourself) — DPR AI Knowledge Base" />
-<meta name="twitter:description" content="A step-by-step, method for measuring AI ROI honestly: pick one number your business cares about, set a clean baseline, measure after on fresh human-checked data, and write down the sample size and caveats." />
+<meta name="twitter:title" content="Measure AI ROI without fooling yourself — DPR AI Knowledge Base" />
+<meta name="twitter:description" content="Measure AI ROI without the theater. Pick one business number, record the baseline, test fresh work, and write down what didn't get measured." />
 <meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "Article", "headline": "How to measure the ROI of an AI project (without fooling yourself) — DPR AI Knowledge Base", "description": "A step-by-step, method for measuring AI ROI honestly: pick one number your business cares about, set a clean baseline, measure after on fresh human-checked data, and write down the sample size and caveats.", "url": "https://dprai.io/kb/how-to-measure-ai-roi.html", "image": "https://dprai.io/assets/og-default.png", "publisher": {"@type": "Organization", "name": "DPR AI", "url": "https://dprai.io/"}, "mainEntityOfPage": "https://dprai.io/kb/how-to-measure-ai-roi.html"}
+{"@context": "https://schema.org", "@type": "Article", "headline": "Measure AI ROI without fooling yourself — DPR AI Knowledge Base", "description": "Measure AI ROI without the theater. Pick one business number, record the baseline, test fresh work, and write down what didn't get measured.", "url": "https://dprai.io/kb/how-to-measure-ai-roi.html", "image": "https://dprai.io/assets/og-default.png", "publisher": {"@type": "Organization", "name": "DPR AI", "url": "https://dprai.io/"}, "mainEntityOfPage": "https://dprai.io/kb/how-to-measure-ai-roi.html"}
 </script>
 </head>
 <body id="top">
@@ -55,12 +55,12 @@
 <header class="nav">
   <div class="wrap nav-in">
     <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
-    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><div class="learn"><button class="learn-trigger on" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="../guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="../kb/index.html" aria-current="page">Knowledge Base<span class="desc">Reference articles & how-tos.</span></a><a role="menuitem" href="../blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="../learn/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="../news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a></div></div><a href="../about.html">About</a></nav>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><div class="learn"><button class="learn-trigger on" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="../guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="../kb/index.html" aria-current="page">Knowledge Base<span class="desc">Reference articles & how-tos.</span></a><a role="menuitem" href="../blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="../learn/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="../news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a></div></div><a href="../about.html">About</a></nav>
     <span class="nav-sp"></span>
     <div class="nav-cta"><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="../learn/index.html">Training</a><a href="../news/index.html">News</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="../learn/index.html">Training</a><a href="../news/index.html">News</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
 </header>
 
 <main id="main">
@@ -68,40 +68,40 @@
     <div class="wrap prose reveal">
       <p class="crumb"><a href="index.html">Knowledge Base</a> › Measuring AI</p>
       <p class="eyebrow">Measuring AI</p>
-      <h1 style="margin-top:12px">How to measure the ROI of an AI project (without fooling yourself)</h1>
+      <h1 style="margin-top:12px">Measure AI ROI without fooling yourself</h1>
       <p class="kb-meta"><span>How-to</span><span>Last reviewed Jul 8, 2026</span><span>7 min read</span></p>
-      <div class="tldr"><span class="k">In short</span><p>Real AI ROI is simple to state and easy to fake. Pick one number your business already cares about, measure it honestly <em>before</em> you build, measure it again <em>after</em> on fresh data a human checks, and write down the sample size and caveats. If you can't measure it that way, you can't honestly claim a return.</p></div>
+      <div class="tldr"><span class="k">In short</span><p>AI ROI is easy to say and easy to fake. Start with one number your business already watches. Keep it narrow. Measure it <em>before</em> the build, then again <em>after</em> on fresh work a human checks. If you can't show the sample size and caveats, you can't claim the return.</p></div>
     </div>
   </section>
 
   <section class="sec" style="padding-top:8px" data-reveal>
     <div class="wrap prose reveal">
-      <p>Most "AI ROI" numbers fall apart the moment you poke them. They're measured on the demo, on cherry-picked examples, or against a "before" nobody actually recorded. Here is the method that stands up — the same one a careful team can reproduce without trusting anyone's word.</p>
+      <p>Most "AI ROI" numbers fall apart when you poke them. They're measured on demos or cherry-picked examples. Bad start. Some compare against a "before" nobody recorded, like last quarter's support backlog. Use a method your team can rerun without trusting anyone's word.</p>
 
       <ol class="steps" data-stagger>
-        <li><h3>Pick one number your business already cares about</h3><p>Not five goals — one. Hours spent on a task, cost per case, error rate, time-to-answer. If a stranger on your team wouldn't recognise it as important, it's the wrong number.</p></li>
-        <li><h3>Set a clean baseline before you build</h3><p>"Before vs after" is meaningless without a real before. Measure how the task performs today, on real work, and write it down. This is the step almost everyone skips — and it's the one that makes the ROI believable.</p></li>
-        <li><h3>Measure after on fresh, human-checked data</h3><p>Test on work the system hasn't seen, not the examples it was tuned on. Have a person check a slice of the results by hand. A number the vendor computes in private isn't evidence.</p></li>
-        <li><h3>Write down the sample size and the caveats</h3><p>A win on 400 cases means something; a win on 4 means nothing. Note how big the sample was, who checked it, and what the number does <em>not</em> tell you. Honesty about limits is what makes the number trustworthy.</p></li>
-        <li><h3>Turn the number into money or time</h3><p>Translate it: minutes saved per case × cases per month × the cost of that time. Now the metric ladders up to something a budget owner feels — the actual return.</p></li>
+        <li><h3>Pick one number your business already cares about</h3><p>Not five goals. One. Use hours spent on a task, cost per case, error rate, or time-to-answer. If your ops lead wouldn't care, it's the wrong number.</p></li>
+        <li><h3>Set a clean baseline before you build</h3><p>"Before vs after" means nothing without a real before. Measure today's work and write it down. This is the skipped step that makes ROI believable, like timing 50 intake calls before automation.</p></li>
+        <li><h3>Measure after on fresh, human-checked data</h3><p>Test on work the system hasn't seen, not the examples used to tune it. Have a person check a slice by hand. A vendor's private score isn't evidence.</p></li>
+        <li><h3>Write down the sample size and the caveats</h3><p>A win on 400 cases means something. A win on 4 doesn't. Note the sample size, who checked it, and what the number leaves out.</p></li>
+        <li><h3>Turn the number into money or time</h3><p>Translate it into plain math: minutes saved per case × cases per month × the cost of that time. That's the return a budget owner can feel.</p></li>
       </ol>
 
       <h2>The vanity metrics that fake ROI</h2>
-      <p>These look like returns and measure almost nothing useful:</p>
+      <p>Some numbers look serious and still don't tell you much. Watch these. They're the usual suspects.</p>
       <ul>
-        <li><strong>Model accuracy on a clean test set.</strong> Your real Tuesday inputs are messy; a tidy benchmark score doesn't survive them.</li>
+        <li><strong>Model accuracy on a clean test set.</strong> Your real Tuesday inputs are messy, and a tidy benchmark score often won't survive them.</li>
         <li><strong>Benchmark wins.</strong> "Beats model X on task Y" is a press release. Nobody's afternoon got shorter because of it.</li>
-        <li><strong>Usage and engagement.</strong> People clicking the AI button is not people getting work done faster. Measure the work, not the tool.</li>
-        <li><strong>A single amazing example.</strong> One great output proves it <em>can</em> be right, not that it usually is. Measure over a sample, never an anecdote.</li>
+        <li><strong>Usage and engagement.</strong> People clicking the AI button doesn't mean the work got faster. Measure the invoice, ticket, or call.</li>
+        <li><strong>A single amazing example.</strong> One great output proves it <em>can</em> be right, not that it usually is. Measure a sample, not a screenshot.</li>
       </ul>
 
       <div class="test">
         <p class="k">The honesty test</p>
-        <p>Before you start, write down what result would make you call the project a failure. If you can't name a number that would count as "it didn't work," you're not measuring ROI — you're setting up a story that can only end in success.</p>
+        <p>Before you start, write down what result would make you call the project a failure. If you can't name that number, you're not measuring ROI. You're writing a story that can only end in success.</p>
       </div>
 
       <h2>Why the method is the point</h2>
-      <p>Anyone can show you a number. What makes a number trustworthy is a method you could run yourself and get the same answer. That's the whole game: a metric your business cares about, a real baseline, a fresh human-checked sample, and the caveats in plain sight. Get those right and the ROI is real. Skip any of them and it's theater with a decimal point.</p>
+      <p>Anyone can show you a number. The method is what matters. You need a metric the business cares about, a real baseline, and a fresh human-checked sample. Put the caveats in plain sight. Do that, and the ROI has weight. Skip it, and you've got theater with a decimal point.</p>
 
       <div class="related">
         <h3>Read next</h3>
@@ -112,7 +112,7 @@
 
       <div class="kb-cta">
         <p class="k">Apply this</p>
-        <p>DPR agrees the one honest number with you before any build, sets the baseline, and publishes exactly how it's measured — so the return isn't something you have to take on faith.</p>
+        <p>DPR agrees the one honest number with you before any build. We set the baseline and publish how it's measured. You don't have to take the return on faith.</p>
         <a href="../method.html" class="btn btn-primary">See how a build works <span class="arrow" aria-hidden="true">→</span></a>
         <a href="../contact.html" class="btn btn-ghost">Talk to us</a>
       </div>
