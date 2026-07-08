@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Investor room — DPR AI</title>
+<meta name="description" content="The honest investment case for DPR AI: an AI consulting firm that builds AI companies can measure and own, plus an investor network on the side. Every document behind it, in one place." />
+<meta name="theme-color" content="#ffffff" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="site.css?v=11" />
+<link rel="icon" href="assets/icons/logo-orb.png" />
+<style>
+  .ir-tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 4px}
+  .ir-pill{font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--accent);background:rgba(59,91,219,.08);border:1px solid rgba(59,91,219,.2);
+    padding:5px 11px;border-radius:999px}
+  .ir-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+
+  .ir-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:8px}
+  .ir-stat{border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:20px 22px;box-shadow:var(--shadow-1)}
+  .ir-stat b{display:block;font-size:22px;letter-spacing:-.02em;color:var(--accent);font-weight:800}
+  .ir-stat span{display:block;margin-top:6px;color:var(--muted);font-size:13.5px;line-height:1.4}
+
+  .ir-note{border:1px solid rgba(59,91,219,.22);border-radius:var(--radius);
+    background:linear-gradient(180deg,#fff,rgba(59,91,219,.04));padding:24px 26px;box-shadow:var(--shadow-1)}
+  .ir-note .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  .ir-warn{border-color:rgba(194,106,17,.3);background:linear-gradient(180deg,#fffaf2,#fef4e6)}
+  .ir-warn .lbl{color:#c26a11}
+
+  table.ir-price{width:100%;border-collapse:collapse;margin-top:14px;font-size:14px}
+  table.ir-price th,table.ir-price td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+  table.ir-price thead th{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:600}
+  table.ir-price td.n{font-family:var(--mono);color:var(--accent)}
+  table.ir-price tbody tr:last-child td{border-bottom:0}
+
+  .ir-nr3{display:flex;gap:18px;align-items:center;border:1px dashed rgba(59,91,219,.35);
+    border-radius:var(--radius);padding:22px 24px;background:#fbfcff}
+  .ir-nr3 img{width:52px;height:52px;object-fit:contain;flex:none}
+  .ir-nr3 h3{margin:0 0 4px;font-size:18px}
+  .ir-nr3 p{margin:0;color:var(--muted);font-size:14px}
+  .ir-nr3 .go{white-space:nowrap;font-family:var(--mono);font-size:12.5px}
+
+  .ir-docs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+  a.ir-doc{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+    border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:#fff;text-decoration:none;transition:.18s ease}
+  a.ir-doc:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 12px 30px rgba(22,30,58,.08)}
+  a.ir-doc .t{font-weight:600;color:var(--ink);font-size:15px}
+  a.ir-doc .t small{display:block;color:var(--muted);font-weight:400;font-size:12.5px;margin-top:3px;font-family:var(--mono)}
+  a.ir-doc .go{font-family:var(--mono);font-size:12px;color:var(--accent)}
+
+  .ir-ask{border:1px solid rgba(59,91,219,.25);border-radius:20px;
+    background:linear-gradient(135deg,#101a3d,#26307a);color:#fff;padding:clamp(24px,4vw,40px)}
+  .ir-ask .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#aebcff;margin:0 0 10px}
+  .ir-ask h2{color:#fff;margin:0 0 10px}
+  .ir-ask p{color:#c9d2f5;max-width:60ch}
+  .ir-ask ul{list-style:none;padding:0;margin:14px 0 0}
+  .ir-ask li{position:relative;padding-left:20px;margin-bottom:8px;color:#dfe5fb}
+  .ir-ask li::before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:2px;background:#8aa0ff}
+  .ir-ask li b{color:#fff}
+  .ir-ask a.btn-light{display:inline-block;margin-top:18px;font-family:var(--mono);font-size:14px;color:#101a3d;background:#fff;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:700}
+
+  .ir-gate{display:flex;gap:20px;align-items:center;flex-wrap:wrap;border:1px solid var(--line);
+    border-radius:var(--radius);background:linear-gradient(180deg,#fff,rgba(59,91,219,.04));
+    padding:26px 28px;box-shadow:var(--shadow-1);margin-top:20px}
+  .ir-gate .ir-lock{font-size:26px;flex:none}
+  .ir-gate .ir-gate-txt{flex:1 1 320px}
+  .ir-gate h3{margin:0 0 4px;font-size:18px}
+  .ir-gate p{margin:0;color:var(--muted);font-size:14px;max-width:62ch}
+  .ir-gate .btn{flex:none}
+  #irDocs[hidden]{display:none}
+  .ir-granted{margin:20px 0 4px;font-family:var(--mono);font-size:13px;color:#1f7a54;
+    background:rgba(31,157,107,.08);border:1px solid rgba(31,157,107,.25);border-radius:12px;padding:12px 16px}
+
+  .ir-backdrop{position:fixed;inset:0;background:rgba(16,20,34,.55);backdrop-filter:blur(3px);z-index:60}
+  .ir-modal{position:fixed;z-index:61;left:50%;top:50%;transform:translate(-50%,-50%);
+    width:min(460px,92vw);max-height:90vh;overflow:auto;background:#fff;border:1px solid var(--line);
+    border-radius:20px;box-shadow:0 40px 90px -30px rgba(16,24,64,.55);padding:28px 30px}
+  .ir-modal .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+  .ir-modal h2{font-size:22px;margin:0 0 8px}
+  .ir-modal-note{color:var(--muted);font-size:13.5px;line-height:1.5;margin:0 0 16px}
+  .ir-modal-x{position:absolute;right:14px;top:12px;border:0;background:none;font-size:18px;color:var(--faint);cursor:pointer;line-height:1}
+  #irForm label.fld{display:block;font-size:12.5px;color:var(--muted);margin-bottom:12px}
+  #irForm input[type=text],#irForm input[type=email]{display:block;width:100%;margin-top:5px;padding:10px 12px;
+    border:1px solid var(--line);border-radius:10px;font:inherit;font-size:15px;color:var(--ink);background:#fff}
+  #irForm input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(59,91,219,.15)}
+  .ir-check{display:flex;gap:9px;align-items:flex-start;color:var(--ink);font-size:13.5px;margin:4px 0 2px}
+  .ir-check input{margin-top:3px;flex:none}
+  .ir-err{color:#d84a4a;font-size:13px;margin:6px 0 4px}
+  .ir-modal-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+
+  @media (prefers-reduced-motion:reduce){.ir-backdrop{backdrop-filter:none}}
+  @media (max-width:820px){
+    .ir-stats{grid-template-columns:repeat(2,1fr)}
+    .ir-docs{grid-template-columns:1fr}
+    .ir-nr3{flex-direction:column;align-items:flex-start}
+    .ir-gate{flex-direction:column;align-items:flex-start}
+  }
+</style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="method.html">How it works</a><a href="pricing.html">Pricing</a><a href="free/">Free tools</a><div class="learn"><button class="learn-trigger" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="kb/index.html">Knowledge Base<span class="desc">Reference articles &amp; how-tos.</span></a><a role="menuitem" href="blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="learn/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a><a role="menuitem" href="free/">Free tools<span class="desc">Download the agent — free.</span></a></div></div><a href="about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="method.html">How it works</a><a href="pricing.html">Pricing</a><a href="free/">Free tools</a><a href="guide/index.html">Learn AI</a><a href="kb/index.html">Knowledge Base</a><a href="blog/index.html">Field Notes</a><a href="learn/index.html">Training</a><a href="news/index.html">News</a><a href="about.html">About</a><a href="contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="prose reveal" data-reveal>
+        <p class="eyebrow">Investor room · confidential</p>
+        <h1>Invest in DPR&nbsp;AI.</h1>
+        <p class="lead" style="margin-top:18px">An AI consulting firm that builds AI companies can measure and own — plus an investor network on the side. Here's the honest case, and every document behind it.</p>
+        <p>We build AI inside a company's own systems, prove it works on one number they pick, and hand it over so they own it. We charge a monthly retainer. On the side, we introduce the founders we work with to investors we know — introductions only, never a cut of a raise.</p>
+        <div class="ir-tags">
+          <span class="ir-pill">July 2026</span>
+          <span class="ir-pill">Pre-seed</span>
+          <span class="ir-pill">AI consulting + investor network</span>
+        </div>
+        <div class="ir-cta">
+          <a href="contact.html" class="btn btn-primary">Book a call</a>
+          <a href="onepager-dpr.html" class="btn btn-ghost">Read the one-pager</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="prose reveal" data-reveal><p class="eyebrow">The 30-second version</p></div>
+      <div class="ir-stats reveal" data-reveal>
+        <div class="ir-stat"><b>$8k–$15k</b><span>A two-week pilot. If the number doesn't move, you don't pay the fee.</span></div>
+        <div class="ir-stat"><b>One number</b><span>Every build judged on a single measure the client picks up front.</span></div>
+        <div class="ir-stat"><b>You own it</b><span>Built on your systems; you keep the code. No lock-in.</span></div>
+        <div class="ir-stat"><b>Real work now</b><span>Already the design partner to NR3, a live software platform.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="prose reveal" data-reveal><p class="eyebrow">What DPR is</p><h2 style="margin-top:10px">Two things, done properly.</h2></div>
+      <div class="grid-2 reveal" data-reveal>
+        <div class="card">
+          <span class="tag">Consulting</span>
+          <h3>Build AI you can measure and keep</h3>
+          <p>We build AI inside your own systems, agree on one number that shows whether it worked, and hand it over. Four kinds of work: automation, compliance and governance, low-code tools, and data integration. Paid monthly, not as a one-off project.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Investor network</span>
+          <h3>Warm introductions, done honestly</h3>
+          <p>We introduce the founders we work with to investors we know. Introductions only. We never negotiate terms, take a cut of a raise, or touch anyone's money. Investors pay a flat membership for a short list of vetted companies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <div class="prose reveal" data-reveal>
+        <p class="eyebrow">Why it's a real business</p>
+        <p class="statement" style="margin-top:12px">The two sides <em>feed each other.</em></p>
+        <p style="margin-top:18px;max-width:64ch">Good consulting work makes a founder worth backing, which lets us introduce them to investors we trust. When those bets pay off, investors trust our picks more, so better founders and better clients come to us. It runs on relationships, and those take years to earn. A consulting shop with no network has nothing to introduce. An intro service with no real work has no proof behind the names. Doing both well is the hard part.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="prose reveal" data-reveal><p class="eyebrow">What's real today</p><h2 style="margin-top:10px">No fake clients. A low-risk way to prove it.</h2>
+        <p style="margin-top:14px;max-width:66ch">We're early, and we don't put made-up clients or logos on anything. Instead, we designed the offer so a first client takes almost no risk, and we point to the one real body of work we can show.</p>
+      </div>
+      <div class="grid-2 reveal" data-reveal>
+        <div class="card">
+          <span class="tag">The pilot offer</span>
+          <h3>Pick one number. We prove it moves. You own the code.</h3>
+          <p>Two weeks. A fixed $8k–$15k, quoted up front. One workflow, one success number agreed in writing. Built inside your own systems. If the number doesn't move, you don't pay the fee — and you keep the code either way. The risk sits with us, which is why an early team is safe to hire.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Our flagship work</span>
+          <h3>Design partner to NR3</h3>
+          <p>DPR is a design partner to NR3, a separate live software platform, and runs it on real client work. It's the closest thing we have to a reference: proof we ship AI inside real systems, not slideware.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="prose reveal" data-reveal><p class="eyebrow">The model</p><h2 style="margin-top:10px">How we make money — as simple arithmetic.</h2></div>
+      <div class="reveal" data-reveal>
+        <table class="ir-price">
+          <thead><tr><th>Stream</th><th>What it is</th><th>Price</th></tr></thead>
+          <tbody>
+            <tr><td><b>Consulting retainers</b></td><td>Setup + monthly, Starter → Enterprise</td><td class="n">$1.5k–$20k / mo</td></tr>
+            <tr><td><b>Investor memberships</b></td><td>Flat yearly fee, three tiers</td><td class="n">$3k–$12k / yr</td></tr>
+            <tr><td><b>Equity / SAFE</b></td><td>Only as payment for build work, never for an intro</td><td class="n">in lieu of cash</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ir-note reveal" data-reveal style="margin-top:18px">
+        <p class="lbl">The $200k/month path — a modeled target, not current revenue</p>
+        <p style="margin:0;color:var(--muted)">It's arithmetic, not a promise: a mix of monthly retainer clients plus a stack of memberships reaches roughly <b style="color:var(--accent)">$200k/month</b>. The full count and price assumptions — and the honest risks (a tiny base, long sales cycles in regulated fields) — are in the <a href="dataroom/model-dpr.html">business &amp; financial model</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <div class="prose reveal" data-reveal><p class="eyebrow">Not a broker — and we mean it</p><h2 style="margin-top:10px">The investor network is built to stay on the right side of the line.</h2></div>
+      <div class="ir-note reveal" data-reveal>
+        <p class="lbl">Introductions and information only</p>
+        <p style="margin:0 0 10px;color:var(--muted)">We never take a percentage of a raise, a per-introduction success fee, or any pay tied to a financing. Investors are verified accredited, so introductions stay inside private-placement rules. Any startup we hold a stake in is a small, clearly-marked, unpaid part of what investors see, and every conflict is disclosed.</p>
+        <p style="margin:0;font-family:var(--mono);font-size:12.5px;color:var(--faint)">Not legal advice. DPR is not a broker-dealer and does not guarantee any raise. Full detail in <a href="dataroom/compliance.html">Compliance &amp; legal</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="prose reveal" data-reveal><p class="eyebrow">Why now</p><h2 style="margin-top:10px">Companies want to own their AI, not rent a black box.</h2>
+        <p style="margin-top:14px;max-width:66ch">Spending on AI is up, but companies can't tell what's actually working, and they're wary of vendors who lock them in. New rules are landing in exactly the regulated fields we focus on — legal, healthcare, fintech, insurance. Our whole model is build-inside, prove-on-one-number, hand-over-so-you-own-it, which is precisely what a nervous enterprise buyer now wants.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <div class="prose reveal" data-reveal><p class="eyebrow">Team</p><h2 style="margin-top:10px">Small, senior, honest.</h2>
+        <p style="margin-top:14px;max-width:66ch">You work with the people who build, not an account manager. We won't put invented names or stock faces here — real, checkable profiles or nothing. Named founders and the roles this round funds are in the <a href="dataroom/team.html">team page</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="prose reveal" data-reveal><p class="eyebrow">A separate company we work with</p></div>
+      <div class="ir-nr3 reveal" data-reveal>
+        <img src="dataroom/assets/brand/nr3-mark-cube-t.png" alt="NR3" />
+        <div>
+          <h3>NR3 is its own company.</h3>
+          <p>DPR is a design partner to NR3, a separate AI software platform with its own investors and its own raise. It's not part of DPR, and nothing here is an offer in NR3. It has its own room.</p>
+        </div>
+        <a class="go" href="onepager-nr3.html">See NR3 →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <div class="prose reveal" data-reveal><p class="eyebrow">The documents</p><h2 style="margin-top:10px">Everything behind the case.</h2>
+        <p style="margin-top:12px;max-width:64ch">Every number in here is either a real fact or a plan we've labeled as a plan. Nothing is invented.</p>
+      </div>
+      <div id="irDocsWrap" class="reveal" data-reveal>
+        <div class="ir-gate" id="irGate">
+          <span class="ir-lock" aria-hidden="true">🔒</span>
+          <div class="ir-gate-txt">
+            <h3>These documents are confidential.</h3>
+            <p>Shared with prospective investors only. Ping us so we know you're looking, agree to keep them private, and they open right away.</p>
+          </div>
+          <button type="button" class="btn btn-primary" id="irRequestBtn">Request access</button>
+        </div>
+        <p class="ir-granted" id="irGranted" hidden></p>
+        <div class="ir-docs" id="irDocs" hidden>
+          <a class="ir-doc" href="onepager-dpr.html"><span class="t">One-pager<small>the 60-second read</small></span><span class="go">open →</span></a>
+          <a class="ir-doc" href="dataroom/deck-dpr.html"><span class="t">Pitch deck<small>13 slides</small></span><span class="go">open →</span></a>
+          <a class="ir-doc" href="dataroom/summary-dpr.html"><span class="t">Executive summary<small>the one-page brief</small></span><span class="go">open →</span></a>
+          <a class="ir-doc" href="dataroom/model-dpr.html"><span class="t">Business &amp; financial model<small>pricing, the $200k math, risks</small></span><span class="go">open →</span></a>
+          <a class="ir-doc" href="dataroom/market.html"><span class="t">Market &amp; competition<small>where we win</small></span><span class="go">open →</span></a>
+          <a class="ir-doc" href="dataroom/team.html"><span class="t">Team &amp; story<small>who's building this</small></span><span class="go">open →</span></a>
+          <a class="ir-doc" href="dataroom/compliance.html"><span class="t">Compliance &amp; legal<small>the not-a-broker firewall</small></span><span class="go">open →</span></a>
+          <a class="ir-doc" href="dataroom/faq.html"><span class="t">FAQ &amp; risk factors<small>the hard questions</small></span><span class="go">open →</span></a>
+        </div>
+        <noscript><p style="margin-top:16px;color:var(--muted)">To request the confidential documents, email <a href="mailto:hello@dprai.io?subject=DPR%20investor%20room%20access%20request">hello@dprai.io</a>.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="ir-ask reveal" data-reveal>
+        <p class="lbl">The ask</p>
+        <h2>Help us turn early pilots into steady revenue.</h2>
+        <p>We're raising <b>$[&nbsp;&nbsp;]</b> to hire the first senior builders and get the investor-membership side running.</p>
+        <ul>
+          <li><b>Use of funds:</b> senior build hires, the membership side, and sales into the regulated fields we focus on.</li>
+          <li><b>What's real today:</b> the money-back pilot, the pricing, the published method, and our design-partner work on NR3.</li>
+          <li><b>What we want from you:</b> capital, plus introductions to regulated buyers and accredited investors.</li>
+        </ul>
+        <a class="btn-light" href="mailto:hello@dprai.io">hello@dprai.io →</a>
+      </div>
+      <p style="margin-top:16px;font-family:var(--mono);font-size:12px;color:var(--faint);text-align:center">Confidential. Prepared for prospective investors · not an offer to sell securities · not legal or investment advice.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- confidential access gate -->
+<div class="ir-backdrop" id="irBackdrop" hidden></div>
+<div class="ir-modal" id="irModal" role="dialog" aria-modal="true" aria-labelledby="irModalTitle" hidden>
+  <button class="ir-modal-x" id="irModalX" aria-label="Close">✕</button>
+  <p class="lbl">Confidential access</p>
+  <h2 id="irModalTitle">View the confidential documents</h2>
+  <p class="ir-modal-note">These materials are shared with prospective investors only. Tell us who you are, agree to keep them private, and the documents open. This sends us a short email so we know you're looking — no account needed.</p>
+  <form id="irForm" novalidate>
+    <label class="fld">Name <input type="text" id="irName" autocomplete="name" required /></label>
+    <label class="fld">Firm <span style="color:var(--faint)">(optional)</span> <input type="text" id="irFirm" autocomplete="organization" /></label>
+    <label class="fld">Email <input type="email" id="irEmail" autocomplete="email" required /></label>
+    <label class="ir-check"><input type="checkbox" id="irAgree" required /> <span>I agree to keep these materials confidential.</span></label>
+    <p class="ir-err" id="irErr" hidden></p>
+    <div class="ir-modal-cta">
+      <button type="submit" class="btn btn-primary">Ping DPR &amp; open documents</button>
+      <button type="button" class="btn btn-ghost" id="irCancel">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand"><a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div>
+      <div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="about.html">About</a></div>
+      <div class="foot-col"><h4>Playbooks</h4><a href="free/">Free tools</a><a href="slop.html">The slop problem</a><a href="playbook.html">AI-readiness scorecard</a><a href="contact.html">The first build</a><a href="blog/index.html">Field Notes</a></div>
+      <div class="foot-col"><h4>Get started</h4><a href="contact.html">Start a build</a><a href="dataroom.html">Investor room</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div>
+    </div>
+    <div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
+  </div>
+</footer>
+<script src="site.js?v=11" defer></script>
+<script>
+(function(){
+  var KEY='dpr_ir_access';
+  var gate=document.getElementById('irGate'), docs=document.getElementById('irDocs'),
+      granted=document.getElementById('irGranted'), modal=document.getElementById('irModal'),
+      backdrop=document.getElementById('irBackdrop'), form=document.getElementById('irForm'),
+      err=document.getElementById('irErr'), reqBtn=document.getElementById('irRequestBtn');
+  if(!gate||!docs) return;
+  function unlock(silent, name){
+    gate.hidden=true; docs.hidden=false;
+    if(granted){ granted.hidden=false;
+      granted.textContent = silent ? '✓ Access granted. The documents are open below.'
+        : '✓ Thanks'+(name?', '+name:'')+' — we\u2019ve been pinged and the documents are open below.'; }
+  }
+  function openModal(){ if(!modal) return; backdrop.hidden=false; modal.hidden=false;
+    document.body.style.overflow='hidden'; var f=document.getElementById('irName'); if(f) setTimeout(function(){f.focus();},30); }
+  function closeModal(){ if(!modal) return; backdrop.hidden=true; modal.hidden=true; document.body.style.overflow=''; }
+  try{ if(localStorage.getItem(KEY)) unlock(true); }catch(e){}
+  if(reqBtn) reqBtn.addEventListener('click', openModal);
+  if(location.hash==='#request' || location.hash==='#request-access'){ openModal(); }
+  var mx=document.getElementById('irModalX'); if(mx) mx.addEventListener('click', closeModal);
+  var mc=document.getElementById('irCancel'); if(mc) mc.addEventListener('click', closeModal);
+  if(backdrop) backdrop.addEventListener('click', closeModal);
+  window.addEventListener('keydown', function(e){ if(e.key==='Escape' && modal && !modal.hidden) closeModal(); });
+  if(form) form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name=(document.getElementById('irName').value||'').trim(),
+        firm=(document.getElementById('irFirm').value||'').trim(),
+        email=(document.getElementById('irEmail').value||'').trim(),
+        agree=document.getElementById('irAgree').checked;
+    if(!name || !/.+@.+\..+/.test(email) || !agree){
+      err.textContent='Please add your name and a valid email, and agree to the confidentiality note.';
+      err.hidden=false; return;
+    }
+    err.hidden=true;
+    try{ localStorage.setItem(KEY, JSON.stringify({name:name,firm:firm,email:email,at:Date.now()})); }catch(e){}
+    unlock(false, name);
+    closeModal();
+    var subject='DPR investor room — access request';
+    var body='Name: '+name+'\nFirm: '+(firm||'—')+'\nEmail: '+email+'\nRequested: '+new Date().toISOString()+
+             '\n\nI\u2019d like to view the confidential DPR investor documents.';
+    window.location.href='mailto:hello@dprai.io?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>

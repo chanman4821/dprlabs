@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NR3 — Architecture &amp; product</title>
+<meta name="description" content="A technical investor view of NR3: the standalone software platform powered by Jarvis, its roles, safety checks, learning loop, and honest status." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="dataroom.css" />
+<link rel="icon" href="assets/brand/nr3-mark-cube-t.png" />
+</head>
+<body>
+<main class="doc">
+
+  <header class="band">
+    <div class="brand">
+      <img class="mk" src="assets/brand/nr3-mark-cube-t.png" alt="NR3 cube mark" />
+      <span><b>NR3</b><div class="sub">investor data room</div></span>
+    </div>
+    <div class="meta">
+      <span class="pill">ARCHITECTURE &amp; PRODUCT</span><br />
+      July 2026<br />
+      Confidential
+    </div>
+  </header>
+
+  <div class="pad prose">
+    <a class="backlink" href="index.html">← Data room index</a>
+
+    <h1>NR3 — Architecture &amp; product</h1>
+    <p class="lead">NR3 is a standalone software platform that uses Jarvis to plan, assign, build, check, and repair real software work. It keeps a record of what it did instead of asking you to trust a black box.</p>
+
+    <p class="eyebrow">Pipeline</p>
+    <h2>Plan → assign → build → check → fix. If it is not good enough, send it back.</h2>
+    <p>The work moves through five jobs. The planner scopes the goal. The dispatcher assigns the task. The builder does the work. The grader checks it. The healer repairs failures. If the grader rejects the output, it sends the task back instead of calling it done.</p>
+    <div class="grid g3">
+      <div class="card"><h3>Planner</h3><p>Breaks a goal into ordered tasks with clear finish lines before work starts.</p></div>
+      <div class="card"><h3>Dispatcher</h3><p>Routes each task to the right worker and refuses half-scoped work.</p></div>
+      <div class="card"><h3>Builder</h3><p>Writes the code, docs, and configuration that make the requested system real.</p></div>
+      <div class="card"><h3>Grader</h3><p>Checks output against the criteria and sends weak work back for another pass.</p></div>
+      <div class="card"><h3>Healer</h3><p>Catches failures, learns from them, and repairs the run where automation can safely recover.</p></div>
+      <div class="card soft"><h3>Rejected work goes back</h3><p><span class="k">grader → dispatcher</span> means weak work is assigned again, not shipped.</p></div>
+    </div>
+
+    <p class="eyebrow">Under the hood</p>
+    <h2>One brain, many specialists, one memory.</h2>
+    <p>NR3 has one planning brain that decides and plans using a top AI model. It hands work to a team of specialist AI workers, drives the coding tools you already use (Copilot, Claude, Codex), and records every assignment, check, and result in one shared memory.</p>
+    <div class="metrics">
+      <div class="metric"><div class="n">Multi-agent</div><div class="l">a team of specialist AI workers, each with one job</div></div>
+      <div class="metric"><div class="n">5 steps</div><div class="l">Plan · assign · build · check · fix</div></div>
+      <div class="metric"><div class="n">Full record</div><div class="l">every job's steps, checks, and results are kept</div></div>
+      <div class="metric"><div class="n">305 · 60 · ~18h</div><div class="l">Files changed, tasks done, and compute time in one real run</div></div>
+    </div>
+
+    <p class="eyebrow">Quality gates</p>
+    <h2>The four enemies every gate exists to kill.</h2>
+    <div class="grid g2">
+      <div class="card"><h3>SLOP</h3><p>Code that compiles but does not do what was asked: placeholder work, fake tests, or plausible nonsense.</p></div>
+      <div class="card"><h3>HALLUCINATION</h3><p>Made-up imports, fictional functions, paths that do not exist, or APIs that return what the model wishes.</p></div>
+      <div class="card"><h3>STALL</h3><p>Workers that loop, repeat, refuse, or burn tokens without getting closer to checked output.</p></div>
+      <div class="card"><h3>DRIFT</h3><p>A small request expanding into a large, off-scope change that no longer matches the original finish line.</p></div>
+    </div>
+
+    <p class="eyebrow">Safety by brakes</p>
+    <h2>Autonomy is bounded by hard stops.</h2>
+    <p>NR3 is designed around brakes, not blind trust: a kill-switch, budget cap, concurrency cap, canary checks, and hard process containment. Those controls let NR3 run many workers without pretending every worker is safe by default.</p>
+
+    <p class="eyebrow">Why it is hard to copy</p>
+    <h2>The learning loop runs on top of whichever AI models are best.</h2>
+    <div class="callout">
+      <p><span class="k">decide → act → real outcome → calibrate → sharper next decision</span></p>
+      <p>This is why it is hard to copy. NR3 records what actually happened, ties the result back to the decision, and uses that memory to make the next assignment, plan, and grade sharper. Because NR3 runs on top of Copilot, Claude, Codex, or whichever AI models are best, it can improve when the models improve.</p>
+    </div>
+
+    <p class="eyebrow">Real run evidence</p>
+    <h2>A real sanitized run, not a mock dataset.</h2>
+    <p>One real run changed <b>305 files</b>, completed <b>60 tasks</b>, and used <b>66,255 seconds</b> of compute, which is about <b>18 hours</b>. The list of steps and the sent-back path come from the same run.</p>
+    <p class="muted">Source: a real run from NR3's own logs · exported 2026-06-30 · sanitized, no client data.</p>
+
+    <div class="callout warn">
+      <p class="eyebrow">Honest status</p>
+      <p><b>The front half runs today:</b> decide → act → grade is active on real work. <b>The full closed learning loop and hands-off self-repair are the active build focus.</b> A senior human still approves the calls that matter. NR3 claims no autonomy it does not yet have.</p>
+    </div>
+
+    <p class="eyebrow">Roadmap</p>
+    <h2>The nine-phase build path.</h2>
+    <table>
+      <thead>
+        <tr><th>Code</th><th>Phase</th><th>Focus</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="k">Q</span></td><td>Quality backbone</td><td>Anti-slop, hallucination, stall, and drift gates.</td></tr>
+        <tr><td><span class="k">F</span></td><td>Feedback loop</td><td>Close the broken tier-1→4 learning loop.</td></tr>
+        <tr><td><span class="k">A</span></td><td>Brain infra</td><td>Cost caps, multi-LLM failover, and memory.</td></tr>
+        <tr><td><span class="k">M</span></td><td>Multi-CLI</td><td>Claude, Codex, and other CLI transports.</td></tr>
+        <tr><td><span class="k">U</span></td><td>UX/UI quality</td><td>Design-system, accessibility, and visual checks on generated apps.</td></tr>
+        <tr><td><span class="k">B</span></td><td>Live preview</td><td>Deploy URL, sandbox, rollback, and performance gate.</td></tr>
+        <tr><td><span class="k">C</span></td><td>Builder UX</td><td>The user-facing builder interface.</td></tr>
+        <tr><td><span class="k">D</span></td><td>Platform</td><td>Dashboard, HTTP API, marketplace, vault, and audit layer.</td></tr>
+        <tr><td><span class="k">E</span></td><td>Go-to-market</td><td>Billing, terms, onboarding, and docs.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="foot">
+    <div><b>Confidential.</b> Prepared for prospective investors · not an offer to sell securities · not legal or investment advice.</div>
+    <div>© 2026 DPR AI · NR3</div>
+  </footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,127 @@
+/* ============================================================
+   Investor pitch decks — DPR AI · NR3   ·   deck.css
+   16:9 slides · scroll-snap · keyboard nav · print 1-slide/page
+   Brand: Geist / Geist Mono · light · indigo #3b5bdb
+   ============================================================ */
+:root{
+  --ink:#12141a; --muted:#545a68; --faint:#7c8494;
+  --accent:#3b5bdb; --accent-ink:#2b45a8; --accent-2:#6f57d9; --accent-wash:#eef1ff;
+  --line:#e6e8f0; --line-2:#eef0f6; --bg:#ffffff; --panel:#f8f9ff; --panel-2:#f4f6fe;
+  --pos:#1f9d6b; --warn:#c26a11; --danger:#d84a4a;
+  --sans:"Geist",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:var(--sans); color:var(--ink); background:#0f1220;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility}
+
+.deck{scroll-snap-type:y mandatory; height:100vh; overflow-y:auto; scroll-behavior:smooth}
+
+/* ---- one slide = 16:9, centered in viewport ---- */
+.slide{scroll-snap-align:center; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:34px}
+.frame{position:relative; width:min(1160px,100%); aspect-ratio:16/9; background:var(--bg);
+  border-radius:20px; box-shadow:0 30px 80px -30px rgba(0,0,0,.6); overflow:hidden;
+  padding:52px 60px; display:flex; flex-direction:column; justify-content:center}
+.frame::before{content:""; position:absolute; left:0; top:0; bottom:0; width:6px;
+  background:linear-gradient(180deg,var(--accent),var(--accent-2))}
+
+/* slide chrome */
+.snum{position:absolute; right:26px; bottom:20px; font-family:var(--mono); font-size:11px; color:var(--faint)}
+.sbrand{position:absolute; left:30px; bottom:18px; display:flex; align-items:center; gap:7px;
+  font-family:var(--mono); font-size:11px; color:var(--faint)}
+.sbrand img{width:18px;height:18px;object-fit:contain}
+.eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.13em; text-transform:uppercase; color:var(--accent); font-weight:600; margin:0 0 14px}
+.frame h2{font-size:34px; font-weight:800; letter-spacing:-.02em; line-height:1.12; margin:0 0 14px}
+.frame h2.sm{font-size:28px}
+.frame .sub{font-size:18px; color:var(--muted); font-weight:500; max-width:70ch; margin:0 0 8px; line-height:1.45}
+.frame p{color:#232833; font-size:16px; line-height:1.5; margin:0 0 10px}
+.frame b,.frame strong{color:var(--ink); font-weight:700}
+.hl{color:var(--accent-ink); box-shadow:inset 0 -.5em 0 var(--accent-wash)}
+.accent{color:var(--accent-ink)}
+.k{font-family:var(--mono); color:var(--accent-ink); font-size:.92em}
+
+/* lists */
+.blist{list-style:none; margin:6px 0 0; padding:0}
+.blist li{position:relative; padding-left:24px; margin-bottom:12px; font-size:16px; color:#232833; line-height:1.45}
+.blist li::before{content:""; position:absolute; left:2px; top:8px; width:8px; height:8px; border-radius:3px; background:var(--accent)}
+.blist li b{color:var(--ink)}
+
+/* two-column slide body */
+.cols{display:grid; grid-template-columns:1fr 1fr; gap:34px; align-items:start}
+.cols.tilt{grid-template-columns:1.15fr .85fr}
+
+/* metric row */
+.mrow{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:6px}
+.mrow.three{grid-template-columns:repeat(3,1fr)}
+.mcell{border:1px solid var(--line); border-radius:12px; padding:14px 16px; background:var(--panel)}
+.mcell .n{font-size:26px; font-weight:800; letter-spacing:-.02em; color:var(--accent-ink)}
+.mcell .l{font-size:12.5px; color:var(--muted); margin-top:4px; line-height:1.35}
+
+/* generic cards / chips */
+.tiles{display:grid; gap:12px}
+.tiles.t2{grid-template-columns:1fr 1fr}
+.tiles.t4{grid-template-columns:repeat(2,1fr)}
+.tile{border:1px solid var(--line); border-radius:12px; padding:14px 16px; background:#fff}
+.tile .th{font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:5px; font-weight:600}
+.tile .th.warn{color:var(--warn)}
+.tile p{font-size:14px; margin:0}
+.chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px}
+.chip{font-family:var(--mono); font-size:13px; color:var(--accent-ink); background:var(--accent-wash); border:1px solid #dbe1ff; padding:6px 12px; border-radius:9px}
+.chip .arw{color:var(--faint); margin-right:4px}
+
+/* tables in slides */
+.frame table{width:100%; border-collapse:collapse; font-size:14px}
+.frame th,.frame td{text-align:left; padding:8px 12px; border-bottom:1px solid var(--line-2)}
+.frame thead th{font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--faint); border-bottom:1px solid var(--line)}
+.frame tbody tr:last-child td{border-bottom:0}
+.frame td .num{font-family:var(--mono); color:var(--accent-ink); font-variant-numeric:tabular-nums}
+
+/* title slide */
+.title .frame{padding:0}
+.title .art{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.9}
+.title .scrim{position:absolute; inset:0; background:linear-gradient(90deg,#fff 34%,rgba(255,255,255,.72) 55%,rgba(255,255,255,.15) 100%)}
+.title .inner{position:relative; z-index:2; padding:56px 60px; max-width:78%}
+.title .logo{display:flex; align-items:center; gap:12px; margin-bottom:26px}
+.title .logo img{width:46px;height:46px;object-fit:contain}
+.title .logo b{font-size:26px; font-weight:800; letter-spacing:-.01em}
+.title .logo .sub{font-family:var(--mono); font-size:10.5px; color:var(--faint); margin-top:3px}
+.title h1{font-size:46px; font-weight:800; letter-spacing:-.025em; line-height:1.1; margin:0 0 16px; max-width:20ch}
+.title .tagline{font-size:20px; color:var(--muted); font-weight:500; max-width:52ch}
+.title .foot{margin-top:30px; font-family:var(--mono); font-size:12px; color:var(--faint)}
+.ethos{display:inline-flex; align-items:center; gap:8px; margin-top:18px; font-family:var(--mono); font-size:12px; letter-spacing:.05em; color:var(--accent-ink); background:var(--accent-wash); border:1px solid #dbe1ff; padding:7px 14px; border-radius:999px}
+
+/* closing / ask slide */
+.ask .frame{background:linear-gradient(135deg,#101a3d,#1c2a63); color:#fff}
+.ask .frame::before{background:linear-gradient(180deg,#8aa0ff,#b8a6ff)}
+.ask .eyebrow{color:#aebcff}
+.ask h2{color:#fff; font-size:40px}
+.ask .sub{color:#c9d2f5}
+.ask .blist li{color:#dfe5fb} .ask .blist li b{color:#fff} .ask .blist li::before{background:#8aa0ff}
+.ask .k{color:#c9d2f5}
+.ask .cta{display:inline-block; margin-top:16px; font-family:var(--mono); font-size:15px; color:#101a3d; background:#fff; padding:12px 22px; border-radius:12px; font-weight:700; text-decoration:none}
+.ask .sbrand,.ask .snum{color:#8290c9}
+
+/* nav hint */
+.navhint{position:fixed; right:16px; top:14px; z-index:50; font-family:var(--mono); font-size:11px; color:#c9cede;
+  background:rgba(20,24,44,.6); border:1px solid rgba(255,255,255,.14); padding:6px 12px; border-radius:999px; backdrop-filter:blur(6px)}
+.progress{position:fixed; left:0; top:0; height:3px; background:linear-gradient(90deg,var(--accent),var(--accent-2)); z-index:60; width:0; transition:width .2s}
+
+@media (max-width:820px){
+  .frame{aspect-ratio:auto; min-height:0; padding:30px 26px}
+  .cols,.cols.tilt{grid-template-columns:1fr; gap:18px}
+  .mrow,.mrow.three,.tiles.t2,.tiles.t4{grid-template-columns:1fr 1fr}
+  .title .inner{max-width:100%} .title .scrim{background:linear-gradient(180deg,rgba(255,255,255,.9),rgba(255,255,255,.75))}
+  .title h1{font-size:30px} .frame h2{font-size:26px}
+  .navhint{display:none}
+}
+@media print{
+  @page{size:1280px 720px; margin:0}
+  body{background:#fff}
+  .deck{height:auto; overflow:visible; display:block}
+  .navhint,.progress{display:none}
+  .slide{min-height:0; height:720px; width:1280px; padding:0; page-break-after:always; break-after:page; display:flex}
+  .frame{aspect-ratio:auto; width:1280px; height:720px; border-radius:0; box-shadow:none}
+  .ask .frame{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  *{ -webkit-print-color-adjust:exact; print-color-adjust:exact }
+}

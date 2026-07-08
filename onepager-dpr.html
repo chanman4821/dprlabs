@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DPR AI — Investor one-pager</title>
+<meta name="description" content="DPR is an AI consulting firm that builds AI companies can measure and own, and introduces the founders it works with to investors it knows. A design partner to NR3." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<style>
+  :root{
+    --ink:#12141a; --muted:#545a68; --faint:#7c8494;
+    --accent:#3b5bdb; --accent-ink:#2b45a8; --accent-wash:#eef1ff;
+    --line:#e6e8f0; --line-2:#eef0f6; --bg:#ffffff;
+    --panel:#f8f9ff; --panel-2:#f4f6fe;
+    --pos:#1f9d6b; --warn:#c26a11;
+    --sans:"Geist",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:var(--sans); color:var(--ink); background:#eef0f6;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    line-height:1.5; font-size:14px;
+  }
+  .sheet{
+    max-width:1040px; margin:26px auto; background:var(--bg);
+    border:1px solid var(--line); border-radius:20px; overflow:hidden;
+    box-shadow:0 24px 60px -30px rgba(20,30,80,.35);
+  }
+  .pad{padding:30px 34px}
+
+  /* ---- header ---- */
+  .top{display:flex; justify-content:space-between; align-items:flex-start; gap:24px;
+    padding:26px 34px; border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,#fbfcff,#f5f7ff);}
+  .brand{display:flex; align-items:center; gap:11px}
+  .dot{width:15px;height:15px;border-radius:50%;
+    background:radial-gradient(circle at 32% 30%,#7d97f2,var(--accent) 60%,var(--accent-ink));
+    box-shadow:0 3px 10px rgba(59,91,219,.5)}
+  .brand b{font-size:24px; font-weight:800; letter-spacing:-.02em}
+  .tag{margin:8px 0 0; color:var(--muted); font-size:14.5px; max-width:56ch}
+  .meta{text-align:right; font-family:var(--mono); font-size:11px; color:var(--faint);
+    line-height:1.9; white-space:nowrap}
+  .meta .pill{display:inline-block; background:var(--accent); color:#fff; font-weight:600;
+    padding:3px 9px; border-radius:999px; letter-spacing:.06em; margin-bottom:8px}
+  .meta a{color:var(--accent-ink); text-decoration:none}
+
+  /* ---- hero ---- */
+  .hero{padding:24px 34px 6px}
+  .hero h1{margin:0; font-size:21px; font-weight:700; letter-spacing:-.015em; line-height:1.32}
+  .hero h1 .hl{color:var(--accent-ink); box-shadow:inset 0 -.5em 0 var(--accent-wash)}
+  .ethos{display:inline-flex; align-items:center; gap:8px; margin-top:14px;
+    font-family:var(--mono); font-size:11px; letter-spacing:.05em; color:var(--accent-ink);
+    background:var(--accent-wash); border:1px solid #dbe1ff; padding:6px 12px; border-radius:999px}
+
+  /* ---- metric strip ---- */
+  .metrics{display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin:20px 34px 6px;
+    border:1px solid var(--line); border-radius:var(--radius); overflow:hidden}
+  .metric{padding:15px 16px; border-right:1px solid var(--line-2); background:var(--panel)}
+  .metric:last-child{border-right:0}
+  .metric .n{font-size:19px; font-weight:800; letter-spacing:-.02em; color:var(--accent-ink)}
+  .metric .l{font-size:11.5px; color:var(--muted); margin-top:3px; line-height:1.35}
+
+  /* ---- body grid ---- */
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:20px 34px 8px}
+  .card{border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; background:#fff}
+  .card.soft{background:var(--panel)}
+  .card.span{grid-column:1 / -1}
+  .eyebrow{font-family:var(--mono); font-size:10.5px; letter-spacing:.11em; text-transform:uppercase;
+    color:var(--accent); margin:0 0 9px; font-weight:600}
+  .card h3{margin:0 0 8px; font-size:15px; font-weight:700; letter-spacing:-.01em}
+  .card p{margin:0 0 8px; color:#2b303b; font-size:13.3px}
+  .card p:last-child{margin-bottom:0}
+  .card .lede{color:var(--ink); font-weight:500}
+  ul.tight{margin:2px 0 0; padding-left:0; list-style:none}
+  ul.tight li{position:relative; padding-left:18px; margin-bottom:6px; color:#2b303b; font-size:13.2px}
+  ul.tight li:last-child{margin-bottom:0}
+  ul.tight li::before{content:""; position:absolute; left:2px; top:8px; width:6px; height:6px;
+    border-radius:2px; background:var(--accent)}
+  .k{font-family:var(--mono); font-size:12.2px; color:var(--accent-ink)}
+
+  /* price / tier rows */
+  .rows{display:flex; flex-direction:column; gap:6px; margin-top:4px}
+  .row{display:flex; justify-content:space-between; align-items:baseline; gap:10px;
+    padding:7px 10px; border:1px solid var(--line-2); border-radius:9px; background:#fff}
+  .card.soft .row{background:#fff}
+  .row .rn{font-weight:600; font-size:12.8px}
+  .row .rv{font-family:var(--mono); font-size:12px; color:var(--accent-ink); white-space:nowrap}
+  .row small{display:block; color:var(--faint); font-weight:400; font-size:11px; margin-top:1px}
+
+  .split{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+  .twosides{display:flex; flex-direction:column; gap:8px; margin-top:2px}
+  .fw{font-size:12.9px; color:#2b303b; line-height:1.5}
+  .fw b{color:var(--accent-ink)}
+  .fw .lbl{white-space:nowrap}
+
+  /* ---- ask bar ---- */
+  .ask{grid-column:1 / -1; border:1px solid #dbe1ff; background:linear-gradient(180deg,#f4f6ff,#eef1ff);
+    border-radius:var(--radius); padding:16px 20px; display:flex; justify-content:space-between;
+    align-items:center; gap:20px; flex-wrap:wrap}
+  .ask .h{font-size:15px; font-weight:700}
+  .ask .s{color:var(--muted); font-size:13px; margin-top:3px}
+  .ask .cta{font-family:var(--mono); font-size:12.5px; color:#fff; background:var(--accent);
+    padding:10px 16px; border-radius:10px; white-space:nowrap; font-weight:600}
+
+  /* ---- footer ---- */
+  .foot{border-top:1px solid var(--line); padding:14px 34px; display:flex;
+    justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;
+    color:var(--faint); font-size:11.5px; background:var(--panel)}
+  .foot .honest{max-width:70ch}
+  .foot b{color:var(--muted)}
+
+  @media (max-width:760px){
+    .metrics{grid-template-columns:repeat(2,1fr)}
+    .metric:nth-child(2){border-right:0}
+    .grid,.split{grid-template-columns:1fr}
+    .top{flex-direction:column} .meta{text-align:left}
+  }
+  @media print{
+    @page{size:Letter; margin:12mm}
+    body{background:#fff; font-size:11.4px}
+    .sheet{max-width:none; margin:0; border:0; border-radius:0; box-shadow:none}
+    .card,.metrics,.ask,.row{break-inside:avoid}
+    *{ -webkit-print-color-adjust:exact; print-color-adjust:exact }
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+
+  <header class="top">
+    <div>
+      <div class="brand"><img src="dataroom/assets/brand/dpr-mark-net-t.png" alt="DPR AI network mark" style="width:30px;height:30px;object-fit:contain" /><b>DPR&nbsp;AI</b></div>
+      <p class="tag">AI consulting you can measure, plus the investor network behind it. <em>“Deeper.”</em></p>
+    </div>
+    <div class="meta">
+      <span class="pill">INVESTOR ONE-PAGER</span><br />
+      July 2026<br />
+      <a href="https://dprai.io">dprai.io</a><br />
+      <a href="mailto:hello@dprai.io">hello@dprai.io</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1><span class="hl">We build AI that runs your business, and we prove it works.</span> DPR is an
+      AI consulting firm. We build AI inside your own systems, agree on one number that shows whether
+      it worked, and hand it over so you own it. We also introduce the founders we work with to
+      investors we know.</h1>
+    <span class="ethos">◆ We measure it. You own it.</span>
+  </section>
+
+  <section class="metrics" aria-label="Key facts">
+    <div class="metric"><div class="n">1 number</div><div class="l">Every build judged on one honest KPI, agreed in writing up front</div></div>
+    <div class="metric"><div class="n">$8k–$15k</div><div class="l">2-week entry pilot — money back if the number doesn’t move</div></div>
+    <div class="metric"><div class="n">Built on NR3</div><div class="l">We're a design partner to NR3, the platform that lets a small team ship fast</div></div>
+    <div class="metric"><div class="n">0 lock-in</div><div class="l">Built on your systems; you own the code, weights and docs</div></div>
+  </section>
+
+  <div class="grid">
+
+    <div class="card">
+      <p class="eyebrow">The problem</p>
+      <h3>AI that never ships, and capital that never connects</h3>
+      <p>Most enterprise AI is slideware and pilots that die before production: billed by the hour,
+        locked to a vendor, impossible to measure.</p>
+      <p>On the other side, strong founders can’t reach warm capital, and investors drown in
+        un-vetted deal spam. Both sides are starved for the same thing: <b>someone they can trust.</b></p>
+    </div>
+
+    <div class="card soft">
+      <p class="eyebrow">What we do</p>
+      <h3>Two things, done properly</h3>
+      <p class="lede">We build AI inside your own systems, agree on one number that says whether it
+        worked, and hand it over. You pay a monthly retainer, not a one-off project fee.</p>
+      <ul class="tight">
+        <li>Four kinds of work: <b>automation, compliance &amp; governance, low-code tools, and data integration</b>.</li>
+        <li>We also introduce the founders we work with to investors we know. <b>Introductions only. We never take a cut of a raise.</b></li>
+      </ul>
+    </div>
+
+    <div class="card span">
+      <p class="eyebrow">How we deliver</p>
+      <h3>A small team that ships like a big one</h3>
+      <div class="split">
+        <p>We build with <b>NR3</b>, a separate AI platform we help design and test on real client
+          work. It scopes the job, does it, checks the result, and fixes what's broken, so a few
+          senior people can cover a lot of ground.</p>
+        <p>You still get a real person on the decisions that matter. And we don't hand you a demo. We
+          hand you a working system your own team can run without us. <span class="k">(NR3 is its own
+          company — see the NR3 one-pager.)</span></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="eyebrow">Who we work with</p>
+      <h3>Companies where getting AI right matters most</h3>
+      <p><b>Consulting:</b> regulated, data-heavy businesses in legal, healthcare, fintech, and
+        insurance, where a wrong AI answer is expensive and they'll pay to have it done properly.</p>
+      <p><b>Capital network:</b> angels, small funds, family offices, and syndicate leads. Verified
+        accredited investors only.</p>
+    </div>
+
+    <div class="card">
+      <p class="eyebrow">Business model</p>
+      <h3>How we make money</h3>
+      <div class="rows">
+        <div class="row"><span class="rn">Build retainers <small>setup + monthly, Starter → Enterprise</small></span><span class="rv">$1.5k–$20k/mo</span></div>
+        <div class="row"><span class="rn">Investor membership <small>Signal · Syndicate · Inner Circle (ARR)</small></span><span class="rv">$3k–$12k/yr</span></div>
+        <div class="row"><span class="rn">Equity / SAFE <small>only as payment for build work — never for an intro or a raise</small></span><span class="rv">in lieu of cash</span></div>
+      </div>
+    </div>
+
+    <div class="card soft span">
+      <p class="eyebrow">Why it's hard to copy</p>
+      <h3>The two sides feed each other</h3>
+      <div class="twosides">
+        <div class="fw">Good consulting work makes a founder worth backing, which lets us introduce them to investors we trust.</div>
+        <div class="fw">When those bets go well, investors trust our picks more, so better founders and better clients come to us.</div>
+      </div>
+      <p style="margin-top:9px">It runs on relationships, and those take years to earn. A consulting
+        shop with no network has nothing to introduce. An intro service with no real work has no proof
+        behind the names. Doing both well is the hard part.</p>
+    </div>
+
+    <div class="card">
+      <p class="eyebrow">Why now</p>
+      <h3>Spending is up, trust is down</h3>
+      <p>Companies are spending fast on AI but can't tell what's actually working. New rules are
+        landing in exactly the regulated fields we focus on. And founders and investors both want a
+        name they can trust instead of another cold list.</p>
+    </div>
+
+    <div class="card">
+      <p class="eyebrow">Team &amp; posture</p>
+      <h3>Small, senior, honest</h3>
+      <p>You work with the people who build, not an account manager. We don't put fake clients,
+        numbers, or logos on anything. On the capital side we're not a broker: no success fees, we
+        disclose conflicts, and any startup we hold a stake in is a small, clearly-marked, unpaid
+        part of what investors see.</p>
+    </div>
+
+    <div class="ask">
+      <div>
+        <div class="h">The ask</div>
+        <div class="s">We're raising to hire the first senior builders and get the investor side running. The goal is to turn early pilots into steady monthly revenue.</div>
+      </div>
+      <a class="cta" href="mailto:hello@dprai.io">Start the conversation →</a>
+    </div>
+
+  </div>
+
+  <footer class="foot">
+    <div class="honest"><b>Honesty note:</b> every number here is either a real fact (our pricing and
+      pilot terms) or a plan we've labeled as a plan. No made-up clients or revenue. Steady monthly
+      revenue is the goal, not money in the bank yet.</div>
+    <div>© 2026 DPR AI · AI builds you own.</div>
+  </footer>
+
+</main>
+</body>
+</html>
