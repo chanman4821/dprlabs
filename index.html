@@ -61,6 +61,17 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebSite", "name": "DPR AI", "url": "https://dprai.io/"}
 </script>
+<style>
+  .free-band{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--bg-soft));box-shadow:var(--shadow-1);padding:clamp(26px,4vw,40px);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,4vw,40px);align-items:center}
+  .free-band h2{font-size:clamp(24px,3vw,32px);letter-spacing:-.02em;margin:10px 0 10px}
+  .free-band-copy p{color:var(--muted);max-width:56ch;line-height:1.6;margin:0 0 20px}
+  .free-band-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .free-band-term{font-family:var(--mono);font-size:12.5px;line-height:1.75;color:#c9d1e6;background:#0f1222;border:1px solid #232842;border-radius:14px;padding:18px;overflow-x:auto}
+  .free-band-term .cap{display:block;color:#8b93b8;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+  .free-band-term .c{color:#7f8bb3}
+  .free-band-term .p{color:#7dd3a8}
+  @media(max-width:760px){.free-band{grid-template-columns:1fr}}
+</style>
 </head>
 
 <body id="top">
@@ -70,12 +81,12 @@
 <header class="nav">
   <div class="wrap nav-in">
     <a href="#top" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
-    <nav class="nav-links" aria-label="Primary"><a href="method.html">How it works</a><a href="pricing.html">Pricing</a><div class="learn"><button class="learn-trigger" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="kb/index.html">Knowledge Base<span class="desc">Reference articles & how-tos.</span></a><a role="menuitem" href="blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="learn/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a></div></div><a href="about.html">About</a></nav>
+    <nav class="nav-links" aria-label="Primary"><a href="method.html">How it works</a><a href="pricing.html">Pricing</a><a href="free/">Free tools</a><div class="learn"><button class="learn-trigger" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="kb/index.html">Knowledge Base<span class="desc">Reference articles & how-tos.</span></a><a role="menuitem" href="blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="learn/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a><a role="menuitem" href="free/">Free tools<span class="desc">Download the agent — free.</span></a></div></div><a href="about.html">About</a></nav>
     <span class="nav-sp"></span>
     <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Start a build</a></div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-  <div class="mobile-menu" id="mobileMenu"><a href="method.html">How it works</a><a href="pricing.html">Pricing</a><a href="guide/index.html">Learn AI</a><a href="kb/index.html">Knowledge Base</a><a href="blog/index.html">Field Notes</a><a href="learn/index.html">Training</a><a href="news/index.html">News</a><a href="about.html">About</a><a href="contact.html">Start a build</a></div>
+  <div class="mobile-menu" id="mobileMenu"><a href="method.html">How it works</a><a href="pricing.html">Pricing</a><a href="free/">Free tools</a><a href="guide/index.html">Learn AI</a><a href="kb/index.html">Knowledge Base</a><a href="blog/index.html">Field Notes</a><a href="learn/index.html">Training</a><a href="news/index.html">News</a><a href="about.html">About</a><a href="contact.html">Start a build</a></div>
 </header>
 
 <main id="main">
@@ -471,6 +482,28 @@
     </div>
   </section>
 
+  <!-- FREE TOOLS -->
+  <section class="sec" id="free-tools" data-reveal>
+    <div class="wrap reveal">
+      <div class="free-band">
+        <div class="free-band-copy">
+          <p class="eyebrow" style="color:var(--accent)">Free · open-source</p>
+          <h2>Try something free right now.</h2>
+          <p>Our Inbox-to-Action Agent reads a message thread and hands back a summary, a draft reply, and a to-do list. It runs on your own computer with your own key. No sign-up, and nothing to install but Python.</p>
+          <div class="free-band-btns">
+            <a href="free/" class="btn btn-primary">Explore free tools <span class="arrow" aria-hidden="true">→</span></a>
+            <a href="https://github.com/chanman4821/inbox-to-action" class="btn btn-ghost" rel="noopener">Get it on GitHub</a>
+          </div>
+        </div>
+        <div class="free-band-term" aria-label="Example command">
+          <span class="cap">In your terminal</span>
+          <span class="c"># no key needed to try it</span><br />
+          <span class="p">python</span> inbox_to_action.py thread.txt --dry-run
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- MANIFESTO (dark) -->
   <section class="sec sec-invert" id="manifesto">
     <div class="wrap">
@@ -565,7 +598,7 @@
       </div>
       <div class="foot-col"><h4>Studio</h4>
         <a href="#owned-method">How it works</a><a href="#proof">Proof</a><a href="#about">About</a></div>
-      <div class="foot-col"><h4>Field Notes</h4>
+      <div class="foot-col"><h4>Field Notes</h4><a href="free/">Free tools</a>
         <a href="blog/the-one-number.html">The one number</a><a href="blog/no-lock-in.html">No lock-in</a><a href="blog/measure-ai-honestly.html">Measure honestly</a><a href="blog/index.html">All posts</a></div>
       <div class="foot-col"><h4>Get started</h4>
         <a href="#contact">Start a build</a><a href="#contact">Contact</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div>
