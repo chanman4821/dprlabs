@@ -9,19 +9,24 @@
       "title": "Anatomy of a Working Prompt",
       "live": true,
       "blocks": [
-        { "type": "prose", "html": "<p>A working prompt isn't a magic phrase. It's four plain parts, and when you include them you stop getting vague junk back.</p><ul><li><b>Role</b> — who the AI should act as (for example, 'you are a coffee shop owner').</li><li><b>Context</b> — the situation ('launching a new oat-milk latte').</li><li><b>Task</b> — the exact thing to do ('write 3 Instagram captions').</li><li><b>Format</b> — what the answer should look like ('each under 15 words, friendly').</li></ul><p>Leave parts out and the AI guesses. Guessing is where slop comes from. Try the quick check, then tick off the parts you already use.</p>" },
-        { "type": "quiz", "id": "q1", "required": true, "question": "Which of these prompts will actually get you a usable result?", "options": [
-          { "id": "a", "text": "Write something about coffee.", "correct": false, "explain": "Too vague. No role, no real task, no format — you'll get generic filler." },
-          { "id": "b", "text": "You are a coffee shop owner launching an oat-milk latte. Write 3 Instagram captions, each under 15 words, friendly tone.", "correct": true, "explain": "Role, context, a clear task, and a format with limits. That's a prompt that returns something you can actually post." },
-          { "id": "c", "text": "Make it good.", "correct": false, "explain": "There's nothing to act on — no task, no context. The AI has to invent everything." },
-          { "id": "d", "text": "coffee latte captions please thanks", "correct": false, "explain": "A topic, but no role, no count, no length, no tone. The model still has to guess most of it." }
-        ] },
-        { "type": "checklist", "id": "c1", "required": true, "items": [
-          { "id": "role", "text": "I told it who to act as (a role)." },
-          { "id": "context", "text": "I gave the situation or background." },
-          { "id": "task", "text": "I stated the exact thing to do." },
-          { "id": "format", "text": "I said what the answer should look like." }
-        ] }
+        { "type": "prose", "html": "<p>A working prompt is just four plain parts. Fill each box below and watch the AI's answer on the right go from useless slop to something you'd actually post. No theory — just cause and effect.</p>" },
+        { "type": "promptlab", "id": "pl1", "required": true,
+          "template": "You are {role}, {context}. {task} — {format}.",
+          "parts": [
+            { "id": "role", "label": "Role", "hint": "who it should act as", "placeholder": "a coffee shop owner" },
+            { "id": "context", "label": "Context", "hint": "the situation", "placeholder": "launching a new oat-milk latte" },
+            { "id": "task", "label": "Task", "hint": "the exact job", "placeholder": "write 3 Instagram captions" },
+            { "id": "format", "label": "Format", "hint": "length and tone", "placeholder": "each under 15 words, friendly" }
+          ],
+          "levels": [
+            { "tag": "Empty", "tone": "empty", "text": "" },
+            { "tag": "Slop", "tone": "bad", "text": "<span class='cap'>☕ Coffee is life — come grab a cup today!</span><span class='cap'>We love coffee. Do you? #coffee #yum</span><span class='cap'>Best drinks in town. Visit us soon!</span>" },
+            { "tag": "Getting there", "tone": "mid", "text": "<span class='cap'>Our new oat-milk latte is here — come give it a try! ☕</span><span class='cap'>Smooth new oat-milk latte, now on the menu.</span><span class='cap'>New drink alert: the oat-milk latte has landed. #coffee</span>" },
+            { "tag": "Almost — but too long", "tone": "mid", "text": "<span class='cap'>As your neighbourhood coffee shop, we're so excited to finally introduce our brand-new oat-milk latte to every one of you.</span><span class='cap'>Creamy oat milk meets our house espresso — a smooth, dairy-free treat we really think you're going to love.</span><span class='cap'>Swing by this week and be one of the first to taste it for yourself!</span>" },
+            { "tag": "Usable ✓", "tone": "good", "text": "<span class='cap'>Oat-milk latte's here. Silky, dairy-free, made fresh this morning. ☕</span><span class='cap'>Your new go-to? Our smooth oat-milk latte. Come try it. 💛</span><span class='cap'>Small batch, big flavour — the oat-milk latte is on.</span>" }
+          ]
+        },
+        { "type": "prose", "html": "<p><b>That's the whole trick.</b> Role sets the voice, context aims it, the task says what to make, and format makes it usable as-is. Leave one out and the AI fills the gap with slop — you just watched it happen.</p>" }
       ]
     },
     {

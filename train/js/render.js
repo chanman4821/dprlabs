@@ -6,8 +6,9 @@ import * as compare from './compare.js';
 import * as critique from './critique.js';
 import * as builder from './builder.js';
 import * as scenario from './scenario.js';
+import * as promptlab from './promptlab.js';
 
-const REGISTRY = { quiz, checklist, compare, critique, builder, scenario };
+const REGISTRY = { quiz, checklist, compare, critique, builder, scenario, promptlab };
 
 // container: DOM node. lesson: { blocks:[...] }. ctx: { mid, lid }.
 // onState({ requiredMet, required }) fires on every change.
