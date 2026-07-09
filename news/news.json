@@ -1,11 +1,91 @@
 {
   "meta": {
-    "generated_at": "2026-07-09T15:24:34.605989+00:00",
+    "generated_at": "2026-07-09T18:03:08.013441+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "fbe93ef80d6a",
+      "headline": "How to stop Meta’s AI image generator from using your Instagram photos",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/how-to-stop-metas-ai-image-generator-from-using-your-instagram-photos/",
+      "published_at": "2026-07-09T17:56:47+00:00",
+      "summary": "Meta's new AI image generator is using your public Instagram photos unless you opt out. Here's how to do that.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7967
+    },
+    {
+      "id": "8c91b0e5893b",
+      "headline": "Meta’s new AI chips will begin production in September",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/",
+      "published_at": "2026-07-09T17:17:37+00:00",
+      "summary": "The company is taking a modular approach to designing these chips, anticipating that their needs will change as AI evolves rapidly by the time the chips are in production.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.792
+    },
+    {
+      "id": "22db00072fd4",
+      "headline": "Nvidia is a victim of the compute marketplace it created",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/nvidia-is-a-victim-of-the-compute-marketplace-it-created/",
+      "published_at": "2026-07-09T17:06:11+00:00",
+      "summary": "Having proven how valuable compute can be, the company finds itself at the center of a market everyone wants to be in — while simpler technologies and less interesting companies get rich on the sidelines.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7907
+    },
+    {
+      "id": "ad27224f77da",
+      "headline": "OpenAI rolls out GPT-5.6 after government greenlight — and announces ‘ChatGPT Work’",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
+      "published_at": "2026-07-09T17:00:00+00:00",
+      "summary": "About two weeks after OpenAI's GPT-5.6 was caught up in regulatory drama - rolled out only to government-approved organizations during a \"limited preview\" period - the company has received the Trump administration's greenlight for a public…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8499
+    },
+    {
+      "id": "8923484c1444",
+      "headline": "Microsoft’s patch Tuesdays are about to get bigger",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/963307/microsoft-patch-tuesday-ai-security-updates",
+      "published_at": "2026-07-09T17:00:00+00:00",
+      "summary": "Windows 11 updates could soon include fixes for more security issues at once. Microsoft said in a blog post on Thursday that it's now using AI to \"identify potential issues earlier,\" which means \"customers will see a higher volume of…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7899
+    },
     {
       "id": "4da1966f7ed0",
       "headline": "The Case for Nationalizing Artificial Intelligence",
@@ -13,14 +93,14 @@
       "source_id": "hn",
       "url": "https://jacobin.com/2026/07/ai-policy-nationalization-commons-work",
       "published_at": "2026-07-09T15:04:54+00:00",
-      "summary": "1 points and 0 comments on Hacker News.",
+      "summary": "5 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5582
+      "rank_score": 0.542
     },
     {
       "id": "c4a0826144b9",
@@ -36,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8537
+      "rank_score": 0.8352
     },
     {
       "id": "8e29a16695b1",
@@ -52,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7934
+      "rank_score": 0.7749
     },
     {
       "id": "7882027942b5",
@@ -68,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7874
+      "rank_score": 0.7692
     },
     {
       "id": "b722bb74de4f",
@@ -82,9 +162,9 @@
         "Models"
       ],
       "is_opinion": false,
-      "corroboration_count": 1,
+      "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.8439
+      "rank_score": 0.8498
     },
     {
       "id": "d2d0db505453",
@@ -100,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7817
+      "rank_score": 0.7638
     },
     {
       "id": "2b56d024188e",
@@ -116,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8404
+      "rank_score": 0.8225
     },
     {
       "id": "6b0fd45dbfe0",
@@ -132,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7804
+      "rank_score": 0.7625
     },
     {
       "id": "edec3357e039",
@@ -148,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7804
+      "rank_score": 0.7625
     },
     {
       "id": "caad1e0c6575",
@@ -157,14 +237,14 @@
       "source_id": "hn",
       "url": "https://themarkup.org/artificial-intelligence/2026/07/09/kaiser-permanente-nurses-say-technology-is-making-their-jobs-and-patient-care-worse",
       "published_at": "2026-07-09T12:19:05+00:00",
-      "summary": "7 points and 0 comments on Hacker News.",
+      "summary": "9 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5424
+      "rank_score": 0.526
     },
     {
       "id": "dc999c16cc92",
@@ -180,7 +260,55 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7735
+      "rank_score": 0.756
+    },
+    {
+      "id": "8fd74bd3f519",
+      "headline": "GPT-5.5 Bio Bug Bounty",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/bio-bug-bounty",
+      "published_at": "2026-07-09T10:00:00+00:00",
+      "summary": "Details about the OpenAI Bio Bounty program",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8385
+    },
+    {
+      "id": "54ee76ae9206",
+      "headline": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/gpt-5-6",
+      "published_at": "2026-07-09T10:00:00+00:00",
+      "summary": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8385
+    },
+    {
+      "id": "5941cef110c0",
+      "headline": "ChatGPT is now a partner for your most ambitious work",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+      "published_at": "2026-07-09T10:00:00+00:00",
+      "summary": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.7785
     },
     {
       "id": "3810a2ffb193",
@@ -196,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.801
+      "rank_score": 0.7862
     },
     {
       "id": "0cbfc4bdc674",
@@ -212,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.801
+      "rank_score": 0.7862
     },
     {
       "id": "58c10b15c7e6",
@@ -228,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.741
+      "rank_score": 0.7262
     },
     {
       "id": "62c969591c5a",
@@ -244,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.741
+      "rank_score": 0.7262
     },
     {
       "id": "9e84420ba73f",
@@ -260,135 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.741
-    },
-    {
-      "id": "480fc07e7a58",
-      "headline": "QANTIS: Hardware-Calibrated Sequential POMDP Belief Updates on IBM Heron",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.06760",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.06760v1 Announce Type: new Abstract: Autonomous systems under partial observability act on beliefs, not raw sensor events. QANTIS treats the quantum processor as a calibrated belief-update service in that loop: it receives a…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.741
-    },
-    {
-      "id": "0ad3031f2f24",
-      "headline": "Cost-Effective Agent Harnesses for Abstract Reasoning and Generalization on ARC-AGI-1",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.06764",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.06764v1 Announce Type: new Abstract: Recent progress on ARC-AGI-1 from disclosed architectures has come broadly from two regimes: heavy test-time compute over frontier models (evolutionary search, exhaustive sampling, extended…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.741
-    },
-    {
-      "id": "fd1e09b0a478",
-      "headline": "Evaluating SageMath-Augmented LLM Agents for Computational and Experimental Mathematics",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.06820",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.06820v1 Announce Type: new Abstract: Recent advances in AI for Mathematics have focused largely on autoformalization and theorem proving, leaving the role of Computer Algebra Systems (CAS) in agentic LLM workflows underexplored.…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.741
-    },
-    {
-      "id": "1cb54419ad00",
-      "headline": "The Harness Effect: How Orchestration Design Sets the Token Economics of Enterprise Agentic AI",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.06906",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.06906v1 Announce Type: new Abstract: Agentic AI development today runs on token maxing: buying capability with tokens -- longer reasoning traces, more turns, wider tool payloads, bigger replayed contexts -- so tokens per task…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.741
-    },
-    {
-      "id": "a69441a8c9bc",
-      "headline": "Grounding Spatial Relations in a Compact World Model: Instruction Leakage and a Goal-Free Dynamics Fix",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.06925",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.06925v1 Announce Type: new Abstract: Compact world models that condition on a language goal promise to ground relations such as ``put the red block left of the blue block'' using a sparse set of explicit \\emph{reference…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.741
-    },
-    {
-      "id": "1be74937a84a",
-      "headline": "Large Behavior Model: A Promptable Digital Twin of the Retail Customer",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.06993",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.06993v1 Announce Type: new Abstract: Customer behavior modeling underpins recommendation, marketing, and decision support, yet existing approaches either optimize predictive accuracy without explaining decisions or simulate…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.741
-    },
-    {
-      "id": "f7770215e84d",
-      "headline": "Learning social norms enhances compatibility in dynamic human-AI coordination",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07021",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07021v1 Announce Type: new Abstract: Humans continuously coordinate with others in dynamic interactions, often through implicit, hard-to-quantify social norms that act as shared tacit expectations among interacting agents. As AI…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.741
-    },
-    {
-      "id": "4972890dd3b5",
-      "headline": "Measuring Intelligence Beyond Human Scale",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07040",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07040v1 Announce Type: new Abstract: How can we measure intelligence beyond human capability? Human-authored benchmarks saturate, and above human capability, examiners may not know which tasks are both hard and verifiable. We…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.741
+      "rank_score": 0.7262
     }
   ]
 }
