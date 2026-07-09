@@ -1,0 +1,67 @@
+{
+  "id": "m3",
+  "title": "Reading & Changing Code with AI",
+  "goal": "Safely read, understand, and edit your product's code using AI.",
+  "badge": { "id": "code_whisperer", "name": "Code Whisperer" },
+  "lessons": [
+    {
+      "id": "l0",
+      "title": "Reading Code You Didn't Write",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>You don't need to be a developer to understand what a file does — you need to ask AI well. It's great at explaining code in plain English, step by step.</p>" },
+        { "type": "quiz", "id": "q1", "required": true, "question": "You open a file full of code you don't understand. What's the safest first move with AI?", "options": [
+          { "id": "a", "text": "Paste it in and ask: 'Explain what this file does in plain English, step by step.'", "correct": true, "explain": "Right. Understand it first — then you can decide what, if anything, to change." },
+          { "id": "b", "text": "Ask it to rewrite the whole thing to be 'better'.", "correct": false, "explain": "You don't know what it does yet. Rewriting blind is how working things break." },
+          { "id": "c", "text": "Delete the parts you don't recognize.", "correct": false, "explain": "Never delete code you don't understand — those parts are usually load-bearing." },
+          { "id": "d", "text": "Ask it to add ten new features at once.", "correct": false, "explain": "Understand first, change later, and only one thing at a time." }
+        ] }
+      ]
+    },
+    {
+      "id": "l1",
+      "title": "Ask AI to Explain a File",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>Build the prompt you'd use to understand a scary file. Fill it in and save it.</p>" },
+        { "type": "builder", "id": "b1", "required": true, "title": "Explain-a-file prompt", "template": "Explain this {what} in plain English for {who}. Focus on {focus}. Walk through it step by step, and flag anything risky.", "fields": [
+          { "id": "what", "label": "What is it", "hint": "the file or code", "placeholder": "a Python file that handles payments" },
+          { "id": "who", "label": "Explain it for", "hint": "your level", "placeholder": "someone non-technical" },
+          { "id": "focus", "label": "Focus on", "hint": "what you care about", "placeholder": "what could break if I change it" }
+        ] }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Make One Safe Small Change",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>You want AI to change one line — a button color — in your app. Pick your approach and see how it plays out.</p>" },
+        { "type": "scenario", "id": "sc1", "required": true, "start": "start", "nodes": {
+          "start": { "text": "What's the safest way to make that one small change?", "choices": [
+            { "label": "Ask AI for the exact change, apply just that, and test it", "to": "safe" },
+            { "label": "Let an agent rewrite the whole file to 'modernize' it", "to": "rewrite" },
+            { "label": "Change lots of things at once to save time", "to": "many" }
+          ] },
+          "safe": { "text": "You ask for the exact one-line change, apply it, and test that one thing.", "outcome": "This is the way. One small, specific change you can test in isolation keeps you safe — if it breaks, you know exactly what caused it and can undo it." },
+          "rewrite": { "text": "You let an agent rewrite the whole file.", "outcome": "Dangerous. A full rewrite can silently break things that were working fine. Small, testable changes beat big blind ones every time." },
+          "many": { "text": "You change many things at once.", "outcome": "Risky. When something breaks, you won't know which change did it. One change at a time." }
+        } }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Review an AI Code Change",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>AI wrote you a change. Before you keep it, run this check — every time.</p>" },
+        { "type": "checklist", "id": "ck1", "required": true, "items": [
+          { "id": "understand", "text": "I read what changed and understand it in plain English." },
+          { "id": "tested", "text": "I tested the one thing it was supposed to fix." },
+          { "id": "nearby", "text": "I checked it didn't break anything nearby." },
+          { "id": "undo", "text": "I can undo it if something goes wrong." }
+        ] }
+      ]
+    }
+  ]
+}

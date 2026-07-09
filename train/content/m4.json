@@ -1,0 +1,71 @@
+{
+  "id": "m4",
+  "title": "Getting Real Work Done with Claude",
+  "goal": "Use Claude day to day for real business tasks.",
+  "badge": { "id": "claude_operator", "name": "Claude Operator" },
+  "lessons": [
+    {
+      "id": "l0",
+      "title": "Claude's Strengths and Habits",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>Claude is a strong writing and reasoning partner. It's great at long documents, careful drafts, and following detailed instructions — and it tends to tell you when it's unsure.</p>" },
+        { "type": "quiz", "id": "q1", "required": true, "question": "What is Claude especially good at?", "options": [
+          { "id": "a", "text": "Working through long, detailed writing and reasoning tasks carefully.", "correct": true, "explain": "Yes — long-form, careful work with clear instructions is its sweet spot." },
+          { "id": "b", "text": "Generating photorealistic images.", "correct": false, "explain": "Claude works with text, not images." },
+          { "id": "c", "text": "Guaranteeing every fact is correct.", "correct": false, "explain": "No AI guarantees facts. Always check the important ones yourself." },
+          { "id": "d", "text": "Running your whole business on autopilot.", "correct": false, "explain": "It's an assistant you direct, not a self-driving business." }
+        ] }
+      ]
+    },
+    {
+      "id": "l1",
+      "title": "Build a Reusable Claude Prompt",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>The trick to Claude is a good, reusable setup. Build one you can paste again and again, then save it.</p>" },
+        { "type": "builder", "id": "b1", "required": true, "title": "Reusable Claude prompt", "template": "You are helping me {job}. I'll give you {inputs}. Follow these rules: {rules}. Give me the result as {output}.", "fields": [
+          { "id": "job", "label": "The job", "hint": "what you keep needing", "placeholder": "reply to customer emails" },
+          { "id": "inputs", "label": "What you'll give it", "hint": "the input", "placeholder": "the customer's message" },
+          { "id": "rules", "label": "Your rules", "hint": "tone, limits", "placeholder": "warm, under 5 sentences, no promises we can't keep" },
+          { "id": "output", "label": "Output as", "hint": "the shape", "placeholder": "a ready-to-send draft" }
+        ] }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "A Day-to-Day Claude Workflow",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>It's Monday: 40 unread emails, three to write, a report due. Pick how you'd use Claude to get through it.</p>" },
+        { "type": "scenario", "id": "sc1", "required": true, "start": "start", "nodes": {
+          "start": { "text": "How do you put Claude to work?", "choices": [
+            { "label": "Paste each thread and ask for a summary + draft reply, one at a time", "to": "draft" },
+            { "label": "Ask Claude to log into your email and handle it all", "to": "login" },
+            { "label": "Write everything yourself and skip Claude", "to": "skip" }
+          ] },
+          "draft": { "text": "You paste threads in and get summaries + draft replies.", "outcome": "That's the workflow: Claude drafts, you approve and send. You stay in control and save hours." },
+          "login": { "text": "You ask Claude to log into your email.", "outcome": "Claude can't log into your accounts — and you wouldn't want it to. You paste in what you want help with. Keep it draft-and-approve." },
+          "skip": { "text": "You do it all by hand.", "outcome": "You can — but that's the slow road. Even using Claude just for summaries and first drafts saves real time." }
+        } }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Claude vs Generic Chat",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>Same question, two ways to ask. Reveal why the setup matters more than the logo.</p>" },
+        { "type": "compare", "id": "cm1", "required": true,
+          "left": { "label": "A vague quick chat", "text": "Fast, casual answers. Fine for a quick question, but it forgets your context and cuts corners on long work." },
+          "right": { "label": "Claude, set up well", "text": "Give it a role, your context, and clear rules, and it does careful, long-form work that sounds like you." },
+          "why": [
+            "How you prompt matters more than which tool — a clear role plus context beats a vague question every time.",
+            "Claude shines on longer, careful tasks: documents, detailed replies, structured reasoning.",
+            "For a 10-second fact, any chat tool is fine. For a client proposal, set it up properly.",
+            "Save your best setups as reusable prompts — you built one last lesson."
+          ] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "m5",
+  "title": "Slop, Business Impact & Owning It",
+  "goal": "Spot slop, apply AI to real work, and measure what you ship.",
+  "badge": { "id": "ai_owner", "name": "AI Owner" },
+  "lessons": [
+    {
+      "id": "l0",
+      "title": "Spotting AI Slop",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>Slop is AI output that looks fine but says nothing — or is subtly wrong. Spotting it is the difference between AI helping you and AI embarrassing you.</p>" },
+        { "type": "quiz", "id": "q1", "required": true, "question": "Which of these is a sign of AI slop?", "options": [
+          { "id": "a", "text": "Generic filler that could apply to any company and says nothing specific.", "correct": true, "explain": "That's the tell. Slop is polished, confident, and empty." },
+          { "id": "b", "text": "A specific claim backed by a real number you can check.", "correct": false, "explain": "That's the opposite of slop — that's substance." },
+          { "id": "c", "text": "A short, plain answer to your exact question.", "correct": false, "explain": "Plain and direct is good, not slop." },
+          { "id": "d", "text": "Output you can verify against your real data.", "correct": false, "explain": "Verifiable output is exactly what you want." }
+        ] }
+      ]
+    },
+    {
+      "id": "l1",
+      "title": "Apply AI to One Business Task",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>Pick one real task and set AI up to do it — with a clear finish line. Build it and save it.</p>" },
+        { "type": "builder", "id": "b1", "required": true, "title": "Apply-AI-to-a-task prompt", "template": "Help me {task}. Here's my situation: {context}. I'll know it's done well when {done}.", "fields": [
+          { "id": "task", "label": "The task", "hint": "one real job", "placeholder": "write this week's customer newsletter" },
+          { "id": "context", "label": "Your situation", "hint": "the details", "placeholder": "small coffee brand, casual voice, one new product" },
+          { "id": "done", "label": "Done well when", "hint": "your finish line", "placeholder": "it's under 150 words and sounds like us" }
+        ] }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Measure What You Built",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>AI is only worth it if it moves a real number. Pick one and commit to tracking it honestly.</p>" },
+        { "type": "checklist", "id": "ck1", "required": true, "items": [
+          { "id": "one", "text": "I picked ONE honest number this should improve (hours saved, replies sent…)." },
+          { "id": "baseline", "text": "I know what that number was BEFORE (the baseline)." },
+          { "id": "recheck", "text": "I'll check the number again in a couple of weeks." },
+          { "id": "honest", "text": "If it didn't move, I'll change it or drop it — no pretending." }
+        ] }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Ship, Track, Improve",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>You built an AI helper that drafts your customer replies. It's working. What now?</p>" },
+        { "type": "scenario", "id": "sc1", "required": true, "start": "start", "nodes": {
+          "start": { "text": "It works today. What's the right next move?", "choices": [
+            { "label": "Track how much time it saves, and tweak the prompt as you learn", "to": "own" },
+            { "label": "Set it to auto-send replies with no review", "to": "auto" },
+            { "label": "Forget about it and never check it again", "to": "forget" }
+          ] },
+          "own": { "text": "You track the time saved and keep improving it.", "outcome": "That's ownership. You measure the real gain and keep it sharp. That's the whole game — owned, measured, improving." },
+          "auto": { "text": "You let it auto-send with no review.", "outcome": "Risky. Auto-sending customer replies with no human check is how one bad AI message reaches a real customer. Keep the approval step." },
+          "forget": { "text": "You set it and forget it.", "outcome": "Careful — models and your data drift over time. What works today can quietly break. Check in now and then." }
+        } }
+      ]
+    }
+  ]
+}
