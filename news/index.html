@@ -33,6 +33,17 @@
   .ni-src{font-size:13px;font-weight:600;color:var(--accent)}
   .n-note{margin-top:26px;font-size:13px;color:var(--faint);border-top:1px solid var(--line);padding-top:18px}
   .n-state{color:var(--faint);font-size:14.5px;padding:24px 0}
+  .wws-intro{font-size:16px;line-height:1.6;color:var(--ink-2);max-width:72ch;margin:0 0 22px;border-left:3px solid var(--accent);padding-left:16px}
+  .wws-featured{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .wws-card{border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:20px 22px;display:flex;flex-direction:column}
+  .wws-card h3{font-size:17px;line-height:1.32;letter-spacing:-.01em;margin:9px 0 12px}
+  .wws-card h3 a{color:var(--ink)}
+  .wws-card h3 a:hover{color:var(--accent)}
+  .wws-take{font-size:14.5px;line-height:1.6;color:var(--ink-2);margin:0 0 14px;background:var(--accent-soft);border-radius:10px;padding:13px 15px;flex:1}
+  .wws-lbl{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
+  .wws-more-h{font-size:20px;margin:0 0 4px}
+  .wws-more-sub{font-size:14px;color:var(--faint);margin:0 0 14px}
+  @media(max-width:720px){.wws-featured{grid-template-columns:1fr}}
 </style>
 <link rel="canonical" href="https://dprai.io/news/" />
 <meta name="robots" content="index, follow" />
@@ -63,20 +74,29 @@
 <main id="main">
   <section class="page-hero" data-reveal>
     <div class="wrap prose reveal">
-      <p class="eyebrow">News</p>
-      <h1 style="margin-top:12px">Top AI News</h1>
-      <p class="lead" style="margin-top:16px;max-width:64ch">Curated AI headlines with faithful summaries and a link to every original source. No invented stories, no manufactured hype.</p>
+      <p class="eyebrow">What we're seeing</p>
+      <h1 style="margin-top:12px">What We're Seeing</h1>
+      <p class="lead" style="margin-top:16px;max-width:64ch">The AI news that actually matters — with our plain read on what it means for anyone building or buying AI. We cut the noise, skip the hype, and link every source so you can check us.</p>
       <p class="n-updated" id="n-updated"></p>
     </div>
   </section>
 
   <section class="sec" style="padding-top:8px" data-reveal>
     <div class="wrap reveal">
+      <p class="wws-intro" id="wws-intro"></p>
+      <div class="wws-featured" id="wws-featured"></div>
+    </div>
+  </section>
+
+  <section class="sec" data-reveal>
+    <div class="wrap reveal">
+      <h2 class="wws-more-h">More AI news</h2>
+      <p class="wws-more-sub">The full feed, straight from the source — faithful summaries, every link to the original.</p>
       <ul class="n-filter" id="n-filter" role="group" aria-label="Filter by topic"></ul>
       <div class="n-list" id="n-list"></div>
       <p class="n-state" id="n-state">Loading the latest…</p>
       <p id="news-nojs" class="n-state" style="display:none">Enable JavaScript to see the latest news, or visit the sources directly.</p>
-      <p class="n-note">Summaries are faithful and extractive — every item links to its original source. Topics are auto-tagged. Opinion pieces are labeled. Nothing here is written by DPR as if it were reporting.</p>
+      <p class="n-note">The feed above is faithful and extractive — every item links to its original source, topics are auto-tagged, and opinion pieces are labeled. The "Our take" notes at the top are DPR's own opinion, clearly labeled as such — not reporting.</p>
     </div>
   </section>
 </main>
@@ -130,6 +150,23 @@
       });
     });
   }
+
+  function renderFeatured(lens){
+    var intro = document.getElementById('wws-intro');
+    var wrap = document.getElementById('wws-featured');
+    if(!wrap) return;
+    if(lens && lens.intro && intro){ intro.textContent = lens.intro; }
+    var feat = (lens && lens.featured) || [];
+    wrap.innerHTML = feat.map(function(f){
+      return '<article class="wws-card">'
+        + '<div class="ni-top"><span class="ni-tag">'+esc(f.tag||'AI')+'</span><span class="ni-meta">'+esc(f.source)+'</span></div>'
+        + '<h3><a href="'+esc(f.url)+'" target="_blank" rel="noopener">'+esc(f.headline)+'</a></h3>'
+        + '<p class="wws-take"><span class="wws-lbl">Our take</span>'+esc(f.take)+'</p>'
+        + '<a class="ni-src" href="'+esc(f.url)+'" target="_blank" rel="noopener">Read at '+esc(f.source)+' &rarr;</a>'
+        + '</article>';
+    }).join('');
+  }
+  fetch('./lens.json', {cache:'no-cache'}).then(function(r){ return r.json(); }).then(renderFeatured).catch(function(){});
 
   fetch('./news.json', {cache:'no-cache'}).then(function(r){ return r.json(); }).then(function(data){
     items = (data && data.items) || [];
