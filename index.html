@@ -225,6 +225,33 @@
     </div>
   </section>
 
+  <!-- SLOP VS SHARP — drag to compare -->
+  <section class="sec" id="slop-vs-sharp">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Slop vs sharp</p>
+        <h2 style="margin-top:14px">Drag it. <span class="gold-text">Feel the difference.</span></h2>
+        <p class="lead">Same product, two AI drafts. One is filler you've read a thousand times. The other tells you something real. Drag the handle across.</p>
+      </div>
+      <div class="slopslider reveal" data-slop style="--split:50%">
+        <div class="ss-stage">
+          <div class="ss-pane ss-slop">
+            <span class="ss-lbl">Generic AI slop</span>
+            <p class="ss-text">Our <mark>innovative</mark>, <mark>cutting-edge</mark> running shoe <mark>leverages</mark> <mark>state-of-the-art</mark> technology to deliver an <mark>unparalleled</mark> experience. <mark>Designed for everyone</mark>, it <mark>seamlessly</mark> blends comfort and performance to take your run to the next level.</p>
+          </div>
+          <div class="ss-pane ss-sharp">
+            <span class="ss-lbl">Sharp &amp; specific</span>
+            <p class="ss-text">The Trail X weighs <mark>248g</mark> with a <mark>6mm heel-drop</mark> and a <mark>rock plate</mark> that survived <mark>500 miles of gravel</mark> in testing. It fits <mark>true to size</mark> — between sizes, <mark>size up for wide feet</mark>. Returns are <mark>free for 30 days</mark>.</p>
+          </div>
+          <div class="ss-divider"><span class="ss-handle" aria-hidden="true">⇄</span></div>
+          <input class="ss-range" type="range" min="6" max="94" value="50" aria-label="Drag to compare generic AI slop with sharp, specific writing" />
+        </div>
+        <div class="ss-meta"><span class="ss-count-slop">Empty adjectives: <b>7</b></span><span class="ss-count-sharp">Concrete facts: <b>7</b></span></div>
+        <p class="ss-hint">← drag the handle →</p>
+      </div>
+    </div>
+  </section>
+
   <!-- (legacy problem block, hidden) -->
   <section class="sec problem" hidden>
     <div class="wrap center reveal">
@@ -629,5 +656,6 @@
 <script src="assets/anim.js?v=10" defer></script>
 <script src="assets/diagrams.js?v=10" defer></script>
 <script src="slop.js?v=2" defer></script>
+<script src="assets/slopslider.js?v=1" defer></script>
 </body>
 </html>
