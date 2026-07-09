@@ -9,17 +9,64 @@
       "title": "Anatomy of a Working Prompt",
       "live": true,
       "blocks": [
-        { "type": "prose", "html": "<p>A working prompt isn't a magic phrase. It's four plain parts, and when you include them you stop getting vague junk back.</p><ul><li><b>Role</b> — who the AI should act as (for example, 'you are a coffee shop owner').</li><li><b>Context</b> — the situation ('launching a new oat-milk latte').</li><li><b>Task</b> — the exact thing to do ('write 3 Instagram captions').</li><li><b>Format</b> — what the answer should look like ('each under 15 words, friendly').</li></ul><p>Leave parts out and the AI guesses. Guessing is where slop comes from. Try the quick check below — pick an answer and you'll see exactly why it works or doesn't.</p>" },
+        { "type": "prose", "html": "<p>A working prompt isn't a magic phrase. It's four plain parts, and when you include them you stop getting vague junk back.</p><ul><li><b>Role</b> — who the AI should act as (for example, 'you are a coffee shop owner').</li><li><b>Context</b> — the situation ('launching a new oat-milk latte').</li><li><b>Task</b> — the exact thing to do ('write 3 Instagram captions').</li><li><b>Format</b> — what the answer should look like ('each under 15 words, friendly').</li></ul><p>Leave parts out and the AI guesses. Guessing is where slop comes from. Try the quick check, then tick off the parts you already use.</p>" },
         { "type": "quiz", "id": "q1", "required": true, "question": "Which of these prompts will actually get you a usable result?", "options": [
           { "id": "a", "text": "Write something about coffee.", "correct": false, "explain": "Too vague. No role, no real task, no format — you'll get generic filler." },
           { "id": "b", "text": "You are a coffee shop owner launching an oat-milk latte. Write 3 Instagram captions, each under 15 words, friendly tone.", "correct": true, "explain": "Role, context, a clear task, and a format with limits. That's a prompt that returns something you can actually post." },
           { "id": "c", "text": "Make it good.", "correct": false, "explain": "There's nothing to act on — no task, no context. The AI has to invent everything." },
           { "id": "d", "text": "coffee latte captions please thanks", "correct": false, "explain": "A topic, but no role, no count, no length, no tone. The model still has to guess most of it." }
+        ] },
+        { "type": "checklist", "id": "c1", "required": true, "items": [
+          { "id": "role", "text": "I told it who to act as (a role)." },
+          { "id": "context", "text": "I gave the situation or background." },
+          { "id": "task", "text": "I stated the exact thing to do." },
+          { "id": "format", "text": "I said what the answer should look like." }
         ] }
       ]
     },
-    { "id": "l1", "title": "Role, Context, and Output Format", "live": false },
-    { "id": "l2", "title": "Rewrite a Weak Prompt", "live": false },
-    { "id": "l3", "title": "Good vs Bad Prompt, Side by Side", "live": false }
+    {
+      "id": "l1",
+      "title": "Role, Context, and Output Format",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>Now build one yourself. Fill the four boxes and hit Build — a strong prompt assembles in front of you. Save the good ones; they land in your library on the dashboard.</p>" },
+        { "type": "builder", "id": "b1", "required": true, "title": "My structured prompt", "template": "You are a {role}. Context: {context}. Task: {task}. Format: {format}.", "fields": [
+          { "id": "role", "label": "Role", "hint": "who it should act as", "placeholder": "a friendly customer support lead" },
+          { "id": "context", "label": "Context", "hint": "the situation", "placeholder": "a customer is asking for a refund" },
+          { "id": "task", "label": "Task", "hint": "the exact job", "placeholder": "write a polite reply offering a solution" },
+          { "id": "format", "label": "Format", "hint": "what the answer looks like", "placeholder": "3 short sentences, warm tone" }
+        ] }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Rewrite a Weak Prompt",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>Here's a weak prompt: <em>'write me some marketing.'</em> Rewrite it in the box so it actually works — give it a role, a clear task, and a format. The checker shows you, rule by rule, what's still missing. No hidden score.</p>" },
+        { "type": "critique", "id": "cr1", "required": true, "min": 3, "placeholder": "Rewrite 'write me some marketing' into a real prompt…", "rules": [
+          { "id": "has_role", "label": "Gives the AI a role ('you are…', 'act as…')", "pattern": "\\b(you are|you're|act as|as a|as an)\\b" },
+          { "id": "has_task", "label": "States a clear task (write, draft, list, create…)", "pattern": "\\b(write|draft|create|list|make|generate|summari[sz]e|rewrite|post)\\b" },
+          { "id": "has_format", "label": "Sets a format or limit (bullets, word count, tone…)", "pattern": "\\b(bullet|numbered|list|words?|sentences?|tone|paragraph|table|format|characters?|tweets?|emails?|captions?|under\\s*\\d+)\\b" }
+        ] }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Good vs Bad Prompt, Side by Side",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>Same goal, two prompts. Read both, then reveal why one gets slop and the other gets something you can use straight away.</p>" },
+        { "type": "compare", "id": "cm1", "required": true,
+          "left": { "label": "Weak", "text": "write something about our new product" },
+          "right": { "label": "Strong", "text": "You are our marketing lead. Write 3 launch tweets for our new oat-milk latte, each under 20 words, upbeat tone." },
+          "why": [
+            "The strong one names a role, so the AI writes in the right voice.",
+            "It gives a specific task and a count (3 tweets), not a vague topic.",
+            "It sets limits (under 20 words) and tone (upbeat), so the output is usable as-is.",
+            "The weak one makes the AI guess everything — and guessing is where generic slop comes from."
+          ] }
+      ]
+    }
   ]
 }

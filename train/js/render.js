@@ -1,8 +1,13 @@
 // render.js — lesson renderer/dispatcher. Renders prose + interactive blocks,
 // tracks required interactives, and reports when all required ones pass.
 import * as quiz from './quiz.js';
+import * as checklist from './checklist.js';
+import * as compare from './compare.js';
+import * as critique from './critique.js';
+import * as builder from './builder.js';
+import * as scenario from './scenario.js';
 
-const REGISTRY = { quiz };
+const REGISTRY = { quiz, checklist, compare, critique, builder, scenario };
 
 // container: DOM node. lesson: { blocks:[...] }. ctx: { mid, lid }.
 // onState({ requiredMet, required }) fires on every change.
