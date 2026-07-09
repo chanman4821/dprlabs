@@ -1,9 +1,8 @@
 /* ============================================================
-   DPR AI · NR3 — Investor Data Room  ·  shared stylesheet
+   DPR AI — Investor Data Room  ·  shared stylesheet
    Brand: Geist / Geist Mono · light · indigo #3b5bdb
-   Used by: index.html, summary-*.html, model-*.html,
-            architecture-nr3.html, market.html, team.html,
-            faq.html, compliance.html
+   Used by: index.html, summary-dpr.html, model-dpr.html,
+            market.html, team.html, faq.html, compliance.html
    ============================================================ */
 :root{
   --ink:#12141a; --muted:#545a68; --faint:#7c8494;
