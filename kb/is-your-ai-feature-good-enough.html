@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Is your AI feature good enough to ship? An 8-point check — DPR AI Knowledge Base</title>
+<meta name="description" content="Most shipped AI features were never tested — they just looked fine in a demo. Before you tell a customer it works, run these 8 honest checks: measured, tested, human-checked, specific, safe when unsure, owned, private, and affordable to run." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=11" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<style>
+  .crumb{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--faint);margin:0 0 18px}
+  .crumb a{color:var(--accent)}
+  .kb-meta{font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);display:flex;flex-wrap:wrap;gap:14px;margin-top:16px}
+  .tldr{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;background:var(--accent-soft);padding:20px 24px;margin:30px 0 8px}
+  .tldr .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:8px}
+  .tldr p{margin:0;color:var(--ink-2);font-size:15.5px;line-height:1.6}
+  .prose-body p{color:var(--ink-2);line-height:1.7;font-size:16px;margin:0 0 16px}
+  .steps{list-style:none;counter-reset:s;margin:24px 0;padding:0}
+  .steps li{counter-increment:s;position:relative;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:20px 22px 20px 64px;margin-bottom:12px}
+  .steps li::before{content:counter(s);position:absolute;left:18px;top:18px;width:32px;height:32px;border-radius:9px;background:var(--accent-soft);color:var(--accent);font-family:var(--mono);font-weight:600;display:flex;align-items:center;justify-content:center}
+  .steps h3{font-size:16px;margin:0 0 6px}
+  .steps p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.65}
+  .test{border:1px dashed var(--line-2);border-radius:var(--radius);background:var(--bg-soft);padding:22px 26px;margin:26px 0}
+  .test .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+  .test p{margin:0;font-size:16px;color:var(--ink-2)}
+  .related{border-top:1px solid var(--line);margin-top:40px;padding-top:24px}
+  .related h3{font-size:13px;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:0 0 14px}
+  .related a{display:block;font-size:15px;color:var(--accent);margin-bottom:8px}
+  .kb-cta{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--gold-soft));padding:24px 26px;margin:26px 0 0}
+  .kb-cta .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  .kb-cta p{color:var(--muted);margin:0 0 16px;max-width:60ch}
+</style>
+<link rel="canonical" href="https://dprai.io/kb/is-your-ai-feature-good-enough.html" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="DPR AI" />
+<meta property="og:title" content="Is your AI feature good enough to ship? An 8-point check — DPR AI" />
+<meta property="og:description" content="Before you tell a customer your AI works, run these 8 honest checks: measured, tested, human-checked, specific, safe when unsure, owned, private, affordable." />
+<meta property="og:url" content="https://dprai.io/kb/is-your-ai-feature-good-enough.html" />
+<meta property="og:image" content="https://dprai.io/assets/og-default.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Is your AI feature good enough to ship? An 8-point check" />
+<meta name="twitter:description" content="8 honest checks before you tell a customer your AI feature works." />
+<meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Is your AI feature good enough to ship? An 8-point check", "description": "Before you tell a customer your AI feature works, run these 8 honest checks: measured, tested, human-checked, specific, safe when unsure, owned, private, and affordable to run.", "url": "https://dprai.io/kb/is-your-ai-feature-good-enough.html", "image": "https://dprai.io/assets/og-default.png", "publisher": {"@type": "Organization", "name": "DPR AI", "url": "https://dprai.io/"}, "mainEntityOfPage": "https://dprai.io/kb/is-your-ai-feature-good-enough.html"}
+</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../free/">Free tools</a><a href="../score/">Score my AI</a><div class="learn"><button class="learn-trigger on" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="../guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="../kb/index.html" aria-current="page">Knowledge Base<span class="desc">Reference articles &amp; how-tos.</span></a><a role="menuitem" href="../blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="../train/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="../news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a><a role="menuitem" href="../free/">Free tools<span class="desc">Download the agent — free.</span></a></div></div><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../free/">Free tools</a><a href="../score/">Score my AI</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="../train/index.html">Training</a><a href="../news/index.html">News</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="crumb"><a href="index.html">Knowledge Base</a> › Building &amp; Owning</p>
+      <p class="eyebrow">Building &amp; Owning</p>
+      <h1 style="margin-top:12px">Is your AI feature good enough to ship?</h1>
+      <p class="kb-meta"><span>Checklist</span><span>Last reviewed Jul 8, 2026</span><span>6 min read</span></p>
+      <div class="tldr"><span class="k">In short</span><p>Most shipped AI features were never really tested. They looked fine in a demo, so they went out. Before you tell a customer yours works, run these eight checks. They're the same ones we run in a paid audit. Want to do it interactively? The free <a href="../score/">Score your AI feature</a> tool walks you through them in two minutes.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap prose prose-body reveal" style="max-width:760px">
+      <p>There's a gap between "the demo looked great" and "this works." A lot of AI features live in that gap. They ship because a founder saw one good output and trusted it, and nobody measured what happens across a hundred real cases.</p>
+      <p>You don't need to be technical to close that gap. You need eight honest questions and the willingness to answer them straight. Here they are.</p>
+
+      <ol class="steps">
+        <li><h3>You can show one honest number</h3><p>Not a vibe. A single measure — accuracy, quality rating, minutes saved, tickets deflected — that tells you whether it works. If the only evidence is "it feels good," you don't have evidence. Pick one number and start tracking it.</p></li>
+        <li><h3>It was tested on real data, not a demo</h3><p>Demos are cherry-picked by nature. Run the feature against a batch of your actual cases — messy ones included — and see where it breaks. The failures you find here are the ones your customers won't have to.</p></li>
+        <li><h3>A human checks the output before a customer sees it</h3><p>At least while it's young. Full automation feels efficient right up until one wrong, confident message lands in front of a real customer. A quick review step on anything customer-facing is cheap insurance.</p></li>
+        <li><h3>The output is specific, not generic</h3><p>Slop is text that could apply to anyone. If the AI's answers read like a horoscope, it's guessing because you didn't give it the real context. Feed it the actual details and the genericness usually disappears.</p></li>
+        <li><h3>You know what it does when it's unsure</h3><p>Every model hits cases it can't handle. The question is whether yours asks, flags a human, or just makes something up. A feature that says "I'm not sure" beats one that's confidently wrong. Decide the fallback on purpose.</p></li>
+        <li><h3>You own the code and the keys</h3><p>If your AI lives entirely inside a vendor's black box, you're renting — and rent goes up, terms change, and companies disappear. Owning the code and running on your own keys means the thing you built stays yours.</p></li>
+        <li><h3>You know where your customers' data goes</h3><p>When the AI runs, whose servers does the data touch? You should be able to answer that in one sentence. Map it now, while it's a question, instead of later, when it's an incident.</p></li>
+        <li><h3>You know the running cost, and it scales</h3><p>A feature that costs a few dollars a month at a hundred users can cost thousands at ten thousand. Know your cost per run before growth makes it a problem. Our <a href="../cost/">free cost estimator</a> gives you the number in thirty seconds.</p></li>
+      </ol>
+
+      <div class="test"><p class="k">The one-line test</p><p>If you unplugged this feature tomorrow, could you prove — with a number — that anything got worse? If not, you can't yet claim it works. You have a demo, not a result.</p></div>
+
+      <p>None of this means your feature is bad. Most shipped AI sits at three or four of these eight, and that's normal. The point isn't a perfect score. It's knowing exactly where the gaps are, so you can close the ones that matter before they cost you a customer's trust.</p>
+
+      <div class="related">
+        <h3>Keep going</h3>
+        <a href="../score/">Score your AI feature — the interactive version of this checklist →</a>
+        <a href="../cost/">Estimate what your AI feature costs to run →</a>
+        <a href="../train/index.html">Learn AI by doing — the free interactive course →</a>
+        <a href="how-to-measure-ai-roi.html">Measure AI ROI without fooling yourself →</a>
+      </div>
+
+      <div class="kb-cta"><span class="k">Get started</span><p>Want someone to run these eight checks on your actual feature and tell you the one thing to fix first? Book a free 20-minute teardown. No pitch, no obligation.</p><a href="../contact.html" class="btn btn-primary">Book a free teardown <span class="arrow" aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../case-studies.html">Case studies</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="../free/">Free tools</a><a href="../score/">Score my AI</a><a href="../train/index.html">Training</a><a href="index.html">Knowledge Base</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<script src="../site.js?v=11" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+</body>
+</html>
