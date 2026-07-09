@@ -1,11 +1,107 @@
 {
   "meta": {
-    "generated_at": "2026-07-09T20:51:29.256613+00:00",
+    "generated_at": "2026-07-09T22:36:30.975032+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "9491981398fc",
+      "headline": "OpenAI launches its new family of models with GPT-5.6",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
+      "published_at": "2026-07-09T22:24:24+00:00",
+      "summary": "OpenAI's latest family of models promise improvements across a range of areas, including cybersecurity.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.856
+    },
+    {
+      "id": "1adca30b762f",
+      "headline": "An AI agent startup just let its agent run its $100 million fundraise",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/",
+      "published_at": "2026-07-09T22:08:58+00:00",
+      "summary": "Lyzr, a startup that builds AI agents for enterprises, used its own AI agent to raise a $100 million round — proof, evidently, that the product actually works.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7942
+    },
+    {
+      "id": "14a2cc90aef5",
+      "headline": "OpenAI is shutting down Atlas, but its AI browser ambitions are still growing",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
+      "published_at": "2026-07-09T22:03:54+00:00",
+      "summary": "OpenAI is sunsetting its AI-powered browser after less than a year. But it's moving some agentic browsing features to its desktop app and a Chrome extension.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7936
+    },
+    {
+      "id": "55406eec470a",
+      "headline": "Elon Musk praises Mythos/Fable, promises not to ‘cut off’ Anthropic",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/elon-musk-praises-mythos-fable-promises-not-to-cut-off-anthropic/",
+      "published_at": "2026-07-09T21:57:42+00:00",
+      "summary": "Should Anthropic trust Elon Musk to host its models? With about $40 billion in revenue at stake, Musk insists that the company can.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7928
+    },
+    {
+      "id": "8f2a4085c264",
+      "headline": "Can AI answer the $3 trillion question?",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/can-ai-answer-the-3-trillion-question/",
+      "published_at": "2026-07-09T21:47:50+00:00",
+      "summary": "The AI ROI debate has returned and the numbers are even bigger, as are, perhaps, the consequences.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7916
+    },
+    {
+      "id": "ba6ef68cb3be",
+      "headline": "OpenAI wants its new tool to do your work for you and with you",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/openai-wants-its-new-tool-to-do-your-work-for-you-and-with-you/",
+      "published_at": "2026-07-09T21:25:55+00:00",
+      "summary": "Rebranded Codex promises independent workflows that can run \"for hours if needed.\"",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.789
+    },
     {
       "id": "132c70a2f066",
       "headline": "The ChatGPT browser is already dead",
@@ -20,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7954
+      "rank_score": 0.7829
     },
     {
       "id": "7d85437dbf4d",
@@ -36,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.889
+      "rank_score": 0.8766
     },
     {
       "id": "d7df66519cd2",
@@ -52,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7927
+      "rank_score": 0.7804
     },
     {
       "id": "ffdb0d5985a2",
@@ -68,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7927
+      "rank_score": 0.7803
     },
     {
       "id": "241317adaedd",
@@ -84,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.789
+      "rank_score": 0.7768
     },
     {
       "id": "9de14e96265a",
@@ -100,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7849
+      "rank_score": 0.7728
     },
     {
       "id": "16830069eb29",
@@ -116,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.784
+      "rank_score": 0.7719
     },
     {
       "id": "76107e209263",
@@ -132,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.782
+      "rank_score": 0.77
     },
     {
       "id": "2e788278eefd",
@@ -148,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8413
+      "rank_score": 0.8293
     },
     {
       "id": "74bc3599582d",
@@ -164,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8399
+      "rank_score": 0.828
     },
     {
       "id": "fbe93ef80d6a",
@@ -180,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7769
+      "rank_score": 0.7651
     },
     {
       "id": "8c91b0e5893b",
@@ -196,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7725
+      "rank_score": 0.7608
     },
     {
       "id": "22db00072fd4",
@@ -212,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7712
+      "rank_score": 0.7596
     },
     {
       "id": "ad27224f77da",
@@ -228,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8305
+      "rank_score": 0.8189
     },
     {
       "id": "8923484c1444",
@@ -244,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7705
+      "rank_score": 0.7589
     },
     {
       "id": "4da1966f7ed0",
@@ -260,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5239
+      "rank_score": 0.5128
     },
     {
       "id": "c4a0826144b9",
@@ -276,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8166
+      "rank_score": 0.8055
     },
     {
       "id": "8e29a16695b1",
@@ -292,103 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7563
-    },
-    {
-      "id": "7882027942b5",
-      "headline": "Meta says its new AI model is ready to compete on coding",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api",
-      "published_at": "2026-07-09T14:00:00+00:00",
-      "summary": "After reentering the AI race with its first in-house Muse Spark model in April, Meta is now opening up the doors to developers with a new model that can plug into AI coding software with the new Meta Model API. Meta says that Muse Spark…",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7509
-    },
-    {
-      "id": "b722bb74de4f",
-      "headline": "Say hello to Claude Wrapped",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/963105/anthropic-claude-wrapped-reflection-ai-usage",
-      "published_at": "2026-07-09T13:30:00+00:00",
-      "summary": "The popularity of Spotify Wrapped has kicked off a wide range of year-in-review features, on apps from YouTube to Uber - and now, the lookback trend has come to AI. Anthropic on Thursday announced a \"reflect\" feature for its Claude…",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 2,
-      "credibility": 0.85,
-      "rank_score": 0.8318
-    },
-    {
-      "id": "d2d0db505453",
-      "headline": "Character.AI wants a piece of the microdrama pie",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/entertainment/962897/character-ai-series-microdrama-vertical-video",
-      "published_at": "2026-07-09T13:11:53+00:00",
-      "summary": "Character.AI's plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas. Today, the company announced the debut of c.ai Series - short-form, episodic videos designed to be…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7459
-    },
-    {
-      "id": "e799563c0958",
-      "headline": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
-      "published_at": "2026-07-09T13:00:00+00:00",
-      "summary": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.8397
-    },
-    {
-      "id": "2b56d024188e",
-      "headline": "Popular open source AI developer tool Ollama raises $65M, grows to nearly 9M users",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/",
-      "published_at": "2026-07-09T13:00:00+00:00",
-      "summary": "Benchmark-backed Ollama has amassed 176,000 stars, and nearly 17,000 forks on GitHub by helping developers easily run AI on their PCs.",
-      "tags": [
-        "Open Source"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.8047
-    },
-    {
-      "id": "6b0fd45dbfe0",
-      "headline": "FL Studio 2026 turns its AI chatbot into your assistant engineer",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/963052/fl-studio-2026-music-daw-ai-chatbot",
-      "published_at": "2026-07-09T13:00:00+00:00",
-      "summary": "Last year, Image Line introduced Gopher for FL Studio, an AI chatbot that was basically a glorified instruction manual. You asked it how to do something, and it would serve up the relevant instructions. It's the kind of thing I actually…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7447
+      "rank_score": 0.7453
     }
   ]
 }
