@@ -34,6 +34,13 @@ mascot-contact-sheet.png
 assets/_raw/
 assets/video/
 
+# private strategy docs — intentionally kept out of the public repo (local only)
+BUSINESS-MODEL.md
+DEALFLOW-PLAN.md
+GTM-PLAN.md
+KB-AND-ENGAGEMENT-PLAN.md
+MASTER-PLAN.md
+
 # Always keep the committed e2e visual baselines
 # (must be last: overrides *-full.png and friends above so full-page shots persist)
 !tests/e2e/baseline/
