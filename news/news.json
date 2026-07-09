@@ -1,11 +1,187 @@
 {
   "meta": {
-    "generated_at": "2026-07-09T07:49:23.141291+00:00",
+    "generated_at": "2026-07-09T15:24:34.605989+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "4da1966f7ed0",
+      "headline": "The Case for Nationalizing Artificial Intelligence",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://jacobin.com/2026/07/ai-policy-nationalization-commons-work",
+      "published_at": "2026-07-09T15:04:54+00:00",
+      "summary": "1 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5582
+    },
+    {
+      "id": "c4a0826144b9",
+      "headline": "Anthropic’s new Claude feature is quietly selling you on AI",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/",
+      "published_at": "2026-07-09T14:53:09+00:00",
+      "summary": "Claude’s new Reflect dashboard doesn’t just visualize how you use AI. It also subtly reinforces how much of your daily work now depends on Anthropic’s chatbot.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8537
+    },
+    {
+      "id": "8e29a16695b1",
+      "headline": "Anthropic, OpenAI, and SpaceX are bigger than the last 25 years of tech exits",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/anthropic-openai-and-spacex-are-bigger-than-the-last-25-years-of-tech-exits/",
+      "published_at": "2026-07-09T14:51:00+00:00",
+      "summary": "Three big AI IPOs are set to generate more value than all the U.S. VC-backed exits since 2000.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7934
+    },
+    {
+      "id": "7882027942b5",
+      "headline": "Meta says its new AI model is ready to compete on coding",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api",
+      "published_at": "2026-07-09T14:00:00+00:00",
+      "summary": "After reentering the AI race with its first in-house Muse Spark model in April, Meta is now opening up the doors to developers with a new model that can plug into AI coding software with the new Meta Model API. Meta says that Muse Spark…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7874
+    },
+    {
+      "id": "b722bb74de4f",
+      "headline": "Say hello to Claude Wrapped",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963105/anthropic-claude-wrapped-reflection-ai-usage",
+      "published_at": "2026-07-09T13:30:00+00:00",
+      "summary": "The popularity of Spotify Wrapped has kicked off a wide range of year-in-review features, on apps from YouTube to Uber - and now, the lookback trend has come to AI. Anthropic on Thursday announced a \"reflect\" feature for its Claude…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8439
+    },
+    {
+      "id": "d2d0db505453",
+      "headline": "Character.AI wants a piece of the microdrama pie",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/entertainment/962897/character-ai-series-microdrama-vertical-video",
+      "published_at": "2026-07-09T13:11:53+00:00",
+      "summary": "Character.AI's plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas. Today, the company announced the debut of c.ai Series - short-form, episodic videos designed to be…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7817
+    },
+    {
+      "id": "2b56d024188e",
+      "headline": "Popular open source AI developer tool Ollama raises $65M, grows to nearly 9M users",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/",
+      "published_at": "2026-07-09T13:00:00+00:00",
+      "summary": "Benchmark-backed Ollama has amassed 176,000 stars, and nearly 17,000 forks on GitHub by helping developers easily run AI on their PCs.",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8404
+    },
+    {
+      "id": "6b0fd45dbfe0",
+      "headline": "FL Studio 2026 turns its AI chatbot into your assistant engineer",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/963052/fl-studio-2026-music-daw-ai-chatbot",
+      "published_at": "2026-07-09T13:00:00+00:00",
+      "summary": "Last year, Image Line introduced Gopher for FL Studio, an AI chatbot that was basically a glorified instruction manual. You asked it how to do something, and it would serve up the relevant instructions. It's the kind of thing I actually…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7804
+    },
+    {
+      "id": "edec3357e039",
+      "headline": "Character.AI enters the microdrama arena with its own productions, but there’s a twist",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/character-ai-enters-the-microdrama-arena-with-its-own-productions-but-with-a-twist/",
+      "published_at": "2026-07-09T13:00:00+00:00",
+      "summary": "In an interesting twist that takes advantage of the company's core product, users can chat with these shows' characters, ask them questions, and even roleplay different storylines.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7804
+    },
+    {
+      "id": "caad1e0c6575",
+      "headline": "Kaiser nurses say surveillance of them is undermining healthcare",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://themarkup.org/artificial-intelligence/2026/07/09/kaiser-permanente-nurses-say-technology-is-making-their-jobs-and-patient-care-worse",
+      "published_at": "2026-07-09T12:19:05+00:00",
+      "summary": "7 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5424
+    },
+    {
+      "id": "dc999c16cc92",
+      "headline": "Nandan Nilekani leaves GP role at Fundamentum as it launches $200M third fund",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/nandan-nilekani-leaves-gp-role-at-his-vc-firm-as-it-launches-third-200m-fund/",
+      "published_at": "2026-07-09T12:00:00+00:00",
+      "summary": "Nilekani remains Fundamentum's anchor investor as the firm expands its leadership team and targets AI and fintech startups in India.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7735
+    },
     {
       "id": "3810a2ffb193",
       "headline": "Operational Reframing and Approval-Framed Delegation in Multi-Agent LLM Safety",
@@ -20,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8482
+      "rank_score": 0.801
     },
     {
       "id": "0cbfc4bdc674",
@@ -36,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8482
+      "rank_score": 0.801
     },
     {
       "id": "58c10b15c7e6",
@@ -52,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7882
+      "rank_score": 0.741
     },
     {
       "id": "62c969591c5a",
@@ -68,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7882
+      "rank_score": 0.741
     },
     {
       "id": "9e84420ba73f",
@@ -84,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7882
+      "rank_score": 0.741
     },
     {
       "id": "480fc07e7a58",
@@ -100,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7882
+      "rank_score": 0.741
     },
     {
       "id": "0ad3031f2f24",
@@ -116,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7882
+      "rank_score": 0.741
     },
     {
       "id": "fd1e09b0a478",
@@ -132,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7882
+      "rank_score": 0.741
     },
     {
       "id": "1cb54419ad00",
@@ -148,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7882
+      "rank_score": 0.741
     },
     {
       "id": "a69441a8c9bc",
@@ -164,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7882
+      "rank_score": 0.741
     },
     {
       "id": "1be74937a84a",
@@ -180,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7882
+      "rank_score": 0.741
     },
     {
       "id": "f7770215e84d",
@@ -196,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7882
+      "rank_score": 0.741
     },
     {
       "id": "4972890dd3b5",
@@ -212,183 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7882
-    },
-    {
-      "id": "439d96ad1cf5",
-      "headline": "Does AI Understand Imaging? A Systematic Benchmark of Agentic AI for Computational Imaging Tasks",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07189",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07189v1 Announce Type: new Abstract: Vision-language models (VLMs) and agentic AI have shown strong performance on semantic visual tasks, but it remains unclear whether they can handle the physics and inverse problems that…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7882
-    },
-    {
-      "id": "49aae9791be0",
-      "headline": "From Atomic Actions to Standard Operating Procedures: Iterative Tool Optimization for Self-Evolving LLM Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07321",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07321v1 Announce Type: new Abstract: Tool utilization enables Large Language Model (LLM) agents to interact with the real world and resolve complex tasks. However, existing agent frameworks predominantly rely on static toolsets…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7882
-    },
-    {
-      "id": "f40da949aaca",
-      "headline": "Physics-Audited Agentic Discovery in Scientific Machine Learning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07379",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07379v1 Announce Type: new Abstract: In agentic scientific machine learning (SciML), large language model (LLM) agents can discover surrogate models and select one by an automated score, typically an error metric. A low error,…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7882
-    },
-    {
-      "id": "76e4c11e8e64",
-      "headline": "MIRA-Math: A Benchmark for Minimal Information Requesting and Mathematical Reasoning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07391",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07391v1 Announce Type: new Abstract: Mathematical reasoning benchmarks typically provide all facts needed to solve each problem, while interactive benchmarks often mix reasoning with tools, retrieval, and long-horizon dialogue.…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7882
-    },
-    {
-      "id": "8f381243b8bd",
-      "headline": "Agentic Data Environments",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07397",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07397v1 Announce Type: new Abstract: Autonomous agents promise substantial gains in speed, scale, and labor efficiency, but their failures can impose abrupt and often irreversible costs. The central challenge for agentic…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7882
-    },
-    {
-      "id": "6aab54686b12",
-      "headline": "Reason Less, Verify More: Deterministic Gates Recover a Silent Policy-Violation Failure Mode in Tool-Using LLM Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07405",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07405v1 Announce Type: new Abstract: Tool-using LLM agents can violate the very policies they are deployed to enforce while appearing to complete the task successfully. In policy-permissive environments, a tool may execute any…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7882
-    },
-    {
-      "id": "2cdd7cf4c16a",
-      "headline": "InductWave: Inductive Multi-Hop Logical Query Answering on Knowledge Graphs",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07422",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07422v1 Announce Type: new Abstract: Logical Multi-Hop Query Answering over Knowledge Graphs (KGs) can be formulated as querying, with an implicit completeness assumption. Current works mainly focus on Existential First Order…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7882
-    },
-    {
-      "id": "d2eefd0765ea",
-      "headline": "The Blind Curator: How a Biased Judge Silently Disables Skill Retirement in Self-Evolving Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07436",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07436v1 Announce Type: new Abstract: A self-evolving agent retires its bad skills by watching them fail, so what happens when the judge cannot see the failures? Skill retirement is the structural constraint that keeps a growing…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7882
-    },
-    {
-      "id": "5e8d3fedaefe",
-      "headline": "SpaCellAgent: A Self-Evolving LLM-Based Multi-Agent Framework for Trajectory Analysis",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07467",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07467v1 Announce Type: new Abstract: Spatial and Single-cell transcriptomics are transformative in deciphering cellular dynamics. As the fundamental paradigm for reconstructing cell developmental paths, trajectory inference (TI)…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7882
-    },
-    {
-      "id": "01bfc3df77e7",
-      "headline": "Search, Fail, Recover: A Training Framework for Correction-Aware Reasoning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07492",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07492v1 Announce Type: new Abstract: Many reasoning tasks are not well described by a single left-to-right chain: a solver may need to pursue a plausible branch, observe delayed failure, and return to the latest prefix that can…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7882
-    },
-    {
-      "id": "b9310df52d09",
-      "headline": "Do LLM-Generated Skills Make Better AI Data Scientists? A Component Ablation Across Data-Science Workflows",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07504",
-      "published_at": "2026-07-09T04:00:00+00:00",
-      "summary": "arXiv:2607.07504v1 Announce Type: new Abstract: Product data scientists often ask LLM-based agents to help with recurring execution tasks such as cleaning data, writing SQL, choosing statistical tests, and formatting results. Reusable…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7882
+      "rank_score": 0.741
     }
   ]
 }
