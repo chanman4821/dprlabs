@@ -1,0 +1,71 @@
+{
+  "id": "m2",
+  "title": "The AI Tool Landscape",
+  "goal": "Pick the right AI tool for each job and know how to drive it.",
+  "badge": { "id": "tool_scout", "name": "Tool Scout" },
+  "lessons": [
+    {
+      "id": "l0",
+      "title": "Which Tool for Which Job",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>AI tools come in a few flavors. Knowing which does what saves you hours of forcing the wrong one.</p><ul><li><b>Chat tools</b> (ChatGPT, Claude) — you type, they answer. Best for writing, summarizing, and quick help.</li><li><b>Assistants</b> — AI built into an app you already use (email, docs), helping with that app's work.</li><li><b>Agents</b> — you give a goal and they take several steps on their own. Powerful, but they need watching.</li><li><b>Image and video tools</b> — for making visuals, not text.</li></ul>" },
+        { "type": "quiz", "id": "q1", "required": true, "question": "You want to turn one blog post into five short social posts. Which tool fits best?", "options": [
+          { "id": "a", "text": "A chat / writing tool (ChatGPT, Claude)", "correct": true, "explain": "Exactly right. Reshaping text you already have into new formats is what chat tools do best." },
+          { "id": "b", "text": "An image generator", "correct": false, "explain": "Those make pictures, not written posts." },
+          { "id": "c", "text": "A coding tool", "correct": false, "explain": "Overkill, and not built for marketing copy." },
+          { "id": "d", "text": "A video editor", "correct": false, "explain": "Wrong medium — you want text, not video." }
+        ] }
+      ]
+    },
+    {
+      "id": "l1",
+      "title": "Chat vs Assistant vs Agent",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>The same task can go to a simple chat tool or a do-it-all agent. They are not equally safe. Read both ends, then reveal the rule of thumb.</p>" },
+        { "type": "compare", "id": "cm1", "required": true,
+          "left": { "label": "A chat tool", "text": "You type, it answers, one turn at a time. You drive every step and read every result." },
+          "right": { "label": "An AI agent", "text": "You give a goal and it takes several steps on its own — but it can wander off and needs checking." },
+          "why": [
+            "A chat tool is the simplest and safest — great for drafts, answers, and rewrites.",
+            "An 'assistant' sits in the middle: built into an app (email, docs) to help with that app's tasks.",
+            "An agent tries to do a whole job end to end — powerful, but it's the least reliable and needs a human watching.",
+            "Rule of thumb: use the simplest tool that does the job. Reach for an agent only when a task is truly multi-step, and still check its work."
+          ] }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "Match a Real Task to a Tool",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>Your turn. Pick what you'd reach for and see how it plays out. There's no penalty — try a few paths.</p>" },
+        { "type": "scenario", "id": "sc1", "required": true, "start": "start", "nodes": {
+          "start": { "text": "A customer left a long, angry review. You want a calm, professional reply. What do you reach for?", "choices": [
+            { "label": "Paste it into a chat tool and ask for a calm draft reply", "to": "chat" },
+            { "label": "Send it to an autonomous agent to handle the whole complaint", "to": "agent" },
+            { "label": "Open an image generator", "to": "image" }
+          ] },
+          "chat": { "text": "You paste the review into a chat tool and ask for a calm, professional reply.", "outcome": "Good call. It drafts a measured reply in seconds — and you read and tweak it before it ever goes out. Simplest tool, right job." },
+          "agent": { "text": "You hand the whole complaint to an autonomous agent.", "outcome": "Risky. An agent might reply, offer a refund, or escalate on its own — with an angry customer, one wrong autonomous step makes it worse. Keep a human in the loop for anything customer-facing." },
+          "image": { "text": "You open an image generator.", "outcome": "Wrong medium — that makes pictures, not replies. Back to a chat tool for this one." }
+        } }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "Build Your Tool Starter Kit",
+      "live": true,
+      "blocks": [
+        { "type": "prose", "html": "<p>Most owners need just a few tools, not fifty. Tick the ones you'll actually set up — that's your starter kit.</p>" },
+        { "type": "checklist", "id": "ck1", "required": true, "items": [
+          { "id": "chat", "text": "One general chat tool (ChatGPT or Claude) for writing, summarizing, and answers." },
+          { "id": "assistant", "text": "One assistant where you already work (your email or docs)." },
+          { "id": "image", "text": "One image tool for quick graphics — only if you need visuals." },
+          { "id": "prompts", "text": "A saved list of your best prompts (you're already building one here)." }
+        ] }
+      ]
+    }
+  ]
+}
