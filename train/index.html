@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
 <link rel="stylesheet" href="../site.css?v=11" />
-<link rel="stylesheet" href="css/train.css?v=1" />
+<link rel="stylesheet" href="css/train.css?v=3" />
 <link rel="icon" href="../assets/icons/logo-orb.png" />
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
@@ -64,7 +64,7 @@
     grid.innerHTML = data.modules.map((m) => {
       const pr = moduleProgress(m.id, m.lessonCount);
       const earned = hasBadge(m.badge.id);
-      const inner = `<div class="t-card-top"><div class="t-card-ico">${m.id.toUpperCase()}</div><h3>${m.title}</h3></div><p class="t-goal">${m.goal}</p><div class="t-card-foot"><span class="t-badge-chip ${earned ? 'earned' : ''}">${earned ? '\u2605 ' + m.badge.name : 'Badge: ' + m.badge.name}</span>${m.live ? ring(pr.percent) : '<span class="t-soon-tag">Coming soon</span>'}</div>`;
+      const inner = `<div class="t-card-top"><div class="t-card-ico"><img src="assets/mods/${m.id}.png" alt="${m.title} icon" loading="lazy" onerror="this.remove()"></div><h3>${m.title}</h3></div><p class="t-goal">${m.goal}</p><div class="t-card-foot"><span class="t-badge-chip ${earned ? 'earned' : ''}">${earned ? '\u2605 ' + m.badge.name : 'Badge: ' + m.badge.name}</span>${m.live ? ring(pr.percent) : '<span class="t-soon-tag">Coming soon</span>'}</div>`;
       return m.live ? `<a class="t-card" href="module.html?m=${m.id}">${inner}</a>` : `<div class="t-card locked">${inner}</div>`;
     }).join('');
   }).catch(() => { grid.innerHTML = '<p class="t-soon">Could not load modules.</p>'; });

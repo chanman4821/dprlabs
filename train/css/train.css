@@ -162,3 +162,7 @@ a.t-lrow:hover{border-color:var(--accent);box-shadow:var(--shadow-1)}
 .pl-out[data-tone="good"]{border-color:#b7e0cc;background:#f2fbf6}
 @media(prefers-reduced-motion:reduce){.pl-meter-fill,.pl-check,.pl-field{transition:none}}
 @media(max-width:640px){.pl{grid-template-columns:1fr}.pl-right{position:static}}
+
+/* module-card icons (ComfyUI-generated, white tile) */
+.t-card-ico{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-1);overflow:hidden;padding:4px;width:56px;height:56px;border-radius:14px}
+.t-card-ico img{width:100%;height:100%;object-fit:contain;display:block}
