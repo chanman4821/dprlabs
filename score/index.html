@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Score your AI feature — a free 2-minute check | DPR AI</title>
+<meta name="description" content="Is your AI feature any good, or is it slop? Answer 8 honest questions and get a transparent readout of where it's solid and where it'll bite you — free, no sign-up. It maps to exactly what we check in a paid audit." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="canonical" href="https://dprai.io/score/" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DPR AI" />
+<meta property="og:title" content="Score your AI feature — a free 2-minute check" />
+<meta property="og:description" content="Answer 8 honest questions, get a transparent readout of where your AI feature is solid and where it'll bite you. Free, no sign-up." />
+<meta property="og:url" content="https://dprai.io/score/" />
+<meta property="og:image" content="https://dprai.io/assets/og-default.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Score your AI feature — a free 2-minute check" />
+<meta name="twitter:description" content="8 honest questions, a transparent readout of where your AI is solid and where it's slop. Free." />
+<meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=11" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<style>
+  .sc-intro{max-width:64ch}
+  .sc-meta{font-family:var(--mono);font-size:12.5px;color:var(--faint);margin-top:14px}
+  .sc-q{border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:20px 22px;margin:0 0 14px}
+  .sc-q-h{display:flex;gap:10px;align-items:baseline;margin:0 0 12px}
+  .sc-q-n{font-family:var(--mono);font-size:12px;color:var(--accent);flex:0 0 auto}
+  .sc-q-t{font-size:16px;font-weight:600;color:var(--ink);line-height:1.35;margin:0}
+  .sc-opts{display:flex;flex-direction:column;gap:8px}
+  .sc-opt{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:10px;padding:11px 14px;background:#fff;cursor:pointer;font-size:14.5px;color:var(--ink-2);transition:.15s ease}
+  .sc-opt:hover{border-color:var(--accent)}
+  .sc-opt input{margin-top:3px}
+  .sc-opt.sel{border-color:var(--accent);background:var(--accent-soft)}
+  .sc-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:8px}
+  .sc-hint{font-size:13px;color:var(--faint)}
+  .btn:disabled{opacity:.5;cursor:not-allowed;pointer-events:none}
+  /* result */
+  .sc-result{border:1px solid var(--accent);border-radius:var(--radius);background:#fff;box-shadow:0 18px 44px rgba(59,91,219,.12);padding:clamp(24px,4vw,36px);margin-top:8px}
+  .sc-band{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+  .sc-band.good{color:#1a9e6a}.sc-band.mid{color:#b8860b}.sc-band.low{color:#d64545}
+  .sc-score{font-size:clamp(30px,5vw,42px);font-weight:800;letter-spacing:-.02em;margin:6px 0 0;font-variant-numeric:tabular-nums}
+  .sc-score small{font-size:18px;color:var(--faint);font-weight:600}
+  .sc-verdict{font-size:15.5px;color:var(--muted);line-height:1.6;margin:12px 0 0;max-width:64ch}
+  .sc-gaps{margin:22px 0 0;border-top:1px solid var(--line);padding-top:18px}
+  .sc-gaps h3{font-size:15px;margin:0 0 12px}
+  .sc-gap{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-top:1px solid var(--line)}
+  .sc-gap:first-of-type{border-top:0}
+  .sc-gap .d{width:9px;height:9px;border-radius:50%;flex:0 0 auto;margin-top:6px}
+  .sc-gap.g0 .d{background:#d64545}.sc-gap.g1 .d{background:#b8860b}
+  .sc-gap p{margin:0;font-size:14px;line-height:1.5;color:var(--ink-2)}
+  .sc-gap b{color:var(--ink)}
+  .sc-strong{color:#1a9e6a;font-size:14px;margin:14px 0 0}
+  .sc-cta{border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#fff,var(--gold-soft));padding:22px 24px;margin-top:22px}
+  .sc-cta h3{font-size:18px;margin:0 0 6px}
+  .sc-cta p{font-size:14.5px;color:var(--muted);line-height:1.55;margin:0 0 14px;max-width:60ch}
+  .sc-how{font-size:12.5px;color:var(--faint);margin-top:16px;line-height:1.55}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../free/">Free tools</a><div class="learn"><button class="learn-trigger" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="../guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="../kb/index.html">Knowledge Base<span class="desc">Reference articles &amp; how-tos.</span></a><a role="menuitem" href="../blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="../train/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="../news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a><a role="menuitem" href="../free/">Free tools<span class="desc">Download the agent — free.</span></a></div></div><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../free/">Free tools</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="../train/index.html">Training</a><a href="../news/index.html">News</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Free check · 2 minutes</p>
+      <h1 style="margin-top:12px">Is your AI feature any good — or is it slop?</h1>
+      <p class="lead sc-intro" style="margin-top:16px">Answer 8 honest questions about the AI you've shipped. You'll get a straight readout of where it's solid and where it'll bite you — with the specific fixes. No sign-up, nothing sent to us. It maps to exactly what we check in a paid audit.</p>
+      <p class="sc-meta" id="sc-progress">0 of 8 answered</p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap reveal" style="max-width:760px">
+      <form id="sc-form"></form>
+      <div class="sc-actions">
+        <button type="button" id="sc-go" class="btn btn-primary" disabled>See my result</button>
+        <span class="sc-hint" id="sc-hint">Answer all 8 to see your score.</span>
+      </div>
+      <div id="sc-out" style="margin-top:24px"></div>
+      <p class="sc-how">How it's scored: each answer is worth 2 points (owned + measured), 1 (partway), or 0 (guessing). It's a quick self-check, not a full audit — but it looks at the same things we do. Your answers stay in your browser.</p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../case-studies.html">Case studies</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="../free/">Free tools</a><a href="../train/index.html">Training</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<script src="../site.js?v=11" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+<script>
+(function(){
+  'use strict';
+  var Q = [
+    { id:'measured', t:'Can you show one honest number that proves your AI feature works?',
+      opts:[ {l:'Yes — we track a real accuracy or quality number', s:2},
+             {l:'Roughly — a gut sense, but no number', s:1},
+             {l:'No — we shipped it and hoped', s:0} ],
+      gap:'<b>No honest number.</b> You can\u2019t tell if it works or is slop. Pick one number it should move and measure it — this is the first fix.' },
+    { id:'tested', t:'Before you shipped it, was it tested against your real data?',
+      opts:[ {l:'Yes — against real cases, not just a demo', s:2},
+             {l:'A handful of examples', s:1},
+             {l:'It looked right in a demo, so we shipped', s:0} ],
+      gap:'<b>Not tested on real data.</b> Demos lie. Run it against a batch of your real cases and see where it breaks.' },
+    { id:'human', t:'Does a human check the AI\u2019s output before it reaches a customer?',
+      opts:[ {l:'Always — nothing goes out unreviewed', s:2},
+             {l:'Sometimes, for the risky stuff', s:1},
+             {l:'No — it\u2019s fully automated', s:0} ],
+      gap:'<b>No human check.</b> One wrong output reaches a real customer. Add a review step for anything customer-facing.' },
+    { id:'slop', t:'Is the output specific to each case, or could it apply to anyone?',
+      opts:[ {l:'Specific — it uses the real details', s:2},
+             {l:'Not sure', s:1},
+             {l:'Honestly, it\u2019s pretty generic', s:0} ],
+      gap:'<b>The output reads generic.</b> That\u2019s slop your customers notice. Feed it the real context so it stops guessing.' },
+    { id:'failure', t:'Do you know what it does when it\u2019s unsure or wrong?',
+      opts:[ {l:'Yes — it has a defined fallback', s:2},
+             {l:'Sometimes it handles it', s:1},
+             {l:'No idea — it just guesses', s:0} ],
+      gap:'<b>No plan for being wrong.</b> Decide what it does when unsure — ask, flag a human, or say \u201cI don\u2019t know\u201d beats a confident wrong answer.' },
+    { id:'owned', t:'Do you own the code and keys, or is it locked in a vendor?',
+      opts:[ {l:'We own it — our code, our keys', s:2},
+             {l:'Mostly ours, some vendor lock-in', s:1},
+             {l:'It\u2019s a rented black box', s:0} ],
+      gap:'<b>You don\u2019t fully own it.</b> If the vendor changes terms or vanishes, you\u2019re stuck. Get it into your own code and keys.' },
+    { id:'privacy', t:'Do you know where your customers\u2019 data goes when the AI runs?',
+      opts:[ {l:'Yes — our own accounts or a vendor we vetted', s:2},
+             {l:'Roughly', s:1},
+             {l:'Not sure', s:0} ],
+      gap:'<b>Unclear data path.</b> You should know exactly whose servers your customer data touches. Map it before it becomes an incident.' },
+    { id:'cost', t:'Do you know what it costs per use, and whether that scales?',
+      opts:[ {l:'Yes — we track it', s:2},
+             {l:'Roughly', s:1},
+             {l:'No', s:0} ],
+      gap:'<b>Blind on cost.</b> A feature that\u2019s cheap at 100 users can be brutal at 10,000. Know your cost per run.' }
+  ];
+
+  var form = document.getElementById('sc-form');
+  var go = document.getElementById('sc-go');
+  var hint = document.getElementById('sc-hint');
+  var out = document.getElementById('sc-out');
+  var prog = document.getElementById('sc-progress');
+  var answers = {};
+
+  form.innerHTML = Q.map(function(q, i){
+    return '<div class="sc-q"><div class="sc-q-h"><span class="sc-q-n">'+(i+1)+'</span><p class="sc-q-t">'+q.t+'</p></div>'
+      + '<div class="sc-opts">' + q.opts.map(function(o, j){
+        return '<label class="sc-opt"><input type="radio" name="'+q.id+'" value="'+j+'"><span>'+o.l+'</span></label>';
+      }).join('') + '</div></div>';
+  }).join('');
+
+  form.addEventListener('change', function(e){
+    if(e.target.name){
+      var _q = Q.filter(function(x){ return x.id === e.target.name; })[0];
+      answers[e.target.name] = _q.opts[parseInt(e.target.value, 10)].s;
+      Array.prototype.forEach.call(form.querySelectorAll('input[name="'+e.target.name+'"]'), function(inp){
+        inp.closest('.sc-opt').classList.toggle('sel', inp.checked);
+      });
+    }
+    var n = Object.keys(answers).length;
+    prog.textContent = n + ' of ' + Q.length + ' answered';
+    go.disabled = n < Q.length;
+    hint.textContent = n < Q.length ? ('Answer all '+Q.length+' to see your score.') : 'Ready.';
+  });
+
+  go.addEventListener('click', function(){
+    if(Object.keys(answers).length < Q.length) return;
+    var total = 0, max = Q.length * 2;
+    Q.forEach(function(q){ total += (answers[q.id] || 0); });
+    var pct = Math.round(total / max * 100);
+    var band, cls, verdict;
+    if(pct >= 80){ band='Solid — you own and measure it'; cls='good'; verdict='Your AI feature is on firm ground: measured, owned, and checked. Tighten the gaps below and you\u2019ve got something you can defend to a customer or an investor.'; }
+    else if(pct >= 50){ band='Some real gaps to close'; cls='mid'; verdict='There\u2019s a working core here, but a few gaps could bite you — the ones below are where "it seems fine" turns into a problem in front of a customer.'; }
+    else { band='At risk — this is where slop lives'; cls='low'; verdict='Right now you can\u2019t prove this feature works, and several basics are missing. That\u2019s not a criticism — it\u2019s the exact spot most shipped AI is in. The fixes below are the fastest way out.'; }
+
+    var gaps = Q.filter(function(q){ return (answers[q.id]||0) < 2; })
+                .sort(function(a,b){ return (answers[a.id]||0) - (answers[b.id]||0); });
+
+    var gapsHtml = gaps.length ? ('<div class="sc-gaps"><h3>Where it\u2019ll bite you (' + gaps.length + ')</h3>'
+      + gaps.map(function(q){ return '<div class="sc-gap g'+(answers[q.id]||0)+'"><span class="d"></span><p>'+q.gap+'</p></div>'; }).join('')
+      + '</div>') : '<p class="sc-strong">\u2713 No gaps flagged — genuinely rare. Worth a second look to confirm the numbers hold up.</p>';
+
+    var topFix = gaps.length ? ('<p style="margin:14px 0 0;font-size:14.5px;color:var(--ink-2)"><b>Start here:</b> ' + gaps[0].gap.replace(/<\/?b>/g,'') + '</p>') : '';
+
+    out.innerHTML =
+      '<div class="sc-result">'
+      + '<span class="sc-band '+cls+'">'+band+'</span>'
+      + '<div class="sc-score">'+total+'<small> / '+max+'</small></div>'
+      + '<p class="sc-verdict">'+verdict+'</p>'
+      + topFix
+      + gapsHtml
+      + '<div class="sc-cta"><h3>Want the top gap fixed for real?</h3>'
+      + '<p>Book a free 20-minute teardown. We\u2019ll look at your actual feature, tell you the one number to move, and whether it\u2019s worth building. No pitch, no obligation.</p>'
+      + '<a href="../contact.html" class="btn btn-primary">Book a free 20-minute teardown <span class="arrow" aria-hidden="true">→</span></a> '
+      + '<a href="../pricing.html" class="btn btn-ghost">See how we work</a></div>'
+      + '</div>';
+    try { localStorage.setItem('dpr_ai_score_v1', JSON.stringify({ total: total, max: max, at: new Date().toISOString() })); } catch(e){}
+    out.querySelector('.sc-result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+})();
+</script>
+</body>
+</html>
