@@ -1,394 +1,394 @@
 {
   "meta": {
-    "generated_at": "2026-07-09T03:54:17.439399+00:00",
+    "generated_at": "2026-07-09T07:49:23.141291+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
-      "id": "3196934fbce5",
-      "headline": "Rust and Artificial Intelligence: The Rust Foundation's Position",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://rustfoundation.org/resource/rust-and-ai-position-statement/",
-      "published_at": "2026-07-09T00:09:19+00:00",
-      "summary": "2 points and 0 comments on Hacker News.",
+      "id": "3810a2ffb193",
+      "headline": "Operational Reframing and Approval-Framed Delegation in Multi-Agent LLM Safety",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07097",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07097v1 Announce Type: new Abstract: Safety evaluations of multi-agent LLM systems often compare a direct prompt with a planner-executor pipeline and report the difference as a single \"pipeline effect.\" We argue that this…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5349
+      "credibility": 0.9,
+      "rank_score": 0.8482
     },
     {
-      "id": "78b06f593102",
-      "headline": "Lovable reportedly in talks to double its valuation to $13.2B",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/",
-      "published_at": "2026-07-08T22:41:33+00:00",
-      "summary": "The $300 million round is expected to be led by Menlo Ventures, Sifted reported.",
+      "id": "0cbfc4bdc674",
+      "headline": "Reasoning Consistency Scanning: A Framework for Auditing Chain-of-Thought Validity in AI Safety Evaluations",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07229",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07229v1 Announce Type: new Abstract: Prior work has shown that chain-of-thought (CoT) reasoning is often unfaithful: a model's stated reasoning does not reliably reflect the process that produced its output. Detecting…",
       "tags": [
-        "Business"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7615
+      "credibility": 0.9,
+      "rank_score": 0.8482
     },
     {
-      "id": "2f695520e65f",
-      "headline": "Policy Statement Concerning the Suppression of Accuracy in AI Systems",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.federalregister.gov/documents/2026/07/07/2026-13628/policy-statement-concerning-the-suppression-of-accuracy-in-artificial-intelligence-systems",
-      "published_at": "2026-07-08T22:33:46+00:00",
-      "summary": "7 points and 1 comments on Hacker News.",
+      "id": "58c10b15c7e6",
+      "headline": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.06624",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.06624v1 Announce Type: new Abstract: We present AgentLens, a production-assessed benchmark for interactive code agents. Most code-agent benchmarks reduce a run to a single bit -- did the task pass? -- but the people who actually…",
       "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 2,
-      "credibility": 0.6,
-      "rank_score": 0.5513
-    },
-    {
-      "id": "da644624a093",
-      "headline": "A Roomba recorded a woman on the toilet. How did screenshots end up on Facebook? (2022)",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.technologyreview.com/2022/12/19/1065306/roomba-irobot-robot-vacuums-artificial-intelligence-training-data-privacy/",
-      "published_at": "2026-07-08T22:28:02+00:00",
-      "summary": "29 points and 4 comments on Hacker News.",
-      "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5399
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "89886d706e78",
-      "headline": "Suspecting AI cheating, Ivy League prof ordered an in-person final; scores fell 50%",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/",
-      "published_at": "2026-07-08T21:42:44+00:00",
-      "summary": "AI cheating leads to \"a failed society,\" professor says.",
+      "id": "62c969591c5a",
+      "headline": "When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.06720",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.06720v1 Announce Type: new Abstract: Training large language models (LLMs) with extended reasoning has enabled in-context search, in which models iteratively generate, critique, and revise solution attempts. We provide a…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7551
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "59a2edde9ec2",
-      "headline": "Gov. Pritzker Signs Nation-Leading Artificial Intelligence Safety Law",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://gov-pritzker-newsroom.prezly.com/gov-pritzker-signs-nation-leading-artificial-intelligence-safety-law",
-      "published_at": "2026-07-08T21:03:47+00:00",
-      "summary": "4 points and 1 comments on Hacker News.",
+      "id": "9e84420ba73f",
+      "headline": "LLM-powered reasoning in agent-based modeling",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.06757",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.06757v1 Announce Type: new Abstract: Agent-based modeling (ABM) has the capability to model millions of individuals and their interactions, which is useful for policy making. However, ABMs have traditionally relied on static…",
       "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.7235
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "8dd183ee3609",
-      "headline": "Google’s deepfake detector system used to debunk McConnell hoax pic",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/",
-      "published_at": "2026-07-08T20:37:03+00:00",
-      "summary": "Earlier this week, a picture seemed to show Kentucky Senator Mitch McConnell covered in tubes in a hospital bed in a state of extreme distress. It turned out to be an AI-generated fake.",
+      "id": "480fc07e7a58",
+      "headline": "QANTIS: Hardware-Calibrated Sequential POMDP Belief Updates on IBM Heron",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.06760",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.06760v1 Announce Type: new Abstract: Autonomous systems under partial observability act on beliefs, not raw sensor events. QANTIS treats the quantum processor as a calibrated belief-update service in that loop: it receives a…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7482
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "2949c6e364e2",
-      "headline": "Maybe Anthropic and OpenAI Are Not the Future of Artificial Intelligence",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.nytimes.com/2026/07/08/opinion/openai-anthropic-palantir-alex-karp.html",
-      "published_at": "2026-07-08T20:04:52+00:00",
-      "summary": "12 points and 4 comments on Hacker News.",
+      "id": "0ad3031f2f24",
+      "headline": "Cost-Effective Agent Harnesses for Abstract Reasoning and Generalization on ARC-AGI-1",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.06764",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.06764v1 Announce Type: new Abstract: Recent progress on ARC-AGI-1 from disclosed architectures has come broadly from two regimes: heavy test-time compute over frontier models (evolutionary search, exhaustive sampling, extended…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5146
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "dec72a4f204c",
-      "headline": "Lawsuit: Man used Grok to make 7K sex images of stepdaughter, then shot himself",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/tech-policy/2026/07/lawsuit-grok-user-made-7k-child-sex-images-xai-only-reported-one-gang-rape-prompt/",
-      "published_at": "2026-07-08T19:56:37+00:00",
-      "summary": "More young girls sue X over Grok CSAM; X accused of shielding child predators.",
+      "id": "fd1e09b0a478",
+      "headline": "Evaluating SageMath-Augmented LLM Agents for Computational and Experimental Mathematics",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.06820",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.06820v1 Announce Type: new Abstract: Recent advances in AI for Mathematics have focused largely on autoformalization and theorem proving, leaving the role of Computer Algebra Systems (CAS) in agentic LLM workflows underexplored.…",
       "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.744
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "67b034bb6c58",
-      "headline": "SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
-      "published_at": "2026-07-08T19:30:16+00:00",
-      "summary": "Elon Musk's tech company released the newest version of Grok on Wednesday, promising a cheaper, more efficient alternative to other powerful AI models.",
+      "id": "1cb54419ad00",
+      "headline": "The Harness Effect: How Orchestration Design Sets the Token Economics of Enterprise Agentic AI",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.06906",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.06906v1 Announce Type: new Abstract: Agentic AI development today runs on token maxing: buying capability with tokens -- longer reasoning traces, more turns, wider tool payloads, bigger replayed contexts -- so tokens per task…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7413
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "123ee15fa287",
-      "headline": "This startup thinks robotics is about to have its ChatGPT moment",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment/",
-      "published_at": "2026-07-08T19:19:15+00:00",
-      "summary": "General Intuition is betting millions of hours of video game data can train the foundation models for physical AI, making it easier to build smarter robots with minimal real-world data.",
+      "id": "a69441a8c9bc",
+      "headline": "Grounding Spatial Relations in a Compact World Model: Instruction Leakage and a Goal-Free Dynamics Fix",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.06925",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.06925v1 Announce Type: new Abstract: Compact world models that condition on a language goal promise to ground relations such as ``put the red block left of the blue block'' using a sparse set of explicit \\emph{reference…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7402
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "6d2d955a63e4",
-      "headline": "Datacentres are a ticking time bomb",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.theguardian.com/commentisfree/2026/jul/09/ai-artificial-intelligence-benefits-costs-datacentres-energy-water-environment",
-      "published_at": "2026-07-08T19:18:07+00:00",
-      "summary": "8 points and 0 comments on Hacker News.",
+      "id": "1be74937a84a",
+      "headline": "Large Behavior Model: A Promptable Digital Twin of the Retail Customer",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.06993",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.06993v1 Announce Type: new Abstract: Customer behavior modeling underpins recommendation, marketing, and decision support, yet existing approaches either optimize predictive accuracy without explaining decisions or simulate…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5074
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "37ceddeee064",
-      "headline": "Organization is a bigger idea than intelligence – human, or artificial",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://shrsv.hexmos.com/post/organization-bigger-than-intelligence",
-      "published_at": "2026-07-08T19:05:12+00:00",
-      "summary": "1 points and 0 comments on Hacker News.",
+      "id": "f7770215e84d",
+      "headline": "Learning social norms enhances compatibility in dynamic human-AI coordination",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07021",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07021v1 Announce Type: new Abstract: Humans continuously coordinate with others in dynamic interactions, often through implicit, hard-to-quantify social norms that act as shared tacit expectations among interacting agents. As AI…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5019
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "127f2e6c5796",
-      "headline": "Google Photos adds a new AI ‘Video Remix’ tool",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool/",
-      "published_at": "2026-07-08T18:30:08+00:00",
-      "summary": "The feature can do things like apply cinematic relighting to brighten up a dark clip, swap out a plain background for something fun, or add artistic styles to videos.",
+      "id": "4972890dd3b5",
+      "headline": "Measuring Intelligence Beyond Human Scale",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07040",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07040v1 Announce Type: new Abstract: How can we measure intelligence beyond human capability? Human-authored benchmarks saturate, and above human capability, examiners may not know which tasks are both hard and verifiable. We…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7352
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "a5342c550d44",
-      "headline": "Why this CEO thinks video games make better training data than the internet",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet/",
-      "published_at": "2026-07-08T17:47:55+00:00",
-      "summary": "When it comes to achieving artificial general intelligence (AGI), large language models just don’t have what it takes. Models like ChatGPT and Claude are great at text, but they’re less skilled at understanding how things actually move…",
+      "id": "439d96ad1cf5",
+      "headline": "Does AI Understand Imaging? A Systematic Benchmark of Agentic AI for Computational Imaging Tasks",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07189",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07189v1 Announce Type: new Abstract: Vision-language models (VLMs) and agentic AI have shown strong performance on semantic visual tasks, but it remains unclear whether they can handle the physics and inverse problems that…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7311
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "9476dece600b",
-      "headline": "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/",
-      "published_at": "2026-07-08T17:11:18+00:00",
-      "summary": "Meta is adding a new safeguard to stop people from secretly recording others with its AI glasses. But the update comes as the company continues to expand how much personal data its AI products collect and use.",
+      "id": "49aae9791be0",
+      "headline": "From Atomic Actions to Standard Operating Procedures: Iterative Tool Optimization for Self-Evolving LLM Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07321",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07321v1 Announce Type: new Abstract: Tool utilization enables Large Language Model (LLM) agents to interact with the real world and resolve complex tasks. However, existing agent frameworks predominantly rely on static toolsets…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7275
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "963a6870c5aa",
-      "headline": "ChatGPT’s upgraded voice mode is better at shutting up",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/962856/chatgpt-upgraded-voice-mode-gpt-live",
-      "published_at": "2026-07-08T17:00:00+00:00",
-      "summary": "OpenAI is overhauling ChatGPT's voice mode with a new model that it says is more like \"talking to another person.\" The new GPT-Live-1 is designed to interrupt you less and will also wait for you to continue speaking if you pause…",
+      "id": "f40da949aaca",
+      "headline": "Physics-Audited Agentic Discovery in Scientific Machine Learning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07379",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07379v1 Announce Type: new Abstract: In agentic scientific machine learning (SciML), large language model (LLM) agents can discover surrogate models and select one by an automated score, typically an error metric. A low error,…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7264
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "efaf55cef858",
-      "headline": "OpenAI releases new voice models for more natural live conversations",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
-      "published_at": "2026-07-08T17:00:00+00:00",
-      "summary": "OpenAI says its new voice mode can speak and listen at the same time, a key ability for live translation.",
+      "id": "76e4c11e8e64",
+      "headline": "MIRA-Math: A Benchmark for Minimal Information Requesting and Mathematical Reasoning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07391",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07391v1 Announce Type: new Abstract: Mathematical reasoning benchmarks typically provide all facts needed to solve each problem, while interactive benchmarks often mix reasoning with tools, retrieval, and long-horizon dialogue.…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7264
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "f3111ce02867",
-      "headline": "Pritzker signs Illinois bill aimed at artificial intelligence accountability",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.cbsnews.com/chicago/news/pritzker-to-sign-illinois-bill-aimed-artificial-intelligence-accountability/",
-      "published_at": "2026-07-08T16:52:15+00:00",
-      "summary": "1 points and 0 comments on Hacker News.",
+      "id": "8f381243b8bd",
+      "headline": "Agentic Data Environments",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07397",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07397v1 Announce Type: new Abstract: Autonomous agents promise substantial gains in speed, scale, and labor efficiency, but their failures can impose abrupt and often irreversible costs. The central challenge for agentic…",
       "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.4887
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "c28926501691",
-      "headline": "Google updates Android Bench with new LLMs, but Gemini still lags behind",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/google/2026/07/google-revamps-android-ai-dev-benchmark-adds-fable-5-and-other-agents/",
-      "published_at": "2026-07-08T16:39:48+00:00",
-      "summary": "Android Bench is evolving, and developers can help guide that process.",
+      "id": "6aab54686b12",
+      "headline": "Reason Less, Verify More: Deterministic Gates Recover a Silent Policy-Violation Failure Mode in Tool-Using LLM Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07405",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07405v1 Announce Type: new Abstract: Tool-using LLM agents can violate the very policies they are deployed to enforce while appearing to complete the task successfully. In policy-permissive environments, a tool may execute any…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7844
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "bd2837755c07",
-      "headline": "EmTech AI 2026: The Rise of the AI Platform",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/08/1140223/emtech-ai-2026-the-rise-of-the-ai-platform/",
-      "published_at": "2026-07-08T16:26:10+00:00",
-      "summary": "EmTech AI 2026: The Rise of the AI Platform",
+      "id": "2cdd7cf4c16a",
+      "headline": "InductWave: Inductive Multi-Hop Logical Query Answering on Knowledge Graphs",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07422",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07422v1 Announce Type: new Abstract: Logical Multi-Hop Query Answering over Knowledge Graphs (KGs) can be formulated as querying, with an implicit completeness assumption. Current works mainly focus on Existential First Order…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7581
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "2f30f5e21698",
-      "headline": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
-      "published_at": "2026-07-08T16:22:38+00:00",
-      "summary": "Founded in 2024, Prime Intellect’s goal is to give organizations capabilities to train their own agentic systems without relying on frontier AI labs.",
+      "id": "d2eefd0765ea",
+      "headline": "The Blind Curator: How a Biased Judge Silently Disables Skill Retirement in Self-Evolving Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07436",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07436v1 Announce Type: new Abstract: A self-evolving agent retires its bad skills by watching them fail, so what happens when the judge cannot see the failures? Skill retirement is the structural constraint that keeps a growing…",
       "tags": [
-        "Business"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7828
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "967680726baf",
-      "headline": "These AI startups are growing revenue at faster and faster rates",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/these-ai-startups-are-growing-revenue-at-faster-and-faster-rates/",
-      "published_at": "2026-07-08T15:41:06+00:00",
-      "summary": "There are a lot of fast-growing AI startups, but some are growing even faster, they say.",
+      "id": "5e8d3fedaefe",
+      "headline": "SpaCellAgent: A Self-Evolving LLM-Based Multi-Agent Framework for Trajectory Analysis",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07467",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07467v1 Announce Type: new Abstract: Spatial and Single-cell transcriptomics are transformative in deciphering cellular dynamics. As the fundamental paradigm for reconstructing cell developmental paths, trajectory inference (TI)…",
       "tags": [
-        "Business"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7188
+      "credibility": 0.9,
+      "rank_score": 0.7882
     },
     {
-      "id": "41b85c9cdb7a",
-      "headline": "Our approach to government and national security partnerships",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/government-national-security-partnerships",
-      "published_at": "2026-07-08T13:30:00+00:00",
-      "summary": "Learn how OpenAI approaches government and national security partnerships, with principles for responsible AI use, democratic accountability, and public safety.",
+      "id": "01bfc3df77e7",
+      "headline": "Search, Fail, Recover: A Training Framework for Correction-Aware Reasoning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07492",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07492v1 Announce Type: new Abstract: Many reasoning tasks are not well described by a single left-to-right chain: a solver may need to pursue a plausible branch, observe delayed failure, and return to the latest prefix that can…",
       "tags": [
-        "Safety"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7418
+      "credibility": 0.9,
+      "rank_score": 0.7882
+    },
+    {
+      "id": "b9310df52d09",
+      "headline": "Do LLM-Generated Skills Make Better AI Data Scientists? A Component Ablation Across Data-Science Workflows",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07504",
+      "published_at": "2026-07-09T04:00:00+00:00",
+      "summary": "arXiv:2607.07504v1 Announce Type: new Abstract: Product data scientists often ask LLM-based agents to help with recurring execution tasks such as cleaning data, writing SQL, choosing statistical tests, and formatting results. Reusable…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7882
     }
   ]
 }
