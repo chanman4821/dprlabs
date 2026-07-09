@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI cost estimator — what will your AI feature cost to run? | DPR AI</title>
+<meta name="description" content="Estimate your monthly AI API bill before it surprises you. Pick a model, enter your usage, and see the cost per request, per month, and at 10x scale. Free, no sign-up, prices editable." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="canonical" href="https://dprai.io/cost/" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DPR AI" />
+<meta property="og:title" content="AI cost estimator — what will your AI feature cost to run?" />
+<meta property="og:description" content="Estimate your monthly AI API bill before it surprises you. Cost per request, per month, and at 10x scale. Free, prices editable." />
+<meta property="og:url" content="https://dprai.io/cost/" />
+<meta property="og:image" content="https://dprai.io/assets/og-default.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="AI cost estimator — what your AI feature costs to run" />
+<meta name="twitter:description" content="Pick a model, enter usage, see cost per request, per month, and at 10x scale. Free." />
+<meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=11" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<style>
+  .ce{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+  .ce-panel{border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:22px 24px}
+  .ce-field{margin-bottom:15px}
+  .ce-field label{display:block;font-size:13px;font-weight:600;margin-bottom:5px}
+  .ce-field .h{font-weight:400;color:var(--faint);font-size:12px}
+  .ce-field input,.ce-field select{width:100%;border:1px solid var(--line);border-radius:9px;padding:10px 12px;font:inherit;font-size:14px;box-sizing:border-box;background:#fff}
+  .ce-field input:focus,.ce-field select:focus{outline:none;border-color:var(--accent)}
+  .ce-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .ce-out{border:1px solid var(--accent);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--accent-soft));box-shadow:0 14px 40px rgba(59,91,219,.10);padding:24px 26px;position:sticky;top:90px}
+  .ce-big{font-size:clamp(30px,5vw,40px);font-weight:800;letter-spacing:-.02em;margin:2px 0 0;font-variant-numeric:tabular-nums}
+  .ce-big small{font-size:16px;color:var(--faint);font-weight:600}
+  .ce-lab{font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
+  .ce-rows{margin:20px 0 0;border-top:1px solid var(--line);padding-top:16px}
+  .ce-line{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:8px 0;font-size:14.5px;color:var(--ink-2);border-top:1px solid var(--line)}
+  .ce-line:first-child{border-top:0}
+  .ce-line b{font-variant-numeric:tabular-nums;color:var(--ink);font-size:16px}
+  .ce-note{font-size:13.5px;color:var(--muted);line-height:1.55;margin:16px 0 0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .ce-disc{font-size:12.5px;color:var(--faint);margin-top:16px;line-height:1.55}
+  .ce-cta{border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#fff,var(--gold-soft));padding:22px 24px;margin-top:24px}
+  .ce-cta h3{font-size:18px;margin:0 0 6px}
+  .ce-cta p{font-size:14.5px;color:var(--muted);line-height:1.55;margin:0 0 14px;max-width:60ch}
+  @media(max-width:820px){.ce{grid-template-columns:1fr}.ce-out{position:static}}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../free/">Free tools</a><a href="../score/">Score my AI</a><div class="learn"><button class="learn-trigger" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="../guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="../kb/index.html">Knowledge Base<span class="desc">Reference articles &amp; how-tos.</span></a><a role="menuitem" href="../blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="../train/index.html">Training<span class="desc">Hands-on — practice by doing.</span></a><a role="menuitem" href="../news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a><a role="menuitem" href="../free/">Free tools<span class="desc">Download the agent — free.</span></a></div></div><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../free/">Free tools</a><a href="../score/">Score my AI</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../blog/index.html">Field Notes</a><a href="../train/index.html">Training</a><a href="../news/index.html">News</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="eyebrow">Free tool · no sign-up</p>
+      <h1 style="margin-top:12px">What will your AI feature cost to run?</h1>
+      <p class="lead" style="margin-top:16px;max-width:64ch">Pick a model, enter your usage, and see the real monthly bill — plus what it looks like at 10× the users. Prices are editable, so make them match your plan. Nothing is sent to us.</p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap reveal">
+      <div class="ce">
+        <div class="ce-panel">
+          <div class="ce-field">
+            <label for="ce-model">Model</label>
+            <select id="ce-model"></select>
+          </div>
+          <div class="ce-row">
+            <div class="ce-field"><label for="ce-in-price">Input price <span class="h">$/1M tokens</span></label><input id="ce-in-price" type="number" min="0" step="0.01" value="0.15" /></div>
+            <div class="ce-field"><label for="ce-out-price">Output price <span class="h">$/1M tokens</span></label><input id="ce-out-price" type="number" min="0" step="0.01" value="0.60" /></div>
+          </div>
+          <div class="ce-field"><label for="ce-req">Requests per month</label><input id="ce-req" type="number" min="0" step="100" value="10000" /></div>
+          <div class="ce-row">
+            <div class="ce-field"><label for="ce-in-tok">Input tokens / request <span class="h">~750 words = 1,000</span></label><input id="ce-in-tok" type="number" min="0" step="50" value="800" /></div>
+            <div class="ce-field"><label for="ce-out-tok">Output tokens / request</label><input id="ce-out-tok" type="number" min="0" step="50" value="400" /></div>
+          </div>
+          <p class="ce-disc">A token is roughly ¾ of a word. Not sure on tokens? The defaults are a typical "summarize + reply" call. Prices shown are approximate public rates and change often — always confirm your provider's current pricing.</p>
+        </div>
+
+        <div>
+          <div class="ce-out">
+            <span class="ce-lab">Estimated monthly bill</span>
+            <div class="ce-big" id="ce-month">$0<small>/mo</small></div>
+            <div class="ce-rows">
+              <div class="ce-line"><span>Per request</span><b id="ce-per">$0.00</b></div>
+              <div class="ce-line"><span>Per day (avg)</span><b id="ce-day">$0</b></div>
+              <div class="ce-line"><span>At 10× the users</span><b id="ce-10x">$0/mo</b></div>
+            </div>
+            <p class="ce-note" id="ce-note"></p>
+          </div>
+          <div class="ce-cta">
+            <h3>Want it built cost-aware from day one?</h3>
+            <p>We build AI you own and measure — including what it costs to run, before it surprises you. Book a free 20-minute teardown of your feature.</p>
+            <a href="../contact.html" class="btn btn-primary">Book a free teardown <span class="arrow" aria-hidden="true">→</span></a>
+            <a href="../score/" class="btn btn-ghost">Score your AI feature</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../case-studies.html">Case studies</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="../free/">Free tools</a><a href="../score/">Score my AI</a><a href="../train/index.html">Training</a><a href="../kb/index.html">Knowledge Base</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<script src="../site.js?v=11" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+<script>
+(function(){
+  'use strict';
+  var MODELS = [
+    { name:'GPT-4o mini (cheap, fast)', in:0.15, out:0.60 },
+    { name:'GPT-4o', in:2.50, out:10.00 },
+    { name:'Claude Haiku (cheap, fast)', in:0.80, out:4.00 },
+    { name:'Claude Sonnet', in:3.00, out:15.00 },
+    { name:'Custom — enter your own', in:null, out:null }
+  ];
+  var sel = document.getElementById('ce-model');
+  var inP = document.getElementById('ce-in-price'), outP = document.getElementById('ce-out-price');
+  var req = document.getElementById('ce-req'), inT = document.getElementById('ce-in-tok'), outT = document.getElementById('ce-out-tok');
+  var elMonth = document.getElementById('ce-month'), elPer = document.getElementById('ce-per'), elDay = document.getElementById('ce-day'), el10 = document.getElementById('ce-10x'), elNote = document.getElementById('ce-note');
+
+  sel.innerHTML = MODELS.map(function(m, i){ return '<option value="'+i+'">'+m.name+'</option>'; }).join('');
+
+  function num(el){ var v = parseFloat(el.value); return isFinite(v) && v >= 0 ? v : 0; }
+  function money(x){
+    if(x >= 100) return '$' + Math.round(x).toLocaleString();
+    if(x >= 1) return '$' + x.toFixed(2);
+    if(x >= 0.01) return '$' + x.toFixed(3);
+    return '$' + x.toFixed(5);
+  }
+
+  function calc(){
+    var perReq = (num(inT)/1e6)*num(inP) + (num(outT)/1e6)*num(outP);
+    var monthly = perReq * num(req);
+    elPer.textContent = money(perReq);
+    elMonth.innerHTML = money(monthly) + '<small>/mo</small>';
+    elDay.textContent = money(monthly/30);
+    el10.textContent = money(monthly*10) + '/mo';
+    var note;
+    if(monthly < 20) note = 'Cheap to run at this volume. Still — watch the per-request cost, because it scales straight up with users.';
+    else if(monthly < 500) note = 'Real money, but manageable. The number to watch is the 10× row: that\u2019s your bill if this feature takes off.';
+    else note = 'This is a serious line item. Before you scale, it\u2019s worth checking whether a cheaper model or shorter prompts get the same result — that\u2019s exactly the kind of thing an audit finds.';
+    elNote.textContent = note;
+  }
+
+  sel.addEventListener('change', function(){
+    var m = MODELS[parseInt(sel.value, 10)];
+    if(m && m.in !== null){ inP.value = m.in; outP.value = m.out; }
+    calc();
+  });
+  [inP, outP, req, inT, outT].forEach(function(el){ el.addEventListener('input', calc); });
+  calc();
+})();
+</script>
+</body>
+</html>
