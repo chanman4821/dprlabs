@@ -252,6 +252,42 @@
     </div>
   </section>
 
+  <!-- AGENTS: WRONG VS RIGHT -->
+  <section class="sec" id="agent-vs">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Agents: wrong vs right</p>
+        <h2 style="margin-top:14px">Most AI agents fake it. <span class="gold-text">Ours prove it.</span></h2>
+        <p class="lead">An "AI agent" can run wild and hide its mess — or it can work like a senior engineer who shows their work. Same idea, opposite behavior. Hover a line to see its fix.</p>
+      </div>
+      <div class="agvs reveal" data-agentvs>
+        <div class="agvs-col agvs-bad">
+          <div class="agvs-hero"><img src="assets/agents/wrong.png" alt="A frazzled gold robot tangled in cables with a red warning sign" width="168" height="168" loading="lazy" decoding="async" /></div>
+          <p class="agvs-tag agvs-tag-bad">The slop agent</p>
+          <ul class="agvs-list">
+            <li data-pair="1"><span class="agvs-ic bad" aria-hidden="true">✕</span>Says "done" — with no proof</li>
+            <li data-pair="2"><span class="agvs-ic bad" aria-hidden="true">✕</span>One task, quietly changes ten files</li>
+            <li data-pair="3"><span class="agvs-ic bad" aria-hidden="true">✕</span>Invents files and commands that don't exist</li>
+            <li data-pair="4"><span class="agvs-ic bad" aria-hidden="true">✕</span>Buries the error and carries on</li>
+            <li data-pair="5"><span class="agvs-ic bad" aria-hidden="true">✕</span>Rents you an endpoint forever</li>
+          </ul>
+        </div>
+        <div class="agvs-vs" aria-hidden="true">vs</div>
+        <div class="agvs-col agvs-good">
+          <div class="agvs-hero"><img src="assets/agents/right.png" alt="A confident gold robot handing over a golden key" width="168" height="168" loading="lazy" decoding="async" /></div>
+          <p class="agvs-tag agvs-tag-good">A DPR agent</p>
+          <ul class="agvs-list">
+            <li data-pair="1"><span class="agvs-ic good" aria-hidden="true">✓</span>Shows the command, the output, the number</li>
+            <li data-pair="2"><span class="agvs-ic good" aria-hidden="true">✓</span>Smallest change that does the job — nothing else</li>
+            <li data-pair="3"><span class="agvs-ic good" aria-hidden="true">✓</span>Checks the real code before it writes</li>
+            <li data-pair="4"><span class="agvs-ic good" aria-hidden="true">✓</span>Stops and tells you exactly what broke</li>
+            <li data-pair="5"><span class="agvs-ic good" aria-hidden="true">✓</span>Hands over the code, the weights, and the keys</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- (legacy problem block, hidden) -->
   <section class="sec problem" hidden>
     <div class="wrap center reveal">
@@ -657,5 +693,6 @@
 <script src="assets/diagrams.js?v=10" defer></script>
 <script src="slop.js?v=2" defer></script>
 <script src="assets/slopslider.js?v=1" defer></script>
+<script src="assets/agentvs.js?v=1" defer></script>
 </body>
 </html>

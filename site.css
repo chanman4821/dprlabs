@@ -580,3 +580,24 @@
 .ss-count-sharp b{color:#0f6b48}
 .ss-hint{text-align:center;font-family:var(--mono);font-size:11px;color:var(--faint);margin-top:9px;letter-spacing:.03em}
 @media(max-width:560px){.ss-text{font-size:13.5px;line-height:1.6}.ss-pane{padding:18px 15px}.ss-stage{min-height:290px}}
+
+/* ===== agents: wrong vs right infographic (agentvs.js) ===== */
+.agvs{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:start;max-width:940px;margin:0 auto}
+.agvs-col{border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 12px}
+.agvs-bad{background:#fdf5f5;border-color:#eecccc}
+.agvs-good{background:#f2fbf6;border-color:#c3e6d4}
+.agvs-hero{display:flex;justify-content:center;margin-bottom:4px}
+.agvs-hero img{width:168px;height:168px;object-fit:contain}
+.agvs-tag{text-align:center;font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;margin:0 0 15px;font-weight:600}
+.agvs-tag-bad{color:#a12d2d}
+.agvs-tag-good{color:#0f6b48}
+.agvs-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.agvs-list li{display:flex;align-items:flex-start;gap:10px;font-size:14.5px;line-height:1.5;color:var(--ink-2);padding:9px 11px;border-radius:10px;cursor:default;transition:background .16s ease,transform .16s ease}
+.agvs-ic{flex:0 0 auto;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:700;color:#fff;margin-top:1px}
+.agvs-ic.bad{background:#d64545}
+.agvs-ic.good{background:#1a9e6a}
+.agvs-bad .agvs-list li.hl{background:#f7dede;transform:translateX(2px)}
+.agvs-good .agvs-list li.hl{background:#dcf3e8;transform:translateX(2px)}
+.agvs-list li:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.agvs-vs{align-self:center;font-family:var(--mono);font-size:13px;font-weight:600;color:var(--faint);background:#fff;border:1px solid var(--line);border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-1)}
+@media(max-width:720px){.agvs{grid-template-columns:1fr;gap:12px}.agvs-vs{justify-self:center;margin:-4px 0}.agvs-hero img{width:128px;height:128px}}
