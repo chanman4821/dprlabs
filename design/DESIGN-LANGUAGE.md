@@ -1,4 +1,4 @@
-# DPR Labs — Design Language (Phase 1, unified token system)
+# DPR AI — Design Language (Phase 1, unified token system)
 
 Owner: `design-token-mgr`. This is the written design language for the redesign.
 It defines the ONE token system every page uses. Later phases (ux-ui-designer,
@@ -45,7 +45,7 @@ the wrong way. The contrast audit (`npm run contrast`) fails if any text/UI pair
 
 Warm, dark, expensive-restraint. Near-black warm canvas, ONE reserved brand accent (amber) plus
 ONE cool complementary accent (slate-blue) for secondary emphasis and data. All brand values below
-come from the DPR Labs brief (Direction B) and are fixed.
+come from the DPR AI brief (Direction B) and are fixed.
 
 | Role | Token | Dark | Light |
 | --- | --- | --- | --- |

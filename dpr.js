@@ -334,7 +334,7 @@
         const to = form.getAttribute('data-contact');
         if (to) {
           const msg = $('#cf-message');
-          const subject = encodeURIComponent('DPR Labs enquiry — ' + name.value.trim());
+          const subject = encodeURIComponent('DPR AI enquiry — ' + name.value.trim());
           const body = encodeURIComponent(
             'Name: ' + name.value.trim() +
             '\nEmail: ' + email.value.trim() +

@@ -1,5 +1,5 @@
 /* =====================================================================
-   agents-anim.js — DPR Labs
+   agents-anim.js — DPR AI
    1) Reusable vanilla-canvas "AI agents at work" engine (no libs).
       Types via <canvas data-agents="dispatch|telemetry|constellation">.
       - devicePixelRatio capped at 2

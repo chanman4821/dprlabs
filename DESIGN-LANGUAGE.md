@@ -1,4 +1,4 @@
-# DPR Labs — Design Language (Phase 1: Audit & Unified System)
+# DPR AI — Design Language (Phase 1: Audit & Unified System)
 
 **Direction C — "Living System."** Owner: `ux-ui-designer`. Status: **design language locked**; build is later phases.
 This is the single authoritative reference. The system lives in **`tokens.css`**; a rendered proof lives in **`design-language.html`**; contrast is machine-verified in **`artifacts/color_science.py`**.
@@ -91,7 +91,7 @@ On amber fill: ink `--color-text-on-accent #1D140C` = **8.82:1** (button labels)
 
 ## 6. Shared nav + footer (build ONCE, reuse on every page)
 
-- **Nav** (72px, `--color-bg` @ ~0.72 + hairline bottom): brand ("DPR Labs") · links (How it works · Proof · Built on Jarvis · Field Notes · About) · one amber primary CTA "Book a call" (44px min target, **no glow pill**). Mobile: disclosure menu — **Esc closes, focus restored to trigger**, `aria-expanded` toggled.
+- **Nav** (72px, `--color-bg` @ ~0.72 + hairline bottom): brand ("DPR AI") · links (How it works · Proof · Built on Jarvis · Field Notes · About) · one amber primary CTA "Book a call" (44px min target, **no glow pill**). Mobile: disclosure menu — **Esc closes, focus restored to trigger**, `aria-expanded` toggled.
 - **Footer** (`--color-bg-sunken`): columns Studio · Field Notes · Get Started · honest one-liner. Same tokens, hairline top rule.
 
 ---

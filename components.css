@@ -1,5 +1,5 @@
 /* =====================================================================
-   DPR LABS — components.css  ·  ONE consolidated component sheet
+   DPR AI — components.css  ·  ONE consolidated component sheet
    Phase-1 mechanical consolidation (refactorer). Replaces the 7 sprawl
    sheets (hero / sections / scrollbar / appshell / workspace / reasoning /
    blog). Token-only: no raw hex, no --h-* locals, no teal/cyan/glow, no
@@ -512,7 +512,7 @@
    SECTIONS — nav, footer, roles, offer, proof, notes, contact, forms
    ===================================================================== */
 /* =====================================================================
-   sections.css — DPR Labs · Whole-page dark "deep-water" system
+   sections.css — DPR AI · Whole-page dark "deep-water" system
    Consumes tokens.css (Tier-2/3) + extends the hero.css visual language.
    NO cream. NO hardcoded hex — everything from tokens.
    Motion gated on prefers-reduced-motion (INTERACTION-SPEC).
@@ -1106,7 +1106,7 @@ html {
    APP SHELL — shared product-window chrome
    ===================================================================== */
 /* =====================================================================
-   appshell.css — DPR Labs · shared product-app chrome
+   appshell.css — DPR AI · shared product-app chrome
    A realistic Linear/Vercel-style window: left sidebar (workspace switcher,
    nav, active-runs list) + top toolbar (breadcrumb, status pill, pager,
    icon buttons). Muted grays; brand accent used sparingly.
@@ -1327,7 +1327,7 @@ html {
    WORKSPACE — run/kanban board demo (inside app shell)
    ===================================================================== */
 /* =====================================================================
-   workspace.css — DPR Labs · #workspace content (inside the app shell)
+   workspace.css — DPR AI · #workspace content (inside the app shell)
    A run/kanban view: metrics strip, 5-stage board, and an activity rail
    with avatars + timestamps and a syntax-lit diff. Muted grays; accent
    used only for the active/shipped state and one live pill.
@@ -1566,7 +1566,7 @@ html {
    REASONING — chain-of-thought console demo (inside app shell)
    ===================================================================== */
 /* =====================================================================
-   reasoning.css — DPR Labs · #reasoning console content (inside shell)
+   reasoning.css — DPR AI · #reasoning console content (inside shell)
    A chain-of-thought stream (mono) beside a rail: decision graph, a
    confidence dial + candidates, an agent debate, and tool chips.
    Muted grays; accent only on the chosen path / active state / one pill.

@@ -21,6 +21,6 @@
     "/contact.html": "contact.html"
   },
   "exemplar_route": "/index.html",
-  "design_constraints": "Bespoke investor-grade marketing site for a senior AI consulting studio (DPR Labs). NO generic AI-slop tells: no glassmorphism blobs, no oversized rounded-2xl floating cards, no emoji section icons, no cookie-cutter blue/purple gradient, no equal-weight card grid with no focal point, no 'coming soon' stubs. One clear focal zone per page, a bespoke type scale (Geist/Inter already loaded), intentional whitespace, real content. Edit the existing HTML/CSS/JS in place.",
+  "design_constraints": "Bespoke investor-grade marketing site for a senior AI consulting studio (DPR AI). NO generic AI-slop tells: no glassmorphism blobs, no oversized rounded-2xl floating cards, no emoji section icons, no cookie-cutter blue/purple gradient, no equal-weight card grid with no focal point, no 'coming soon' stubs. One clear focal zone per page, a bespoke type scale (Geist/Inter already loaded), intentional whitespace, real content. Edit the existing HTML/CSS/JS in place.",
   "_note": "Render contract for the static DPR site: served with python -m http.server so mesh.quality_gates can screenshot + vision-grade each page. Consumed by mesh.quality_gates.orchestrator (_resolve_render_url) and the visual gate."
 }

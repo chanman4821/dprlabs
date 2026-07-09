@@ -1,4 +1,4 @@
-# design/ — DPR Labs unified design tokens (Phase 1)
+# design/ — DPR AI unified design tokens (Phase 1)
 
 Owned by `design-token-mgr`. The ONE source of truth is the root **`../tokens.css`**
 (graphite dark canvas, single amber accent, Space Grotesk / Inter / JetBrains Mono).

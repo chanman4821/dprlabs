@@ -1,4 +1,4 @@
-# DPR Labs — Token Migration Map (old systems -> unified tokens)
+# DPR AI — Token Migration Map (old systems -> unified tokens)
 
 Owner: `design-token-mgr`. This tells the consolidation/frontend phase exactly what to
 delete, what to rename, and what breaks. The new source of truth is `design/dist/tokens.css`.
@@ -19,7 +19,7 @@ Every page also loads **two** font sets at once (e.g. `index.html:18` and `index
 ## Step 0 — Palette realignment: Direction A -> Direction B (internal to the token system)
 
 The earlier build (`f846f81`, `d708a14`) used the *operator cockpit* palette. This task is the
-*DPR Labs buyer site* (Direction B). These tokens changed **inside** `design/tokens/*.json`; they are
+*DPR AI buyer site* (Direction B). These tokens changed **inside** `design/tokens/*.json`; they are
 already built into `design/dist/tokens.css`. No page consumes `--palette-*` directly, so the impact
 on markup is limited to the automatic re-resolution of the semantic roles below.
 

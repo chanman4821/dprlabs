@@ -1,4 +1,4 @@
-# Deeper (DPR Labs) — Sitemap / Information Architecture
+# Deeper (DPR AI) — Sitemap / Information Architecture
 
 *Source: Jarvis decision brain (`acp:claude-opus-4.8`, high-effort). Build reference.*
 

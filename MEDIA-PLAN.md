@@ -1,4 +1,4 @@
-# Deeper (DPR Labs) — Video + Animation Plan
+# Deeper (DPR AI) — Video + Animation Plan
 
 *How we produce every moving/visual asset. Aesthetic: "quiet engineering
 confidence" — deep-water dark (Abyss #07090D), one teal signal (#2DD4BF), one

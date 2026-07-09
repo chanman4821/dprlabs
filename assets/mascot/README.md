@@ -1,6 +1,6 @@
-# DPR Labs hero mascot — original gold robot concept batch (phase 1)
+# DPR AI hero mascot — original gold robot concept batch (phase 1)
 
-An original, chunky, glossy-gold designer-toy **robot** mascot for the DPR Labs
+An original, chunky, glossy-gold designer-toy **robot** mascot for the DPR AI
 website hero. Rendered locally with the repo's own ComfyUI + Flux pipeline, in the
 same gold as the site's golden brain, on a clean pure-white background.
 

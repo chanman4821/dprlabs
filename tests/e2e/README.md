@@ -1,4 +1,4 @@
-# DPR Labs — end-to-end visual-QA harness
+# DPR AI — end-to-end visual-QA harness
 
 A small [Playwright](https://playwright.dev) harness that drives the static site in a
 real Chromium browser (desktop + mobile) and captures the home page as a stable visual

@@ -1,4 +1,4 @@
-# DPR Labs — Sitemap / Information Architecture (dual-business, dual-audience)
+# DPR AI — Sitemap / Information Architecture (dual-business, dual-audience)
 
 *Refreshed for the dual-business model in `BUSINESS-MODEL.md`: DPR runs **two connected
 businesses as one flywheel** — (1) build owned, measured AI across four pillars, sold as retainers
@@ -63,7 +63,7 @@ Case studies · Teardowns · Field Notes · About + **Talk to us** / **Book a pi
 - **Field Notes:** The one number (`blog/the-one-number.html`) · No lock-in (`blog/no-lock-in.html`)
   · Two-week pilot (`blog/two-week-pilot.html`) · All posts (`blog/index.html`)
 - **Get started:** Book a scoping call (`#contact`) · Contact (`#contact`) · Email
-  (`mailto:hello@dprlabs.io`)
+  (`mailto:hello@dprai.io`)
 
 *Recommended footer additions for the dual-audience site (non-blocking):* an **Investors** link
 (`investors.html`) under Get started, and the footer line *"Owned, measured, honest — proof over

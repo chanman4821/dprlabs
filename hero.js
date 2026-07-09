@@ -1,4 +1,4 @@
-/* hero.js — DPR Labs hero coordinator.
+/* hero.js — DPR AI hero coordinator.
  * Sets up shared pause/resume for bg.js and mesh-hero.js.
  * - IntersectionObserver: pauses renderers when hero is off-screen.
  * - visibilitychange: pauses renderers when tab is hidden.

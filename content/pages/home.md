@@ -19,8 +19,8 @@ the design/asset worker. This spec references those artifacts by name — it doe
 
 ## Page identity
 
-- **`<title>`:** DPR Labs — Owned, measured AI. And the capital network behind it.
-- **Meta description:** DPR Labs runs two connected businesses as one flywheel: we build owned,
+- **`<title>`:** DPR AI — Owned, measured AI. And the capital network behind it.
+- **Meta description:** DPR AI runs two connected businesses as one flywheel: we build owned,
   measured AI you keep — no lock-in — and we connect founders with the capital network that backs
   them. Owned, measured, honest — proof over theater.
 - **Positioning line (one sentence, plain English):** We build owned, measured AI for companies —
@@ -245,7 +245,7 @@ own qualified next step.*
 - **Primary CTA:** Request dealflow access → `investors.html`
 - **Reassurance chip:** Verified-accredited · published methodology · never a cut of a raise.
 
-- **Direct line (both):** Prefer email? `hello@dprlabs.io` — one business day to a real reply.
+- **Direct line (both):** Prefer email? `hello@dprai.io` — one business day to a real reply.
 
 ---
 
@@ -317,9 +317,9 @@ Real proof numbers (305 files / 60 dispatches / 66,255 s ≈ 18.4 h): `assets/da
 ## Facts to confirm before publishing
 
 - **Domain / email consistency.** `BUSINESS-MODEL.md` line 11 names the site **dprai.io**, while the
-  live footer and this content dir use **`hello@dprlabs.io`** as the contact of record and "DPR Labs
-  (dprlabs.io)". Confirm the canonical domain and email before launch; this spec keeps the existing
-  live contact of record (`hello@dprlabs.io`) rather than inventing a new one.
+  live footer and this content dir use **`hello@dprai.io`** as the contact of record and "DPR AI
+  (dprai.io)". Confirm the canonical domain and email before launch; this spec keeps the existing
+  live contact of record (`hello@dprai.io`) rather than inventing a new one.
 - **Launch SKUs.** `BUSINESS-MODEL.md` §3 (line 70) launches with **three** packages — Starter,
   Growth, and the Signal investor tier — not the full menu. If the home page names prices, show only
   the launch three; the rest is the ladder the firm grows into.

@@ -29,9 +29,9 @@ fit.*
 - *Name* — Your name
 - *Work email* — you@company.com
 - *What should we look at?* — The one repetitive task, workflow, or idea on your mind.
-- **Primary CTA:** Send → routes to `hello@dprlabs.io`
+- **Primary CTA:** Send → routes to `hello@dprai.io`
 - **Confirmation:** Thanks — we'll be in touch within one business day.
-- **Direct line:** Prefer email? hello@dprlabs.io
+- **Direct line:** Prefer email? hello@dprai.io
 
 **The qualifier (set expectations honestly)**
 - **Good fit:** you have one repetitive, high-volume workflow — support, invoices, documents,
@@ -62,9 +62,9 @@ fit.*
 
 ## Facts to confirm before publishing
 
-- **`hello@dprlabs.io`.** This is the contact of record used site-wide. Confirm the inbox is
+- **`hello@dprai.io`.** This is the contact of record used site-wide. Confirm the inbox is
   monitored so the one-business-day promise holds.
 - **"One business-day reply" and "free opportunity read."** These are promises the studio
   must keep; only publish them if they're real commitments.
-- **Form delivery.** Confirm the form actually routes to `hello@dprlabs.io` (or a real
+- **Form delivery.** Confirm the form actually routes to `hello@dprai.io` (or a real
   handler) before launch, so "Send" isn't a dead button.

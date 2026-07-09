@@ -2,7 +2,7 @@
   "name": "dpr-e2e",
   "version": "0.0.0",
   "private": true,
-  "description": "DPR Labs static-site end-to-end visual-QA harness (Playwright). Captures before/after home-page baselines and records an accessibility baseline.",
+  "description": "DPR AI static-site end-to-end visual-QA harness (Playwright). Captures before/after home-page baselines and records an accessibility baseline.",
   "scripts": {
     "serve": "python -m http.server 8137",
     "test:e2e": "playwright test",

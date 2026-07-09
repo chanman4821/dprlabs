@@ -1,4 +1,4 @@
-/* scroll.js — DPR Labs premium scroll choreography.
+/* scroll.js — DPR AI premium scroll choreography.
  *
  * Adds, on top of the existing dpr.js reveals/counters:
  *   • Cinematic hero video play-in (crossfade over the still poster).

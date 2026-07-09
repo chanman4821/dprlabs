@@ -1,5 +1,5 @@
 /* =====================================================================
-   reasoning.js — DPR Labs · "mesh · reasoning" looping console engine
+   reasoning.js — DPR AI · "mesh · reasoning" looping console engine
    Drives a believable reasoning process on a seamless ~22s loop:
      • token-streamed chain-of-thought (Observe → Hypothesize → Consider
        alternatives → Weigh evidence → Decide → Reflect/Revise)

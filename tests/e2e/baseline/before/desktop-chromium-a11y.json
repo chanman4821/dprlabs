@@ -1758,9 +1758,9 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<a href=\"mailto:hello@dprlabs.io\">hello@dprlabs.io</a>",
+          "html": "<a href=\"mailto:hello@dprai.io\">hello@dprai.io</a>",
           "target": [
-            ".direct > a[href$=\"mailto:hello@dprlabs.io\"]"
+            ".direct > a[href$=\"mailto:hello@dprai.io\"]"
           ],
           "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #4d6ade, background color: #f7f7f8, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
         },
@@ -1894,7 +1894,7 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<small>© 2026 DPR Labs — AI builds you own.</small>",
+          "html": "<small>© 2026 DPR AI — AI builds you own.</small>",
           "target": [
             ".foot-bottom > small"
           ],

@@ -12,7 +12,7 @@ page: expands "why we work this way" and keeps the founders section honest (link
 
 - **Eyebrow:** About
 - **Headline:** Senior people. No middle layers.
-- **Subhead:** DPR Labs is a small, senior AI studio. You work directly with the people doing
+- **Subhead:** DPR AI is a small, senior AI studio. You work directly with the people doing
   the building — not an account manager.
 - **Body:** We started it because too much AI consulting sells slideware and disappears. We'd
   rather ship one honest, measured thing and hand you the keys. Small, senior, and

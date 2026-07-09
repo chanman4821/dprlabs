@@ -1,5 +1,5 @@
 /* =====================================================================
-   DPR LABS — HOME PAGE  ·  assets/home.js
+   DPR AI — HOME PAGE  ·  assets/home.js
    Single source of motion = design/motion.tokens.json (fetched, validated
    against the documented caps, then re-asserted onto the --sig-* CSS vars
    so the JSON stays authoritative). No wall-clock timers drive behavior:

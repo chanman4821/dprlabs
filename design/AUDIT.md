@@ -1,4 +1,4 @@
-# DPR Labs — Current-Site Audit (Phase 1)
+# DPR AI — Current-Site Audit (Phase 1)
 
 Owner: `ux-ui-designer`. Process step 1 of the redesign: what is concretely inconsistent,
 cheap, or broken **right now**, with real file:line evidence. Every line below was found by
@@ -123,7 +123,7 @@ Maps to **"inconsistent execution"** and non-negotiable **#2 (use the design tok
 The repo's first token build (commits `f846f81`, `d708a14`) implemented the **Direction A**
 palette from the *operator cockpit* screen — primary amber `hsl(38 92% 56%)` + a warm **orange**
 secondary `hsl(30 86% 52%)` (`primitive.json` labelled both "AUTHORITATIVE"). But this task is the
-**Direction B** *DPR Labs buyer site*, whose authoritative `DESIGN TOKENS` block specifies primary
+**Direction B** *DPR AI buyer site*, whose authoritative `DESIGN TOKENS` block specifies primary
 amber **`36 86% 56%`** and a cool slate-blue accent **`205 22% 64%`** (body **Inter**). Two warm
 accents (amber + orange) also risk the "warm-glow / too-AI" read the owner banned; a cool slate
 complements the amber and reads as engineered restraint.

@@ -1,6 +1,6 @@
-# DPR Labs — site content (source of truth for copy)
+# DPR AI — site content (source of truth for copy)
 
-This directory holds the **written content** for the DPR Labs marketing site: full,
+This directory holds the **written content** for the DPR AI marketing site: full,
 section-by-section page copy and a refreshed sitemap. It is the plan-of-record for what each
 page **says**. It does **not** change any live `.html` — those stay as they are until a
 build worker chooses to wire this copy in.
@@ -108,4 +108,4 @@ were written.
 
 ## Contact of record
 
-`hello@dprlabs.io` — used site-wide. Reply promise: one business day.
+`hello@dprai.io` — used site-wide. Reply promise: one business day.

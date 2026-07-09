@@ -1,7 +1,7 @@
 # Services & offerings — deep breakdown
 
-*This is the source-of-truth for how DPR Labs describes what it offers. It feeds the Home
-"What we do" section and the How it works page. It is **not** a services menu page — DPR Labs
+*This is the source-of-truth for how DPR AI describes what it offers. It feeds the Home
+"What we do" section and the How it works page. It is **not** a services menu page — DPR AI
 sells **one offer, not a menu** (see `content/SITEMAP.md`).*
 
 *Every offering below leads with the **customer outcome** — what you get, not what we do. Each
@@ -13,7 +13,7 @@ its honest limit. Grounded in the live site (`index.html` hero + "What we do", `
 
 ## The shape of it — one offer, two ways we help after
 
-DPR Labs is built for **one** thing and helps two more ways when it fits:
+DPR AI is built for **one** thing and helps two more ways when it fits:
 
 1. **The two-week pilot** — the low-risk way in. *(Entry offer.)*
 2. **Agentic AI builds** — the core work the pilot proves and then scales. *(Primary.)*

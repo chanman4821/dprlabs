@@ -1,5 +1,5 @@
 /* =====================================================================
-   workspace.js — DPR Labs · #workspace run/kanban engine (calm loop)
+   workspace.js — DPR AI · #workspace run/kanban engine (calm loop)
    Moves task cards through Plan → Build → Grade → Heal → Shipped with a
    live activity feed (avatar + name + action + timestamp) and a syntax-lit
    diff. Muted; accent only on shipped state. Real mesh roles from

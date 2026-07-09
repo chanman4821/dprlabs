@@ -1,7 +1,7 @@
 {
-  "$schema": "https://dprlabs.io/schema/motion.tokens.v1.json",
+  "$schema": "https://dprai.io/schema/motion.tokens.v1.json",
   "meta": {
-    "name": "DPR Labs — signature motion tokens",
+    "name": "DPR AI — signature motion tokens",
     "owner": "design-system",
     "surface": "home (index.html) signature interactive zone",
     "approved": "2026-07-06",

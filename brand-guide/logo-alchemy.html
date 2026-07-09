@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{--gold:#c8912b;--goldb:#e9c46a;--blue:#3b5bdb;--ink:#0f1115;--line:#ececec;--muted:#8a8f98;--soft:#f6f7f9}
+  *{box-sizing:border-box}
+  body{font-family:'Geist',sans-serif;background:#fff;color:var(--ink);margin:0;padding:52px 44px;line-height:1.55}
+  .max{max-width:1080px;margin:0 auto}
+  h1{font-size:32px;font-weight:800;letter-spacing:-.02em;margin:0 0 10px}
+  .lead{font-size:15.5px;color:#3a3d44;max-width:74ch;margin:0 0 6px}
+  .map{font-family:'Geist Mono';font-size:12.5px;color:var(--muted);margin:16px 0 36px;line-height:1.9}
+  .map b{color:var(--gold)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .tile{border:1px solid var(--line);border-radius:16px;padding:28px 24px;display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center}
+  .tile.star{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+  .stage{height:140px;display:flex;align-items:center;justify-content:center}
+  .n{font-family:'Geist Mono';font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin:0}
+  h3{font-size:18px;font-weight:700;margin:0}
+  .desc{font-size:13px;color:#3a3d44;margin:0}
+  .lock{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:14px;width:100%;justify-content:center}
+  .wm{font-family:'Geist';font-weight:700;font-size:22px;letter-spacing:-.03em}
+  .wm .ai{color:var(--blue);font-weight:500}
+  svg{display:block;overflow:visible}
+</style>
+</head>
+<body>
+<div class="max">
+  <h1>DPR&nbsp;AI — fitting DPR into alchemy</h1>
+  <p class="lead">Alchemy = the <b>three primes</b> (Salt · Mercury · Sulfur) + the <b>Great Work</b> (turning base matter into gold). DPR is three letters, and DPR turns raw input into owned value — into gold. So each letter becomes a prime, and the whole mark is the transmutation.</p>
+  <p class="map"><b>D</b> = the Vessel / Gold ☉ — the flask that holds the work &amp; the owned value &nbsp;·&nbsp; <b>P</b> = Mercury ☿ — the living intelligence (the AI) that transforms &nbsp;·&nbsp; <b>R</b> = Salt / Projection 🜔 — the fixed, grounded, delivered result</p>
+
+  <div class="grid">
+
+    <!-- 1 SQUARED CIRCLE -->
+    <div class="tile star">
+      <div class="stage">
+        <svg width="120" height="120" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="33" r="25" stroke="url(#au)" stroke-width="2.6"/>
+          <path d="M32 11 L53 47 L11 47 Z" stroke="url(#au)" stroke-width="2.6" stroke-linejoin="round"/>
+          <rect x="22" y="31" width="20" height="16" stroke="#3b5bdb" stroke-width="2.6"/>
+          <circle cx="32" cy="20" r="2.4" fill="url(#au)"/>
+          <defs><linearGradient id="au" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9c46a"/><stop offset="1" stop-color="#c8912b"/></linearGradient></defs>
+        </svg>
+      </div>
+      <p class="n">A1 · recommended</p>
+      <h3>The Squared Circle</h3>
+      <p class="desc">The real emblem for the Philosopher's Stone. Circle = <b>D</b> (gold/whole), triangle = <b>P</b> (spirit/fire), square = <b>R</b> (salt/owned body). Three shapes, three letters, one stone that makes gold.</p>
+      <div class="lock"><svg width="30" height="30" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="33" r="25" stroke="#c8912b" stroke-width="4"/><path d="M32 11 L53 47 L11 47 Z" stroke="#c8912b" stroke-width="4" stroke-linejoin="round"/><rect x="22" y="31" width="20" height="16" stroke="#3b5bdb" stroke-width="4"/></svg><span class="wm">DPR <span class="ai">AI</span></span></div>
+    </div>
+
+    <!-- 2 TRIA PRIMA -->
+    <div class="tile">
+      <div class="stage">
+        <svg width="120" height="120" viewBox="0 0 64 64" fill="none" stroke-width="2.6">
+          <!-- D = sulfur (triangle over cross), top -->
+          <g stroke="url(#au)"><path d="M26 8 L38 8 L32 18 Z"/><line x1="32" y1="18" x2="32" y2="28"/><line x1="27" y1="23" x2="37" y2="23"/></g>
+          <!-- P = mercury (crescent + circle + cross), bottom-left -->
+          <g stroke="url(#au)"><path d="M12 36 a5 5 0 0 0 10 0" /><circle cx="17" cy="44" r="5"/><line x1="17" y1="49" x2="17" y2="56"/><line x1="13" y1="53" x2="21" y2="53"/></g>
+          <!-- R = salt (circle with line), bottom-right -->
+          <g stroke="#3b5bdb"><circle cx="47" cy="45" r="7"/><line x1="40" y1="45" x2="54" y2="45"/></g>
+        </svg>
+      </div>
+      <p class="n">A2</p>
+      <h3>The Three Primes</h3>
+      <p class="desc">Your initials drawn as the actual alchemical primes: <b>D</b> = Sulfur, <b>P</b> = Mercury, <b>R</b> = Salt. A true cryptic triad — only insiders read it.</p>
+      <div class="lock"><svg width="30" height="30" viewBox="0 0 64 64" fill="none" stroke-width="4"><g stroke="#c8912b"><path d="M26 8 L38 8 L32 18 Z"/><line x1="32" y1="18" x2="32" y2="26"/></g><circle cx="17" cy="44" r="6" stroke="#c8912b"/><circle cx="47" cy="45" r="7" stroke="#3b5bdb"/><line x1="40" y1="45" x2="54" y2="45" stroke="#3b5bdb"/></svg><span class="wm">DPR <span class="ai">AI</span></span></div>
+    </div>
+
+    <!-- 3 THE VESSEL -->
+    <div class="tile">
+      <div class="stage">
+        <svg width="120" height="120" viewBox="0 0 64 64" fill="none">
+          <!-- Sol / gold on top -->
+          <circle cx="32" cy="10" r="5.5" stroke="url(#au)" stroke-width="2.4"/><circle cx="32" cy="10" r="1.5" fill="url(#au)"/>
+          <!-- D vessel: flat left stem + round belly -->
+          <path d="M17 20 V54 H30 A17 17 0 0 0 30 20 Z" stroke="url(#au)" stroke-width="2.8"/>
+          <!-- P mercury staff inside -->
+          <line x1="32" y1="30" x2="32" y2="48" stroke="url(#au)" stroke-width="2.4"/>
+          <line x1="27" y1="42" x2="37" y2="42" stroke="url(#au)" stroke-width="2.4"/>
+          <path d="M28 28 a4 4 0 0 0 8 0" stroke="url(#au)" stroke-width="2.4"/>
+          <!-- R projection ray -->
+          <line x1="34" y1="46" x2="52" y2="56" stroke="#3b5bdb" stroke-width="2.8" stroke-linecap="round"/>
+          <circle cx="52" cy="56" r="2.6" fill="#3b5bdb"/>
+        </svg>
+      </div>
+      <p class="n">A3</p>
+      <h3>The Vessel</h3>
+      <p class="desc">One literal scene: the gold (☉) crowns a <b>D</b>‑shaped flask; Mercury (<b>P</b>, the AI) works inside; a blue ray (<b>R</b>) projects the finished result out.</p>
+      <div class="lock"><svg width="30" height="30" viewBox="0 0 64 64" fill="none"><path d="M17 20 V54 H30 A17 17 0 0 0 30 20 Z" stroke="#c8912b" stroke-width="4"/><line x1="32" y1="30" x2="32" y2="48" stroke="#c8912b" stroke-width="3.4"/><line x1="34" y1="46" x2="52" y2="56" stroke="#3b5bdb" stroke-width="4" stroke-linecap="round"/></svg><span class="wm">DPR <span class="ai">AI</span></span></div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
