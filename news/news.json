@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-10T19:47:03.665621+00:00",
+    "generated_at": "2026-07-10T21:12:10.996118+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "a4ad473125ca",
+      "headline": "Apple sues OpenAI over alleged trade secret theft",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+      "published_at": "2026-07-10T21:00:29+00:00",
+      "summary": "Apple alleges the misconduct was directed by OpenAi's senior leadership, including a long-time former employee.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7961
+    },
     {
       "id": "1d85656f77c8",
       "headline": "Open source AI matters more than ever, according to Hugging Face’s Clem Delangue",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7918
+      "rank_score": 0.7818
     },
     {
       "id": "78cbc53175f9",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8398
+      "rank_score": 0.8301
     },
     {
       "id": "27b60fc861f1",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7694
+      "rank_score": 0.7601
     },
     {
       "id": "05d5cd4f7807",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5268
+      "rank_score": 0.5176
     },
     {
       "id": "e654c4c7eaf2",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7578
+      "rank_score": 0.7487
     },
     {
       "id": "3fd5be624e9b",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7562
+      "rank_score": 0.7472
     },
     {
       "id": "30fd26556973",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7535
+      "rank_score": 0.7446
     },
     {
       "id": "5d89094603b0",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5121
+      "rank_score": 0.5033
     },
     {
       "id": "e18a0edc34ba",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8411
+      "rank_score": 0.8324
     },
     {
       "id": "027b05f9d0fa",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7507
+      "rank_score": 0.7429
     },
     {
       "id": "ae709b33078a",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4969
+      "rank_score": 0.4892
     },
     {
       "id": "fc18b2f5dc98",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7769
+      "rank_score": 0.7696
     },
     {
       "id": "a494e292a2d7",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7169
+      "rank_score": 0.7096
     },
     {
       "id": "fbf5ff06dc28",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7169
+      "rank_score": 0.7096
     },
     {
       "id": "5f37f9a5f063",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7169
+      "rank_score": 0.7096
     },
     {
       "id": "cc5534545045",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7169
+      "rank_score": 0.7096
     },
     {
       "id": "48f3840259c6",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7169
+      "rank_score": 0.7096
     },
     {
       "id": "2e6a5e7799df",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7169
+      "rank_score": 0.7096
     },
     {
       "id": "230542eac707",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7169
+      "rank_score": 0.7096
     },
     {
       "id": "7736907827e4",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7169
+      "rank_score": 0.7096
     },
     {
       "id": "693d0ecbb486",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7169
+      "rank_score": 0.7096
     },
     {
       "id": "0cbaa8bdf280",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7169
+      "rank_score": 0.7096
     },
     {
       "id": "6884db2b13f7",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7169
-    },
-    {
-      "id": "d79c5e1fca38",
-      "headline": "Nigeria Machinery: A Low-Resource Industrial Dataset with a Domain-Grounded Reasoning Layer",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07883",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07883v1 Announce Type: new Abstract: There is relatively little, public, and model-ready data on industrial machinery for African economies. This makes it hard to do quantitative analysis or to train language models on numeric…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7169
+      "rank_score": 0.7096
     }
   ]
 }
