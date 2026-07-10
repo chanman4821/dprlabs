@@ -1,14 +1,46 @@
 {
   "meta": {
-    "generated_at": "2026-07-10T17:03:00.359884+00:00",
+    "generated_at": "2026-07-10T19:47:03.665621+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
+      "id": "1d85656f77c8",
+      "headline": "Open source AI matters more than ever, according to Hugging Face’s Clem Delangue",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
+      "published_at": "2026-07-10T19:00:00+00:00",
+      "summary": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half…",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7918
+    },
+    {
+      "id": "78cbc53175f9",
+      "headline": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
+      "published_at": "2026-07-10T17:17:12+00:00",
+      "summary": "The AI chip boom just produced its biggest Wall Street moment yet. Now SK Hynix and Samsung are being asked to build U.S. factories.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8398
+    },
+    {
       "id": "27b60fc861f1",
-      "headline": "Disable auto-play and infinite scroll or risk massive fines, EU tells Meta",
+      "headline": "Disable autoplay and infinite scroll or risk massive fines, EU tells Meta",
       "source_name": "Ars Technica",
       "source_id": "arstechnica",
       "url": "https://arstechnica.com/tech-policy/2026/07/disable-auto-play-and-infinite-scroll-or-risk-massive-fines-eu-tells-meta/",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7883
+      "rank_score": 0.7694
     },
     {
       "id": "05d5cd4f7807",
@@ -36,7 +68,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5453
+      "rank_score": 0.5268
+    },
+    {
+      "id": "e654c4c7eaf2",
+      "headline": "Hugging Face’s CEO on why companies are done renting their AI",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
+      "published_at": "2026-07-10T14:00:00+00:00",
+      "summary": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half…",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7578
     },
     {
       "id": "3fd5be624e9b",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7743
+      "rank_score": 0.7562
     },
     {
       "id": "30fd26556973",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7715
+      "rank_score": 0.7535
     },
     {
       "id": "5d89094603b0",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5298
+      "rank_score": 0.5121
     },
     {
       "id": "e18a0edc34ba",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8587
+      "rank_score": 0.8411
     },
     {
       "id": "027b05f9d0fa",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7664
+      "rank_score": 0.7507
     },
     {
       "id": "ae709b33078a",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5124
+      "rank_score": 0.4969
     },
     {
       "id": "fc18b2f5dc98",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7917
+      "rank_score": 0.7769
     },
     {
       "id": "a494e292a2d7",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     },
     {
       "id": "fbf5ff06dc28",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     },
     {
       "id": "5f37f9a5f063",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     },
     {
       "id": "cc5534545045",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     },
     {
       "id": "48f3840259c6",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     },
     {
       "id": "2e6a5e7799df",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     },
     {
       "id": "230542eac707",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     },
     {
       "id": "7736907827e4",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     },
     {
       "id": "693d0ecbb486",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     },
     {
       "id": "0cbaa8bdf280",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     },
     {
       "id": "6884db2b13f7",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     },
     {
       "id": "d79c5e1fca38",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7317
-    },
-    {
-      "id": "943e7f7678a3",
-      "headline": "Persona Cartography: Charting Language Model Personality Traits in Weight Space",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07916",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07916v1 Announce Type: new Abstract: Large language models exhibit recurring behavioural patterns -- personas -- that shape generalisation and safety, but we lack reliable tools for decomposing, measuring, and controlling them.…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7317
-    },
-    {
-      "id": "0509d641b64b",
-      "headline": "Evaluating the Effect of Frame Rate in Sequence-Based Classification of Autism-Related Self-Stimulatory Hand Idiosyncrasies",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07957",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07957v1 Announce Type: new Abstract: Autism spectrum disorder (ASD) affects over 75 million individuals worldwide, yet scalable computational methods for remote behavioral screening remain limited. This study addresses two…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7317
-    },
-    {
-      "id": "7c946336775e",
-      "headline": "Agentic Neural Architecture Search",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07984",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07984v1 Announce Type: new Abstract: Neural architecture search (NAS) methods have grown increasingly efficient, yet they remain bounded by manually engineered search spaces that require substantial domain expertise and must be…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7317
+      "rank_score": 0.7169
     }
   ]
 }
