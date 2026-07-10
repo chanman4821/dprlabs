@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-10T21:12:10.996118+00:00",
+    "generated_at": "2026-07-10T23:03:37.010370+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "4f68ab059f6d",
+      "headline": "Apple sues OpenAI for allegedly stealing hardware secrets",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
+      "published_at": "2026-07-10T21:36:51+00:00",
+      "summary": "Apple has sued OpenAI, alleging that engineers stole Apple secrets to advance the AI startup's hardware plans. In its complaint, Apple says it uncovered \"a pattern of theft of Apple's trade secrets by OpenAI employees who were formerly at…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7871
+    },
     {
       "id": "a4ad473125ca",
       "headline": "Apple sues OpenAI over alleged trade secret theft",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7961
+      "rank_score": 0.7829
     },
     {
       "id": "1d85656f77c8",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7818
+      "rank_score": 0.7691
     },
     {
       "id": "78cbc53175f9",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8301
+      "rank_score": 0.8178
     },
     {
       "id": "27b60fc861f1",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7601
+      "rank_score": 0.7482
     },
     {
       "id": "05d5cd4f7807",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5176
+      "rank_score": 0.506
     },
     {
       "id": "e654c4c7eaf2",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7487
+      "rank_score": 0.7373
     },
     {
       "id": "3fd5be624e9b",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7472
+      "rank_score": 0.7358
     },
     {
       "id": "30fd26556973",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7446
+      "rank_score": 0.7333
     },
     {
       "id": "5d89094603b0",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5033
+      "rank_score": 0.4922
     },
     {
       "id": "e18a0edc34ba",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8324
+      "rank_score": 0.8214
     },
     {
       "id": "027b05f9d0fa",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7429
+      "rank_score": 0.733
     },
     {
       "id": "ae709b33078a",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4892
+      "rank_score": 0.4794
     },
     {
       "id": "fc18b2f5dc98",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7696
+      "rank_score": 0.7603
     },
     {
       "id": "a494e292a2d7",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7096
+      "rank_score": 0.7003
     },
     {
       "id": "fbf5ff06dc28",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7096
+      "rank_score": 0.7003
     },
     {
       "id": "5f37f9a5f063",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7096
+      "rank_score": 0.7003
     },
     {
       "id": "cc5534545045",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7096
+      "rank_score": 0.7003
     },
     {
       "id": "48f3840259c6",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7096
+      "rank_score": 0.7003
     },
     {
       "id": "2e6a5e7799df",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7096
+      "rank_score": 0.7003
     },
     {
       "id": "230542eac707",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7096
+      "rank_score": 0.7003
     },
     {
       "id": "7736907827e4",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7096
+      "rank_score": 0.7003
     },
     {
       "id": "693d0ecbb486",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7096
+      "rank_score": 0.7003
     },
     {
       "id": "0cbaa8bdf280",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7096
-    },
-    {
-      "id": "6884db2b13f7",
-      "headline": "Feedback Manipulation Regularization: Enabling Offline Agent Alignment for Imitation Learning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07859",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07859v1 Announce Type: new Abstract: Reinforcement learning (RL) research has increasingly shifted focus towards alignment, ensuring agents learn behaviors adhering to human values. While human demonstrations and feedback have…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7096
+      "rank_score": 0.7003
     }
   ]
 }
