@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-09T22:36:30.975032+00:00",
+    "generated_at": "2026-07-10T00:12:06.348154+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "3e171b9d1ff3",
+      "headline": "Microsoft’s carbon emissions went up 25 percent last year",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
+      "published_at": "2026-07-10T00:04:13+00:00",
+      "summary": "Microsoft may once again be struggling to keep up with its own climate goals, according to its 2026 sustainability report. As reported by GeekWire, the report states that Microsoft's carbon emissions increased 25 percent in 2025, totalling…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7965
+    },
+    {
+      "id": "880ee3c2d550",
+      "headline": "Fidji Simo steps down from OpenAI’s no. 2 role",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
+      "published_at": "2026-07-09T23:38:00+00:00",
+      "summary": "OpenAI's No. 2 executive, Fidji Simo, is stepping down from her full-time role after her medical leave proved longer than expected — a leadership vacuum that comes at a tricky time as the company eyes a possible IPO and races to catch…",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7934
+    },
+    {
+      "id": "e9b3a7306418",
+      "headline": "Fidji Simo steps down from leading OpenAI’s AGI work due to illness",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
+      "published_at": "2026-07-09T23:24:04+00:00",
+      "summary": "OpenAI's Fidji Simo is departing her full-time role as the company's AGI chief and is transitioning to being a \"part-time advisor,\" she said on X. The news follows Simo's original announcement in April that she would take a few weeks of…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7917
+    },
     {
       "id": "9491981398fc",
       "headline": "OpenAI launches its new family of models with GPT-5.6",
@@ -13,18 +61,18 @@
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
       "published_at": "2026-07-09T22:24:24+00:00",
-      "summary": "OpenAI's latest family of models promise improvements across a range of areas, including cybersecurity.",
+      "summary": "OpenAI's latest family of models promises improvements across a range of areas, including cybersecurity.",
       "tags": [
         "Models"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.856
+      "rank_score": 0.8447
     },
     {
       "id": "1adca30b762f",
-      "headline": "An AI agent startup just let its agent run its $100 million fundraise",
+      "headline": "An AI agent startup just let its agent run its $100M fundraise",
       "source_name": "TechCrunch",
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/",
@@ -36,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7942
+      "rank_score": 0.7829
     },
     {
       "id": "14a2cc90aef5",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7936
+      "rank_score": 0.7823
     },
     {
       "id": "55406eec470a",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7928
+      "rank_score": 0.7815
     },
     {
       "id": "8f2a4085c264",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7916
+      "rank_score": 0.7804
     },
     {
       "id": "ba6ef68cb3be",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.789
+      "rank_score": 0.7779
     },
     {
       "id": "132c70a2f066",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7829
+      "rank_score": 0.772
     },
     {
       "id": "7d85437dbf4d",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8766
+      "rank_score": 0.8657
     },
     {
       "id": "d7df66519cd2",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7804
+      "rank_score": 0.7695
     },
     {
       "id": "ffdb0d5985a2",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7803
+      "rank_score": 0.7695
     },
     {
       "id": "241317adaedd",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7768
+      "rank_score": 0.766
     },
     {
       "id": "9de14e96265a",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7728
+      "rank_score": 0.7622
     },
     {
       "id": "16830069eb29",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7719
+      "rank_score": 0.7613
     },
     {
       "id": "76107e209263",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.77
+      "rank_score": 0.7595
     },
     {
       "id": "2e788278eefd",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8293
+      "rank_score": 0.8188
     },
     {
       "id": "74bc3599582d",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.828
+      "rank_score": 0.8175
     },
     {
       "id": "fbe93ef80d6a",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7651
+      "rank_score": 0.7547
     },
     {
       "id": "8c91b0e5893b",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7608
+      "rank_score": 0.7506
     },
     {
       "id": "22db00072fd4",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7596
+      "rank_score": 0.7494
     },
     {
       "id": "ad27224f77da",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8189
+      "rank_score": 0.8087
     },
     {
       "id": "8923484c1444",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7589
-    },
-    {
-      "id": "4da1966f7ed0",
-      "headline": "The Case for Nationalizing Artificial Intelligence",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://jacobin.com/2026/07/ai-policy-nationalization-commons-work",
-      "published_at": "2026-07-09T15:04:54+00:00",
-      "summary": "6 points and 0 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5128
-    },
-    {
-      "id": "c4a0826144b9",
-      "headline": "Anthropic’s new Claude feature is quietly selling you on AI",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/",
-      "published_at": "2026-07-09T14:53:09+00:00",
-      "summary": "Claude’s new Reflect dashboard doesn’t just visualize how you use AI. It also subtly reinforces how much of your daily work now depends on Anthropic’s chatbot.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.8055
-    },
-    {
-      "id": "8e29a16695b1",
-      "headline": "Anthropic, OpenAI, and SpaceX are bigger than the last 25 years of tech exits",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/09/anthropic-openai-and-spacex-are-bigger-than-the-last-25-years-of-tech-exits/",
-      "published_at": "2026-07-09T14:51:00+00:00",
-      "summary": "Three big AI IPOs are set to generate more value than all the U.S. VC-backed exits since 2000.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7453
+      "rank_score": 0.7487
     }
   ]
 }
