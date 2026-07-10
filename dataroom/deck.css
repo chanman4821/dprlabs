@@ -31,6 +31,13 @@ body{font-family:var(--sans); color:var(--ink); background:#0f1220;
 .sbrand{position:absolute; left:30px; bottom:18px; display:flex; align-items:center; gap:7px;
   font-family:var(--mono); font-size:11px; color:var(--faint)}
 .sbrand img{width:18px;height:18px;object-fit:contain}
+.dprlogo{display:inline-flex;align-items:center;font-family:'Geist',system-ui,-apple-system,sans-serif;font-weight:700;letter-spacing:-.01em;line-height:1;white-space:nowrap}
+.dprlogo .brk{color:#c8912b}
+.dprlogo .ai{margin-left:.3em}
+.dprlogo .cur{display:inline-block;width:.18em;height:.84em;background:#3b5bdb;margin-left:.18em;border-radius:1px}
+.title .logo{flex-direction:column;align-items:flex-start;gap:7px}
+.title .logo .dprlogo{font-size:26px}
+.sbrand .dprlogo{font-size:12.5px}
 .eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.13em; text-transform:uppercase; color:var(--accent); font-weight:600; margin:0 0 14px}
 .frame h2{font-size:34px; font-weight:800; letter-spacing:-.02em; line-height:1.12; margin:0 0 14px}
 .frame h2.sm{font-size:28px}

@@ -188,6 +188,25 @@ window.DPR_FORM_ENDPOINT = window.DPR_FORM_ENDPOINT || 'https://formspree.io/f/Y
     c.innerHTML = '<svg width="10" height="7" viewBox="0 0 10 7" aria-hidden="true" focusable="false" style="vertical-align:middle;margin-top:-1px"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   });
 
+  // Brand mark → [DPR] AI code-token (site-wide, DRY; no-JS falls back to plain "DPR AI")
+  Array.prototype.forEach.call(document.querySelectorAll('a.brand'), function(el){
+    if(el.getAttribute('data-brandmark')) return;
+    el.setAttribute('data-brandmark','1');
+    if(!el.getAttribute('aria-label')) el.setAttribute('aria-label','DPR AI — home');
+    el.innerHTML = '<span class="brk" aria-hidden="true">[</span>'+
+      '<span class="brand-word">DPR</span>'+
+      '<span class="brk" aria-hidden="true">]</span>'+
+      '<span class="brand-ai">AI</span>'+
+      '<span class="brand-cursor" aria-hidden="true"></span>';
+  });
+
+  // crisp SVG favicon (keeps each page's relative prefix)
+  var fav = document.querySelector('link[rel~="icon"]');
+  if(fav && fav.getAttribute('href')){
+    fav.setAttribute('type','image/svg+xml');
+    fav.setAttribute('href', fav.getAttribute('href').replace(/assets\/.*$/, 'assets/brand/mark.svg'));
+  }
+
   // site-wide email capture strip, injected at the top of the footer
   var fw = document.querySelector('footer .wrap');
   if(fw && !document.getElementById('dprCapture')){

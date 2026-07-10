@@ -6,7 +6,7 @@
 <title>DPR AI — Investor one-pager</title>
 <meta name="description" content="DPR is an AI consulting firm that builds AI companies can measure and own, and introduces the founders it works with to investors it knows." />
 <meta name="theme-color" content="#ffffff" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
 <style>
@@ -39,6 +39,10 @@
     padding:26px 34px; border-bottom:1px solid var(--line);
     background:linear-gradient(180deg,#fbfcff,#f5f7ff);}
   .brand{display:flex; align-items:center; gap:11px}
+  .dprlogo{display:inline-flex;align-items:center;font-family:var(--sans);font-weight:700;letter-spacing:-.01em;line-height:1;white-space:nowrap;font-size:24px;color:var(--ink)}
+  .dprlogo .brk{color:#c8912b}
+  .dprlogo .ai{margin-left:.32em}
+  .dprlogo .cur{display:inline-block;width:.2em;height:.86em;background:var(--accent);margin-left:.2em;border-radius:1px}
   .dot{width:15px;height:15px;border-radius:50%;
     background:radial-gradient(circle at 32% 30%,#7d97f2,var(--accent) 60%,var(--accent-ink));
     box-shadow:0 3px 10px rgba(59,91,219,.5)}
@@ -135,7 +139,7 @@
 
   <header class="top">
     <div>
-      <div class="brand"><img src="dataroom/assets/brand/dpr-mark-net-t.png" alt="DPR AI network mark" style="width:30px;height:30px;object-fit:contain" /><b>DPR&nbsp;AI</b></div>
+      <div class="brand"><span class="dprlogo"><span class="brk">[</span>DPR<span class="brk">]</span><span class="ai">AI</span><span class="cur" aria-hidden="true"></span></span></div>
       <p class="tag">AI consulting you can measure, plus the investor network behind it. <em>“Deeper.”</em></p>
     </div>
     <div class="meta">

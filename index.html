@@ -10,10 +10,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="icon" href="assets/icons/logo-orb.png" />
+<link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 
 <link rel="stylesheet" href="site.css?v=11" />
 <link rel="stylesheet" href="slop.css?v=5" />
+<link rel="stylesheet" href="assets/slopcar.css?v=1" />
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"DPR AI","alternateName":"DPR",
@@ -94,12 +95,19 @@
   <!-- HERO — interactive hub -->
   <section class="hero hero-hub" id="hero">
     <div class="wrap" data-reveal>
+      <div class="hero-copy">
       <p class="eyebrow">The anti-slop AI studio</p>
       <h1>Production AI your business <em>actually owns.</em></h1>
-      <p class="lead">We agree on one number before the first build. If it doesn't move, you don't pay — and you own everything: the code, the model weights, and the tests. Not a demo. Not a report. Something that runs.</p>
+      <p class="lead">One number, agreed before we build. If it doesn't move, you don't pay — and you keep all of it: the code, the weights, the tests.</p>
       <div class="hero-cta">
         <a href="contact.html" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a>
         <a href="method.html" class="btn btn-ghost">See how it works</a>
+      </div>
+      <ul class="hero-proof" aria-label="Why teams pick DPR">
+        <li><b>Ex-Microsoft &amp; PayPal</b><span>senior builders only</span></li>
+        <li><b>Code · weights · tests</b><span>yours — no lock-in</span></li>
+        <li><b>No move, no fee</b><span>the number is in writing</span></li>
+      </ul>
       </div>
 
       <div class="hub" id="hub" role="group" aria-label="What we do — the gold bot reacts as you explore each offering" data-reveal>
@@ -160,66 +168,81 @@
         <h2 style="margin-top:14px">The industry is drowning in <span class="gold-text">AI slop.</span></h2>
         <p class="lead">Dead demos. Chatbots bolted on the side. Endpoints you rent forever. "Accuracy" with no baseline. Most "AI transformation" is theater billed as progress. Here are seven kinds — and the tell that gives each one away.</p>
       </div>
-      <div class="slop-stage">
-        <div class="slop-origin" aria-hidden="true"><img src="assets/mascot/cut/bot-peace.png" alt="" width="120" height="120" loading="lazy" decoding="async"></div>
-        <div class="slop-grid">
-        <div class="kind" tabindex="0">
-          <div class="kind-ic"><img src="assets/slop/bolt-on-bot.png" alt="" width="200" height="200" loading="lazy" decoding="async"></div>
-          <div class="kind-body">
-            <p class="kind-tag">Slop&nbsp;01</p>
-            <h3 class="kind-name">The Bolt-On Bot</h3>
-            <p class="kind-tell">A chatbot glued to your corner — it can't touch your real data or workflow.</p>
+      <div class="slopcar" data-slopcar aria-roledescription="carousel" aria-label="Kinds of AI slop">
+        <div class="slopcar-viewport">
+          <div class="slopcar-track">
+            <article class="slopslide" aria-roledescription="slide" aria-label="1 of 7: The Bolt-On Bot">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/bolt-on-bot.webp" alt="The Bolt-On Bot — a chatbot stuck onto the side of a business" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 01</b> of 07</p>
+                <h3 class="slopslide-name">The Bolt-On Bot</h3>
+                <p class="slopslide-tell">A chatbot glued to your corner — it can't touch your real data or workflow.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> it can't see or change anything that matters.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="2 of 7: The Dead Demo">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/dead-demo.webp" alt="The Dead Demo — a flawless demo that never survives production" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 02</b> of 07</p>
+                <h3 class="slopslide-name">The Dead Demo</h3>
+                <p class="slopslide-tell">Flawless in the demo, never in production — and no live metric to check.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> no live number, so you can't tell if it works.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="3 of 7: The Rented Brain">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/rented-brain.webp" alt="The Rented Brain — pay per call forever and own nothing" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 03</b> of 07</p>
+                <h3 class="slopslide-name">The Rented Brain</h3>
+                <p class="slopslide-tell">Pay per call forever, own nothing — no weights, no code, no exit.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> cancel the contract and you're left with nothing.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="4 of 7: The Vanity Accuracy">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/vanity-accuracy.webp" alt="The Vanity Accuracy — a big accuracy number with no baseline" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 04</b> of 07</p>
+                <h3 class="slopslide-name">The Vanity Accuracy</h3>
+                <p class="slopslide-tell">"98% accurate" — with no baseline, sample size, or comparison.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> a big number with nothing to compare it to.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="5 of 7: AI-First Theater">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/ai-first-theater.webp" alt="AI-First Theater — a rebrand with the word AI and no real change" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 05</b> of 07</p>
+                <h3 class="slopslide-name">AI-First Theater</h3>
+                <p class="slopslide-tell">A rebrand with the word "AI" and zero shipped behavior change.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> the deck changed; the product didn't.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="6 of 7: The Eval-Free Ship">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/eval-free-ship.webp" alt="The Eval-Free Ship — shipped with no tests" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 06</b> of 07</p>
+                <h3 class="slopslide-name">The Eval-Free Ship</h3>
+                <p class="slopslide-tell">Shipped with no tests — nobody knows if a change helps or hurts.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> no tests, so nobody knows if it got better or worse.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="7 of 7: The Transformation Retainer">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/transformation-retainer.webp" alt="The Transformation Retainer — a monthly agency wrapper around a generic model" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 07</b> of 07</p>
+                <h3 class="slopslide-name">The Transformation Retainer</h3>
+                <p class="slopslide-tell">A monthly agency wrapper around a generic model — decks and "strategy," never a moved number.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> lots of strategy, never a moved number.</p>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="kind" tabindex="0">
-          <div class="kind-ic"><img src="assets/slop/dead-demo.png" alt="" width="200" height="200" loading="lazy" decoding="async"></div>
-          <div class="kind-body">
-            <p class="kind-tag">Slop&nbsp;02</p>
-            <h3 class="kind-name">The Dead Demo</h3>
-            <p class="kind-tell">Flawless in the demo, never in production — and no live metric to check.</p>
-          </div>
+        <div class="slopcar-controls">
+          <button class="slopcar-btn" type="button" data-prev aria-label="Previous slop">&lsaquo;</button>
+          <div class="slopcar-dots" role="tablist" aria-label="Choose a slop type"></div>
+          <button class="slopcar-btn" type="button" data-next aria-label="Next slop">&rsaquo;</button>
+          <button class="slopcar-play" type="button" data-playpause aria-pressed="true" aria-label="Pause auto-play">Pause</button>
         </div>
-        <div class="kind" tabindex="0">
-          <div class="kind-ic"><img src="assets/slop/rented-brain.png" alt="" width="200" height="200" loading="lazy" decoding="async"></div>
-          <div class="kind-body">
-            <p class="kind-tag">Slop&nbsp;03</p>
-            <h3 class="kind-name">The Rented Brain</h3>
-            <p class="kind-tell">Pay per call forever, own nothing — no weights, no code, no exit.</p>
-          </div>
-        </div>
-        <div class="kind" tabindex="0">
-          <div class="kind-ic"><img src="assets/slop/vanity-accuracy.png" alt="" width="200" height="200" loading="lazy" decoding="async"></div>
-          <div class="kind-body">
-            <p class="kind-tag">Slop&nbsp;04</p>
-            <h3 class="kind-name">The Vanity Accuracy</h3>
-            <p class="kind-tell">“98% accurate” — with no baseline, sample size, or comparison.</p>
-          </div>
-        </div>
-        <div class="kind" tabindex="0">
-          <div class="kind-ic"><img src="assets/slop/ai-first-theater.png" alt="" width="200" height="200" loading="lazy" decoding="async"></div>
-          <div class="kind-body">
-            <p class="kind-tag">Slop&nbsp;05</p>
-            <h3 class="kind-name">AI-First Theater</h3>
-            <p class="kind-tell">A rebrand with the word “AI” and zero shipped behavior change.</p>
-          </div>
-        </div>
-        <div class="kind" tabindex="0">
-          <div class="kind-ic"><img src="assets/slop/eval-free-ship.png" alt="" width="200" height="200" loading="lazy" decoding="async"></div>
-          <div class="kind-body">
-            <p class="kind-tag">Slop&nbsp;06</p>
-            <h3 class="kind-name">The Eval-Free Ship</h3>
-            <p class="kind-tell">Shipped with no tests — nobody knows if a change helps or hurts.</p>
-          </div>
-        </div>
-        <div class="kind" tabindex="0">
-          <div class="kind-ic"><img src="assets/slop/transformation-retainer.png" alt="" width="200" height="200" loading="lazy" decoding="async"></div>
-          <div class="kind-body">
-            <p class="kind-tag">Slop&nbsp;07</p>
-            <h3 class="kind-name">The Transformation Retainer</h3>
-            <p class="kind-tell">A monthly agency wrapper around a generic model — decks and “strategy,” never a moved number.</p>
-          </div>
-        </div>
-        </div>
+        <div class="slopcar-progress"><span></span></div>
       </div>
       <p class="reveal" style="margin-top:26px"><a href="slop.html" class="txt-link">Run the Slop Sniff-Test on any vendor — including us <span class="arrow" aria-hidden="true">→</span></a></p>
     </div>
@@ -512,34 +535,31 @@
       <div class="sec-head reveal">
         <p class="eyebrow">What we do</p>
         <h2 style="margin-top:14px">Scale with AI. Build the product. <span class="gold-text">Meet the capital.</span></h2>
-        <p class="lead">Three things we're built for: production AI inside your systems, a founder's idea taken to a shipped product, and a warm path to the investors who fund it. Senior-built, measured, priced up front, and yours to keep.</p>
+        <p class="lead">Three things we're built for — senior-built, measured, priced up front, and yours to keep.</p>
       </div>
-      <div class="grid-2">
-        <article class="card reveal">
-          <span class="tag">Scale with AI</span>
-          <h3>We build AI into your real systems</h3>
-          <p>Production AI that does actual work — automation, compliance-grade systems, integration — measured by a number you agree up front. Starts from $8k, and you own the code, weights, and tests.</p>
-          <p style="margin-top:14px"><a href="method.html" class="txt-link">See how it works <span class="arrow" aria-hidden="true">→</span></a></p>
+      <div class="offer-grid">
+        <article class="ocard ocard-lg reveal">
+          <img class="ohero" src="assets/mascot/hero/hero-3.png" alt="" width="136" height="136" loading="lazy" decoding="async" />
+          <span class="oicon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8.5 4.9v9.8L12 21.6 3.5 16.7V6.9z"/><path d="M12 12l8.5-5M12 12v9.6M12 12L3.5 7"/></svg></span>
+          <span class="tag">Scale with AI · businesses</span>
+          <h3>Production AI, built into your real systems</h3>
+          <p>Automation, compliance-grade systems, integration — measured by a number you agree up front, and yours to keep.</p>
+          <div class="ometa"><b>From $8,000</b><span>you own the code, weights &amp; tests</span></div>
+          <p style="margin-top:16px"><a href="method.html" class="txt-link">See how it works <span class="arrow" aria-hidden="true">→</span></a></p>
         </article>
-        <article class="card reveal">
-          <span class="tag">Build the product</span>
+        <article class="ocard reveal">
+          <span class="oicon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11l-1 8.5L19 10h-6.5z"/></svg></span>
+          <span class="tag">Build the product · founders</span>
           <h3>Idea to a shipped, owned product</h3>
-          <p>Founders: we take your concept to a launched AI product with the same one-number discipline — low-code where it's smart, hand-built where it counts. You ship it, you own it.</p>
+          <p>Your concept, taken to a launched AI product — you ship it, you own it.</p>
           <p style="margin-top:14px"><a href="contact.html" class="txt-link">Build with us <span class="arrow" aria-hidden="true">→</span></a></p>
         </article>
-      </div>
-      <div class="grid-2" style="margin-top:20px">
-        <article class="card reveal">
-          <span class="tag">Meet the capital</span>
-          <h3>We introduce you to the right investors</h3>
-          <p>Warm, relevant introductions from a real network — never spray-and-pray, never a promised raise. Only investors who actually fit what you're building.</p>
+        <article class="ocard reveal">
+          <span class="oicon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 14.5l5-5"/><path d="M8 11l-2 2a3 3 0 0 0 4.2 4.2l2-2"/><path d="M16 13l2-2a3 3 0 0 0-4.2-4.2l-2 2"/></svg></span>
+          <span class="tag">Meet the capital · funding</span>
+          <h3>Warm intros to the right investors</h3>
+          <p>Relevant introductions from a real network — never spray-and-pray, never a promised raise.</p>
           <p style="margin-top:14px"><a href="contact.html" class="txt-link">Talk about funding <span class="arrow" aria-hidden="true">→</span></a></p>
-        </article>
-        <article class="card reveal">
-          <span class="tag">Senior, on purpose</span>
-          <h3>You work with the builders</h3>
-          <p>No account managers, no offshore hand-off, no black box. The people who scope the work are the people who build it — and you keep everything it builds.</p>
-          <p style="margin-top:14px"><a href="about.html" class="txt-link">Meet the team <span class="arrow" aria-hidden="true">→</span></a></p>
         </article>
       </div>
     </div>
@@ -583,18 +603,17 @@
 
   <!-- MANIFESTO (dark) -->
   <section class="sec sec-invert" id="manifesto">
-    <div class="wrap">
-      <p class="eyebrow reveal">What we stand on</p>
-      <p class="statement reveal" style="margin-top:16px">Measured, owned, and senior — <em>or it isn't AI, it's theater you rent forever.</em></p>
-      <ul class="manifesto">
-        <li class="reveal"><b>AI slop is the default.</b> We are the antidote.</li>
-        <li class="reveal">If it can't move one honest number, it's a demo with a pulse.</li>
-        <li class="reveal">A chatbot bolted to the side of your business is a costume, not a strategy.</li>
-        <li class="reveal">Renting an endpoint forever is a subscription to someone else's leverage.</li>
-        <li class="reveal">Accuracy without a baseline is a marketing number, not a result.</li>
-        <li class="reveal">We name the metric before we write the code — then we let it judge us.</li>
-        <li class="reveal">If the first build doesn't move the number, you don't pay.</li>
-        <li class="reveal">Build it inside your business, or don't call it yours.</li>
+    <div class="wrap manifesto-grid">
+      <div class="reveal">
+        <p class="eyebrow">What we stand on</p>
+        <p class="statement" style="margin-top:16px">Measured, owned, and senior — <em>or it isn't AI, it's theater you rent forever.</em></p>
+      </div>
+      <ul class="manifesto reveal">
+        <li><b>AI slop is the default.</b> We're the antidote.</li>
+        <li>If it can't move one honest number, it's a demo with a pulse.</li>
+        <li>A chatbot bolted on the side is a costume, not a strategy.</li>
+        <li>Accuracy with no baseline is a marketing number, not a result.</li>
+        <li>If the first build doesn't move the number, you don't pay.</li>
       </ul>
     </div>
   </section>
@@ -691,7 +710,7 @@
 <script src="assets/intro.js?v=10" defer></script>
 <script src="assets/anim.js?v=10" defer></script>
 <script src="assets/diagrams.js?v=10" defer></script>
-<script src="slop.js?v=2" defer></script>
+<script src="assets/slopcar.js?v=1" defer></script>
 <script src="assets/slopslider.js?v=1" defer></script>
 <script src="assets/agentvs.js?v=1" defer></script>
 </body>

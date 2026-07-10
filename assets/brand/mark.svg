@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DPR AI">
+  <rect width="64" height="64" rx="15" fill="#0a0a0b"/>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-weight="700" font-size="34" text-anchor="middle">
+    <text x="30" y="44">
+      <tspan fill="#c8912b">[</tspan><tspan fill="#ffffff">D</tspan><tspan fill="#c8912b">]</tspan>
+    </text>
+  </g>
+  <rect x="46" y="21" width="5.5" height="22" rx="1.2" fill="#3b5bdb"/>
+</svg>
