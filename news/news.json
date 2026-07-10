@@ -1,18 +1,34 @@
 {
   "meta": {
-    "generated_at": "2026-07-09T03:54:17.439399+00:00",
+    "generated_at": "2026-07-10T17:03:00.359884+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
-      "id": "3196934fbce5",
-      "headline": "Rust and Artificial Intelligence: The Rust Foundation's Position",
+      "id": "27b60fc861f1",
+      "headline": "Disable auto-play and infinite scroll or risk massive fines, EU tells Meta",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/tech-policy/2026/07/disable-auto-play-and-infinite-scroll-or-risk-massive-fines-eu-tells-meta/",
+      "published_at": "2026-07-10T15:46:18+00:00",
+      "summary": "Digital Services Act may force Meta to make big changes on its platforms.",
+      "tags": [
+        "Safety"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7883
+    },
+    {
+      "id": "05d5cd4f7807",
+      "headline": "Energy is AI's natural home – but, it's fumbling",
       "source_name": "Hacker News",
       "source_id": "hn",
-      "url": "https://rustfoundation.org/resource/rust-and-ai-position-statement/",
-      "published_at": "2026-07-09T00:09:19+00:00",
+      "url": "https://www.weforum.org/stories/artificial-intelligence/the-energy-sector-should-be-ais-natural-home-right-now-its-fumbling/",
+      "published_at": "2026-07-10T14:48:52+00:00",
       "summary": "2 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
@@ -20,375 +36,359 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5349
+      "rank_score": 0.5453
     },
     {
-      "id": "78b06f593102",
-      "headline": "Lovable reportedly in talks to double its valuation to $13.2B",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/",
-      "published_at": "2026-07-08T22:41:33+00:00",
-      "summary": "The $300 million round is expected to be led by Menlo Ventures, Sifted reported.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7615
-    },
-    {
-      "id": "2f695520e65f",
-      "headline": "Policy Statement Concerning the Suppression of Accuracy in AI Systems",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.federalregister.gov/documents/2026/07/07/2026-13628/policy-statement-concerning-the-suppression-of-accuracy-in-artificial-intelligence-systems",
-      "published_at": "2026-07-08T22:33:46+00:00",
-      "summary": "7 points and 1 comments on Hacker News.",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 2,
-      "credibility": 0.6,
-      "rank_score": 0.5513
-    },
-    {
-      "id": "da644624a093",
-      "headline": "A Roomba recorded a woman on the toilet. How did screenshots end up on Facebook? (2022)",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.technologyreview.com/2022/12/19/1065306/roomba-irobot-robot-vacuums-artificial-intelligence-training-data-privacy/",
-      "published_at": "2026-07-08T22:28:02+00:00",
-      "summary": "29 points and 4 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5399
-    },
-    {
-      "id": "89886d706e78",
-      "headline": "Suspecting AI cheating, Ivy League prof ordered an in-person final; scores fell 50%",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/",
-      "published_at": "2026-07-08T21:42:44+00:00",
-      "summary": "AI cheating leads to \"a failed society,\" professor says.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7551
-    },
-    {
-      "id": "59a2edde9ec2",
-      "headline": "Gov. Pritzker Signs Nation-Leading Artificial Intelligence Safety Law",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://gov-pritzker-newsroom.prezly.com/gov-pritzker-signs-nation-leading-artificial-intelligence-safety-law",
-      "published_at": "2026-07-08T21:03:47+00:00",
-      "summary": "4 points and 1 comments on Hacker News.",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.7235
-    },
-    {
-      "id": "8dd183ee3609",
-      "headline": "Google’s deepfake detector system used to debunk McConnell hoax pic",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/",
-      "published_at": "2026-07-08T20:37:03+00:00",
-      "summary": "Earlier this week, a picture seemed to show Kentucky Senator Mitch McConnell covered in tubes in a hospital bed in a state of extreme distress. It turned out to be an AI-generated fake.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7482
-    },
-    {
-      "id": "2949c6e364e2",
-      "headline": "Maybe Anthropic and OpenAI Are Not the Future of Artificial Intelligence",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.nytimes.com/2026/07/08/opinion/openai-anthropic-palantir-alex-karp.html",
-      "published_at": "2026-07-08T20:04:52+00:00",
-      "summary": "12 points and 4 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5146
-    },
-    {
-      "id": "dec72a4f204c",
-      "headline": "Lawsuit: Man used Grok to make 7K sex images of stepdaughter, then shot himself",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/tech-policy/2026/07/lawsuit-grok-user-made-7k-child-sex-images-xai-only-reported-one-gang-rape-prompt/",
-      "published_at": "2026-07-08T19:56:37+00:00",
-      "summary": "More young girls sue X over Grok CSAM; X accused of shielding child predators.",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.744
-    },
-    {
-      "id": "67b034bb6c58",
-      "headline": "SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
-      "published_at": "2026-07-08T19:30:16+00:00",
-      "summary": "Elon Musk's tech company released the newest version of Grok on Wednesday, promising a cheaper, more efficient alternative to other powerful AI models.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7413
-    },
-    {
-      "id": "123ee15fa287",
-      "headline": "This startup thinks robotics is about to have its ChatGPT moment",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment/",
-      "published_at": "2026-07-08T19:19:15+00:00",
-      "summary": "General Intuition is betting millions of hours of video game data can train the foundation models for physical AI, making it easier to build smarter robots with minimal real-world data.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7402
-    },
-    {
-      "id": "6d2d955a63e4",
-      "headline": "Datacentres are a ticking time bomb",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.theguardian.com/commentisfree/2026/jul/09/ai-artificial-intelligence-benefits-costs-datacentres-energy-water-environment",
-      "published_at": "2026-07-08T19:18:07+00:00",
-      "summary": "8 points and 0 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5074
-    },
-    {
-      "id": "37ceddeee064",
-      "headline": "Organization is a bigger idea than intelligence – human, or artificial",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://shrsv.hexmos.com/post/organization-bigger-than-intelligence",
-      "published_at": "2026-07-08T19:05:12+00:00",
-      "summary": "1 points and 0 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5019
-    },
-    {
-      "id": "127f2e6c5796",
-      "headline": "Google Photos adds a new AI ‘Video Remix’ tool",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool/",
-      "published_at": "2026-07-08T18:30:08+00:00",
-      "summary": "The feature can do things like apply cinematic relighting to brighten up a dark clip, swap out a plain background for something fun, or add artistic styles to videos.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7352
-    },
-    {
-      "id": "a5342c550d44",
-      "headline": "Why this CEO thinks video games make better training data than the internet",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet/",
-      "published_at": "2026-07-08T17:47:55+00:00",
-      "summary": "When it comes to achieving artificial general intelligence (AGI), large language models just don’t have what it takes. Models like ChatGPT and Claude are great at text, but they’re less skilled at understanding how things actually move…",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7311
-    },
-    {
-      "id": "9476dece600b",
-      "headline": "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/",
-      "published_at": "2026-07-08T17:11:18+00:00",
-      "summary": "Meta is adding a new safeguard to stop people from secretly recording others with its AI glasses. But the update comes as the company continues to expand how much personal data its AI products collect and use.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7275
-    },
-    {
-      "id": "963a6870c5aa",
-      "headline": "ChatGPT’s upgraded voice mode is better at shutting up",
+      "id": "3fd5be624e9b",
+      "headline": "Instagram’s Adam Mosseri: If you don’t like AI, ‘then you shouldn’t have it in your feed’",
       "source_name": "The Verge",
       "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/962856/chatgpt-upgraded-voice-mode-gpt-live",
-      "published_at": "2026-07-08T17:00:00+00:00",
-      "summary": "OpenAI is overhauling ChatGPT's voice mode with a new model that it says is more like \"talking to another person.\" The new GPT-Live-1 is designed to interrupt you less and will also wait for you to continue speaking if you pause…",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7264
-    },
-    {
-      "id": "efaf55cef858",
-      "headline": "OpenAI releases new voice models for more natural live conversations",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
-      "published_at": "2026-07-08T17:00:00+00:00",
-      "summary": "OpenAI says its new voice mode can speak and listen at the same time, a key ability for live translation.",
+      "url": "https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters",
+      "published_at": "2026-07-10T13:45:02+00:00",
+      "summary": "Though Instagram head Adam Mosseri doesn't want to filter out AI content on the platform, he argues that you \"shouldn't have it in your feed\" if you don't like it. \"I don't think we should filter out AI content,\" Mosseri said during an…",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7264
+      "rank_score": 0.7743
     },
     {
-      "id": "f3111ce02867",
-      "headline": "Pritzker signs Illinois bill aimed at artificial intelligence accountability",
+      "id": "30fd26556973",
+      "headline": "Would you host part of an AI data center in your home?",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center",
+      "published_at": "2026-07-10T13:20:25+00:00",
+      "summary": "A solar and home energy storage company is expanding into AI data centers, but not by building one - instead, it's offering to pay its customers to put its compute units in their homes. Sunrun is launching a pilot program for a new…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7715
+    },
+    {
+      "id": "5d89094603b0",
+      "headline": "Do Different GenAI Tools Provide Different Financial Recommendations?",
       "source_name": "Hacker News",
       "source_id": "hn",
-      "url": "https://www.cbsnews.com/chicago/news/pritzker-to-sign-illinois-bill-aimed-artificial-intelligence-accountability/",
-      "published_at": "2026-07-08T16:52:15+00:00",
+      "url": "https://www.financialplanningassociation.org/learning/publications/journal/JUN26-do-different-generative-artificial-intelligence-genai-tools-provide-different-financial-OPEN",
+      "published_at": "2026-07-10T12:37:20+00:00",
       "summary": "1 points and 0 comments on Hacker News.",
       "tags": [
-        "Policy"
+        "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4887
+      "rank_score": 0.5298
     },
     {
-      "id": "c28926501691",
-      "headline": "Google updates Android Bench with new LLMs, but Gemini still lags behind",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/google/2026/07/google-revamps-android-ai-dev-benchmark-adds-fable-5-and-other-agents/",
-      "published_at": "2026-07-08T16:39:48+00:00",
-      "summary": "Android Bench is evolving, and developers can help guide that process.",
+      "id": "e18a0edc34ba",
+      "headline": "The Download: Claude’s inner workings and OpenAI’s “super app”",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app/",
+      "published_at": "2026-07-10T12:10:00+00:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Anthropic found a hidden space where Claude puzzles over concepts The AI firm Anthropic has got the…",
       "tags": [
         "Models"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7844
+      "credibility": 0.95,
+      "rank_score": 0.8587
     },
     {
-      "id": "bd2837755c07",
-      "headline": "EmTech AI 2026: The Rise of the AI Platform",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/08/1140223/emtech-ai-2026-the-rise-of-the-ai-platform/",
-      "published_at": "2026-07-08T16:26:10+00:00",
-      "summary": "EmTech AI 2026: The Rise of the AI Platform",
+      "id": "027b05f9d0fa",
+      "headline": "How Deutsche Telekom is rewiring telecommunications with AI",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/deutsche-telekom",
+      "published_at": "2026-07-10T07:00:00+00:00",
+      "summary": "How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7581
+      "rank_score": 0.7664
     },
     {
-      "id": "2f30f5e21698",
-      "headline": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
-      "published_at": "2026-07-08T16:22:38+00:00",
-      "summary": "Founded in 2024, Prime Intellect’s goal is to give organizations capabilities to train their own agentic systems without relying on frontier AI labs.",
+      "id": "ae709b33078a",
+      "headline": "China may restrict foreign access to Chinese open-source AI models",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/china-weighs-silicon-curtain-around-sought-after-ai-models-2026-07-08/",
+      "published_at": "2026-07-10T06:22:06+00:00",
+      "summary": "37 points and 0 comments on Hacker News.",
       "tags": [
-        "Business"
+        "Open Source"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7828
+      "credibility": 0.6,
+      "rank_score": 0.5124
     },
     {
-      "id": "967680726baf",
-      "headline": "These AI startups are growing revenue at faster and faster rates",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/08/these-ai-startups-are-growing-revenue-at-faster-and-faster-rates/",
-      "published_at": "2026-07-08T15:41:06+00:00",
-      "summary": "There are a lot of fast-growing AI startups, but some are growing even faster, they say.",
+      "id": "fc18b2f5dc98",
+      "headline": "A safety-oriented hypothetico-deductive framework for AI-assisted differential diagnosis",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08038",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.08038v1 Announce Type: new Abstract: Diagnostic error is a major threat to patient safety, yet current large language model (LLM) systems often treat diagnosis as a one-shot prediction task, lacking safeguards against missed…",
       "tags": [
-        "Business"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7188
+      "credibility": 0.9,
+      "rank_score": 0.7917
     },
     {
-      "id": "41b85c9cdb7a",
-      "headline": "Our approach to government and national security partnerships",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/government-national-security-partnerships",
-      "published_at": "2026-07-08T13:30:00+00:00",
-      "summary": "Learn how OpenAI approaches government and national security partnerships, with principles for responsible AI use, democratic accountability, and public safety.",
+      "id": "a494e292a2d7",
+      "headline": "Context Graphs for Proactive Enterprise Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07721",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07721v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) and agentic frameworks have advanced enterprise AI considerably, yet agents remain fundamentally reactive: they wait for a human query before acting. This…",
       "tags": [
-        "Safety"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7418
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "fbf5ff06dc28",
+      "headline": "AI-integrated models for assessing agricultural resilience",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07759",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07759v1 Announce Type: new Abstract: Agricultural supply chains are vulnerable to disruptions through linked biophysical and economic systems. We develop an AI-powered tool that integrates economic models (GTAP) with biophysical…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "5f37f9a5f063",
+      "headline": "Adversarial Social Epistemology for Assemblies of Humans and Large Language Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07760",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07760v1 Announce Type: new Abstract: We outline an adversarial social epistemology (ASE) for densely interactive communicative landscapes in which public assertions are scaffolded by chains of testimony, inference, institutional…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "cc5534545045",
+      "headline": "Aligning Clinical Needs and AI Capabilities: A Survey on LLMs for Medical Reasoning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07761",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07761v1 Announce Type: new Abstract: Large language models (LLMs) have emerged as important tools in healthcare, showing growing potential for clinical reasoning and patient care. This survey examines recent progress in medical…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "48f3840259c6",
+      "headline": "Alignment Plausibility: A New Standard for Assuring AI in Healthcare",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07766",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07766v1 Announce Type: new Abstract: Large language models (LLMs) have become significant providers of mental health support, yet they remain products of an attention economy whose operational and commercial targets favour…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "2e6a5e7799df",
+      "headline": "Idiobionics: The Unification of Privacy and Intelligent Robotic Prostheses",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07775",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07775v1 Announce Type: new Abstract: The human body is at the center of a growing family of technologies designed to tightly and persistently couple biological and digital systems. Robotic prostheses are a representative example…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "230542eac707",
+      "headline": "Infinity-Parser2 Technical Report",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07836",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07836v1 Announce Type: new Abstract: We present Infinity-Parser2, a large multimodal model that couples a controllable data-synthesis pipeline with multi-task reinforcement learning for end-to-end document parsing, addressing…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "7736907827e4",
+      "headline": "VectorizationLLM: Smart Vectorization Based AI Assistant",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07846",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07846v1 Announce Type: new Abstract: VectorizationLLM is a specialized Large Language Model based on Google open-weight LLMs. The model is designed to assist students to learn smart vectorization, time/wave vector analysis,…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "693d0ecbb486",
+      "headline": "A Graph Neural Network Model for Real-Time Gesture Recognition Based on sEMG Signals",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07850",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07850v1 Announce Type: new Abstract: For seemless control of advanced hand prostheses and augmented reality, accurate and immediate hand gestures recognition is essential. Surface electromyography (sEMG) signals obtained from…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "0cbaa8bdf280",
+      "headline": "Agentic AI and Retrieval-Augmented Models in Straight-Through Underwriting",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07858",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07858v1 Announce Type: new Abstract: Artificial intelligence (AI) is beginning to reshape actuarial practice, particularly in domains that require reasoning over unstructured documents, heterogeneous data sources, and regulated…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "6884db2b13f7",
+      "headline": "Feedback Manipulation Regularization: Enabling Offline Agent Alignment for Imitation Learning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07859",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07859v1 Announce Type: new Abstract: Reinforcement learning (RL) research has increasingly shifted focus towards alignment, ensuring agents learn behaviors adhering to human values. While human demonstrations and feedback have…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "d79c5e1fca38",
+      "headline": "Nigeria Machinery: A Low-Resource Industrial Dataset with a Domain-Grounded Reasoning Layer",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07883",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07883v1 Announce Type: new Abstract: There is relatively little, public, and model-ready data on industrial machinery for African economies. This makes it hard to do quantitative analysis or to train language models on numeric…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "943e7f7678a3",
+      "headline": "Persona Cartography: Charting Language Model Personality Traits in Weight Space",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07916",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07916v1 Announce Type: new Abstract: Large language models exhibit recurring behavioural patterns -- personas -- that shape generalisation and safety, but we lack reliable tools for decomposing, measuring, and controlling them.…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "0509d641b64b",
+      "headline": "Evaluating the Effect of Frame Rate in Sequence-Based Classification of Autism-Related Self-Stimulatory Hand Idiosyncrasies",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07957",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07957v1 Announce Type: new Abstract: Autism spectrum disorder (ASD) affects over 75 million individuals worldwide, yet scalable computational methods for remote behavioral screening remain limited. This study addresses two…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
+    },
+    {
+      "id": "7c946336775e",
+      "headline": "Agentic Neural Architecture Search",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.07984",
+      "published_at": "2026-07-10T04:00:00+00:00",
+      "summary": "arXiv:2607.07984v1 Announce Type: new Abstract: Neural architecture search (NAS) methods have grown increasingly efficient, yet they remain bounded by manually engineered search spaces that require substantial domain expertise and must be…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7317
     }
   ]
 }
