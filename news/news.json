@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-10T04:58:03.709561+00:00",
+    "generated_at": "2026-07-10T08:31:02.428929+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "ae709b33078a",
+      "headline": "China may restrict foreign access to Chinese open-source AI models",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/china-weighs-silicon-curtain-around-sought-after-ai-models-2026-07-08/",
+      "published_at": "2026-07-10T06:22:06+00:00",
+      "summary": "33 points and 0 comments on Hacker News.",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5645
+    },
     {
       "id": "fc18b2f5dc98",
       "headline": "A safety-oriented hypothetico-deductive framework for AI-assisted differential diagnosis",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.868
+      "rank_score": 0.8436
     },
     {
       "id": "a494e292a2d7",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "fbf5ff06dc28",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "5f37f9a5f063",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "cc5534545045",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "48f3840259c6",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "2e6a5e7799df",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "230542eac707",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "7736907827e4",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "693d0ecbb486",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "0cbaa8bdf280",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "6884db2b13f7",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "d79c5e1fca38",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "943e7f7678a3",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "0509d641b64b",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "7c946336775e",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "b77f3e899f2a",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "d7f5e8e9774c",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "bcc5ec917d22",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "1ca470e06b8c",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "bede49ffcb4f",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "b139faf19c9a",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     },
     {
       "id": "6b53e940692f",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.808
-    },
-    {
-      "id": "4aa9fdf03494",
-      "headline": "Overthinking: Amplifying Reasoning Weights to Extract Learned Secrets",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.08173",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.08173v1 Announce Type: new Abstract: Black box auditing of language models is an essential pre-deployment tool, but it may miss subtle forms of misalignment and hidden information. To better elicit hidden information during an…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.808
+      "rank_score": 0.7836
     }
   ]
 }
