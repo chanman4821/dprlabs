@@ -4,35 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>DPR AI — What we build (layout preview)</title>
+<title>DPR AI — What we build</title>
 <link rel="stylesheet" href="site.css?v=15">
 <style>
   html,body{background:var(--bg,#fbfaff)}
-  .swrap{max-width:1120px;margin:0 auto;padding:64px 24px 90px}
+  .swrap{max-width:1140px;margin:0 auto;padding:60px 24px 90px}
   .s-eyebrow{font-family:var(--mono,ui-monospace,monospace);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--c1,#4f46e5);margin:0 0 14px}
-  .s-h2{font-size:40px;line-height:1.04;letter-spacing:-.02em;margin:0 0 12px;font-weight:800}
-  .s-sub{color:var(--muted,#55555f);font-size:17px;max-width:60ch;margin:0 0 40px}
-  .s-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-  .s-card{position:relative;background:#fff;border:1px solid rgba(20,18,45,.09);border-radius:18px;padding:26px 26px 22px;box-shadow:0 1px 2px rgba(20,18,45,.04),0 12px 30px rgba(20,18,45,.05);transition:transform .18s ease,box-shadow .18s ease}
-  .s-card:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgba(20,18,45,.05),0 22px 46px rgba(79,70,229,.12)}
-  .s-card::before{content:"";position:absolute;left:26px;right:26px;top:0;height:3px;border-radius:0 0 3px 3px;background:var(--grad-1,linear-gradient(90deg,#4f46e5,#7c3aed,#06b6d4))}
-  .s-ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;margin-bottom:16px}
-  .s-card:nth-child(1) .s-ico{background:linear-gradient(135deg,#4f46e5,#7c3aed)}
-  .s-card:nth-child(2) .s-ico{background:linear-gradient(135deg,#06b6d4,#3b82f6)}
-  .s-card:nth-child(3) .s-ico{background:linear-gradient(135deg,#ec4899,#f43f5e)}
-  .s-card:nth-child(4) .s-ico{background:linear-gradient(135deg,#10b981,#06b6d4)}
-  .s-ico svg{width:23px;height:23px}
-  .s-card h3{font-size:20px;margin:0 0 8px;letter-spacing:-.01em}
-  .s-card p{color:var(--muted,#55555f);font-size:15px;line-height:1.55;margin:0 0 16px}
-  .s-tag{font-family:var(--mono,ui-monospace,monospace);font-size:12px;letter-spacing:.04em;color:var(--faint,#8a8a95);text-transform:uppercase}
-  .s-deal{margin-top:26px;background:linear-gradient(120deg,#4f46e5,#7c3aed,#06b6d4);border-radius:18px;padding:26px 30px;color:#fff;display:flex;flex-wrap:wrap;align-items:center;gap:10px 26px;justify-content:space-between}
-  .s-deal .d-terms{font-size:15.5px;font-weight:600;line-height:1.5}
+  .s-h2{font-size:44px;line-height:1.02;letter-spacing:-.025em;margin:0 0 14px;font-weight:800}
+  .s-sub{color:var(--muted,#55555f);font-size:18px;max-width:52ch;margin:0 0 42px}
+  .s-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .s-card{position:relative;background:#fff;border:1px solid rgba(20,18,45,.08);border-radius:20px;padding:16px 16px 24px;box-shadow:0 1px 2px rgba(20,18,45,.04),0 14px 32px rgba(20,18,45,.05);transition:transform .18s ease,box-shadow .18s ease}
+  .s-card:hover{transform:translateY(-4px);box-shadow:0 2px 4px rgba(20,18,45,.05),0 26px 50px rgba(79,70,229,.13)}
+  .s-visual{height:200px;border-radius:15px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;position:relative;overflow:hidden}
+  .s-card:nth-child(1) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(124,58,237,.16),rgba(79,70,229,.06) 45%,transparent 72%)}
+  .s-card:nth-child(2) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(6,182,212,.18),rgba(59,130,246,.07) 45%,transparent 72%)}
+  .s-card:nth-child(3) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(236,72,153,.16),rgba(244,63,94,.06) 45%,transparent 72%)}
+  .s-card:nth-child(4) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(16,185,129,.17),rgba(6,182,212,.06) 45%,transparent 72%)}
+  .s-visual img{max-height:80%;max-width:78%;object-fit:contain;filter:drop-shadow(0 14px 22px rgba(30,20,70,.18))}
+  .s-body{padding:0 12px}
+  .s-body h3{font-size:21px;margin:0 0 7px;letter-spacing:-.01em}
+  .s-body p{color:var(--muted,#55555f);font-size:15.5px;line-height:1.5;margin:0 0 16px}
+  .s-tag{font-family:var(--mono,ui-monospace,monospace);font-size:12px;letter-spacing:.03em;color:var(--faint,#8a8a95);text-transform:uppercase}
+  .s-deal{margin-top:28px;background:linear-gradient(120deg,#4f46e5,#7c3aed,#06b6d4);border-radius:20px;padding:28px 32px;color:#fff;display:flex;flex-wrap:wrap;align-items:center;gap:12px 26px;justify-content:space-between}
+  .s-deal .d-terms{font-size:16px;font-weight:600;line-height:1.5}
   .s-deal .d-terms span{opacity:.85;font-weight:500}
-  .s-deal .d-start{font-size:13.5px;background:rgba(255,255,255,.16);padding:9px 15px;border-radius:999px;white-space:nowrap}
+  .s-deal .d-start{font-size:13.5px;background:rgba(255,255,255,.16);padding:10px 16px;border-radius:999px;white-space:nowrap}
   @media(max-width:760px){
-    .s-grid{grid-template-columns:1fr}
-    .s-h2{font-size:30px}
-    .swrap{padding:44px 20px 70px}
+    .s-grid{grid-template-columns:1fr}.s-h2{font-size:32px}.swrap{padding:42px 20px 70px}
     .s-deal{flex-direction:column;align-items:flex-start}
   }
 </style>
@@ -41,40 +39,48 @@
 <div class="swrap">
   <p class="s-eyebrow">What we build</p>
   <h1 class="s-h2">Four things. Built in code. Yours to keep.</h1>
-  <p class="s-sub">Not a subscription to someone else's AI — custom agents and automations, handed to your team to own. Pick the problem; we build the system that solves it.</p>
+  <p class="s-sub">Not a subscription to someone else's AI. Custom agents and automations, handed to your team to own.</p>
 
   <div class="s-grid">
     <div class="s-card">
-      <div class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-7-7 18-2.5-7.5z"/></svg></div>
-      <h3>AI Sales &amp; Marketing Agents</h3>
-      <p>Agents that research leads, write the outreach, follow up, and book meetings — wired into your CRM and inbox. Plus marketing that ships on-brand content and runs the campaigns.</p>
-      <span class="s-tag">Builds from $12k · then $2k–$5k/mo</span>
+      <div class="s-visual"><img src="assets/services/sales-agents-cut.png?v=1" alt="AI sales and marketing agents"></div>
+      <div class="s-body">
+        <h3>AI Sales &amp; Marketing Agents</h3>
+        <p>Finds leads, writes the outreach, follows up, books meetings — straight into your CRM.</p>
+        <span class="s-tag">From $12k · then $2k–$5k/mo</span>
+      </div>
     </div>
 
     <div class="s-card">
-      <div class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.2"/></svg></div>
-      <h3>Workflow &amp; Ops Automations</h3>
-      <p>We map your team's process, then automate the steps that drain hours — triage, data entry, approvals, tool-to-tool handoffs. You scale with code, not headcount.</p>
-      <span class="s-tag">Builds from $8k · then $2k–$5k/mo</span>
+      <div class="s-visual"><img src="assets/services/automations-cut.png?v=1" alt="Workflow and ops automations"></div>
+      <div class="s-body">
+        <h3>Workflow &amp; Ops Automations</h3>
+        <p>Automates the steps that drain hours. You scale with code, not headcount.</p>
+        <span class="s-tag">From $8k · then $2k–$5k/mo</span>
+      </div>
     </div>
 
     <div class="s-card">
-      <div class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="17" r="2.4"/><path d="M7.8 8.6 11 15M16.2 8.6 13 15M8.4 7h7.2"/></svg></div>
-      <h3>Multi-Agent Systems</h3>
-      <p>A team of agents that split a complex job — one researches, one writes, one checks. Full-auto for the routine work, approval gates where it matters.</p>
-      <span class="s-tag">Builds from $25k · then $3k–$8k/mo</span>
+      <div class="s-visual"><img src="assets/services/multi-agent-cut.png?v=1" alt="Multi-agent systems"></div>
+      <div class="s-body">
+        <h3>Multi-Agent Systems</h3>
+        <p>A team of agents for the complex jobs — auto where it's routine, you approve where it counts.</p>
+        <span class="s-tag">From $25k · then $3k–$8k/mo</span>
+      </div>
     </div>
 
     <div class="s-card">
-      <div class="s-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7" ry="2.8"/><path d="M5 5.5v6c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8v-6M5 11.5v6c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8v-6"/></svg></div>
-      <h3>Custom AI Pipelines</h3>
-      <p>Your documents, data, and models wired into one system that answers and acts on your knowledge — with retries, fallbacks, and evals from day one.</p>
-      <span class="s-tag">Builds from $12k · then $2k–$6k/mo</span>
+      <div class="s-visual"><img src="assets/services/pipelines-cut.png?v=1" alt="Custom AI pipelines"></div>
+      <div class="s-body">
+        <h3>Custom AI Pipelines</h3>
+        <p>Your data and docs wired into one system that answers and acts — with evals from day one.</p>
+        <span class="s-tag">From $12k · then $2k–$6k/mo</span>
+      </div>
     </div>
   </div>
 
   <div class="s-deal">
-    <div class="d-terms">One number agreed up front · fixed price · <span>you own the code &amp; keys</span> · miss the number → no fee.</div>
+    <div class="d-terms">One number up front · fixed price · <span>you own the code &amp; keys</span> · miss the number → no fee.</div>
     <div class="d-start">Starts with a $2,500 audit — credited to the build</div>
   </div>
 </div>

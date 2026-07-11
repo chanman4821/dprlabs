@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DPR AI — We build your AI. Proven in weeks, owned by you.</title>
+<meta name="description" content="DPR AI is a senior AI studio. We help businesses scale with AI, help founders build, and bring funding and founders together. AI built into your systems, measured by one honest number — and you own the code, weights, and tests." />
+<meta name="theme-color" content="#ffffff" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
+
+<link rel="stylesheet" href="site.css?v=15" />
+<link rel="stylesheet" href="slop.css?v=5" />
+<link rel="stylesheet" href="assets/slopcar.css?v=2" />
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DPR AI","alternateName":"DPR",
+"description":"Senior AI studio. We help businesses scale with AI, founders build, and bring funding and founders together — measured, and owned by you.","url":"https://dprai.io/"}
+</script>
+<style>
+/* How a build runs — one superhero mascot hops down the six steps */
+.hrun{position:relative;display:grid;grid-template-columns:clamp(84px,11vw,132px) minmax(0,1fr);gap:clamp(16px,3vw,40px);margin-top:clamp(30px,4vw,48px)}
+.hrun-lane{position:relative}
+.hrun-rail{position:absolute;left:50%;top:18px;bottom:18px;width:2px;transform:translateX(-50%);background:var(--line);z-index:0;border-radius:2px}
+.hrun-fill{position:absolute;left:50%;top:18px;width:2px;transform:translateX(-50%);height:0;background:linear-gradient(#3b5bdb,#c8912b);z-index:1;border-radius:2px;transition:height .55s cubic-bezier(.34,1.3,.5,1)}
+.hrun-hero{position:absolute;left:50%;top:0;width:clamp(64px,8vw,104px);transform:translateX(-50%);z-index:3;will-change:top;pointer-events:none;transition:top .55s cubic-bezier(.34,1.35,.5,1)}
+.hrun-hero img{width:100%;height:auto;display:block;filter:drop-shadow(0 10px 14px rgba(15,23,42,.20))}
+.hrun-hero.hop{animation:hrunHop .55s cubic-bezier(.34,1.3,.5,1)}
+@keyframes hrunHop{0%{transform:translateX(-50%) translateY(0) scale(1,1)}22%{transform:translateX(-50%) translateY(-26px) scale(.92,1.12)}55%{transform:translateX(-50%) translateY(-7px) scale(1.07,.93)}100%{transform:translateX(-50%) translateY(0) scale(1,1)}}
+.hrun-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:clamp(14px,2vw,22px)}
+.hrun-step{position:relative;border:1px solid var(--line);border-radius:18px;padding:clamp(15px,2vw,22px) clamp(17px,2.2vw,26px);background:#fff;opacity:.5;transition:border-color .35s,box-shadow .35s,opacity .35s,transform .35s}
+.hrun-step.on{opacity:1;border-color:rgba(59,91,219,.35);box-shadow:0 16px 40px rgba(15,23,42,.09);transform:translateY(-1px)}
+.hrun-step.done{opacity:.9}
+.hrun-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.hrun-n{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--faint);transition:color .35s}
+.hrun-step.on .hrun-n{color:#3b5bdb}
+.hrun-step h3{font-size:clamp(17px,2vw,20px);margin:0}
+.hrun-status{margin-left:auto;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);border:1px solid var(--line);border-radius:99px;padding:4px 11px;white-space:nowrap;transition:.35s}
+.hrun-step.on .hrun-status{color:#fff;background:#3b5bdb;border-color:#3b5bdb}
+.hrun-step p{margin:9px 0 0;font-size:clamp(14px,1.5vw,15.5px);line-height:1.5;color:var(--muted);max-width:56ch}
+.hrun-close{margin-top:clamp(20px,2.4vw,30px);font-size:15px;color:var(--ink)}
+.hrun-close b{color:var(--gold-hi)}
+@media (max-width:640px){.hrun{grid-template-columns:52px minmax(0,1fr);gap:12px}.hrun-hero{width:42px}.hrun-status{margin-left:0}.hrun-step h3{width:100%}}
+@media (prefers-reduced-motion:reduce){.hrun-hero{transition:none}.hrun-hero.hop{animation:none}.hrun-fill{transition:none}.hrun-step{opacity:1}}
+</style>
+<noscript><style>.reveal{opacity:1;transform:none}.mascot{animation:none}#calibrate{display:none!important}.hrun-step{opacity:1}.hrun-hero{display:none}</style></noscript>
+<link rel="canonical" href="https://dprai.io/" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DPR AI" />
+<meta property="og:title" content="DPR AI — We build your AI. Proven in weeks, owned by you." />
+<meta property="og:description" content="DPR AI is a senior AI studio. We help businesses scale with AI, help founders build, and bring funding and founders together. AI built into your systems, measured by one honest number — and you own the code, weights, and tests." />
+<meta property="og:url" content="https://dprai.io/" />
+<meta property="og:image" content="https://dprai.io/assets/og-default.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="DPR AI — We build your AI. Proven in weeks, owned by you." />
+<meta name="twitter:description" content="DPR AI is a senior AI studio. We help businesses scale with AI, help founders build, and bring funding and founders together. AI built into your systems, measured by one honest number — and you own the code, weights, and tests." />
+<meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebSite", "name": "DPR AI", "url": "https://dprai.io/"}
+</script>
+<style>
+  .free-band{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--bg-soft));box-shadow:var(--shadow-1);padding:clamp(26px,4vw,40px);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,4vw,40px);align-items:center}
+  .free-band h2{font-size:clamp(24px,3vw,32px);letter-spacing:-.02em;margin:10px 0 10px}
+  .free-band-copy p{color:var(--muted);max-width:56ch;line-height:1.6;margin:0 0 20px}
+  .free-band-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .free-band-term{font-family:var(--mono);font-size:12.5px;line-height:1.75;color:#c9d1e6;background:#0f1222;border:1px solid #232842;border-radius:14px;padding:18px;overflow-x:auto}
+  .free-band-term .cap{display:block;color:#8b93b8;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+  .free-band-term .c{color:#7f8bb3}
+  .free-band-term .p{color:#7dd3a8}
+  @media(max-width:760px){.free-band{grid-template-columns:1fr}}
+</style>
+<style>
+
+  
+  .swrap{max-width:1140px;margin:0 auto;padding:60px 24px 90px}
+  .s-eyebrow{font-family:var(--mono,ui-monospace,monospace);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--c1,#4f46e5);margin:0 0 14px}
+  .s-h2{font-size:44px;line-height:1.02;letter-spacing:-.025em;margin:0 0 14px;font-weight:800}
+  .s-sub{color:var(--muted,#55555f);font-size:18px;max-width:52ch;margin:0 0 42px}
+  .s-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .s-card{position:relative;background:#fff;border:1px solid rgba(20,18,45,.08);border-radius:20px;padding:16px 16px 24px;box-shadow:0 1px 2px rgba(20,18,45,.04),0 14px 32px rgba(20,18,45,.05);transition:transform .18s ease,box-shadow .18s ease}
+  .s-card:hover{transform:translateY(-4px);box-shadow:0 2px 4px rgba(20,18,45,.05),0 26px 50px rgba(79,70,229,.13)}
+  .s-visual{height:200px;border-radius:15px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;position:relative;overflow:hidden}
+  .s-card:nth-child(1) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(124,58,237,.16),rgba(79,70,229,.06) 45%,transparent 72%)}
+  .s-card:nth-child(2) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(6,182,212,.18),rgba(59,130,246,.07) 45%,transparent 72%)}
+  .s-card:nth-child(3) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(236,72,153,.16),rgba(244,63,94,.06) 45%,transparent 72%)}
+  .s-card:nth-child(4) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(16,185,129,.17),rgba(6,182,212,.06) 45%,transparent 72%)}
+  .s-visual img{max-height:80%;max-width:78%;object-fit:contain;filter:drop-shadow(0 14px 22px rgba(30,20,70,.18))}
+  .s-body{padding:0 12px}
+  .s-body h3{font-size:21px;margin:0 0 7px;letter-spacing:-.01em}
+  .s-body p{color:var(--muted,#55555f);font-size:15.5px;line-height:1.5;margin:0 0 16px}
+  .s-tag{font-family:var(--mono,ui-monospace,monospace);font-size:12px;letter-spacing:.03em;color:var(--faint,#8a8a95);text-transform:uppercase}
+  .s-deal{margin-top:28px;background:linear-gradient(120deg,#4f46e5,#7c3aed,#06b6d4);border-radius:20px;padding:28px 32px;color:#fff;display:flex;flex-wrap:wrap;align-items:center;gap:12px 26px;justify-content:space-between}
+  .s-deal .d-terms{font-size:16px;font-weight:600;line-height:1.5}
+  .s-deal .d-terms span{opacity:.85;font-weight:500}
+  .s-deal .d-start{font-size:13.5px;background:rgba(255,255,255,.16);padding:10px 16px;border-radius:999px;white-space:nowrap}
+  @media(max-width:760px){
+    .s-grid{grid-template-columns:1fr}.s-h2{font-size:32px}.swrap{padding:42px 20px 70px}
+    .s-deal{flex-direction:column;align-items:flex-start}
+  }
+
+</style>
+</head>
+
+<body id="top">
+<div id="calibrate" aria-hidden="true"><div class="cal-inner"><div class="cal-mark"><span class="cal-tick"></span></div><div class="cal-read"><span id="calNum">0.00</span> <span class="cal-lbl">CALIBRATING</span></div></div></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="/method">How it works</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Proof <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/proof">Results<span class="desc">The numbers, honestly.</span></a><a role="menuitem" href="/case-studies">Case studies<span class="desc">One measured build.</span></a><a role="menuitem" href="/teardowns">Teardowns<span class="desc">Free AI build autopsy.</span></a></div></div><a href="/pricing">Pricing</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/score/">Score my AI<span class="desc">Good &mdash; or slop?</span></a><a role="menuitem" href="/free/">Free AI agent<span class="desc">Free, you own it.</span></a><a role="menuitem" href="/cost/">Cost estimator<span class="desc">What it costs to run.</span></a><a role="menuitem" href="/cost-of-inaction">Cost of inaction<span class="desc">The cost of waiting.</span></a><a role="menuitem" href="/build-buy-rent">Build vs buy?<span class="desc">Decision tree.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Resources <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/blog/">Field Notes<span class="desc">Notes from real builds.</span></a><a role="menuitem" href="/kb/">Knowledge Base<span class="desc">Reference &amp; how-tos.</span></a><a role="menuitem" href="/playbook">Playbook<span class="desc">Automation field guide.</span></a><a role="menuitem" href="/guide/">AI Guide<span class="desc">Beginner guide.</span></a><a role="menuitem" href="/learn/">Practice AI<span class="desc">Prompt builder.</span></a><a role="menuitem" href="/train/">Training<span class="desc">Learn by doing.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">About <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/about">Studio<span class="desc">The team behind DPR.</span></a><a role="menuitem" href="/slop">Why we exist<span class="desc">The anti-slop stance.</span></a><a role="menuitem" href="/own-it">You own it<span class="desc">Client-owned AI.</span></a><a role="menuitem" href="/investors">Investors<span class="desc">Funding &amp; network.</span></a></div></div></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="/method">How it works</a><a href="/pricing">Pricing</a><a href="/proof">Results</a><a href="/case-studies">Case studies</a><a href="/teardowns">Teardowns</a><a href="/score/">Score my AI</a><a href="/free/">Free AI agent</a><a href="/cost/">Cost estimator</a><a href="/cost-of-inaction">Cost of inaction</a><a href="/build-buy-rent">Build vs buy?</a><a href="/blog/">Field Notes</a><a href="/kb/">Knowledge Base</a><a href="/playbook">Playbook</a><a href="/guide/">AI Guide</a><a href="/learn/">Practice AI</a><a href="/train/">Training</a><a href="/about">About</a><a href="/slop">Why we exist</a><a href="/own-it">You own it</a><a href="/investors">Investors</a><a href="/contact">Start a build</a></div>
+</header>
+
+<main id="main">
+
+  <!-- HERO — interactive hub -->
+  <section class="hero hero-hub" id="hero">
+    <div class="wrap" data-reveal>
+      <div class="hero-copy">
+      <p class="eyebrow">The anti-slop AI studio</p>
+      <h1>Production AI your business <em>actually owns.</em></h1>
+      <p class="lead">One number, agreed up front. If it doesn't move, you don't pay — and you own all of it.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="method.html" class="btn btn-ghost">See how it works</a>
+      </div>
+      <ul class="hero-proof" aria-label="Why teams pick DPR">
+        <li><b>Ex-Microsoft &amp; PayPal</b><span>senior builders only</span></li>
+        <li><b>Code · weights · tests</b><span>yours — no lock-in</span></li>
+        <li><b>No move, no fee</b><span>the number is in writing</span></li>
+      </ul>
+      </div>
+
+      <div class="hub" id="hub" role="group" aria-label="What we do — the gold bot reacts as you explore each offering" data-reveal>
+        <svg class="hub-web" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <line data-line="0" x1="50" y1="50" x2="50" y2="12" />
+          <line data-line="1" x1="50" y1="50" x2="82" y2="31" />
+          <line data-line="2" x1="50" y1="50" x2="82" y2="69" />
+          <line data-line="3" x1="50" y1="50" x2="50" y2="88" />
+          <line data-line="4" x1="50" y1="50" x2="18" y2="69" />
+          <line data-line="5" x1="50" y1="50" x2="18" y2="31" />
+        </svg>
+        <div class="hub-core">
+          <video class="hub-bot" id="botVideo" autoplay loop muted playsinline poster="assets/mascot/cut/bot-peace.png" aria-label="DPR AI gold robot mascot dancing">
+            <source src="assets/mascot/bot-loop.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hub-nodes">
+          <button class="hub-node" type="button" data-node="0" style="left:50%;top:12%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8.5 4.9v9.8L12 21.6 3.5 16.7V6.9z"/><path d="M12 12l8.5-5M12 12v9.6M12 12L3.5 7"/></svg></span>
+            <span class="nt">Scale with AI</span><span class="nd">Businesses</span><span class="nd-detail">Production AI built into your real systems — you own the repo, the evals, and the deploy. Not a demo.</span></button>
+          <button class="hub-node" type="button" data-node="1" style="left:82%;top:31%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 14.5l5-5"/><path d="M8 11l-2 2a3 3 0 0 0 4.2 4.2l2-2"/><path d="M16 13l2-2a3 3 0 0 0-4.2-4.2l-2 2"/></svg></span>
+            <span class="nt">Meet the capital</span><span class="nd">Funding</span><span class="nd-detail">Warm, relevant introductions to investors who actually fit your stage and sector — no spray-and-pray.</span></button>
+          <button class="hub-node" type="button" data-node="2" style="left:82%;top:69%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11l-1 8.5L19 10h-6.5z"/></svg></span>
+            <span class="nt">Build the product</span><span class="nd">Founders</span><span class="nd-detail">Your idea, taken to a shipped AI product on your stack — the same one-number discipline, owned by you.</span></button>
+          <button class="hub-node" type="button" data-node="3" style="left:50%;top:88%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="4.5"/><path d="M11.2 11.2 20 20M16.5 16.5l2.2-2.2M13.8 18.8l2.2-2.2"/></svg></span>
+            <span class="nt">No lock-in</span><span class="nd">You own it</span><span class="nd-detail">Code, weights, and docs go to your team. No license to renew, no seat to rent, no dependency on us.</span></button>
+          <button class="hub-node" type="button" data-node="4" style="left:18%;top:69%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2"/></svg></span>
+            <span class="nt">One honest number</span><span class="nd">Measured</span><span class="nd-detail">We set the baseline from your real data and report the same number the same way — you can re-check it.</span></button>
+          <button class="hub-node" type="button" data-node="5" style="left:18%;top:31%">
+            <span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 14.5c-1.8 1.8-2 5.5-2 5.5s3.7-.2 5.5-2"/><path d="M12.5 15 9 11.5a13 13 0 0 1 8-9c2.8.2 2.8 2.8 3 3a13 13 0 0 1-9 8z"/><circle cx="14.5" cy="9.5" r="1.3"/></svg></span>
+            <span class="nt">Senior-built</span><span class="nd">Real people</span><span class="nd-detail">You work with the builders who write the code, not an account manager or a middle layer.</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="what-we-build">
+<div class="swrap">
+  <p class="s-eyebrow">What we build</p>
+  <h1 class="s-h2">Four things. Built in code. Yours to keep.</h1>
+  <p class="s-sub">Not a subscription to someone else's AI. Custom agents and automations, handed to your team to own.</p>
+
+  <div class="s-grid">
+    <div class="s-card">
+      <div class="s-visual"><img src="assets/services/sales-agents-cut.png?v=1" alt="AI sales and marketing agents"></div>
+      <div class="s-body">
+        <h3>AI Sales &amp; Marketing Agents</h3>
+        <p>Finds leads, writes the outreach, follows up, books meetings — straight into your CRM.</p>
+        <span class="s-tag">From $12k · then $2k–$5k/mo</span>
+      </div>
+    </div>
+
+    <div class="s-card">
+      <div class="s-visual"><img src="assets/services/automations-cut.png?v=1" alt="Workflow and ops automations"></div>
+      <div class="s-body">
+        <h3>Workflow &amp; Ops Automations</h3>
+        <p>Automates the steps that drain hours. You scale with code, not headcount.</p>
+        <span class="s-tag">From $8k · then $2k–$5k/mo</span>
+      </div>
+    </div>
+
+    <div class="s-card">
+      <div class="s-visual"><img src="assets/services/multi-agent-cut.png?v=1" alt="Multi-agent systems"></div>
+      <div class="s-body">
+        <h3>Multi-Agent Systems</h3>
+        <p>A team of agents for the complex jobs — auto where it's routine, you approve where it counts.</p>
+        <span class="s-tag">From $25k · then $3k–$8k/mo</span>
+      </div>
+    </div>
+
+    <div class="s-card">
+      <div class="s-visual"><img src="assets/services/pipelines-cut.png?v=1" alt="Custom AI pipelines"></div>
+      <div class="s-body">
+        <h3>Custom AI Pipelines</h3>
+        <p>Your data and docs wired into one system that answers and acts — with evals from day one.</p>
+        <span class="s-tag">From $12k · then $2k–$6k/mo</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="s-deal">
+    <div class="d-terms">One number up front · fixed price · <span>you own the code &amp; keys</span> · miss the number → no fee.</div>
+    <div class="d-start">Starts with a $2,500 audit — credited to the build</div>
+  </div>
+</div>
+</section>
+
+
+  <!-- VALUE STRIP -->
+  <div class="strip">
+    <div class="wrap strip-in">
+      <span class="lbl">What we do</span>
+      <b>AI built into your systems</b><span class="sep">·</span>
+      <b>Measured by real numbers</b><span class="sep">·</span>
+      <b>You own the code, weights, and tests</b><span class="sep">·</span>
+      <b>No lock-in</b><span class="sep">·</span>
+      <b>Senior people only</b>
+    </div>
+  </div>
+
+  <!-- THE SLOP PROBLEM (dark) -->
+  <section class="sec" id="slop">
+    <div class="wrap">
+      <div class="sec-head reveal" style="max-width:780px">
+        <p class="eyebrow">The state of the industry</p>
+        <h2 style="margin-top:14px">The industry is drowning in <span class="gold-text">AI slop.</span></h2>
+        <p class="lead">Seven kinds of AI slop — and the tell that gives each one away.</p>
+      </div>
+      <div class="slopcar" data-slopcar aria-roledescription="carousel" aria-label="Kinds of AI slop">
+        <div class="slopcar-viewport">
+          <div class="slopcar-track">
+            <article class="slopslide" aria-roledescription="slide" aria-label="1 of 7: The Bolt-On Bot">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/bolt-on-bot.webp" alt="The Bolt-On Bot — a chatbot stuck onto the side of a business" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 01</b> of 07</p>
+                <h3 class="slopslide-name">The Bolt-On Bot</h3>
+                <p class="slopslide-tell">A chatbot glued to your corner — it can't touch your real data or workflow.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> it can't see or change anything that matters.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="2 of 7: The Dead Demo">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/dead-demo.webp" alt="The Dead Demo — a flawless demo that never survives production" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 02</b> of 07</p>
+                <h3 class="slopslide-name">The Dead Demo</h3>
+                <p class="slopslide-tell">Flawless in the demo, never in production — and no live metric to check.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> no live number, so you can't tell if it works.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="3 of 7: The Rented Brain">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/rented-brain.webp" alt="The Rented Brain — pay per call forever and own nothing" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 03</b> of 07</p>
+                <h3 class="slopslide-name">The Rented Brain</h3>
+                <p class="slopslide-tell">Pay per call forever, own nothing — no weights, no code, no exit.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> cancel the contract and you're left with nothing.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="4 of 7: The Vanity Accuracy">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/vanity-accuracy.webp" alt="The Vanity Accuracy — a big accuracy number with no baseline" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 04</b> of 07</p>
+                <h3 class="slopslide-name">The Vanity Accuracy</h3>
+                <p class="slopslide-tell">"98% accurate" — with no baseline, sample size, or comparison.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> a big number with nothing to compare it to.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="5 of 7: AI-First Theater">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/ai-first-theater.webp" alt="AI-First Theater — a rebrand with the word AI and no real change" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 05</b> of 07</p>
+                <h3 class="slopslide-name">AI-First Theater</h3>
+                <p class="slopslide-tell">A rebrand with the word "AI" and zero shipped behavior change.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> the deck changed; the product didn't.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="6 of 7: The Eval-Free Ship">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/eval-free-ship.webp" alt="The Eval-Free Ship — shipped with no tests" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 06</b> of 07</p>
+                <h3 class="slopslide-name">The Eval-Free Ship</h3>
+                <p class="slopslide-tell">Shipped with no tests — nobody knows if a change helps or hurts.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> no tests, so nobody knows if it got better or worse.</p>
+              </div>
+            </article>
+            <article class="slopslide" aria-roledescription="slide" aria-label="7 of 7: The Transformation Retainer">
+              <div class="slopslide-visual"><img class="slopslide-img" src="assets/slop/transformation-retainer.webp" alt="The Transformation Retainer — a monthly agency wrapper around a generic model" width="640" height="640" decoding="async"></div>
+              <div class="slopslide-body">
+                <p class="slopslide-count"><b>Slop 07</b> of 07</p>
+                <h3 class="slopslide-name">The Transformation Retainer</h3>
+                <p class="slopslide-tell">A monthly agency wrapper around a generic model — decks and "strategy," never a moved number.</p>
+                <p class="slopslide-the-tell"><b>The tell:</b> lots of strategy, never a moved number.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="slopcar-controls">
+          <button class="slopcar-btn" type="button" data-prev aria-label="Previous slop">&lsaquo;</button>
+          <div class="slopcar-dots" role="tablist" aria-label="Choose a slop type"></div>
+          <button class="slopcar-btn" type="button" data-next aria-label="Next slop">&rsaquo;</button>
+          <button class="slopcar-play" type="button" data-playpause aria-pressed="true" aria-label="Pause auto-play">Pause</button>
+        </div>
+        <div class="slopcar-progress"><span></span></div>
+      </div>
+      <p class="reveal" style="margin-top:26px"><a href="slop.html" class="txt-link">Run the Slop Sniff-Test on any vendor — including us <span class="arrow" aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
+  <!-- SLOP VS SHARP — drag to compare -->
+  <section class="sec" id="slop-vs-sharp">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Slop vs sharp</p>
+        <h2 style="margin-top:14px">One tap. <span class="gold-text">Feel the difference.</span></h2>
+        <p class="lead">Two AI drafts of one product. Hit <b>Sharpen</b> — empty adjectives turn into hard facts.</p>
+      </div>
+      <div class="sharpen reveal" data-sharpen>
+        <div class="sharpen-card">
+          <div class="sharpen-scan" aria-hidden="true"></div>
+          <div class="sharpen-hd">
+            <span class="sharpen-tag" data-tag>AI SLOP DRAFT</span>
+            <div class="sharpen-gauge"><span class="sg-n" data-n>91</span><span class="sg-l">slop&nbsp;index</span></div>
+          </div>
+          <div class="sharpen-body">
+            <p class="sharpen-text is-slop">Our <mark>innovative</mark>, <mark>cutting-edge</mark> running shoe <mark>leverages</mark> <mark>state-of-the-art</mark> technology to deliver an <mark>unparalleled</mark> experience. <mark>Designed for everyone</mark>, it <mark>seamlessly</mark> blends comfort and performance.</p>
+            <p class="sharpen-text is-sharp">The <b>Trail&nbsp;X</b> weighs <b>248g</b> with a <b>6mm heel-drop</b> and a <b>rock plate</b> that survived <b>500 miles of gravel</b> in testing. Fits <b>true to size</b> — <b>size up for wide feet</b>. Returns are <b>free for 30 days</b>.</p>
+          </div>
+          <div class="sharpen-meta">
+            <span><i class="dot-bad"></i>Empty adjectives <b data-adj>7</b></span>
+            <span><i class="dot-good"></i>Concrete facts <b data-fact>0</b></span>
+          </div>
+        </div>
+        <button class="sharpen-btn" type="button" data-btn>Sharpen it <span class="arrow" aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENTS: WRONG VS RIGHT -->
+  <section class="sec" id="agent-vs">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Agents: wrong vs right</p>
+        <h2 style="margin-top:14px">Most AI agents fake it. <span class="gold-text">Ours prove it.</span></h2>
+        <p class="lead">Same idea, opposite behavior. Hover a line to see the fix.</p>
+      </div>
+      <div class="agvs reveal" data-agentvs>
+        <div class="agvs-col agvs-bad">
+          <div class="agvs-hero"><img src="assets/agents/wrong-cut.png" alt="A frazzled gold robot tangled in cables with a red warning sign" width="168" height="168" loading="lazy" decoding="async" /></div>
+          <p class="agvs-tag agvs-tag-bad">The slop agent</p>
+          <ul class="agvs-list">
+            <li data-pair="1"><span class="agvs-ic bad" aria-hidden="true">✕</span>Says "done" — with no proof</li>
+            <li data-pair="2"><span class="agvs-ic bad" aria-hidden="true">✕</span>One task, quietly changes ten files</li>
+            <li data-pair="3"><span class="agvs-ic bad" aria-hidden="true">✕</span>Invents files and commands that don't exist</li>
+            <li data-pair="4"><span class="agvs-ic bad" aria-hidden="true">✕</span>Buries the error and carries on</li>
+            <li data-pair="5"><span class="agvs-ic bad" aria-hidden="true">✕</span>Rents you an endpoint forever</li>
+          </ul>
+        </div>
+        <div class="agvs-vs" aria-hidden="true">vs</div>
+        <div class="agvs-col agvs-good">
+          <div class="agvs-hero"><img src="assets/agents/right-cut.png" alt="A confident gold robot handing over a golden key" width="168" height="168" loading="lazy" decoding="async" /></div>
+          <p class="agvs-tag agvs-tag-good">A DPR agent</p>
+          <ul class="agvs-list">
+            <li data-pair="1"><span class="agvs-ic good" aria-hidden="true">✓</span>Shows the command, the output, the number</li>
+            <li data-pair="2"><span class="agvs-ic good" aria-hidden="true">✓</span>Smallest change that does the job — nothing else</li>
+            <li data-pair="3"><span class="agvs-ic good" aria-hidden="true">✓</span>Checks the real code before it writes</li>
+            <li data-pair="4"><span class="agvs-ic good" aria-hidden="true">✓</span>Stops and tells you exactly what broke</li>
+            <li data-pair="5"><span class="agvs-ic good" aria-hidden="true">✓</span>Hands over the code, the weights, and the keys</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- (legacy problem block, hidden) -->
+  <section class="sec problem" hidden>
+    <div class="wrap center reveal">
+      <p class="eyebrow">Why most AI projects stall</p>
+      <h2 style="margin:16px auto 0">Most AI projects die as a demo.</h2>
+      <p class="lead">Not because the tech fails — because nobody agreed what "working" meant. We're the opposite: one scope, one number, yours to keep.</p>
+    </div>
+  </section>
+
+  <!-- ONE-NUMBER TEST -->
+  <section class="sec" id="pilot-ready">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">30-second self-check</p>
+        <h2 style="margin-top:14px">Is your workflow actually <span class="gold-text">AI-ready?</span></h2>
+        <p class="lead">Four questions. Thirty seconds. Find out if it's an AI problem or a scoping problem.</p>
+      </div>
+      <div class="tool reveal" id="oneNumberTest" style="max-width:800px">
+        <p class="tool-lead">Answer honestly — there are no wrong answers, only useful ones.</p>
+        <div class="qrow" data-q>
+          <div class="qtext">Is there a number?<small>Does this workflow produce something you can count — minutes, volume, error rate, cost?</small></div>
+          <div class="yn"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" class="no" data-v="0" aria-pressed="false">No</button></div>
+        </div>
+        <div class="qrow" data-q>
+          <div class="qtext">Is it measured today?<small>Could you tell me its current value this week, from real data?</small></div>
+          <div class="yn"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" class="no" data-v="0" aria-pressed="false">No</button></div>
+        </div>
+        <div class="qrow" data-q>
+          <div class="qtext">Would moving it 20% matter?<small>Would a fifth less time, or a fifth fewer errors, change a real decision or free real hours?</small></div>
+          <div class="yn"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" class="no" data-v="0" aria-pressed="false">No</button></div>
+        </div>
+        <div class="qrow" data-q>
+          <div class="qtext">Can a human check the answer?<small>Can someone on your team look at one output and tell whether the AI got it right?</small></div>
+          <div class="yn"><button type="button" data-v="1" aria-pressed="false">Yes</button><button type="button" class="no" data-v="0" aria-pressed="false">No</button></div>
+        </div>
+        <div class="tool-result" id="ontResult" role="status" aria-live="polite">
+          <p class="verdict"></p><p class="rec"></p><a class="txt-link" href="contact.html">Start a build <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG NUMBER / GUARANTEE -->
+  <section class="sec sec-invert" id="guarantee">
+    <div class="wrap bignum reveal">
+      <div class="fig"><small>$</small>0</div>
+      <div>
+        <p class="k">The guarantee</p>
+        <h3>If the first build doesn't move the number we agreed, you don't pay the fee — and you keep the code.</h3>
+        <p class="lead">The risk sits with us, not you. One number, in writing. A system you own.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW A BUILD RUNS — one superhero mascot hops each step -->
+  <section class="sec" id="owned-method" aria-labelledby="hrun-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">How a build runs</p>
+        <h2 id="hrun-title" style="margin-top:14px">Watch your AI get built, <span class="gold-text">step by step.</span></h2>
+        <p class="lead">Scroll down and follow the robot as it hops through all six steps of the build.</p>
+      </div>
+      <div class="hrun" id="hrun">
+        <div class="hrun-lane">
+          <span class="hrun-rail" aria-hidden="true"></span>
+          <span class="hrun-fill" aria-hidden="true"></span>
+          <div class="hrun-hero" id="hrunHero" aria-hidden="true">
+            <img src="assets/mascot/hero/hero-1.png" width="104" height="104" alt="" />
+          </div>
+        </div>
+        <ol class="hrun-steps">
+          <li class="hrun-step" data-hero="assets/mascot/hero/hero-1.png" data-alt="Gold robot mascot locking onto the target number">
+            <div class="hrun-top"><span class="hrun-n">01</span><h3>Pick the number</h3><span class="hrun-status">Target set</span></div>
+            <p>We choose the one number this AI must move, so success is clear from day one.</p>
+          </li>
+          <li class="hrun-step" data-hero="assets/mascot/hero/hero-2.png" data-alt="Gold robot mascot measuring today's baseline">
+            <div class="hrun-top"><span class="hrun-n">02</span><h3>Check today</h3><span class="hrun-status">Baseline read</span></div>
+            <p>We measure where that number sits right now, so later we can prove it changed.</p>
+          </li>
+          <li class="hrun-step" data-hero="assets/mascot/hero/hero-3.png" data-alt="Gold robot mascot building inside your workflow">
+            <div class="hrun-top"><span class="hrun-n">03</span><h3>Build in your work</h3><span class="hrun-status">Building</span></div>
+            <p>We build the AI right inside how your team already works, not off to the side.</p>
+          </li>
+          <li class="hrun-step" data-hero="assets/mascot/hero/hero-4.png" data-alt="Gold robot mascot testing with a magnifier">
+            <div class="hrun-top"><span class="hrun-n">04</span><h3>Test it hard</h3><span class="hrun-status">Testing</span></div>
+            <p>We run it on real cases again and again to catch mistakes before you do.</p>
+          </li>
+          <li class="hrun-step" data-hero="assets/mascot/hero/hero-5.png" data-alt="Gold robot mascot handing over the keys">
+            <div class="hrun-top"><span class="hrun-n">05</span><h3>Hand it over</h3><span class="hrun-status">Handed over</span></div>
+            <p>We give it to your team and show them how to run it without us.</p>
+          </li>
+          <li class="hrun-step" data-hero="assets/mascot/hero/hero-6.png" data-alt="Gold robot mascot holding the proof trophy">
+            <div class="hrun-top"><span class="hrun-n">06</span><h3>Show the proof</h3><span class="hrun-status">Proof shown</span></div>
+            <p>We show the number again so you can see exactly what moved and by how much.</p>
+          </li>
+        </ol>
+      </div>
+      <p class="hrun-close reveal">You own the finished AI, you know how it works, and you can <b>see it earned its place.</b></p>
+      <p class="reveal" style="margin-top:16px"><a href="method.html" class="txt-link">See how each step runs, in detail <span class="arrow" aria-hidden="true">&rarr;</span></a></p>
+    </div>
+    <script>
+    (function(){
+      var run=document.getElementById('hrun');
+      if(!run) return;
+      var lane=run.querySelector('.hrun-lane');
+      var hero=document.getElementById('hrunHero');
+      var img=hero?hero.querySelector('img'):null;
+      var fill=run.querySelector('.hrun-fill');
+      var steps=Array.prototype.slice.call(run.querySelectorAll('.hrun-step'));
+      if(!hero||!lane||!steps.length) return;
+      var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+      var current=-1;
+      function place(i,animate){
+        var s=steps[i]; if(!s) return;
+        var laneR=lane.getBoundingClientRect(), sR=s.getBoundingClientRect();
+        var top=(sR.top-laneR.top)+sR.height/2-hero.offsetHeight/2;
+        hero.style.top=top+'px';
+        if(fill) fill.style.height=Math.max(0,(top+hero.offsetHeight/2)-18)+'px';
+        if(img){
+          var src=s.getAttribute('data-hero');
+          if(src&&img.getAttribute('src')!==src) img.setAttribute('src',src);
+        }
+        if(animate&&!reduce){ hero.classList.remove('hop'); void hero.offsetWidth; hero.classList.add('hop'); }
+      }
+      function activate(i){
+        if(i===current) return;
+        current=i;
+        for(var k=0;k<steps.length;k++){
+          steps[k].classList.toggle('on',k===i);
+          steps[k].classList.toggle('done',k<i);
+        }
+        place(i,true);
+      }
+      steps[0].classList.add('on'); current=0; place(0,false);
+      var io=new IntersectionObserver(function(entries){
+        var best=null,bestRatio=-1;
+        entries.forEach(function(e){
+          if(e.isIntersecting&&e.intersectionRatio>=bestRatio){bestRatio=e.intersectionRatio;best=e.target;}
+        });
+        if(best) activate(steps.indexOf(best));
+      },{root:null,rootMargin:'-42% 0px -42% 0px',threshold:[0,.5,1]});
+      steps.forEach(function(s){io.observe(s);});
+      function recalc(){ if(current>=0) place(current,false); }
+      window.addEventListener('resize',recalc);
+      window.addEventListener('load',recalc);
+      if(img) img.addEventListener('load',recalc);
+    })();
+    </script>
+  </section>
+
+  <!-- OFFER -->
+  <section class="sec" id="offer">
+    <div class="wrap offer">
+      <div class="reveal">
+        <p class="eyebrow">The first build</p>
+        <h2 style="margin-top:14px">One scope. <span class="gold-text">One number.</span> Priced up front.</h2>
+        <p class="lead">One workflow. One number, agreed before we write code. A system you own — not a deck.</p>
+        <p class="margin-note"><b>Why a guarantee?</b> We're a small studio early in our story. The risk sits with us, not you — that's how we earn the next build.</p>
+      </div>
+      <div class="scorecard reveal">
+        <p class="sc-eyebrow">Scope of work</p>
+        <ul class="sc-rows">
+          <li><span class="k">Scope</span><span class="v">One workflow, biggest time saving</span></li>
+          <li><span class="k">Price band</span><span class="v num">$8,000–$15,000</span></li>
+          <li><span class="k">Timeline</span><span class="v num">weeks, not quarters</span></li>
+          <li><span class="k">The number</span><span class="v">Agreed in writing, up front</span></li>
+        </ul>
+        <div class="guarantee"><span class="seal" aria-hidden="true">✓</span>
+          <span><strong>The guarantee.</strong> If the build doesn't move the number we agreed, you don't pay the fee — and you keep the code.</span></div>
+        <a href="#contact" class="btn btn-primary btn-block">Start a build <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="sec problem" id="proof">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Honest proof</p>
+        <h2 style="margin-top:14px">One anonymized build. <span class="gold-text">Numbers you can check.</span></h2>
+        <p class="lead">We only publish what we can stand behind. Below is a sanitized engagement, labelled as an illustration — not a promise about your workflow.</p>
+      </div>
+      <div class="proofstats reveal">
+        <div class="pstat"><p class="k">Before</p><div class="big num"><span data-count="11">11</span> min</div><p class="cap">per manual handoff</p></div>
+        <div class="pstat after"><p class="k">After</p><div class="big num"><span data-count="90">90</span> sec</div><p class="cap">automated handoff</p></div>
+        <div class="pstat"><p class="k">Sample</p><div class="big num">n=<span data-count="400">400</span></div><p class="cap">handoffs measured</p></div>
+      </div>
+      <span class="proof-tag reveal">Anonymized logistics build · illustration · timed against the same operators' baseline</span>
+      <div class="gowrong reveal">
+        <h3>What could go wrong</h3>
+        <ul style="margin:0;padding:0;display:grid;gap:10px">
+          <li>Your workflow may not have a clean number to move. We'll tell you before you pay a cent.</li>
+          <li>Some tasks need judgment a model can't be trusted with yet. We say no to those.</li>
+          <li>A first build proves direction, not a five-year SLA. Scale is the next conversation.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLAGSHIP CASE STUDY -->
+  <section class="sec" id="case">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Case study · anonymized</p>
+        <h2 style="margin-top:14px">One honest number cut handling time <span class="gold-text">74%.</span></h2>
+        <p class="lead">1,200 freight exceptions a week, ~38 minutes each. We agreed one number, built it into their tickets, and handed it all over.</p>
+      </div>
+      <div class="metric-band reveal">
+        <div class="mb"><div class="mv"><span data-count="10">10</span> min</div><div class="mk">Median handling time, down from 38 min</div><span class="mtag">-74% · client-measured</span></div>
+        <div class="mb"><div class="mv"><span data-count="61">61</span>%</div><div class="mk">Exceptions resolved with no human touch</div><span class="mtag">from 0% · client-measured</span></div>
+        <div class="mb"><div class="mv">n=<span data-count="2431">2431</span></div><div class="mk">Live exceptions measured live</div><span class="mtag">held-out set of 500 · anonymized</span></div>
+        <div class="mb"><div class="mv">100%</div><div class="mk">Code, weights, and evals handed over</div><span class="mtag">real term of every engagement</span></div>
+      </div>
+      <p class="margin-note" style="margin-top:22px"><b>Why we show the caveat:</b> this reflects one team's ticket mix in production; peak-season volume needs eval-guided retraining — which is exactly why they own the eval suite. Slop hides its limits. We label them.</p>
+      <p class="reveal" style="margin-top:14px"><a href="case-studies.html" class="txt-link">Read the full teardown, with baseline and sample size <span class="arrow" aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO / OFFERINGS -->
+  <section class="sec" id="offerings">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">What we do</p>
+        <h2 style="margin-top:14px">Scale with AI. Build the product. <span class="gold-text">Meet the capital.</span></h2>
+        <p class="lead">Three things we're built for — senior-built, measured, priced up front, and yours to keep.</p>
+      </div>
+      <div class="offer-grid">
+        <article class="ocard ocard-lg reveal">
+          <img class="obanner" src="assets/ai/hero-glass.webp" alt="A 3D indigo glass form wrapped in gold light" width="640" height="200" loading="lazy" decoding="async" />
+          <span class="oicon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8.5 4.9v9.8L12 21.6 3.5 16.7V6.9z"/><path d="M12 12l8.5-5M12 12v9.6M12 12L3.5 7"/></svg></span>
+          <span class="tag">Scale with AI · businesses</span>
+          <h3>Production AI, built into your real systems</h3>
+          <p>Automation, compliance-grade systems, integration — measured by a number you agree up front, and yours to keep.</p>
+          <div class="ometa"><b>From $8,000</b><span>you own the code, weights &amp; tests</span></div>
+          <p style="margin-top:16px"><a href="method.html" class="txt-link">See how it works <span class="arrow" aria-hidden="true">→</span></a></p>
+        </article>
+        <article class="ocard reveal">
+          <span class="oicon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11l-1 8.5L19 10h-6.5z"/></svg></span>
+          <span class="tag">Build the product · founders</span>
+          <h3>Idea to a shipped, owned product</h3>
+          <p>Your concept, taken to a launched AI product — you ship it, you own it.</p>
+          <p style="margin-top:14px"><a href="contact.html" class="txt-link">Build with us <span class="arrow" aria-hidden="true">→</span></a></p>
+        </article>
+        <article class="ocard reveal">
+          <span class="oicon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 14.5l5-5"/><path d="M8 11l-2 2a3 3 0 0 0 4.2 4.2l2-2"/><path d="M16 13l2-2a3 3 0 0 0-4.2-4.2l-2 2"/></svg></span>
+          <span class="tag">Meet the capital · funding</span>
+          <h3>Warm intros to the right investors</h3>
+          <p>Relevant introductions from a real network — never spray-and-pray, never a promised raise.</p>
+          <p style="margin-top:14px"><a href="contact.html" class="txt-link">Talk about funding <span class="arrow" aria-hidden="true">→</span></a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCORE YOUR AI -->
+  <section class="sec" data-reveal>
+    <div class="wrap reveal">
+      <div style="border:1px solid var(--accent);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--accent-soft));box-shadow:var(--shadow-1);padding:clamp(24px,4vw,36px);display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+        <div style="flex:1;min-width:280px">
+          <p class="eyebrow" style="color:var(--accent)">Free · 2-minute check</p>
+          <h2 style="font-size:clamp(22px,3vw,30px);letter-spacing:-.02em;margin:8px 0 8px">Is your AI feature any good — or slop?</h2>
+          <p style="color:var(--muted);max-width:56ch;line-height:1.6;margin:0">Answer 8 honest questions and get a straight readout of where it's solid and where it'll bite you — with the fixes. No sign-up.</p>
+        </div>
+        <a href="score/" class="btn btn-primary" style="flex:0 0 auto">Score your AI feature <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE TOOLS -->
+  <section class="sec" id="free-tools" data-reveal>
+    <div class="wrap reveal">
+      <div class="free-band">
+        <div class="free-band-copy">
+          <p class="eyebrow" style="color:var(--accent)">Free · open-source</p>
+          <h2>Try something free right now.</h2>
+          <p>Our Inbox-to-Action Agent reads a message thread and hands back a summary, a draft reply, and a to-do list. It runs on your own computer with your own key. No sign-up, and nothing to install but Python.</p>
+          <div class="free-band-btns">
+            <a href="free/" class="btn btn-primary">Explore free tools <span class="arrow" aria-hidden="true">→</span></a>
+            <a href="https://github.com/chanman4821/inbox-to-action" class="btn btn-ghost" rel="noopener">Get it on GitHub</a>
+          </div>
+        </div>
+        <div class="free-band-term" aria-label="Example command">
+          <span class="cap">In your terminal</span>
+          <span class="c"># no key needed to try it</span><br />
+          <span class="p">python</span> inbox_to_action.py thread.txt --dry-run
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO (dark) -->
+  <section class="sec sec-invert" id="manifesto">
+    <div class="wrap manifesto-grid">
+      <div class="reveal">
+        <p class="eyebrow">What we stand on</p>
+        <p class="statement" style="margin-top:16px">Measured, owned, and senior — <em>or it isn't AI, it's theater you rent forever.</em></p>
+      </div>
+      <ul class="manifesto reveal">
+        <li><b>AI slop is the default.</b> We're the antidote.</li>
+        <li>If it can't move one honest number, it's a demo with a pulse.</li>
+        <li>A chatbot bolted on the side is a costume, not a strategy.</li>
+        <li>Accuracy with no baseline is a marketing number, not a result.</li>
+        <li>If the first build doesn't move the number, you don't pay.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec problem" id="faq">
+    <div class="wrap" style="max-width:820px">
+      <div class="sec-head reveal" style="margin:0 auto;text-align:center">
+        <p class="eyebrow">Your fears, answered</p>
+        <h2 style="margin-top:14px">The four questions everyone asks first.</h2>
+      </div>
+      <div class="faq" data-faq>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Will this actually reach production?<span class="chev" aria-hidden="true"></span></button>
+          <div class="faq-panel"><p>Yes — that's the whole point. A first build ends with a working system running against a real number, not a demo. If it can't reach production, we say so before you pay.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Am I locked in to you?<span class="chev" aria-hidden="true"></span></button>
+          <div class="faq-panel"><p>No. You get the code, the weights, and the docs. No license to renew, no seat to rent. You can walk away with everything the day the build ships.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Is my data safe?<span class="chev" aria-hidden="true"></span></button>
+          <div class="faq-panel"><p>We work inside your boundaries — your cloud, your keys where possible. We don't train shared models on your data, and we agree the handling rules in writing up front.</p></div></div>
+        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Will I stay dependent on you?<span class="chev" aria-hidden="true"></span></button>
+          <div class="faq-panel"><p>Our aim is to hand off and leave. We document the system so your team can run and extend it. We're happy to help later — but by choice, never by lock-in.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + FIELD NOTES -->
+  <section class="sec" id="about">
+    <div class="wrap split">
+      <div class="reveal">
+        <p class="eyebrow">About</p>
+        <h2 style="margin-top:14px">A small, senior team.</h2>
+        <p class="lead" style="margin-top:16px">A senior AI studio. Real work over borrowed logos. We publish how we measure — and you own what we build.</p>
+        <div class="about-links">
+          <a href="proof.html" class="txt-link">How we measure <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Field notes</p>
+        <h2 style="margin-top:14px;font-size:clamp(24px,3vw,34px)">How we think, in the open.</h2>
+        <div class="notes-list">
+          <a href="blog/the-one-number.html" class="note"><span class="note-tag">AI builds</span><span class="note-t">The one number that decides a build</span><span class="note-read">6 min</span></a>
+          <a href="blog/no-lock-in.html" class="note"><span class="note-tag">Ownership</span><span class="note-t">No lock-in, on purpose</span><span class="note-read">7 min</span></a>
+          <a href="blog/measure-ai-honestly.html" class="note"><span class="note-tag">Method</span><span class="note-t">How to measure AI honestly</span><span class="note-read">8 min</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Start a conversation</p>
+        <h2 style="margin-top:14px">Let's find the deep work <span class="gold-text">a machine should do.</span></h2>
+        <p class="lead" style="margin-top:16px">Production AI that ships, measured by one number. A real answer in one business day — no sales script.</p>
+        <div class="chips">
+          <div><b class="num">1</b><span>business-day reply</span></div>
+          <div><b>Free</b><span>opportunity read</span></div>
+        </div>
+        <p class="direct">Prefer email? <a href="mailto:hello@dprai.io">hello@dprai.io</a></p>
+      </div>
+      <form class="form reveal" id="contactForm" novalidate>
+        <div class="field"><label for="cf-name">Name</label><input id="cf-name" type="text" name="name" placeholder="Your name" autocomplete="name" required /></div>
+        <div class="field"><label for="cf-email">Work email</label><input id="cf-email" type="email" name="email" placeholder="you@company.com" autocomplete="email" required /></div>
+        <div class="field"><label for="cf-msg">What should we look at?</label><textarea id="cf-msg" name="message" rows="3" placeholder="The task, workflow, or idea on your mind…"></textarea></div>
+        <button type="submit" class="btn btn-primary btn-block">Send <span class="arrow" aria-hidden="true">→</span></button>
+        <p class="form-note" id="formNote" role="status" hidden>Thanks — we'll be in touch within one business day.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+        <p>A senior AI studio — we build it, measure it, and hand it over. You own what we build.</p>
+      </div>
+      <div class="foot-col"><h4>Studio</h4>
+        <a href="#owned-method">How it works</a><a href="#proof">Proof</a><a href="#about">About</a></div>
+      <div class="foot-col"><h4>Field Notes</h4><a href="free/">Free tools</a><a href="score/">Score my AI</a>
+        <a href="blog/the-one-number.html">The one number</a><a href="blog/no-lock-in.html">No lock-in</a><a href="blog/measure-ai-honestly.html">Measure honestly</a><a href="blog/index.html">All posts</a></div>
+      <div class="foot-col"><h4>Get started</h4>
+        <a href="#contact">Start a build</a><a href="#contact">Contact</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div>
+    </div>
+    <div class="foot-bottom">
+      <small>© 2026 DPR AI — AI builds you own.</small>
+      <span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js?v=13" defer></script>
+<script src="assets/intro.js?v=10" defer></script>
+<script src="assets/anim.js?v=10" defer></script>
+<script src="assets/diagrams.js?v=10" defer></script>
+<script src="assets/slopcar.js?v=1" defer></script>
+<script src="assets/slophud.js?v=1" defer></script>
+<script src="assets/sharpen.js?v=1" defer></script>
+<script src="assets/agentvs.js?v=1" defer></script>
+</body>
+</html>
