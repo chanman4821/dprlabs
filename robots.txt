@@ -16,3 +16,4 @@ Disallow: /services-preview.html
 Disallow: /home-preview.html
 Disallow: /docs/
 Disallow: /pricing-preview.html
+Disallow: /method-preview.html

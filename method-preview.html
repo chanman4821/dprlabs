@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>How it works — DPR AI</title>
+<link rel="stylesheet" href="site.css?v=15">
+<link rel="stylesheet" href="assets/kit.css?v=1">
+<style>
+  .m-hero-vis img{max-height:340px;filter:drop-shadow(0 22px 30px rgba(49,32,120,.28));animation:heroBotFloat 4.6s ease-in-out infinite;transform-origin:50% 84%}
+  @media(prefers-reduced-motion:reduce){.m-hero-vis img{animation:none}}
+  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+  .why .fact h4{font-size:16px;margin:0 0 6px}.why .fact p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+  @media(max-width:820px){.why{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="/" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="/method" aria-current="page">How it works</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Proof <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/proof">Results<span class="desc">The numbers, honestly.</span></a><a role="menuitem" href="/case-studies">Case studies<span class="desc">One measured build.</span></a><a role="menuitem" href="/teardowns">Teardowns<span class="desc">Free AI build autopsy.</span></a></div></div><a href="/pricing">Pricing</a><a href="/services">Services</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Resources <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/blog/">Field Notes<span class="desc">Notes from real builds.</span></a><a role="menuitem" href="/kb/">Knowledge Base<span class="desc">Reference &amp; how-tos.</span></a><a role="menuitem" href="/playbook">Playbook<span class="desc">Automation field guide.</span></a><a role="menuitem" href="/guide/">AI Guide<span class="desc">Beginner guide.</span></a></div></div><a href="/about">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="/contact" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="/method">How it works</a><a href="/proof">Proof</a><a href="/pricing">Pricing</a><a href="/services">Services</a><a href="/blog/">Field Notes</a><a href="/kb/">Knowledge Base</a><a href="/about">About</a><a href="/contact">Start a build</a></div>
+</header>
+
+<section class="p-hero px">
+  <div>
+    <p class="eyebrow" data-rv>How it works</p>
+    <h1 data-rv>One number. Six steps. A system you own.</h1>
+    <p data-rv>No demos, no theater. We agree the number that matters, build it into your real tools, prove it moved — then hand you the keys.</p>
+    <div data-rv><a href="/contact" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a> <a href="/pricing" class="btn btn-ghost">See pricing</a></div>
+  </div>
+  <div class="p-vis m-hero-vis" data-rv><img src="assets/mascot/cut/bot-peace.png?v=2" alt="DPR AI robot"></div>
+</section>
+
+<section class="px">
+  <p class="lbl" data-rv>How every build runs — click a step</p>
+  <div class="step-wrap" data-rv>
+    <div class="step-dots" id="stepDots"></div>
+    <div class="step-panel" id="stepPanel"></div>
+  </div>
+  <script type="application/json" id="stepData">[
+    {"n":"01","l":"The number","h":"One number, agreed before code.","p":"We set a single metric that decides whether the build worked — chosen with you, in writing, before anyone writes a line of code.","d":"Deliverable: a signed metric contract"},
+    {"n":"02","l":"Baseline","h":"Measure where it starts.","p":"We measure today's number from your real data, so the before/after is honest and yours to re-check.","d":"Deliverable: a baseline from your data"},
+    {"n":"03","l":"Build inside","h":"Into your tools, not a demo.","p":"We build the agent or automation directly into your systems and repos — production from the start, not a slide.","d":"Deliverable: a working system in your stack"},
+    {"n":"04","l":"Evals","h":"Tests that prove it works.","p":"We write evaluations that check quality on real cases and keep checking as the models change underneath.","d":"Deliverable: an owned eval suite"},
+    {"n":"05","l":"Handover","h":"You own everything.","p":"Code, weights, prompts, evals, docs, and the deploy path go to your team. No license to renew, no seat to rent.","d":"Deliverable: full ownership transfer"},
+    {"n":"06","l":"Proof","h":"The number, checked.","p":"A short report with the baseline, the sample, the misses, and the moved number — evidence you can verify.","d":"Deliverable: an evidence report"}
+  ]</script>
+</section>
+
+<section class="px">
+  <p class="lbl" data-rv>Why it works</p>
+  <div class="why">
+    <div class="fact" data-rv><h4>Measured, not promised</h4><p>The number is agreed and checked. No vanity metrics, no "trust us."</p></div>
+    <div class="fact" data-rv><h4>Built inside your stack</h4><p>Production from day one — not a demo that dies on a messy Tuesday.</p></div>
+    <div class="fact" data-rv><h4>Owned on handover</h4><p>You keep the code, weights, and evals. You can fire us and keep running.</p></div>
+  </div>
+</section>
+
+<section class="px" style="margin-top:44px">
+  <div class="guar" data-rv>
+    <div class="guar-vis"><img src="assets/services/guarantee-cut.png?v=1" alt="Guarantee shield"></div>
+    <div>
+      <h2>Miss the number? <em>You pay $0.</em></h2>
+      <p>The number is in writing before we start. If the first build doesn't move it, you don't pay the fee — and you keep everything we built.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band px">
+  <h2 data-rv>Tell us one task your team dreads.</h2>
+  <p data-rv>We'll tell you if AI can move it — and quote one number to do it.</p>
+  <div data-rv><a href="/contact" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a></div>
+</section>
+
+<script src="site.js?v=13" defer></script>
+<script src="assets/kit.js?v=1" defer></script>
+</body>
+</html>
