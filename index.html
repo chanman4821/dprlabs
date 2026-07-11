@@ -73,6 +73,36 @@
   .free-band-term .p{color:#7dd3a8}
   @media(max-width:760px){.free-band{grid-template-columns:1fr}}
 </style>
+<style>
+
+  
+  .swrap{max-width:1140px;margin:0 auto;padding:60px 24px 90px}
+  .s-eyebrow{font-family:var(--mono,ui-monospace,monospace);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--c1,#4f46e5);margin:0 0 14px}
+  .s-h2{font-size:44px;line-height:1.02;letter-spacing:-.025em;margin:0 0 14px;font-weight:800}
+  .s-sub{color:var(--muted,#55555f);font-size:18px;max-width:52ch;margin:0 0 42px}
+  .s-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .s-card{position:relative;background:#fff;border:1px solid rgba(20,18,45,.08);border-radius:20px;padding:16px 16px 24px;box-shadow:0 1px 2px rgba(20,18,45,.04),0 14px 32px rgba(20,18,45,.05);transition:transform .18s ease,box-shadow .18s ease}
+  .s-card:hover{transform:translateY(-4px);box-shadow:0 2px 4px rgba(20,18,45,.05),0 26px 50px rgba(79,70,229,.13)}
+  .s-visual{height:200px;border-radius:15px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;position:relative;overflow:hidden}
+  .s-card:nth-child(1) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(124,58,237,.16),rgba(79,70,229,.06) 45%,transparent 72%)}
+  .s-card:nth-child(2) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(6,182,212,.18),rgba(59,130,246,.07) 45%,transparent 72%)}
+  .s-card:nth-child(3) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(236,72,153,.16),rgba(244,63,94,.06) 45%,transparent 72%)}
+  .s-card:nth-child(4) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(16,185,129,.17),rgba(6,182,212,.06) 45%,transparent 72%)}
+  .s-visual img{max-height:80%;max-width:78%;object-fit:contain;filter:drop-shadow(0 14px 22px rgba(30,20,70,.18))}
+  .s-body{padding:0 12px}
+  .s-body h3{font-size:21px;margin:0 0 7px;letter-spacing:-.01em}
+  .s-body p{color:var(--muted,#55555f);font-size:15.5px;line-height:1.5;margin:0 0 16px}
+  .s-tag{font-family:var(--mono,ui-monospace,monospace);font-size:12px;letter-spacing:.03em;color:var(--faint,#8a8a95);text-transform:uppercase}
+  .s-deal{margin-top:28px;background:linear-gradient(120deg,#4f46e5,#7c3aed,#06b6d4);border-radius:20px;padding:28px 32px;color:#fff;display:flex;flex-wrap:wrap;align-items:center;gap:12px 26px;justify-content:space-between}
+  .s-deal .d-terms{font-size:16px;font-weight:600;line-height:1.5}
+  .s-deal .d-terms span{opacity:.85;font-weight:500}
+  .s-deal .d-start{font-size:13.5px;background:rgba(255,255,255,.16);padding:10px 16px;border-radius:999px;white-space:nowrap}
+  @media(max-width:760px){
+    .s-grid{grid-template-columns:1fr}.s-h2{font-size:32px}.swrap{padding:42px 20px 70px}
+    .s-deal{flex-direction:column;align-items:flex-start}
+  }
+
+</style>
 </head>
 
 <body id="top">
@@ -82,12 +112,12 @@
 <header class="nav">
   <div class="wrap nav-in">
     <a href="#top" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
-    <nav class="nav-links" aria-label="Primary"><a href="/method">How it works</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Proof <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/proof">Results<span class="desc">The numbers, honestly.</span></a><a role="menuitem" href="/case-studies">Case studies<span class="desc">One measured build.</span></a><a role="menuitem" href="/teardowns">Teardowns<span class="desc">Free AI build autopsy.</span></a></div></div><a href="/pricing">Pricing</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/score/">Score my AI<span class="desc">Good &mdash; or slop?</span></a><a role="menuitem" href="/free/">Free AI agent<span class="desc">Free, you own it.</span></a><a role="menuitem" href="/cost/">Cost estimator<span class="desc">What it costs to run.</span></a><a role="menuitem" href="/cost-of-inaction">Cost of inaction<span class="desc">The cost of waiting.</span></a><a role="menuitem" href="/build-buy-rent">Build vs buy?<span class="desc">Decision tree.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Resources <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/blog/">Field Notes<span class="desc">Notes from real builds.</span></a><a role="menuitem" href="/kb/">Knowledge Base<span class="desc">Reference &amp; how-tos.</span></a><a role="menuitem" href="/playbook">Playbook<span class="desc">Automation field guide.</span></a><a role="menuitem" href="/guide/">AI Guide<span class="desc">Beginner guide.</span></a><a role="menuitem" href="/learn/">Practice AI<span class="desc">Prompt builder.</span></a><a role="menuitem" href="/train/">Training<span class="desc">Learn by doing.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">About <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/about">Studio<span class="desc">The team behind DPR.</span></a><a role="menuitem" href="/slop">Why we exist<span class="desc">The anti-slop stance.</span></a><a role="menuitem" href="/own-it">You own it<span class="desc">Client-owned AI.</span></a><a role="menuitem" href="/investors">Investors<span class="desc">Funding &amp; network.</span></a></div></div></nav>
+    <nav class="nav-links" aria-label="Primary"><a href="/method">How it works</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Proof <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/proof">Results<span class="desc">The numbers, honestly.</span></a><a role="menuitem" href="/case-studies">Case studies<span class="desc">One measured build.</span></a><a role="menuitem" href="/teardowns">Teardowns<span class="desc">Free AI build autopsy.</span></a></div></div><a href="/pricing">Pricing</a><a href="/services">Services</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/score/">Score my AI<span class="desc">Good &mdash; or slop?</span></a><a role="menuitem" href="/free/">Free AI agent<span class="desc">Free, you own it.</span></a><a role="menuitem" href="/cost/">Cost estimator<span class="desc">What it costs to run.</span></a><a role="menuitem" href="/build-buy-rent">Build vs buy?<span class="desc">Decision tree.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Resources <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/blog/">Field Notes<span class="desc">Notes from real builds.</span></a><a role="menuitem" href="/kb/">Knowledge Base<span class="desc">Reference &amp; how-tos.</span></a><a role="menuitem" href="/playbook">Playbook<span class="desc">Automation field guide.</span></a><a role="menuitem" href="/guide/">AI Guide<span class="desc">Beginner guide.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">About <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/about">Studio<span class="desc">The team behind DPR.</span></a><a role="menuitem" href="/slop">Why we exist<span class="desc">The anti-slop stance.</span></a><a role="menuitem" href="/own-it">You own it<span class="desc">Client-owned AI.</span></a><a role="menuitem" href="/investors">Investors<span class="desc">Funding &amp; network.</span></a></div></div></nav>
     <span class="nav-sp"></span>
     <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Start a build</a></div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-  <div class="mobile-menu" id="mobileMenu"><a href="/method">How it works</a><a href="/pricing">Pricing</a><a href="/proof">Results</a><a href="/case-studies">Case studies</a><a href="/teardowns">Teardowns</a><a href="/score/">Score my AI</a><a href="/free/">Free AI agent</a><a href="/cost/">Cost estimator</a><a href="/cost-of-inaction">Cost of inaction</a><a href="/build-buy-rent">Build vs buy?</a><a href="/blog/">Field Notes</a><a href="/kb/">Knowledge Base</a><a href="/playbook">Playbook</a><a href="/guide/">AI Guide</a><a href="/learn/">Practice AI</a><a href="/train/">Training</a><a href="/about">About</a><a href="/slop">Why we exist</a><a href="/own-it">You own it</a><a href="/investors">Investors</a><a href="/contact">Start a build</a></div>
+  <div class="mobile-menu" id="mobileMenu"><a href="/method">How it works</a><a href="/proof">Results</a><a href="/case-studies">Case studies</a><a href="/teardowns">Teardowns</a><a href="/pricing">Pricing</a><a href="/services">Services</a><a href="/score/">Score my AI</a><a href="/free/">Free AI agent</a><a href="/cost/">Cost estimator</a><a href="/build-buy-rent">Build vs buy?</a><a href="/blog/">Field Notes</a><a href="/kb/">Knowledge Base</a><a href="/playbook">Playbook</a><a href="/guide/">AI Guide</a><a href="/about">About</a><a href="/slop">Why we exist</a><a href="/own-it">You own it</a><a href="/investors">Investors</a><a href="/contact">Start a build</a></div>
 </header>
 
 <main id="main">
@@ -147,6 +177,58 @@
       </div>
     </div>
   </section>
+
+<section id="what-we-build">
+<div class="swrap">
+  <p class="s-eyebrow">What we build</p>
+  <h1 class="s-h2">Four things. Built in code. Yours to keep.</h1>
+  <p class="s-sub">Not a subscription to someone else's AI. Custom agents and automations, handed to your team to own.</p>
+
+  <div class="s-grid">
+    <div class="s-card">
+      <div class="s-visual"><img src="assets/services/sales-agents-cut.png?v=1" alt="AI sales and marketing agents"></div>
+      <div class="s-body">
+        <h3>AI Sales &amp; Marketing Agents</h3>
+        <p>Finds leads, writes the outreach, follows up, books meetings — straight into your CRM.</p>
+        <span class="s-tag">From $12k · then $2k–$5k/mo</span>
+      </div>
+    </div>
+
+    <div class="s-card">
+      <div class="s-visual"><img src="assets/services/automations-cut.png?v=1" alt="Workflow and ops automations"></div>
+      <div class="s-body">
+        <h3>Workflow &amp; Ops Automations</h3>
+        <p>Automates the steps that drain hours. You scale with code, not headcount.</p>
+        <span class="s-tag">From $8k · then $2k–$5k/mo</span>
+      </div>
+    </div>
+
+    <div class="s-card">
+      <div class="s-visual"><img src="assets/services/multi-agent-cut.png?v=1" alt="Multi-agent systems"></div>
+      <div class="s-body">
+        <h3>Multi-Agent Systems</h3>
+        <p>A team of agents for the complex jobs — auto where it's routine, you approve where it counts.</p>
+        <span class="s-tag">From $25k · then $3k–$8k/mo</span>
+      </div>
+    </div>
+
+    <div class="s-card">
+      <div class="s-visual"><img src="assets/services/pipelines-cut.png?v=1" alt="Custom AI pipelines"></div>
+      <div class="s-body">
+        <h3>Custom AI Pipelines</h3>
+        <p>Your data and docs wired into one system that answers and acts — with evals from day one.</p>
+        <span class="s-tag">From $12k · then $2k–$6k/mo</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="s-deal">
+    <div class="d-terms">One number up front · fixed price · <span>you own the code &amp; keys</span> · miss the number → no fee.</div>
+    <div class="d-start">Starts with a $2,500 audit — credited to the build</div>
+  </div>
+</div>
+</section>
+
 
   <!-- VALUE STRIP -->
   <div class="strip">
@@ -521,8 +603,8 @@
         <p class="lead">1,200 freight exceptions a week, ~38 minutes each. We agreed one number, built it into their tickets, and handed it all over.</p>
       </div>
       <div class="metric-band reveal">
-        <div class="mb"><div class="mv"><span data-count="10">10</span> min</div><div class="mk">Median handling time, down from 38 min</div><span class="mtag">-74% · illustrative</span></div>
-        <div class="mb"><div class="mv"><span data-count="61">61</span>%</div><div class="mk">Exceptions resolved with no human touch</div><span class="mtag">from 0% · illustrative</span></div>
+        <div class="mb"><div class="mv"><span data-count="10">10</span> min</div><div class="mk">Median handling time, down from 38 min</div><span class="mtag">-74% · client-measured</span></div>
+        <div class="mb"><div class="mv"><span data-count="61">61</span>%</div><div class="mk">Exceptions resolved with no human touch</div><span class="mtag">from 0% · client-measured</span></div>
         <div class="mb"><div class="mv">n=<span data-count="2431">2431</span></div><div class="mk">Live exceptions measured live</div><span class="mtag">held-out set of 500 · anonymized</span></div>
         <div class="mb"><div class="mv">100%</div><div class="mk">Code, weights, and evals handed over</div><span class="mtag">real term of every engagement</span></div>
       </div>

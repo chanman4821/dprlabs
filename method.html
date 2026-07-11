@@ -1,200 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How it works — DPR AI</title>
-<meta name="description" content="How a DPR AI build works: one workflow, one number agreed up front, built on your systems, measured honestly, and handed over so you own it." />
-<meta name="theme-color" content="#ffffff" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="site.css?v=15" />
-<link rel="stylesheet" href="assets/learn.css?v=1" />
-<link rel="icon" href="assets/icons/logo-orb.png" />
+<link rel="stylesheet" href="site.css?v=15">
+<link rel="stylesheet" href="assets/kit.css?v=1">
 <style>
-  .method-framework-wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(18px,4vw,42px);align-items:end;margin-top:42px}
-  .method-framework-card{border:1px solid rgba(59,91,219,.22);border-radius:22px;background:linear-gradient(180deg,#fff,rgba(59,91,219,.04));box-shadow:0 24px 70px rgba(22,30,58,.08);padding:clamp(18px,3vw,28px);overflow:hidden}
-  .method-framework-card .diagram{min-height:220px}
-  .method-buddy{width:clamp(120px,16vw,176px);max-width:34vw;filter:drop-shadow(0 22px 30px rgba(22,30,58,.16));animation:methodBuddyFloat 5.5s ease-in-out infinite}
-  .method-buddy-card{align-self:center;display:flex;justify-content:center}
-  .method-buddy-solo{display:flex;justify-content:center;margin-top:34px}
-  @keyframes methodBuddyFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}}
-  @media (max-width:720px){
-    .method-framework-wrap{grid-template-columns:1fr;gap:16px;margin-top:30px}
-    .method-buddy-card{justify-content:flex-end;margin-top:-8px}
-    .method-buddy{width:128px}
-    .method-framework-card .diagram{min-height:180px}
-  }
+  .m-hero-vis img{max-height:340px;filter:drop-shadow(0 22px 30px rgba(49,32,120,.28));animation:heroBotFloat 4.6s ease-in-out infinite;transform-origin:50% 84%}
+  @media(prefers-reduced-motion:reduce){.m-hero-vis img{animation:none}}
+  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+  .why .fact h4{font-size:16px;margin:0 0 6px}.why .fact p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+  @media(max-width:820px){.why{grid-template-columns:1fr}}
 </style>
-<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
-<link rel="canonical" href="https://dprai.io/method.html" />
-<meta name="robots" content="index, follow" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="DPR AI" />
-<meta property="og:title" content="How it works — DPR AI" />
-<meta property="og:description" content="How a DPR AI build works: one workflow, one number agreed up front, built on your systems, measured honestly, and handed over so you own it." />
-<meta property="og:url" content="https://dprai.io/method.html" />
-<meta property="og:image" content="https://dprai.io/assets/og-default.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="How it works — DPR AI" />
-<meta name="twitter:description" content="How a DPR AI build works: one workflow, one number agreed up front, built on your systems, measured honestly, and handed over so you own it." />
-<meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
 </head>
-<body id="top">
-<a class="skip-link" href="#main">Skip to content</a>
-
+<body>
 <header class="nav">
   <div class="wrap nav-in">
-    <a href="index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
-    <nav class="nav-links" aria-label="Primary"><a href="/method">How it works</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Proof <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/proof">Results<span class="desc">The numbers, honestly.</span></a><a role="menuitem" href="/case-studies">Case studies<span class="desc">One measured build.</span></a><a role="menuitem" href="/teardowns">Teardowns<span class="desc">Free AI build autopsy.</span></a></div></div><a href="/pricing">Pricing</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/score/">Score my AI<span class="desc">Good &mdash; or slop?</span></a><a role="menuitem" href="/free/">Free AI agent<span class="desc">Free, you own it.</span></a><a role="menuitem" href="/cost/">Cost estimator<span class="desc">What it costs to run.</span></a><a role="menuitem" href="/cost-of-inaction">Cost of inaction<span class="desc">The cost of waiting.</span></a><a role="menuitem" href="/build-buy-rent">Build vs buy?<span class="desc">Decision tree.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Resources <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/blog/">Field Notes<span class="desc">Notes from real builds.</span></a><a role="menuitem" href="/kb/">Knowledge Base<span class="desc">Reference &amp; how-tos.</span></a><a role="menuitem" href="/playbook">Playbook<span class="desc">Automation field guide.</span></a><a role="menuitem" href="/guide/">AI Guide<span class="desc">Beginner guide.</span></a><a role="menuitem" href="/learn/">Practice AI<span class="desc">Prompt builder.</span></a><a role="menuitem" href="/train/">Training<span class="desc">Learn by doing.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">About <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/about">Studio<span class="desc">The team behind DPR.</span></a><a role="menuitem" href="/slop">Why we exist<span class="desc">The anti-slop stance.</span></a><a role="menuitem" href="/own-it">You own it<span class="desc">Client-owned AI.</span></a><a role="menuitem" href="/investors">Investors<span class="desc">Funding &amp; network.</span></a></div></div></nav>
+    <a href="/" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="/method">How it works</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Proof <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/proof">Results<span class="desc">The numbers, honestly.</span></a><a role="menuitem" href="/case-studies">Case studies<span class="desc">One measured build.</span></a><a role="menuitem" href="/teardowns">Teardowns<span class="desc">Free AI build autopsy.</span></a></div></div><a href="/pricing">Pricing</a><a href="/services">Services</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/score/">Score my AI<span class="desc">Good &mdash; or slop?</span></a><a role="menuitem" href="/free/">Free AI agent<span class="desc">Free, you own it.</span></a><a role="menuitem" href="/cost/">Cost estimator<span class="desc">What it costs to run.</span></a><a role="menuitem" href="/build-buy-rent">Build vs buy?<span class="desc">Decision tree.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Resources <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/blog/">Field Notes<span class="desc">Notes from real builds.</span></a><a role="menuitem" href="/kb/">Knowledge Base<span class="desc">Reference &amp; how-tos.</span></a><a role="menuitem" href="/playbook">Playbook<span class="desc">Automation field guide.</span></a><a role="menuitem" href="/guide/">AI Guide<span class="desc">Beginner guide.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">About <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/about">Studio<span class="desc">The team behind DPR.</span></a><a role="menuitem" href="/slop">Why we exist<span class="desc">The anti-slop stance.</span></a><a role="menuitem" href="/own-it">You own it<span class="desc">Client-owned AI.</span></a><a role="menuitem" href="/investors">Investors<span class="desc">Funding &amp; network.</span></a></div></div></nav>
     <span class="nav-sp"></span>
-    <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Start a build</a></div>
+    <div class="nav-cta"><a href="/contact" class="btn btn-primary">Start a build</a></div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-  <div class="mobile-menu" id="mobileMenu"><a href="/method">How it works</a><a href="/pricing">Pricing</a><a href="/proof">Results</a><a href="/case-studies">Case studies</a><a href="/teardowns">Teardowns</a><a href="/score/">Score my AI</a><a href="/free/">Free AI agent</a><a href="/cost/">Cost estimator</a><a href="/cost-of-inaction">Cost of inaction</a><a href="/build-buy-rent">Build vs buy?</a><a href="/blog/">Field Notes</a><a href="/kb/">Knowledge Base</a><a href="/playbook">Playbook</a><a href="/guide/">AI Guide</a><a href="/learn/">Practice AI</a><a href="/train/">Training</a><a href="/about">About</a><a href="/slop">Why we exist</a><a href="/own-it">You own it</a><a href="/investors">Investors</a><a href="/contact">Start a build</a></div>
+  <div class="mobile-menu" id="mobileMenu"><a href="/method">How it works</a><a href="/proof">Results</a><a href="/case-studies">Case studies</a><a href="/teardowns">Teardowns</a><a href="/pricing">Pricing</a><a href="/services">Services</a><a href="/score/">Score my AI</a><a href="/free/">Free AI agent</a><a href="/cost/">Cost estimator</a><a href="/build-buy-rent">Build vs buy?</a><a href="/blog/">Field Notes</a><a href="/kb/">Knowledge Base</a><a href="/playbook">Playbook</a><a href="/guide/">AI Guide</a><a href="/about">About</a><a href="/slop">Why we exist</a><a href="/own-it">You own it</a><a href="/investors">Investors</a><a href="/contact">Start a build</a></div>
 </header>
 
-<main id="main">
-  <section class="page-hero">
-    <div class="wrap">
-      <div class="prose reveal" data-reveal>
-        <p class="eyebrow">How it works</p>
-        <h1>The Owned-AI Method</h1>
-        <p class="lead" style="margin-top:20px">A six-module system that turns AI from theater into a moved number. No black boxes, no rented dashboard, no bolt-on bot pretending to be transformation.</p>
-        <p>Most AI work fails because everyone lets the word "AI" do the selling. We do the opposite. DPR AI starts with the number, builds inside the business, grades every change against real evidence, and hands the system over so you own the result.</p>
-        <div style="margin-top:30px"><a href="contact.html" class="btn btn-primary">Start a build</a> <a href="contact.html" class="btn btn-ghost">Talk to us</a></div>
-      </div>
-      <div class="method-buddy-solo" data-reveal aria-hidden="true">
-        <img class="method-buddy" src="assets/mascot/cut/bot-peace.png" alt="" loading="lazy" />
-      </div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap reveal" data-reveal>
-      <div class="prose">
-        <p class="eyebrow">The system</p>
-        <h2 style="margin-top:14px">Six modules. One standard. <span class="gold-text">Own the AI or call it slop.</span></h2>
-        <p class="lead">The Owned-AI Method front-loads the uncomfortable questions. What number moves? What is today's baseline? Where will the model live? How will quality be tested? Who owns it when we leave? What proof survives scrutiny?</p>
-      </div>
-      <div class="modules" data-stagger>
-        <div class="module"><div class="mnum">01</div><h3>Number</h3><p>We agree the single honest metric up front — the number the whole job is judged on. It kills slop because demos and vibes cannot outrun one public score.</p></div>
-        <div class="module"><div class="mnum">02</div><h3>Baseline</h3><p>We measure today's real performance on real data before building. It kills slop because improvement has to beat a known starting line, not a memory.</p></div>
-        <div class="module"><div class="mnum">03</div><h3>Build-Inside</h3><p>We embed the model into the actual workflow, repo, accounts, and data path. It kills slop because a sidecar bot is not owned software.</p></div>
-        <div class="module"><div class="mnum">04</div><h3>Evals</h3><p>We create a test harness that grades every change against ground truth before users see it. It kills slop because quality becomes a gate, not a meeting.</p></div>
-        <div class="module"><div class="mnum">05</div><h3>Handover</h3><p>We transfer code, prompts, model settings, deploy paths, docs, and decisions. It kills slop because dependency is not delivery.</p></div>
-        <div class="module"><div class="mnum">06</div><h3>Proof</h3><p>We report the baseline, final number, sample size, misses, and caveats. It kills slop because evidence replaces the claim of success.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec problem">
-    <div class="wrap prose reveal" data-reveal>
-      <p class="eyebrow">The one-number principle</p>
-      <h2 style="margin-top:14px">If we cannot name the number, the build is not ready.</h2>
-      <p style="margin-top:16px">Every engagement is anchored to exactly one number. Not a dashboard of vanity metrics, not a soft feeling that the team is "more AI-enabled," and not a list of features that sound impressive in a board update. One measurable outcome decides whether the work mattered: reply time, minutes per invoice, qualified leads per rep, analyst hours saved per week, error rate on a review queue, or revenue recovered from work that used to leak.</p>
-      <p>The number is agreed in writing before any build. We define the sample, method, owner, threshold, and refund line. That discipline is controversial only because the AI market accepts theater. We are not interested in theater. If the number stays flat, the build failed. If it moves, the business owns the system and the proof.</p>
-      <p class="callout"><strong>What makes a good number:</strong> specific, countable, and tied to money, time, quality, or risk. "Feels faster" is not a number. "Median invoice handling time across 400 invoices" is.</p>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap">
-      <div class="prose reveal" data-reveal>
-        <p class="eyebrow">The operating rhythm</p>
-        <h2 style="margin-top:14px">You see the system forming in public.</h2>
-        <p class="lead">A build is deliberately small and deliberately measurable. We do not disappear for a month and return with a polished demo. Each checkpoint produces an artifact you can inspect.</p>
-      </div>
-      <div class="steps" data-stagger>
-        <div class="step reveal"><div class="step-n">01</div>
-          <div><h3>Metric contract</h3><p>It starts with the agreement that matters: one workflow, one metric, one baseline method, one success threshold, and one refund condition. Nothing else starts until the number is written down.</p></div>
-          <div class="step-meta"><span>When</span><b>Up front</b><span>Output</span><b>Metric contract</b></div></div>
-        <div class="step reveal"><div class="step-n">02</div>
-          <div><h3>Data and baseline</h3><p>Early on, we connect to the real data, sample the actual workflow, and record today's performance. This is the line the build has to beat, not a synthetic benchmark.</p></div>
-          <div class="step-meta"><span>When</span><b>Early</b><span>Output</span><b>Baseline</b></div></div>
-        <div class="step reveal"><div class="step-n">03</div>
-          <div><h3>First eval</h3><p>Soon after, the eval harness runs end to end and produces its first score. From that point forward, every prompt, model, tool, and workflow change is graded before it reaches users.</p></div>
-          <div class="step-meta"><span>When</span><b>Mid-build</b><span>Output</span><b>Eval harness</b></div></div>
-        <div class="step reveal"><div class="step-n">04</div>
-          <div><h3>Ship or refund</h3><p>At the end, the system either moves the agreed number past the threshold and ships, or it does not and you owe nothing. There is no third outcome where effort gets confused with value.</p></div>
-          <div class="step-meta"><span>When</span><b>At the end</b><span>Output</span><b>Proof report</b></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec problem">
-    <div class="wrap prose reveal" data-reveal>
-      <p class="eyebrow">Ownership by default</p>
-      <h2 style="margin-top:14px">"You own it" is architecture, not a promise.</h2>
-      <p style="margin-top:16px">We build on your accounts from day one: your repository, your cloud, your data access, your deployment path, your monitoring. That choice is less convenient for us and better for you. It means there is no migration trap and no secret system only DPR AI can operate. If you fire us after handover, the work keeps running.</p>
-      <p>The handover includes the full source code with history intact; the eval suite and datasets; the baseline and final measurements; infrastructure and deployment configuration; prompts, model settings, and configuration notes; a decision log for what was tried and rejected; and an operations runbook for running, monitoring, and changing the system without us.</p>
-      <p class="callout"><strong>Lock-in is a design smell.</strong> A billion-dollar AI operation is not a pile of rented assistants. It is owned capability with tests, receipts, and people inside the company who can change it.</p>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap prose reveal" data-reveal>
-      <p class="eyebrow">When we say no</p>
-      <h2 style="margin-top:14px">We would rather lose the work than sell a build that cannot win.</h2>
-      <ul style="margin-top:20px">
-        <li>If the goal cannot be reduced to one measurable number, the project is not ready.</li>
-        <li>If a query, rule, script, or better process would solve it more cheaply, you do not need AI.</li>
-        <li>If the data needed for a real baseline does not exist and cannot be gathered honestly, we wait.</li>
-        <li>If the ask is a chatbot bolted onto a broken workflow, we push back on the workflow first.</li>
-        <li>If the real objective is a launch announcement, not a moved number, we are the wrong studio.</li>
-        <li>If the timeline demands skipping evals, we stop. Shipping unmeasured AI is how slop reaches production.</li>
-      </ul>
-      <p>Saying no up front is cheaper than building a beautiful artifact that never changes the business. The point is not to make AI feel inevitable. The point is to make the result undeniable.</p>
-    </div>
-  </section>
-
-  <section class="sec problem">
-    <div class="wrap center reveal" data-reveal>
-      <p class="eyebrow">Start with the number</p>
-      <h2 style="margin:14px auto 0">Bring us the number you need to move.</h2>
-      <p class="lead">If it is real and measurable, we will define the contract, establish the baseline, and prove the result fast or you pay nothing.</p>
-      <div style="margin-top:30px"><a href="contact.html" class="btn btn-primary">Start a build</a> <a href="contact.html" class="btn btn-ghost">Talk to us</a></div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand"><a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div>
-      <div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="about.html">About</a></div>
-      <div class="foot-col"><h4>Playbooks</h4><a href="free/">Free tools</a><a href="score/">Score my AI</a><a href="slop.html">The slop problem</a><a href="playbook.html">AI-readiness scorecard</a><a href="contact.html">The first build</a><a href="blog/index.html">Field Notes</a></div>
-      <div class="foot-col"><h4>Get started</h4><a href="contact.html">Start a build</a><a href="contact.html">Contact</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div>
-    </div>
-    <div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div>
+<section class="p-hero px">
+  <div>
+    <p class="eyebrow" data-rv>How it works</p>
+    <h1 data-rv>One number. Six steps. A system you own.</h1>
+    <p data-rv>No demos, no theater. We agree the number that matters, build it into your real tools, prove it moved — then hand you the keys.</p>
+    <div data-rv><a href="/contact" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a> <a href="/pricing" class="btn btn-ghost">See pricing</a></div>
   </div>
-</footer>
+  <div class="p-vis m-hero-vis" data-rv><img src="assets/mascot/cut/bot-peace.png?v=2" alt="DPR AI robot"></div>
+</section>
+
+<section class="px">
+  <p class="lbl" data-rv>How every build runs — click a step</p>
+  <div class="step-wrap" data-rv>
+    <div class="step-dots" id="stepDots"></div>
+    <div class="step-panel" id="stepPanel"></div>
+  </div>
+  <script type="application/json" id="stepData">[
+    {"n":"01","l":"The number","h":"One number, agreed before code.","p":"We set a single metric that decides whether the build worked — chosen with you, in writing, before anyone writes a line of code.","d":"Deliverable: a signed metric contract"},
+    {"n":"02","l":"Baseline","h":"Measure where it starts.","p":"We measure today's number from your real data, so the before/after is honest and yours to re-check.","d":"Deliverable: a baseline from your data"},
+    {"n":"03","l":"Build inside","h":"Into your tools, not a demo.","p":"We build the agent or automation directly into your systems and repos — production from the start, not a slide.","d":"Deliverable: a working system in your stack"},
+    {"n":"04","l":"Evals","h":"Tests that prove it works.","p":"We write evaluations that check quality on real cases and keep checking as the models change underneath.","d":"Deliverable: an owned eval suite"},
+    {"n":"05","l":"Handover","h":"You own everything.","p":"Code, weights, prompts, evals, docs, and the deploy path go to your team. No license to renew, no seat to rent.","d":"Deliverable: full ownership transfer"},
+    {"n":"06","l":"Proof","h":"The number, checked.","p":"A short report with the baseline, the sample, the misses, and the moved number — evidence you can verify.","d":"Deliverable: an evidence report"}
+  ]</script>
+</section>
+
+<section class="px">
+  <p class="lbl" data-rv>Why it works</p>
+  <div class="why">
+    <div class="fact" data-rv><h4>Measured, not promised</h4><p>The number is agreed and checked. No vanity metrics, no "trust us."</p></div>
+    <div class="fact" data-rv><h4>Built inside your stack</h4><p>Production from day one — not a demo that dies on a messy Tuesday.</p></div>
+    <div class="fact" data-rv><h4>Owned on handover</h4><p>You keep the code, weights, and evals. You can fire us and keep running.</p></div>
+  </div>
+</section>
+
+<section class="px" style="margin-top:44px">
+  <div class="guar" data-rv>
+    <div class="guar-vis"><img src="assets/services/guarantee-cut.png?v=1" alt="Guarantee shield"></div>
+    <div>
+      <h2>Miss the number? <em>You pay $0.</em></h2>
+      <p>The number is in writing before we start. If the first build doesn't move it, you don't pay the fee — and you keep everything we built.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band px">
+  <h2 data-rv>Tell us one task your team dreads.</h2>
+  <p data-rv>We'll tell you if AI can move it — and quote one number to do it.</p>
+  <div data-rv><a href="/contact" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a></div>
+</section>
+
 <script src="site.js?v=13" defer></script>
-<script src="assets/anim.js?v=10" defer></script>
-<script src="assets/diagrams.js?v=10" defer></script>
-<script src="assets/learn.js?v=1" defer></script>
-<script>
-(function(){
-  function armDraws(){
-    var draws=Array.prototype.slice.call(document.querySelectorAll('[data-diagram] [data-draw]'));
-    if(!draws.length) return;
-    draws.forEach(function(el){
-      try{var len=el.getTotalLength?el.getTotalLength():1000;el.style.setProperty('--len',Math.ceil(len));}catch(e){}
-    });
-    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window)){
-      draws.forEach(function(el){el.classList.add('is-in');});
-      return;
-    }
-    var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if(entry.isIntersecting){entry.target.classList.add('is-in');io.unobserve(entry.target);}
-      });
-    },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
-    draws.forEach(function(el){io.observe(el);});
-  }
-  window.addEventListener('load',armDraws);
-})();
-</script>
+<script src="assets/kit.js?v=1" defer></script>
 </body>
 </html>

@@ -33,6 +33,142 @@
               "id": "color-contrast",
               "data": {
                 "fgColor": "#767b85",
+                "bgColor": "#ffffff",
+                "contrastRatio": 4.24,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"s-card\">",
+                  "target": [
+                    ".s-card:nth-child(1)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 4.24 (foreground color: #767b85, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"s-tag\">From $12k · then $2k–$5k/mo</span>",
+          "target": [
+            ".s-card:nth-child(1) > .s-body > .s-tag"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #767b85, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#767b85",
+                "bgColor": "#ffffff",
+                "contrastRatio": 4.24,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"s-card\">",
+                  "target": [
+                    ".s-card:nth-child(2)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 4.24 (foreground color: #767b85, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"s-tag\">From $8k · then $2k–$5k/mo</span>",
+          "target": [
+            ".s-card:nth-child(2) > .s-body > .s-tag"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #767b85, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#767b85",
+                "bgColor": "#ffffff",
+                "contrastRatio": 4.24,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"s-card\">",
+                  "target": [
+                    ".s-card:nth-child(3)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 4.24 (foreground color: #767b85, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"s-tag\">From $25k · then $3k–$8k/mo</span>",
+          "target": [
+            ".s-card:nth-child(3) > .s-body > .s-tag"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #767b85, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#767b85",
+                "bgColor": "#ffffff",
+                "contrastRatio": 4.24,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"s-card\">",
+                  "target": [
+                    ".s-card:nth-child(4)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 4.24 (foreground color: #767b85, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"s-tag\">From $12k · then $2k–$6k/mo</span>",
+          "target": [
+            ".s-card:nth-child(4) > .s-body > .s-tag"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #767b85, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#767b85",
                 "bgColor": "#f7f7f8",
                 "contrastRatio": 3.96,
                 "fontSize": "9.0pt (12px)",
@@ -66,9 +202,9 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#90949d",
-                "bgColor": "#fefeff",
-                "contrastRatio": 3.01,
+                "fgColor": "#838791",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.59,
                 "fontSize": "9.8pt (13px)",
                 "fontWeight": "normal",
                 "messageKey": null,
@@ -83,7 +219,7 @@
                 }
               ],
               "impact": "serious",
-              "message": "Element has insufficient color contrast of 3.01 (foreground color: #90949d, background color: #fefeff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              "message": "Element has insufficient color contrast of 3.59 (foreground color: #838791, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           ],
           "all": [],
@@ -93,41 +229,75 @@
           "target": [
             ".agvs-vs"
           ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.01 (foreground color: #90949d, background color: #fefeff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.59 (foreground color: #838791, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
         },
         {
           "any": [
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#3d876c",
-                "bgColor": "#f4fbf8",
-                "contrastRatio": 4.09,
-                "fontSize": "9.0pt (12px)",
+                "fgColor": "#838790",
+                "bgColor": "#f7f7f8",
+                "contrastRatio": 3.36,
+                "fontSize": "8.6pt (11.5px)",
                 "fontWeight": "normal",
                 "messageKey": null,
                 "expectedContrastRatio": "4.5:1"
               },
               "relatedNodes": [
                 {
-                  "html": "<div class=\"agvs-col agvs-good\">",
+                  "html": "<section class=\"sec problem\" id=\"proof\">",
                   "target": [
-                    ".agvs-good"
+                    "#proof"
                   ]
                 }
               ],
               "impact": "serious",
-              "message": "Element has insufficient color contrast of 4.09 (foreground color: #3d876c, background color: #f4fbf8, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              "message": "Element has insufficient color contrast of 3.36 (foreground color: #838790, background color: #f7f7f8, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           ],
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<p class=\"agvs-tag agvs-tag-good\">A DPR agent</p>",
+          "html": "<span class=\"proof-tag reveal is-in in\">Anonymized logistics build · illustration · timed against the same operators' baseline</span>",
           "target": [
-            ".agvs-tag-good"
+            ".proof-tag"
           ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.09 (foreground color: #3d876c, background color: #f4fbf8, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #838790, background color: #f7f7f8, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#838790",
+                "bgColor": "#f7f7f8",
+                "contrastRatio": 3.36,
+                "fontSize": "11.3pt (15px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"sec problem\" id=\"proof\">",
+                  "target": [
+                    "#proof"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.36 (foreground color: #838790, background color: #f7f7f8, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3>What could go wrong</h3>",
+          "target": [
+            ".gowrong > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #838790, background color: #f7f7f8, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
         },
         {
           "any": [

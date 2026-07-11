@@ -1,162 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pricing — DPR AI</title>
-<meta name="description" content="Three steps, and you choose how far to go. A $500–$2,500 audit to find the win, a $3k–$15k fixed-price build, and a $2k–$10k+ monthly retainer only if you want us to stay. You own everything. Cancel any time." />
-<meta name="theme-color" content="#ffffff" />
-<link rel="canonical" href="https://dprai.io/pricing.html" />
-<meta name="robots" content="index, follow" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="DPR AI" />
-<meta property="og:title" content="Pricing — DPR AI" />
-<meta property="og:description" content="Start small, pay more only when it works. Audit ($500–$2,500), Build sprint ($3k–$15k), Monthly retainer ($2k–$10k+). You own everything. No lock-in." />
-<meta property="og:url" content="https://dprai.io/pricing.html" />
-<meta property="og:image" content="https://dprai.io/assets/og-default.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Pricing — DPR AI" />
-<meta name="twitter:description" content="Start small, pay more only when it works. Audit, Build sprint, Monthly retainer. You own everything. No lock-in." />
-<meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="site.css?v=15" />
-<link rel="icon" href="assets/icons/logo-orb.png" />
-<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<link rel="stylesheet" href="site.css?v=15">
 <style>
-  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
-  .tier{position:relative;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:26px 24px;display:flex;flex-direction:column}
-  .tier.feature{border-color:var(--accent);box-shadow:0 18px 44px rgba(59,91,219,.12)}
-  .tier .step{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
-  .tier.feature .step{color:var(--accent)}
-  .tier h2{font-size:21px;letter-spacing:-.02em;margin:8px 0 4px}
-  .tier .price{font-size:26px;font-weight:700;letter-spacing:-.02em;margin:10px 0 2px;font-variant-numeric:tabular-nums}
-  .tier .per{font-size:13px;color:var(--faint);margin-bottom:16px}
-  .tier .lede{font-size:14.5px;color:var(--muted);line-height:1.55;margin:0 0 16px}
-  .tier ul{list-style:none;margin:0 0 20px;padding:0;flex:1}
-  .tier li{position:relative;padding:7px 0 7px 24px;font-size:14px;color:var(--ink-2);line-height:1.5;border-top:1px solid var(--line)}
-  .tier li:first-child{border-top:0}
-  .tier li::before{content:"";position:absolute;left:2px;top:13px;width:8px;height:8px;border-radius:50%;background:var(--accent-soft);border:1px solid var(--accent)}
-  .tier .who{font-size:12.5px;color:var(--faint);margin:0 0 16px}
-  .ladder{border:1px solid var(--line);border-radius:var(--radius);background:var(--bg-soft);padding:26px 28px;margin-top:26px}
-  .ladder h2{font-size:22px;margin:0 0 8px}
-  .ladder .flow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:18px 0 0;font-family:var(--mono);font-size:13px}
-  .ladder .flow b{color:var(--accent)}
-  .ladder .flow .ar{color:var(--faint)}
-  .honest{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
-  .honest .c{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
-  .honest h3{font-size:15px;margin:0 0 6px}
-  .honest p{font-size:14px;color:var(--muted);line-height:1.55;margin:0}
-  .p-cta{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,var(--gold-soft));padding:clamp(24px,4vw,36px);margin-top:26px}
-  .p-cta h2{font-size:clamp(24px,3vw,32px);margin:6px 0 0}
-  .p-cta p{color:var(--muted);margin:12px 0 18px;max-width:60ch}
-  @media(max-width:820px){.tiers{grid-template-columns:1fr}.honest{grid-template-columns:1fr}}
+  html,body{background:var(--bg,#fbfaff)}
+  .px{max-width:1140px;margin:0 auto;padding:0 24px}
+  [data-rv]{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  [data-rv].in{opacity:1;transform:none}
+  .p-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;padding:56px 0 26px}
+  .p-hero .eyebrow{font-family:var(--mono,monospace);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--c1,#4f46e5);margin:0 0 14px}
+  .p-hero h1{font-size:52px;line-height:1.02;letter-spacing:-.03em;font-weight:800;margin:0 0 16px}
+  .p-hero p{color:var(--muted,#55555f);font-size:18px;max-width:48ch;margin:0 0 24px}
+  .p-vis{display:flex;justify-content:center}
+  .p-vis img{max-width:88%;filter:drop-shadow(0 22px 34px rgba(49,32,120,.2))}
+  .lbl{font-family:var(--mono,monospace);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--c1,#4f46e5);margin:44px 0 20px}
+  /* ladder */
+  .ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+  .tier{background:#fff;border:1px solid rgba(20,18,45,.08);border-radius:20px;padding:28px 26px;box-shadow:0 12px 30px rgba(20,18,45,.05);transition:transform .18s,box-shadow .18s}
+  .tier:hover{transform:translateY(-4px);box-shadow:0 26px 50px rgba(79,70,229,.12)}
+  .tier.feat{outline:2px solid var(--c1,#4f46e5);outline-offset:-2px;position:relative}
+  .tier.feat::before{content:"Most start here";position:absolute;top:-11px;left:24px;background:var(--grad-1,linear-gradient(135deg,#4f46e5,#7c3aed));color:#fff;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:4px 12px;border-radius:999px}
+  .tier .step{font-family:var(--mono,monospace);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint,#8a8a95)}
+  .tier h3{font-size:20px;margin:10px 0 6px}
+  .tier .amt{font-size:34px;font-weight:800;letter-spacing:-.02em;margin:2px 0}
+  .tier .amt small{font-size:16px;font-weight:600;color:var(--muted)}
+  .tier .desc{color:var(--muted,#55555f);font-size:15px;line-height:1.5;margin:6px 0 16px}
+  .tier ul{list-style:none;margin:0 0 4px;padding:0}
+  .tier li{font-size:14.5px;color:var(--ink-2,#3a3a44);padding:7px 0 7px 26px;position:relative;border-top:1px solid rgba(20,18,45,.06)}
+  .tier li::before{content:"✓";position:absolute;left:0;color:var(--c1,#4f46e5);font-weight:700}
+  /* guarantee */
+  .guar{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:center;background:linear-gradient(135deg,#fff8ec,#f6f3ff);border:1px solid rgba(214,158,46,.25);border-radius:24px;padding:34px 34px}
+  .guar-vis{display:flex;justify-content:center}
+  .guar-vis img{max-height:210px;filter:drop-shadow(0 18px 28px rgba(180,130,20,.25))}
+  .guar h2{font-size:34px;letter-spacing:-.02em;margin:0 0 10px}
+  .guar h2 em{font-style:normal;background:linear-gradient(90deg,#d69e2e,#b7791f);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .guar p{color:var(--muted,#55555f);font-size:16.5px;line-height:1.55;margin:0}
+  /* factors */
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .fact{background:#fff;border:1px solid rgba(20,18,45,.08);border-radius:16px;padding:22px 22px}
+  .fact h4{margin:0 0 6px;font-size:16px}
+  .fact p{margin:0;color:var(--muted,#55555f);font-size:14px;line-height:1.5}
+  /* faq */
+  .faq{max-width:820px;margin:0 auto}
+  .qa{background:#fff;border:1px solid rgba(20,18,45,.08);border-radius:14px;margin-bottom:12px;overflow:hidden}
+  .qa button{width:100%;text-align:left;font:inherit;font-size:17px;font-weight:600;background:none;border:0;padding:18px 20px;cursor:pointer;display:flex;justify-content:space-between;gap:12px;align-items:center}
+  .qa .qa-a{max-height:0;overflow:hidden;transition:max-height .35s ease;color:var(--muted,#55555f);font-size:15.5px;line-height:1.6}
+  .qa .qa-a p{margin:0 20px 18px}
+  .qa.open .qa-a{max-height:240px}
+  .qa button .chev{transition:transform .25s;color:var(--c1,#4f46e5)}
+  .qa.open button .chev{transform:rotate(45deg)}
+  .cta-band{text-align:center;padding:66px 0 90px}
+  .cta-band h2{font-size:38px;letter-spacing:-.02em;margin:0 0 10px}
+  .cta-band p{color:var(--muted,#55555f);font-size:17px;margin:0 0 22px}
+  @media(max-width:820px){
+    .p-hero{grid-template-columns:1fr}.p-hero h1{font-size:34px}.p-vis{order:-1}
+    .ladder,.facts{grid-template-columns:1fr}.guar{grid-template-columns:1fr;text-align:center}
+    .cta-band h2{font-size:28px}
+  }
 </style>
 </head>
-<body id="top">
-<a class="skip-link" href="#main">Skip to content</a>
+<body>
 <header class="nav">
   <div class="wrap nav-in">
-    <a href="index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
-    <nav class="nav-links" aria-label="Primary"><a href="/method">How it works</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Proof <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/proof">Results<span class="desc">The numbers, honestly.</span></a><a role="menuitem" href="/case-studies">Case studies<span class="desc">One measured build.</span></a><a role="menuitem" href="/teardowns">Teardowns<span class="desc">Free AI build autopsy.</span></a></div></div><a href="/pricing">Pricing</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/score/">Score my AI<span class="desc">Good &mdash; or slop?</span></a><a role="menuitem" href="/free/">Free AI agent<span class="desc">Free, you own it.</span></a><a role="menuitem" href="/cost/">Cost estimator<span class="desc">What it costs to run.</span></a><a role="menuitem" href="/cost-of-inaction">Cost of inaction<span class="desc">The cost of waiting.</span></a><a role="menuitem" href="/build-buy-rent">Build vs buy?<span class="desc">Decision tree.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Resources <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/blog/">Field Notes<span class="desc">Notes from real builds.</span></a><a role="menuitem" href="/kb/">Knowledge Base<span class="desc">Reference &amp; how-tos.</span></a><a role="menuitem" href="/playbook">Playbook<span class="desc">Automation field guide.</span></a><a role="menuitem" href="/guide/">AI Guide<span class="desc">Beginner guide.</span></a><a role="menuitem" href="/learn/">Practice AI<span class="desc">Prompt builder.</span></a><a role="menuitem" href="/train/">Training<span class="desc">Learn by doing.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">About <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/about">Studio<span class="desc">The team behind DPR.</span></a><a role="menuitem" href="/slop">Why we exist<span class="desc">The anti-slop stance.</span></a><a role="menuitem" href="/own-it">You own it<span class="desc">Client-owned AI.</span></a><a role="menuitem" href="/investors">Investors<span class="desc">Funding &amp; network.</span></a></div></div></nav>
+    <a href="/" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="/method">How it works</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Proof <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/proof">Results<span class="desc">The numbers, honestly.</span></a><a role="menuitem" href="/case-studies">Case studies<span class="desc">One measured build.</span></a><a role="menuitem" href="/teardowns">Teardowns<span class="desc">Free AI build autopsy.</span></a></div></div><a href="/pricing">Pricing</a><a href="/services">Services</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/score/">Score my AI<span class="desc">Good &mdash; or slop?</span></a><a role="menuitem" href="/free/">Free AI agent<span class="desc">Free, you own it.</span></a><a role="menuitem" href="/cost/">Cost estimator<span class="desc">What it costs to run.</span></a><a role="menuitem" href="/build-buy-rent">Build vs buy?<span class="desc">Decision tree.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Resources <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/blog/">Field Notes<span class="desc">Notes from real builds.</span></a><a role="menuitem" href="/kb/">Knowledge Base<span class="desc">Reference &amp; how-tos.</span></a><a role="menuitem" href="/playbook">Playbook<span class="desc">Automation field guide.</span></a><a role="menuitem" href="/guide/">AI Guide<span class="desc">Beginner guide.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">About <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/about">Studio<span class="desc">The team behind DPR.</span></a><a role="menuitem" href="/slop">Why we exist<span class="desc">The anti-slop stance.</span></a><a role="menuitem" href="/own-it">You own it<span class="desc">Client-owned AI.</span></a><a role="menuitem" href="/investors">Investors<span class="desc">Funding &amp; network.</span></a></div></div></nav>
     <span class="nav-sp"></span>
-    <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Start a build</a></div>
+    <div class="nav-cta"><a href="/contact" class="btn btn-primary">Start a build</a></div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-  <div class="mobile-menu" id="mobileMenu"><a href="/method">How it works</a><a href="/pricing">Pricing</a><a href="/proof">Results</a><a href="/case-studies">Case studies</a><a href="/teardowns">Teardowns</a><a href="/score/">Score my AI</a><a href="/free/">Free AI agent</a><a href="/cost/">Cost estimator</a><a href="/cost-of-inaction">Cost of inaction</a><a href="/build-buy-rent">Build vs buy?</a><a href="/blog/">Field Notes</a><a href="/kb/">Knowledge Base</a><a href="/playbook">Playbook</a><a href="/guide/">AI Guide</a><a href="/learn/">Practice AI</a><a href="/train/">Training</a><a href="/about">About</a><a href="/slop">Why we exist</a><a href="/own-it">You own it</a><a href="/investors">Investors</a><a href="/contact">Start a build</a></div>
+  <div class="mobile-menu" id="mobileMenu"><a href="/method">How it works</a><a href="/proof">Results</a><a href="/case-studies">Case studies</a><a href="/teardowns">Teardowns</a><a href="/pricing">Pricing</a><a href="/services">Services</a><a href="/score/">Score my AI</a><a href="/free/">Free AI agent</a><a href="/cost/">Cost estimator</a><a href="/build-buy-rent">Build vs buy?</a><a href="/blog/">Field Notes</a><a href="/kb/">Knowledge Base</a><a href="/playbook">Playbook</a><a href="/guide/">AI Guide</a><a href="/about">About</a><a href="/slop">Why we exist</a><a href="/own-it">You own it</a><a href="/investors">Investors</a><a href="/contact">Start a build</a></div>
 </header>
 
-<main id="main">
-  <section class="page-hero" data-reveal>
-    <div class="wrap prose reveal">
-      <p class="eyebrow">Pricing</p>
-      <h1 style="margin-top:12px">Start small. Pay more only when it works.</h1>
-      <p class="lead" style="margin-top:16px;max-width:64ch">Three steps, and you decide how far to go. A cheap audit to find the win. A fixed-price build to make it real. A monthly retainer only if you want us to keep going. You own everything we build, and you can stop any time.</p>
+<section class="p-hero px">
+  <div>
+    <p class="eyebrow" data-rv>Pricing</p>
+    <h1 data-rv>Straight pricing. One&nbsp;number, before we start.</h1>
+    <p data-rv>A cheap audit to find the win. A fixed-price build to make it real. A retainer only if you want us to keep going. You own everything we build.</p>
+    <div data-rv><a href="/contact" class="btn btn-primary">Book the audit <span class="arrow" aria-hidden="true">→</span></a></div>
+  </div>
+  <div class="p-vis" data-rv><img src="assets/services/price-steps-cut.png?v=1" alt="Three-step pricing ladder"></div>
+</section>
+
+<section class="px">
+  <p class="lbl" data-rv>Three steps. You decide how far to go.</p>
+  <div class="ladder">
+    <div class="tier" data-rv>
+      <div class="step">Step 1 · Land</div>
+      <h3>Opportunity Audit</h3>
+      <div class="amt">$2,500</div>
+      <p class="desc">Find the one workflow worth automating — and the number to move. Fee credits toward your build.</p>
+      <ul>
+        <li>Workflow &amp; data review</li>
+        <li>The one metric to move</li>
+        <li>A written scorecard + fixed quote</li>
+      </ul>
     </div>
-  </section>
-
-  <section class="sec" style="padding-top:8px" data-reveal>
-    <div class="wrap reveal">
-      <div class="tiers" data-stagger>
-
-        <div class="tier">
-          <span class="step">Step 1 · Land</span>
-          <h2>AI Audit</h2>
-          <div class="price">$500–$2,500</div>
-          <div class="per">one-time, fixed fee</div>
-          <p class="lede">Find the one workflow worth automating. Before anyone builds anything.</p>
-          <ul>
-            <li>We map your workflows and where AI actually pays off</li>
-            <li>A written scorecard: the first thing to fix, and the number it should move</li>
-            <li>A rough build cost, so there are no surprises</li>
-            <li>A straight go/no-go. Sometimes it's "don't build yet"</li>
-          </ul>
-          <p class="who">Best if you're not sure where to start. The fee credits toward a build if you go ahead.</p>
-          <a href="contact.html" class="btn btn-ghost">Book an audit</a>
-        </div>
-
-        <div class="tier feature">
-          <span class="step">Step 2 · Build</span>
-          <h2>Build sprint</h2>
-          <div class="price">$3,000–$15,000</div>
-          <div class="per">fixed price, fixed scope</div>
-          <p class="lede">One workflow, built into your systems and handed over. You own it.</p>
-          <ul>
-            <li>We agree one honest number up front, then build to move it</li>
-            <li>It runs on your accounts, wired into the tools you already use</li>
-            <li>You get the code, the keys, and the docs. No lock-in</li>
-            <li>A before/after scorecard proves it worked</li>
-          </ul>
-          <p class="who">Price tracks scope: a clean single workflow near $3k; an integrated or compliance-heavy build up to $15k.</p>
-          <a href="contact.html" class="btn btn-primary">Scope a build</a>
-        </div>
-
-        <div class="tier">
-          <span class="step">Step 3 · Keep</span>
-          <h2>Monthly retainer</h2>
-          <div class="price">$2,000–$10,000+</div>
-          <div class="per">per month, cancel any time</div>
-          <p class="lede">Keep it working. Build the next one. Only if you want us to stay.</p>
-          <ul>
-            <li>We watch it and fix it as your data shifts</li>
-            <li>We keep it current as the AI models change underneath</li>
-            <li>We build your next workflow on the same terms</li>
-            <li>Cancel any time. You keep everything</li>
-          </ul>
-          <p class="who">Light monitoring starts near $2k. Active build across several systems runs $10k and up.</p>
-          <a href="contact.html" class="btn btn-ghost">Talk retainer</a>
-        </div>
-
-      </div>
-
-      <div class="ladder reveal">
-        <h2>How the three fit together</h2>
-        <p style="color:var(--muted);max-width:70ch;margin:8px 0 0">Each step earns the next. The audit tells you whether a build is even worth it. The build proves it on a real number before you commit further. The retainer is optional, and it's month to month. You never buy the next step on faith.</p>
-        <div class="flow"><b>Audit</b> <span class="ar">→</span> <b>Build sprint</b> <span class="ar">→</span> <b>Retainer</b> <span class="ar">(optional)</span></div>
-      </div>
-
-      <div class="honest">
-        <div class="c"><h3>You own it</h3><p>Code, keys, docs, all of it. Fire us on a Friday and your team can run it Monday. That's the point.</p></div>
-        <div class="c"><h3>The guarantee</h3><p>We agree the number before we build. If a build doesn't move it, you don't pay the final invoice, and you keep the code.</p></div>
-        <div class="c"><h3>Fixed, not hourly</h3><p>Every price here is a fixed fee for a defined piece of work. No open meter, no "strategic learnings" invoice.</p></div>
-        <div class="c"><h3>We'll say no</h3><p>If a script would do the job, or your data isn't ready, we'll tell you. An honest no is cheaper than a bad build.</p></div>
-      </div>
-
-      <div class="p-cta reveal">
-        <p class="eyebrow">Get started</p>
-        <h2>Not sure which step you're on?</h2>
-        <p>Tell us the task your team dreads most. We'll reply within one business day with the number we'd aim to move and which step makes sense first.</p>
-        <a href="contact.html" class="btn btn-primary">Start with an audit <span class="arrow" aria-hidden="true">→</span></a>
-        <a href="method.html" class="btn btn-ghost">See how a build works</a>
-      </div>
-
+    <div class="tier feat" data-rv>
+      <div class="step">Step 2 · Build</div>
+      <h3>Fixed-Price Build</h3>
+      <div class="amt">$8k–$25k</div>
+      <p class="desc">One workflow, built into your systems, handed over. Multi-agent / compliance-heavy from $25k+.</p>
+      <ul>
+        <li>Fixed price, fixed scope</li>
+        <li>Built into your tools &amp; repos</li>
+        <li>Code, weights &amp; evals — yours</li>
+        <li>+$2,500 per extra workflow</li>
+      </ul>
     </div>
-  </section>
-</main>
+    <div class="tier" data-rv>
+      <div class="step">Step 3 · Keep</div>
+      <h3>Monthly Retainer</h3>
+      <div class="amt">$2k–$8k<small>/mo</small></div>
+      <p class="desc">Optional. Keep it running, keep it current, build the next one. Cancel any time.</p>
+      <ul>
+        <li>Monitoring &amp; upkeep</li>
+        <li>New workflows &amp; tuning</li>
+        <li>No lock-in, cancel anytime</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="pricing.html">Pricing</a><a href="case-studies.html">Case studies</a><a href="about.html">About</a></div><div class="foot-col"><h4>Learn</h4><a href="free/">Free tools</a><a href="score/">Score my AI</a><a href="guide/index.html">Learn AI</a><a href="kb/index.html">Knowledge Base</a><a href="blog/index.html">Field Notes</a><a href="news/index.html">News</a></div><div class="foot-col"><h4>Get started</h4><a href="contact.html">Start a build</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+<section class="px" style="margin-top:44px">
+  <div class="guar" data-rv>
+    <div class="guar-vis"><img src="assets/services/guarantee-cut.png?v=1" alt="Guarantee shield"></div>
+    <div>
+      <h2>Miss the number? <em>You pay $0.</em></h2>
+      <p>We agree the number before we write a line of code. If the first build doesn't move it, you don't pay the fee — and you keep everything we built. The risk sits with us, not you.</p>
+    </div>
+  </div>
+</section>
+
+<section class="px">
+  <p class="lbl" data-rv>What moves the price</p>
+  <div class="facts">
+    <div class="fact" data-rv><h4>Complexity</h4><p>A single clean workflow lands near the floor. Multi-step agents and custom models cost more.</p></div>
+    <div class="fact" data-rv><h4>Integrations</h4><p>Wiring into more of your tools, data sources, and systems adds scope.</p></div>
+    <div class="fact" data-rv><h4>Compliance</h4><p>Regulated or security-heavy builds add roughly 20–30% for the extra rigor.</p></div>
+  </div>
+</section>
+
+<section class="px" style="margin-top:20px">
+  <p class="lbl" data-rv>Straight answers</p>
+  <div class="faq">
+    <div class="qa" data-rv><button type="button">Do you really refund if it doesn't work? <span class="chev">+</span></button><div class="qa-a"><p>Yes. We agree one number up front, in writing. If the first build doesn't move it, you don't pay the build fee — and you keep the code we wrote.</p></div></div>
+    <div class="qa" data-rv><button type="button">Who owns what you build? <span class="chev">+</span></button><div class="qa-a"><p>You do — fully. Code, weights, prompts, evals, docs, and the deploy path go to your team on day done. No license to renew, no seat to rent.</p></div></div>
+    <div class="qa" data-rv><button type="button">What's not included? <span class="chev">+</span></button><div class="qa-a"><p>Your own model/API usage (you run it on your keys) and third-party tool costs. We tell you the expected run cost up front — no surprises.</p></div></div>
+    <div class="qa" data-rv><button type="button">How long does a build take? <span class="chev">+</span></button><div class="qa-a"><p>Most builds ship in weeks, not quarters. The audit gives you a firm timeline with the fixed quote before you commit.</p></div></div>
+    <div class="qa" data-rv><button type="button">Do I have to sign a retainer? <span class="chev">+</span></button><div class="qa-a"><p>No. The retainer is optional and cancel-anytime. Plenty of clients take the build, own it, and run it themselves.</p></div></div>
+  </div>
+</section>
+
+<section class="cta-band px">
+  <h2 data-rv>Start with the $2,500 audit.</h2>
+  <p data-rv>We'll find the workflow worth automating and quote one number to move it.</p>
+  <div data-rv><a href="/contact" class="btn btn-primary">Book the audit <span class="arrow" aria-hidden="true">→</span></a></div>
+</section>
+
 <script src="site.js?v=13" defer></script>
-<script src="assets/anim.js?v=10" defer></script>
+<script>
+(function(){
+  document.querySelectorAll('.qa button').forEach(function(b){ b.addEventListener('click', function(){ b.closest('.qa').classList.toggle('open'); }); });
+  function reveal(){
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+      document.querySelectorAll('[data-rv]').forEach(function(el){io.observe(el);});
+    } else { document.querySelectorAll('[data-rv]').forEach(function(el){el.classList.add('in');}); }
+  }
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){ document.querySelectorAll('[data-rv]').forEach(function(el){el.classList.add('in');}); } else { reveal(); }
+})();
+</script>
 </body>
 </html>
