@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>What we build — DPR AI</title>
+<link rel="stylesheet" href="site.css?v=15">
+<style>
+  html,body{background:var(--bg,#fbfaff)}
+  .px{max-width:1140px;margin:0 auto;padding:0 24px}
+  /* hero */
+  .sv-hero{padding:66px 0 30px;text-align:center}
+  .sv-hero .eyebrow{font-family:var(--mono,monospace);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--c1,#4f46e5);margin:0 0 14px}
+  .sv-hero h1{font-size:52px;line-height:1.02;letter-spacing:-.03em;font-weight:800;margin:0 auto 16px;max-width:16ch}
+  .sv-hero p{color:var(--muted,#55555f);font-size:19px;max-width:56ch;margin:0 auto 26px}
+  .sv-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  /* reveal */
+  [data-rv]{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  [data-rv].in{opacity:1;transform:none}
+  /* services */
+  .sv-sec{padding:40px 0}
+  .sv-label{font-family:var(--mono,monospace);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--c1,#4f46e5);margin:0 0 20px}
+  .sv-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .sv-card{position:relative;background:#fff;border:1px solid rgba(20,18,45,.08);border-radius:20px;padding:16px 16px 22px;box-shadow:0 1px 2px rgba(20,18,45,.04),0 14px 32px rgba(20,18,45,.05);transition:transform .18s,box-shadow .18s}
+  .sv-card:hover{transform:translateY(-4px);box-shadow:0 26px 50px rgba(79,70,229,.13)}
+  .sv-visual{height:190px;border-radius:15px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .sv-card:nth-child(1) .sv-visual{background:radial-gradient(circle at 50% 42%,rgba(124,58,237,.16),transparent 72%)}
+  .sv-card:nth-child(2) .sv-visual{background:radial-gradient(circle at 50% 42%,rgba(6,182,212,.18),transparent 72%)}
+  .sv-card:nth-child(3) .sv-visual{background:radial-gradient(circle at 50% 42%,rgba(236,72,153,.16),transparent 72%)}
+  .sv-card:nth-child(4) .sv-visual{background:radial-gradient(circle at 50% 42%,rgba(16,185,129,.17),transparent 72%)}
+  .sv-visual img{max-height:80%;max-width:78%;object-fit:contain;filter:drop-shadow(0 14px 22px rgba(30,20,70,.18));transition:transform .3s}
+  .sv-card:hover .sv-visual img{transform:scale(1.06) translateY(-4px)}
+  .sv-in{padding:0 12px}
+  .sv-in h3{font-size:21px;margin:0 0 7px;letter-spacing:-.01em}
+  .sv-in p{color:var(--muted,#55555f);font-size:15.5px;line-height:1.5;margin:0 0 14px}
+  .sv-more{max-height:0;overflow:hidden;transition:max-height .4s ease}
+  .sv-card.open .sv-more{max-height:340px}
+  .sv-more ul{margin:6px 0 14px;padding-left:18px}
+  .sv-more li{font-size:14.5px;color:var(--ink-2,#3a3a44);margin:5px 0;line-height:1.45}
+  .sv-who{font-size:13px;color:var(--faint,#8a8a95);margin:0 0 12px}
+  .sv-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .sv-tag{font-family:var(--mono,monospace);font-size:12px;letter-spacing:.03em;color:var(--faint,#8a8a95);text-transform:uppercase}
+  .sv-toggle{font:inherit;font-size:13.5px;font-weight:600;color:var(--c1,#4f46e5);background:rgba(79,70,229,.08);border:0;border-radius:999px;padding:7px 14px;cursor:pointer;transition:background .15s}
+  .sv-toggle:hover{background:rgba(79,70,229,.15)}
+  .sv-card.open .sv-toggle .t-txt::after{content:" ✕"}
+  .sv-card:not(.open) .sv-toggle .t-txt::after{content:" +"}
+  /* stepper */
+  .step-wrap{background:linear-gradient(135deg,#f6f5ff,#eef7ff);border:1px solid rgba(79,70,229,.1);border-radius:24px;padding:34px 30px}
+  .step-dots{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+  .step-dot{flex:1;min-width:130px;text-align:left;background:#fff;border:1px solid rgba(20,18,45,.08);border-radius:12px;padding:12px 14px;cursor:pointer;transition:all .18s}
+  .step-dot .n{font-family:var(--mono,monospace);font-size:11px;color:var(--faint,#8a8a95)}
+  .step-dot .l{font-size:14.5px;font-weight:600;margin-top:2px}
+  .step-dot.on{background:var(--grad-1,linear-gradient(135deg,#4f46e5,#7c3aed));border-color:transparent}
+  .step-dot.on .n,.step-dot.on .l{color:#fff}
+  .step-panel{background:#fff;border-radius:16px;padding:26px 28px;min-height:120px}
+  .step-panel h4{margin:0 0 8px;font-size:22px}
+  .step-panel p{margin:0;color:var(--muted,#55555f);font-size:16px;line-height:1.55}
+  .step-panel .deliver{margin-top:14px;font-family:var(--mono,monospace);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--c1,#4f46e5)}
+  /* pricing */
+  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .price-card{background:#fff;border:1px solid rgba(20,18,45,.08);border-radius:18px;padding:26px 24px;box-shadow:0 12px 30px rgba(20,18,45,.05)}
+  .price-card.feat{border-color:transparent;box-shadow:0 20px 44px rgba(79,70,229,.16);outline:2px solid var(--c1,#4f46e5)}
+  .price-card .pk{font-family:var(--mono,monospace);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint,#8a8a95)}
+  .price-card .pv{font-size:30px;font-weight:800;letter-spacing:-.02em;margin:8px 0 4px}
+  .price-card .pd{color:var(--muted,#55555f);font-size:14.5px;line-height:1.5}
+  /* deal + cta */
+  .deal{margin-top:28px;background:linear-gradient(120deg,#4f46e5,#7c3aed,#06b6d4);border-radius:20px;padding:28px 32px;color:#fff;display:flex;flex-wrap:wrap;align-items:center;gap:12px 26px;justify-content:space-between}
+  .deal b{font-weight:700}.deal .terms{font-size:16px;font-weight:600}
+  .cta-band{text-align:center;padding:70px 0 90px}
+  .cta-band h2{font-size:38px;letter-spacing:-.02em;margin:0 0 10px}
+  .cta-band p{color:var(--muted,#55555f);font-size:17px;margin:0 0 22px}
+  @media(max-width:800px){
+    .sv-hero h1{font-size:34px}.sv-grid,.price-grid{grid-template-columns:1fr}
+    .cta-band h2{font-size:28px}.deal{flex-direction:column;align-items:flex-start}
+  }
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="/" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/method">How it works</a>
+      <a href="/proof">Proof</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/services" aria-current="page">Services</a>
+      <a href="/about">About</a>
+    </nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="/contact" class="btn btn-primary">Start a build</a></div>
+  </div>
+</header>
+
+<section class="sv-hero px">
+  <p class="eyebrow" data-rv>What we build</p>
+  <h1 data-rv>AI that does the work. Built in code. Yours to keep.</h1>
+  <p data-rv>Custom agents and automations — not a subscription to someone else's AI. Pick the problem; we build the system, hand you the keys, and price it on one number.</p>
+  <div class="sv-cta" data-rv>
+    <a href="/contact" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a>
+    <a href="#pricing" class="btn btn-ghost">See pricing</a>
+  </div>
+</section>
+
+<section class="sv-sec px">
+  <p class="sv-label" data-rv>Four things we build</p>
+  <div class="sv-grid">
+    <div class="sv-card" data-rv>
+      <div class="sv-visual"><img src="assets/services/sales-agents-cut.png?v=1" alt="AI sales and marketing agents"></div>
+      <div class="sv-in">
+        <h3>AI Sales &amp; Marketing Agents</h3>
+        <p>Finds leads, writes the outreach, follows up, books meetings — straight into your CRM.</p>
+        <div class="sv-more">
+          <ul>
+            <li>Lead research + enrichment across web, LinkedIn, your data</li>
+            <li>Personalized outreach across email + inbox, with follow-ups</li>
+            <li>Meeting booking + CRM logging, no manual copy-paste</li>
+            <li>Marketing that ships on-brand content and runs campaigns</li>
+          </ul>
+          <p class="sv-who">Best for: teams that want pipeline without linear hiring.</p>
+        </div>
+        <div class="sv-foot">
+          <span class="sv-tag">From $12k · then $2k–$5k/mo</span>
+          <button class="sv-toggle" type="button"><span class="t-txt">Details</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sv-card" data-rv>
+      <div class="sv-visual"><img src="assets/services/automations-cut.png?v=1" alt="Workflow and ops automations"></div>
+      <div class="sv-in">
+        <h3>Workflow &amp; Ops Automations</h3>
+        <p>Automates the steps that drain hours. You scale with code, not headcount.</p>
+        <div class="sv-more">
+          <ul>
+            <li>We map the process, then automate the hour-draining steps</li>
+            <li>Ticket triage, data entry, approvals, tool-to-tool handoffs</li>
+            <li>Runs inside your existing stack — no rip-and-replace</li>
+            <li>Retries, fallbacks, and logging so it holds up in production</li>
+          </ul>
+          <p class="sv-who">Best for: any team buried in manual busywork.</p>
+        </div>
+        <div class="sv-foot">
+          <span class="sv-tag">From $8k · then $2k–$5k/mo</span>
+          <button class="sv-toggle" type="button"><span class="t-txt">Details</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sv-card" data-rv>
+      <div class="sv-visual"><img src="assets/services/multi-agent-cut.png?v=1" alt="Multi-agent systems"></div>
+      <div class="sv-in">
+        <h3>Multi-Agent Systems</h3>
+        <p>A team of agents for the complex jobs — auto where it's routine, you approve where it counts.</p>
+        <div class="sv-more">
+          <ul>
+            <li>Specialist agents split the work: research → write → check</li>
+            <li>Full-auto on routine steps, approval gates where it matters</li>
+            <li>Shared memory — new runs start where the last left off</li>
+            <li>Built for work that's too complex for a single bot</li>
+          </ul>
+          <p class="sv-who">Best for: multi-step workflows that a single prompt can't handle.</p>
+        </div>
+        <div class="sv-foot">
+          <span class="sv-tag">From $25k · then $3k–$8k/mo</span>
+          <button class="sv-toggle" type="button"><span class="t-txt">Details</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sv-card" data-rv>
+      <div class="sv-visual"><img src="assets/services/pipelines-cut.png?v=1" alt="Custom AI pipelines"></div>
+      <div class="sv-in">
+        <h3>Custom AI Pipelines</h3>
+        <p>Your data and docs wired into one system that answers and acts — with evals from day one.</p>
+        <div class="sv-more">
+          <ul>
+            <li>Your documents, data, and models in one retrieval system (RAG)</li>
+            <li>Answers and acts on your knowledge, not the public internet</li>
+            <li>Evals from day one so quality is measured, not hoped for</li>
+            <li>Owned model boundary — swap providers without a rebuild</li>
+          </ul>
+          <p class="sv-who">Best for: knowledge-heavy or regulated operations.</p>
+        </div>
+        <div class="sv-foot">
+          <span class="sv-tag">From $12k · then $2k–$6k/mo</span>
+          <button class="sv-toggle" type="button"><span class="t-txt">Details</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sv-sec px">
+  <p class="sv-label" data-rv>How every build runs</p>
+  <div class="step-wrap" data-rv>
+    <div class="step-dots" id="stepDots"></div>
+    <div class="step-panel" id="stepPanel"></div>
+  </div>
+</section>
+
+<section class="sv-sec px" id="pricing">
+  <p class="sv-label" data-rv>Straight pricing</p>
+  <div class="price-grid">
+    <div class="price-card" data-rv><div class="pk">Step 1 · Land</div><div class="pv">$2,500</div><div class="pd">Opportunity Audit — find the one workflow and the number to move. Credited to your build.</div></div>
+    <div class="price-card feat" data-rv><div class="pk">Step 2 · Build</div><div class="pv">$8k–$25k</div><div class="pd">Fixed-price build, fixed scope, you own it. Multi-agent / compliance from $25k+.</div></div>
+    <div class="price-card" data-rv><div class="pk">Step 3 · Keep</div><div class="pv">$2k–$8k<span style="font-size:16px">/mo</span></div><div class="pd">Optional retainer — keep it running, build the next. Cancel any time.</div></div>
+  </div>
+  <div class="deal" data-rv>
+    <div class="terms">One number up front · fixed price · <b>you own the code &amp; keys</b> · miss the number → no fee.</div>
+    <a href="/contact" class="btn" style="background:#fff;color:#4f46e5;font-weight:700">Start with the audit →</a>
+  </div>
+</section>
+
+<section class="cta-band px">
+  <h2 data-rv>Tell us one task your team dreads.</h2>
+  <p data-rv>We'll tell you if AI can move it — and quote one number to do it.</p>
+  <div data-rv><a href="/contact" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a></div>
+</section>
+
+<script>
+(function(){
+  // expandable service cards
+  document.querySelectorAll('.sv-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){ btn.closest('.sv-card').classList.toggle('open'); });
+  });
+  // interactive build stepper
+  var steps = [
+    {n:'01', l:'The number', h:'One number, agreed before code.', p:'We set a single metric that decides whether the build worked — chosen with you, in writing, before anyone writes a line of code.', d:'Deliverable: a signed metric contract'},
+    {n:'02', l:'Baseline', h:'Measure where it starts.', p:'We measure today\u2019s number from your real data, so the before/after is honest and yours to re-check.', d:'Deliverable: a baseline from your data'},
+    {n:'03', l:'Build inside', h:'Into your tools, not a demo.', p:'We build the agent or automation directly into your systems and repos — production from the start, not a slide.', d:'Deliverable: working system in your stack'},
+    {n:'04', l:'Evals', h:'Tests that prove it works.', p:'We write evaluations that check quality on real cases and keep checking as models change underneath.', d:'Deliverable: an owned eval suite'},
+    {n:'05', l:'Handover', h:'You own everything.', p:'Code, weights, prompts, evals, docs, and the deploy path go to your team. No license to renew, no seat to rent.', d:'Deliverable: full ownership transfer'},
+    {n:'06', l:'Proof', h:'The number, checked.', p:'A short report with the baseline, the sample, the misses, and the moved number — evidence you can verify.', d:'Deliverable: an evidence report'}
+  ];
+  var dots = document.getElementById('stepDots'), panel = document.getElementById('stepPanel');
+  function render(i){
+    dots.querySelectorAll('.step-dot').forEach(function(d,j){ d.classList.toggle('on', j===i); });
+    var s = steps[i];
+    panel.innerHTML = '<h4>'+s.h+'</h4><p>'+s.p+'</p><div class="deliver">'+s.d+'</div>';
+  }
+  steps.forEach(function(s,i){
+    var el = document.createElement('button'); el.type='button'; el.className='step-dot';
+    el.innerHTML = '<div class="n">'+s.n+'</div><div class="l">'+s.l+'</div>';
+    el.addEventListener('click', function(){ render(i); });
+    el.addEventListener('mouseenter', function(){ render(i); });
+    dots.appendChild(el);
+  });
+  render(0);
+  // scroll reveal
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {threshold:.12});
+    document.querySelectorAll('[data-rv]').forEach(function(el){ io.observe(el); });
+  } else { document.querySelectorAll('[data-rv]').forEach(function(el){ el.classList.add('in'); }); }
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){ document.querySelectorAll('[data-rv]').forEach(function(el){ el.classList.add('in'); }); }
+})();
+</script>
+</body>
+</html>
