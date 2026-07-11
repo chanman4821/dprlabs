@@ -17,3 +17,4 @@ Disallow: /home-preview.html
 Disallow: /docs/
 Disallow: /pricing-preview.html
 Disallow: /method-preview.html
+Disallow: /proof-preview.html

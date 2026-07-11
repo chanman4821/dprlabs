@@ -25,6 +25,29 @@
       b.addEventListener('click', function () { b.closest('.qa').classList.toggle('open'); });
     });
 
+    // animated counters ([data-count-to])
+    var counters = document.querySelectorAll('[data-count-to]');
+    function animateCount(el) {
+      var raw = el.getAttribute('data-count-to'), target = parseFloat(raw), dec = raw.indexOf('.') > -1 ? 1 : 0,
+          dur = 1100, t0 = null;
+      function tick(ts) {
+        if (!t0) t0 = ts; var k = Math.min(1, (ts - t0) / dur), e = k * (2 - k);
+        el.textContent = (target * e).toFixed(dec);
+        if (k < 1) requestAnimationFrame(tick); else el.textContent = target.toFixed(dec);
+      }
+      requestAnimationFrame(tick);
+    }
+    if (counters.length) {
+      if (reduce || !('IntersectionObserver' in window)) {
+        counters.forEach(function (el) { el.textContent = el.getAttribute('data-count-to'); });
+      } else {
+        var cio = new IntersectionObserver(function (es) {
+          es.forEach(function (e) { if (e.isIntersecting) { animateCount(e.target); cio.unobserve(e.target); } });
+        }, { threshold: .5 });
+        counters.forEach(function (el) { cio.observe(el); });
+      }
+    }
+
     // data-driven stepper: needs #stepDots, #stepPanel and a JSON <script id="stepData">
     var dots = document.getElementById('stepDots'), panel = document.getElementById('stepPanel'),
         data = document.getElementById('stepData');
