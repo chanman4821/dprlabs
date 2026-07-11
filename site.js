@@ -135,16 +135,40 @@
   });
 })();
 
-/* Learn dropdown (desktop nav) */
+/* Nav dropdowns (desktop) — supports multiple dropdowns + current-page highlight */
 (function(){
-  var btn=document.getElementById('learnBtn'), menu=document.getElementById('learnMenu');
-  if(!btn||!menu) return;
-  function open(){menu.classList.add('open');btn.setAttribute('aria-expanded','true');}
-  function close(){menu.classList.remove('open');btn.setAttribute('aria-expanded','false');}
-  btn.addEventListener('click',function(e){e.stopPropagation();(btn.getAttribute('aria-expanded')==='true')?close():open();});
-  document.addEventListener('click',function(e){if(!e.target.closest('.learn'))close();});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
-  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+  var dropdowns = Array.prototype.slice.call(document.querySelectorAll('.nav-links .learn'));
+  function closeAll(except){
+    dropdowns.forEach(function(d){
+      var m=d.querySelector('.learn-menu'), b=d.querySelector('.learn-trigger');
+      if(m && m!==except){ m.classList.remove('open'); if(b) b.setAttribute('aria-expanded','false'); }
+    });
+  }
+  dropdowns.forEach(function(d){
+    var btn=d.querySelector('.learn-trigger'), menu=d.querySelector('.learn-menu');
+    if(!btn||!menu) return;
+    function open(){ closeAll(menu); menu.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    function close(){ menu.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+    btn.addEventListener('click',function(e){e.stopPropagation();(btn.getAttribute('aria-expanded')==='true')?close():open();});
+    d.addEventListener('mouseenter',open);
+    d.addEventListener('mouseleave',close);
+    menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){closeAll(null);});});
+  });
+  document.addEventListener('click',function(e){if(!e.target.closest('.nav-links .learn'))closeAll(null);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll(null);});
+
+  /* mark the current page in the nav (top-level links + dropdown items) */
+  try{
+    var here=location.pathname.replace(/\/index\.html$/,'/').replace(/\.html$/,'');
+    if(here.length>1) here=here.replace(/\/$/,'');
+    document.querySelectorAll('.nav-links a[href], .mobile-menu a[href]').forEach(function(a){
+      var href=a.getAttribute('href')||'';
+      if(!href || href.charAt(0)==='#' || /^https?:/.test(href)) return;
+      var norm=href.replace(/\/index\.html$/,'/').replace(/\.html$/,'');
+      if(norm.length>1) norm=norm.replace(/\/$/,'');
+      if(norm===here){ a.setAttribute('aria-current','page'); a.closest('.learn') && a.closest('.learn').querySelector('.learn-trigger') && a.closest('.learn').querySelector('.learn-trigger').classList.add('on'); }
+    });
+  }catch(e){}
 })();
 
 /* ── Lead capture + investor nav + caret polish (DPR, site-wide) ──────
@@ -169,19 +193,8 @@ window.DPR_FORM_ENDPOINT = window.DPR_FORM_ENDPOINT || 'https://formspree.io/f/Y
     return Promise.resolve(false);
   };
 
-  // Investors nav item (desktop + mobile), inserted before About
-  var nav = document.querySelector('.nav-links');
-  if(nav && !nav.querySelector('[data-ir]')){
-    var about = nav.querySelector('a[href$="about.html"]');
-    var a = document.createElement('a'); a.href='/dataroom.html'; a.textContent='Investors'; a.setAttribute('data-ir','');
-    about ? nav.insertBefore(a, about) : nav.appendChild(a);
-  }
-  var mm = document.getElementById('mobileMenu');
-  if(mm && !mm.querySelector('[data-ir]')){
-    var lastM = mm.querySelector('a[href$="contact.html"]');
-    var a2 = document.createElement('a'); a2.href='/dataroom.html'; a2.textContent='Investors'; a2.setAttribute('data-ir','');
-    lastM ? mm.insertBefore(a2, lastM) : mm.appendChild(a2);
-  }
+  // (removed legacy Investors nav injection — the new nav includes Investors in the
+  //  About dropdown, and the data room lives in the footer per the IA.)
 
   // swap the ▾ caret glyph for a clean chevron
   Array.prototype.forEach.call(document.querySelectorAll('.caret'), function(c){

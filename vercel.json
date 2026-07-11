@@ -1,4 +1,5 @@
 {
+  "cleanUrls": true,
   "redirects": [
     { "source": "/rainbow-blocks.html", "destination": "/", "permanent": true },
     { "source": "/rainbow-mesh-brain.html", "destination": "/", "permanent": true },
@@ -8,8 +9,31 @@
     { "source": "/design-language.html", "destination": "/", "permanent": true },
     { "source": "/brain-test.html", "destination": "/", "permanent": true },
     { "source": "/brand-guide/:path*", "destination": "/", "permanent": true },
-    { "source": "/design/previews/:path*", "destination": "/", "permanent": true }
+    { "source": "/design/previews/:path*", "destination": "/", "permanent": true },
+
+    { "source": "/pilot", "destination": "/contact", "permanent": true },
+    { "source": "/pilot.html", "destination": "/contact", "permanent": true },
+    { "source": "/pilot-scoping-guide", "destination": "/contact", "permanent": true },
+    { "source": "/pilot-scoping-guide.html", "destination": "/contact", "permanent": true },
+    { "source": "/blog/two-week-pilot", "destination": "/contact", "permanent": true },
+    { "source": "/blog/two-week-pilot.html", "destination": "/contact", "permanent": true },
+    { "source": "/blog/buy-build-or-pilot", "destination": "/contact", "permanent": true },
+    { "source": "/blog/buy-build-or-pilot.html", "destination": "/contact", "permanent": true },
+    { "source": "/dataroom/dpr-deck", "destination": "/dataroom/deck-dpr", "permanent": true },
+    { "source": "/dataroom/dpr-deck/", "destination": "/dataroom/deck-dpr", "permanent": true },
+    { "source": "/dataroom/dpr-deck/index.html", "destination": "/dataroom/deck-dpr", "permanent": true },
+    { "source": "/what-investors-screen", "destination": "/blog/what-investors-want", "permanent": true },
+    { "source": "/what-investors-screen.html", "destination": "/blog/what-investors-want", "permanent": true }
   ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}
   "headers": [
     {
       "source": "/(.*)",

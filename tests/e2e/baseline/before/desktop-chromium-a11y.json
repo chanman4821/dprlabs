@@ -65,9 +65,9 @@
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#c57f81",
-                "bgColor": "#fcf7f9",
-                "contrastRatio": 2.94,
+                "fgColor": "#b76061",
+                "bgColor": "#fdf6f7",
+                "contrastRatio": 4.05,
                 "fontSize": "9.0pt (12px)",
                 "fontWeight": "normal",
                 "messageKey": null,
@@ -82,7 +82,7 @@
                 }
               ],
               "impact": "serious",
-              "message": "Element has insufficient color contrast of 2.94 (foreground color: #c57f81, background color: #fcf7f9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              "message": "Element has insufficient color contrast of 4.05 (foreground color: #b76061, background color: #fdf6f7, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           ],
           "all": [],
@@ -92,16 +92,16 @@
           "target": [
             ".agvs-tag-bad"
           ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.94 (foreground color: #c57f81, background color: #fcf7f9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #b76061, background color: #fdf6f7, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
         },
         {
           "any": [
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#abaeb6",
-                "bgColor": "#fdfdff",
-                "contrastRatio": 2.18,
+                "fgColor": "#979aa3",
+                "bgColor": "#fefeff",
+                "contrastRatio": 2.79,
                 "fontSize": "9.8pt (13px)",
                 "fontWeight": "normal",
                 "messageKey": null,
@@ -116,7 +116,7 @@
                 }
               ],
               "impact": "serious",
-              "message": "Element has insufficient color contrast of 2.18 (foreground color: #abaeb6, background color: #fdfdff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+              "message": "Element has insufficient color contrast of 2.79 (foreground color: #979aa3, background color: #fefeff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           ],
           "all": [],
@@ -126,16 +126,16 @@
           "target": [
             ".agvs-vs"
           ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.18 (foreground color: #abaeb6, background color: #fdfdff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #979aa3, background color: #fefeff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
         },
         {
           "any": [
             {
               "id": "color-contrast",
               "data": {
-                "fgColor": "#6da491",
-                "bgColor": "#f6fbfa",
-                "contrastRatio": 2.72,
+                "fgColor": "#4a8e75",
+                "bgColor": "#f4fbf8",
+                "contrastRatio": 3.69,
                 "fontSize": "9.0pt (12px)",
                 "fontWeight": "normal",
                 "messageKey": null,
@@ -150,7 +150,7 @@
                 }
               ],
               "impact": "serious",
-              "message": "Element has insufficient color contrast of 2.72 (foreground color: #6da491, background color: #f6fbfa, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+              "message": "Element has insufficient color contrast of 3.69 (foreground color: #4a8e75, background color: #f4fbf8, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           ],
           "all": [],
@@ -160,279 +160,7 @@
           "target": [
             ".agvs-tag-good"
           ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.72 (foreground color: #6da491, background color: #f6fbfa, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#878a90",
-                "bgColor": "#fdfdff",
-                "contrastRatio": 3.4,
-                "fontSize": "10.5pt (14px)",
-                "fontWeight": "normal",
-                "messageKey": null,
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<button type=\"button\" data-v=\"1\" aria-pressed=\"false\">Yes</button>",
-                  "target": [
-                    ".qrow[data-q=\"\"]:nth-child(2) > .yn > button[data-v=\"1\"][type=\"button\"]"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<button type=\"button\" data-v=\"1\" aria-pressed=\"false\">Yes</button>",
-          "target": [
-            ".qrow[data-q=\"\"]:nth-child(2) > .yn > button[data-v=\"1\"][type=\"button\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#878a90",
-                "bgColor": "#fdfdff",
-                "contrastRatio": 3.4,
-                "fontSize": "10.5pt (14px)",
-                "fontWeight": "normal",
-                "messageKey": null,
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<button type=\"button\" class=\"no\" data-v=\"0\" aria-pressed=\"false\">No</button>",
-                  "target": [
-                    ".qrow[data-q=\"\"]:nth-child(2) > .yn > .no[data-v=\"0\"][type=\"button\"]"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<button type=\"button\" class=\"no\" data-v=\"0\" aria-pressed=\"false\">No</button>",
-          "target": [
-            ".qrow[data-q=\"\"]:nth-child(2) > .yn > .no[data-v=\"0\"][type=\"button\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#878a90",
-                "bgColor": "#fdfdff",
-                "contrastRatio": 3.4,
-                "fontSize": "10.5pt (14px)",
-                "fontWeight": "normal",
-                "messageKey": null,
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<button type=\"button\" data-v=\"1\" aria-pressed=\"false\">Yes</button>",
-                  "target": [
-                    ".qrow[data-q=\"\"]:nth-child(3) > .yn > button[data-v=\"1\"][type=\"button\"]"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<button type=\"button\" data-v=\"1\" aria-pressed=\"false\">Yes</button>",
-          "target": [
-            ".qrow[data-q=\"\"]:nth-child(3) > .yn > button[data-v=\"1\"][type=\"button\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#878a90",
-                "bgColor": "#fdfdff",
-                "contrastRatio": 3.4,
-                "fontSize": "10.5pt (14px)",
-                "fontWeight": "normal",
-                "messageKey": null,
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<button type=\"button\" class=\"no\" data-v=\"0\" aria-pressed=\"false\">No</button>",
-                  "target": [
-                    ".qrow[data-q=\"\"]:nth-child(3) > .yn > .no[data-v=\"0\"][type=\"button\"]"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<button type=\"button\" class=\"no\" data-v=\"0\" aria-pressed=\"false\">No</button>",
-          "target": [
-            ".qrow[data-q=\"\"]:nth-child(3) > .yn > .no[data-v=\"0\"][type=\"button\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#878a90",
-                "bgColor": "#fdfdff",
-                "contrastRatio": 3.4,
-                "fontSize": "10.5pt (14px)",
-                "fontWeight": "normal",
-                "messageKey": null,
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<button type=\"button\" data-v=\"1\" aria-pressed=\"false\">Yes</button>",
-                  "target": [
-                    ".qrow[data-q=\"\"]:nth-child(4) > .yn > button[data-v=\"1\"][type=\"button\"]"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<button type=\"button\" data-v=\"1\" aria-pressed=\"false\">Yes</button>",
-          "target": [
-            ".qrow[data-q=\"\"]:nth-child(4) > .yn > button[data-v=\"1\"][type=\"button\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#878a90",
-                "bgColor": "#fdfdff",
-                "contrastRatio": 3.4,
-                "fontSize": "10.5pt (14px)",
-                "fontWeight": "normal",
-                "messageKey": null,
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<button type=\"button\" class=\"no\" data-v=\"0\" aria-pressed=\"false\">No</button>",
-                  "target": [
-                    ".qrow[data-q=\"\"]:nth-child(4) > .yn > .no[data-v=\"0\"][type=\"button\"]"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<button type=\"button\" class=\"no\" data-v=\"0\" aria-pressed=\"false\">No</button>",
-          "target": [
-            ".qrow[data-q=\"\"]:nth-child(4) > .yn > .no[data-v=\"0\"][type=\"button\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#878a90",
-                "bgColor": "#fdfdff",
-                "contrastRatio": 3.4,
-                "fontSize": "10.5pt (14px)",
-                "fontWeight": "normal",
-                "messageKey": null,
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<button type=\"button\" data-v=\"1\" aria-pressed=\"false\">Yes</button>",
-                  "target": [
-                    ".qrow[data-q=\"\"]:nth-child(5) > .yn > button[data-v=\"1\"][type=\"button\"]"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<button type=\"button\" data-v=\"1\" aria-pressed=\"false\">Yes</button>",
-          "target": [
-            ".qrow[data-q=\"\"]:nth-child(5) > .yn > button[data-v=\"1\"][type=\"button\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#878a90",
-                "bgColor": "#fdfdff",
-                "contrastRatio": 3.4,
-                "fontSize": "10.5pt (14px)",
-                "fontWeight": "normal",
-                "messageKey": null,
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<button type=\"button\" class=\"no\" data-v=\"0\" aria-pressed=\"false\">No</button>",
-                  "target": [
-                    ".qrow[data-q=\"\"]:nth-child(5) > .yn > .no[data-v=\"0\"][type=\"button\"]"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<button type=\"button\" class=\"no\" data-v=\"0\" aria-pressed=\"false\">No</button>",
-          "target": [
-            ".qrow[data-q=\"\"]:nth-child(5) > .yn > .no[data-v=\"0\"][type=\"button\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.4 (foreground color: #878a90, background color: #fdfdff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.69 (foreground color: #4a8e75, background color: #f4fbf8, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
         },
         {
           "any": [
