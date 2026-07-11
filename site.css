@@ -894,7 +894,10 @@ main>section.sec:not(.sec-invert):nth-of-type(even){background:linear-gradient(1
 /* the robot itself — a real drop-shadow so it reads as lit and native, not pasted on */
 .hub-core::after{content:"";position:absolute;inset:0;z-index:3;
   background:url(assets/mascot/cut/bot-peace.png?v=2) center/contain no-repeat;
-  filter:drop-shadow(0 16px 26px rgba(49,32,120,.26)) drop-shadow(0 2px 6px rgba(0,0,0,.08))}
+  filter:drop-shadow(0 16px 26px rgba(49,32,120,.26)) drop-shadow(0 2px 6px rgba(0,0,0,.08));
+  transform-origin:50% 84%;animation:heroBotFloat 4.6s ease-in-out infinite;will-change:transform}
+@keyframes heroBotFloat{0%,100%{transform:translateY(0) rotate(-1.6deg)}50%{transform:translateY(-16px) rotate(1.6deg)}}
+@media(prefers-reduced-motion:reduce){.hub-core::after{animation:none}}
 
 /* keep the section glow subtle so the robot leads, not the background */
 .hub::before{
