@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-11T15:01:07.097208+00:00",
+    "generated_at": "2026-07-11T17:04:15.887295+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "ab88b22435ed",
+      "headline": "Meta's Muse Spark 1.1 Scores 51 on the Artificial Analysis Intelligence Index",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://twitter.com/ArtificialAnlys/status/2075677416295739660",
+      "published_at": "2026-07-11T16:39:44+00:00",
+      "summary": "1 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5576
+    },
     {
       "id": "5f92d55c125d",
       "headline": "OpenAI bets on families as ChatGPT goes deeper into households",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7917
+      "rank_score": 0.7773
     },
     {
       "id": "98d85122ab64",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.703
+      "rank_score": 0.6923
     },
     {
       "id": "6c4a6e1919dc",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7026
+      "rank_score": 0.6919
     },
     {
       "id": "4f68ab059f6d",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6911
+      "rank_score": 0.6809
     },
     {
       "id": "a4ad473125ca",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.688
+      "rank_score": 0.6779
     },
     {
       "id": "1d85656f77c8",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6781
+      "rank_score": 0.6685
     },
     {
       "id": "78cbc53175f9",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7301
+      "rank_score": 0.7207
     },
     {
       "id": "27b60fc861f1",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6631
+      "rank_score": 0.6541
     },
     {
       "id": "05d5cd4f7807",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4226
+      "rank_score": 0.4137
     },
     {
       "id": "e654c4c7eaf2",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6553
+      "rank_score": 0.6466
     },
     {
       "id": "3fd5be624e9b",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6543
+      "rank_score": 0.6456
     },
     {
       "id": "30fd26556973",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6525
+      "rank_score": 0.6439
     },
     {
       "id": "5d89094603b0",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4126
+      "rank_score": 0.4041
     },
     {
       "id": "e18a0edc34ba",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7425
+      "rank_score": 0.7342
     },
     {
       "id": "027b05f9d0fa",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.6621
+      "rank_score": 0.6546
     },
     {
       "id": "ae709b33078a",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4095
+      "rank_score": 0.4021
     },
     {
       "id": "2922cfdde0d7",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6637
+      "rank_score": 0.6571
     },
     {
       "id": "3e171b9d1ff3",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.603
+      "rank_score": 0.5965
     },
     {
       "id": "880ee3c2d550",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6016
+      "rank_score": 0.5951
     },
     {
       "id": "e9b3a7306418",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6008
+      "rank_score": 0.5944
     },
     {
       "id": "9491981398fc",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6577
+      "rank_score": 0.6514
     },
     {
       "id": "1adca30b762f",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5969
+      "rank_score": 0.5906
     },
     {
       "id": "14a2cc90aef5",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5966
-    },
-    {
-      "id": "55406eec470a",
-      "headline": "Elon Musk praises Mythos/Fable, promises not to ‘cut off’ Anthropic",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/09/elon-musk-praises-mythos-fable-promises-not-to-cut-off-anthropic/",
-      "published_at": "2026-07-09T21:57:42+00:00",
-      "summary": "Should Anthropic trust Elon Musk to host its models? With about $40 billion in revenue at stake, Musk insists that the company can.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5963
+      "rank_score": 0.5904
     }
   ]
 }
