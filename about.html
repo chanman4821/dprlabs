@@ -1,164 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About — DPR AI</title>
-<meta name="description" content="A small, senior AI studio allergic to theater. Our five principles, each with what it costs us — and the work we say no to." />
-<meta name="theme-color" content="#ffffff" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="site.css?v=15" />
-<link rel="icon" href="assets/icons/logo-orb.png" />
-<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
-
+<meta name="description" content="A small, senior team building production AI you own — measured, not promised.">
+<link rel="stylesheet" href="site.css?v=15">
+<link rel="stylesheet" href="assets/kit.css?v=1">
 <style>
-  .dpr-visual-card{margin-top:34px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,#fff,#f8f9ff);box-shadow:var(--shadow-1);padding:clamp(20px,4vw,34px);overflow:hidden}
-  .dpr-visual-kicker{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#3b5bdb;margin:0 0 16px}
-  .dpr-buddy-wrap{position:relative;display:flex;justify-content:center;margin:28px auto 0;min-height:150px;pointer-events:none}
-  .dpr-buddy{width:clamp(120px,18vw,176px);height:auto;filter:drop-shadow(0 22px 34px rgba(59,91,219,.18));animation:dprBuddyFloat 5.5s ease-in-out infinite}
-  @keyframes dprBuddyFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}}
-  @media(max-width:640px){.dpr-visual-card{padding:18px;margin-top:24px}.dpr-buddy-wrap{min-height:122px;margin-top:20px}.dpr-buddy{width:128px}}
-  @media(prefers-reduced-motion:reduce){.dpr-buddy{animation:none}}
+  .ab-vis img{max-height:320px;filter:drop-shadow(0 22px 30px rgba(49,32,120,.28));animation:heroBotFloat 4.6s ease-in-out infinite;transform-origin:50% 84%}
+  @media(prefers-reduced-motion:reduce){.ab-vis img{animation:none}}
+  .nolist{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .no{background:#fff;border:1px solid rgba(20,18,45,.08);border-radius:14px;padding:18px 18px;position:relative;padding-left:44px}
+  .no::before{content:"\00d7";position:absolute;left:16px;top:15px;width:20px;height:20px;color:#e5484d;font-weight:800;font-size:19px;line-height:1}
+  .no b{font-size:15px}.no p{margin:4px 0 0;color:var(--muted);font-size:13.5px;line-height:1.45}
+  .team{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .tm{background:#fff;border:1px solid rgba(20,18,45,.08);border-radius:18px;padding:24px;text-align:center;box-shadow:0 12px 30px rgba(20,18,45,.05)}
+  .tm .av{width:72px;height:72px;border-radius:50%;margin:0 auto 14px;background:var(--grad-1,linear-gradient(135deg,#4f46e5,#7c3aed,#06b6d4))}
+  .tm h4{margin:0 0 2px;font-size:17px}.tm .role{color:var(--muted);font-size:14px}
+  .tm .tag{display:inline-block;margin-top:10px;font-family:var(--mono,monospace);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--c1,#4f46e5);background:rgba(79,70,229,.08);padding:4px 10px;border-radius:999px}
+  @media(max-width:820px){.nolist,.team{grid-template-columns:1fr}}
 </style>
-<link rel="canonical" href="https://dprai.io/about.html" />
-<meta name="robots" content="index, follow" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="DPR AI" />
-<meta property="og:title" content="About — DPR AI" />
-<meta property="og:description" content="A small, senior AI studio allergic to theater. Our five principles, each with what it costs us — and the work we say no to." />
-<meta property="og:url" content="https://dprai.io/about.html" />
-<meta property="og:image" content="https://dprai.io/assets/og-default.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="About — DPR AI" />
-<meta name="twitter:description" content="A small, senior AI studio allergic to theater. Our five principles, each with what it costs us — and the work we say no to." />
-<meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
 </head>
-<body id="top">
-<a class="skip-link" href="#main">Skip to content</a>
+<body>
 <header class="nav">
   <div class="wrap nav-in">
-    <a href="index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
-    <nav class="nav-links" aria-label="Primary"><a href="/method">How it works</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Proof <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/proof">Results<span class="desc">The numbers, honestly.</span></a><a role="menuitem" href="/case-studies">Case studies<span class="desc">One measured build.</span></a><a role="menuitem" href="/teardowns">Teardowns<span class="desc">Free AI build autopsy.</span></a></div></div><a href="/pricing">Pricing</a><a href="/services">Services</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/score/">Score my AI<span class="desc">Good &mdash; or slop?</span></a><a role="menuitem" href="/free/">Free AI agent<span class="desc">Free, you own it.</span></a><a role="menuitem" href="/cost/">Cost estimator<span class="desc">What it costs to run.</span></a><a role="menuitem" href="/build-buy-rent">Build vs buy?<span class="desc">Decision tree.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Resources <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/blog/">Field Notes<span class="desc">Notes from real builds.</span></a><a role="menuitem" href="/kb/">Knowledge Base<span class="desc">Reference &amp; how-tos.</span></a><a role="menuitem" href="/playbook">Playbook<span class="desc">Automation field guide.</span></a><a role="menuitem" href="/guide/">AI Guide<span class="desc">Beginner guide.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">About <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/about">Studio<span class="desc">The team behind DPR.</span></a><a role="menuitem" href="/slop">Why we exist<span class="desc">The anti-slop stance.</span></a><a role="menuitem" href="/own-it">You own it<span class="desc">Client-owned AI.</span></a><a role="menuitem" href="/investors">Investors<span class="desc">Funding &amp; network.</span></a></div></div></nav>
+    <a href="/" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="/method">How it works</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Proof <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/proof">Results<span class="desc">The numbers, honestly.</span></a><a role="menuitem" href="/case-studies">Case studies<span class="desc">One measured build.</span></a><a role="menuitem" href="/teardowns">Teardowns<span class="desc">Free AI build autopsy.</span></a></div></div><a href="/pricing">Pricing</a><a href="/services">Services</a><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Tools <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/score/">Score my AI<span class="desc">Good &mdash; or slop?</span></a><a role="menuitem" href="/free/">Free AI agent<span class="desc">Free, you own it.</span></a><a role="menuitem" href="/cost/">Cost estimator<span class="desc">What it costs to run.</span></a><a role="menuitem" href="/build-buy-rent">Build vs buy?<span class="desc">Decision tree.</span></a></div></div><div class="learn"><button class="learn-trigger" type="button" aria-expanded="false" aria-haspopup="true">Resources <span class="caret" aria-hidden="true">&#9662;</span></button><div class="learn-menu" role="menu"><a role="menuitem" href="/blog/">Field Notes<span class="desc">Notes from real builds.</span></a><a role="menuitem" href="/kb/">Knowledge Base<span class="desc">Reference &amp; how-tos.</span></a><a role="menuitem" href="/playbook">Playbook<span class="desc">Automation field guide.</span></a><a role="menuitem" href="/guide/">AI Guide<span class="desc">Beginner guide.</span></a></div></div><a href="/about" aria-current="page">About</a></nav>
     <span class="nav-sp"></span>
-    <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Start a build</a></div>
+    <div class="nav-cta"><a href="/contact" class="btn btn-primary">Start a build</a></div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobileMenu"><a href="/method">How it works</a><a href="/proof">Results</a><a href="/case-studies">Case studies</a><a href="/teardowns">Teardowns</a><a href="/pricing">Pricing</a><a href="/services">Services</a><a href="/score/">Score my AI</a><a href="/free/">Free AI agent</a><a href="/cost/">Cost estimator</a><a href="/build-buy-rent">Build vs buy?</a><a href="/blog/">Field Notes</a><a href="/kb/">Knowledge Base</a><a href="/playbook">Playbook</a><a href="/guide/">AI Guide</a><a href="/about">About</a><a href="/slop">Why we exist</a><a href="/own-it">You own it</a><a href="/investors">Investors</a><a href="/contact">Start a build</a></div>
 </header>
-<main id="main">
-  <section class="page-hero" data-reveal>
-    <div class="wrap prose reveal">
-      <p class="eyebrow">About</p>
-      <h1>A small, senior team allergic to theater.</h1>
-      <p class="lead" style="margin-top:20px">DPR AI is built for founders and operators who have seen the AI demo, felt the room get excited, and then watched the thing die three weeks later.</p>
-      <p>We are not trying to be a large firm. We are a small, senior AI studio that takes narrow bets: one workflow, one number, firsts, fixed price, refundable if we miss the agreed outcome. That shape is not a gimmick. It is a forcing function. It keeps the work honest enough that a smart client can judge it without a twelve-person committee.</p>
-      <p>Our point of view is simple: most companies do not need a transformation program. They need one painful workflow made measurably better, owned by their team, with the code and evaluation work handed over. If that first bet wins, you have earned the right to do the next one.</p>
-    </div>
-  </section>
 
-  <section class="sec problem" data-reveal>
-    <div class="wrap prose reveal">
-      <p class="eyebrow">Small by design</p>
-      <h2 style="margin-top:14px">Small, senior, and allergic to theater.</h2>
-      <p style="margin-top:16px">a first bet with a refund on the line is not a job you hand to a pyramid of juniors billing by the hour. It is a job for the person who has already shipped similar systems and knows on day two whether the shape is wrong. We stay small because the work gets worse when the people selling, managing, and building are all different rooms.</p>
-      <p>Small does not mean casual. It means fewer handoffs, faster truth, and less room for ceremony. When a retrieval system is wrong, a metric is fake, or an integration is one click too far away, the senior person doing the work sees it directly. There is no account manager translating pain into a ticket and no deck pretending that ambiguity is strategy.</p>
-      <p>This costs us scale. We cannot run twenty builds at once, and we will not pretend we can. But for a founder or operator making a first decision, that is the feature. You want the person who can say no early, not a large team learning on your budget.</p>
-    </div>
-  </section>
+<section class="p-hero px">
+  <div>
+    <p class="eyebrow" data-rv>About</p>
+    <h1 data-rv>A small, senior team allergic to theater.</h1>
+    <p data-rv>We build production AI that your business owns — measured against one number, handed over on day done. No demos that die on a messy Tuesday, no rented black boxes.</p>
+    <div data-rv><a href="/contact" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a> <a href="/method" class="btn btn-ghost">How it works</a></div>
+  </div>
+  <div class="p-vis ab-vis" data-rv><img src="assets/mascot/cut/bot-peace.png?v=2" alt="DPR AI robot"></div>
+</section>
 
-  <section class="sec" data-reveal>
-    <div class="wrap prose reveal">
-      <p class="eyebrow">No-list</p>
-      <h2 style="margin-top:14px">What we will not do.</h2>
-      <p style="margin-top:16px">The no-list is the most honest thing on this site. It protects you from buying the wrong help and protects us from shipping work we would be embarrassed to measure.</p>
-      <ul style="margin-top:20px">
-        <li>Staff augmentation where we become extra hands without owning an outcome.</li>
-        <li>Six-month “transformations” that start with workshops and end with a roadmap.</li>
-        <li>Projects with no baseline data or no practical way to collect it.</li>
-        <li>Teams that will not name the number before the build starts.</li>
-        <li>“Make us AI-first” mandates with no workflow, owner, or user behavior attached.</li>
-        <li>Work where nobody on your side will own the result after handoff.</li>
-      </ul>
-      <p>Saying no loses revenue in the short term. It also keeps the method true. If the work cannot be measured, owned, and handed over, it is not a DPR build.</p>
-    </div>
-  </section>
+<section class="px">
+  <p class="lbl" data-rv>What we believe</p>
+  <div class="facts">
+    <div class="fact" data-rv><h4>Measured, not promised</h4><p>One number, agreed in writing before code. If it doesn't move, you don't pay.</p></div>
+    <div class="fact" data-rv><h4>Production, not demos</h4><p>Built into your real tools and repos from day one — not a slide that impresses in a meeting.</p></div>
+    <div class="fact" data-rv><h4>Owned, not rented</h4><p>Code, weights, prompts, and evals go to your team. You can fire us and keep running.</p></div>
+  </div>
+</section>
 
-  <section class="sec problem" data-reveal>
-    <div class="wrap reveal">
-      <div class="prose">
-        <p class="eyebrow">Principles</p>
-        <h2 style="margin-top:14px">Our five principles, and what each costs us.</h2>
-        <p style="margin-top:16px">Principles are cheap when they are only adjectives. Ours matter only because each one makes some money harder to take.</p>
-      </div>
-      <div class="grid-2" data-stagger>
-        <div class="card"><span class="tag">One number</span><h3>Agreed up front.</h3><p>We write the metric before we build, even when a vague scope would be easier to sell and easier to declare a win.</p></div>
-        <div class="card"><span class="tag">You own it</span><h3>No rented black box.</h3><p>You get the code, prompts, evals, docs, and handoff. Lock-in would be more profitable. It would also make the work weaker.</p></div>
-        <div class="card"><span class="tag">Honest measurement</span><h3>Caveats in plain sight.</h3><p>We show baselines, sample sizes, misses, and limits, even when a prettier number would close faster.</p></div>
-        <div class="card"><span class="tag">Bad-fit no</span><h3>Revenue is not a reason.</h3><p>We say no to work with no owner, no metric, or no sane path to production, even when we could use the invoice.</p></div>
-        <div class="card"><span class="tag">Fixed price</span><h3>Refundable by design.</h3><p>The refund puts our money on the outcome. That is only possible because the scope is narrow and measurable.</p></div>
-        <div class="card"><span class="tag">Plain handoff</span><h3>The team can run it.</h3><p>Documentation is not an afterthought. If your team cannot operate the result, we built a dependency, not a capability.</p></div>
-      </div>
-    </div>
-  </section>
+<section class="px" style="margin-top:36px">
+  <p class="lbl" data-rv>What we won't do</p>
+  <div class="nolist">
+    <div class="no" data-rv><b>Staff augmentation</b><p>We ship owned systems, not warm bodies by the hour.</p></div>
+    <div class="no" data-rv><b>6-month "transformations"</b><p>One workflow, weeks not quarters. Prove it, then scale.</p></div>
+    <div class="no" data-rv><b>No-baseline work</b><p>If we can't measure the before, we won't claim an after.</p></div>
+    <div class="no" data-rv><b>No-metric clients</b><p>No agreed number, no build. That's the whole model.</p></div>
+    <div class="no" data-rv><b>"Make us AI-first" mandates</b><p>We automate a real task, not a buzzword.</p></div>
+    <div class="no" data-rv><b>No-owner builds</b><p>Someone on your side has to own it after we leave.</p></div>
+  </div>
+</section>
 
-  <section class="sec" data-reveal>
-    <div class="wrap prose reveal">
-      <p class="eyebrow">Pricing</p>
-      <h2 style="margin-top:14px">How we price, and why.</h2>
-      <p style="margin-top:16px">Most build pricing is vague because the work is vague. We go the other way. A build is fixed, narrow, and tied to one measurable outcome. Most first builds land around $8k–$15k, depending on integration difficulty, data readiness, and how much handoff work is required.</p>
-      <p>The refund matters because it changes the conversation. We cannot hide behind hours burned or “strategic learnings” if the agreed number does not move. But the refund is only possible because the scope is disciplined. One workflow. One owner. One baseline. One testable result.</p>
-      <p>That means we will sometimes tell you the right answer is not a build. Maybe the data is not ready. Maybe a rules script beats a model. Maybe your team needs to pick an owner before outside help makes sense. Those answers are less exciting than a proposal. They are also cheaper.</p>
-      <p>We are wrong for companies that want a slide-heavy transformation program, a permanent vendor dependency, or a broad “AI strategy” with no operating number attached. We are right for teams with a painful workflow, a decision-maker close to the work, and enough urgency to measure the before and after.</p>
-    </div>
-  </section>
+<section class="px" style="margin-top:40px">
+  <p class="lbl" data-rv>The team</p>
+  <div class="team">
+    <div class="tm" data-rv><div class="av"></div><h4>Senior AI builder</h4><div class="role">Full bio coming soon</div><span class="tag">ex-Microsoft</span></div>
+    <div class="tm" data-rv><div class="av"></div><h4>Senior AI builder</h4><div class="role">Full bio coming soon</div><span class="tag">ex-PayPal</span></div>
+    <div class="tm" data-rv><div class="av"></div><h4>Senior AI builder</h4><div class="role">Full bio coming soon</div><span class="tag">production AI</span></div>
+  </div>
+  <p class="s-sub" data-rv style="margin-top:16px;color:var(--faint)">Real names and bios go here — we won't fake them. You work with the builders who write the code, not an account manager.</p>
+</section>
 
-  <!-- WHO WE ARE -->
-  <section class="sec" id="team" data-reveal>
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="mark">Who we are</p>
-        <h2 style="margin-top:18px">Three people. Microsoft, PayPal, <span class="gold-text">and a real investor network.</span></h2>
-        <p class="lead" style="margin-top:16px;max-width:62ch">No junior pyramid, no account managers, no offshore hand-off. You work with the people whose names are on the work — a senior builder, a senior product leader, and a genuine super-connector.</p>
-      </div>
-      <div class="team" data-stagger>
-        <div class="member reveal">
-          <div class="avatar" aria-hidden="true">DH</div>
-          <h3>Dennis Ha</h3>
-          <p class="cred">Founder · former technical advisor, Microsoft</p>
-          <p>Builds the AI and runs every build. Ex-Microsoft — the senior engineer in the room, not a layer above it. If your number doesn't move, he's the one who tells you why.</p>
-        </div>
-        <div class="member reveal">
-          <div class="avatar" aria-hidden="true">RM</div>
-          <h3>Raj Mukherjee</h3>
-          <p class="cred">Product &amp; strategy · PayPal · Indeed · GoDaddy · Google</p>
-          <p>Senior product judgment at scale, from PayPal to Indeed to Google. He's shipped the AI-era products most vendors only pitch — and knows the difference between a demo and a business.</p>
-        </div>
-        <div class="member reveal">
-          <div class="avatar" aria-hidden="true">PH</div>
-          <h3>Peter Huynh</h3>
-          <p class="cred">Capital &amp; connections · venture partner, Qualgro &amp; Harrison.ai</p>
-          <p>The super-connector. Two decades backing and scaling B2B and AI startups across Asia-Pacific. When we open an investor door for the founders we build with, it's one that actually fits.</p>
-        </div>
-      </div>
-      <p class="reveal" style="margin-top:26px;color:var(--faint);font-size:13.5px;max-width:66ch">We keep the team small on purpose. The people above are the people who do the work — you won't be handed to someone junior after the sale.</p>
-    </div>
-  </section>
+<section class="cta-band px">
+  <h2 data-rv>Tell us one task your team dreads.</h2>
+  <p data-rv>We'll tell you honestly whether AI can move it — and if it can't, we'll say so.</p>
+  <div data-rv><a href="/contact" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a></div>
+</section>
 
-  <section class="sec problem" data-reveal>
-    <div class="wrap center prose reveal">
-      <p class="eyebrow">If this sounds familiar</p>
-      <h2 style="margin-top:14px">Bring us the workflow nobody wants to own.</h2>
-      <p class="lead" style="margin-top:16px">If it has a baseline, an owner, and a number worth moving, we can usually tell in one call whether a first build is a good bet.</p>
-      <p><a href="contact.html" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a></p>
-      <div class="dpr-buddy-wrap" data-reveal aria-hidden="true"><img class="dpr-buddy" src="assets/mascot/cut/bot-welcome.png" alt="" loading="lazy" decoding="async"></div>
-    </div>
-  </section>
-</main>
-<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="about.html">About</a></div><div class="foot-col"><h4>Playbooks</h4><a href="free/">Free tools</a><a href="score/">Score my AI</a><a href="slop.html">The slop problem</a><a href="playbook.html">AI-readiness scorecard</a><a href="contact.html">The first build</a><a href="blog/index.html">Field Notes</a></div><div class="foot-col"><h4>Get started</h4><a href="contact.html">Start a build</a><a href="contact.html">Contact</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
 <script src="site.js?v=13" defer></script>
-<script src="assets/anim.js?v=10" defer></script>
-<script src="assets/diagrams.js?v=10" defer></script>
+<script src="assets/kit.js?v=1" defer></script>
 </body>
 </html>
