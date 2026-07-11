@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-11T03:21:32.920657+00:00",
+    "generated_at": "2026-07-11T06:20:11.262187+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
@@ -20,7 +20,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7733
+      "rank_score": 0.7537
     },
     {
       "id": "6c4a6e1919dc",
@@ -36,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7727
+      "rank_score": 0.7531
     },
     {
       "id": "4f68ab059f6d",
@@ -52,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.758
+      "rank_score": 0.7393
     },
     {
       "id": "a4ad473125ca",
@@ -68,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7541
+      "rank_score": 0.7357
     },
     {
       "id": "1d85656f77c8",
@@ -84,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7416
+      "rank_score": 0.7239
     },
     {
       "id": "78cbc53175f9",
@@ -100,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7913
+      "rank_score": 0.7742
     },
     {
       "id": "27b60fc861f1",
@@ -116,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7224
+      "rank_score": 0.7059
     },
     {
       "id": "05d5cd4f7807",
@@ -132,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4807
+      "rank_score": 0.4645
     },
     {
       "id": "e654c4c7eaf2",
@@ -148,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7125
+      "rank_score": 0.6965
     },
     {
       "id": "3fd5be624e9b",
@@ -164,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7111
+      "rank_score": 0.6952
     },
     {
       "id": "30fd26556973",
@@ -180,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7089
+      "rank_score": 0.6931
     },
     {
       "id": "5d89094603b0",
@@ -196,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4681
+      "rank_score": 0.4526
     },
     {
       "id": "e18a0edc34ba",
@@ -212,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7975
+      "rank_score": 0.7822
     },
     {
       "id": "027b05f9d0fa",
@@ -228,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7115
+      "rank_score": 0.6977
     },
     {
       "id": "ae709b33078a",
@@ -244,151 +244,151 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4582
+      "rank_score": 0.4446
     },
     {
-      "id": "fc18b2f5dc98",
-      "headline": "A safety-oriented hypothetico-deductive framework for AI-assisted differential diagnosis",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.08038",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.08038v1 Announce Type: new Abstract: Diagnostic error is a major threat to patient safety, yet current large language model (LLM) systems often treat diagnosis as a one-shot prediction task, lacking safeguards against missed…",
+      "id": "2922cfdde0d7",
+      "headline": "OpenAI says GPT 5.6 is the ‘preferred model’ for Microsoft Copilot 365 amid breakup chatter",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
+      "published_at": "2026-07-10T00:16:54+00:00",
+      "summary": "OpenAI's new family of models will continue to power Microsoft's suite of workplace and productivity apps.",
       "tags": [
-        "Research"
+        "Models"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7401
+      "credibility": 0.85,
+      "rank_score": 0.6946
     },
     {
-      "id": "a494e292a2d7",
-      "headline": "Context Graphs for Proactive Enterprise Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07721",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07721v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) and agentic frameworks have advanced enterprise AI considerably, yet agents remain fundamentally reactive: they wait for a human query before acting. This…",
+      "id": "3e171b9d1ff3",
+      "headline": "Microsoft’s carbon emissions went up 25 percent last year",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
+      "published_at": "2026-07-10T00:04:13+00:00",
+      "summary": "Microsoft may once again be struggling to keep up with its own climate goals, according to its 2026 sustainability report. As reported by GeekWire, the report states that Microsoft's carbon emissions increased 25 percent in 2025, totalling…",
       "tags": [
-        "Research"
+        "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.6801
+      "credibility": 0.85,
+      "rank_score": 0.6338
     },
     {
-      "id": "fbf5ff06dc28",
-      "headline": "AI-integrated models for assessing agricultural resilience",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07759",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07759v1 Announce Type: new Abstract: Agricultural supply chains are vulnerable to disruptions through linked biophysical and economic systems. We develop an AI-powered tool that integrates economic models (GTAP) with biophysical…",
+      "id": "880ee3c2d550",
+      "headline": "Fidji Simo steps down from OpenAI’s No. 2 role",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
+      "published_at": "2026-07-09T23:38:00+00:00",
+      "summary": "OpenAI's No. 2 executive, Fidji Simo, is stepping down from her full-time role after her medical leave proved longer than expected — a leadership vacuum that comes at a tricky time as the company eyes a possible IPO and races to catch…",
       "tags": [
-        "Research"
+        "Business"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.6801
+      "credibility": 0.85,
+      "rank_score": 0.6321
     },
     {
-      "id": "5f37f9a5f063",
-      "headline": "Adversarial Social Epistemology for Assemblies of Humans and Large Language Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07760",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07760v1 Announce Type: new Abstract: We outline an adversarial social epistemology (ASE) for densely interactive communicative landscapes in which public assertions are scaffolded by chains of testimony, inference, institutional…",
+      "id": "e9b3a7306418",
+      "headline": "Fidji Simo steps down from leading OpenAI’s AGI work due to illness",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
+      "published_at": "2026-07-09T23:24:04+00:00",
+      "summary": "OpenAI's Fidji Simo is departing her full-time role as the company's AGI chief and is transitioning to being a \"part-time advisor,\" she said on X. The news follows Simo's original announcement in April that she would take a few weeks of…",
       "tags": [
-        "Research"
+        "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.6801
+      "credibility": 0.85,
+      "rank_score": 0.6312
     },
     {
-      "id": "cc5534545045",
-      "headline": "Aligning Clinical Needs and AI Capabilities: A Survey on LLMs for Medical Reasoning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07761",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07761v1 Announce Type: new Abstract: Large language models (LLMs) have emerged as important tools in healthcare, showing growing potential for clinical reasoning and patient care. This survey examines recent progress in medical…",
+      "id": "9491981398fc",
+      "headline": "OpenAI launches its new family of models with GPT-5.6",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
+      "published_at": "2026-07-09T22:24:24+00:00",
+      "summary": "OpenAI's latest family of models promises improvements across a range of areas, including cybersecurity.",
       "tags": [
-        "Research"
+        "Models"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.6801
+      "credibility": 0.85,
+      "rank_score": 0.6875
     },
     {
-      "id": "48f3840259c6",
-      "headline": "Alignment Plausibility: A New Standard for Assuring AI in Healthcare",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07766",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07766v1 Announce Type: new Abstract: Large language models (LLMs) have become significant providers of mental health support, yet they remain products of an attention economy whose operational and commercial targets favour…",
+      "id": "1adca30b762f",
+      "headline": "An AI agent startup just let its agent run its $100M fundraise",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/",
+      "published_at": "2026-07-09T22:08:58+00:00",
+      "summary": "Lyzr, a startup that builds AI agents for enterprises, used its own AI agent to raise a $100 million round — proof, evidently, that the product actually works.",
       "tags": [
-        "Research"
+        "Business"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.6801
+      "credibility": 0.85,
+      "rank_score": 0.6265
     },
     {
-      "id": "2e6a5e7799df",
-      "headline": "Idiobionics: The Unification of Privacy and Intelligent Robotic Prostheses",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07775",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07775v1 Announce Type: new Abstract: The human body is at the center of a growing family of technologies designed to tightly and persistently couple biological and digital systems. Robotic prostheses are a representative example…",
+      "id": "14a2cc90aef5",
+      "headline": "OpenAI is shutting down Atlas, but its AI browser ambitions are still growing",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
+      "published_at": "2026-07-09T22:03:54+00:00",
+      "summary": "OpenAI is sunsetting its AI-powered browser after less than a year. But it's moving some agentic browsing features to its desktop app and a Chrome extension.",
       "tags": [
-        "Research"
+        "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.6801
+      "credibility": 0.85,
+      "rank_score": 0.6262
     },
     {
-      "id": "230542eac707",
-      "headline": "Infinity-Parser2 Technical Report",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07836",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07836v1 Announce Type: new Abstract: We present Infinity-Parser2, a large multimodal model that couples a controllable data-synthesis pipeline with multi-task reinforcement learning for end-to-end document parsing, addressing…",
+      "id": "55406eec470a",
+      "headline": "Elon Musk praises Mythos/Fable, promises not to ‘cut off’ Anthropic",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/elon-musk-praises-mythos-fable-promises-not-to-cut-off-anthropic/",
+      "published_at": "2026-07-09T21:57:42+00:00",
+      "summary": "Should Anthropic trust Elon Musk to host its models? With about $40 billion in revenue at stake, Musk insists that the company can.",
       "tags": [
-        "Research"
+        "Business"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.6801
+      "credibility": 0.85,
+      "rank_score": 0.6258
     },
     {
-      "id": "7736907827e4",
-      "headline": "VectorizationLLM: Smart Vectorization Based AI Assistant",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.07846",
-      "published_at": "2026-07-10T04:00:00+00:00",
-      "summary": "arXiv:2607.07846v1 Announce Type: new Abstract: VectorizationLLM is a specialized Large Language Model based on Google open-weight LLMs. The model is designed to assist students to learn smart vectorization, time/wave vector analysis,…",
+      "id": "8f2a4085c264",
+      "headline": "Can AI answer the $3 trillion question?",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/09/can-ai-answer-the-3-trillion-question/",
+      "published_at": "2026-07-09T21:47:50+00:00",
+      "summary": "The AI ROI debate has returned and the numbers are even bigger, as are, perhaps, the consequences.",
       "tags": [
-        "Research"
+        "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.6801
+      "credibility": 0.85,
+      "rank_score": 0.6252
     }
   ]
 }
