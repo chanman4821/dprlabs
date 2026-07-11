@@ -12,9 +12,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
 <link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 
-<link rel="stylesheet" href="site.css?v=11" />
+<link rel="stylesheet" href="site.css?v=15" />
 <link rel="stylesheet" href="slop.css?v=5" />
-<link rel="stylesheet" href="assets/slopcar.css?v=1" />
+<link rel="stylesheet" href="assets/slopcar.css?v=2" />
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"DPR AI","alternateName":"DPR",
@@ -98,7 +98,7 @@
       <div class="hero-copy">
       <p class="eyebrow">The anti-slop AI studio</p>
       <h1>Production AI your business <em>actually owns.</em></h1>
-      <p class="lead">One number, agreed before we build. If it doesn't move, you don't pay — and you keep all of it: the code, the weights, the tests.</p>
+      <p class="lead">One number, agreed up front. If it doesn't move, you don't pay — and you own all of it.</p>
       <div class="hero-cta">
         <a href="contact.html" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a>
         <a href="method.html" class="btn btn-ghost">See how it works</a>
@@ -166,7 +166,7 @@
       <div class="sec-head reveal" style="max-width:780px">
         <p class="eyebrow">The state of the industry</p>
         <h2 style="margin-top:14px">The industry is drowning in <span class="gold-text">AI slop.</span></h2>
-        <p class="lead">Dead demos. Chatbots bolted on the side. Endpoints you rent forever. "Accuracy" with no baseline. Most "AI transformation" is theater billed as progress. Here are seven kinds — and the tell that gives each one away.</p>
+        <p class="lead">Seven kinds of AI slop — and the tell that gives each one away.</p>
       </div>
       <div class="slopcar" data-slopcar aria-roledescription="carousel" aria-label="Kinds of AI slop">
         <div class="slopcar-viewport">
@@ -253,24 +253,26 @@
     <div class="wrap">
       <div class="sec-head reveal">
         <p class="eyebrow">Slop vs sharp</p>
-        <h2 style="margin-top:14px">Drag it. <span class="gold-text">Feel the difference.</span></h2>
-        <p class="lead">Same product, two AI drafts. One is filler you've read a thousand times. The other tells you something real. Drag the handle across.</p>
+        <h2 style="margin-top:14px">One tap. <span class="gold-text">Feel the difference.</span></h2>
+        <p class="lead">Two AI drafts of one product. Hit <b>Sharpen</b> — empty adjectives turn into hard facts.</p>
       </div>
-      <div class="slopslider reveal" data-slop style="--split:50%">
-        <div class="ss-stage">
-          <div class="ss-pane ss-slop">
-            <span class="ss-lbl">Generic AI slop</span>
-            <p class="ss-text">Our <mark>innovative</mark>, <mark>cutting-edge</mark> running shoe <mark>leverages</mark> <mark>state-of-the-art</mark> technology to deliver an <mark>unparalleled</mark> experience. <mark>Designed for everyone</mark>, it <mark>seamlessly</mark> blends comfort and performance to take your run to the next level.</p>
+      <div class="sharpen reveal" data-sharpen>
+        <div class="sharpen-card">
+          <div class="sharpen-scan" aria-hidden="true"></div>
+          <div class="sharpen-hd">
+            <span class="sharpen-tag" data-tag>AI SLOP DRAFT</span>
+            <div class="sharpen-gauge"><span class="sg-n" data-n>91</span><span class="sg-l">slop&nbsp;index</span></div>
           </div>
-          <div class="ss-pane ss-sharp">
-            <span class="ss-lbl">Sharp &amp; specific</span>
-            <p class="ss-text">The Trail X weighs <mark>248g</mark> with a <mark>6mm heel-drop</mark> and a <mark>rock plate</mark> that survived <mark>500 miles of gravel</mark> in testing. It fits <mark>true to size</mark> — between sizes, <mark>size up for wide feet</mark>. Returns are <mark>free for 30 days</mark>.</p>
+          <div class="sharpen-body">
+            <p class="sharpen-text is-slop">Our <mark>innovative</mark>, <mark>cutting-edge</mark> running shoe <mark>leverages</mark> <mark>state-of-the-art</mark> technology to deliver an <mark>unparalleled</mark> experience. <mark>Designed for everyone</mark>, it <mark>seamlessly</mark> blends comfort and performance.</p>
+            <p class="sharpen-text is-sharp">The <b>Trail&nbsp;X</b> weighs <b>248g</b> with a <b>6mm heel-drop</b> and a <b>rock plate</b> that survived <b>500 miles of gravel</b> in testing. Fits <b>true to size</b> — <b>size up for wide feet</b>. Returns are <b>free for 30 days</b>.</p>
           </div>
-          <div class="ss-divider"><span class="ss-handle" aria-hidden="true">⇄</span></div>
-          <input class="ss-range" type="range" min="6" max="94" value="50" aria-label="Drag to compare generic AI slop with sharp, specific writing" />
+          <div class="sharpen-meta">
+            <span><i class="dot-bad"></i>Empty adjectives <b data-adj>7</b></span>
+            <span><i class="dot-good"></i>Concrete facts <b data-fact>0</b></span>
+          </div>
         </div>
-        <div class="ss-meta"><span class="ss-count-slop">Empty adjectives: <b>7</b></span><span class="ss-count-sharp">Concrete facts: <b>7</b></span></div>
-        <p class="ss-hint">← drag the handle →</p>
+        <button class="sharpen-btn" type="button" data-btn>Sharpen it <span class="arrow" aria-hidden="true">→</span></button>
       </div>
     </div>
   </section>
@@ -281,11 +283,11 @@
       <div class="sec-head reveal">
         <p class="eyebrow">Agents: wrong vs right</p>
         <h2 style="margin-top:14px">Most AI agents fake it. <span class="gold-text">Ours prove it.</span></h2>
-        <p class="lead">An "AI agent" can run wild and hide its mess — or it can work like a senior engineer who shows their work. Same idea, opposite behavior. Hover a line to see its fix.</p>
+        <p class="lead">Same idea, opposite behavior. Hover a line to see the fix.</p>
       </div>
       <div class="agvs reveal" data-agentvs>
         <div class="agvs-col agvs-bad">
-          <div class="agvs-hero"><img src="assets/agents/wrong.png" alt="A frazzled gold robot tangled in cables with a red warning sign" width="168" height="168" loading="lazy" decoding="async" /></div>
+          <div class="agvs-hero"><img src="assets/agents/wrong-cut.png" alt="A frazzled gold robot tangled in cables with a red warning sign" width="168" height="168" loading="lazy" decoding="async" /></div>
           <p class="agvs-tag agvs-tag-bad">The slop agent</p>
           <ul class="agvs-list">
             <li data-pair="1"><span class="agvs-ic bad" aria-hidden="true">✕</span>Says "done" — with no proof</li>
@@ -297,7 +299,7 @@
         </div>
         <div class="agvs-vs" aria-hidden="true">vs</div>
         <div class="agvs-col agvs-good">
-          <div class="agvs-hero"><img src="assets/agents/right.png" alt="A confident gold robot handing over a golden key" width="168" height="168" loading="lazy" decoding="async" /></div>
+          <div class="agvs-hero"><img src="assets/agents/right-cut.png" alt="A confident gold robot handing over a golden key" width="168" height="168" loading="lazy" decoding="async" /></div>
           <p class="agvs-tag agvs-tag-good">A DPR agent</p>
           <ul class="agvs-list">
             <li data-pair="1"><span class="agvs-ic good" aria-hidden="true">✓</span>Shows the command, the output, the number</li>
@@ -316,7 +318,7 @@
     <div class="wrap center reveal">
       <p class="eyebrow">Why most AI projects stall</p>
       <h2 style="margin:16px auto 0">Most AI projects die as a demo.</h2>
-      <p class="lead">Not because the tech can't work — because nobody agreed what "working" meant. A vendor sells a deck, runs a flashy proof of concept, and hands you something that never reaches production. Six months later you're still paying, still dependent, no closer to owning it. We built DPR AI to be the opposite: small scope, one agreed number, fast, and yours to keep.</p>
+      <p class="lead">Not because the tech fails — because nobody agreed what "working" meant. We're the opposite: one scope, one number, yours to keep.</p>
     </div>
   </section>
 
@@ -326,7 +328,7 @@
       <div class="sec-head reveal">
         <p class="eyebrow">30-second self-check</p>
         <h2 style="margin-top:14px">Is your workflow actually <span class="gold-text">AI-ready?</span></h2>
-        <p class="lead">Most "AI didn't work" stories are really "nobody agreed what working meant" stories. Answer four questions about your own workflow — you'll know in thirty seconds whether you have an AI problem or a scoping problem.</p>
+        <p class="lead">Four questions. Thirty seconds. Find out if it's an AI problem or a scoping problem.</p>
       </div>
       <div class="tool reveal" id="oneNumberTest" style="max-width:800px">
         <p class="tool-lead">Answer honestly — there are no wrong answers, only useful ones.</p>
@@ -354,13 +356,13 @@
   </section>
 
   <!-- BIG NUMBER / GUARANTEE -->
-  <section class="sec">
+  <section class="sec sec-invert" id="guarantee">
     <div class="wrap bignum reveal">
       <div class="fig"><small>$</small>0</div>
       <div>
         <p class="k">The guarantee</p>
         <h3>If the first build doesn't move the number we agreed, you don't pay the fee — and you keep the code.</h3>
-        <p class="lead">We're a small studio early in our story. The guarantee is how we make hiring us safe: the risk sits with us, not you. One workflow, one number agreed in writing before we start, a working system at the end that you own.</p>
+        <p class="lead">The risk sits with us, not you. One number, in writing. A system you own.</p>
       </div>
     </div>
   </section>
@@ -467,7 +469,7 @@
       <div class="reveal">
         <p class="eyebrow">The first build</p>
         <h2 style="margin-top:14px">One scope. <span class="gold-text">One number.</span> Priced up front.</h2>
-        <p class="lead">We pick one workflow, agree the number it has to move before we write a line of code, and hand you a working system you own — not a slide deck.</p>
+        <p class="lead">One workflow. One number, agreed before we write code. A system you own — not a deck.</p>
         <p class="margin-note"><b>Why a guarantee?</b> We're a small studio early in our story. The risk sits with us, not you — that's how we earn the next build.</p>
       </div>
       <div class="scorecard reveal">
@@ -516,7 +518,7 @@
       <div class="sec-head reveal">
         <p class="eyebrow">Case study · anonymized</p>
         <h2 style="margin-top:14px">One honest number cut handling time <span class="gold-text">74%.</span></h2>
-        <p class="lead">A 40-person logistics ops team was drowning in freight exceptions — ~1,200 a week, ~38 minutes each. We agreed one number before writing code, then built a classifier and retrieval agent inside their ticketing system. They own all of it.</p>
+        <p class="lead">1,200 freight exceptions a week, ~38 minutes each. We agreed one number, built it into their tickets, and handed it all over.</p>
       </div>
       <div class="metric-band reveal">
         <div class="mb"><div class="mv"><span data-count="10">10</span> min</div><div class="mk">Median handling time, down from 38 min</div><span class="mtag">-74% · illustrative</span></div>
@@ -539,7 +541,7 @@
       </div>
       <div class="offer-grid">
         <article class="ocard ocard-lg reveal">
-          <img class="ohero" src="assets/mascot/hero/hero-3.png" alt="" width="136" height="136" loading="lazy" decoding="async" />
+          <img class="obanner" src="assets/ai/hero-glass.webp" alt="A 3D indigo glass form wrapped in gold light" width="640" height="200" loading="lazy" decoding="async" />
           <span class="oicon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8.5 4.9v9.8L12 21.6 3.5 16.7V6.9z"/><path d="M12 12l8.5-5M12 12v9.6M12 12L3.5 7"/></svg></span>
           <span class="tag">Scale with AI · businesses</span>
           <h3>Production AI, built into your real systems</h3>
@@ -644,7 +646,7 @@
       <div class="reveal">
         <p class="eyebrow">About</p>
         <h2 style="margin-top:14px">A small, senior team.</h2>
-        <p class="lead" style="margin-top:16px">DPR AI is a senior AI studio. We've shipped a handful of builds so far and we'd rather show real work than borrowed logos. We publish how we measure, and you own what we build.</p>
+        <p class="lead" style="margin-top:16px">A senior AI studio. Real work over borrowed logos. We publish how we measure — and you own what we build.</p>
         <div class="about-links">
           <a href="proof.html" class="txt-link">How we measure <span class="arrow" aria-hidden="true">→</span></a>
         </div>
@@ -667,7 +669,7 @@
       <div class="reveal">
         <p class="eyebrow">Start a conversation</p>
         <h2 style="margin-top:14px">Let's find the deep work <span class="gold-text">a machine should do.</span></h2>
-        <p class="lead" style="margin-top:16px">Production AI that ships, measured by one honest number. One business day to a real answer — no sales script, no obligation.</p>
+        <p class="lead" style="margin-top:16px">Production AI that ships, measured by one number. A real answer in one business day — no sales script.</p>
         <div class="chips">
           <div><b class="num">1</b><span>business-day reply</span></div>
           <div><b>Free</b><span>opportunity read</span></div>
@@ -706,12 +708,13 @@
   </div>
 </footer>
 
-<script src="site.js?v=11" defer></script>
+<script src="site.js?v=12" defer></script>
 <script src="assets/intro.js?v=10" defer></script>
 <script src="assets/anim.js?v=10" defer></script>
 <script src="assets/diagrams.js?v=10" defer></script>
 <script src="assets/slopcar.js?v=1" defer></script>
-<script src="assets/slopslider.js?v=1" defer></script>
+<script src="assets/slophud.js?v=1" defer></script>
+<script src="assets/sharpen.js?v=1" defer></script>
 <script src="assets/agentvs.js?v=1" defer></script>
 </body>
 </html>

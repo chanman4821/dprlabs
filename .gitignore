@@ -45,3 +45,21 @@ MASTER-PLAN.md
 # (must be last: overrides *-full.png and friends above so full-page shots persist)
 !tests/e2e/baseline/
 !tests/e2e/baseline/**
+
+# ===== UX-PIPELINE CLEANUP (phase 1) =====
+*.prebold.bak
+after-focus-skip.png
+SALES-PLAYBOOK.md
+brand-guide/
+assets/logo-crazy/
+assets/logo-fengshui/
+assets/logo-gen/
+assets/logo-more/
+assets/logo-personal/
+_local-archive/
+
+index.before-stepper.html
+index.blue-backup.html
+index.pre-redesign-backup.html
+retired-pages/
+

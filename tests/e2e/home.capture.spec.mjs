@@ -62,11 +62,11 @@ test.describe('DPR Labs home page — visual baseline', () => {
     await settle(page);
 
     // User-observable outcomes (stable across the redesign).
-    await expect(page).toHaveTitle(/DPR\s*Labs/i);
+    await expect(page).toHaveTitle(/\[?DPR\]?\s*AI/i);
 
     const brand = page.locator('header .brand').first();
     await expect(brand).toBeVisible();
-    await expect(brand).toContainText(/DPR\s*Labs/i);
+    await expect(brand).toContainText(/\[?DPR\]?\s*AI/i);
 
     const heading = page.locator('main h1').first();
     await expect(heading).toBeVisible();
@@ -79,7 +79,7 @@ test.describe('DPR Labs home page — visual baseline', () => {
 
     const footer = page.locator('footer').first();
     await expect(footer).toBeVisible();
-    await expect(footer).toContainText(/DPR\s*Labs/i);
+    await expect(footer).toContainText(/\[?DPR\]?\s*AI/i);
 
     // Capture the baseline (full page + above-the-fold) for this project.
     const prefix = testInfo.project.name;

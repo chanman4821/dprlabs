@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Plain-word AI dictionary — every term in one honest sentence | DPR AI</title>
+<meta name="description" content="Every bit of AI jargon we use on this site, explained in one plain-English sentence. No acronyms left hanging, no marketing." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="../site.css?v=15" />
+<link rel="stylesheet" href="../assets/learn.css?v=1" />
+<link rel="icon" href="../assets/icons/logo-orb.png" />
+<noscript><style>.reveal{opacity:1;transform:none}#gl-nojs{display:block!important}</style></noscript>
+<style>
+  .gl-search{margin-top:26px;width:100%;max-width:420px;font-family:var(--sans);font-size:15px;color:var(--ink);
+    border:1px solid var(--line-2);border-radius:12px;padding:12px 16px;background:#fff}
+  .gl-search:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .gl-count{font-family:var(--mono);font-size:12px;color:var(--faint);margin:14px 0 0}
+  .gl-list{margin:18px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .gl-card{border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:20px 22px}
+  .gl-card h3{font-size:17px;letter-spacing:-.01em;margin:0 0 7px}
+  .gl-card p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.6}
+  .gl-empty{color:var(--faint);font-size:14.5px;padding:20px 0}
+  @media(max-width:640px){.gl-list{grid-template-columns:1fr}}
+</style>
+<link rel="canonical" href="https://dprai.io/glossary/" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DPR AI" />
+<meta property="og:title" content="Plain-word AI dictionary | DPR AI" />
+<meta property="og:description" content="Every bit of AI jargon we use, explained in one plain-English sentence." />
+<meta property="og:url" content="https://dprai.io/glossary/" />
+<meta property="og:image" content="https://dprai.io/assets/og-default.png" />
+<meta name="twitter:card" content="summary_large_image" />
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="../index.html" class="brand" aria-label="DPR AI — home"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a>
+    <nav class="nav-links" aria-label="Primary"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../free/">Free tools</a><a href="../score/">Score my AI</a><div class="learn"><button class="learn-trigger on" id="learnBtn" aria-expanded="false" aria-controls="learnMenu" aria-haspopup="true">Learn <span class="caret" aria-hidden="true">▾</span></button><div class="learn-menu" id="learnMenu" role="menu" aria-labelledby="learnBtn"><a role="menuitem" href="../guide/index.html">Learn AI<span class="desc">Free guide to using AI.</span></a><a role="menuitem" href="../kb/index.html">Knowledge Base<span class="desc">Reference articles &amp; how-tos.</span></a><a role="menuitem" href="../glossary/index.html" aria-current="page">Plain-word dictionary<span class="desc">AI jargon in one sentence.</span></a><a role="menuitem" href="../blog/index.html">Field Notes<span class="desc">Honest notes from real builds.</span></a><a role="menuitem" href="../news/index.html">News<span class="desc">Top AI news, auto-updated.</span></a><a role="menuitem" href="../free/">Free tools<span class="desc">Download the agent — free.</span></a></div></div><a href="../about.html">About</a></nav>
+    <span class="nav-sp"></span>
+    <div class="nav-cta"><a href="../contact.html" class="btn btn-primary">Start a build</a></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="../method.html">How it works</a><a href="../pricing.html">Pricing</a><a href="../free/">Free tools</a><a href="../score/">Score my AI</a><a href="../guide/index.html">Learn AI</a><a href="../kb/index.html">Knowledge Base</a><a href="../glossary/index.html">Plain-word dictionary</a><a href="../blog/index.html">Field Notes</a><a href="../news/index.html">News</a><a href="../about.html">About</a><a href="../contact.html">Start a build</a></div>
+</header>
+
+<main id="main">
+  <section class="page-hero" data-reveal>
+    <div class="wrap prose reveal no-gloss">
+      <p class="eyebrow">Plain-word dictionary</p>
+      <h1 style="margin-top:12px">AI words, in plain English.</h1>
+      <p class="lead" style="margin-top:16px;max-width:66ch">Every bit of AI jargon we use on this site, explained in one honest sentence — no acronyms left hanging, no marketing. See a dotted word anywhere on the site? Tap it for this same definition.</p>
+      <input type="search" id="gl-search" class="gl-search" placeholder="Search a word…" aria-label="Search the dictionary" />
+      <p class="gl-count" id="gl-count"></p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:8px" data-reveal>
+    <div class="wrap reveal no-gloss">
+      <div class="gl-list" id="gl-list"></div>
+      <p class="gl-empty" id="gl-empty" hidden>No word matches that.</p>
+      <p id="gl-nojs" class="gl-empty" style="display:none">Enable JavaScript to browse the dictionary, or tap any dotted word on the site for its definition.</p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="../index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Learn</h4><a href="../guide/index.html">Learn AI (free guide)</a><a href="../kb/index.html">Knowledge Base</a><a href="index.html">Plain-word dictionary</a><a href="../blog/index.html">Field Notes</a><a href="../news/index.html">News</a></div><div class="foot-col"><h4>Studio</h4><a href="../method.html">How it works</a><a href="../case-studies.html">Case studies</a><a href="../about.html">About</a></div><div class="foot-col"><h4>Get started</h4><a href="../contact.html">Start a build</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
+
+<script src="../site.js?v=11" defer></script>
+<script src="../assets/anim.js?v=10" defer></script>
+<script src="../assets/learn.js?v=1" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var G = window.DPRglossary || {};
+  var seen = {}, items = [];
+  Object.keys(G).forEach(function(k){ var d=G[k].d; if(seen[d]) return; seen[d]=1; items.push(G[k]); });
+  items.sort(function(a,b){ return a.w.toLowerCase()<b.w.toLowerCase()?-1:1; });
+  var list=document.getElementById('gl-list'), empty=document.getElementById('gl-empty'), count=document.getElementById('gl-count');
+  function esc(s){ return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function render(q){
+    q=(q||'').toLowerCase().trim();
+    var shown=items.filter(function(it){ return !q || it.w.toLowerCase().indexOf(q)>-1 || it.d.toLowerCase().indexOf(q)>-1; });
+    list.innerHTML = shown.map(function(it){ return '<div class="gl-card"><h3>'+esc(it.w)+'</h3><p>'+esc(it.d)+'</p></div>'; }).join('');
+    empty.hidden = shown.length>0;
+    if(count) count.textContent = shown.length + (q?(' of '+items.length):'') + ' word' + (shown.length===1?'':'s');
+  }
+  render('');
+  var s=document.getElementById('gl-search'); if(s) s.addEventListener('input', function(){ render(s.value); });
+});
+</script>
+</body>
+</html>

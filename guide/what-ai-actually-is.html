@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="../site.css?v=11" />
+<link rel="stylesheet" href="../site.css?v=15" />
+<link rel="stylesheet" href="../assets/learn.css?v=1" />
 <link rel="icon" href="../assets/icons/logo-orb.png" />
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <style>
@@ -66,29 +67,95 @@
       <h1 style="margin-top:12px">What AI is and where it breaks</h1>
       <p class="l-meta"><span>5 min read</span></p>
       <div class="goal"><span class="k">By the end</span><p>You'll know what today's AI can handle, and where it'll burn you if you're not careful. That's the line.</p></div>
+      <div class="tldr" data-reveal>
+        <span class="tldr-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.6.6 1 1.2 1 2h6c0-.8.4-1.4 1-2A6 6 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <p class="tldr-k">In 20 seconds</p>
+          <ul class="tldr-list">
+            <li>Today's AI is like a fast, well-read <strong>intern</strong> — a great writer that wasn't in any of your meetings.</li>
+            <li>It's brilliant at drafting, explaining, and giving you options.</li>
+            <li>It <strong>guesses</strong> at exact facts, numbers, and dates — in a calm, confident voice.</li>
+            <li>So let it draft. You keep the deciding, and check anything that must be exactly right.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="sec" style="padding-top:8px" data-reveal>
     <div class="wrap prose reveal">
-      <p>Start with the basics. ChatGPT, Claude, and Gemini aren't magic brains. They're text tools trained on huge piles of writing. Most bad AI work starts when someone expects a search engine, a coworker, or a judge.</p>
-      <p>Think of AI as a fast, well-read <strong>intern</strong>. It can write, explain, and summarize in seconds because it's seen a huge slice of the internet. But it wasn't in yesterday's meeting. It doesn't know your pricing sheet. And when it doesn't know, it often guesses in a calm voice.</p>
-      <p>That's the danger. It's useful because it sounds sure. It's risky for the same reason, especially when a wrong date or dollar amount can cost you.</p>
+      <figure class="learn-figure-right" data-reveal>
+        <img src="../assets/mascot/cut/bot-peace.png" alt="DPR's friendly robot, standing in for your AI intern" loading="lazy" />
+        <figcaption>Meet your AI intern</figcaption>
+      </figure>
+      <p>Start with the basics. ChatGPT, Claude, and Gemini aren't magic brains. They're text tools trained on huge piles of writing.</p>
+      <p>Think of AI as a fast, well-read <strong>intern</strong>. It writes, explains, and summarizes in seconds because it has read a huge slice of the internet — but it wasn't in yesterday's meeting, and it doesn't know your pricing sheet. When it doesn't know, it guesses in a calm, confident voice. <strong>That's the danger:</strong> it's useful because it sounds sure, and risky for the exact same reason.</p>
+
+      <div class="concept" data-reveal>
+        <div class="concept-side concept-yes">
+          <h4><span class="ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3.5 8.5l2.8 2.8L12.5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span> What the intern read</h4>
+          <ul>
+            <li>A huge slice of the public internet</li>
+            <li>How to write, explain, and summarize</li>
+            <li>Patterns from millions of documents</li>
+          </ul>
+        </div>
+        <div class="concept-div" aria-hidden="true"><span>AI</span></div>
+        <div class="concept-side concept-no">
+          <h4><span class="ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span> What it never learned</h4>
+          <ul>
+            <li>Your meeting yesterday</li>
+            <li>Your pricing sheet and your customers</li>
+            <li>What's true right now</li>
+          </ul>
+        </div>
+      </div>
 
       <div class="twin">
-        <div class="card"><h3>What it's good at</h3><ul>
+        <div class="card good"><h3>What it's good at</h3><ul>
           <li>Turning rough notes into clean writing, like emails you don't want to write twice.</li>
           <li>Explaining something complicated in plain words, so you're not stuck decoding jargon.</li>
           <li>Coming up with options when you're staring at a blank page.</li>
           <li>Tidying and reformatting text when you don't want to do cleanup by hand.</li>
           <li>Getting you a decent first draft fast, so you can mark it up instead of starting cold.</li>
         </ul></div>
-        <div class="card"><h3>Where it'll trip you up</h3><ul>
-          <li>Exact facts, names, numbers, and dates. It can invent them, and people call this "hallucinating."</li>
-          <li>Recent events. Most tools only know up to a cut-off date unless they're connected to the web.</li>
+        <div class="card warn"><h3>Where it'll trip you up</h3><ul>
+          <li>Exact facts, names, numbers, and dates. It can invent them, and people call this "<button type="button" class="term" data-def="When AI makes up a fact, name, or number that sounds right but isn't real. It doesn't know it's wrong — it just fills the gap with confident-sounding text.">hallucinating</button>."</li>
+          <li>Recent events. Most tools only know up to a <button type="button" class="term" data-def="The date the AI's training stopped. It hasn't read anything that happened after it — unless it's connected to the live web.">cut-off date</button> unless they're connected to the web.</li>
           <li>Math and counting. It guesses unless it has a calculator, so don't trust a total without checking it.</li>
           <li>Anything where a confident wrong answer is expensive. That includes legal, medical, money, or customer promises.</li>
         </ul></div>
+      </div>
+
+      <div class="sortgame" data-reveal>
+        <div class="sortgame-head">
+          <span class="sortgame-k">Try it</span>
+          <h3>Trust it, or check it?</h3>
+        </div>
+        <p class="sortgame-lead">Five things AI just did for a small business. For each one, decide: use it as-is, or double-check first? Tap your answer to see the rule.</p>
+
+        <div class="sg-item" data-answer="trust">
+          <p class="sg-q">It turned your rough, messy notes into a short, polite customer email.</p>
+          <p class="sg-why"><span class="lbl">Rule</span><b>Trust it as-is</b> (after a quick read). It's just reshaping words you already gave it — that's its strength, and it's low-risk.</p>
+        </div>
+        <div class="sg-item" data-answer="check">
+          <p class="sg-q">It says a clause in your contract "is standard and fine to sign."</p>
+          <p class="sg-why"><span class="lbl">Rule</span><b>Double-check it.</b> That's legal judgment. AI can sound completely sure while being wrong — send it to a person, not the AI.</p>
+        </div>
+        <div class="sg-item" data-answer="check">
+          <p class="sg-q">It listed "this year's three latest changes" to a tax rule.</p>
+          <p class="sg-why"><span class="lbl">Rule</span><b>Double-check it.</b> Recent facts and dates are exactly where AI guesses. Confirm each one at the official source.</p>
+        </div>
+        <div class="sg-item" data-answer="check">
+          <p class="sg-q">It added up a column of invoice amounts and gave you the total.</p>
+          <p class="sg-why"><span class="lbl">Rule</span><b>Double-check it.</b> AI guesses at math unless it's using a calculator. Never trust a total you didn't verify.</p>
+        </div>
+        <div class="sg-item" data-answer="trust">
+          <p class="sg-q">It gave you three subject-line options for your newsletter.</p>
+          <p class="sg-why"><span class="lbl">Rule</span><b>Trust it as-is.</b> Ideas and options are a real strength. Pick the one you like — nothing here has to be "correct."</p>
+        </div>
+
+        <p class="sortgame-score">Tap an answer on each card to reveal the rule.</p>
       </div>
 
       <div class="example">
@@ -104,6 +171,11 @@
         <li><strong>Assuming it knows your business.</strong> It doesn't, until you tell it. (That's Lesson 4.)</li>
         <li><strong>Believing it because it sounds sure.</strong> Confidence isn't proof. A calm answer can still be wrong.</li>
       </ul>
+
+      <figure class="figure" data-reveal>
+        <div data-diagram="pipeline" data-config='{"items":[{"n":"1","label":"AI drafts","sub":"the reading & first draft"},{"n":"2","label":"You check","sub":"facts, numbers, dates"},{"n":"3","label":"You decide","sub":"the judgment stays yours"}]}'></div>
+        <figcaption>Let AI do the reading and drafting — you keep the deciding.</figcaption>
+      </figure>
 
       <div class="takeaway">
         <p class="k">Takeaway</p>
@@ -123,5 +195,6 @@
 <script src="../site.js?v=11" defer></script>
 <script src="../assets/anim.js?v=10" defer></script>
 <script src="../assets/diagrams.js?v=10" defer></script>
+<script src="../assets/learn.js?v=1" defer></script>
 </body>
 </html>

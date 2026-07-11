@@ -1,0 +1,74 @@
+/* Slop carousel — one AI-slop archetype at a time, large + animated.
+   Replaces the cramped 7-card grid. Built on site.css tokens.
+   Auto-plays, pauses on hover/focus, keyboard + swipe, reduced-motion safe. */
+#slop .slopcar{position:relative;margin-top:clamp(26px,4vw,44px)}
+#slop .slopcar-viewport{overflow:hidden;border:1px solid var(--line);border-radius:20px;
+  background:linear-gradient(180deg,#fff,var(--bg-soft));box-shadow:var(--shadow-1)}
+#slop .slopcar-track{display:flex;transition:transform .6s cubic-bezier(.22,1,.36,1);will-change:transform}
+#slop .slopslide{flex:0 0 100%;display:grid;grid-template-columns:minmax(0,46%) 1fr;align-items:center;
+  gap:clamp(20px,3vw,46px);padding:clamp(22px,3vw,42px);box-sizing:border-box}
+#slop .slopslide-visual{position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;
+  background:radial-gradient(120% 120% at 32% 22%,#fff,var(--bg-softer));
+  display:flex;align-items:center;justify-content:center;border:1px solid var(--line)}
+/* faint engineered grid behind the illustration */
+#slop .slopslide-visual::after{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(15,17,20,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(15,17,20,.06) 1px,transparent 1px);
+  background-size:26px 26px;-webkit-mask-image:radial-gradient(78% 78% at 50% 50%,#000,transparent);
+  mask-image:radial-gradient(78% 78% at 50% 50%,#000,transparent);pointer-events:none}
+#slop .slopslide-img,#slop .slopslide-video{width:78%;height:78%;object-fit:contain;position:relative;z-index:1;
+  mix-blend-mode:multiply}
+/* Ken Burns drift on the ACTIVE slide only */
+#slop .slopslide.is-active .slopslide-img{animation:slopKen 9s ease-in-out infinite alternate}
+@keyframes slopKen{0%{transform:scale(1) translateY(0) rotate(0)}
+  50%{transform:scale(1.06) translateY(-7px) rotate(-1.2deg)}
+  100%{transform:scale(1.1) translateY(3px) rotate(1deg)}}
+#slop .slopslide-body{min-width:0}
+#slop .slopslide-count{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:0 0 10px}
+#slop .slopslide-count b{color:var(--accent);font-weight:600}
+#slop .slopslide-name{font-size:clamp(24px,3.4vw,40px);font-weight:700;letter-spacing:-.02em;line-height:1.05;margin:0 0 14px}
+#slop .slopslide-tell{font-size:clamp(15px,1.5vw,18px);line-height:1.55;color:var(--muted);margin:0;max-width:46ch}
+#slop .slopslide-the-tell{margin:18px 0 0;font-size:14.5px;line-height:1.5;color:var(--ink-2);border-left:3px solid var(--accent);padding-left:14px;max-width:44ch}
+#slop .slopslide-the-tell b{color:var(--accent)}
+/* controls */
+#slop .slopcar-controls{display:flex;align-items:center;gap:12px;margin-top:18px}
+#slop .slopcar-btn{width:44px;height:44px;flex:0 0 auto;border:1px solid var(--line-2);background:#fff;border-radius:12px;
+  font-size:20px;line-height:1;color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s ease}
+#slop .slopcar-btn:hover{border-color:var(--accent);color:var(--accent)}
+#slop .slopcar-btn:focus-visible{outline:none;box-shadow:0 0 0 3px var(--accent-soft);border-color:var(--accent)}
+#slop .slopcar-dots{display:flex;gap:8px;flex:1;flex-wrap:wrap;align-items:center}
+#slop .slopcar-dot{width:34px;height:6px;border-radius:99px;background:var(--line-2);border:0;padding:0;cursor:pointer;transition:.2s ease}
+#slop .slopcar-dot[aria-selected="true"]{background:var(--accent);width:48px}
+#slop .slopcar-dot:focus-visible{outline:none;box-shadow:0 0 0 3px var(--accent-soft)}
+#slop .slopcar-play{margin-left:auto;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--faint);background:none;border:1px solid var(--line);border-radius:99px;padding:9px 15px;cursor:pointer;transition:.15s ease;white-space:nowrap}
+#slop .slopcar-play:hover{color:var(--accent);border-color:var(--accent)}
+#slop .slopcar-play:focus-visible{outline:none;box-shadow:0 0 0 3px var(--accent-soft)}
+#slop .slopcar-progress{margin-top:12px;height:3px;background:var(--line);border-radius:3px;overflow:hidden}
+#slop .slopcar-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--gold));border-radius:3px}
+@media(max-width:720px){#slop .slopslide{grid-template-columns:1fr;gap:16px}#slop .slopslide-visual{aspect-ratio:16/10}}
+@media(prefers-reduced-motion:reduce){
+  #slop .slopcar-track{transition:none}
+  #slop .slopslide.is-active .slopslide-img{animation:none}
+  #slop .slopcar-progress{display:none}
+}
+/* --- AI HUD slop scanner (JS-driven: assets/slophud.js) --- */
+#slop .shud-canvas{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:0;transition:opacity .55s ease}
+#slop .shud-readout{position:absolute;left:12px;bottom:12px;z-index:4;font-family:var(--mono);font-size:10px;line-height:1.5;
+  color:var(--ink-2);opacity:0;transition:opacity .55s ease;width:min(54%,224px);pointer-events:none;
+  background:rgba(255,255,255,.64);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
+  border:1px solid rgba(59,91,219,.18);border-radius:9px;padding:9px 11px;box-shadow:0 10px 24px rgba(59,91,219,.10)}
+#slop .shud-hd{display:flex;align-items:center;gap:6px;font-size:9px;letter-spacing:.16em;color:var(--accent);margin-bottom:6px}
+#slop .shud-hd i{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:shudBlink 1.3s ease-in-out infinite}
+#slop .shud-row{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(59,91,219,.12);padding:2px 0}
+#slop .shud-row span{color:var(--faint)}
+#slop .shud-row b{color:var(--ink);font-weight:600}
+#slop .shud-row.shud-scan{color:var(--accent);border:0}
+#slop .shud-vd{margin-top:7px;letter-spacing:.1em;color:var(--faint)}
+#slop .shud-vd b{color:#e5484d;font-weight:700}
+#slop .shud-score{position:absolute;right:13px;top:12px;z-index:4;text-align:right;font-family:var(--mono);opacity:0;
+  transition:opacity .55s ease;pointer-events:none;text-shadow:0 1px 3px rgba(255,255,255,.9)}
+#slop .shud-n{display:block;font-size:27px;font-weight:700;color:#e5484d;letter-spacing:-.02em;line-height:1}
+#slop .shud-l{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+#slop .slopslide.is-active .shud-canvas,#slop .slopslide.is-active .shud-readout,#slop .slopslide.is-active .shud-score{opacity:1}
+@keyframes shudBlink{0%,100%{opacity:1}50%{opacity:.25}}
+@media(prefers-reduced-motion:reduce){#slop .shud-canvas{display:none}}

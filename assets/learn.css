@@ -1,0 +1,113 @@
+/* DPR learn.css — reusable comprehension components for the beginner surfaces
+   (guide lessons, KB articles, blog posts). Built on site.css tokens ONLY —
+   no new colors, no new fonts. Loaded alongside site.css on learn pages.
+   Every component: responsive, reduced-motion safe, keyboard + screen-reader friendly. */
+
+/* ---- Visual TL;DR strip: "the whole thing in 20 seconds" ---------------- */
+.tldr{
+  display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;
+  border:1px solid var(--line-2);border-radius:var(--radius);
+  background:var(--accent-soft);padding:22px 24px;margin:28px 0 6px;
+}
+.tldr-badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:44px;height:44px;border-radius:12px;background:#fff;
+  border:1px solid var(--line-2);color:var(--accent);flex:0 0 auto;
+}
+.tldr-badge svg{width:24px;height:24px}
+.tldr-k{font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--accent);margin:2px 0 12px}
+.tldr-list{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.tldr-list li{position:relative;padding-left:26px;color:var(--ink-2);font-size:15px;line-height:1.5}
+.tldr-list li::before{
+  content:"";position:absolute;left:0;top:3px;width:16px;height:16px;border-radius:50%;
+  background:#fff;border:1.5px solid var(--accent);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.4l2.6 2.6L12 5.4' fill='none' stroke='%233b5bdb' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:center;
+}
+@media(max-width:560px){.tldr{grid-template-columns:1fr;gap:14px}}
+
+/* ---- Inline plain-word definitions (jargon buster) ---------------------- */
+.term{
+  color:inherit;font:inherit;background:none;border:0;padding:0;cursor:help;
+  border-bottom:1.5px dotted var(--accent);
+  -webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none;
+}
+.term:hover,.term:focus-visible{color:var(--accent);outline:none}
+.term:focus-visible{border-radius:2px;box-shadow:0 0 0 3px var(--accent-soft)}
+.term-pop{
+  position:absolute;z-index:60;max-width:280px;
+  background:var(--ink);color:#fff;font-family:var(--sans);font-size:13.5px;line-height:1.5;
+  padding:11px 14px;border-radius:10px;box-shadow:var(--shadow-2);
+  opacity:0;transform:translateY(4px);pointer-events:none;transition:opacity .14s ease,transform .14s ease;
+}
+.term-pop.is-open{opacity:1;transform:translateY(0)}
+.term-pop b{color:#fff}
+.term-pop .tp-word{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:4px}
+.term-pop::after{content:"";position:absolute;left:var(--ax,50%);top:var(--ay,100%);width:10px;height:10px;background:var(--ink);transform:rotate(45deg)}
+@media(prefers-reduced-motion:reduce){.term-pop{transition:none}}
+
+/* ---- Figure wrapper for diagrams (adds an accessible caption) ----------- */
+.figure{margin:30px 0}
+.figure .dpr-svg{max-width:100%}
+.figure figcaption{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);margin-top:12px;text-align:center}
+
+/* ---- Concept panel: two plain boxes (e.g. "knows / doesn't know") ------- */
+.concept{display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;margin:28px 0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:var(--shadow-1)}
+.concept-side{padding:22px 24px}
+.concept-side h4{margin:0 0 12px;font-size:15px;display:flex;align-items:center;gap:9px}
+.concept-side .ico{width:26px;height:26px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+.concept-side ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px;line-height:1.7}
+.concept-yes .ico{background:var(--accent-soft);color:var(--accent)}
+.concept-no .ico{background:var(--gold-soft);color:var(--gold-hi)}
+.concept-div{width:1px;background:var(--line);position:relative}
+.concept-div span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;border:1px solid var(--line);border-radius:999px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;color:var(--faint)}
+@media(max-width:600px){.concept{grid-template-columns:1fr}.concept-div{width:auto;height:1px}.concept-div span{width:30px;height:30px}}
+
+/* ---- "Trust it or check it?" sorting game (mobile-safe, tap-based) ------ */
+.sortgame{border:1px solid var(--line);border-radius:var(--radius);background:var(--bg-soft);padding:clamp(20px,3vw,28px);margin:30px 0}
+.sortgame-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;margin-bottom:6px}
+.sortgame-head h3{margin:0;font-size:19px}
+.sortgame-k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.sortgame-lead{color:var(--muted);font-size:14.5px;margin:0 0 18px;max-width:60ch}
+.sg-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin-bottom:12px;transition:border-color .18s ease,box-shadow .18s ease}
+.sg-q{font-size:15px;color:var(--ink-2);margin:0 0 12px;line-height:1.5}
+.sg-choices{display:flex;gap:10px;flex-wrap:wrap}
+.sg-btn{font-family:var(--sans);font-size:14px;font-weight:500;cursor:pointer;
+  border:1px solid var(--line-2);background:#fff;color:var(--ink-2);border-radius:9px;padding:9px 16px;
+  display:inline-flex;align-items:center;gap:7px;transition:.15s ease}
+.sg-btn:hover{border-color:var(--accent);color:var(--accent)}
+.sg-btn:focus-visible{outline:none;box-shadow:0 0 0 3px var(--accent-soft);border-color:var(--accent)}
+.sg-why{margin:13px 0 0;padding:12px 14px;border-radius:9px;background:var(--accent-soft);color:var(--ink-2);font-size:13.5px;line-height:1.55}
+.sg-why .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;margin-right:7px}
+/* graded states (set by learn.js) */
+.sg-item.is-correct{border-color:var(--accent)}
+.sg-item.is-wrong{border-color:var(--gold-hi)}
+.sg-btn.pick-correct{background:var(--accent);border-color:var(--accent);color:#fff}
+.sg-btn.pick-wrong{background:var(--gold-soft);border-color:var(--gold-hi);color:var(--gold-hi)}
+.sg-btn[disabled]{cursor:default;opacity:.9}
+.sg-item.is-correct .sg-why{background:var(--accent-soft)}
+.sg-item.is-wrong .sg-why{background:var(--gold-soft)}
+.sortgame-score{font-family:var(--mono);font-size:12.5px;color:var(--faint);margin-top:8px}
+.sortgame-score b{color:var(--accent)}
+/* progressive enhancement: with JS on, hide the plain answer until played.
+   with JS OFF, .sg-why stays visible so the content still teaches. */
+.sortgame.js-on .sg-why{display:none}
+.sortgame.js-on .sg-item.is-graded .sg-why{display:block}
+@media(prefers-reduced-motion:reduce){.sg-item,.sg-btn{transition:none}}
+
+/* ---- polish: card color-coding, quiz tally, floated illustration -------- */
+.twin .card.good{border-top:3px solid var(--accent)}
+.twin .card.warn{border-top:3px solid var(--gold-hi)}
+.twin .card.good h3,.twin .card.warn h3{display:flex;align-items:center;gap:8px}
+.twin .card.good h3::before{content:"";width:18px;height:18px;flex:0 0 auto;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23eef1fb' stroke='%233b5bdb' stroke-width='1'/%3E%3Cpath d='M4.5 8.2l2.3 2.3L11.5 5.5' fill='none' stroke='%233b5bdb' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.twin .card.warn h3::before{content:"";width:18px;height:18px;flex:0 0 auto;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 1.8l6.2 11.4H1.8z' fill='%23f7f2e6' stroke='%238a6416' stroke-width='1'/%3E%3Cpath d='M8 6.2v3.1M8 11.1v.01' stroke='%238a6416' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")}
+
+.learn-figure-right{float:right;width:clamp(130px,20vw,186px);margin:0 0 16px 26px;text-align:center}
+.learn-figure-right img{width:100%;height:auto;display:block;filter:drop-shadow(0 12px 22px rgba(15,23,42,.16))}
+.learn-figure-right figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-top:6px}
+@media(max-width:600px){.learn-figure-right{float:none;width:148px;margin:4px auto 18px}}
+
+.sg-tally{display:inline-flex;gap:5px;vertical-align:middle;margin-right:10px}
+.sg-dot{width:11px;height:11px;border-radius:50%;background:var(--line-2);display:inline-block}
+.sg-dot.ok{background:var(--accent)}
+.sg-dot.miss{background:var(--gold-hi)}

@@ -6,5 +6,8 @@ Allow: /
 Disallow: /*backup
 Disallow: /index.before-stepper.html
 Disallow: /index.pre-redesign-backup.html
+Disallow: /brand-guide/
+Disallow: /retired-pages/
+Disallow: /_local-archive/
 
 Sitemap: https://dprai.io/sitemap.xml

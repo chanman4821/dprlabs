@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="../site.css?v=11" />
+<link rel="stylesheet" href="../site.css?v=15" />
+<link rel="stylesheet" href="../assets/learn.css?v=1" />
 <link rel="icon" href="../assets/icons/logo-orb.png" />
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <style>
@@ -67,12 +68,34 @@
       <h1 style="margin-top:12px">Your first 15 minutes with an AI assistant</h1>
       <p class="l-meta"><span>6 min read</span></p>
       <div class="goal"><span class="k">By the end</span><p>You'll move from "I've never used it" to getting a useful result in about fifteen minutes. That's enough time.</p></div>
+      <div class="tldr" data-reveal>
+        <span class="tldr-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div>
+          <p class="tldr-k">In 20 seconds</p>
+          <ul class="tldr-list">
+            <li>Nothing to install — you just sign up on a website and type in a box.</li>
+            <li>Pick <strong>one</strong> free tool (Claude, ChatGPT, or Gemini) — don't shop around.</li>
+            <li>Give it one <strong>real</strong> task from your day, not a trivia test.</li>
+            <li>The first answer is a draft — reply to shape it ("shorter", "warmer") until it's right.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="sec" style="padding-top:8px" data-reveal>
     <div class="wrap prose reveal">
       <p>AI setup is plain. There's nothing to install and nothing to configure for this first pass. You sign up on a website, type in a box, and read what comes back. That's the whole thing.</p>
+
+      <figure class="learn-figure-right" data-reveal>
+        <img src="../assets/mascot/cut/bot-wave.png" alt="DPR's friendly robot waving hello" loading="lazy" />
+        <figcaption>Say hello in 15 min</figcaption>
+      </figure>
+
+      <figure class="figure" style="clear:both" data-reveal>
+        <div data-diagram="timeline" data-config='{"items":[{"when":"2 min","label":"Pick one tool"},{"when":"3 min","label":"Make an account"},{"when":"1 min","label":"Find the box"},{"when":"5 min","label":"Give it a real task"},{"when":"4 min","label":"Talk back to it"}]}'></div>
+        <figcaption>Your first fifteen minutes, start to finish.</figcaption>
+      </figure>
 
       <ol class="steps" data-stagger>
         <li><span class="t">2 min</span><h3>Pick one tool</h3><p>Start with one free version: <strong>Claude</strong> (claude.ai), <strong>ChatGPT</strong> (chatgpt.com), or <strong>Gemini</strong> (gemini.google.com). Don't shop all afternoon. Pick one, then try the others later. (We go deep on Claude in a separate post.)</p></li>
@@ -114,5 +137,6 @@
 <script src="../site.js?v=11" defer></script>
 <script src="../assets/anim.js?v=10" defer></script>
 <script src="../assets/diagrams.js?v=10" defer></script>
+<script src="../assets/learn.js?v=1" defer></script>
 </body>
 </html>

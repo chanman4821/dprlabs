@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="../site.css?v=11" />
+<link rel="stylesheet" href="../site.css?v=15" />
+<link rel="stylesheet" href="../assets/learn.css?v=1" />
 <link rel="icon" href="../assets/icons/logo-orb.png" />
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 
@@ -78,6 +79,9 @@
   <section class="page-hero" data-reveal>
     <div class="wrap prose reveal">
       <p><span class="g-badge"><span class="d" aria-hidden="true"></span> Free guide · no sign-up</span></p>
+      <figure class="learn-figure-right" data-reveal>
+        <img src="../assets/mascot/cut/bot-welcome.png" alt="DPR's friendly robot welcoming you to the guide" loading="lazy" />
+      </figure>
       <h1 style="margin-top:20px">Learn to use AI at work.</h1>
       <p class="lead" style="margin-top:20px">This free guide is for people who run a business, not a data team. You'll start from zero and use AI on real work, like emails, notes, and first drafts.</p>
       <p>No accounts. No email wall. No theater. The guide goes in the order that makes it click. If you'd rather have it built for you, that's what our studio does. You don't have to buy anything to learn here.</p>
@@ -125,14 +129,9 @@
       </ul>
       <div class="g-layout">
         <h3>What every lesson looks like</h3>
-        <ol>
-          <li><strong>Goal</strong> — one line on what you'll be able to do after it.</li>
-          <li><strong>Explanation</strong> — the idea, so you're not fighting jargon.</li>
-          <li><strong>Worked example</strong> — a real before/after you can compare on a business task.</li>
-          <li><strong>Try it</strong> — a hands-on tool, where it'll help.</li>
-          <li><strong>Common mistakes</strong> — the ways people usually get it wrong, so you don't repeat them.</li>
-          <li><strong>Takeaway</strong> — a short summary and one thing you'll try next.</li>
-        </ol>
+        <figure class="figure" data-reveal style="margin:8px 0 0">
+          <div data-diagram="pipeline" data-config='{"items":[{"n":"1","label":"Goal","sub":"what you can do after"},{"n":"2","label":"Explain","sub":"the idea, no jargon"},{"n":"3","label":"Example","sub":"a real before / after"},{"n":"4","label":"Try it","sub":"a hands-on tool"},{"n":"5","label":"Mistakes","sub":"how people slip"},{"n":"6","label":"Takeaway","sub":"one thing to try"}]}'></div>
+        </figure>
       </div>
     </div>
   </section>
@@ -153,5 +152,6 @@
 <script src="../site.js?v=11" defer></script>
 <script src="../assets/anim.js?v=10" defer></script>
 <script src="../assets/diagrams.js?v=10" defer></script>
+<script src="../assets/learn.js?v=1" defer></script>
 </body>
 </html>
