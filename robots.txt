@@ -14,3 +14,4 @@ Disallow: /nav-preview.html
 Sitemap: https://dprai.io/sitemap.xml
 Disallow: /services-preview.html
 Disallow: /home-preview.html
+Disallow: /docs/
