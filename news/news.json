@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-11T06:20:11.262187+00:00",
+    "generated_at": "2026-07-11T15:01:07.097208+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "5f92d55c125d",
+      "headline": "OpenAI bets on families as ChatGPT goes deeper into households",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+      "published_at": "2026-07-11T14:13:00+00:00",
+      "summary": "ChatGPT is hiring a dedicated product manager to build experiences for families, caregivers, and older adults, according to a job posting.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7917
+    },
     {
       "id": "98d85122ab64",
       "headline": "Meta removes controversial AI feature on Instagram after backlash",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7537
+      "rank_score": 0.703
     },
     {
       "id": "6c4a6e1919dc",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7531
+      "rank_score": 0.7026
     },
     {
       "id": "4f68ab059f6d",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7393
+      "rank_score": 0.6911
     },
     {
       "id": "a4ad473125ca",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7357
+      "rank_score": 0.688
     },
     {
       "id": "1d85656f77c8",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7239
+      "rank_score": 0.6781
     },
     {
       "id": "78cbc53175f9",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7742
+      "rank_score": 0.7301
     },
     {
       "id": "27b60fc861f1",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7059
+      "rank_score": 0.6631
     },
     {
       "id": "05d5cd4f7807",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4645
+      "rank_score": 0.4226
     },
     {
       "id": "e654c4c7eaf2",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6965
+      "rank_score": 0.6553
     },
     {
       "id": "3fd5be624e9b",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6952
+      "rank_score": 0.6543
     },
     {
       "id": "30fd26556973",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6931
+      "rank_score": 0.6525
     },
     {
       "id": "5d89094603b0",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4526
+      "rank_score": 0.4126
     },
     {
       "id": "e18a0edc34ba",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7822
+      "rank_score": 0.7425
     },
     {
       "id": "027b05f9d0fa",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.6977
+      "rank_score": 0.6621
     },
     {
       "id": "ae709b33078a",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4446
+      "rank_score": 0.4095
     },
     {
       "id": "2922cfdde0d7",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6946
+      "rank_score": 0.6637
     },
     {
       "id": "3e171b9d1ff3",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6338
+      "rank_score": 0.603
     },
     {
       "id": "880ee3c2d550",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6321
+      "rank_score": 0.6016
     },
     {
       "id": "e9b3a7306418",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6312
+      "rank_score": 0.6008
     },
     {
       "id": "9491981398fc",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6875
+      "rank_score": 0.6577
     },
     {
       "id": "1adca30b762f",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6265
+      "rank_score": 0.5969
     },
     {
       "id": "14a2cc90aef5",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6262
+      "rank_score": 0.5966
     },
     {
       "id": "55406eec470a",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6258
-    },
-    {
-      "id": "8f2a4085c264",
-      "headline": "Can AI answer the $3 trillion question?",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/09/can-ai-answer-the-3-trillion-question/",
-      "published_at": "2026-07-09T21:47:50+00:00",
-      "summary": "The AI ROI debate has returned and the numbers are even bigger, as are, perhaps, the consequences.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.6252
+      "rank_score": 0.5963
     }
   ]
 }
