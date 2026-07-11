@@ -369,6 +369,23 @@
   .page-hero h1{font-size:clamp(34px,5vw,62px);max-width:17ch;margin-top:16px}
   .page-hero .lead{margin-top:20px;max-width:56ch}
   .page-hero .hero-cta{margin-top:28px}
+  /* split hero with conceptual 3D art (interior pages) */
+  .hero-split{display:grid;grid-template-columns:1.22fr .78fr;gap:40px;align-items:center}
+  .hero-split .hero-copy{min-width:0}
+  .hero-art{display:flex;justify-content:center;align-items:center;position:relative}
+  .hero-art::before{content:"";position:absolute;width:82%;height:82%;border-radius:50%;background:radial-gradient(circle at 50% 46%,rgba(79,70,229,.18),transparent 70%);z-index:0}
+  .hero-art img{position:relative;z-index:1;max-width:100%;max-height:350px;object-fit:contain;filter:drop-shadow(0 24px 38px rgba(49,32,120,.22));animation:heroArtFloat 6s ease-in-out infinite}
+  @keyframes heroArtFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+  /* small inline accent art woven into content sections */
+  .sec-art{display:flex;justify-content:center;margin:6px 0 4px}
+  .sec-art img{max-width:78%;max-height:230px;object-fit:contain;filter:drop-shadow(0 18px 28px rgba(49,32,120,.18))}
+  @media (max-width:820px){
+    .hero-split{grid-template-columns:1fr;gap:14px}
+    .hero-art{margin-top:6px}
+    .hero-art img{max-height:210px}
+    .sec-art img{max-height:170px}
+  }
+  @media (prefers-reduced-motion:reduce){.hero-art img{animation:none}}
   .prose{max-width:72ch}
   .prose p{color:var(--muted);font-size:16.5px;line-height:1.72;margin:0 0 20px}
   .prose p strong,.prose li strong{color:var(--ink-2);font-weight:600}
