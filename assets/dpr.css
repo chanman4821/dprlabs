@@ -1,0 +1,64 @@
+/* DPR 2026 — design tokens + motion base.
+   Loaded ONLY on the rebuilt homepage (index.html) after site.css/kit.css,
+   so it never affects other pages. All new section styles are scoped under
+   .s-* wrappers to prevent leakage. */
+
+:root {
+  /* color — light editorial base, ONE gold accent, ink for the single dark band */
+  --paper: #F7F5F0;
+  --paper-2: #EFEBE2;
+  --ink: #14130F;
+  --ink-60: #4A473F;
+  --ink-30: #8C887C;
+  --gold: #C8912A;
+  --gold-hi: #E6B24C;
+  --gold-ink: #7A5510;      /* accented words on paper — keeps AA contrast */
+  --hairline: rgba(20, 19, 15, .12);
+
+  /* layout */
+  --wrap: 1200px;
+  --bleed: min(1440px, 96vw);
+  --read: 64ch;
+
+  /* spacing — 8pt, alternating tall/normal section rhythm */
+  --s1: 8px; --s2: 16px; --s3: 24px; --s4: 40px;
+  --s5: 64px; --s6: 96px; --s7: 144px; --s8: 200px;
+
+  /* type scale — fluid, disciplined */
+  --step--1: .82rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: clamp(1.5rem, 1.1rem + 2vw, 2.1rem);
+  --step-3: clamp(2.2rem, 1.4rem + 4vw, 3.4rem);
+  --step-4: clamp(3.2rem, 2rem + 7vw, 6.2rem);
+  --step-5: clamp(3.6rem, 2rem + 9vw, 8rem);
+
+  /* motion */
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-inout: cubic-bezier(.65, 0, .35, 1);
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+  --t-fast: 180ms;
+  --t: 420ms;
+  --t-slow: 720ms;
+  --t-cine: 1100ms;
+}
+
+/* ---- reveal (transform/opacity only; per-child stagger via --i) ---- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--t) var(--ease-out), transform var(--t) var(--ease-out);
+  transition-delay: calc(var(--i, 0) * 60ms);
+  will-change: transform, opacity;
+}
+[data-reveal].is-in { opacity: 1; transform: none; }
+
+/* ---- section-blend helper: sections that expose --sp cross-fade their base ---- */
+.s-blend { background: var(--paper); }
+.s-blend[data-sp] {
+  background: color-mix(in oklab, var(--paper), var(--paper-2) calc(var(--sp, 0) * 100%));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1; transform: none; transition: none; transition-delay: 0s; }
+}

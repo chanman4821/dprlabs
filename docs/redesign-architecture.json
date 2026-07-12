@@ -1,0 +1,150 @@
+{
+  "design_tokens": {
+    "color": "Light editorial base. --paper:#F7F5F0 (warm off-white), --paper-2:#EFEBE2 (section shift), --ink:#14130F (near-black warm), --ink-60:#4A473F, --ink-30:#8C887C. ONE accent: --gold:#C8912A with --gold-hi:#E6B24C and --gold-ink:#7A5510 for text-on-paper legibility (use gold-ink for accented words to keep AA contrast). Mascot/objects carry the literal metallic gold; UI accent stays the single flat gold. Danger/slop tone borrows --ink at low opacity + hatch texture, never red. Semantic: --line:rgba(20,19,15,.12), --lift:0 1px 0 rgba(20,19,15,.04). NO gradients-as-decoration except one controlled radial 'spotlight' behind mascot. Dark is used ONLY as an inverted anchor band (Section 4 'You own it') --ink background with --paper text \u2014 deliberate, once, for contrast rhythm.",
+    "type_scale_and_two_tone": "Two families max. Display: a tight grotesque (e.g. 'S\u00f6hne Breit' fallback -apple-system/Inter-Tight) for headlines; Text: same-family regular for body; Mono ('JetBrains Mono') ONLY inside code/eval/handover chips. Fluid scale via clamp: --step--1 .82rem; --step-0 1rem; --step-1 1.25rem; --step-2 clamp(1.5,1.1rem+2vw,2.1rem); --step-3 clamp(2.2,1.4rem+4vw,3.4rem); --step-4 clamp(3.2,2rem+7vw,6.2rem) hero; --step-5 clamp(3.6,2rem+9vw,8rem) pull-quotes. Two-tone rule: headlines are --ink with EXACTLY the target words in --gold-ink, weight-matched (no italics, no size jump) \u2014 accent by color only. Tracking: display -0.02em, uppercase eyebrows +0.14em at --step--1. Line-height display 0.98, body 1.55. Max measure 62ch.",
+    "spacing_rhythm": "8pt base. Tokens --s1:8 --s2:16 --s3:24 --s4:40 --s5:64 --s6:96 --s7:144 --s8:200. Section vertical rhythm alternates tall/normal: anchor sections use --s8, connective sections --s6 \u2014 deliberate uneven cadence, not uniform. Global content max --wrap:1200px; a wider --bleed:min(1440px,96vw) for asset overspill; narrow --read:64ch for prose. Asymmetric gutters: left rail 1fr / content 8col / right rail 2fr swaps side per section to avoid grid monotony.",
+    "motion_easings_durations": "Easings: --ease-out:cubic-bezier(.22,1,.36,1) (reveals), --ease-inout:cubic-bezier(.65,0,.35,1) (blends), --ease-spring:cubic-bezier(.34,1.56,.64,1) (mascot/CTA press only, small displacement). Durations: --t-fast:180ms, --t:420ms, --t-slow:720ms, --t-cine:1100ms (once, hero + own-it band). Reveal stagger step 60ms, capped at 6 children. Scroll-linked parallax runs on rAF, capped \u00b140px. prefers-reduced-motion: all durations\u21921ms, parallax\u21920, video posters swap in."
+  },
+  "motion_system": "Single global controller in reveal.js. (1) IntersectionObserver (threshold [0,.15,.5], rootMargin '-8% 0px -8%') adds .is-in to [data-reveal]; CSS transitions transform+opacity only (translateY(24px)/opacity0 \u2192 0/1) with per-child --i index driving transition-delay:calc(var(--i)*60ms). (2) Section-to-section BLEND: each <section> exposes --sp (0\u21921 scroll progress through its own viewport window) written once per rAF frame from a throttled scroll loop over a small registered array of anchor sections; CSS consumes --sp for background cross-fade (paper\u2192paper-2), mask-position, and parallax translate on decorative layers. Adjacent sections share edge color via a --sp-driven linear tint so the seam dissolves rather than cuts. (3) Performance rules: only transform/opacity/filter animate; decorative layers get will-change:transform + contain:layout paint; never animate width/top/box-shadow; videos are object-fit:cover, autoplay muted playsinline loop, paused via IO when off-screen (v.pause()) to save GPU. (4) Reduced-motion: matchMedia gate \u2014 observer still toggles .is-in but CSS zeroes transforms/delays, parallax loop never starts, all <video> replaced by their poster PNG. rAF loop is a single shared ticker (no per-element listeners); if >1 heavy asset visible, degrade parallax to step-quantized values.",
+  "anchor_moments": [
+    "OWNS/RENTS hero toggle \u2014 the headline word 'RENTS' is a live crossout: DOM is <span class='swap'><b class='own'>OWNS</b><b class='rent'>RENTS</b></span>; a rAF-driven --sp on the hero draws an SVG hand-strike line across 'RENTS' (stroke-dashoffset 1\u21920) while OWNS ink-fills gold; on hover/scroll the two words seesaw in weight. Mascot gestures (video) sit in the counter, a soft radial gold spotlight (single CSS radial, opacity via --sp) grounds it. Built: SVG stroke + CSS clip-path reveal on OWNS, JS only writes --sp.",
+    "Slop reveal wipe (Section 3) \u2014 a full-width split where a 'demo' still frame (FLUX, boxed screenshot mock) is torn away by a diagonal clip-path mask (--sp-driven polygon) to expose the same claim rendered as reproducible evals (mono text + tiny sparkline). No card; the tear IS the layout edge. Built: two stacked layers, top layer clip-path:polygon animated by --sp, drop-shadow on the tear seam; reduced-motion shows both halves side by side.",
+    "Own-it handover ledger (Section 4, inverted --ink band) \u2014 'code / weights / evals' as three receipt lines that type-stamp in with a mono monospace tick and a checkmark drawn via SVG path length; a faint gold key-in-lock micro-loop (WAN webm) bleeds off the right edge. The dark band itself is the anchor contrast. Built: SVG stroke-dashoffset checks on .is-in, staggered; mono ledger uses tabular-nums.",
+    "Number-first savings dial (Section 6) \u2014 the visitor's typed inputs drive one BIG animated numeral (odometer via tween on rAF, tabular-nums) plus a single horizontal 'time reclaimed' bar that grows with --value; the honest-number motif (one number) is echoed visually. Built: JS clamps + tweens display value with requestAnimationFrame lerp; bar width via CSS var, no chart lib."
+  ],
+  "sections": [
+    {
+      "n": 1,
+      "name": "Hero \u2014 Owns not Rents",
+      "layout": "Asymmetric 12-col: headline block cols 1\u20137 left-weighted, mascot well cols 7\u201312 overspilling the right --bleed. Eyebrow, H1 (2 lines, OWNS/RENTS accents), sub-line at --read width, CTA row.",
+      "content": "Eyebrow: 'THE ANTI-SLOP AI STUDIO'. H1: 'We build production AI your business actually OWNS \u2014 not RENTS.' Sub: 'Real systems, senior-built, measured against one honest number, handed over with the code, weights, and evals.' CTAs: 'Start a build' (solid gold), 'See what we ship' (ink outline).",
+      "visual": "assets/anim/bot.webm gold mascot, alpha, looping, floating idle; single radial gold spotlight behind it; SVG strike-line over RENTS.",
+      "interaction": "OWNS ink-fills gold + RENTS strike-through on load & re-emphasize on scroll (--sp); mascot parallax \u00b124px; CTA press uses --ease-spring scale .98.",
+      "transition_in": "Cinematic once: headline lines mask-reveal upward (--t-cine) staggered, mascot fades+rises, spotlight blooms.",
+      "blend_with_neighbors": "Bottom edge tints paper\u2192paper-2 via --sp so it dissolves into Section 2; mascot's spotlight faint glow carries a few px past the seam."
+    },
+    {
+      "n": 2,
+      "name": "What we build \u2014 four owned systems",
+      "layout": "NOT a bento grid: a vertical editorial list of 4 rows, each row full-width with alternating side for the 3D object (left/right/left/right) and text on the opposite side; generous --s7 between rows.",
+      "content": "Sales agents, Automations, Multi-agent systems, Pipelines. Each: one blunt line + 2\u20133 word capability chips (mono). Section kicker: 'Four systems we build to OWN.'",
+      "visual": "Four transparent VP9-alpha loops: plane, gears, molecule, database \u2014 each bleeds off its outer margin, half in the gutter, slow float parallax.",
+      "interaction": "Each object plays only while its row is in view (IO pause/play); row text reveals with 60ms stagger; hovering a row lifts its object scale 1.03.",
+      "transition_in": "Rows reveal on .is-in translateY; objects fade+float from their bleed side.",
+      "blend_with_neighbors": "Paper-2 background; last row's object overspills toward Section 3's tear to hint the coming contrast."
+    },
+    {
+      "n": 3,
+      "name": "Fake it vs prove it",
+      "layout": "Full-bleed diagonal split. Left = 'slop' (dead demo screenshot, hatch-textured, desaturated), Right = 'proven' (reproducible evals, mono, sparkline). The diagonal tear is the divider.",
+      "content": "Pull-quote as typographic anchor (--step-5): 'Most AI you've been sold is slop: dead demos, rented wrappers, and accuracy nobody can reproduce.' Right side: reproducible eval snippet + 'one honest number' tag.",
+      "visual": "FLUX-generated fake 'demo' UI still (boxed, intentionally sterile) under a CSS hatch overlay on slop side; clean mono eval block on proven side.",
+      "interaction": "Scroll-driven clip-path tear (--sp) wipes slop away to reveal proven; sparkline draws via stroke-dashoffset.",
+      "transition_in": "Pull-quote words rise; tear seam sweeps as section centers.",
+      "blend_with_neighbors": "High-contrast beat; proven side's ink density leads into the inverted dark Section 4 \u2014 the tear's dark seam pre-echoes it."
+    },
+    {
+      "n": 4,
+      "name": "You own it \u2014 handover",
+      "layout": "INVERTED anchor band: full-width --ink background, --paper text, centered narrow --read column with a right-bleeding key-loop. Once-only dark section.",
+      "content": "H2 (gold-hi accents on 'own'): 'If you can't take the code, the weights, and the evals with you, you're renting theater.' Ledger: code / weights / evals \u2014 each a stamped handover line.",
+      "visual": "WAN-generated gold key-turning-in-lock micro-loop (alpha webm) bleeding off right edge; SVG checkmarks per ledger line.",
+      "interaction": "Ledger lines type-stamp + checkmark-draw staggered on .is-in; key loop plays in view only.",
+      "transition_in": "Band background wipes in from Section 3's dark seam (--sp continuity), text fades up.",
+      "blend_with_neighbors": "Bottom edge fades --ink\u2192--paper so Section 5 returns to light without a hard cut."
+    },
+    {
+      "n": 5,
+      "name": "How a build runs \u2014 6 steps",
+      "layout": "Horizontal senior-led path: a single connecting line (SVG) threading 6 numbered nodes; on narrow screens it stacks vertically. Uses existing kit stepper, restyled.",
+      "content": "6 steps orbiting 'the one honest number': Scope the number \u2192 Senior design \u2192 Build in the open \u2192 Measure vs the number \u2192 Handover (code+weights+evals) \u2192 You run it. Blunt one-liners.",
+      "visual": "SVG path with a gold progress dash that fills as you scroll; small mono step indices; the number motif appears at center as a pinned figure.",
+      "interaction": "Scroll-linked path dash (--sp) fills; active node scales + gold dot; reduced-motion shows full path static.",
+      "transition_in": "Nodes reveal left\u2192right stagger; path draws.",
+      "blend_with_neighbors": "Paper base; sets up the number theme that Section 6 pays off numerically."
+    },
+    {
+      "n": 6,
+      "name": "Savings calculator",
+      "layout": "Two-part asymmetric: left = compact input stack (labels + sliders/number fields), right = one dominant animated result numeral + a single time-reclaimed bar. No card chrome \u2014 inputs sit on paper with hairlines.",
+      "content": "Heading: 'See the number YOU could save.' Inputs are visitor's own: people affected, hours/week on the task, weeks/year. Output framed as THEIR reclaimed time (and a plain-language 'that's roughly X working weeks'). Zero prices, zero our-fees.",
+      "visual": "Big odometer numeral (tabular-nums, gold-ink) + growing gold bar; subtle mascot peeking (PNG pose) approving.",
+      "interaction": "Live rAF-tweened result on any input change; bar width via --value; debounced, keyboard-accessible sliders.",
+      "transition_in": "Inputs and numeral reveal; first value counts up from 0 once on entry.",
+      "blend_with_neighbors": "Paper-2; leads into open-source proof (Section 7)."
+    },
+    {
+      "n": 7,
+      "name": "Free open-source tool",
+      "layout": "Editorial feature row: left prose + repo/link CTA, right a mono 'terminal' card (the ONLY mono-heavy block) showing an install/usage line and a live star/commit stamp.",
+      "content": "Pull-quote support: 'We build in the open.' One paragraph: what the tool is, why free, link 'Get it on GitHub'. Reinforces ownership ethos.",
+      "visual": "Mono terminal block (not glass \u2014 flat ink-on-paper inverted mini-panel), a small gears loop reused subtly.",
+      "interaction": "Copy-to-clipboard on the install line; typed-in caret animation on reveal (reduced-motion: static).",
+      "transition_in": "Prose reveals, terminal lines type-stagger.",
+      "blend_with_neighbors": "Paper; hands off to the team/FAQ section."
+    },
+    {
+      "n": 8,
+      "name": "Small senior team + FAQ",
+      "layout": "Split: left = short 'senior-only' statement + tiny team row (2\u20134 monochrome portraits, no titles inflation), right = accordion FAQ (existing kit accordions restyled).",
+      "content": "Pull-quote: 'No offshore junior farms, no prompt-and-pray. Senior people, or we don't ship it.' FAQ: ownership, handover, the one number, timelines, what 'slop' means \u2014 blunt answers.",
+      "visual": "Duotone portraits (FLUX or real photos matted), gold hairline dividers; mascot small pose beside the statement.",
+      "interaction": "Accordion open/close (kit.js) with height transition + gold marker; portraits subtle grayscale\u2192tint on hover.",
+      "transition_in": "Statement + portraits reveal; first FAQ item pre-opened.",
+      "blend_with_neighbors": "Paper-2 easing toward the contact close."
+    },
+    {
+      "n": 9,
+      "name": "Contact \u2014 tell us the number",
+      "layout": "Focused closing band: oversized headline left, existing #contactForm right in a clean hairline frame (no glass). Mascot gives a final wave (bot.webm variant).",
+      "content": "H2: 'Tell us the one number you need to hit.' Sub: 'We'll tell you if we can own it.' CTAs echo: 'Start a build'. Form fields: name, email, the number/goal, context.",
+      "visual": "bot.webm final pose bleeding bottom-left; a faint gold underline sweep beneath the headline.",
+      "interaction": "site.js form validation/submit unchanged; on success, mascot celebratory pose swaps; inline error states.",
+      "transition_in": "Headline underline sweeps (--sp), form fields reveal staggered.",
+      "blend_with_neighbors": "Final section; footer inherits paper, gold hairline top border ties back to hero accent."
+    }
+  ],
+  "savings_calculator_arch": "Inputs (all visitor-supplied, no benchmarks fabricated): peopleAffected (int), hoursPerWeekOnTask (number), weeksPerYear (default 48, editable), and a single honest slider 'share of that task realistically automatable' (0\u2013100%, visitor's own estimate, default 40%, clearly labeled 'your estimate'). Math is transparent and printed under the result: reclaimedHoursPerYear = people \u00d7 hoursPerWeek \u00d7 weeks \u00d7 (share/100). Show as hours AND 'that's about X full-time working weeks' (\u00f740) \u2014 time only, never our price, never their dollars unless THEY optionally enter an hourly rate they own (kept optional, off by default, labeled 'optional \u2014 your rate'). UI: on 'input' event, debounce 40ms, recompute, then rAF-lerp the displayed numeral from current\u2192target (tabular-nums odometer) and set --value on the bar (width:calc(var(--value)*1%)). No implied guarantee: persistent microcopy 'Your estimate, your numbers \u2014 not a promise. We measure the real number together during scoping.' Fully keyboard/AT accessible: sliders are <input type=range> with linked <input type=number>, aria-live='polite' on the result numeral, reduced-motion skips the count-up and sets final value directly.",
+  "visual_asset_plan": [
+    "Hero radial spotlight \u2014 pure CSS radial-gradient (no asset). Blends: opacity driven by --sp behind mascot, bleeds a few px past section seam.",
+    "Mascot idle + wave + celebrate \u2014 reuse assets/anim/bot.webm; generate 1 extra WAN celebrate loop (alpha VP9) for Section 9 success + PNG poster fallbacks. Blends: alpha overspill into gutters, parallax, no box.",
+    "Four system objects \u2014 reuse existing plane/gears/molecule/database alpha webms in Section 2; if any missing, WAN 2.2 image-to-video from FLUX stills, rembg matte, ffmpeg VP9-alpha. Blends: half-in-gutter bleed, slow float parallax, side-alternating.",
+    "Section 3 'dead demo' still \u2014 FLUX: a deliberately sterile, generic SaaS dashboard mock (flat, lifeless) at ~1600px, exported PNG, then CSS hatch + desaturate overlay. Blends: lives under the diagonal clip-path tear as the 'slop' layer, torn away on scroll.",
+    "Section 3 sparkline + Section 5 path + Section 4 checkmarks \u2014 hand-authored inline SVG (no generation), stroke-dashoffset animated. Blends: drawn in place, gold stroke.",
+    "Section 4 key-in-lock micro-loop \u2014 WAN 2.2 from a FLUX gold key+lock still, alpha VP9 short loop, rembg+ffmpeg. Lives right-edge of dark band, bleeds off-canvas.",
+    "Section 8 portraits \u2014 real photos preferred; if placeholders needed, FLUX duotone gold/ink portraits, matted. Blends: hairline-framed row, grayscale\u2192gold-tint on hover, no drop-shadow cards.",
+    "Textures \u2014 one subtle paper grain PNG (tileable, ~3% opacity) as body::before for warmth; CSS diagonal hatch pattern (repeating-linear-gradient) for slop side. Blends: global low-opacity, never a boxed tile."
+  ],
+  "css_js_architecture": "Keep no-build static: plain <script src> + <link> in each HTML page, no bundler. LAYERING: (1) site.css = existing base, untouched except appending :root token additions guarded by comment block '/* dpr-2026 tokens */'. (2) assets/kit.css = existing components untouched. (3) NEW assets/dpr.css = all new section styles, scoped under section wrappers (.s-hero, .s-build, .s-slop, .s-own, .s-path, .s-calc, .s-oss, .s-team, .s-contact) so nothing leaks to other pages. BEM-lite naming: .block__el--mod, plus data-* hooks for JS (data-reveal, data-parallax, data-calc, data-sp). JS: keep existing site.js/kit.js loading; add assets/dpr.js as a single IIFE/module that: registers IO reveal, the shared rAF --sp ticker (only for sections with data-sp), video pause/play on visibility, calculator logic, clipboard, mascot pose swap. Guard everything behind matchMedia(prefers-reduced-motion) and feature-detects (IntersectionObserver, WebM alpha via canProbe). No new deps. Existing pages that don't include dpr.css/dpr.js are unaffected. Home page includes them last so cascade/order is predictable. Assets under assets/anim/ and assets/img/. Ship-safe: all JS null-checks its targets so partial pages don't throw.",
+  "distinctiveness": "The structural spine is a single vertical 'ownership argument' that alternates rhythm and inverts ONCE: light editorial sections flow with side-swapping asymmetry (never a symmetric grid, never equal cards), building tension to one deliberate dark inverted band (Section 4 'You own it') that acts as the spine's fulcrum, then resolves back to light and pays off in the single big number (Section 6). Richness is concentrated in 4 scroll-authored anchor moments (OWNS/RENTS strike, slop tear, handover ledger, savings dial) rather than sprinkled uniformly. No repeated card component defines the page \u2014 each section has a distinct structural gesture (list-with-bleed, diagonal tear, inverted ledger, threaded path, input+numeral). That asymmetric-cadence + single-inversion + concentrated-anchors skeleton is what makes it a bespoke argument, not a bento template.",
+  "risks": [
+    "VP9 alpha video unsupported (Safari) \u2014 mitigation: feature-detect, fall back to PNG poses/stills; never depend on video for meaning; all copy readable without video.",
+    "Scroll-linked --sp jank on low-end/GPU \u2014 mitigation: single shared rAF ticker, transform/opacity only, will-change+contain, cap parallax, quantize under load, IO-pause off-screen videos.",
+    "Two-tone gold failing contrast \u2014 mitigation: accented WORDS use --gold-ink (darker) on paper for AA; bright --gold reserved for fills/strokes/objects, verified with a contrast pass.",
+    "Calculator implying a guarantee or leaking our pricing \u2014 mitigation: time-first output, visitor-only inputs, persistent 'your estimate, not a promise' microcopy, optional rate off by default, no fees anywhere.",
+    "Reduced-motion users getting a broken/empty page \u2014 mitigation: .is-in still applies (content visible), CSS zeroes transforms, videos\u2192posters, count-up\u2192final value; test with the query forced on.",
+    "Regression on other pages from shared CSS/JS \u2014 mitigation: all new styles scoped under section classes, all JS null-guarded and only wired via data-* present on home; existing files appended-to, not rewritten.",
+    "Dark inverted band feeling like generic dark-glass \u2014 mitigation: flat --ink, no blur/glass, no glow cards; it's a typographic ledger, used exactly once."
+  ],
+  "build_order": [
+    "Phase 0 \u2014 Tokens + scaffolding: add token block to site.css, create dpr.css/dpr.js shells, wire IO reveal + shared --sp ticker + reduced-motion guard. Gate: reveal works, no console errors, push.",
+    "Phase 1 \u2014 Hero anchor (Section 1): layout, OWNS/RENTS strike interaction, mascot, spotlight. Gate: critique_ui on hero-in-context \u226584 focal/type, live push.",
+    "Phase 2 \u2014 Sections 2 & 3: four-object bleed list + slop tear anchor. Gate: critique_ui \u226584 originality/structure, push.",
+    "Phase 3 \u2014 Sections 4 & 5: inverted handover ledger + threaded path. Gate: contrast + motion QA, critique_ui \u226584, push.",
+    "Phase 4 \u2014 Section 6 savings calculator: inputs, honest math, odometer, a11y, disclaimers. Gate: manual math check + AT check + critique_ui \u226584, push.",
+    "Phase 5 \u2014 Sections 7,8,9: OSS terminal, team+FAQ (kit accordions), contact form wiring. Gate: form submit works via site.js, critique_ui full-page \u226584, push.",
+    "Phase 6 \u2014 Asset pass: generate/replace WAN+FLUX assets, matte+VP9, posters, grain. Gate: cross-browser fallback check, Lighthouse perf, final critique_ui \u226584, push."
+  ],
+  "acceptance_84": [
+    "Exactly one accent color used with disciplined two-tone headlines (accented words color-only, weight-matched).",
+    "No generic dark-glass cards and no equal-weight bento grid anywhere; each section has a structurally distinct gesture.",
+    "Clear focal hierarchy per section: one dominant element (headline or numeral), supporting elements demoted by size/color/space.",
+    "Mono type appears only in code/eval/terminal/ledger contexts, never in prose.",
+    "3\u20134 genuine high-craft anchor interactions present and functional (OWNS/RENTS, slop tear, handover ledger, savings dial).",
+    "Deliberate asymmetric spacing cadence with the single dark inversion as fulcrum \u2014 visible structural rhythm, not uniform tiling.",
+    "Motion is smooth (transform/opacity only, no jank), section seams blend rather than hard-cut.",
+    "Fully degrades: reduced-motion and no-WebM users see complete, legible, well-composed content.",
+    "Zero pricing/money anywhere except the visitor's-own-numbers savings calculator with explicit non-guarantee copy.",
+    "Type scale is fluid, consistent, and disciplined (limited steps, tight display leading, correct measure)."
+  ]
+}
