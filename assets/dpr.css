@@ -246,3 +246,34 @@
 #owned-method .eyebrow::before, #owned-method .eyebrow::after { background: var(--gold) !important; }
 #owned-method .gold-text { background-image: none !important; -webkit-text-fill-color: var(--gold-ink) !important; color: var(--gold-ink) !important; }
 #owned-method .hrun-status { color: var(--gold-ink); }
+
+
+/* ===================== SECTION 6 — SAVINGS CALCULATOR ===================== */
+.s-calc { background: var(--paper-2); padding: var(--s7) 0; }
+.s-calc__inner { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--s4); }
+.s-calc__eyebrow { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .16em; text-transform: uppercase; color: var(--gold-ink); }
+.s-calc__h2 { font-size: var(--step-3); line-height: 1.05; letter-spacing: -.025em; font-weight: 800; color: var(--ink); margin: var(--s3) 0 var(--s2); max-width: 18ch; }
+.s-calc__h2 .gold { color: var(--gold-ink); }
+.s-calc__sub { font-size: var(--step-0); color: var(--ink-60); max-width: 54ch; margin: 0 0 var(--s5); }
+.s-calc__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); align-items: stretch; }
+.s-calc__form { display: grid; gap: var(--s3); align-content: start; }
+.s-calc__field { display: grid; gap: 8px; }
+.s-calc__field > span { font-size: var(--step-0); color: var(--ink); font-weight: 600; display: flex; justify-content: space-between; align-items: baseline; gap: 1em; }
+.s-calc__field > span em { font-style: normal; font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); color: var(--gold-ink); font-weight: 700; }
+.s-calc__field input[type=number] { font: inherit; font-size: var(--step-1); padding: .7em .9em; border: 1px solid var(--hairline); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; }
+.s-calc__field input[type=number]:focus { outline: 2px solid var(--gold); outline-offset: 1px; border-color: transparent; }
+.s-calc__field--range small { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); color: var(--ink-30); text-transform: uppercase; letter-spacing: .08em; }
+.s-calc__field input[type=range] { width: 100%; accent-color: var(--gold); height: 22px; }
+.s-calc__result { background: linear-gradient(158deg, #fff, #FBF3E2); border: 1px solid rgba(200,145,42,.22); border-radius: 20px; padding: clamp(28px,4vw,46px); display: flex; flex-direction: column; justify-content: center; gap: var(--s2); box-shadow: 0 18px 44px rgba(200,145,42,.10); }
+.s-calc__k { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-30); margin: 0; }
+.s-calc__num { display: flex; align-items: baseline; gap: .35em; }
+.s-calc__num b { font-size: clamp(48px, 8vw, 92px); font-weight: 800; letter-spacing: -.03em; color: var(--gold-ink); font-variant-numeric: tabular-nums; line-height: 1; }
+.s-calc__num span { font-size: var(--step-0); color: var(--ink-60); }
+.s-calc__bar { height: 9px; border-radius: 999px; background: rgba(200,145,42,.16); overflow: hidden; margin: var(--s2) 0; }
+.s-calc__bar span { display: block; height: 100%; width: 0; background: var(--gold); border-radius: 999px; transition: width .5s var(--ease-out); }
+.s-calc__eq { font-size: var(--step-0); color: var(--ink-60); margin: 0 0 var(--s3); }
+.s-calc__eq b { color: var(--ink); }
+.s-calc__result .dpr-btn { align-self: flex-start; }
+.s-calc__note { font-size: var(--step--1); color: var(--ink-30); margin: var(--s4) 0 0; max-width: 62ch; }
+@media (max-width: 860px) { .s-calc__grid { grid-template-columns: 1fr; } .s-calc__h2 { font-size: var(--step-2); } }
+@media (prefers-reduced-motion: reduce) { .s-calc__bar span { transition: none; } }

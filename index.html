@@ -373,27 +373,56 @@
   </section>
 
   <!-- OFFER -->
-  <section class="sec" id="offer">
-    <div class="wrap offer">
-      <div class="reveal">
-        <p class="eyebrow">The first build</p>
-        <h2 style="margin-top:14px">One scope. <span class="gold-text">One number.</span> Priced up front.</h2>
-        <p class="lead">One workflow. One number, agreed before we write code. A system you own — not a deck.</p>
-        <p class="margin-note"><b>Why a guarantee?</b> We're a small studio early in our story. The risk sits with us, not you — that's how we earn the next build.</p>
+  <!-- SECTION 6 — savings calculator (visitor's own numbers, no pricing) -->
+  <section class="s-calc" id="savings">
+    <div class="s-calc__inner">
+      <div class="s-calc__head" data-rvl>
+        <span class="s-calc__eyebrow">The cost of doing it by hand</span>
+        <h2 class="s-calc__h2">See the hours a build could <span class="gold">hand back</span>.</h2>
+        <p class="s-calc__sub">Your numbers, your estimate &mdash; not a promise. We agree the real one together during scoping.</p>
       </div>
-      <div class="scorecard reveal">
-        <p class="sc-eyebrow">Scope of work</p>
-        <ul class="sc-rows">
-          <li><span class="k">Scope</span><span class="v">One workflow, biggest time saving</span></li>
-          <li><span class="k">Price band</span><span class="v num">$8,000–$15,000</span></li>
-          <li><span class="k">Timeline</span><span class="v num">weeks, not quarters</span></li>
-          <li><span class="k">The number</span><span class="v">Agreed in writing, up front</span></li>
-        </ul>
-        <div class="guarantee"><span class="seal" aria-hidden="true">✓</span>
-          <span><strong>The guarantee.</strong> If the build doesn't move the number we agreed, you don't pay the fee — and you keep the code.</span></div>
-        <a href="#contact" class="btn btn-primary btn-block">Start a build <span class="arrow" aria-hidden="true">→</span></a>
+      <div class="s-calc__grid">
+        <form class="s-calc__form" data-rvl onsubmit="return false">
+          <label class="s-calc__field"><span>People doing the task</span><input type="number" id="cw-people" min="1" max="9999" value="4" inputmode="numeric" /></label>
+          <label class="s-calc__field"><span>Hours per week, each</span><input type="number" id="cw-hours" min="0" max="168" step="0.5" value="8" inputmode="decimal" /></label>
+          <label class="s-calc__field"><span>Weeks per year</span><input type="number" id="cw-weeks" min="1" max="52" value="48" inputmode="numeric" /></label>
+          <label class="s-calc__field s-calc__field--range"><span>Share you'd realistically automate <em id="cw-shareval">40%</em></span><input type="range" id="cw-share" min="0" max="100" step="5" value="40" /><small>your estimate</small></label>
+        </form>
+        <div class="s-calc__result" data-rvl aria-live="polite">
+          <p class="s-calc__k">Hours handed back, every year</p>
+          <div class="s-calc__num"><b id="cw-out">0</b> <span>hrs / yr</span></div>
+          <div class="s-calc__bar" aria-hidden="true"><span id="cw-bar"></span></div>
+          <p class="s-calc__eq">&asymp; <b id="cw-weeks-out">0</b> full-time weeks a machine could carry.</p>
+          <a href="contact.html" class="dpr-btn dpr-btn--gold">Put a number on it <span aria-hidden="true">&rarr;</span></a>
+        </div>
       </div>
+      <p class="s-calc__note" data-rvl>Time only &mdash; your own inputs, your own estimate. No pricing and no promise here; we measure the real number with you during scoping.</p>
     </div>
+    <script>
+    (function(){
+      var sec=document.getElementById('savings'); if(!sec) return;
+      var $=function(id){return document.getElementById(id);};
+      var people=$('cw-people'),hours=$('cw-hours'),weeks=$('cw-weeks'),share=$('cw-share'),
+          shareval=$('cw-shareval'),out=$('cw-out'),wout=$('cw-weeks-out'),bar=$('cw-bar');
+      if(!people||!out) return;
+      var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+      var disp=0,target=0,raf=null;
+      function fmt(n){return Math.round(n).toLocaleString();}
+      function tick(){var d=target-disp; if(Math.abs(d)<1){disp=target;out.textContent=fmt(target);raf=null;return;} disp+=d*0.18; out.textContent=fmt(disp); raf=requestAnimationFrame(tick);}
+      function compute(){
+        var p=Math.max(0,+people.value||0),h=Math.max(0,+hours.value||0),w=Math.max(0,+weeks.value||0),s=Math.max(0,Math.min(100,+share.value||0));
+        if(shareval) shareval.textContent=s+'%';
+        target=Math.round(p*h*w*(s/100));
+        if(bar) bar.style.width=s+'%';
+        if(wout){var fw=target/40; wout.textContent=fw<10?fw.toFixed(1):fmt(fw);}
+        if(reduce){disp=target;out.textContent=fmt(target);return;}
+        if(!raf) raf=requestAnimationFrame(tick);
+      }
+      var to; function onInput(){clearTimeout(to);to=setTimeout(compute,40);}
+      [people,hours,weeks,share].forEach(function(el){if(el)el.addEventListener('input',onInput);});
+      compute();
+    })();
+    </script>
   </section>
 
   <!-- PROOF -->
