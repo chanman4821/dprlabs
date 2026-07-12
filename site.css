@@ -3,7 +3,7 @@
     --ink:#0a0a0b; --ink-2:#18181b; --muted:#3a3f47; --faint:#767b85;
     --line:rgba(15,17,20,.09); --line-2:rgba(15,17,20,.15);
     --gold:#c8912b; --gold-bright:#e9c46a; --gold-deep:#52525b; --gold-soft:#f7f2e6; --gold-hi:#8a6416;
-    --accent:#3b5bdb; --accent-strong:#2f49b0; --accent-soft:#eef1fb;
+    --accent:#7a5510; --accent-strong:#5e410c; --accent-soft:#f4ead2;
     --blue:#3b5bdb;
     --sans:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
     --mono:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
@@ -735,12 +735,12 @@
   /* vivid palette */
   --c1:#4f46e5; --c2:#7c3aed; --c3:#2563eb; --c4:#06b6d4;
   --c5:#10b981; --c6:#f59e0b; --c7:#ec4899; --c8:#f43f5e;
-  --grad-1:linear-gradient(120deg,#4f46e5,#7c3aed 45%,#06b6d4);
+  --grad-1:linear-gradient(120deg,#c8912b,#e6b24c);
   --grad-2:linear-gradient(120deg,#f59e0b,#ec4899);
   --grad-3:linear-gradient(120deg,#4f46e5,#7c3aed 30%,#ec4899 66%,#f59e0b);
 
   /* remap existing tokens so the whole page shifts vibrant */
-  --accent:#4f46e5; --accent-strong:#4338ca; --accent-soft:#ecebff; --blue:#4f46e5;
+  --accent:#7a5510; --accent-strong:#5e410c; --accent-soft:#f4ead2; --blue:#7a5510;
   --gold:#e0a92e; --gold-bright:#f5c65a; --gold-soft:#fbf1dd;
   --gold-deep:#7c3aed;               /* eyebrows / tags / step numbers -> violet */
   --shadow-2:0 2px 6px rgba(79,70,229,.06), 0 20px 46px rgba(79,70,229,.12);
@@ -776,15 +776,15 @@ header.nav{background:rgba(255,255,255,.82);backdrop-filter:saturate(1.4) blur(1
   filter:blur(34px);opacity:.72}
 
 /* ---- BUTTONS ---- */
-.btn-primary{background:var(--grad-1);border:0;color:#fff;box-shadow:0 10px 24px rgba(79,70,229,.30)}
+.btn-primary{background:var(--grad-1);border:0;color:#1c1408;box-shadow:0 10px 24px rgba(200,145,42,.30)}
 .btn-primary:hover{filter:brightness(1.07) saturate(1.05);transform:translateY(-1px);background:var(--grad-1)}
-.btn-ghost{border-color:rgba(79,70,229,.35);color:var(--c1)}
+.btn-ghost{border-color:var(--line-2);color:var(--ink)}
 .btn-ghost:hover{border-color:var(--c1);background:rgba(79,70,229,.06)}
-.txt-link{color:var(--c1)}
+.txt-link{color:var(--accent)}
 
 /* ---- EYEBROWS: gradient text + colored dot ---- */
-.eyebrow{background:linear-gradient(90deg,#7c3aed,#ec4899);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-.sec-invert .eyebrow{-webkit-text-fill-color:#a5b4fc;color:#a5b4fc;background:none}
+.eyebrow{background:none;-webkit-background-clip:border-box;background-clip:border-box;-webkit-text-fill-color:var(--gold-hi);color:var(--gold-hi)}
+.sec-invert .eyebrow{-webkit-text-fill-color:#e9c46a;color:#e9c46a;background:none}
 .sec .sec-head .eyebrow::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;
   background:var(--grad-3);margin-right:9px;vertical-align:middle;transform:translateY(-1px);-webkit-text-fill-color:initial}
 
@@ -839,8 +839,8 @@ header.nav{background:rgba(255,255,255,.82);backdrop-filter:saturate(1.4) blur(1
   var(--grad-3) border-box;border:1.5px solid transparent}
 
 /* ---- dark sections: brighter, more colorful glow ---- */
-#manifesto .mark,.sec-invert .eyebrow{color:#a5b4fc}
-#guarantee .k{color:#a5b4fc}
+#manifesto .mark,.sec-invert .eyebrow{color:#e9c46a}
+#guarantee .k{color:#e9c46a}
 
 /* ---- section soft alternating tint (skip dark inverts) ---- */
 main>section.sec:not(.sec-invert):nth-of-type(even){background:linear-gradient(180deg,rgba(124,58,237,.05),rgba(6,182,212,.045))}
