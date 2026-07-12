@@ -235,3 +235,14 @@
   .s-own__check path { stroke-dashoffset: 0; transition: none; }
   .s-own[data-sp] .s-own__art { transform: none; }
 }
+
+/* ===================== SECTION 5 — HOW A BUILD RUNS (cohere existing stepper) ===================== */
+#owned-method { background: var(--paper); }
+#owned-method .eyebrow { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); color: var(--gold-ink); letter-spacing: .16em; text-transform: uppercase; font-size: var(--step--1); }
+#owned-method #hrun-title { font-size: var(--step-3); letter-spacing: -.025em; color: var(--ink); }
+#owned-method .gold-text { color: var(--gold-ink); }
+#owned-method .hrun-n { color: var(--gold-ink); }
+#owned-method .eyebrow { color: var(--gold-ink) !important; }
+#owned-method .eyebrow::before, #owned-method .eyebrow::after { background: var(--gold) !important; }
+#owned-method .gold-text { background-image: none !important; -webkit-text-fill-color: var(--gold-ink) !important; color: var(--gold-ink) !important; }
+#owned-method .hrun-status { color: var(--gold-ink); }
