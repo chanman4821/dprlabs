@@ -135,6 +135,16 @@
       "source": "/services-preview.html",
       "destination": "/services",
       "permanent": true
+    },
+    {
+      "source": "/pricing",
+      "destination": "/contact",
+      "permanent": false
+    },
+    {
+      "source": "/pricing.html",
+      "destination": "/contact",
+      "permanent": false
     }
   ],
   "headers": [
