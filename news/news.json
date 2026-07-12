@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-12T13:41:08.091635+00:00",
+    "generated_at": "2026-07-12T17:06:38.376270+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "5bbc3a5ef63f",
+      "headline": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+      "published_at": "2026-07-12T16:27:06+00:00",
+      "summary": "Apple's self-driving car program never really got off the ground, but it may have been what made the company's chips the powerful AI performers they are. Early in the development of the self-driving platform, Apple realized that it would…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7927
+    },
     {
       "id": "36d5f814be20",
       "headline": "The fight against AI data centers is just beginning",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7854
+      "rank_score": 0.7622
     },
     {
       "id": "ab88b22435ed",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4371
+      "rank_score": 0.4215
     },
     {
       "id": "5f92d55c125d",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6622
+      "rank_score": 0.6474
     },
     {
       "id": "98d85122ab64",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6069
+      "rank_score": 0.5959
     },
     {
       "id": "6c4a6e1919dc",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6066
+      "rank_score": 0.5956
     },
     {
       "id": "4f68ab059f6d",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5994
+      "rank_score": 0.5889
     },
     {
       "id": "a4ad473125ca",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5975
+      "rank_score": 0.5872
     },
     {
       "id": "1d85656f77c8",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5913
+      "rank_score": 0.5814
     },
     {
       "id": "78cbc53175f9",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6463
+      "rank_score": 0.6367
     },
     {
       "id": "27b60fc861f1",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.582
+      "rank_score": 0.5727
     },
     {
       "id": "05d5cd4f7807",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.343
+      "rank_score": 0.3339
     },
     {
       "id": "e654c4c7eaf2",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5771
+      "rank_score": 0.5682
     },
     {
       "id": "3fd5be624e9b",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5764
+      "rank_score": 0.5676
     },
     {
       "id": "30fd26556973",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5753
+      "rank_score": 0.5665
     },
     {
       "id": "5d89094603b0",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3365
+      "rank_score": 0.3279
     },
     {
       "id": "e18a0edc34ba",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.6672
+      "rank_score": 0.6587
     },
     {
       "id": "027b05f9d0fa",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.5945
+      "rank_score": 0.5868
     },
     {
       "id": "ae709b33078a",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3428
+      "rank_score": 0.3351
     },
     {
       "id": "2922cfdde0d7",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6049
+      "rank_score": 0.5982
     },
     {
       "id": "3e171b9d1ff3",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5445
+      "rank_score": 0.5378
     },
     {
       "id": "880ee3c2d550",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5436
+      "rank_score": 0.537
     },
     {
       "id": "e9b3a7306418",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5431
+      "rank_score": 0.5365
     },
     {
       "id": "9491981398fc",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6012
-    },
-    {
-      "id": "1adca30b762f",
-      "headline": "An AI agent startup just let its agent run its $100M fundraise",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/",
-      "published_at": "2026-07-09T22:08:58+00:00",
-      "summary": "Lyzr, a startup that builds AI agents for enterprises, used its own AI agent to raise a $100 million round — proof, evidently, that the product actually works.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5407
+      "rank_score": 0.5947
     }
   ]
 }
