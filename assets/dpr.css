@@ -149,7 +149,7 @@
 .s-build__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s7); }
 .s-build__row { display: grid; grid-template-columns: .92fr 1.08fr; gap: var(--s5); align-items: center; }
 .s-build__obj { position: relative; display: flex; align-items: center; justify-content: center; min-height: 230px; }
-.s-build__vid { width: 100%; max-width: 340px; max-height: 290px; object-fit: contain; filter: drop-shadow(0 24px 34px rgba(30,20,70,.15)); transition: transform var(--t) var(--ease-out); }
+.s-build__vid { width: 100%; max-width: 300px; max-height: 360px; object-fit: contain; filter: drop-shadow(0 24px 34px rgba(30,20,70,.15)); transition: transform var(--t) var(--ease-out); }
 .s-build__row:hover .s-build__vid { transform: translateY(-6px) scale(1.03); }
 .s-build__row:nth-child(odd) .s-build__obj { margin-left: calc(-1 * var(--s5)); }
 .s-build__row:nth-child(even) { grid-template-columns: 1.08fr .92fr; }
