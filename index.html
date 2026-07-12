@@ -13,7 +13,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 
 <link rel="stylesheet" href="site.css?v=15" />
-<link rel="stylesheet" href="assets/dpr.css?v=1" />
+<link rel="stylesheet" href="assets/dpr.css?v=2" />
 <link rel="stylesheet" href="slop.css?v=5" />
 <link rel="stylesheet" href="assets/slopcar.css?v=2" />
 
@@ -21,33 +21,7 @@
 {"@context":"https://schema.org","@type":"Organization","name":"DPR AI","alternateName":"DPR",
 "description":"Senior AI studio. We help businesses scale with AI, founders build, and bring funding and founders together — measured, and owned by you.","url":"https://dprai.io/"}
 </script>
-<style>
-/* How a build runs — one superhero mascot hops down the six steps */
-.hrun{position:relative;display:grid;grid-template-columns:clamp(84px,11vw,132px) minmax(0,1fr);gap:clamp(16px,3vw,40px);margin-top:clamp(30px,4vw,48px)}
-.hrun-lane{position:relative}
-.hrun-rail{position:absolute;left:50%;top:18px;bottom:18px;width:2px;transform:translateX(-50%);background:var(--line);z-index:0;border-radius:2px}
-.hrun-fill{position:absolute;left:50%;top:18px;width:2px;transform:translateX(-50%);height:0;background:linear-gradient(#3b5bdb,#c8912b);z-index:1;border-radius:2px;transition:height .55s cubic-bezier(.34,1.3,.5,1)}
-.hrun-hero{position:absolute;left:50%;top:0;width:clamp(64px,8vw,104px);transform:translateX(-50%);z-index:3;will-change:top;pointer-events:none;transition:top .55s cubic-bezier(.34,1.35,.5,1)}
-.hrun-hero img{width:100%;height:auto;display:block;filter:drop-shadow(0 10px 14px rgba(15,23,42,.20))}
-.hrun-hero.hop{animation:hrunHop .55s cubic-bezier(.34,1.3,.5,1)}
-@keyframes hrunHop{0%{transform:translateX(-50%) translateY(0) scale(1,1)}22%{transform:translateX(-50%) translateY(-26px) scale(.92,1.12)}55%{transform:translateX(-50%) translateY(-7px) scale(1.07,.93)}100%{transform:translateX(-50%) translateY(0) scale(1,1)}}
-.hrun-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:clamp(14px,2vw,22px)}
-.hrun-step{position:relative;border:1px solid var(--line);border-radius:18px;padding:clamp(15px,2vw,22px) clamp(17px,2.2vw,26px);background:#fff;opacity:.5;transition:border-color .35s,box-shadow .35s,opacity .35s,transform .35s}
-.hrun-step.on{opacity:1;border-color:rgba(59,91,219,.35);box-shadow:0 16px 40px rgba(15,23,42,.09);transform:translateY(-1px)}
-.hrun-step.done{opacity:.9}
-.hrun-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.hrun-n{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--faint);transition:color .35s}
-.hrun-step.on .hrun-n{color:#3b5bdb}
-.hrun-step h3{font-size:clamp(17px,2vw,20px);margin:0}
-.hrun-status{margin-left:auto;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);border:1px solid var(--line);border-radius:99px;padding:4px 11px;white-space:nowrap;transition:.35s}
-.hrun-step.on .hrun-status{color:#fff;background:#3b5bdb;border-color:#3b5bdb}
-.hrun-step p{margin:9px 0 0;font-size:clamp(14px,1.5vw,15.5px);line-height:1.5;color:var(--muted);max-width:56ch}
-.hrun-close{margin-top:clamp(20px,2.4vw,30px);font-size:15px;color:var(--ink)}
-.hrun-close b{color:var(--gold-hi)}
-@media (max-width:640px){.hrun{grid-template-columns:52px minmax(0,1fr);gap:12px}.hrun-hero{width:42px}.hrun-status{margin-left:0}.hrun-step h3{width:100%}}
-@media (prefers-reduced-motion:reduce){.hrun-hero{transition:none}.hrun-hero.hop{animation:none}.hrun-fill{transition:none}.hrun-step{opacity:1}}
-</style>
-<noscript><style>.reveal{opacity:1;transform:none}.mascot{animation:none}#calibrate{display:none!important}.hrun-step{opacity:1}.hrun-hero{display:none}</style></noscript>
+<noscript><style>.reveal{opacity:1;transform:none}.mascot{animation:none}#calibrate{display:none!important}</style></noscript>
 <link rel="canonical" href="https://dprai.io/" />
 <meta name="robots" content="index, follow" />
 <meta property="og:type" content="website" />
@@ -152,49 +126,109 @@
     </div>
   </section>
 
-  <!-- SECTION 2 — what we build (four owned systems) -->
-  <section class="s-build" id="what-we-build">
-    <div class="s-build__inner">
-      <p class="s-build__kicker" data-rvl>Four systems we build to <span class="gold">own</span> — not demo.</p>
-      <ol class="s-build__list">
-      <li class="s-build__row" data-rvl>
-        <div class="s-build__obj"><img class="s-build__vid" src="assets/img/agents/sales-cut.png" alt="A gold AI sales agent presenting to a chat bubble" loading="lazy" decoding="async"></div>
-        <div class="s-build__txt">
-          <span class="s-build__n">01</span>
-          <h3>AI Sales &amp; Marketing Agents</h3>
-          <p>Finds leads, writes the outreach, follows up, books meetings — straight into your CRM.</p>
-          <ul class="s-build__chips"><li>Leads</li><li>Outreach</li><li>CRM</li></ul>
+  <!-- SECTION 2 — what we build (four owned systems, carousel) -->
+  <section class="s-car" id="what-we-build" aria-roledescription="carousel" aria-label="Four systems we build">
+    <div class="s-car__inner" id="sys-car">
+      <p class="s-car__eyebrow" data-rvl>What we build</p>
+      <h2 class="s-car__kicker" data-rvl>Four systems we build to <span class="gold">own</span> — not demo.</h2>
+
+      <div class="s-car__tabs" role="tablist" aria-label="Choose a system" data-rvl>
+        <button class="s-car__tab" role="tab" id="systab-0" aria-controls="sysslide-0" aria-selected="true" type="button">Sales &amp; Marketing</button>
+        <button class="s-car__tab" role="tab" id="systab-1" aria-controls="sysslide-1" aria-selected="false" type="button">Automations</button>
+        <button class="s-car__tab" role="tab" id="systab-2" aria-controls="sysslide-2" aria-selected="false" type="button">Multi-Agent</button>
+        <button class="s-car__tab" role="tab" id="systab-3" aria-controls="sysslide-3" aria-selected="false" type="button">Pipelines</button>
+        <span class="s-car__ul" aria-hidden="true"></span>
+      </div>
+
+      <div class="s-car__stage" data-rvl>
+        <div class="s-car__slide is-active" role="tabpanel" id="sysslide-0" aria-labelledby="systab-0">
+          <div class="s-car__txt">
+            <span class="s-car__idx">01 / 04</span>
+            <h3 class="s-car__name">AI Sales &amp; Marketing Agents</h3>
+            <p class="s-car__vp">Finds leads, writes the outreach, follows up, and books meetings — straight into your CRM.</p>
+            <ul class="s-car__spec"><li>Leads</li><li>Outreach</li><li>CRM</li></ul>
+          </div>
+          <div class="s-car__frame"><img src="assets/img/agents/sales-cut.png" alt="A gold AI sales agent presenting to a chat bubble" loading="lazy" decoding="async"></div>
         </div>
-      </li>
-      <li class="s-build__row" data-rvl>
-        <div class="s-build__obj"><img class="s-build__vid" src="assets/img/agents/automations-cut.png" alt="A gold AI agent orchestrating task tiles" loading="lazy" decoding="async"></div>
-        <div class="s-build__txt">
-          <span class="s-build__n">02</span>
-          <h3>Workflow &amp; Ops Automations</h3>
-          <p>Automates the steps that drain hours. You scale with code, not headcount.</p>
-          <ul class="s-build__chips"><li>Workflows</li><li>Ops</li><li>Scale</li></ul>
+        <div class="s-car__slide" role="tabpanel" id="sysslide-1" aria-labelledby="systab-1">
+          <div class="s-car__txt">
+            <span class="s-car__idx">02 / 04</span>
+            <h3 class="s-car__name">Workflow &amp; Ops Automations</h3>
+            <p class="s-car__vp">Automates the steps that drain hours. You scale with code, not headcount.</p>
+            <ul class="s-car__spec"><li>Workflows</li><li>Ops</li><li>Scale</li></ul>
+          </div>
+          <div class="s-car__frame"><img src="assets/img/agents/automations-cut.png" alt="A gold AI agent orchestrating task tiles" loading="lazy" decoding="async"></div>
         </div>
-      </li>
-      <li class="s-build__row" data-rvl>
-        <div class="s-build__obj"><img class="s-build__vid" src="assets/img/agents/multiagent-cut.png" alt="A team of gold AI agents in formation" loading="lazy" decoding="async"></div>
-        <div class="s-build__txt">
-          <span class="s-build__n">03</span>
-          <h3>Multi-Agent Systems</h3>
-          <p>A team of agents for the complex jobs — automatic where it's routine, you approve where it counts.</p>
-          <ul class="s-build__chips"><li>Orchestration</li><li>Approvals</li><li>Guardrails</li></ul>
+        <div class="s-car__slide" role="tabpanel" id="sysslide-2" aria-labelledby="systab-2">
+          <div class="s-car__txt">
+            <span class="s-car__idx">03 / 04</span>
+            <h3 class="s-car__name">Multi-Agent Systems</h3>
+            <p class="s-car__vp">A team of agents for the complex jobs — automatic where it's routine, you approve where it counts.</p>
+            <ul class="s-car__spec"><li>Orchestration</li><li>Approvals</li><li>Guardrails</li></ul>
+          </div>
+          <div class="s-car__frame"><img src="assets/img/agents/multiagent-cut.png" alt="A team of gold AI agents in formation" loading="lazy" decoding="async"></div>
         </div>
-      </li>
-      <li class="s-build__row" data-rvl>
-        <div class="s-build__obj"><img class="s-build__vid" src="assets/img/agents/pipelines-cut.png" alt="A gold AI agent guiding a data pipeline" loading="lazy" decoding="async"></div>
-        <div class="s-build__txt">
-          <span class="s-build__n">04</span>
-          <h3>Custom AI Pipelines</h3>
-          <p>Your data and docs wired into one system that answers and acts — with evals from day one.</p>
-          <ul class="s-build__chips"><li>Retrieval</li><li>Evals</li><li>Actions</li></ul>
+        <div class="s-car__slide" role="tabpanel" id="sysslide-3" aria-labelledby="systab-3">
+          <div class="s-car__txt">
+            <span class="s-car__idx">04 / 04</span>
+            <h3 class="s-car__name">Custom AI Pipelines</h3>
+            <p class="s-car__vp">Your data and docs wired into one system that answers and acts — with evals from day one.</p>
+            <ul class="s-car__spec"><li>Retrieval</li><li>Evals</li><li>Actions</li></ul>
+          </div>
+          <div class="s-car__frame"><img src="assets/img/agents/pipelines-cut.png" alt="A gold AI agent guiding a data pipeline" loading="lazy" decoding="async"></div>
         </div>
-      </li>
-      </ol>
+      </div>
+
+      <div class="s-car__foot" data-rvl>
+        <span class="s-car__count"><b id="sys-cur">01</b> / 04</span>
+        <div class="crx-nav">
+          <button class="crx-arrow" type="button" data-car-prev aria-label="Previous system"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="crx-arrow" type="button" data-car-next aria-label="Next system"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
     </div>
+    <script>
+    (function(){
+      var root=document.getElementById('sys-car'); if(!root) return;
+      var tabs=[].slice.call(root.querySelectorAll('.s-car__tab'));
+      var slides=[].slice.call(root.querySelectorAll('.s-car__slide'));
+      var ul=root.querySelector('.s-car__ul');
+      var cur=document.getElementById('sys-cur');
+      var prev=root.querySelector('[data-car-prev]'), next=root.querySelector('[data-car-next]');
+      if(!slides.length) return;
+      var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+      var i=0, timer=null, DUR=7000, paused=false;
+      function pad(n){return (n+1)<10?'0'+(n+1):''+(n+1);}
+      function moveUL(){ var t=tabs[i]; if(!ul||!t) return; ul.style.width=t.offsetWidth+'px'; ul.style.transform='translateX('+t.offsetLeft+'px)'; }
+      function show(n,dir){
+        n=(n+slides.length)%slides.length; if(n===i){moveUL();return;}
+        if(typeof dir!=='number') dir = n>i?1:-1;
+        var a=slides[i], b=slides[n];
+        a.style.setProperty('--dx',(dir<0?24:-24)+'px'); a.classList.remove('is-active');
+        b.style.setProperty('--dx',(dir<0?-24:24)+'px'); void b.offsetWidth; b.classList.add('is-active');
+        if(tabs[i]) tabs[i].setAttribute('aria-selected','false');
+        if(tabs[n]) tabs[n].setAttribute('aria-selected','true');
+        i=n; if(cur) cur.textContent=pad(i); moveUL();
+      }
+      function schedule(){ clearTimeout(timer); if(reduce) return; timer=setTimeout(function(){ if(!paused) show(i+1,1); schedule(); }, DUR); }
+      tabs.forEach(function(t,k){ t.addEventListener('click',function(){ show(k); schedule(); }); });
+      if(prev) prev.addEventListener('click',function(){ show(i-1,-1); schedule(); });
+      if(next) next.addEventListener('click',function(){ show(i+1,1); schedule(); });
+      root.addEventListener('keydown',function(e){
+        if(e.key==='ArrowLeft'){ show(i-1,-1); schedule(); e.preventDefault(); }
+        else if(e.key==='ArrowRight'){ show(i+1,1); schedule(); e.preventDefault(); }
+        else if(e.key==='Home'){ show(0,-1); schedule(); e.preventDefault(); }
+        else if(e.key==='End'){ show(slides.length-1,1); schedule(); e.preventDefault(); }
+      });
+      root.addEventListener('mouseenter',function(){paused=true;});
+      root.addEventListener('mouseleave',function(){paused=false;});
+      root.addEventListener('focusin',function(){paused=true;});
+      root.addEventListener('focusout',function(){paused=false;});
+      window.addEventListener('resize',moveUL);
+      window.addEventListener('load',moveUL);
+      moveUL(); schedule();
+    })();
+    </script>
   </section>
 
 <!-- THE SLOP PROBLEM (dark) -->
@@ -276,98 +310,110 @@
     <img class="s-own__art" src="assets/img/pages/own-it-cut.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
   </section>
 
-  <!-- HOW A BUILD RUNS — one superhero mascot hops each step -->
-  <section class="sec" id="owned-method" aria-labelledby="hrun-title">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">How a build runs</p>
-        <h2 id="hrun-title" style="margin-top:14px">One number. Built in your systems. <span class="gold-text">Handed to you.</span></h2>
-        <p class="lead">Six steps from a blank page to a system you own — follow the build.</p>
-      </div>
-      <div class="hrun" id="hrun">
-        <div class="hrun-lane">
-          <span class="hrun-rail" aria-hidden="true"></span>
-          <span class="hrun-fill" aria-hidden="true"></span>
-          <div class="hrun-hero" id="hrunHero" aria-hidden="true">
-            <img src="assets/mascot/hero/hero-1.png" width="104" height="104" alt="" />
-          </div>
+  <!-- HOW A BUILD RUNS — mascot hops the rail, one step visible at a time -->
+  <section class="s-rail" id="owned-method" aria-roledescription="carousel" aria-label="How a build runs">
+    <div class="s-rail__inner" id="mth-rail">
+      <p class="s-rail__eyebrow" data-rvl>How a build runs</p>
+      <h2 class="s-rail__kicker" data-rvl>One number. Built in your systems. <span class="gold">Handed to you.</span></h2>
+      <p class="s-rail__sub" data-rvl>Six steps from a blank page to a system you own — click a stop, or watch the build walk itself.</p>
+
+      <div class="s-rail__track" data-rvl>
+        <div class="s-rail__stations" role="tablist" aria-label="Build steps">
+          <span class="s-rail__fill" aria-hidden="true"></span>
+          <div class="s-rail__mascot" aria-hidden="true"><img src="assets/mascot/hero/hero-1.png" width="104" height="104" alt=""></div>
+          <button class="s-rail__node is-active" role="tab" type="button" id="mthtab-0" aria-controls="mthpanel-0" aria-selected="true" data-hero="assets/mascot/hero/hero-1.png"><span aria-hidden="true">01</span><span class="sr-only">Step 1: Pick the number</span></button>
+          <button class="s-rail__node" role="tab" type="button" id="mthtab-1" aria-controls="mthpanel-1" aria-selected="false" data-hero="assets/mascot/hero/hero-2.png"><span aria-hidden="true">02</span><span class="sr-only">Step 2: Check today</span></button>
+          <button class="s-rail__node" role="tab" type="button" id="mthtab-2" aria-controls="mthpanel-2" aria-selected="false" data-hero="assets/mascot/hero/hero-3.png"><span aria-hidden="true">03</span><span class="sr-only">Step 3: Build in your work</span></button>
+          <button class="s-rail__node" role="tab" type="button" id="mthtab-3" aria-controls="mthpanel-3" aria-selected="false" data-hero="assets/mascot/hero/hero-4.png"><span aria-hidden="true">04</span><span class="sr-only">Step 4: Test it hard</span></button>
+          <button class="s-rail__node" role="tab" type="button" id="mthtab-4" aria-controls="mthpanel-4" aria-selected="false" data-hero="assets/mascot/hero/hero-5.png"><span aria-hidden="true">05</span><span class="sr-only">Step 5: Hand it over</span></button>
+          <button class="s-rail__node" role="tab" type="button" id="mthtab-5" aria-controls="mthpanel-5" aria-selected="false" data-hero="assets/mascot/hero/hero-6.png"><span aria-hidden="true">06</span><span class="sr-only">Step 6: Show the proof</span></button>
         </div>
-        <ol class="hrun-steps">
-          <li class="hrun-step" data-hero="assets/mascot/hero/hero-1.png" data-alt="Gold robot mascot locking onto the target number">
-            <div class="hrun-top"><span class="hrun-n">01</span><h3>Pick the number</h3><span class="hrun-status">Target set</span></div>
-            <p>We choose the one number this AI must move, so success is clear from day one.</p>
-          </li>
-          <li class="hrun-step" data-hero="assets/mascot/hero/hero-2.png" data-alt="Gold robot mascot measuring today's baseline">
-            <div class="hrun-top"><span class="hrun-n">02</span><h3>Check today</h3><span class="hrun-status">Baseline read</span></div>
-            <p>We measure where that number sits right now, so later we can prove it changed.</p>
-          </li>
-          <li class="hrun-step" data-hero="assets/mascot/hero/hero-3.png" data-alt="Gold robot mascot building inside your workflow">
-            <div class="hrun-top"><span class="hrun-n">03</span><h3>Build in your work</h3><span class="hrun-status">Building</span></div>
-            <p>We build the AI right inside how your team already works, not off to the side.</p>
-          </li>
-          <li class="hrun-step" data-hero="assets/mascot/hero/hero-4.png" data-alt="Gold robot mascot testing with a magnifier">
-            <div class="hrun-top"><span class="hrun-n">04</span><h3>Test it hard</h3><span class="hrun-status">Testing</span></div>
-            <p>We run it on real cases again and again to catch mistakes before you do.</p>
-          </li>
-          <li class="hrun-step" data-hero="assets/mascot/hero/hero-5.png" data-alt="Gold robot mascot handing over the keys">
-            <div class="hrun-top"><span class="hrun-n">05</span><h3>Hand it over</h3><span class="hrun-status">Handed over</span></div>
-            <p>We give it to your team and show them how to run it without us.</p>
-          </li>
-          <li class="hrun-step" data-hero="assets/mascot/hero/hero-6.png" data-alt="Gold robot mascot holding the proof trophy">
-            <div class="hrun-top"><span class="hrun-n">06</span><h3>Show the proof</h3><span class="hrun-status">Proof shown</span></div>
-            <p>We show the number again so you can see exactly what moved and by how much.</p>
-          </li>
-        </ol>
       </div>
-      <p class="hrun-close reveal">You own the finished AI, you know how it works, and you can <b>see it earned its place.</b></p>
-      <p class="reveal" style="margin-top:16px"><a href="method.html" class="txt-link">See how each step runs, in detail <span class="arrow" aria-hidden="true">&rarr;</span></a></p>
+
+      <div class="s-rail__panels">
+        <div class="s-rail__panel is-active" role="tabpanel" id="mthpanel-0" aria-labelledby="mthtab-0">
+          <span class="s-rail__pn">STEP 01</span><h3>Pick the number</h3>
+          <p>We choose the one number this AI must move, so success is clear from day one.</p>
+          <span class="s-rail__tag">Target set</span>
+        </div>
+        <div class="s-rail__panel" role="tabpanel" id="mthpanel-1" aria-labelledby="mthtab-1">
+          <span class="s-rail__pn">STEP 02</span><h3>Check today</h3>
+          <p>We measure where that number sits right now, so later we can prove it changed.</p>
+          <span class="s-rail__tag">Baseline read</span>
+        </div>
+        <div class="s-rail__panel" role="tabpanel" id="mthpanel-2" aria-labelledby="mthtab-2">
+          <span class="s-rail__pn">STEP 03</span><h3>Build in your work</h3>
+          <p>We build the AI right inside how your team already works, not off to the side.</p>
+          <span class="s-rail__tag">Building</span>
+        </div>
+        <div class="s-rail__panel" role="tabpanel" id="mthpanel-3" aria-labelledby="mthtab-3">
+          <span class="s-rail__pn">STEP 04</span><h3>Test it hard</h3>
+          <p>We run it on real cases again and again to catch mistakes before you do.</p>
+          <span class="s-rail__tag">Testing</span>
+        </div>
+        <div class="s-rail__panel" role="tabpanel" id="mthpanel-4" aria-labelledby="mthtab-4">
+          <span class="s-rail__pn">STEP 05</span><h3>Hand it over</h3>
+          <p>We give it to your team and show them how to run it without us.</p>
+          <span class="s-rail__tag">Handed over</span>
+        </div>
+        <div class="s-rail__panel" role="tabpanel" id="mthpanel-5" aria-labelledby="mthtab-5">
+          <span class="s-rail__pn">STEP 06</span><h3>Show the proof</h3>
+          <p>We show the number again so you can see exactly what moved and by how much.</p>
+          <span class="s-rail__tag">Proof shown</span>
+        </div>
+      </div>
+
+      <div class="s-rail__foot" data-rvl>
+        <p class="s-rail__close">You own the finished AI, you know how it works, and you can <b>see it earned its place.</b> <a href="method.html" class="txt-link">See each step in detail <span class="arrow" aria-hidden="true">&rarr;</span></a></p>
+        <div class="crx-nav">
+          <button class="crx-arrow" type="button" data-rail-prev aria-label="Previous step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="crx-arrow" type="button" data-rail-next aria-label="Next step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
     </div>
     <script>
     (function(){
-      var run=document.getElementById('hrun');
-      if(!run) return;
-      var lane=run.querySelector('.hrun-lane');
-      var hero=document.getElementById('hrunHero');
-      var img=hero?hero.querySelector('img'):null;
-      var fill=run.querySelector('.hrun-fill');
-      var steps=Array.prototype.slice.call(run.querySelectorAll('.hrun-step'));
-      if(!hero||!lane||!steps.length) return;
-      var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-      var current=-1;
-      function place(i,animate){
-        var s=steps[i]; if(!s) return;
-        var laneR=lane.getBoundingClientRect(), sR=s.getBoundingClientRect();
-        var top=(sR.top-laneR.top)+sR.height/2-hero.offsetHeight/2;
-        hero.style.top=top+'px';
-        if(fill) fill.style.height=Math.max(0,(top+hero.offsetHeight/2)-18)+'px';
-        if(img){
-          var src=s.getAttribute('data-hero');
-          if(src&&img.getAttribute('src')!==src) img.setAttribute('src',src);
-        }
-        if(animate&&!reduce){ hero.classList.remove('hop'); void hero.offsetWidth; hero.classList.add('hop'); }
+      var root=document.getElementById('mth-rail'); if(!root) return;
+      var nodes=[].slice.call(root.querySelectorAll('.s-rail__node'));
+      var panels=[].slice.call(root.querySelectorAll('.s-rail__panel'));
+      var mascot=root.querySelector('.s-rail__mascot');
+      var mimg=mascot?mascot.querySelector('img'):null;
+      var fill=root.querySelector('.s-rail__fill');
+      var prev=root.querySelector('[data-rail-prev]'), next=root.querySelector('[data-rail-next]');
+      if(!nodes.length) return;
+      var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+      var i=0, timer=null, DUR=6000, paused=false;
+      function center(k){ var n=nodes[k]; return n.offsetLeft + n.offsetWidth/2; }
+      function place(k,hop){
+        if(mascot){ mascot.style.left=center(k)+'px'; if(hop&&!reduce){ mascot.classList.remove('hop'); void mascot.offsetWidth; mascot.classList.add('hop'); } }
+        if(fill){ fill.style.width=center(k)+'px'; }
+        if(mimg){ var src=nodes[k].getAttribute('data-hero'); if(src&&mimg.getAttribute('src')!==src) mimg.setAttribute('src',src); }
       }
-      function activate(i){
-        if(i===current) return;
-        current=i;
-        for(var k=0;k<steps.length;k++){
-          steps[k].classList.toggle('on',k===i);
-          steps[k].classList.toggle('done',k<i);
-        }
-        place(i,true);
+      function show(n,hop){
+        n=(n+nodes.length)%nodes.length;
+        nodes.forEach(function(nd,k){ nd.classList.toggle('is-active',k===n); nd.classList.toggle('is-done',k<n); nd.setAttribute('aria-selected',k===n?'true':'false'); });
+        panels.forEach(function(p,k){ p.classList.toggle('is-active',k===n); });
+        i=n; place(n,hop!==false);
       }
-      steps[0].classList.add('on'); current=0; place(0,false);
-      var io=new IntersectionObserver(function(entries){
-        var best=null,bestRatio=-1;
-        entries.forEach(function(e){
-          if(e.isIntersecting&&e.intersectionRatio>=bestRatio){bestRatio=e.intersectionRatio;best=e.target;}
-        });
-        if(best) activate(steps.indexOf(best));
-      },{root:null,rootMargin:'-42% 0px -42% 0px',threshold:[0,.5,1]});
-      steps.forEach(function(s){io.observe(s);});
-      function recalc(){ if(current>=0) place(current,false); }
+      function schedule(){ clearTimeout(timer); if(reduce) return; timer=setTimeout(function(){ if(!paused) show(i+1,true); schedule(); }, DUR); }
+      nodes.forEach(function(nd,k){ nd.addEventListener('click',function(){ show(k,true); schedule(); }); });
+      if(prev) prev.addEventListener('click',function(){ show(i-1,true); schedule(); });
+      if(next) next.addEventListener('click',function(){ show(i+1,true); schedule(); });
+      root.addEventListener('keydown',function(e){
+        if(e.key==='ArrowLeft'){ show(i-1,true); schedule(); e.preventDefault(); }
+        else if(e.key==='ArrowRight'){ show(i+1,true); schedule(); e.preventDefault(); }
+        else if(e.key==='Home'){ show(0,true); schedule(); e.preventDefault(); }
+        else if(e.key==='End'){ show(nodes.length-1,true); schedule(); e.preventDefault(); }
+      });
+      root.addEventListener('mouseenter',function(){paused=true;});
+      root.addEventListener('mouseleave',function(){paused=false;});
+      root.addEventListener('focusin',function(){paused=true;});
+      root.addEventListener('focusout',function(){paused=false;});
+      function recalc(){ place(i,false); }
       window.addEventListener('resize',recalc);
       window.addEventListener('load',recalc);
-      if(img) img.addEventListener('load',recalc);
+      if(mimg) mimg.addEventListener('load',recalc);
+      place(0,false); schedule();
     })();
     </script>
   </section>
@@ -437,27 +483,7 @@
   <!-- SCORE YOUR AI -->
   
 
-  <!-- FREE TOOLS -->
-  <section class="sec" id="free-tools" data-reveal>
-    <div class="wrap reveal">
-      <div class="free-band">
-        <div class="free-band-copy">
-          <p class="eyebrow" style="color:var(--accent)">Free · open-source</p>
-          <h2>Try something free right now.</h2>
-          <p>Our Inbox-to-Action Agent reads a message thread and hands back a summary, a draft reply, and a to-do list. It runs on your own computer with your own key. No sign-up, and nothing to install but Python.</p>
-          <div class="free-band-btns">
-            <a href="free/" class="btn btn-primary">Explore free tools <span class="arrow" aria-hidden="true">→</span></a>
-            <a href="https://github.com/chanman4821/inbox-to-action" class="btn btn-ghost" rel="noopener">Get it on GitHub</a>
-          </div>
-        </div>
-        <div class="free-band-term" aria-label="Example command">
-          <span class="cap">In your terminal</span>
-          <span class="c"># no key needed to try it</span><br />
-          <span class="p">python</span> inbox_to_action.py thread.txt --dry-run
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- FREE TOOLS — merged into #about below -->
 
   <!-- MANIFESTO (dark) -->
   
@@ -482,24 +508,45 @@
     </div>
   </section>
 
-  <!-- ABOUT + FIELD NOTES -->
+  <!-- ABOUT + FIELD NOTES + FREE TOOL -->
   <section class="sec" id="about">
-    <div class="wrap split">
-      <div class="reveal">
-        <p class="eyebrow">About</p>
-        <h2 style="margin-top:14px">A small, senior team.</h2>
-        <p class="lead" style="margin-top:16px">A senior AI studio. Real work over borrowed logos. We publish how we measure — and you own what we build.</p>
-        <div class="about-links">
-          <a href="proof.html" class="txt-link">How we measure <span class="arrow" aria-hidden="true">→</span></a>
+    <div class="wrap">
+      <div class="split">
+        <div class="reveal">
+          <p class="eyebrow">About</p>
+          <h2 style="margin-top:14px">A small, senior team.</h2>
+          <p class="lead" style="margin-top:16px">A senior AI studio. Real work over borrowed logos. We publish how we measure — and you own what we build.</p>
+          <div class="about-links">
+            <a href="proof.html" class="txt-link">How we measure <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+          <div class="about-notes">
+            <span class="about-notes__lbl">Field notes</span>
+            <a href="blog/the-one-number.html">The one number</a>
+            <a href="blog/no-lock-in.html">No lock-in</a>
+            <a href="blog/measure-ai-honestly.html">Measure honestly</a>
+            <a href="blog/index.html" class="txt-link">All notes <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Free · open-source</p>
+          <h2 style="margin-top:14px;font-size:clamp(24px,3vw,34px)">Try something free right now.</h2>
+          <p class="lead" style="margin-top:16px">Our Inbox-to-Action Agent reads a message thread and hands back a summary, a draft reply, and a to-do list — on your own computer, your own key. No sign-up.</p>
         </div>
       </div>
-      <div class="reveal">
-        <p class="eyebrow">Field notes</p>
-        <h2 style="margin-top:14px;font-size:clamp(24px,3vw,34px)">How we think, in the open.</h2>
-        <div class="notes-list">
-          <a href="blog/the-one-number.html" class="note"><span class="note-tag">AI builds</span><span class="note-t">The one number that decides a build</span><span class="note-read">6 min</span></a>
-          <a href="blog/no-lock-in.html" class="note"><span class="note-tag">Ownership</span><span class="note-t">No lock-in, on purpose</span><span class="note-read">7 min</span></a>
-          <a href="blog/measure-ai-honestly.html" class="note"><span class="note-tag">Method</span><span class="note-t">How to measure AI honestly</span><span class="note-read">8 min</span></a>
+      <div class="free-band reveal">
+        <div class="free-band-copy">
+          <p class="eyebrow">Run it yourself</p>
+          <h2>Yours to keep, nothing to rent.</h2>
+          <p>Nothing to install but Python. Read the code, change it, run it — no account, no key needed to try it.</p>
+          <div class="free-band-btns">
+            <a href="free/" class="btn btn-primary">Explore free tools <span class="arrow" aria-hidden="true">→</span></a>
+            <a href="https://github.com/chanman4821/inbox-to-action" class="btn btn-ghost" rel="noopener">Get it on GitHub</a>
+          </div>
+        </div>
+        <div class="free-band-term" aria-label="Example command">
+          <span class="cap">In your terminal</span>
+          <span class="c"># no key needed to try it</span><br />
+          <span class="p">python</span> inbox_to_action.py thread.txt --dry-run
         </div>
       </div>
     </div>
