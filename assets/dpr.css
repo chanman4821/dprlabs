@@ -352,7 +352,7 @@
 .s-car__spec li { font-family: var(--font-mono, "Geist Mono", ui-monospace, monospace); font-size: var(--step--1); text-transform: uppercase; letter-spacing: .08em; color: var(--ink-60); }
 .s-car__spec li + li::before { content: "·"; color: var(--gold); margin: 0 .7em 0 .5em; }
 
-.s-car__frame { position: relative; justify-self: center; padding: clamp(var(--s3), 3vw, var(--s4)); border: 1px solid var(--hairline); border-radius: 2px; }
+.s-car__frame { position: relative; justify-self: center; }
 .s-car__frame img, .s-car__frame video { display: block; width: 100%; max-width: 320px; max-height: 340px; object-fit: contain; filter: drop-shadow(0 24px 34px rgba(30, 20, 70, .14)); }
 
 .s-car__foot { display: flex; align-items: center; justify-content: space-between; gap: var(--s3); margin-top: var(--s5); }
