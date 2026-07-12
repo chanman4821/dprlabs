@@ -196,53 +196,45 @@
       </ol>
     </div>
   </section>
-  <!-- VALUE STRIP -->
-  <div class="strip">
-    <div class="wrap strip-in">
-      <span class="lbl">What we do</span>
-      <b>AI built into your systems</b><span class="sep">·</span>
-      <b>Measured by real numbers</b><span class="sep">·</span>
-      <b>You own the code, weights, and tests</b><span class="sep">·</span>
-      <b>No lock-in</b><span class="sep">·</span>
-      <b>Senior people only</b>
-    </div>
-  </div>
 
-  <!-- THE SLOP PROBLEM (dark) -->
+<!-- THE SLOP PROBLEM (dark) -->
   
 
   <!-- SLOP VS SHARP — drag to compare -->
   
 
   <!-- AGENTS: WRONG VS RIGHT -->
-  <section class="sec" id="agent-vs">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Agents: wrong vs right</p>
-        <h2 style="margin-top:14px">Most AI agents fake it. <span class="gold-text">Ours prove it.</span></h2>
-        <p class="lead">Same idea, opposite behavior. Hover a line to see the fix.</p>
-      </div>
-      <div class="agvs reveal" data-agentvs>
-        <div class="agvs-col agvs-bad">
-          <p class="agvs-tag agvs-tag-bad">The slop agent</p>
-          <ul class="agvs-list">
-            <li data-pair="1"><span class="agvs-ic bad" aria-hidden="true">✕</span>Says "done" — with no proof</li>
-            <li data-pair="2"><span class="agvs-ic bad" aria-hidden="true">✕</span>One task, quietly changes ten files</li>
-            <li data-pair="3"><span class="agvs-ic bad" aria-hidden="true">✕</span>Invents files and commands that don't exist</li>
-            <li data-pair="4"><span class="agvs-ic bad" aria-hidden="true">✕</span>Buries the error and carries on</li>
-            <li data-pair="5"><span class="agvs-ic bad" aria-hidden="true">✕</span>Rents you an endpoint forever</li>
-          </ul>
+  <!-- SECTION 3 — fake it vs prove it (slop tear) -->
+  <section class="s-slop" id="fake-vs-prove" data-sp>
+    <div class="s-slop__inner">
+      <p class="s-slop__quote" data-rvl>Most AI you've been sold is <span class="s-slop__mark">slop</span>: dead demos, rented wrappers, and accuracy nobody can reproduce.</p>
+      <div class="s-slop__stage" role="img" aria-label="A slop demo tears away to reveal the owned, reproducible build you keep">
+        <div class="s-slop__proven">
+          <span class="s-slop__tag s-slop__tag--good">Owned · reproducible</span>
+          <pre class="s-slop__manifest">your-build/
+├─ src/          # the code — yours
+├─ weights/      # the model — yours
+├─ eval-suite/
+│  ├─ baseline   # measured from your data
+│  ├─ cases/     # your worst inputs
+│  └─ regressions# caught before ship
+└─ runbook.md    # run it without us</pre>
+          <svg class="s-slop__spark" viewBox="0 0 240 48" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M2 42 L40 34 L78 37 L116 22 L154 27 L192 12 L238 7" /></svg>
+          <span class="s-slop__sparklbl">Measured the same way, every time</span>
         </div>
-        <div class="agvs-vs" aria-hidden="true">vs</div>
-        <div class="agvs-col agvs-good">
-          <p class="agvs-tag agvs-tag-good">A DPR agent</p>
-          <ul class="agvs-list">
-            <li data-pair="1"><span class="agvs-ic good" aria-hidden="true">✓</span>Shows the command, the output, the number</li>
-            <li data-pair="2"><span class="agvs-ic good" aria-hidden="true">✓</span>Smallest change that does the job — nothing else</li>
-            <li data-pair="3"><span class="agvs-ic good" aria-hidden="true">✓</span>Checks the real code before it writes</li>
-            <li data-pair="4"><span class="agvs-ic good" aria-hidden="true">✓</span>Stops and tells you exactly what broke</li>
-            <li data-pair="5"><span class="agvs-ic good" aria-hidden="true">✓</span>Hands over the code, the weights, and the keys</li>
-          </ul>
+        <div class="s-slop__demo" aria-hidden="true">
+          <span class="s-slop__tag s-slop__tag--bad">AI slop demo</span>
+          <div class="s-slop__ui">
+            <div class="s-slop__ui-side"></div>
+            <div class="s-slop__ui-main">
+              <div class="s-slop__ui-row">
+                <div class="s-slop__kpi"><span>Accuracy</span><b>98%<i>&nbsp;?</i></b></div>
+                <div class="s-slop__kpi"><span>Users</span><b>&mdash;</b></div>
+                <div class="s-slop__kpi"><span>Owner</span><b>&mdash;</b></div>
+              </div>
+              <div class="s-slop__chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
