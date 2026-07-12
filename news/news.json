@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-11T17:04:15.887295+00:00",
+    "generated_at": "2026-07-12T13:41:08.091635+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "36d5f814be20",
+      "headline": "The fight against AI data centers is just beginning",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
+      "published_at": "2026-07-12T12:00:00+00:00",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the data center buildout, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7854
+    },
     {
       "id": "ab88b22435ed",
       "headline": "Meta's Muse Spark 1.1 Scores 51 on the Artificial Analysis Intelligence Index",
@@ -13,14 +29,14 @@
       "source_id": "hn",
       "url": "https://twitter.com/ArtificialAnlys/status/2075677416295739660",
       "published_at": "2026-07-11T16:39:44+00:00",
-      "summary": "1 points and 0 comments on Hacker News.",
+      "summary": "2 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5576
+      "rank_score": 0.4371
     },
     {
       "id": "5f92d55c125d",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7773
+      "rank_score": 0.6622
     },
     {
       "id": "98d85122ab64",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6923
+      "rank_score": 0.6069
     },
     {
       "id": "6c4a6e1919dc",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6919
+      "rank_score": 0.6066
     },
     {
       "id": "4f68ab059f6d",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6809
+      "rank_score": 0.5994
     },
     {
       "id": "a4ad473125ca",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6779
+      "rank_score": 0.5975
     },
     {
       "id": "1d85656f77c8",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6685
+      "rank_score": 0.5913
     },
     {
       "id": "78cbc53175f9",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7207
+      "rank_score": 0.6463
     },
     {
       "id": "27b60fc861f1",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6541
+      "rank_score": 0.582
     },
     {
       "id": "05d5cd4f7807",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4137
+      "rank_score": 0.343
     },
     {
       "id": "e654c4c7eaf2",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6466
+      "rank_score": 0.5771
     },
     {
       "id": "3fd5be624e9b",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6456
+      "rank_score": 0.5764
     },
     {
       "id": "30fd26556973",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6439
+      "rank_score": 0.5753
     },
     {
       "id": "5d89094603b0",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4041
+      "rank_score": 0.3365
     },
     {
       "id": "e18a0edc34ba",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7342
+      "rank_score": 0.6672
     },
     {
       "id": "027b05f9d0fa",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.6546
+      "rank_score": 0.5945
     },
     {
       "id": "ae709b33078a",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4021
+      "rank_score": 0.3428
     },
     {
       "id": "2922cfdde0d7",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6571
+      "rank_score": 0.6049
     },
     {
       "id": "3e171b9d1ff3",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5965
+      "rank_score": 0.5445
     },
     {
       "id": "880ee3c2d550",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5951
+      "rank_score": 0.5436
     },
     {
       "id": "e9b3a7306418",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5944
+      "rank_score": 0.5431
     },
     {
       "id": "9491981398fc",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6514
+      "rank_score": 0.6012
     },
     {
       "id": "1adca30b762f",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5906
-    },
-    {
-      "id": "14a2cc90aef5",
-      "headline": "OpenAI is shutting down Atlas, but its AI browser ambitions are still growing",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
-      "published_at": "2026-07-09T22:03:54+00:00",
-      "summary": "OpenAI is sunsetting its AI-powered browser after less than a year. But it's moving some agentic browsing features to its desktop app and a Chrome extension.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5904
+      "rank_score": 0.5407
     }
   ]
 }
