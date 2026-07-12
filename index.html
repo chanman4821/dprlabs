@@ -89,6 +89,15 @@
   .s-card:nth-child(3) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(236,72,153,.16),rgba(244,63,94,.06) 45%,transparent 72%)}
   .s-card:nth-child(4) .s-visual{background:radial-gradient(circle at 50% 42%,rgba(16,185,129,.17),rgba(6,182,212,.06) 45%,transparent 72%)}
   .s-visual img{max-height:80%;max-width:78%;object-fit:contain;filter:drop-shadow(0 14px 22px rgba(30,20,70,.18))}
+  .s-visual video.s-vid{max-height:84%;max-width:82%;object-fit:contain;filter:drop-shadow(0 14px 22px rgba(30,20,70,.18));transition:transform .5s ease,filter .5s ease}
+  .s-visual::after{content:"";position:absolute;inset:0;border-radius:15px;pointer-events:none;opacity:0;transition:opacity .55s ease;background:radial-gradient(circle at 50% 46%,rgba(124,58,237,.20),transparent 66%)}
+  .s-card.wb-on{transform:translateY(-6px);box-shadow:0 2px 4px rgba(20,18,45,.05),0 30px 56px rgba(79,70,229,.18)}
+  .s-card.wb-on .s-visual::after{opacity:1}
+  .s-card.wb-on video.s-vid{transform:scale(1.06);filter:drop-shadow(0 20px 30px rgba(79,70,229,.30)) brightness(1.04)}
+  .wb-stage{position:relative}
+  .wb-bot{position:absolute;left:0;top:0;width:clamp(76px,8.5vw,118px);z-index:6;pointer-events:none;transform:translate(-50%,-50%);transition:transform .7s cubic-bezier(.34,1.25,.4,1),opacity .45s ease;filter:drop-shadow(0 16px 26px rgba(49,32,120,.30)) drop-shadow(0 2px 6px rgba(0,0,0,.10));will-change:transform;opacity:0}
+  .wb-stage.wb-ready .wb-bot{opacity:1}
+  .wb-bot video{width:100%;height:auto;display:block}
   .s-body{padding:0 12px}
   .s-body h3{font-size:21px;margin:0 0 7px;letter-spacing:-.01em}
   .s-body p{color:var(--muted,#55555f);font-size:15.5px;line-height:1.5;margin:0 0 16px}
@@ -184,9 +193,11 @@
   <h1 class="s-h2">Four things. Built in code. Yours to keep.</h1>
   <p class="s-sub">Not a subscription to someone else's AI. Custom agents and automations, handed to your team to own.</p>
 
+  <div class="wb-stage" id="wbStage">
+  <div class="wb-bot" aria-hidden="true"><video autoplay loop muted playsinline poster="assets/mascot/cut/bot-peace.png?v=2"><source src="assets/anim/bot.webm" type="video/webm"></video></div>
   <div class="s-grid">
-    <div class="s-card">
-      <div class="s-visual"><img src="assets/services/sales-agents-cut.png?v=1" alt="AI sales and marketing agents"></div>
+    <div class="s-card wb-sales" data-wb="0">
+      <div class="s-visual"><video class="s-vid" autoplay loop muted playsinline aria-hidden="true" poster="assets/services/sales-agents-cut.png?v=1"><source src="assets/anim/plane.webm" type="video/webm"></video></div>
       <div class="s-body">
         <h3>AI Sales &amp; Marketing Agents</h3>
         <p>Finds leads, writes the outreach, follows up, books meetings — straight into your CRM.</p>
@@ -194,8 +205,8 @@
       </div>
     </div>
 
-    <div class="s-card">
-      <div class="s-visual"><img src="assets/services/automations-cut.png?v=1" alt="Workflow and ops automations"></div>
+    <div class="s-card wb-gears" data-wb="1">
+      <div class="s-visual"><video class="s-vid" autoplay loop muted playsinline aria-hidden="true" poster="assets/services/automations-cut.png?v=1"><source src="assets/anim/gears.webm" type="video/webm"></video></div>
       <div class="s-body">
         <h3>Workflow &amp; Ops Automations</h3>
         <p>Automates the steps that drain hours. You scale with code, not headcount.</p>
@@ -203,8 +214,8 @@
       </div>
     </div>
 
-    <div class="s-card">
-      <div class="s-visual"><img src="assets/services/multi-agent-cut.png?v=1" alt="Multi-agent systems"></div>
+    <div class="s-card wb-molecule" data-wb="2">
+      <div class="s-visual"><video class="s-vid" autoplay loop muted playsinline aria-hidden="true" poster="assets/services/multi-agent-cut.png?v=1"><source src="assets/anim/molecule.webm" type="video/webm"></video></div>
       <div class="s-body">
         <h3>Multi-Agent Systems</h3>
         <p>A team of agents for the complex jobs — auto where it's routine, you approve where it counts.</p>
@@ -212,14 +223,15 @@
       </div>
     </div>
 
-    <div class="s-card">
-      <div class="s-visual"><img src="assets/services/pipelines-cut.png?v=1" alt="Custom AI pipelines"></div>
+    <div class="s-card wb-pipe" data-wb="3">
+      <div class="s-visual"><video class="s-vid" autoplay loop muted playsinline aria-hidden="true" poster="assets/services/pipelines-cut.png?v=1"><source src="assets/anim/database.webm" type="video/webm"></video></div>
       <div class="s-body">
         <h3>Custom AI Pipelines</h3>
         <p>Your data and docs wired into one system that answers and acts — with evals from day one.</p>
         <span class="s-tag">From $12k · then $2k–$6k/mo</span>
       </div>
     </div>
+  </div>
   </div>
 
   <div class="s-deal">
@@ -229,6 +241,54 @@
 </div>
 </section>
 
+
+<script>
+/* what-we-build — the gold bot travels the four things and powers each one on */
+(function(){
+  var stage=document.getElementById('wbStage'); if(!stage) return;
+  var bot=stage.querySelector('.wb-bot');
+  var cards=[].slice.call(stage.querySelectorAll('.s-card'));
+  if(!bot||!cards.length) return;
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var vids=[].slice.call(stage.querySelectorAll('video'));
+  var targets=[], cur=-1, timer=null, hovering=false;
+
+  function calc(){
+    var sr=stage.getBoundingClientRect();
+    targets=cards.map(function(c){
+      var v=c.querySelector('.s-visual'), r=v.getBoundingClientRect();
+      return {x:r.left-sr.left+r.width/2, y:r.top-sr.top+r.height*0.74};
+    });
+  }
+  function place(i){
+    if(!targets[i]) return;
+    bot.style.transform='translate('+targets[i].x+'px,'+targets[i].y+'px) translate(-50%,-50%)';
+    cards.forEach(function(c,j){ c.classList.toggle('wb-on', j===i); });
+    cur=i;
+  }
+  function step(){ place((cur+1)%cards.length); }
+  function playAll(p){ vids.forEach(function(v){ try{ p?v.play():v.pause(); }catch(e){} }); }
+  function start(){ if(timer||reduce) return; stage.classList.add('wb-ready'); if(cur<0) place(0); timer=setInterval(function(){ if(!hovering) step(); },2100); }
+  function stop(){ if(timer){clearInterval(timer);timer=null;} }
+
+  calc();
+  var rt; window.addEventListener('resize',function(){ clearTimeout(rt); rt=setTimeout(function(){ calc(); if(cur>=0) place(cur); },150); });
+
+  if(reduce){ stage.classList.add('wb-ready'); calc(); place(0); playAll(false); return; }
+
+  cards.forEach(function(c,i){
+    c.addEventListener('mouseenter',function(){ hovering=true; place(i); });
+    c.addEventListener('mouseleave',function(){ hovering=false; });
+  });
+
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ calc(); playAll(true); start(); } else { playAll(false); stop(); } });
+    },{threshold:.15});
+    io.observe(stage);
+  } else { playAll(true); start(); }
+})();
+</script>
 
   <!-- VALUE STRIP -->
   <div class="strip">
