@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-12T17:06:38.376270+00:00",
+    "generated_at": "2026-07-12T19:14:25.519479+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "9c1e0b5762e0",
+      "headline": "Anthropic extends Fable 5 access through July 19",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-extends-fable-5-access-through-july-19/articleshow/132350610.cms?from=mdr",
+      "published_at": "2026-07-12T18:36:31+00:00",
+      "summary": "1 points and 1 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.556
+    },
     {
       "id": "5bbc3a5ef63f",
       "headline": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7927
+      "rank_score": 0.7777
     },
     {
       "id": "36d5f814be20",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7622
+      "rank_score": 0.7485
     },
     {
       "id": "ab88b22435ed",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4215
+      "rank_score": 0.4124
     },
     {
       "id": "5f92d55c125d",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6474
+      "rank_score": 0.6387
     },
     {
       "id": "98d85122ab64",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5959
+      "rank_score": 0.5894
     },
     {
       "id": "6c4a6e1919dc",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5956
+      "rank_score": 0.5892
     },
     {
       "id": "4f68ab059f6d",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5889
+      "rank_score": 0.5828
     },
     {
       "id": "a4ad473125ca",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5872
+      "rank_score": 0.5811
     },
     {
       "id": "1d85656f77c8",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5814
+      "rank_score": 0.5756
     },
     {
       "id": "78cbc53175f9",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6367
+      "rank_score": 0.6311
     },
     {
       "id": "27b60fc861f1",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5727
+      "rank_score": 0.5673
     },
     {
       "id": "05d5cd4f7807",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3339
+      "rank_score": 0.3286
     },
     {
       "id": "e654c4c7eaf2",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5682
+      "rank_score": 0.5629
     },
     {
       "id": "3fd5be624e9b",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5676
+      "rank_score": 0.5623
     },
     {
       "id": "30fd26556973",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5665
+      "rank_score": 0.5614
     },
     {
       "id": "5d89094603b0",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3279
+      "rank_score": 0.3228
     },
     {
       "id": "e18a0edc34ba",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.6587
+      "rank_score": 0.6536
     },
     {
       "id": "027b05f9d0fa",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.5868
+      "rank_score": 0.5823
     },
     {
       "id": "ae709b33078a",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3351
+      "rank_score": 0.3307
     },
     {
       "id": "2922cfdde0d7",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5982
+      "rank_score": 0.5942
     },
     {
       "id": "3e171b9d1ff3",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5378
+      "rank_score": 0.5339
     },
     {
       "id": "880ee3c2d550",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.537
+      "rank_score": 0.5331
     },
     {
       "id": "e9b3a7306418",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5365
-    },
-    {
-      "id": "9491981398fc",
-      "headline": "OpenAI launches its new family of models with GPT-5.6",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
-      "published_at": "2026-07-09T22:24:24+00:00",
-      "summary": "OpenAI's latest family of models promises improvements across a range of areas, including cybersecurity.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5947
+      "rank_score": 0.5327
     }
   ]
 }
