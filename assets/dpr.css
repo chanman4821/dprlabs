@@ -277,3 +277,34 @@
 .s-calc__note { font-size: var(--step--1); color: var(--ink-30); margin: var(--s4) 0 0; max-width: 62ch; }
 @media (max-width: 860px) { .s-calc__grid { grid-template-columns: 1fr; } .s-calc__h2 { font-size: var(--step-2); } }
 @media (prefers-reduced-motion: reduce) { .s-calc__bar span { transition: none; } }
+
+
+/* ===================== SECTIONS 7-9 — cohere free-tool / FAQ / team / contact ===================== */
+#free-tools, #about, #contact { background: var(--paper); }
+#faq { background: var(--paper-2); }
+#free-tools .eyebrow, #faq .eyebrow, #about .eyebrow, #contact .eyebrow {
+  font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace) !important;
+  color: var(--gold-ink) !important; letter-spacing: .16em !important; text-transform: uppercase; font-size: var(--step--1);
+}
+#free-tools h2, #faq h2, #about h2, #contact h2 { color: var(--ink); letter-spacing: -.02em; }
+#contact .gold-text { background-image: none !important; -webkit-text-fill-color: var(--gold-ink) !important; color: var(--gold-ink) !important; }
+/* primary buttons -> gold within homepage sections (nav stays as-is) */
+#free-tools .btn-primary, #contact .btn-primary {
+  background: var(--gold) !important; color: #1c1408 !important; border-color: transparent !important; box-shadow: 0 8px 20px rgba(200,145,42,.28) !important;
+}
+#free-tools .btn-ghost { border-color: var(--ink-30) !important; color: var(--ink) !important; }
+/* free-band panel */
+#free-tools .free-band { background: #fff; border: 1px solid var(--hairline); }
+#free-tools .free-band h2 { font-size: var(--step-2); color: var(--ink); }
+/* FAQ */
+#faq .faq-btn { color: var(--ink); font-weight: 700; }
+#faq .faq-item { border: 1px solid var(--hairline); background: #fff; border-radius: 14px; }
+/* about field notes */
+#about .note-tag { color: var(--gold-ink); }
+/* contact form -> match calculator inputs */
+#contact .form input, #contact .form textarea { border-radius: 12px; border: 1px solid var(--hairline); background: #fff; }
+#contact .form input:focus, #contact .form textarea:focus { outline: 2px solid var(--gold); outline-offset: 1px; border-color: transparent; }
+#contact .chips b { color: var(--gold-ink); }
+#free-tools .eyebrow::before, #faq .eyebrow::before, #about .eyebrow::before, #contact .eyebrow::before,
+#free-tools .eyebrow::after, #faq .eyebrow::after, #about .eyebrow::after, #contact .eyebrow::after { background: var(--gold) !important; color: var(--gold) !important; }
+#faq .eyebrow, #about .eyebrow, #free-tools .eyebrow { color: var(--gold-ink) !important; }
