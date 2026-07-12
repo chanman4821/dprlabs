@@ -13,16 +13,16 @@
   }
 
   ready(function () {
-    // ---- stagger indices: set --i on direct [data-reveal] children of [data-stagger] ----
-    [].forEach.call(document.querySelectorAll("[data-stagger]"), function (parent) {
-      var kids = parent.querySelectorAll(":scope > [data-reveal]");
+    // ---- stagger indices: set --i on direct [data-rvl] children of [data-stg] ----
+    [].forEach.call(document.querySelectorAll("[data-stg]"), function (parent) {
+      var kids = parent.querySelectorAll(":scope > [data-rvl]");
       [].forEach.call(kids, function (el, i) {
         el.style.setProperty("--i", Math.min(i, 6));
       });
     });
 
     // ---- reveal ----
-    var reveals = [].slice.call(document.querySelectorAll("[data-reveal]"));
+    var reveals = [].slice.call(document.querySelectorAll("[data-rvl]"));
     if (reduce || !("IntersectionObserver" in window)) {
       reveals.forEach(function (el) { el.classList.add("is-in"); });
     } else {
