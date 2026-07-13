@@ -10,9 +10,9 @@
   --ink: #14130F;
   --ink-60: #4A473F;
   --ink-30: #8C887C;
-  --gold: #C8912A;
-  --gold-hi: #E6B24C;
-  --gold-ink: #7A5510;      /* accented words on paper — keeps AA contrast */
+  --gold: #C9A227;
+  --gold-hi: #E6C56A;
+  --gold-ink: #85680F;      /* accented words on paper — true gold, keeps AA contrast (4.84:1) */
   --hairline: rgba(20, 19, 15, .12);
 
   /* layout */
@@ -103,7 +103,7 @@
 }
 .s-hero__stage::before {
   content: ""; position: absolute; inset: -22% -28% -10% -28%; z-index: -1;
-  background: radial-gradient(circle at 55% 48%, rgba(200,145,42,.14), transparent 66%); filter: blur(10px);
+  background: radial-gradient(circle at 55% 48%, rgba(201,162,39,.14), transparent 66%); filter: blur(10px);
 }
 .s-hero__bot { width: 100%; max-height: 360px; object-fit: contain; filter: drop-shadow(0 24px 32px rgba(60,40,10,.16)); will-change: transform; }
 .s-hero[data-sp] .s-hero__bot { transform: translateY(calc((var(--sp, .5) - .5) * -34px)); }
@@ -121,8 +121,8 @@
   padding: .85em 1.45em; border-radius: 999px; text-decoration: none; cursor: pointer; border: 1.5px solid transparent;
   transition: transform var(--t-fast) var(--ease-spring), box-shadow var(--t-fast) var(--ease-out), border-color var(--t-fast);
 }
-.dpr-btn--gold { background: var(--gold); color: #1c1408; box-shadow: 0 8px 20px rgba(200,145,42,.28); }
-.dpr-btn--gold:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(200,145,42,.38); }
+.dpr-btn--gold { background: var(--gold); color: #1c1408; box-shadow: 0 8px 20px rgba(201,162,39,.28); }
+.dpr-btn--gold:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(201,162,39,.38); }
 .dpr-btn--gold:active { transform: scale(.98); }
 .dpr-btn--ink { background: transparent; color: var(--ink); border-color: var(--ink-30); }
 .dpr-btn--ink:hover { transform: translateY(-2px); border-color: var(--ink); }
@@ -297,8 +297,8 @@
 .s-calc__track { position: relative; max-width: 860px; margin: 0 auto var(--s5); }
 .s-calc__track input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--gold) 0 var(--fill,40%), var(--hairline) var(--fill,40%) 100%); cursor: grab; outline: none; }
 .s-calc__track input[type=range]:active { cursor: grabbing; }
-.s-calc__track input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 58px; height: 58px; border-radius: 50%; background: var(--paper) url(mascot/cut/bot-peace.png) center 16% / 150% no-repeat; border: 2px solid var(--gold); box-shadow: 0 8px 20px rgba(200,145,42,.34); cursor: grab; }
-.s-calc__track input[type=range]::-moz-range-thumb { width: 58px; height: 58px; border-radius: 50%; background: var(--paper) url(mascot/cut/bot-peace.png) center 16% / 150% no-repeat; border: 2px solid var(--gold); box-shadow: 0 8px 20px rgba(200,145,42,.34); cursor: grab; }
+.s-calc__track input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 58px; height: 58px; border-radius: 50%; background: var(--paper) url(mascot/cut/bot-peace.png) center 16% / 150% no-repeat; border: 2px solid var(--gold); box-shadow: 0 8px 20px rgba(201,162,39,.34); cursor: grab; }
+.s-calc__track input[type=range]::-moz-range-thumb { width: 58px; height: 58px; border-radius: 50%; background: var(--paper) url(mascot/cut/bot-peace.png) center 16% / 150% no-repeat; border: 2px solid var(--gold); box-shadow: 0 8px 20px rgba(201,162,39,.34); cursor: grab; }
 .s-calc__track input[type=range]:focus-visible { outline: 2px solid var(--gold); outline-offset: 8px; border-radius: 6px; }
 .s-calc__ticks { display: flex; justify-content: space-between; margin-top: var(--s3); font-size: var(--step--1); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-30); }
 .s-calc__ticks span:nth-child(2) { color: var(--ink-60); }
@@ -354,7 +354,7 @@
 #contact .gold-text { background-image: none !important; -webkit-text-fill-color: var(--gold-ink) !important; color: var(--gold-ink) !important; }
 /* primary buttons -> gold within homepage sections (nav stays as-is) */
 #free-tools .btn-primary, #about .btn-primary, #contact .btn-primary {
-  background: var(--gold) !important; color: #1c1408 !important; border-color: transparent !important; box-shadow: 0 8px 20px rgba(200,145,42,.28) !important;
+  background: var(--gold) !important; color: #1c1408 !important; border-color: transparent !important; box-shadow: 0 8px 20px rgba(201,162,39,.28) !important;
 }
 #free-tools .btn-ghost, #about .btn-ghost { border-color: var(--ink-30) !important; color: var(--ink) !important; }
 /* free-band panel (now lives inside #about) */
