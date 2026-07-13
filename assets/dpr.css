@@ -313,6 +313,35 @@
 @media (max-width: 760px) { .s-calc__num { font-size: clamp(3.5rem, 2rem + 16vw, 6rem); } .s-calc__cta { margin-left: 0; width: 100%; justify-content: center; } .s-calc__ticks span:nth-child(2) { display: none; } }
 
 
+/* ===================== ABOUT — broadsheet masthead + principles rail + colophon ===================== */
+.s-abt { scroll-margin-top: 92px; }
+.s-abt__masthead { border-top: 3px solid var(--ink); padding-top: var(--s3); margin: 0 0 var(--s5); }
+.s-abt__eyebrow { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .18em; text-transform: uppercase; color: var(--gold-ink); margin: 0 0 var(--s2); }
+.s-abt__name { font-size: var(--step-4); font-weight: 800; letter-spacing: -.03em; line-height: .98; color: var(--ink); margin: 0; padding-bottom: var(--s3); border-bottom: 1px solid var(--ink); max-width: 15ch; }
+.s-abt__strap { font-size: var(--step-1); line-height: 1.5; color: var(--ink-60); max-width: 54ch; margin: var(--s3) 0 0; }
+.s-abt__body { display: grid; grid-template-columns: 1.12fr .88fr; gap: clamp(40px, 6vw, 100px); align-items: start; }
+.s-abt__principles { list-style: none; margin: 0; padding: 0; }
+.s-abt__pr { display: grid; grid-template-columns: auto 1fr; gap: var(--s3); align-items: baseline; padding: var(--s4) 0; border-bottom: 1px solid var(--hairline); }
+.s-abt__pr:first-child { padding-top: 0; }
+.s-abt__pn { font-weight: 800; font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: .8; color: var(--gold-hi); letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.s-abt__pt b { display: block; font-size: var(--step-1); font-weight: 800; letter-spacing: -.01em; color: var(--ink); }
+.s-abt__pt span { display: block; font-size: var(--step-0); line-height: 1.5; color: var(--ink-60); margin-top: 5px; max-width: 46ch; }
+.s-abt__aside { position: relative; }
+.s-abt__quote { position: relative; margin: 0 0 var(--s4); padding-top: var(--s3); font-size: var(--step-2); font-weight: 700; letter-spacing: -.02em; line-height: 1.16; color: var(--ink); text-wrap: balance; }
+.s-abt__quote::before { content: ""; display: block; width: 44px; height: 3px; background: var(--gold); margin-bottom: var(--s3); }
+.s-abt__colophon { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3) var(--s4); margin: 0 0 var(--s4); padding: var(--s3) 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+.s-abt__colophon div { margin: 0; }
+.s-abt__colophon dt { font-size: var(--step--1); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-30); margin: 0 0 3px; }
+.s-abt__colophon dd { margin: 0; font-size: var(--step-1); font-weight: 800; letter-spacing: -.01em; color: var(--ink); }
+.s-abt__links { display: flex; flex-direction: column; gap: .55em; align-items: flex-start; }
+.s-abt__links a:not(.txt-link) { color: var(--ink-60); text-decoration: none; border-bottom: 1px solid var(--hairline); padding-bottom: 1px; transition: color var(--t-fast) var(--ease-out), border-color var(--t-fast) var(--ease-out); }
+.s-abt__links a:not(.txt-link):hover { color: var(--ink); border-color: var(--gold); }
+@media (max-width: 900px) {
+  .s-abt__name { font-size: var(--step-3); max-width: none; }
+  .s-abt__body { grid-template-columns: 1fr; gap: var(--s5); }
+}
+
+
 /* ===================== SECTIONS 7-9 — cohere free-tool / FAQ / team / contact ===================== */
 #free-tools, #about, #contact { background: var(--paper); }
 #faq { background: var(--paper-2); }

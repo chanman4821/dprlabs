@@ -13,7 +13,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 
 <link rel="stylesheet" href="site.css?v=16" />
-<link rel="stylesheet" href="assets/dpr.css?v=12" />
+<link rel="stylesheet" href="assets/dpr.css?v=13" />
 <link rel="stylesheet" href="slop.css?v=5" />
 <link rel="stylesheet" href="assets/slopcar.css?v=2" />
 
@@ -490,29 +490,44 @@
   </section>
 
   <!-- ABOUT + FIELD NOTES + FREE TOOL -->
-  <section class="sec" id="about">
+  <section class="sec s-abt" id="about">
     <div class="wrap">
-      <div class="split">
-        <div class="reveal">
-          <p class="eyebrow">About</p>
-          <h2 style="margin-top:14px">A small, senior team.</h2>
-          <p class="lead" style="margin-top:16px">A senior AI studio. Real work over borrowed logos. We publish how we measure — and you own what we build.</p>
-          <div class="about-links">
-            <a href="proof.html" class="txt-link">How we measure <span class="arrow" aria-hidden="true">→</span></a>
-          </div>
-          <div class="about-notes">
-            <span class="about-notes__lbl">Field notes</span>
+      <header class="s-abt__masthead reveal">
+        <p class="s-abt__eyebrow">About the studio</p>
+        <h2 class="s-abt__name">A small, senior AI studio.</h2>
+        <p class="s-abt__strap">Real work over borrowed logos. We publish how we measure &mdash; and you own everything we build.</p>
+      </header>
+      <div class="s-abt__body">
+        <ol class="s-abt__principles reveal">
+          <li class="s-abt__pr">
+            <span class="s-abt__pn" aria-hidden="true">01</span>
+            <div class="s-abt__pt"><b>Real work over borrowed logos</b><span>No stock-photo case studies &mdash; we show the build and the one number it moved.</span></div>
+          </li>
+          <li class="s-abt__pr">
+            <span class="s-abt__pn" aria-hidden="true">02</span>
+            <div class="s-abt__pt"><b>We publish how we measure</b><span>The eval method is written down and reproducible &mdash; by you, without us.</span></div>
+          </li>
+          <li class="s-abt__pr">
+            <span class="s-abt__pn" aria-hidden="true">03</span>
+            <div class="s-abt__pt"><b>You own what we build</b><span>Code, weights, evals, and the runbook &mdash; transferred on day one.</span></div>
+          </li>
+        </ol>
+        <aside class="s-abt__aside reveal">
+          <blockquote class="s-abt__quote">&ldquo;If you can't run it without us, you don't own it.&rdquo;</blockquote>
+          <dl class="s-abt__colophon">
+            <div><dt>Team</dt><dd>Senior-only</dd></div>
+            <div><dt>Tools</dt><dd>Open-source</dd></div>
+            <div><dt>Per build</dt><dd>One number</dd></div>
+            <div><dt>You own</dt><dd>Everything</dd></div>
+          </dl>
+          <nav class="s-abt__links" aria-label="About and field notes">
+            <a href="proof.html" class="txt-link">How we measure <span class="arrow" aria-hidden="true">&rarr;</span></a>
             <a href="blog/the-one-number.html">The one number</a>
             <a href="blog/no-lock-in.html">No lock-in</a>
             <a href="blog/measure-ai-honestly.html">Measure honestly</a>
-            <a href="blog/index.html" class="txt-link">All notes <span class="arrow" aria-hidden="true">→</span></a>
-          </div>
-        </div>
-        <div class="reveal">
-          <p class="eyebrow">Free · open-source</p>
-          <h2 style="margin-top:14px;font-size:clamp(24px,3vw,34px)">Try something free right now.</h2>
-          <p class="lead" style="margin-top:16px">Our Inbox-to-Action Agent reads a message thread and hands back a summary, a draft reply, and a to-do list — on your own computer, your own key. No sign-up.</p>
-        </div>
+            <a href="blog/index.html" class="txt-link">All field notes <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          </nav>
+        </aside>
       </div>
       <div class="free-band reveal">
         <div class="free-band-copy">
