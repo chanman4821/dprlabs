@@ -211,29 +211,43 @@
 }
 
 
-/* ===================== SECTION 4 — YOU OWN IT (single dark band) ===================== */
-.s-own { position: relative; background: var(--ink); color: var(--paper); padding: var(--s7) 0; overflow: hidden; }
-.s-own__inner { position: relative; z-index: 2; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--s4); }
-.s-own__eyebrow { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .18em; text-transform: uppercase; color: var(--gold-hi); }
-.s-own__h2 { font-size: var(--step-3); line-height: 1.06; letter-spacing: -.025em; font-weight: 800; color: var(--paper); max-width: 22ch; margin: var(--s3) 0 var(--s6); }
-.s-own__mark { color: var(--gold-hi); }
-.s-own__ledger { display: grid; gap: var(--s3); max-width: 60ch; }
-.s-own__line { display: flex; gap: var(--s3); align-items: flex-start; padding-bottom: var(--s3); border-bottom: 1px solid rgba(247,245,240,.12); }
-.s-own__check { flex: 0 0 auto; width: 26px; height: 26px; margin-top: 3px; }
-.s-own__check path { fill: none; stroke: var(--gold-hi); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset .55s var(--ease-out) calc(var(--i,0) * 90ms + .2s); }
-.is-in .s-own__check path { stroke-dashoffset: 0; }
-.s-own__linetxt b { display: block; font-size: var(--step-1); color: var(--paper); letter-spacing: -.01em; }
-.s-own__linetxt span { display: block; font-size: var(--step-0); color: rgba(247,245,240,.60); line-height: 1.5; margin-top: 3px; }
-.s-own__art { position: absolute; right: clamp(-60px, -3vw, -20px); bottom: -8%; width: clamp(180px, 26vw, 380px); z-index: 1; opacity: .95; pointer-events: none; filter: drop-shadow(0 20px 40px rgba(0,0,0,.4)); }
-.s-own[data-sp] .s-own__art { transform: translateY(calc((var(--sp,.5) - .5) * -30px)); }
+/* ===================== SECTION 4 — YOU OWN IT (legal ledger on paper, OWNED stamp) ===================== */
+.s-own { position: relative; background: var(--paper); color: var(--ink); padding: var(--s7) 0; overflow: hidden; }
+.s-own__inner { position: relative; z-index: 2; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--s4); display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr); gap: clamp(40px, 6vw, 104px); align-items: start; }
+.s-own__head { position: sticky; top: 104px; }
+.s-own__eyebrow { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .18em; text-transform: uppercase; color: var(--gold-ink); }
+.s-own__h2 { font-size: var(--step-3); line-height: 1.05; letter-spacing: -.025em; font-weight: 800; color: var(--ink); max-width: 16ch; margin: var(--s3) 0 var(--s2); }
+.s-own__mark { color: var(--gold-ink); }
+.s-own__sub { font-size: var(--step-0); line-height: 1.5; color: var(--ink-60); max-width: 34ch; }
+
+.s-own__doc { position: relative; padding-top: 4px; padding-bottom: clamp(64px, 8vw, 128px); }
+.s-own__docbar { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s3); padding-bottom: var(--s2); border-bottom: 2px solid var(--ink); }
+.s-own__doctype { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .14em; text-transform: uppercase; font-weight: 600; color: var(--ink); }
+.s-own__docref { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-60); white-space: nowrap; }
+
+.s-own__ledger { list-style: none; margin: 0; padding: 0; position: relative; }
+.s-own__line { display: grid; grid-template-columns: 2.6em 1fr; column-gap: var(--s3); align-items: baseline; padding: var(--s3) 0 calc(var(--s3) - 2px); border-bottom: 1px solid var(--hairline); }
+.s-own__no { grid-row: 1 / span 2; align-self: start; font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step-1); font-weight: 700; color: var(--gold-ink); font-variant-numeric: tabular-nums; padding-top: .12em; }
+.s-own__term { grid-column: 2; font-size: var(--step-2); font-weight: 800; letter-spacing: -.02em; color: var(--ink); }
+.s-own__clause { grid-column: 2; font-size: var(--step-0); line-height: 1.5; color: var(--ink-60); max-width: 48ch; margin-top: 5px; }
+
+.s-own__colophon { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--s3); margin-top: var(--s4); padding-top: var(--s2); border-top: 1px solid var(--hairline); }
+.s-own__docno { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-30); }
+.s-own__sign { font-family: "Segoe Script","Brush Script MT","Snell Roundhand",cursive; font-size: clamp(1.7rem, 3vw, 2.5rem); color: var(--gold-ink); line-height: .9; transform: rotate(-3deg); transform-origin: bottom right; }
+
+.s-own__stamp { position: absolute; left: clamp(2px, 1vw, 40px); bottom: clamp(-60px, -4vw, -30px); transform: rotate(-9deg); opacity: .9; pointer-events: none; user-select: none; }
+.s-own__stamp i { display: block; font-style: normal; font-weight: 900; text-transform: uppercase; letter-spacing: .02em; font-size: clamp(2.8rem, 7.6vw, 6.8rem); line-height: .92; color: transparent; -webkit-text-stroke: 3px var(--gold); padding: .14em .26em .1em; border: .1em solid var(--gold); border-radius: .1em; box-shadow: inset 0 0 0 .035em var(--gold); }
+.s-own[data-sp] .s-own__stamp { transform: rotate(-9deg) translateY(calc((var(--sp,.5) - .5) * -22px)); }
+
 @media (max-width: 900px) {
-  .s-own__h2 { font-size: var(--step-2); }
-  .s-own__art { position: static; display: block; width: clamp(160px, 50vw, 220px); margin: var(--s5) auto 0; right: auto; bottom: auto; }
-  .s-own[data-sp] .s-own__art { transform: none; }
+  .s-own__inner { grid-template-columns: 1fr; gap: var(--s5); }
+  .s-own__head { position: static; }
+  .s-own__h2 { font-size: var(--step-2); max-width: 22ch; }
+  .s-own__stamp { position: static; display: inline-block; transform: rotate(-6deg); margin: var(--s4) 0 0 var(--s2); }
+  .s-own[data-sp] .s-own__stamp { transform: rotate(-6deg); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .s-own__check path { stroke-dashoffset: 0; transition: none; }
-  .s-own[data-sp] .s-own__art { transform: none; }
+  .s-own[data-sp] .s-own__stamp { transform: rotate(-9deg); }
 }
 
 /* ===================== SECTION 5 — HOW A BUILD RUNS (cohere existing stepper) ===================== */
