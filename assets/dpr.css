@@ -566,3 +566,6 @@ header.nav { background: rgba(18,16,12,.72); border-bottom: 1px solid rgba(244,2
 footer { background: #100E0A; }
 .learn-menu { background: #1C1A14; border-color: var(--line-2); }
 #contact .form { background: var(--paper-2); }
+/* kill the leftover light page-wide wash on the homepage; flat dark base so no light gaps show between sections */
+html { background: #14120E; }
+body { background: #14120E; }
