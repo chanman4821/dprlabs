@@ -239,17 +239,17 @@
 
 .s-own__doc { position: relative; padding-top: 4px; padding-bottom: clamp(64px, 8vw, 128px); }
 .s-own__docbar { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s3); padding-bottom: var(--s2); border-bottom: 2px solid var(--ink); }
-.s-own__doctype { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .14em; text-transform: uppercase; font-weight: 600; color: var(--ink); }
-.s-own__docref { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-60); white-space: nowrap; }
+.s-own__doctype { font-size: var(--step--1); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+.s-own__docref { font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-60); white-space: nowrap; }
 
 .s-own__ledger { list-style: none; margin: 0; padding: 0; position: relative; }
 .s-own__line { display: grid; grid-template-columns: 2.6em 1fr; column-gap: var(--s3); align-items: baseline; padding: var(--s3) 0 calc(var(--s3) - 2px); border-bottom: 1px solid var(--hairline); }
-.s-own__no { grid-row: 1 / span 2; align-self: start; font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step-1); font-weight: 700; color: var(--gold-ink); font-variant-numeric: tabular-nums; padding-top: .12em; }
+.s-own__no { grid-row: 1 / span 2; align-self: start; font-size: var(--step-1); font-weight: 800; color: var(--gold-ink); font-variant-numeric: tabular-nums; padding-top: .12em; }
 .s-own__term { grid-column: 2; font-size: var(--step-2); font-weight: 800; letter-spacing: -.02em; color: var(--ink); }
 .s-own__clause { grid-column: 2; font-size: var(--step-0); line-height: 1.5; color: var(--ink-60); max-width: 48ch; margin-top: 5px; }
 
 .s-own__colophon { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--s3); margin-top: var(--s4); padding-top: var(--s2); border-top: 1px solid var(--hairline); }
-.s-own__docno { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-30); }
+.s-own__docno { font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-30); font-variant-numeric: tabular-nums; }
 .s-own__sign { font-family: "Segoe Script","Brush Script MT","Snell Roundhand",cursive; font-size: clamp(1.7rem, 3vw, 2.5rem); color: var(--gold-ink); line-height: .9; transform: rotate(-3deg); transform-origin: bottom right; }
 
 .s-own__stamp { position: absolute; left: clamp(2px, 1vw, 40px); bottom: clamp(-60px, -4vw, -30px); transform: rotate(-9deg); opacity: .9; pointer-events: none; user-select: none; }
