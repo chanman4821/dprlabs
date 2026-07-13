@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-13T18:00:14.470614+00:00",
+    "generated_at": "2026-07-13T19:43:17.541628+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "b4553fdd4116",
+      "headline": "Apple sues OpenAI after ex-engineer allegedly used bug to steal trade secrets",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets/",
+      "published_at": "2026-07-13T19:17:51+00:00",
+      "summary": "OpenAI accused of conspiring with former Apple employees to steal trade secrets.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7944
+    },
+    {
+      "id": "ecbc76a36f0e",
+      "headline": "The wildest allegations in Apple’s trade secrets lawsuit against OpenAI",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/",
+      "published_at": "2026-07-13T18:22:10+00:00",
+      "summary": "Apple’s trade secrets lawsuit against OpenAI contains allegations that range from employees joking about unauthorized access to Apple’s systems to claims that job candidates were asked to bring Apple hardware to interviews. Here are the…",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7878
+    },
+    {
+      "id": "f4f67329799c",
+      "headline": "What Anthropic’s latest AI discovery does—and doesn’t—show",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
+      "published_at": "2026-07-13T18:00:00+00:00",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Anthropic—currently the world’s most valuable AI company, with a nearly $1 trillion valuation—has a…",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8202
+    },
     {
       "id": "4696ee1fdcc6",
       "headline": "Sam Altman’s space data center trash talk is what most experts already believe",
@@ -13,14 +61,14 @@
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe/",
       "published_at": "2026-07-13T17:28:37+00:00",
-      "summary": "\"homeboy you're the one sellling [sic] public market investors on short-term space datacenters.\"",
+      "summary": "Responding to Musk accusing him of being a scammer, Altman said, \"homeboy you're the one sellling [sic] public market investors on short-term space datacenters.\"",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7937
+      "rank_score": 0.7815
     },
     {
       "id": "6358ddebecad",
@@ -36,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7903
+      "rank_score": 0.7782
     },
     {
       "id": "fb7cb16f0a61",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5511
+      "rank_score": 0.5391
     },
     {
       "id": "8a07043ad3d3",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7869
+      "rank_score": 0.7749
     },
     {
       "id": "d8c4f12b71f9",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8403
+      "rank_score": 0.8286
     },
     {
       "id": "0b9a256573f2",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.777
+      "rank_score": 0.7654
     },
     {
       "id": "d880ad9433b4",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7716
+      "rank_score": 0.7602
     },
     {
       "id": "0c7722cea1ed",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5233
+      "rank_score": 0.5123
     },
     {
       "id": "09aa35221dda",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7924
+      "rank_score": 0.7815
     },
     {
       "id": "1c76abb3b2e2",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7501
+      "rank_score": 0.7394
     },
     {
       "id": "790909796521",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5061
+      "rank_score": 0.4957
     },
     {
       "id": "d57980338005",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7377
+      "rank_score": 0.7274
     },
     {
       "id": "33b041c8a0db",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4935
+      "rank_score": 0.4836
     },
     {
       "id": "5f978c026084",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7265
+      "rank_score": 0.7172
     },
     {
       "id": "8d75ea8a3d7c",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7265
+      "rank_score": 0.7172
     },
     {
       "id": "9ef86e16f82b",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7265
+      "rank_score": 0.7172
     },
     {
       "id": "5680daaf95eb",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7265
+      "rank_score": 0.7172
     },
     {
       "id": "2c9a7b5b78f3",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7265
+      "rank_score": 0.7172
     },
     {
       "id": "1cd72bdaf81e",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7265
+      "rank_score": 0.7172
     },
     {
       "id": "b3a1ae710f38",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7265
+      "rank_score": 0.7172
     },
     {
       "id": "42c782acefd2",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7265
-    },
-    {
-      "id": "918353daedf9",
-      "headline": "MedRealMM: A Real-World Multimodal Benchmark for Chinese Online Medical Consultation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09142",
-      "published_at": "2026-07-13T04:00:00+00:00",
-      "summary": "arXiv:2607.09142v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed in online medical consultation, yet existing benchmarks remain poorly aligned with real clinical practice. Many rely on synthetic…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7265
-    },
-    {
-      "id": "cd930412c5ac",
-      "headline": "KV-PRM: Efficient Process Reward Modeling via KV-Cache Transfer for Multi-Agent Test-Time Scaling",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09153",
-      "published_at": "2026-07-13T04:00:00+00:00",
-      "summary": "arXiv:2607.09153v1 Announce Type: new Abstract: Process Reward Models (PRMs) have been proven to be highly effective in guiding test-time scaling (TTS) methods, which significantly boost the capabilities of LLM-based multi-agent systems.…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7265
-    },
-    {
-      "id": "60bfdd086712",
-      "headline": "Scoped Verification for Reliable Long-Horizon Agentic Context Evolution under Distribution Shift",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09175",
-      "published_at": "2026-07-13T04:00:00+00:00",
-      "summary": "arXiv:2607.09175v1 Announce Type: new Abstract: Deployed LLM agents rely on agentic context, the model-external textual control content assembled by an operational harness. In this work, the mutable component of that context is a…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7265
+      "rank_score": 0.7172
     }
   ]
 }
