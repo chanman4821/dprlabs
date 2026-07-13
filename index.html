@@ -13,7 +13,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 
 <link rel="stylesheet" href="site.css?v=16" />
-<link rel="stylesheet" href="assets/dpr.css?v=7" />
+<link rel="stylesheet" href="assets/dpr.css?v=8" />
 <link rel="stylesheet" href="slop.css?v=5" />
 <link rel="stylesheet" href="assets/slopcar.css?v=2" />
 
@@ -623,7 +623,7 @@
   if(window.innerWidth < 1400) return;
   var sprite=document.getElementById('walkbotSprite'), shadow=document.getElementById('walkbotShadow');
   var FRAMES=24, FW=84, STEP=32;
-  var vh=window.innerHeight, topMin=vh*0.14, topMax=vh*0.64;
+  var vh=window.innerHeight, topMin=vh*0.22, topMax=vh*0.72;
   function docMax(){ return Math.max(1, document.documentElement.scrollHeight - window.innerHeight); }
   var curY=topMin, curFrame=-1, raf=null;
   function render(){
@@ -640,7 +640,7 @@
   }
   function onScroll(){ if(!raf) raf=requestAnimationFrame(render); }
   window.addEventListener('scroll', onScroll, {passive:true});
-  window.addEventListener('resize', function(){ vh=window.innerHeight; topMin=vh*0.14; topMax=vh*0.64; wb.style.display=(window.innerWidth<1400)?'none':'block'; onScroll(); }, {passive:true});
+  window.addEventListener('resize', function(){ vh=window.innerHeight; topMin=vh*0.22; topMax=vh*0.72; wb.style.display=(window.innerWidth<1400)?'none':'block'; onScroll(); }, {passive:true});
   sprite.style.transform='translate3d(0,'+curY+'px,0)';
   if(shadow) shadow.style.transform='translate3d(0,'+(curY+130)+'px,0)';
   sprite.style.backgroundPositionX='0px';
