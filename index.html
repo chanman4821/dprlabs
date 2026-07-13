@@ -13,7 +13,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 
 <link rel="stylesheet" href="site.css?v=16" />
-<link rel="stylesheet" href="assets/dpr.css?v=8" />
+<link rel="stylesheet" href="assets/dpr.css?v=9" />
 <link rel="stylesheet" href="slop.css?v=5" />
 <link rel="stylesheet" href="assets/slopcar.css?v=2" />
 
@@ -429,54 +429,62 @@
   </section>
 
   <!-- OFFER -->
-  <!-- SECTION 6 — savings calculator (visitor's own numbers, no pricing) -->
-  <section class="s-calc" id="savings">
+  <!-- SECTION 6 — savings instrument (single gauge, no pricing) -->
+  <section class="s-calc" id="savings" data-rvl>
     <div class="s-calc__inner">
-      <div class="s-calc__head" data-rvl>
-        <span class="s-calc__eyebrow">The cost of doing it by hand</span>
-        <h2 class="s-calc__h2">See the hours a build could <span class="gold">hand back</span>.</h2>
-        <p class="s-calc__sub">Your numbers, your estimate &mdash; not a promise. We agree the real one together during scoping.</p>
-      </div>
-      <div class="s-calc__grid">
-        <form class="s-calc__form" data-rvl onsubmit="return false">
-          <label class="s-calc__field"><span>People doing the task</span><input type="number" id="cw-people" min="1" max="9999" value="4" inputmode="numeric" /></label>
-          <label class="s-calc__field"><span>Hours per week, each</span><input type="number" id="cw-hours" min="0" max="168" step="0.5" value="8" inputmode="decimal" /></label>
-          <label class="s-calc__field"><span>Weeks per year</span><input type="number" id="cw-weeks" min="1" max="52" value="48" inputmode="numeric" /></label>
-          <label class="s-calc__field s-calc__field--range"><span>Share you'd realistically automate <em id="cw-shareval">40%</em></span><input type="range" id="cw-share" min="0" max="100" step="5" value="40" /><small>your estimate</small></label>
-        </form>
-        <div class="s-calc__result" data-rvl aria-live="polite">
-          <p class="s-calc__k">Hours handed back, every year</p>
-          <div class="s-calc__num"><b id="cw-out">0</b> <span>hrs / yr</span></div>
-          <div class="s-calc__bar" aria-hidden="true"><span id="cw-bar"></span></div>
-          <p class="s-calc__eq">&asymp; <b id="cw-weeks-out">0</b> full-time weeks a machine could carry.</p>
-          <a href="contact.html" class="dpr-btn dpr-btn--gold">Put a number on it <span aria-hidden="true">&rarr;</span></a>
+      <p class="s-calc__eyebrow">The cost of doing it by hand</p>
+      <div class="s-calc__meter">
+        <div class="s-calc__readout">
+          <span class="s-calc__from" aria-hidden="true"><b id="cw-total">0</b>hrs a year<br>spent by hand</span>
+          <b class="s-calc__num" id="cw-out">0</b>
+          <span class="s-calc__unit">hours<br>handed back<br>a year</span>
         </div>
+        <p class="s-calc__eq">&asymp;&nbsp;<b id="cw-weeks-out">0</b>&nbsp;full-time weeks a machine could carry &mdash; at <em id="cw-shareval">40%</em> automated.</p>
       </div>
-      <p class="s-calc__note" data-rvl>Time only &mdash; your own inputs, your own estimate. No pricing and no promise here; we measure the real number with you during scoping.</p>
+      <div class="s-calc__track">
+        <input type="range" id="cw-share" min="0" max="100" step="5" value="40" aria-label="Share of the work you would realistically automate" />
+        <div class="s-calc__ticks" aria-hidden="true"><span>none</span><span>drag the bot &mdash; how much would you automate?</span><span>all of it</span></div>
+      </div>
+      <div class="s-calc__vars">
+        <label class="s-calc__var"><span>People on it</span><input type="number" id="cw-people" min="1" max="9999" value="4" inputmode="numeric" /></label>
+        <span class="s-calc__times" aria-hidden="true">&times;</span>
+        <label class="s-calc__var"><span>Hours / wk each</span><input type="number" id="cw-hours" min="0" max="168" step="0.5" value="8" inputmode="decimal" /></label>
+        <span class="s-calc__times" aria-hidden="true">&times;</span>
+        <label class="s-calc__var"><span>Weeks / year</span><input type="number" id="cw-weeks" min="1" max="52" value="48" inputmode="numeric" /></label>
+        <a href="contact.html" class="dpr-btn dpr-btn--gold s-calc__cta">Put a real number on it <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <p class="s-calc__note">Your inputs, your estimate &mdash; time only, no pricing. We measure the real number with you during scoping.</p>
     </div>
     <script>
     (function(){
       var sec=document.getElementById('savings'); if(!sec) return;
       var $=function(id){return document.getElementById(id);};
       var people=$('cw-people'),hours=$('cw-hours'),weeks=$('cw-weeks'),share=$('cw-share'),
-          shareval=$('cw-shareval'),out=$('cw-out'),wout=$('cw-weeks-out'),bar=$('cw-bar');
+          shareval=$('cw-shareval'),out=$('cw-out'),wout=$('cw-weeks-out'),total=$('cw-total');
       if(!people||!out) return;
       var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
       var disp=0,target=0,raf=null;
       function fmt(n){return Math.round(n).toLocaleString();}
-      function tick(){var d=target-disp; if(Math.abs(d)<1){disp=target;out.textContent=fmt(target);raf=null;return;} disp+=d*0.18; out.textContent=fmt(disp); raf=requestAnimationFrame(tick);}
-      function compute(){
+      function tick(){var d=target-disp; if(Math.abs(d)<1){disp=target;out.textContent=fmt(target);raf=null;return;} disp+=d*0.16; out.textContent=fmt(disp); raf=requestAnimationFrame(tick);}
+      function compute(anim){
         var p=Math.max(0,+people.value||0),h=Math.max(0,+hours.value||0),w=Math.max(0,+weeks.value||0),s=Math.max(0,Math.min(100,+share.value||0));
         if(shareval) shareval.textContent=s+'%';
+        if(share) share.style.setProperty('--fill', s+'%');
         target=Math.round(p*h*w*(s/100));
-        if(bar) bar.style.width=s+'%';
+        if(total) total.textContent=fmt(p*h*w);
         if(wout){var fw=target/40; wout.textContent=fw<10?fw.toFixed(1):fmt(fw);}
-        if(reduce){disp=target;out.textContent=fmt(target);return;}
+        if(reduce||anim===false){disp=target;out.textContent=fmt(target);return;}
         if(!raf) raf=requestAnimationFrame(tick);
       }
-      var to; function onInput(){clearTimeout(to);to=setTimeout(compute,40);}
+      var to; function onInput(){clearTimeout(to);to=setTimeout(compute,30);}
       [people,hours,weeks,share].forEach(function(el){if(el)el.addEventListener('input',onInput);});
-      compute();
+      if(share) share.style.setProperty('--fill','40%');
+      compute(false);
+      if('IntersectionObserver' in window && !reduce){
+        var seen=false;
+        var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting && !seen){ seen=true; disp=0; out.textContent='0'; compute(true); } });},{threshold:.35});
+        io.observe(sec);
+      }
     })();
     </script>
   </section>

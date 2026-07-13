@@ -249,34 +249,37 @@
 
 
 /* ===================== SECTION 6 — SAVINGS CALCULATOR ===================== */
-.s-calc { background: var(--paper-2); padding: var(--s7) 0; }
-.s-calc__inner { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--s4); }
-.s-calc__eyebrow { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .16em; text-transform: uppercase; color: var(--gold-ink); }
-.s-calc__h2 { font-size: var(--step-3); line-height: 1.05; letter-spacing: -.025em; font-weight: 800; color: var(--ink); margin: var(--s3) 0 var(--s2); max-width: 18ch; }
-.s-calc__h2 .gold { color: var(--gold-ink); }
-.s-calc__sub { font-size: var(--step-0); color: var(--ink-60); max-width: 54ch; margin: 0 0 var(--s5); }
-.s-calc__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); align-items: stretch; }
-.s-calc__form { display: grid; gap: var(--s3); align-content: start; }
-.s-calc__field { display: grid; gap: 8px; }
-.s-calc__field > span { font-size: var(--step-0); color: var(--ink); font-weight: 600; display: flex; justify-content: space-between; align-items: baseline; gap: 1em; }
-.s-calc__field > span em { font-style: normal; font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); color: var(--gold-ink); font-weight: 700; }
-.s-calc__field input[type=number] { font: inherit; font-size: var(--step-1); padding: .7em .9em; border: 1px solid var(--hairline); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; }
-.s-calc__field input[type=number]:focus { outline: 2px solid var(--gold); outline-offset: 1px; border-color: transparent; }
-.s-calc__field--range small { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); color: var(--ink-30); text-transform: uppercase; letter-spacing: .08em; }
-.s-calc__field input[type=range] { width: 100%; accent-color: var(--gold); height: 22px; }
-.s-calc__result { background: linear-gradient(158deg, #fff, #FBF3E2); border: 1px solid rgba(200,145,42,.22); border-radius: 20px; padding: clamp(28px,4vw,46px); display: flex; flex-direction: column; justify-content: center; gap: var(--s2); box-shadow: 0 18px 44px rgba(200,145,42,.10); }
-.s-calc__k { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-30); margin: 0; }
-.s-calc__num { display: flex; align-items: baseline; gap: .35em; }
-.s-calc__num b { font-size: clamp(48px, 8vw, 92px); font-weight: 800; letter-spacing: -.03em; color: var(--gold-ink); font-variant-numeric: tabular-nums; line-height: 1; }
-.s-calc__num span { font-size: var(--step-0); color: var(--ink-60); }
-.s-calc__bar { height: 9px; border-radius: 999px; background: rgba(200,145,42,.16); overflow: hidden; margin: var(--s2) 0; }
-.s-calc__bar span { display: block; height: 100%; width: 0; background: var(--gold); border-radius: 999px; transition: width .5s var(--ease-out); }
-.s-calc__eq { font-size: var(--step-0); color: var(--ink-60); margin: 0 0 var(--s3); }
-.s-calc__eq b { color: var(--ink); }
-.s-calc__result .dpr-btn { align-self: flex-start; }
-.s-calc__note { font-size: var(--step--1); color: var(--ink-30); margin: var(--s4) 0 0; max-width: 62ch; }
-@media (max-width: 860px) { .s-calc__grid { grid-template-columns: 1fr; } .s-calc__h2 { font-size: var(--step-2); } }
-@media (prefers-reduced-motion: reduce) { .s-calc__bar span { transition: none; } }
+/* SAVINGS — single-instrument gauge: giant live number + a full-width gold track the mascot rides */
+.s-calc { background: var(--paper); padding: var(--s6) 0; overflow: hidden; }
+.s-calc__inner { max-width: 1040px; margin: 0 auto; padding: 0 var(--s4); text-align: center; }
+.s-calc__eyebrow { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .18em; text-transform: uppercase; color: var(--gold-ink); margin: 0; display: inline-flex; align-items: center; gap: .8em; }
+.s-calc__eyebrow::before, .s-calc__eyebrow::after { content: ""; width: clamp(24px,5vw,54px); height: 2px; background: var(--gold); }
+.s-calc__meter { margin: var(--s4) 0 var(--s5); }
+.s-calc__readout { display: flex; align-items: flex-start; justify-content: center; gap: .3em; }
+.s-calc__num { font-size: clamp(4.5rem, 3rem + 13vw, 13rem); font-weight: 800; letter-spacing: -.045em; line-height: .82; color: var(--ink); font-variant-numeric: tabular-nums; }
+.s-calc__unit { text-align: left; font-size: var(--step-1); line-height: 1.12; font-weight: 700; color: var(--ink); align-self: flex-end; margin-bottom: .55em; }
+.s-calc__from { text-align: right; align-self: flex-end; margin-bottom: .6em; font-size: var(--step-0); line-height: 1.15; color: var(--ink-30); }
+.s-calc__from b { display: block; font-size: var(--step-2); font-weight: 800; color: var(--ink-60); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.s-calc__eq { font-size: var(--step-1); color: var(--ink-60); margin: var(--s3) 0 0; }
+.s-calc__eq b { color: var(--ink); font-weight: 800; font-variant-numeric: tabular-nums; }
+.s-calc__eq em { font-style: normal; font-weight: 800; color: var(--gold-ink); }
+.s-calc__track { position: relative; max-width: 860px; margin: 0 auto var(--s5); }
+.s-calc__track input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--gold) 0 var(--fill,40%), var(--hairline) var(--fill,40%) 100%); cursor: grab; outline: none; }
+.s-calc__track input[type=range]:active { cursor: grabbing; }
+.s-calc__track input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 58px; height: 58px; border-radius: 50%; background: var(--paper) url(mascot/cut/bot-peace.png) center 16% / 150% no-repeat; border: 2px solid var(--gold); box-shadow: 0 8px 20px rgba(200,145,42,.34); cursor: grab; }
+.s-calc__track input[type=range]::-moz-range-thumb { width: 58px; height: 58px; border-radius: 50%; background: var(--paper) url(mascot/cut/bot-peace.png) center 16% / 150% no-repeat; border: 2px solid var(--gold); box-shadow: 0 8px 20px rgba(200,145,42,.34); cursor: grab; }
+.s-calc__track input[type=range]:focus-visible { outline: 2px solid var(--gold); outline-offset: 8px; border-radius: 6px; }
+.s-calc__ticks { display: flex; justify-content: space-between; margin-top: var(--s3); font-size: var(--step--1); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-30); }
+.s-calc__ticks span:nth-child(2) { color: var(--ink-60); }
+.s-calc__vars { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: center; gap: var(--s3) var(--s4); }
+.s-calc__times { font-size: var(--step-2); color: var(--ink-30); align-self: flex-end; margin-bottom: .12em; }
+.s-calc__var { display: flex; flex-direction: column; align-items: center; gap: .35em; }
+.s-calc__var span { font-size: var(--step--1); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-30); }
+.s-calc__var input { width: 96px; border: 0; border-bottom: 2px solid var(--hairline); background: none; font: inherit; font-size: var(--step-2); font-weight: 800; color: var(--ink); text-align: center; padding: .1em 0; font-variant-numeric: tabular-nums; }
+.s-calc__var input:focus { outline: none; border-color: var(--gold); }
+.s-calc__cta { margin-left: var(--s3); align-self: flex-end; }
+.s-calc__note { font-size: var(--step--1); color: var(--ink-30); margin: var(--s4) auto 0; max-width: 60ch; }
+@media (max-width: 760px) { .s-calc__num { font-size: clamp(3.5rem, 2rem + 16vw, 6rem); } .s-calc__cta { margin-left: 0; width: 100%; justify-content: center; } .s-calc__ticks span:nth-child(2) { display: none; } }
 
 
 /* ===================== SECTIONS 7-9 — cohere free-tool / FAQ / team / contact ===================== */
