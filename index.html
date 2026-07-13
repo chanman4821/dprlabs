@@ -13,7 +13,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 
 <link rel="stylesheet" href="site.css?v=16" />
-<link rel="stylesheet" href="assets/dpr.css?v=9" />
+<link rel="stylesheet" href="assets/dpr.css?v=10" />
 <link rel="stylesheet" href="slop.css?v=5" />
 <link rel="stylesheet" href="assets/slopcar.css?v=2" />
 
@@ -320,110 +320,93 @@
     <img class="s-own__art" src="assets/img/pages/own-it-cut.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
   </section>
 
-  <!-- HOW A BUILD RUNS — mascot hops the rail, one step visible at a time -->
-  <section class="s-rail" id="owned-method" aria-roledescription="carousel" aria-label="How a build runs">
-    <div class="s-rail__inner" id="mth-rail">
-      <p class="s-rail__eyebrow" data-rvl>How a build runs</p>
-      <h2 class="s-rail__kicker" data-rvl>One number. Built in your systems. <span class="gold">Handed to you.</span></h2>
-      <p class="s-rail__sub" data-rvl>Six steps from a blank page to a system you own — click a stop, or watch the build walk itself.</p>
-
-      <div class="s-rail__track" data-rvl>
-        <div class="s-rail__stations" role="tablist" aria-label="Build steps">
-          <span class="s-rail__fill" aria-hidden="true"></span>
-          <div class="s-rail__mascot" aria-hidden="true"><img src="assets/mascot/hero/hero-1.png" width="104" height="104" alt=""></div>
-          <button class="s-rail__node is-active" role="tab" type="button" id="mthtab-0" aria-controls="mthpanel-0" aria-selected="true" data-hero="assets/mascot/hero/hero-1.png"><span aria-hidden="true">01</span><span class="sr-only">Step 1: Pick the number</span></button>
-          <button class="s-rail__node" role="tab" type="button" id="mthtab-1" aria-controls="mthpanel-1" aria-selected="false" data-hero="assets/mascot/hero/hero-2.png"><span aria-hidden="true">02</span><span class="sr-only">Step 2: Check today</span></button>
-          <button class="s-rail__node" role="tab" type="button" id="mthtab-2" aria-controls="mthpanel-2" aria-selected="false" data-hero="assets/mascot/hero/hero-3.png"><span aria-hidden="true">03</span><span class="sr-only">Step 3: Build in your work</span></button>
-          <button class="s-rail__node" role="tab" type="button" id="mthtab-3" aria-controls="mthpanel-3" aria-selected="false" data-hero="assets/mascot/hero/hero-4.png"><span aria-hidden="true">04</span><span class="sr-only">Step 4: Test it hard</span></button>
-          <button class="s-rail__node" role="tab" type="button" id="mthtab-4" aria-controls="mthpanel-4" aria-selected="false" data-hero="assets/mascot/hero/hero-5.png"><span aria-hidden="true">05</span><span class="sr-only">Step 5: Hand it over</span></button>
-          <button class="s-rail__node" role="tab" type="button" id="mthtab-5" aria-controls="mthpanel-5" aria-selected="false" data-hero="assets/mascot/hero/hero-6.png"><span aria-hidden="true">06</span><span class="sr-only">Step 6: Show the proof</span></button>
-        </div>
+  <!-- HOW A BUILD RUNS — one gold thread, six steps hang off it, alternating -->
+  <section class="s-mth" id="owned-method" aria-label="How a build runs">
+    <div class="s-mth__inner">
+      <div class="s-mth__head" data-rvl>
+        <p class="s-mth__eyebrow">How a build runs</p>
+        <h2 class="s-mth__kicker">One number. Built in your systems. <span class="gold">Handed to you.</span></h2>
+        <p class="s-mth__legend"><b>Blank page</b> <span aria-hidden="true">&rarr;</span> <b>a working artifact</b> <span aria-hidden="true">&rarr;</span> <b>a system you own</b></p>
       </div>
-
-      <div class="s-rail__panels">
-        <div class="s-rail__panel is-active" role="tabpanel" id="mthpanel-0" aria-labelledby="mthtab-0">
-          <span class="s-rail__pn">STEP 01</span><h3>Pick the number</h3>
-          <p>We choose the one number this AI must move, so success is clear from day one.</p>
-          <span class="s-rail__tag">Target set</span>
-        </div>
-        <div class="s-rail__panel" role="tabpanel" id="mthpanel-1" aria-labelledby="mthtab-1">
-          <span class="s-rail__pn">STEP 02</span><h3>Check today</h3>
-          <p>We measure where that number sits right now, so later we can prove it changed.</p>
-          <span class="s-rail__tag">Baseline read</span>
-        </div>
-        <div class="s-rail__panel" role="tabpanel" id="mthpanel-2" aria-labelledby="mthtab-2">
-          <span class="s-rail__pn">STEP 03</span><h3>Build in your work</h3>
-          <p>We build the AI right inside how your team already works, not off to the side.</p>
-          <span class="s-rail__tag">Building</span>
-        </div>
-        <div class="s-rail__panel" role="tabpanel" id="mthpanel-3" aria-labelledby="mthtab-3">
-          <span class="s-rail__pn">STEP 04</span><h3>Test it hard</h3>
-          <p>We run it on real cases again and again to catch mistakes before you do.</p>
-          <span class="s-rail__tag">Testing</span>
-        </div>
-        <div class="s-rail__panel" role="tabpanel" id="mthpanel-4" aria-labelledby="mthtab-4">
-          <span class="s-rail__pn">STEP 05</span><h3>Hand it over</h3>
-          <p>We give it to your team and show them how to run it without us.</p>
-          <span class="s-rail__tag">Handed over</span>
-        </div>
-        <div class="s-rail__panel" role="tabpanel" id="mthpanel-5" aria-labelledby="mthtab-5">
-          <span class="s-rail__pn">STEP 06</span><h3>Show the proof</h3>
-          <p>We show the number again so you can see exactly what moved and by how much.</p>
-          <span class="s-rail__tag">Proof shown</span>
-        </div>
-      </div>
-
-      <div class="s-rail__foot" data-rvl>
-        <p class="s-rail__close">You own the finished AI, you know how it works, and you can <b>see it earned its place.</b> <a href="method.html" class="txt-link">See each step in detail <span class="arrow" aria-hidden="true">&rarr;</span></a></p>
-        <div class="crx-nav">
-          <button class="crx-arrow" type="button" data-rail-prev aria-label="Previous step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-          <button class="crx-arrow" type="button" data-rail-next aria-label="Next step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
-        </div>
-      </div>
+      <ol class="s-mth__steps" data-mth>
+        <span class="s-mth__thread" aria-hidden="true"><i class="s-mth__fill"></i></span>
+        <li class="s-mth__step" data-mth-step>
+          <span class="s-mth__n" aria-hidden="true">01</span>
+          <div class="s-mth__body">
+            <h3>Pick the number</h3>
+            <p>We choose the one number this AI must move, so success is clear from day one.</p>
+            <span class="s-mth__tag">Target set</span>
+          </div>
+        </li>
+        <li class="s-mth__step" data-mth-step>
+          <span class="s-mth__n" aria-hidden="true">02</span>
+          <div class="s-mth__body">
+            <h3>Check today</h3>
+            <p>We measure where that number sits right now, so later we can prove it changed.</p>
+            <span class="s-mth__tag">Baseline read</span>
+          </div>
+        </li>
+        <li class="s-mth__step" data-mth-step>
+          <span class="s-mth__n" aria-hidden="true">03</span>
+          <div class="s-mth__body">
+            <h3>Build in your work</h3>
+            <p>We build the AI right inside how your team already works, not off to the side.</p>
+            <span class="s-mth__tag">Building</span>
+          </div>
+        </li>
+        <li class="s-mth__step" data-mth-step>
+          <span class="s-mth__n" aria-hidden="true">04</span>
+          <div class="s-mth__body">
+            <h3>Test it hard</h3>
+            <p>We run it on real cases again and again to catch mistakes before you do.</p>
+            <span class="s-mth__tag">Testing</span>
+          </div>
+        </li>
+        <li class="s-mth__step" data-mth-step>
+          <span class="s-mth__n" aria-hidden="true">05</span>
+          <div class="s-mth__body">
+            <h3>Hand it over</h3>
+            <p>We give it to your team and show them how to run it without us.</p>
+            <span class="s-mth__tag">Handed over</span>
+          </div>
+        </li>
+        <li class="s-mth__step" data-mth-step>
+          <span class="s-mth__n" aria-hidden="true">06</span>
+          <div class="s-mth__body">
+            <h3>Show the proof</h3>
+            <p>We show the number again so you can see exactly what moved and by how much.</p>
+            <span class="s-mth__tag">Proof shown</span>
+          </div>
+        </li>
+      </ol>
+      <p class="s-mth__close" data-rvl>You own the finished AI, you know how it works, and you can <b>see it earned its place.</b> <a href="method.html" class="txt-link">See each step in detail <span class="arrow" aria-hidden="true">&rarr;</span></a></p>
     </div>
     <script>
     (function(){
-      var root=document.getElementById('mth-rail'); if(!root) return;
-      var nodes=[].slice.call(root.querySelectorAll('.s-rail__node'));
-      var panels=[].slice.call(root.querySelectorAll('.s-rail__panel'));
-      var mascot=root.querySelector('.s-rail__mascot');
-      var mimg=mascot?mascot.querySelector('img'):null;
-      var fill=root.querySelector('.s-rail__fill');
-      var prev=root.querySelector('[data-rail-prev]'), next=root.querySelector('[data-rail-next]');
-      if(!nodes.length) return;
+      var root=document.getElementById('owned-method'); if(!root) return;
+      var steps=[].slice.call(root.querySelectorAll('[data-mth-step]'));
+      var fill=root.querySelector('.s-mth__fill'), thread=root.querySelector('.s-mth__thread');
+      if(!steps.length) return;
       var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
-      var i=0, timer=null, DUR=6000, paused=false;
-      function center(k){ var n=nodes[k]; return n.offsetLeft + n.offsetWidth/2; }
-      function place(k,hop){
-        if(mascot){ mascot.style.left=center(k)+'px'; if(hop&&!reduce){ mascot.classList.remove('hop'); void mascot.offsetWidth; mascot.classList.add('hop'); } }
-        if(fill){ fill.style.width=center(k)+'px'; }
-        if(mimg){ var src=nodes[k].getAttribute('data-hero'); if(src&&mimg.getAttribute('src')!==src) mimg.setAttribute('src',src); }
+      if(reduce){ steps.forEach(function(s){s.classList.add('is-on');}); if(fill) fill.style.height='100%'; return; }
+      function updateFill(){
+        if(!fill||!thread) return;
+        var last=null;
+        for(var k=0;k<steps.length;k++){ if(steps[k].classList.contains('is-on')) last=steps[k]; }
+        if(!last){ fill.style.height='0'; return; }
+        var n=last.querySelector('.s-mth__n');
+        var tr=thread.getBoundingClientRect(), nr=n.getBoundingClientRect();
+        fill.style.height=Math.max(0,(nr.top+nr.height/2)-tr.top)+'px';
       }
-      function show(n,hop){
-        n=(n+nodes.length)%nodes.length;
-        nodes.forEach(function(nd,k){ nd.classList.toggle('is-active',k===n); nd.classList.toggle('is-done',k<n); nd.setAttribute('aria-selected',k===n?'true':'false'); });
-        panels.forEach(function(p,k){ p.classList.toggle('is-active',k===n); });
-        i=n; place(n,hop!==false);
-      }
-      function schedule(){ clearTimeout(timer); if(reduce) return; timer=setTimeout(function(){ if(!paused) show(i+1,true); schedule(); }, DUR); }
-      nodes.forEach(function(nd,k){ nd.addEventListener('click',function(){ show(k,true); schedule(); }); });
-      if(prev) prev.addEventListener('click',function(){ show(i-1,true); schedule(); });
-      if(next) next.addEventListener('click',function(){ show(i+1,true); schedule(); });
-      root.addEventListener('keydown',function(e){
-        if(e.key==='ArrowLeft'){ show(i-1,true); schedule(); e.preventDefault(); }
-        else if(e.key==='ArrowRight'){ show(i+1,true); schedule(); e.preventDefault(); }
-        else if(e.key==='Home'){ show(0,true); schedule(); e.preventDefault(); }
-        else if(e.key==='End'){ show(nodes.length-1,true); schedule(); e.preventDefault(); }
-      });
-      root.addEventListener('mouseenter',function(){paused=true;});
-      root.addEventListener('mouseleave',function(){paused=false;});
-      root.addEventListener('focusin',function(){paused=true;});
-      root.addEventListener('focusout',function(){paused=false;});
-      function recalc(){ place(i,false); }
-      window.addEventListener('resize',recalc);
-      window.addEventListener('load',recalc);
-      if(mimg) mimg.addEventListener('load',recalc);
-      place(0,false); schedule();
+      if('IntersectionObserver' in window){
+        var io=new IntersectionObserver(function(entries){
+          entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('is-on'); });
+          updateFill();
+        },{root:null,rootMargin:'0px 0px -35% 0px',threshold:.25});
+        steps.forEach(function(s){ io.observe(s); });
+      } else { steps.forEach(function(s){s.classList.add('is-on');}); }
+      window.addEventListener('resize',updateFill);
+      window.addEventListener('load',updateFill);
     })();
     </script>
   </section>
