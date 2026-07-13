@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-13T04:34:39.550087+00:00",
+    "generated_at": "2026-07-13T08:20:54.375088+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "33b041c8a0db",
+      "headline": "TSMC posts record revenue in second quarter on AI demand",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "published_at": "2026-07-13T07:47:14+00:00",
+      "summary": "1 points and 0 comments on Hacker News.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5565
+    },
     {
       "id": "5f978c026084",
       "headline": "Interval Certifications for Multilayered Perceptrons via Lattice Traversal",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "8d75ea8a3d7c",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "9ef86e16f82b",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "5680daaf95eb",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "2c9a7b5b78f3",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "1cd72bdaf81e",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "b3a1ae710f38",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "42c782acefd2",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "918353daedf9",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "cd930412c5ac",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "60bfdd086712",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "807ffa614003",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "e2f300c146fd",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "827d796a47e8",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "97579754d322",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "33823c85732c",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "a4cf909c746a",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "d2efa0295423",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "62dcdf1c8c7c",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "a882d050c69a",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "a301014cfb00",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "ec20e73756f0",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     },
     {
       "id": "057c92fed1a2",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8108
-    },
-    {
-      "id": "6d2b7a3c1a91",
-      "headline": "Knowledge Graphs and Explainable AI as Complementary Resources for Urban Mining",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09578",
-      "published_at": "2026-07-13T04:00:00+00:00",
-      "summary": "arXiv:2607.09578v1 Announce Type: new Abstract: Pre-demolition assessment, the regulated audit process at the heart of urban mining, is an information process in which AI support must serve qualified auditors who remain accountable for the…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.8108
+      "rank_score": 0.7847
     }
   ]
 }
