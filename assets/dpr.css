@@ -12,7 +12,8 @@
   --ink-30: #8C887C;
   --gold: #C9A227;
   --gold-hi: #E6C56A;
-  --gold-ink: #85680F;      /* accented words on paper — true gold, keeps AA contrast (4.84:1) */
+  --gold-ink: #85680F;      /* small labels on paper — true gold, AA (4.84:1) */
+  --gold-foil: linear-gradient(150deg, #E8CF7A, #C9A227 52%, #9A7A0A); /* metallic gold for large numerals */
   --hairline: rgba(20, 19, 15, .12);
 
   /* layout */
@@ -82,7 +83,7 @@
   font-size: var(--step-4); line-height: .94; letter-spacing: -.03em; font-weight: 800;
   color: var(--ink); margin: 0; max-width: 18ch; position: relative; z-index: 2;
 }
-.s-hero__own { color: var(--gold-ink); position: relative; white-space: nowrap; }
+.s-hero__own { color: var(--ink); position: relative; white-space: nowrap; }
 .s-hero__own::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: .02em; height: .07em;
   background: var(--gold); border-radius: 3px; transform: scaleX(0); transform-origin: left;
@@ -147,7 +148,7 @@
 .s-wb__masthead { max-width: 26ch; margin: 0 0 var(--s5); }
 .s-wb__eyebrow { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .18em; text-transform: uppercase; color: var(--gold-ink); margin: 0 0 var(--s2); }
 .s-wb__kicker { font-size: var(--step-3); font-weight: 800; letter-spacing: -.025em; line-height: 1.04; color: var(--ink); margin: 0; max-width: 20ch; }
-.s-wb__kicker .gold { color: var(--gold-ink); }
+.s-wb__kicker .gold { color: var(--ink); background: linear-gradient(var(--gold), var(--gold)) 0 100% / 100% .09em no-repeat; padding-bottom: .04em; }
 
 .s-wb__keys { list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: .35em 1.1em; margin: var(--s2) 0 0; padding: 0; }
 .s-wb__keys li { position: relative; font-size: var(--step--1); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-60); }
@@ -156,7 +157,7 @@
 /* featured system — the dominant focal */
 .s-wb__feature { display: grid; grid-template-columns: 1.02fr .98fr; gap: clamp(28px, 4.5vw, 76px); align-items: center; padding-bottom: var(--s5); border-bottom: 2px solid var(--ink); margin-bottom: var(--s3); }
 .s-wb__ftxt { position: relative; }
-.s-wb__fno { display: block; font-weight: 800; font-size: clamp(3.4rem, 7vw, 6rem); line-height: .8; color: var(--gold-hi); letter-spacing: -.03em; font-variant-numeric: tabular-nums; margin: 0 0 var(--s2) -.04em; opacity: .92; }
+.s-wb__fno { display: block; font-weight: 800; font-size: clamp(3.4rem, 7vw, 6rem); line-height: .8; color: var(--gold); background: var(--gold-foil); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -.03em; font-variant-numeric: tabular-nums; margin: 0 0 var(--s2) -.04em; }
 .s-wb__ftag { font-size: var(--step--1); font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-30); margin: 0 0 .5em; }
 .s-wb__fname { font-size: var(--step-3); font-weight: 800; letter-spacing: -.025em; line-height: 1.03; color: var(--ink); margin: 0 0 var(--s2); }
 .s-wb__flead { font-size: var(--step-1); line-height: 1.45; color: var(--ink-60); max-width: 34ch; margin: 0; }
@@ -167,7 +168,7 @@
 /* index rows — the supporting three */
 .s-wb__index { list-style: none; margin: 0; padding: 0; }
 .s-wb__row { display: grid; grid-template-columns: auto 1fr clamp(120px, 15vw, 180px); gap: clamp(20px, 3vw, 48px); align-items: center; padding: var(--s4) 0; border-bottom: 1px solid var(--hairline); }
-.s-wb__rno { font-weight: 800; font-size: clamp(2rem, 3.5vw, 3rem); line-height: .8; color: var(--gold-ink); letter-spacing: -.02em; font-variant-numeric: tabular-nums; align-self: start; padding-top: .12em; }
+.s-wb__rno { font-weight: 800; font-size: clamp(2rem, 3.5vw, 3rem); line-height: .8; color: var(--gold); background: var(--gold-foil); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -.02em; font-variant-numeric: tabular-nums; align-self: start; padding-top: .12em; }
 .s-wb__rname { font-size: var(--step-2); font-weight: 800; letter-spacing: -.02em; line-height: 1.05; color: var(--ink); margin: 0 0 .3em; }
 .s-wb__rprop { font-size: var(--step-0); line-height: 1.5; color: var(--ink-60); max-width: 46ch; margin: 0; }
 .s-wb__rplate { position: relative; display: flex; align-items: center; justify-content: center; min-height: 120px; }
@@ -188,7 +189,7 @@
 .s-slop { background: var(--paper); padding: var(--s7) 0; }
 .s-slop__inner { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--s4); }
 .s-slop__quote { font-size: var(--step-3); font-weight: 800; line-height: 1.06; letter-spacing: -.02em; color: var(--ink); max-width: 24ch; margin: 0 0 var(--s5); }
-.s-slop__mark { color: var(--gold-ink); }
+.s-slop__mark { color: var(--ink); background: linear-gradient(var(--gold), var(--gold)) 0 100% / 100% .09em no-repeat; padding-bottom: .04em; }
 .s-slop__stage { position: relative; border: 1px solid var(--hairline); border-radius: 18px; overflow: hidden; min-height: clamp(300px, 42vw, 440px); background: var(--paper-2); }
 .s-slop__tag { position: absolute; top: 16px; left: 18px; z-index: 3; font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; padding: .4em .8em; border-radius: 999px; }
 .s-slop__tag--bad { background: rgba(20,19,15,.06); color: var(--ink-30); left: auto; right: 18px; }
@@ -234,7 +235,7 @@
 .s-own__head { position: sticky; top: 104px; }
 .s-own__eyebrow { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .18em; text-transform: uppercase; color: var(--gold-ink); }
 .s-own__h2 { font-size: var(--step-3); line-height: 1.05; letter-spacing: -.025em; font-weight: 800; color: var(--ink); max-width: 16ch; margin: var(--s3) 0 var(--s2); }
-.s-own__mark { color: var(--gold-ink); }
+.s-own__mark { color: var(--ink); background: linear-gradient(var(--gold), var(--gold)) 0 100% / 100% .08em no-repeat; padding-bottom: .04em; }
 .s-own__sub { font-size: var(--step-0); line-height: 1.5; color: var(--ink-60); max-width: 34ch; }
 
 .s-own__doc { position: relative; padding-top: 4px; padding-bottom: clamp(64px, 8vw, 128px); }
@@ -244,7 +245,7 @@
 
 .s-own__ledger { list-style: none; margin: 0; padding: 0; position: relative; }
 .s-own__line { display: grid; grid-template-columns: 2.6em 1fr; column-gap: var(--s3); align-items: baseline; padding: var(--s3) 0 calc(var(--s3) - 2px); border-bottom: 1px solid var(--hairline); }
-.s-own__no { grid-row: 1 / span 2; align-self: start; font-size: var(--step-1); font-weight: 800; color: var(--gold-ink); font-variant-numeric: tabular-nums; padding-top: .12em; }
+.s-own__no { grid-row: 1 / span 2; align-self: start; font-size: var(--step-1); font-weight: 800; color: var(--gold); background: var(--gold-foil); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-variant-numeric: tabular-nums; padding-top: .12em; }
 .s-own__term { grid-column: 2; font-size: var(--step-2); font-weight: 800; letter-spacing: -.02em; color: var(--ink); }
 .s-own__clause { grid-column: 2; font-size: var(--step-0); line-height: 1.5; color: var(--ink-60); max-width: 48ch; margin-top: 5px; }
 
@@ -323,7 +324,7 @@
 .s-abt__principles { list-style: none; margin: 0; padding: 0; }
 .s-abt__pr { display: grid; grid-template-columns: auto 1fr; gap: var(--s3); align-items: baseline; padding: var(--s4) 0; border-bottom: 1px solid var(--hairline); }
 .s-abt__pr:first-child { padding-top: 0; }
-.s-abt__pn { font-weight: 800; font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: .8; color: var(--gold-hi); letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.s-abt__pn { font-weight: 800; font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: .8; color: var(--gold); background: var(--gold-foil); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
 .s-abt__pt b { display: block; font-size: var(--step-1); font-weight: 800; letter-spacing: -.01em; color: var(--ink); }
 .s-abt__pt span { display: block; font-size: var(--step-0); line-height: 1.5; color: var(--ink-60); margin-top: 5px; max-width: 46ch; }
 .s-abt__aside { position: relative; }
@@ -513,7 +514,7 @@
 .s-mth__head { text-align: center; margin-bottom: var(--s6); }
 .s-mth__eyebrow { font-family: var(--font-mono,"Geist Mono",ui-monospace,monospace); font-size: var(--step--1); letter-spacing: .18em; text-transform: uppercase; color: var(--gold-ink); margin: 0 0 var(--s2); }
 .s-mth__kicker { font-size: var(--step-3); font-weight: 800; letter-spacing: -.025em; line-height: 1.04; color: var(--ink); margin: 0 auto var(--s3); max-width: 20ch; }
-.s-mth__kicker .gold { color: var(--gold-ink); }
+.s-mth__kicker .gold { color: var(--ink); background: linear-gradient(var(--gold), var(--gold)) 0 100% / 100% .09em no-repeat; padding-bottom: .04em; }
 .s-mth__legend { display: inline-flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .55em; font-size: var(--step--1); font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: var(--gold-ink); margin: 0; }
 .s-mth__legend b { color: var(--ink-60); font-weight: 600; }
 .s-mth__steps { list-style: none; margin: 0; padding: 0; position: relative; }
@@ -542,4 +543,12 @@
 @media (prefers-reduced-motion: reduce) {
   .s-mth__body { opacity: 1 !important; transform: none !important; }
   .s-mth__fill { transition: none; }
+}
+
+/* Eyebrow/kicker labels -> muted warm stone (dark gold reads bronze on small text).
+   Real gold stays on numerals, underlines, buttons, stamp, signature, mascot. */
+.s-hero__eyebrow, .s-wb__eyebrow, .s-own__eyebrow, .s-calc__eyebrow, .s-abt__eyebrow,
+.s-mth__eyebrow, .s-car__eyebrow, .s-rail__eyebrow,
+#owned-method .eyebrow, #free-tools .eyebrow, #faq .eyebrow, #about .eyebrow, #contact .eyebrow {
+  color: #6F685A !important; -webkit-text-fill-color: #6F685A !important;
 }
