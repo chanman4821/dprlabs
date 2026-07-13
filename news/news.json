@@ -1,11 +1,91 @@
 {
   "meta": {
-    "generated_at": "2026-07-13T12:12:40.759922+00:00",
+    "generated_at": "2026-07-13T15:45:20.733783+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "d8c4f12b71f9",
+      "headline": "Anthropic starts localizing Claude pricing for India, its biggest market after the US",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/",
+      "published_at": "2026-07-13T15:34:59+00:00",
+      "summary": "Claude users in India are starting to see Indian rupee-denominated subscription plans.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8562
+    },
+    {
+      "id": "0b9a256573f2",
+      "headline": "Now, defenders are embracing the prompt injection, too",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/",
+      "published_at": "2026-07-13T15:06:34+00:00",
+      "summary": "\"Context bombing\" tricks hacking agents into shutting down before they can do harm.",
+      "tags": [
+        "Safety"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7928
+    },
+    {
+      "id": "d880ad9433b4",
+      "headline": "Waze adds new AI-powered features and customization updates",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/",
+      "published_at": "2026-07-13T14:18:16+00:00",
+      "summary": "Some of the new features are powered by Google's Gemini AI assistant, which reflects the tech giant's broader push to integrate Gemini across its products while also better positioning Waze to compete with rival services such as Apple Maps.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7871
+    },
+    {
+      "id": "0c7722cea1ed",
+      "headline": "Christopher Nolan says people disdain AI, idea it'll replace humans is nonsense",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.theguardian.com/film/2026/jul/13/christopher-nolan-odyssey-director-comments-ai-artificial-intelligence",
+      "published_at": "2026-07-13T12:30:19+00:00",
+      "summary": "2 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5383
+    },
+    {
+      "id": "09aa35221dda",
+      "headline": "The Download: a donor conception cap and world models for AI",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/13/1140339/the-download-sperm-donor-limits-ai-world-models/",
+      "published_at": "2026-07-13T12:10:00+00:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Sperm donors need limits, says a European fertility group Ties van der Meer doesn’t know how many…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8073
+    },
     {
       "id": "790909796521",
       "headline": "Indian companies look to Chinese LLMs as AI costs bite",
@@ -20,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.544
+      "rank_score": 0.5203
     },
     {
       "id": "d57980338005",
@@ -36,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7749
+      "rank_score": 0.7516
     },
     {
       "id": "33b041c8a0db",
@@ -52,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5298
+      "rank_score": 0.5071
     },
     {
       "id": "5f978c026084",
@@ -68,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "8d75ea8a3d7c",
@@ -84,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "9ef86e16f82b",
@@ -100,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "5680daaf95eb",
@@ -116,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "2c9a7b5b78f3",
@@ -132,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "1cd72bdaf81e",
@@ -148,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "b3a1ae710f38",
@@ -164,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "42c782acefd2",
@@ -180,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "918353daedf9",
@@ -196,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "cd930412c5ac",
@@ -212,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "60bfdd086712",
@@ -228,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "807ffa614003",
@@ -244,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "e2f300c146fd",
@@ -260,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "827d796a47e8",
@@ -276,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "97579754d322",
@@ -292,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     },
     {
       "id": "33823c85732c",
@@ -308,87 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.76
-    },
-    {
-      "id": "a4cf909c746a",
-      "headline": "How Does Bayesian Causal Discovery Fail? Characterising Structural Consequences in Linear Gaussian Networks under Latent Confounding",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09449",
-      "published_at": "2026-07-13T04:00:00+00:00",
-      "summary": "arXiv:2607.09449v1 Announce Type: new Abstract: Bayesian causal discovery is widely used for its ability to quantify epistemic uncertainty over directed acyclic graphs (DAGs) through posterior inference. However, its behaviour under latent…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.76
-    },
-    {
-      "id": "d2efa0295423",
-      "headline": "ProofCouncil: An LLM Agent for Solving Open Mathematical Problems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09474",
-      "published_at": "2026-07-13T04:00:00+00:00",
-      "summary": "arXiv:2607.09474v1 Announce Type: new Abstract: Large language models (LLMs) have shown increasing promise in solving open problems in mathematics. However, their performance can be further improved through agentic workflows tailored to…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.76
-    },
-    {
-      "id": "62dcdf1c8c7c",
-      "headline": "Ceci n'est pas une pipe: AI systems as semantic abstractions",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09489",
-      "published_at": "2026-07-13T04:00:00+00:00",
-      "summary": "arXiv:2607.09489v1 Announce Type: new Abstract: An AI system's output is not the fact or world state it appears to describe, but rather an engineered representation. We propose a semantic framework to describe AI systems, to be able to…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.76
-    },
-    {
-      "id": "a882d050c69a",
-      "headline": "Multimodal Reward Hacking in Reinforcement Learning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09492",
-      "published_at": "2026-07-13T04:00:00+00:00",
-      "summary": "arXiv:2607.09492v1 Announce Type: new Abstract: Reinforcement learning (RL) is increasingly used to align multimodal large language models (MLLMs), but higher rewards do not always imply better task performance. This risk is amplified when…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.76
-    },
-    {
-      "id": "a301014cfb00",
-      "headline": "Shared Selective Persistent Memory for Agentic LLM Systems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09493",
-      "published_at": "2026-07-13T04:00:00+00:00",
-      "summary": "arXiv:2607.09493v1 Announce Type: new Abstract: Agentic LLM systems that generate code through multi-turn tool use face a fundamental context problem: each session starts from zero, discarding the configuration choices, domain constraints,…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.76
+      "rank_score": 0.739
     }
   ]
 }
