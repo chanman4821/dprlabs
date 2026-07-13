@@ -1,394 +1,394 @@
 {
   "meta": {
-    "generated_at": "2026-07-12T20:58:34.539369+00:00",
+    "generated_at": "2026-07-13T04:34:39.550087+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
-      "id": "795fd22cc6f5",
-      "headline": "Lorde says Ray-Ban Meta AI glasses are ‘not sexy’",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/964539/lorde-says-ray-ban-meta-ai-glasses-are-not-sexy",
-      "published_at": "2026-07-12T20:10:19+00:00",
-      "summary": "Lorde was performing at the Real Cool Festival in Madrid on Thursday and took some time during her set to speak out against AI glasses. While she didn't specify any brands in particular, it's likely she was taking a shot at festival…",
+      "id": "5f978c026084",
+      "headline": "Interval Certifications for Multilayered Perceptrons via Lattice Traversal",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08773",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.08773v1 Announce Type: new Abstract: In this work we present a rigorous theoretical framework to a foundational problem of AI safety, namely adversarial robustness. In particular, we show that the adversarial robustness problem…",
       "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7917
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "9c1e0b5762e0",
-      "headline": "Anthropic extends Fable 5 access through July 19",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-extends-fable-5-access-through-july-19/articleshow/132350610.cms?from=mdr",
-      "published_at": "2026-07-12T18:36:31+00:00",
-      "summary": "2 points and 1 comments on Hacker News.",
+      "id": "8d75ea8a3d7c",
+      "headline": "CogniConsole: Externalizing Inference-Time Control as a Formal Abstraction for Reliable LLM Interactions",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08774",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.08774v1 Announce Type: new Abstract: Reliability in large language model (LLM) systems is typically framed as a function of model capability. We challenge this by demonstrating that reliability is significantly influenced by…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5444
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "5bbc3a5ef63f",
-      "headline": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
-      "published_at": "2026-07-12T16:27:06+00:00",
-      "summary": "Apple's self-driving car program never really got off the ground, but it may have been what made the company's chips the powerful AI performers they are. Early in the development of the self-driving platform, Apple realized that it would…",
+      "id": "9ef86e16f82b",
+      "headline": "GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08894",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.08894v1 Announce Type: new Abstract: Large Language Model (LLM) agents have shown promise in multi-step planning tasks, but existing approaches like LATS (Language Agent Tree Search) and ReAct rely heavily on LLM inference…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.766
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "36d5f814be20",
-      "headline": "The fight against AI data centers is just beginning",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
-      "published_at": "2026-07-12T12:00:00+00:00",
-      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the data center buildout, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The…",
+      "id": "5680daaf95eb",
+      "headline": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08964",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.08964v1 Announce Type: new Abstract: AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7378
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "ab88b22435ed",
-      "headline": "Meta's Muse Spark 1.1 Scores 51 on the Artificial Analysis Intelligence Index",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://twitter.com/ArtificialAnlys/status/2075677416295739660",
-      "published_at": "2026-07-11T16:39:44+00:00",
-      "summary": "2 points and 0 comments on Hacker News.",
+      "id": "2c9a7b5b78f3",
+      "headline": "A Formalization of the Mean-Field Derivation of the Vlasov Equation: AI-Assisted Lean Formalization as a Strategy Game",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.08986",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.08986v1 Announce Type: new Abstract: We formalize a research result in the Lean 4 proof assistant by having a mathematician direct an AI system, and frame the activity as a formalization game. The objective is to turn a LaTeX…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.4052
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "5f92d55c125d",
-      "headline": "OpenAI bets on families as ChatGPT goes deeper into households",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
-      "published_at": "2026-07-11T14:13:00+00:00",
-      "summary": "ChatGPT is hiring a dedicated product manager to build experiences for families, caregivers, and older adults, according to a job posting.",
+      "id": "1cd72bdaf81e",
+      "headline": "ARCANA: A Reflective Multi-Agent Program Synthesis Framework for ARC-AGI-2 Reasoning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09059",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09059v1 Announce Type: new Abstract: We present ARCANA, a collaborative multi agent framework for solving ARC AGI 2 tasks under strict test time and hardware constraints. ARCANA decomposes each task into iterative perception,…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.6319
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "98d85122ab64",
-      "headline": "Meta removes controversial AI feature on Instagram after backlash",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
-      "published_at": "2026-07-10T23:55:07+00:00",
-      "summary": "\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark,…",
+      "id": "b3a1ae710f38",
+      "headline": "Neuro-Agentic Control: A Deep Learning-based LLM-Powered Agentic AI Framework for Controlling Security Controls",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09076",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09076v1 Announce Type: new Abstract: Cyberattacks on operational technology are increasingly causing costly downtime and physical damage, exposing the limitations of traditional rule-based monitoring in industrial IoT…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5844
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "6c4a6e1919dc",
-      "headline": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
-      "published_at": "2026-07-10T23:49:50+00:00",
-      "summary": "Following significant backlash, Meta is turning off the feature it announced this week that let users generate AI images based on content from public Instagram accounts just by tagging them. The feature, as originally set up, meant that…",
+      "id": "42c782acefd2",
+      "headline": "L-MAD: A Systematic Evaluation of Multi-Agent Debate Structures in Legal Reasoning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09099",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09099v1 Announce Type: new Abstract: While multi-agent debate (MAD) frameworks have shown significant potential in general reasoning, their effectiveness in highly structured, knowledge-heavy legal domains remains…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5841
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "4f68ab059f6d",
-      "headline": "Apple sues OpenAI for allegedly stealing hardware secrets",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
-      "published_at": "2026-07-10T21:36:51+00:00",
-      "summary": "Apple has sued OpenAI, alleging that engineers stole Apple secrets to advance the AI startup's hardware plans. In its complaint, Apple says it uncovered \"a pattern of theft of Apple's trade secrets by OpenAI employees who were formerly at…",
+      "id": "918353daedf9",
+      "headline": "MedRealMM: A Real-World Multimodal Benchmark for Chinese Online Medical Consultation",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09142",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09142v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed in online medical consultation, yet existing benchmarks remain poorly aligned with real clinical practice. Many rely on synthetic…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.578
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "a4ad473125ca",
-      "headline": "Apple sues OpenAI over alleged trade secret theft",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
-      "published_at": "2026-07-10T21:00:29+00:00",
-      "summary": "Apple alleges the misconduct was directed by OpenAI's senior leadership, including a longtime former employee.",
+      "id": "cd930412c5ac",
+      "headline": "KV-PRM: Efficient Process Reward Modeling via KV-Cache Transfer for Multi-Agent Test-Time Scaling",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09153",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09153v1 Announce Type: new Abstract: Process Reward Models (PRMs) have been proven to be highly effective in guiding test-time scaling (TTS) methods, which significantly boost the capabilities of LLM-based multi-agent systems.…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5763
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "1d85656f77c8",
-      "headline": "Open source AI matters more than ever, according to Hugging Face’s Clem Delangue",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
-      "published_at": "2026-07-10T19:00:00+00:00",
-      "summary": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half…",
+      "id": "60bfdd086712",
+      "headline": "Scoped Verification for Reliable Long-Horizon Agentic Context Evolution under Distribution Shift",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09175",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09175v1 Announce Type: new Abstract: Deployed LLM agents rely on agentic context, the model-external textual control content assembled by an operational harness. In this work, the mutable component of that context is a…",
       "tags": [
-        "Open Source"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5711
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "78cbc53175f9",
-      "headline": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
-      "published_at": "2026-07-10T17:17:12+00:00",
-      "summary": "The AI chip boom just produced its biggest Wall Street moment yet. Now SK Hynix and Samsung are being asked to build U.S. factories.",
+      "id": "807ffa614003",
+      "headline": "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09195",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09195v1 Announce Type: new Abstract: Large language model (LLM) agents are increasingly expected to play a central role in AI-driven scientific discovery. Equipped with broad knowledge, flexible reasoning, and tool use, they…",
       "tags": [
-        "Business"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.6267
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "27b60fc861f1",
-      "headline": "Disable autoplay and infinite scroll or risk massive fines, EU tells Meta",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/tech-policy/2026/07/disable-auto-play-and-infinite-scroll-or-risk-massive-fines-eu-tells-meta/",
-      "published_at": "2026-07-10T15:46:18+00:00",
-      "summary": "Digital Services Act may force Meta to make big changes on its platforms.",
+      "id": "e2f300c146fd",
+      "headline": "OpenProver: Agentic and Interactive Theorem Proving with Lean 4",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09217",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09217v1 Announce Type: new Abstract: In this system paper, we present OpenProver, an open-source system for LLM-driven automated theorem proving (ATP) with integrated Lean 4 formal verification. OpenProver integrates a…",
       "tags": [
-        "Safety"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.563
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "05d5cd4f7807",
-      "headline": "Energy is AI's natural home – but, it's fumbling",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.weforum.org/stories/artificial-intelligence/the-energy-sector-should-be-ais-natural-home-right-now-its-fumbling/",
-      "published_at": "2026-07-10T14:48:52+00:00",
-      "summary": "2 points and 0 comments on Hacker News.",
+      "id": "827d796a47e8",
+      "headline": "LongMedBench: Benchmarking Medical Agents for Long-Horizon Clinical Decision-Making",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09322",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09322v1 Announce Type: new Abstract: In this work, we introduce LongMedBench, a real-world EHR-based benchmark for long-horizon clinical decision-making. Prior evaluations of LLM-based medical agents have largely emphasized…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.3244
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "e654c4c7eaf2",
-      "headline": "Hugging Face’s CEO on why companies are done renting their AI",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
-      "published_at": "2026-07-10T14:00:00+00:00",
-      "summary": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half…",
+      "id": "97579754d322",
+      "headline": "Communication-Efficient Digital-Twin Coordination for Heterogeneous LLM Embodied Agents over Computing Power Networks",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09330",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09330v1 Announce Type: new Abstract: Embodied agent teams powered by heterogeneous large language models (LLMs) are being widely deployed in physical artificial intelligence such as smart factories, warehouses, and service…",
       "tags": [
-        "Open Source"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5588
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "3fd5be624e9b",
-      "headline": "Instagram’s Adam Mosseri: If you don’t like AI, ‘then you shouldn’t have it in your feed’",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters",
-      "published_at": "2026-07-10T13:45:02+00:00",
-      "summary": "Though Instagram head Adam Mosseri doesn't want to filter out AI content on the platform, he argues that you \"shouldn't have it in your feed\" if you don't like it. \"I don't think we should filter out AI content,\" Mosseri said during an…",
+      "id": "33823c85732c",
+      "headline": "Fictional Worldbuilding: Multi-Agent LLM Collaboration with Hierarchical Context Compression and Iterative Review",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09403",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09403v1 Announce Type: new Abstract: Worldbuilding, the construction of coherent fictional worlds, is a foundational task in game design and literary creation. Large Language Models (LLMs) offer new possibilities for automated…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5583
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "30fd26556973",
-      "headline": "Would you host part of an AI data center in your home?",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center",
-      "published_at": "2026-07-10T13:20:25+00:00",
-      "summary": "A solar and home energy storage company is expanding into AI data centers, but not by building one - instead, it's offering to pay its customers to put its compute units in their homes. Sunrun is launching a pilot program for a new…",
+      "id": "a4cf909c746a",
+      "headline": "How Does Bayesian Causal Discovery Fail? Characterising Structural Consequences in Linear Gaussian Networks under Latent Confounding",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09449",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09449v1 Announce Type: new Abstract: Bayesian causal discovery is widely used for its ability to quantify epistemic uncertainty over directed acyclic graphs (DAGs) through posterior inference. However, its behaviour under latent…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5573
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "5d89094603b0",
-      "headline": "Do Different GenAI Tools Provide Different Financial Recommendations?",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.financialplanningassociation.org/learning/publications/journal/JUN26-do-different-generative-artificial-intelligence-genai-tools-provide-different-financial-OPEN",
-      "published_at": "2026-07-10T12:37:20+00:00",
-      "summary": "1 points and 0 comments on Hacker News.",
+      "id": "d2efa0295423",
+      "headline": "ProofCouncil: An LLM Agent for Solving Open Mathematical Problems",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09474",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09474v1 Announce Type: new Abstract: Large language models (LLMs) have shown increasing promise in solving open problems in mathematics. However, their performance can be further improved through agentic workflows tailored to…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.3188
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "e18a0edc34ba",
-      "headline": "The Download: Claude’s inner workings and OpenAI’s “super app”",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app/",
-      "published_at": "2026-07-10T12:10:00+00:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Anthropic found a hidden space where Claude puzzles over concepts The AI firm Anthropic has got the…",
+      "id": "62dcdf1c8c7c",
+      "headline": "Ceci n'est pas une pipe: AI systems as semantic abstractions",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09489",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09489v1 Announce Type: new Abstract: An AI system's output is not the fact or world state it appears to describe, but rather an engineered representation. We propose a semantic framework to describe AI systems, to be able to…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.6497
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "027b05f9d0fa",
-      "headline": "How Deutsche Telekom is rewiring telecommunications with AI",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/deutsche-telekom",
-      "published_at": "2026-07-10T07:00:00+00:00",
-      "summary": "How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice.",
+      "id": "a882d050c69a",
+      "headline": "Multimodal Reward Hacking in Reinforcement Learning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09492",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09492v1 Announce Type: new Abstract: Reinforcement learning (RL) is increasingly used to align multimodal large language models (MLLMs), but higher rewards do not always imply better task performance. This risk is amplified when…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.5787
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "ae709b33078a",
-      "headline": "China may restrict foreign access to Chinese open-source AI models",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.reuters.com/technology/artificial-intelligence/china-weighs-silicon-curtain-around-sought-after-ai-models-2026-07-08/",
-      "published_at": "2026-07-10T06:22:06+00:00",
-      "summary": "37 points and 0 comments on Hacker News.",
+      "id": "a301014cfb00",
+      "headline": "Shared Selective Persistent Memory for Agentic LLM Systems",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09493",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09493v1 Announce Type: new Abstract: Agentic LLM systems that generate code through multi-turn tool use face a fundamental context problem: each session starts from zero, discarding the configuration choices, domain constraints,…",
       "tags": [
-        "Open Source"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.3272
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "2922cfdde0d7",
-      "headline": "OpenAI says GPT 5.6 is the ‘preferred model’ for Microsoft Copilot 365 amid breakup chatter",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
-      "published_at": "2026-07-10T00:16:54+00:00",
-      "summary": "OpenAI's new family of models will continue to power Microsoft's suite of workplace and productivity apps.",
+      "id": "ec20e73756f0",
+      "headline": "SAGEAgent: A Self-Evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09521",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09521v1 Announce Type: new Abstract: Does every cancer patient truly need a complete diagnostic workup for accurate survival prediction? In multimodal clinical oncology, diagnostic modalities follow a clinically mandated order…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5912
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "3e171b9d1ff3",
-      "headline": "Microsoft’s carbon emissions went up 25 percent last year",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
-      "published_at": "2026-07-10T00:04:13+00:00",
-      "summary": "Microsoft may once again be struggling to keep up with its own climate goals, according to its 2026 sustainability report. As reported by GeekWire, the report states that Microsoft's carbon emissions increased 25 percent in 2025, totalling…",
+      "id": "057c92fed1a2",
+      "headline": "Beyond Fixed Representations: The Vocabulary and Verifier Gaps in Open-Ended AI",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09560",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09560v1 Announce Type: new Abstract: Modern AI systems are increasingly being evaluated for their ability to reason, code, prove theorems, use tools, and long-horizon research tasks. These are powerful capabilities, but they…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5308
+      "credibility": 0.9,
+      "rank_score": 0.8108
     },
     {
-      "id": "880ee3c2d550",
-      "headline": "Fidji Simo steps down from OpenAI’s No. 2 role",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
-      "published_at": "2026-07-09T23:38:00+00:00",
-      "summary": "OpenAI's No. 2 executive, Fidji Simo, is stepping down from her full-time role after her medical leave proved longer than expected — a leadership vacuum that comes at a tricky time as the company eyes a possible IPO and races to catch…",
+      "id": "6d2b7a3c1a91",
+      "headline": "Knowledge Graphs and Explainable AI as Complementary Resources for Urban Mining",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.09578",
+      "published_at": "2026-07-13T04:00:00+00:00",
+      "summary": "arXiv:2607.09578v1 Announce Type: new Abstract: Pre-demolition assessment, the regulated audit process at the heart of urban mining, is an information process in which AI support must serve qualified auditors who remain accountable for the…",
       "tags": [
-        "Business"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.53
+      "credibility": 0.9,
+      "rank_score": 0.8108
     }
   ]
 }
