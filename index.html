@@ -13,7 +13,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 
 <link rel="stylesheet" href="site.css?v=16" />
-<link rel="stylesheet" href="assets/dpr.css?v=4" />
+<link rel="stylesheet" href="assets/dpr.css?v=5" />
 <link rel="stylesheet" href="slop.css?v=5" />
 <link rel="stylesheet" href="assets/slopcar.css?v=2" />
 
@@ -87,6 +87,12 @@
 <body id="top">
 <div id="calibrate" aria-hidden="true"><div class="cal-inner"><div class="cal-mark"><span class="cal-tick"></span></div><div class="cal-read"><span id="calNum">0.00</span> <span class="cal-lbl">CALIBRATING</span></div></div></div>
 <a class="skip-link" href="#main">Skip to content</a>
+
+<div class="walkbot" id="walkbot" aria-hidden="true">
+  <span class="walkbot__thread"></span>
+  <span class="walkbot__shadow" id="walkbotShadow"></span>
+  <span class="walkbot__sprite" id="walkbotSprite"></span>
+</div>
 
 <header class="nav">
   <div class="wrap nav-in">
@@ -606,5 +612,36 @@
 <script src="assets/sharpen.js?v=1" defer></script>
 <script src="assets/agentvs.js?v=1" defer></script>
 <script src="assets/dpr.js?v=1" defer></script>
+<script>
+(function(){
+  var wb=document.getElementById('walkbot'); if(!wb) return;
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  if(window.innerWidth < 1400) return;
+  var sprite=document.getElementById('walkbotSprite'), shadow=document.getElementById('walkbotShadow');
+  var FRAMES=24, FW=84, STEP=32;
+  var vh=window.innerHeight, topMin=vh*0.14, topMax=vh*0.64;
+  function docMax(){ return Math.max(1, document.documentElement.scrollHeight - window.innerHeight); }
+  var curY=topMin, curFrame=-1, raf=null;
+  function render(){
+    raf=null;
+    var sy=window.pageYOffset||document.documentElement.scrollTop||0;
+    var p=Math.min(1,Math.max(0, sy/docMax()));
+    var targetY=topMin+(topMax-topMin)*p;
+    curY += (targetY-curY)*0.16;
+    var fr=Math.floor(sy/STEP)%FRAMES; if(fr<0) fr+=FRAMES;
+    sprite.style.transform='translate3d(0,'+curY.toFixed(1)+'px,0)';
+    if(shadow) shadow.style.transform='translate3d(0,'+(curY+130).toFixed(1)+'px,0)';
+    if(fr!==curFrame){ curFrame=fr; sprite.style.backgroundPositionX=(-fr*FW)+'px'; }
+    if(Math.abs(targetY-curY)>0.4){ raf=requestAnimationFrame(render); }
+  }
+  function onScroll(){ if(!raf) raf=requestAnimationFrame(render); }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', function(){ vh=window.innerHeight; topMin=vh*0.14; topMax=vh*0.64; wb.style.display=(window.innerWidth<1400)?'none':'block'; onScroll(); }, {passive:true});
+  sprite.style.transform='translate3d(0,'+curY+'px,0)';
+  if(shadow) shadow.style.transform='translate3d(0,'+(curY+130)+'px,0)';
+  sprite.style.backgroundPositionX='0px';
+  render();
+})();
+</script>
 </body>
 </html>
