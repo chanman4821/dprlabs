@@ -13,7 +13,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 
 <link rel="stylesheet" href="site.css?v=16" />
-<link rel="stylesheet" href="assets/dpr.css?v=11" />
+<link rel="stylesheet" href="assets/dpr.css?v=12" />
 <link rel="stylesheet" href="slop.css?v=5" />
 <link rel="stylesheet" href="assets/slopcar.css?v=2" />
 
@@ -133,110 +133,75 @@
   </section>
 
   <!-- SECTION 2 — what we build (four owned systems, carousel) -->
-  <section class="s-car" id="what-we-build" aria-roledescription="carousel" aria-label="Four systems we build">
-    <div class="s-car__inner" id="sys-car">
-      <p class="s-car__eyebrow" data-rvl>What we build</p>
-      <h2 class="s-car__kicker" data-rvl>Four systems we build to <span class="gold">own</span> — not demo.</h2>
+  <!-- WHAT WE BUILD — editorial magazine spread: one featured system, then a numbered index of the other three -->
+  <section class="s-wb" id="what-we-build" aria-label="Four systems we build">
+    <div class="s-wb__inner">
+      <header class="s-wb__masthead" data-rvl>
+        <p class="s-wb__eyebrow">What we build</p>
+        <h2 class="s-wb__kicker">Four systems we build to <span class="gold">own</span> &mdash; not demo.</h2>
+      </header>
 
-      <div class="s-car__tabs" role="tablist" aria-label="Choose a system" data-rvl>
-        <button class="s-car__tab" role="tab" id="systab-0" aria-controls="sysslide-0" aria-selected="true" type="button">Sales &amp; Marketing</button>
-        <button class="s-car__tab" role="tab" id="systab-1" aria-controls="sysslide-1" aria-selected="false" type="button">Automations</button>
-        <button class="s-car__tab" role="tab" id="systab-2" aria-controls="sysslide-2" aria-selected="false" type="button">Multi-Agent</button>
-        <button class="s-car__tab" role="tab" id="systab-3" aria-controls="sysslide-3" aria-selected="false" type="button">Pipelines</button>
-        <span class="s-car__ul" aria-hidden="true"></span>
-      </div>
+      <article class="s-wb__feature" data-rvl>
+        <div class="s-wb__ftxt">
+          <span class="s-wb__fno" aria-hidden="true">01</span>
+          <p class="s-wb__ftag">Featured system</p>
+          <h3 class="s-wb__fname">AI Sales &amp; Marketing Agents</h3>
+          <p class="s-wb__flead">Finds leads, writes the outreach, follows up, and books meetings &mdash; straight into your CRM.</p>
+          <ul class="s-wb__keys"><li>Leads</li><li>Outreach</li><li>CRM</li></ul>
+        </div>
+        <div class="s-wb__fplate">
+          <video class="s-wb__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/sales-cut.png" aria-label="A gold AI sales agent finding leads and booking meetings"><source src="assets/anim/sales.webm" type="video/webm"><img src="assets/img/agents/sales-cut.png" alt="A gold AI sales agent presenting to a chat bubble"></video>
+        </div>
+      </article>
 
-      <div class="s-car__stage" data-rvl>
-        <div class="s-car__slide is-active" role="tabpanel" id="sysslide-0" aria-labelledby="systab-0">
-          <div class="s-car__txt">
-            <span class="s-car__idx">01 / 04</span>
-            <h3 class="s-car__name">AI Sales &amp; Marketing Agents</h3>
-            <p class="s-car__vp">Finds leads, writes the outreach, follows up, and books meetings — straight into your CRM.</p>
-            <ul class="s-car__spec"><li>Leads</li><li>Outreach</li><li>CRM</li></ul>
+      <ol class="s-wb__index" data-stg>
+        <li class="s-wb__row" data-rvl>
+          <span class="s-wb__rno" aria-hidden="true">02</span>
+          <div class="s-wb__rtxt">
+            <h3 class="s-wb__rname">Workflow &amp; Ops Automations</h3>
+            <p class="s-wb__rprop">Automates the steps that drain hours. You scale with code, not headcount.</p>
+            <ul class="s-wb__keys"><li>Workflows</li><li>Ops</li><li>Scale</li></ul>
           </div>
-          <div class="s-car__frame"><video class="s-car__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/sales-cut.png" aria-label="A gold AI sales agent finding leads and booking meetings"><source src="assets/anim/sales.webm" type="video/webm"><img src="assets/img/agents/sales-cut.png" alt="A gold AI sales agent presenting to a chat bubble"></video></div>
-        </div>
-        <div class="s-car__slide" role="tabpanel" id="sysslide-1" aria-labelledby="systab-1">
-          <div class="s-car__txt">
-            <span class="s-car__idx">02 / 04</span>
-            <h3 class="s-car__name">Workflow &amp; Ops Automations</h3>
-            <p class="s-car__vp">Automates the steps that drain hours. You scale with code, not headcount.</p>
-            <ul class="s-car__spec"><li>Workflows</li><li>Ops</li><li>Scale</li></ul>
+          <div class="s-wb__rplate">
+            <video class="s-wb__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/automations-cut.png" aria-label="A gold AI agent automating tasks on a conveyor"><source src="assets/anim/automations.webm" type="video/webm"><img src="assets/img/agents/automations-cut.png" alt="A gold AI agent orchestrating task tiles"></video>
           </div>
-          <div class="s-car__frame"><video class="s-car__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/automations-cut.png" aria-label="A gold AI agent automating tasks on a conveyor"><source src="assets/anim/automations.webm" type="video/webm"><img src="assets/img/agents/automations-cut.png" alt="A gold AI agent orchestrating task tiles"></video></div>
-        </div>
-        <div class="s-car__slide" role="tabpanel" id="sysslide-2" aria-labelledby="systab-2">
-          <div class="s-car__txt">
-            <span class="s-car__idx">03 / 04</span>
-            <h3 class="s-car__name">Multi-Agent Systems</h3>
-            <p class="s-car__vp">A team of agents for the complex jobs — automatic where it's routine, you approve where it counts.</p>
-            <ul class="s-car__spec"><li>Orchestration</li><li>Approvals</li><li>Guardrails</li></ul>
+        </li>
+        <li class="s-wb__row" data-rvl>
+          <span class="s-wb__rno" aria-hidden="true">03</span>
+          <div class="s-wb__rtxt">
+            <h3 class="s-wb__rname">Multi-Agent Systems</h3>
+            <p class="s-wb__rprop">A team of agents for the complex jobs &mdash; automatic where it's routine, you approve where it counts.</p>
+            <ul class="s-wb__keys"><li>Orchestration</li><li>Approvals</li><li>Guardrails</li></ul>
           </div>
-          <div class="s-car__frame"><video class="s-car__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/multiagent-cut.png" aria-label="A team of three gold AI agents working together"><source src="assets/anim/multiagent.webm" type="video/webm"><img src="assets/img/agents/multiagent-cut.png" alt="A team of gold AI agents in formation"></video></div>
-        </div>
-        <div class="s-car__slide" role="tabpanel" id="sysslide-3" aria-labelledby="systab-3">
-          <div class="s-car__txt">
-            <span class="s-car__idx">04 / 04</span>
-            <h3 class="s-car__name">Custom AI Pipelines</h3>
-            <p class="s-car__vp">Your data and docs wired into one system that answers and acts — with evals from day one.</p>
-            <ul class="s-car__spec"><li>Retrieval</li><li>Evals</li><li>Actions</li></ul>
+          <div class="s-wb__rplate">
+            <video class="s-wb__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/multiagent-cut.png" aria-label="A team of three gold AI agents working together"><source src="assets/anim/multiagent.webm" type="video/webm"><img src="assets/img/agents/multiagent-cut.png" alt="A team of gold AI agents in formation"></video>
           </div>
-          <div class="s-car__frame"><video class="s-car__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/pipelines-cut.png" aria-label="A gold AI agent running a data pipeline"><source src="assets/anim/pipelines.webm" type="video/webm"><img src="assets/img/agents/pipelines-cut.png" alt="A gold AI agent guiding a data pipeline"></video></div>
-        </div>
-      </div>
-
-      <div class="s-car__foot" data-rvl>
-        <span class="s-car__count"><b id="sys-cur">01</b> / 04</span>
-        <div class="crx-nav">
-          <button class="crx-arrow" type="button" data-car-prev aria-label="Previous system"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-          <button class="crx-arrow" type="button" data-car-next aria-label="Next system"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
-        </div>
-      </div>
+        </li>
+        <li class="s-wb__row" data-rvl>
+          <span class="s-wb__rno" aria-hidden="true">04</span>
+          <div class="s-wb__rtxt">
+            <h3 class="s-wb__rname">Custom AI Pipelines</h3>
+            <p class="s-wb__rprop">Your data and docs wired into one system that answers and acts &mdash; with evals from day one.</p>
+            <ul class="s-wb__keys"><li>Retrieval</li><li>Evals</li><li>Actions</li></ul>
+          </div>
+          <div class="s-wb__rplate">
+            <video class="s-wb__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/pipelines-cut.png" aria-label="A gold AI agent running a data pipeline"><source src="assets/anim/pipelines.webm" type="video/webm"><img src="assets/img/agents/pipelines-cut.png" alt="A gold AI agent guiding a data pipeline"></video>
+          </div>
+        </li>
+      </ol>
     </div>
     <script>
     (function(){
-      var root=document.getElementById('sys-car'); if(!root) return;
-      var tabs=[].slice.call(root.querySelectorAll('.s-car__tab'));
-      var slides=[].slice.call(root.querySelectorAll('.s-car__slide'));
-      var ul=root.querySelector('.s-car__ul');
-      var cur=document.getElementById('sys-cur');
-      var prev=root.querySelector('[data-car-prev]'), next=root.querySelector('[data-car-next]');
-      if(!slides.length) return;
+      var root=document.getElementById('what-we-build'); if(!root) return;
+      var vids=[].slice.call(root.querySelectorAll('.s-wb__vid'));
       var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
-      var i=0, timer=null, DUR=7000, paused=false;
-      var vids=[].slice.call(root.querySelectorAll('.s-car__vid')), inView=false;
-      function pauseAll(){ vids.forEach(function(v){ try{v.pause();}catch(e){} }); }
-      function playActive(){ vids.forEach(function(v,k){ if(k===i && inView && !reduce){ var pp=v.play&&v.play(); if(pp&&pp.catch)pp.catch(function(){}); } else { try{v.pause();}catch(e){} } }); }
-      function pad(n){return (n+1)<10?'0'+(n+1):''+(n+1);}
-      function moveUL(){ var t=tabs[i]; if(!ul||!t) return; ul.style.width=t.offsetWidth+'px'; ul.style.transform='translateX('+t.offsetLeft+'px)'; }
-      function show(n,dir){
-        n=(n+slides.length)%slides.length; if(n===i){moveUL();return;}
-        if(typeof dir!=='number') dir = n>i?1:-1;
-        var a=slides[i], b=slides[n];
-        a.style.setProperty('--dx',(dir<0?24:-24)+'px'); a.classList.remove('is-active');
-        b.style.setProperty('--dx',(dir<0?-24:24)+'px'); void b.offsetWidth; b.classList.add('is-active');
-        if(tabs[i]) tabs[i].setAttribute('aria-selected','false');
-        if(tabs[n]) tabs[n].setAttribute('aria-selected','true');
-        i=n; if(cur) cur.textContent=pad(i); moveUL(); playActive();
-      }
-      function schedule(){ clearTimeout(timer); if(reduce) return; timer=setTimeout(function(){ if(!paused) show(i+1,1); schedule(); }, DUR); }
-      tabs.forEach(function(t,k){ t.addEventListener('click',function(){ show(k); schedule(); }); });
-      if(prev) prev.addEventListener('click',function(){ show(i-1,-1); schedule(); });
-      if(next) next.addEventListener('click',function(){ show(i+1,1); schedule(); });
-      root.addEventListener('keydown',function(e){
-        if(e.key==='ArrowLeft'){ show(i-1,-1); schedule(); e.preventDefault(); }
-        else if(e.key==='ArrowRight'){ show(i+1,1); schedule(); e.preventDefault(); }
-        else if(e.key==='Home'){ show(0,-1); schedule(); e.preventDefault(); }
-        else if(e.key==='End'){ show(slides.length-1,1); schedule(); e.preventDefault(); }
-      });
-      root.addEventListener('mouseenter',function(){paused=true;});
-      root.addEventListener('mouseleave',function(){paused=false;});
-      root.addEventListener('focusin',function(){paused=true;});
-      root.addEventListener('focusout',function(){paused=false;});
-      window.addEventListener('resize',moveUL);
-      window.addEventListener('load',moveUL);
-      if('IntersectionObserver' in window){ var vio=new IntersectionObserver(function(es){ es.forEach(function(e){ inView=e.isIntersecting; if(inView){playActive();}else{pauseAll();} }); },{threshold:0.15}); vio.observe(root); }
-      moveUL(); schedule();
+      if(reduce||!('IntersectionObserver' in window)) return;
+      var io=new IntersectionObserver(function(es){ es.forEach(function(e){
+        var v=e.target;
+        if(e.isIntersecting){ var pp=v.play&&v.play(); if(pp&&pp.catch)pp.catch(function(){}); }
+        else { try{v.pause();}catch(_){} }
+      }); },{threshold:0.35});
+      vids.forEach(function(v){ io.observe(v); });
     })();
     </script>
   </section>
