@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-13T08:20:54.375088+00:00",
+    "generated_at": "2026-07-13T12:12:40.759922+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "790909796521",
+      "headline": "Indian companies look to Chinese LLMs as AI costs bite",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/indian-companies-look-to-chinese-llms-as-ai-costs-bite",
+      "published_at": "2026-07-13T09:52:36+00:00",
+      "summary": "1 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.544
+    },
+    {
+      "id": "d57980338005",
+      "headline": "Waze is getting a bunch of new AI-powered features",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/transportation/964132/waze-gemini-ai-voice-commands-less-chatty",
+      "published_at": "2026-07-13T09:00:00+00:00",
+      "summary": "Waze is getting an AI makeover. Google is integrating its flagship AI assistant, Gemini, into the driving app with the goal of letting users personalize their trips a little more. Of the four new updates, only two are being described as…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7749
+    },
     {
       "id": "33b041c8a0db",
       "headline": "TSMC posts record revenue in second quarter on AI demand",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5565
+      "rank_score": 0.5298
     },
     {
       "id": "5f978c026084",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "8d75ea8a3d7c",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "9ef86e16f82b",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "5680daaf95eb",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "2c9a7b5b78f3",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "1cd72bdaf81e",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "b3a1ae710f38",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "42c782acefd2",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "918353daedf9",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "cd930412c5ac",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "60bfdd086712",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "807ffa614003",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "e2f300c146fd",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "827d796a47e8",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "97579754d322",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "33823c85732c",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "a4cf909c746a",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "d2efa0295423",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "62dcdf1c8c7c",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "a882d050c69a",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     },
     {
       "id": "a301014cfb00",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7847
-    },
-    {
-      "id": "ec20e73756f0",
-      "headline": "SAGEAgent: A Self-Evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09521",
-      "published_at": "2026-07-13T04:00:00+00:00",
-      "summary": "arXiv:2607.09521v1 Announce Type: new Abstract: Does every cancer patient truly need a complete diagnostic workup for accurate survival prediction? In multimodal clinical oncology, diagnostic modalities follow a clinically mandated order…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7847
-    },
-    {
-      "id": "057c92fed1a2",
-      "headline": "Beyond Fixed Representations: The Vocabulary and Verifier Gaps in Open-Ended AI",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09560",
-      "published_at": "2026-07-13T04:00:00+00:00",
-      "summary": "arXiv:2607.09560v1 Announce Type: new Abstract: Modern AI systems are increasingly being evaluated for their ability to reason, code, prove theorems, use tools, and long-horizon research tasks. These are powerful capabilities, but they…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7847
+      "rank_score": 0.76
     }
   ]
 }
