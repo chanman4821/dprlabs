@@ -432,3 +432,13 @@
 .walkbot__sprite { position: absolute; left: 8px; top: 0; width: 84px; height: 140px; background: url(anim/walk-sprite.png?v=1) 0 0 / 2016px 140px no-repeat; will-change: transform, background-position; filter: drop-shadow(0 5px 7px rgba(20,19,15,.12)); }
 @media (min-width: 1400px) { .walkbot { display: block; } }
 @media (prefers-reduced-motion: reduce) { .walkbot { display: none !important; } }
+
+/* =========================================================================
+   GROUNDING CONTACT SHADOWS — mascots sit on a surface, never float in a void
+   ========================================================================= */
+.s-car__frame { position: relative; }
+.s-car__frame img, .s-car__frame video { position: relative; z-index: 1; }
+.s-car__frame::after { content: ""; position: absolute; left: 50%; bottom: 1%; transform: translateX(-50%); width: 50%; height: 20px; border-radius: 50%; background: radial-gradient(ellipse at center, rgba(20,19,15,.34), rgba(20,19,15,.13) 48%, rgba(20,19,15,0) 78%); pointer-events: none; z-index: 0; }
+.s-hero__stage { position: relative; }
+.s-hero__bot { position: relative; z-index: 1; }
+.s-hero__stage::after { content: ""; position: absolute; left: 50%; bottom: 4%; transform: translateX(-50%); width: 40%; height: 20px; border-radius: 50%; background: radial-gradient(ellipse at center, rgba(20,19,15,.24), rgba(20,19,15,.09) 50%, rgba(20,19,15,0) 78%); pointer-events: none; z-index: 0; }

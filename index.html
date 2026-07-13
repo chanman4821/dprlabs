@@ -13,7 +13,7 @@
 <link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 
 <link rel="stylesheet" href="site.css?v=16" />
-<link rel="stylesheet" href="assets/dpr.css?v=5" />
+<link rel="stylesheet" href="assets/dpr.css?v=7" />
 <link rel="stylesheet" href="slop.css?v=5" />
 <link rel="stylesheet" href="assets/slopcar.css?v=2" />
 
@@ -154,7 +154,7 @@
             <p class="s-car__vp">Finds leads, writes the outreach, follows up, and books meetings — straight into your CRM.</p>
             <ul class="s-car__spec"><li>Leads</li><li>Outreach</li><li>CRM</li></ul>
           </div>
-          <div class="s-car__frame"><video class="s-car__vid" data-io autoplay loop muted playsinline poster="assets/img/agents/sales-cut.png" aria-label="A gold AI sales agent finding leads and booking meetings"><source src="assets/anim/sales.webm" type="video/webm"><img src="assets/img/agents/sales-cut.png" alt="A gold AI sales agent presenting to a chat bubble"></video></div>
+          <div class="s-car__frame"><video class="s-car__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/sales-cut.png" aria-label="A gold AI sales agent finding leads and booking meetings"><source src="assets/anim/sales.webm" type="video/webm"><img src="assets/img/agents/sales-cut.png" alt="A gold AI sales agent presenting to a chat bubble"></video></div>
         </div>
         <div class="s-car__slide" role="tabpanel" id="sysslide-1" aria-labelledby="systab-1">
           <div class="s-car__txt">
@@ -163,7 +163,7 @@
             <p class="s-car__vp">Automates the steps that drain hours. You scale with code, not headcount.</p>
             <ul class="s-car__spec"><li>Workflows</li><li>Ops</li><li>Scale</li></ul>
           </div>
-          <div class="s-car__frame"><video class="s-car__vid" data-io autoplay loop muted playsinline poster="assets/img/agents/automations-cut.png" aria-label="A gold AI agent automating tasks on a conveyor"><source src="assets/anim/automations.webm" type="video/webm"><img src="assets/img/agents/automations-cut.png" alt="A gold AI agent orchestrating task tiles"></video></div>
+          <div class="s-car__frame"><video class="s-car__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/automations-cut.png" aria-label="A gold AI agent automating tasks on a conveyor"><source src="assets/anim/automations.webm" type="video/webm"><img src="assets/img/agents/automations-cut.png" alt="A gold AI agent orchestrating task tiles"></video></div>
         </div>
         <div class="s-car__slide" role="tabpanel" id="sysslide-2" aria-labelledby="systab-2">
           <div class="s-car__txt">
@@ -172,7 +172,7 @@
             <p class="s-car__vp">A team of agents for the complex jobs — automatic where it's routine, you approve where it counts.</p>
             <ul class="s-car__spec"><li>Orchestration</li><li>Approvals</li><li>Guardrails</li></ul>
           </div>
-          <div class="s-car__frame"><video class="s-car__vid" data-io autoplay loop muted playsinline poster="assets/img/agents/multiagent-cut.png" aria-label="A team of three gold AI agents working together"><source src="assets/anim/multiagent.webm" type="video/webm"><img src="assets/img/agents/multiagent-cut.png" alt="A team of gold AI agents in formation"></video></div>
+          <div class="s-car__frame"><video class="s-car__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/multiagent-cut.png" aria-label="A team of three gold AI agents working together"><source src="assets/anim/multiagent.webm" type="video/webm"><img src="assets/img/agents/multiagent-cut.png" alt="A team of gold AI agents in formation"></video></div>
         </div>
         <div class="s-car__slide" role="tabpanel" id="sysslide-3" aria-labelledby="systab-3">
           <div class="s-car__txt">
@@ -181,7 +181,7 @@
             <p class="s-car__vp">Your data and docs wired into one system that answers and acts — with evals from day one.</p>
             <ul class="s-car__spec"><li>Retrieval</li><li>Evals</li><li>Actions</li></ul>
           </div>
-          <div class="s-car__frame"><video class="s-car__vid" data-io autoplay loop muted playsinline poster="assets/img/agents/pipelines-cut.png" aria-label="A gold AI agent running a data pipeline"><source src="assets/anim/pipelines.webm" type="video/webm"><img src="assets/img/agents/pipelines-cut.png" alt="A gold AI agent guiding a data pipeline"></video></div>
+          <div class="s-car__frame"><video class="s-car__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/pipelines-cut.png" aria-label="A gold AI agent running a data pipeline"><source src="assets/anim/pipelines.webm" type="video/webm"><img src="assets/img/agents/pipelines-cut.png" alt="A gold AI agent guiding a data pipeline"></video></div>
         </div>
       </div>
 
@@ -204,6 +204,9 @@
       if(!slides.length) return;
       var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
       var i=0, timer=null, DUR=7000, paused=false;
+      var vids=[].slice.call(root.querySelectorAll('.s-car__vid')), inView=false;
+      function pauseAll(){ vids.forEach(function(v){ try{v.pause();}catch(e){} }); }
+      function playActive(){ vids.forEach(function(v,k){ if(k===i && inView && !reduce){ var pp=v.play&&v.play(); if(pp&&pp.catch)pp.catch(function(){}); } else { try{v.pause();}catch(e){} } }); }
       function pad(n){return (n+1)<10?'0'+(n+1):''+(n+1);}
       function moveUL(){ var t=tabs[i]; if(!ul||!t) return; ul.style.width=t.offsetWidth+'px'; ul.style.transform='translateX('+t.offsetLeft+'px)'; }
       function show(n,dir){
@@ -214,7 +217,7 @@
         b.style.setProperty('--dx',(dir<0?-24:24)+'px'); void b.offsetWidth; b.classList.add('is-active');
         if(tabs[i]) tabs[i].setAttribute('aria-selected','false');
         if(tabs[n]) tabs[n].setAttribute('aria-selected','true');
-        i=n; if(cur) cur.textContent=pad(i); moveUL();
+        i=n; if(cur) cur.textContent=pad(i); moveUL(); playActive();
       }
       function schedule(){ clearTimeout(timer); if(reduce) return; timer=setTimeout(function(){ if(!paused) show(i+1,1); schedule(); }, DUR); }
       tabs.forEach(function(t,k){ t.addEventListener('click',function(){ show(k); schedule(); }); });
@@ -232,6 +235,7 @@
       root.addEventListener('focusout',function(){paused=false;});
       window.addEventListener('resize',moveUL);
       window.addEventListener('load',moveUL);
+      if('IntersectionObserver' in window){ var vio=new IntersectionObserver(function(es){ es.forEach(function(e){ inView=e.isIntersecting; if(inView){playActive();}else{pauseAll();} }); },{threshold:0.15}); vio.observe(root); }
       moveUL(); schedule();
     })();
     </script>
