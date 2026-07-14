@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-14T20:17:49.111054+00:00",
+    "generated_at": "2026-07-14T22:04:34.909889+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "3e68f8ee554f",
+      "headline": "OpenAI’s new flagship model deletes files on its own, people keep warning",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/",
+      "published_at": "2026-07-14T21:50:11+00:00",
+      "summary": "A number of social media posts claim that GPT-5.6 Sol deleted files and data without warning. OpenAI had basically disclosed the problem in June.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7958
+    },
+    {
+      "id": "dc52ec30e5cc",
+      "headline": "OpenAI may announce a ChatGPT smart speaker this year",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/965670/openai-chatgpt-ai-smart-speaker-hardware-device",
+      "published_at": "2026-07-14T21:26:32+00:00",
+      "summary": "OpenAI's first device is set to be a smart speaker that lets you talk with ChatGPT, according to a report from Bloomberg. The device apparently won't have a screen, but will use a camera and additional sensors to \"understand\" your…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7929
+    },
     {
       "id": "343301f708c3",
       "headline": "Lawsuit claims Meta's layoff decisions were made by AI, not humans",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7961
+      "rank_score": 0.7834
     },
     {
       "id": "f6d4f1f66693",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7932
+      "rank_score": 0.7807
     },
     {
       "id": "4ae01c6119d5",
@@ -45,14 +77,14 @@
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out/",
       "published_at": "2026-07-14T19:41:27+00:00",
-      "summary": "Anthropic's latest advert is stirring up high emotions — which is undoubtedly what it was designed to do.",
+      "summary": "Anthropic has consistently attempted to depict itself as the ethical foil to other AI companies. This latest marketing stunt — which leans into criticism of AI as a way to make Anthropic seem aware of the responsibility it carries — would…",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7931
+      "rank_score": 0.7805
     },
     {
       "id": "2d8ed8e7da75",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7929
+      "rank_score": 0.7803
     },
     {
       "id": "2cc0275fccee",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7911
+      "rank_score": 0.7786
     },
     {
       "id": "b98c65f859f0",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7851
+      "rank_score": 0.7728
     },
     {
       "id": "e7820319ba06",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7812
+      "rank_score": 0.769
     },
     {
       "id": "986155e62b49",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7795
+      "rank_score": 0.7674
     },
     {
       "id": "a9b65061bfa7",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7763
+      "rank_score": 0.7644
     },
     {
       "id": "23767f964a63",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7707
+      "rank_score": 0.7589
     },
     {
       "id": "5ddf162e15a9",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.77
+      "rank_score": 0.7583
     },
     {
       "id": "ec4306596607",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7675
+      "rank_score": 0.7559
     },
     {
       "id": "e3be2bdde126",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7675
+      "rank_score": 0.7559
     },
     {
       "id": "274fe08b7f27",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7662
+      "rank_score": 0.7546
     },
     {
       "id": "a4b29ff806d7",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7629
+      "rank_score": 0.7514
     },
     {
       "id": "1ce55dc5e2a4",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7616
+      "rank_score": 0.7502
     },
     {
       "id": "97c9eefb0831",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7585
+      "rank_score": 0.7472
     },
     {
       "id": "07270bd7745b",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7571
+      "rank_score": 0.7459
     },
     {
       "id": "d03c89151d09",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7552
+      "rank_score": 0.744
     },
     {
       "id": "8ad960bf1ba3",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7546
+      "rank_score": 0.7434
     },
     {
       "id": "a0f97bb99d39",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7545
+      "rank_score": 0.7433
     },
     {
       "id": "2eaef63f0a76",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.838
-    },
-    {
-      "id": "cb9db543cbd4",
-      "headline": "Google’s Demis Hassabis says it’s time for a global AI watchdog — led by the US",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
-      "published_at": "2026-07-14T11:43:29+00:00",
-      "summary": "Demis Hassabis thinks the world needs an AI watchdog with the power to hit the brakes if frontier models become too dangerous. Writing in a blog post, the Google DeepMind CEO and cofounder said the US should lead the initiative, arguing…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7403
-    },
-    {
-      "id": "92ab1f77dd8c",
-      "headline": "How to manage AI investments in the agentic era",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-      "published_at": "2026-07-14T10:00:00+00:00",
-      "summary": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7649
+      "rank_score": 0.8272
     }
   ]
 }
