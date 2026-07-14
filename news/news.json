@@ -1,11 +1,107 @@
 {
   "meta": {
-    "generated_at": "2026-07-14T18:09:19.949836+00:00",
+    "generated_at": "2026-07-14T20:17:49.111054+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "343301f708c3",
+      "headline": "Lawsuit claims Meta's layoff decisions were made by AI, not humans",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/tech-policy/2026/07/lawsuit-claims-metas-layoff-decisions-were-made-by-ai-not-humans/",
+      "published_at": "2026-07-14T20:05:53+00:00",
+      "summary": "Meta denies using AI to terminate workers with disabilities and medical problems.",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7961
+    },
+    {
+      "id": "f6d4f1f66693",
+      "headline": "Apple opens its new Siri AI to everyone with the iOS 27 public beta",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta/",
+      "published_at": "2026-07-14T19:42:27+00:00",
+      "summary": "If you’ve been waiting to try Apple’s revamped Siri without installing a developer beta, you now can. The company on Tuesday released the iOS 27 public beta, giving iPhone owners early access to its AI-powered assistant and other new…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7932
+    },
+    {
+      "id": "4ae01c6119d5",
+      "headline": "Anthropic’s newest ad is creeping people out",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out/",
+      "published_at": "2026-07-14T19:41:27+00:00",
+      "summary": "Anthropic's latest advert is stirring up high emotions — which is undoubtedly what it was designed to do.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7931
+    },
+    {
+      "id": "2d8ed8e7da75",
+      "headline": "The founder of Hinge raised $18M to build a new AI dating service, Overtone",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
+      "published_at": "2026-07-14T19:39:39+00:00",
+      "summary": "Overtone describes itself as \"a voice- and audio-forward service, enabled by AI, that provides highly curated introductions.\"",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7929
+    },
+    {
+      "id": "2cc0275fccee",
+      "headline": "SpaceXAI’s Grok programming tool was uploading its users’ entire codebase to cloud storage",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload",
+      "published_at": "2026-07-14T19:25:00+00:00",
+      "summary": "SpaceXAI's Grok Build AI coding tool was spotted uploading users' entire codebases to Google Cloud before it was reported, and the company turned it off. The Register reports that Cereblab published findings on Monday showing how the Grok…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7911
+    },
+    {
+      "id": "b98c65f859f0",
+      "headline": "Google faces another AI training lawsuit from major publishers",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/",
+      "published_at": "2026-07-14T18:33:31+00:00",
+      "summary": "Hachette, Cengage, Elsevier, and other publishers allege that Google trained its AI on copyrighted works without the necessary permissions.",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7851
+    },
     {
       "id": "e7820319ba06",
       "headline": "US military sent explosive drone boats into combat for the first time",
@@ -20,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7964
+      "rank_score": 0.7812
     },
     {
       "id": "986155e62b49",
@@ -36,7 +132,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7947
+      "rank_score": 0.7795
+    },
+    {
+      "id": "a9b65061bfa7",
+      "headline": "Meta accused of using biased AI targeting for mass layoffs",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs",
+      "published_at": "2026-07-14T17:18:11+00:00",
+      "summary": "A group of 26 former Meta employees is suing the company over claims that it used AI tools to unfairly target workers on leave with layoffs, as reported earlier by Reuters. In the lawsuit, the employees allege Meta determined which workers…",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7763
     },
     {
       "id": "23767f964a63",
@@ -52,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7854
+      "rank_score": 0.7707
     },
     {
       "id": "5ddf162e15a9",
@@ -68,7 +180,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7847
+      "rank_score": 0.77
+    },
+    {
+      "id": "ec4306596607",
+      "headline": "The Google Images homepage will recommend photos even before you search",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/965138/google-images-homepage-ai-overviews-search-nano-banana",
+      "published_at": "2026-07-14T16:00:00+00:00",
+      "summary": "Google is announcing a big change to the Google Images homepage in honor of the platform's 25th anniversary this week. Instead of a mostly blank page with a search bar, the homepage will soon show you a bunch of images that it thinks you…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7675
     },
     {
       "id": "e3be2bdde126",
@@ -84,7 +212,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7821
+      "rank_score": 0.7675
+    },
+    {
+      "id": "274fe08b7f27",
+      "headline": "Spotify is now an AI chatbot, too",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/entertainment/965358/spotify-ai-chatbot-interface-music-audiobooks-podcasts",
+      "published_at": "2026-07-14T15:47:36+00:00",
+      "summary": "Spotify is experimenting with a new AI feature that allows Premium subscribers to play and explore music, audiobooks, and podcasts by having conversations with a chatbot. The \"Talk to Spotify\" feature appears across the Home and Now…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7662
     },
     {
       "id": "a4b29ff806d7",
@@ -100,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7773
+      "rank_score": 0.7629
     },
     {
       "id": "1ce55dc5e2a4",
@@ -116,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.776
+      "rank_score": 0.7616
     },
     {
       "id": "97c9eefb0831",
@@ -132,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7727
+      "rank_score": 0.7585
     },
     {
       "id": "07270bd7745b",
@@ -148,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7713
+      "rank_score": 0.7571
     },
     {
       "id": "d03c89151d09",
@@ -164,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7692
+      "rank_score": 0.7552
     },
     {
       "id": "8ad960bf1ba3",
@@ -180,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7686
+      "rank_score": 0.7546
     },
     {
       "id": "a0f97bb99d39",
@@ -196,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7685
+      "rank_score": 0.7545
     },
     {
       "id": "2eaef63f0a76",
@@ -212,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8515
+      "rank_score": 0.838
     },
     {
       "id": "cb9db543cbd4",
@@ -228,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7536
+      "rank_score": 0.7403
     },
     {
       "id": "92ab1f77dd8c",
@@ -244,151 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7778
-    },
-    {
-      "id": "e74d29ba9720",
-      "headline": "New York becomes the first state to enact a data center moratorium",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
-      "published_at": "2026-07-14T09:00:00+00:00",
-      "summary": "New hyperscale data centers can't set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation's first statewide moratorium. But a bill passed by the state legislature that could restrict even more…",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7367
-    },
-    {
-      "id": "dfaf7657e614",
-      "headline": "From ML Predictions to Informed Diagnostic Assistance Using the Toulmin Model of Argumentation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09664",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09664v1 Announce Type: new Abstract: To provide a structured and interpretable assessment, we decompose the image-based diagnosis into components following the Toulmin model of argumentation. This model consists of a claim,…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7256
-    },
-    {
-      "id": "91e1069db29a",
-      "headline": "Format Sensitivity Index: Token-Controlled Prompt Wrapper Robustness and Schema Compliance in LLM Benchmarking",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09665",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09665v1 Announce Type: new Abstract: Prompt wrappers often differ only in formatting, yet they can change model scores enough to flip leaderboard conclusions. We study this variance under a token-controlled protocol and…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7256
-    },
-    {
-      "id": "6a85e31e8e89",
-      "headline": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09678",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09678v1 Announce Type: new Abstract: When LLM agents hand off information to one another, does the message format matter? Two literatures disagree: format-optimization work reports that structured messages cut cost without…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7256
-    },
-    {
-      "id": "c7262b97ec1c",
-      "headline": "Boltzmann MapReduce: A Partition-Function Reduce for Forkable Sandboxes",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09689",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09689v1 Announce Type: new Abstract: To leading order under local asymptotic normality (LAN), the confidence density a worker emits over a chunk of size $n$ is a Gibbs--Boltzmann measure $\\exp\\{-\\beta E(\\theta)\\}$ whose inverse…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7256
-    },
-    {
-      "id": "83da4ddb3341",
-      "headline": "Interpreting Latent CoT Reasoning as Dynamical Systems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09698",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09698v1 Announce Type: new Abstract: Recent latent reasoning methods, such as CODI and COCONUT, face a fundamental interpretability problem: they maintain multiple superimposed candidate traces in the hidden space at each step,…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7256
-    },
-    {
-      "id": "06dfeb1c57f8",
-      "headline": "YUKTI: From Natural-Language Situations to Robust, Verifiable Decisions An Uncertainty-Typed Proposition IR, Assumption-Robust Pareto Frontiers, and a Regret Certificate",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09706",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09706v1 Announce Type: new Abstract: Language models turn a worded situation into a numeric plan, and the dominant pipelines (NL4Opt, OptiMUS, ORLM, OR-LLM-Agent) commit to a single objective and point-valued coefficients, then…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7256
-    },
-    {
-      "id": "4270f9148c60",
-      "headline": "GES-TSP: Graph Edge Sparsification for TSP",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09708",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09708v1 Announce Type: new Abstract: Solving large-scale instances of the Traveling Salesman Problem (TSP) exactly is computationally expensive. Researchers often employ graph sparsification methods to improve computational…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7256
-    },
-    {
-      "id": "cbd282d3c483",
-      "headline": "The Verifier is the Curriculum: Execution-Gated Self-Distillation for Cross-Family Game Generation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09709",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09709v1 Announce Type: new Abstract: Post-training a code generator against a learned judge can optimize proxy features that raise the score without improving the artifact. We study the opposite signal: a deterministic,…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7256
+      "rank_score": 0.7649
     }
   ]
 }
