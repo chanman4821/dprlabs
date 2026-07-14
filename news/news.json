@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-14T10:52:20.278429+00:00",
+    "generated_at": "2026-07-14T12:19:26.484296+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "cb9db543cbd4",
+      "headline": "Google’s Demis Hassabis says it’s time for a global AI watchdog — led by the US",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
+      "published_at": "2026-07-14T11:43:29+00:00",
+      "summary": "Demis Hassabis thinks the world needs an AI watchdog with the power to hit the brakes if frontier models become too dangerous. Writing in a blog post, the Google DeepMind CEO and cofounder said the US should lead the initiative, arguing…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7932
+    },
     {
       "id": "e74d29ba9720",
       "headline": "New York becomes the first state to enact a data center moratorium",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7841
+      "rank_score": 0.7741
     },
     {
       "id": "dfaf7657e614",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "91e1069db29a",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "6a85e31e8e89",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "c7262b97ec1c",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "83da4ddb3341",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "06dfeb1c57f8",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "4270f9148c60",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "cbd282d3c483",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "d4d404d28e86",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "7017b949a2d1",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "a90d731bdc25",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "2d8768529e22",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "2024dd9482e4",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "b64b9fb26db5",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "bb15dbce56c4",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "b1584fdd4ea8",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "f6b7e667a4e6",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "fb715a85b1a3",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "a24a9101c402",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "d34ab34c32f0",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "2ce8b81cae62",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     },
     {
       "id": "8e6bc9f5f7b2",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7683
-    },
-    {
-      "id": "16c8d4d43382",
-      "headline": "Verification of Adaptive Agentic Controllers through Finite Rule Revision",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09770",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09770v1 Announce Type: new Abstract: Industrial agentic AI systems increasingly exhibit a gap between prototype capability and production deployment. In particular, adaptive agents may generate plausible outputs while remaining…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7683
+      "rank_score": 0.7593
     }
   ]
 }
