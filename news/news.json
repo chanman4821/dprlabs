@@ -1,11 +1,107 @@
 {
   "meta": {
-    "generated_at": "2026-07-14T12:19:26.484296+00:00",
+    "generated_at": "2026-07-14T14:59:12.172655+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "97c9eefb0831",
+      "headline": "Reflection inks $1B compute deal with Nebius",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/",
+      "published_at": "2026-07-14T14:37:48+00:00",
+      "summary": "Reflection AI has signed a $1 billion deal to access Nebius's compute. Reflection was founded in 2024 and is developing open source AI technology.",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7949
+    },
+    {
+      "id": "07270bd7745b",
+      "headline": "The real AI race may no longer be at the frontier",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/the-real-ai-race-may-no-longer-be-at-the-frontier-open-models-hugging-face/",
+      "published_at": "2026-07-14T14:24:53+00:00",
+      "summary": "Hugging Face CEO Clem Delangue says enterprises increasingly want open models, due to cost, accessibility, and ownership. Do frontier models still matter if most production AI ends up running on open models?",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7934
+    },
+    {
+      "id": "d03c89151d09",
+      "headline": "Spotify expands its AI push with a ChatGPT-like music assistant",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/",
+      "published_at": "2026-07-14T14:06:47+00:00",
+      "summary": "Spotify is rolling out a new AI-powered conversational feature that lets Premium subscribers chat with the app to discover music, podcasts, audiobooks, and more.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7912
+    },
+    {
+      "id": "8ad960bf1ba3",
+      "headline": "Sam Altman didn’t need another lawsuit",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/965294/openai-apple-trade-secrets-lawsuit-sam-altman-ipo",
+      "published_at": "2026-07-14T14:01:07+00:00",
+      "summary": "OpenAI has spent the better part of the year involved in lawsuit after lawsuit, including one from the world's richest man. But last Friday, the company was hit with one of the highest-profile legal actions yet - from Apple. OpenAI's…",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7905
+    },
+    {
+      "id": "a0f97bb99d39",
+      "headline": "Superhuman’s new auto-draft feature almost makes me like AI replies",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/superhumans-new-auto-draft-feature-almost-makes-me-like-ai-replies/",
+      "published_at": "2026-07-14T14:00:00+00:00",
+      "summary": "Superhuman’s latest AI email drafting feature is its most convincing yet, generating replies that often required little to no editing in our testing.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7904
+    },
+    {
+      "id": "2eaef63f0a76",
+      "headline": "The Download: Claude’s inner workings, and the future of world models",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/14/1140391/the-download-anthropic-claude-internal-thoughts-world-models/",
+      "published_at": "2026-07-14T12:10:00+00:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. What Anthropic’s latest AI discovery does—and doesn’t—show —James O’Donnell When Anthropic announced…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8725
+    },
     {
       "id": "cb9db543cbd4",
       "headline": "Google’s Demis Hassabis says it’s time for a global AI watchdog — led by the US",
@@ -20,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7932
+      "rank_score": 0.7745
     },
     {
       "id": "e74d29ba9720",
@@ -36,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7741
+      "rank_score": 0.7565
     },
     {
       "id": "dfaf7657e614",
@@ -52,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "91e1069db29a",
@@ -68,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "6a85e31e8e89",
@@ -84,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "c7262b97ec1c",
@@ -100,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "83da4ddb3341",
@@ -116,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "06dfeb1c57f8",
@@ -132,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "4270f9148c60",
@@ -148,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "cbd282d3c483",
@@ -164,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "d4d404d28e86",
@@ -180,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "7017b949a2d1",
@@ -196,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "a90d731bdc25",
@@ -212,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "2d8768529e22",
@@ -228,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "2024dd9482e4",
@@ -244,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "b64b9fb26db5",
@@ -260,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "bb15dbce56c4",
@@ -276,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     },
     {
       "id": "b1584fdd4ea8",
@@ -292,103 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7593
-    },
-    {
-      "id": "f6b7e667a4e6",
-      "headline": "Replicating Belief, Not Bits: Epistemic State Replication for Agentic Systems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09748",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09748v1 Announce Type: new Abstract: In distributed systems, the classical State Machine Replication (SMR) model assumes that correct replicas execute deterministic transitions to yield identical bitwise states. However, the…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7593
-    },
-    {
-      "id": "fb715a85b1a3",
-      "headline": "Task-Conditioned Synthetic Data Generation for Improving Machine Learning Performance in Agricultural Prediction Tasks",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09751",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09751v1 Announce Type: new Abstract: Machine Learning (ML) algorithms have been widely used to estimate agricultural variables across diverse contexts. However, because the quantity and quality of training data strongly…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7593
-    },
-    {
-      "id": "a24a9101c402",
-      "headline": "LegalFarePlan: A Label-Setting Framework for Fare-Transparent Urban Rail Route Planning under Non-Additive Fare Rules",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09755",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09755v1 Announce Type: new Abstract: Urban rail fare systems may be non-additive: the fare of a single paid journey from an origin to a destination can differ from the sum of fares over multiple legally separated journey legs.…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7593
-    },
-    {
-      "id": "d34ab34c32f0",
-      "headline": "BatteryLake: Agentic, Physics-Grounded Curation of Heterogeneous Battery Aging Data and Benchmarking",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09762",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09762v1 Announce Type: new Abstract: Public battery aging datasets are a critical asset for advanced health management, but their practical use is often limited by inconsistent formats, unclear schemas, and metadata scattered…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7593
-    },
-    {
-      "id": "2ce8b81cae62",
-      "headline": "How Much Does Correctness Cost? Budgeted Placement of Strong Correctors in a Weak Multi-Agent Swarm",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09765",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09765v1 Announce Type: new Abstract: A cheap swarm of unreliable agents can be steered to a correct consensus by a few strong, expensive \"oracle\" correctors. We ask how much one must spend, and where to place the oracles. We…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7593
-    },
-    {
-      "id": "8e6bc9f5f7b2",
-      "headline": "Norm Enforcement for AI Agents: Robustly Shaping Behavior in Multi-Agent Systems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09766",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09766v1 Announce Type: new Abstract: AI agents are increasingly deployed in shared environments where they pursue diverse goals and compete for rewards. This multi-agent competition can lead to behaviors that serve individual…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7593
+      "rank_score": 0.7434
     }
   ]
 }
