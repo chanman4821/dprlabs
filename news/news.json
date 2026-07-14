@@ -1,11 +1,75 @@
 {
   "meta": {
-    "generated_at": "2026-07-14T14:59:12.172655+00:00",
+    "generated_at": "2026-07-14T16:23:54.550563+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "5ddf162e15a9",
+      "headline": "Meta’s Adam Mosseri says AI token budgets could soon be capped per engineer",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/metas-adam-mosseri-says-ai-token-budgets-could-soon-be-capped-per-engineer/",
+      "published_at": "2026-07-14T16:22:15+00:00",
+      "summary": "Instagram head Adam Mosseri believes companies will eventually need to manage AI token spending the same way they manage payroll or other operating expenses, predicting that engineers could soon face limits on how much they spend using AI…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7973
+    },
+    {
+      "id": "e3be2bdde126",
+      "headline": "Google Images gets a Pinterest-like redesign focused on discovery",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/google-images-gets-a-pinterest-like-redesign-focused-on-discovery/",
+      "published_at": "2026-07-14T16:00:00+00:00",
+      "summary": "Now, when users navigate to Google Images, they'll see a \"For You\" gallery of images tailored to their interests and browsing history.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7946
+    },
+    {
+      "id": "a4b29ff806d7",
+      "headline": "New York State halts construction of all new data centers",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers/",
+      "published_at": "2026-07-14T15:17:59+00:00",
+      "summary": "New York has become the first state to temporarily halt approval of large data centers, as Gov. Kathy Hochul argues the AI-driven building boom shouldn’t come at the expense of higher electricity costs, water supplies, or local control.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7896
+    },
+    {
+      "id": "1ce55dc5e2a4",
+      "headline": "New York bans data center construction for a year, rattling AI industry",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/tech-policy/2026/07/new-york-is-the-first-state-to-impose-a-data-center-moratorium/",
+      "published_at": "2026-07-14T15:06:28+00:00",
+      "summary": "New York’s data center moratorium may become the blueprint for anti-AI movement.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7882
+    },
     {
       "id": "97c9eefb0831",
       "headline": "Reflection inks $1B compute deal with Nebius",
@@ -13,14 +77,14 @@
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/",
       "published_at": "2026-07-14T14:37:48+00:00",
-      "summary": "Reflection AI has signed a $1 billion deal to access Nebius's compute. Reflection was founded in 2024 and is developing open source AI technology.",
+      "summary": "Reflection AI has signed a $1 billion deal to access Nebius' compute. Reflection was founded in 2024 and is developing open source AI technology.",
       "tags": [
         "Open Source"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7949
+      "rank_score": 0.7848
     },
     {
       "id": "07270bd7745b",
@@ -36,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7934
+      "rank_score": 0.7833
     },
     {
       "id": "d03c89151d09",
@@ -52,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7912
+      "rank_score": 0.7812
     },
     {
       "id": "8ad960bf1ba3",
@@ -68,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7905
+      "rank_score": 0.7806
     },
     {
       "id": "a0f97bb99d39",
@@ -84,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7904
+      "rank_score": 0.7804
     },
     {
       "id": "2eaef63f0a76",
@@ -100,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8725
+      "rank_score": 0.863
     },
     {
       "id": "cb9db543cbd4",
@@ -116,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7745
+      "rank_score": 0.765
     },
     {
       "id": "e74d29ba9720",
@@ -132,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7565
+      "rank_score": 0.7475
     },
     {
       "id": "dfaf7657e614",
@@ -148,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     },
     {
       "id": "91e1069db29a",
@@ -164,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     },
     {
       "id": "6a85e31e8e89",
@@ -180,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     },
     {
       "id": "c7262b97ec1c",
@@ -196,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     },
     {
       "id": "83da4ddb3341",
@@ -212,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     },
     {
       "id": "06dfeb1c57f8",
@@ -228,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     },
     {
       "id": "4270f9148c60",
@@ -244,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     },
     {
       "id": "cbd282d3c483",
@@ -260,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     },
     {
       "id": "d4d404d28e86",
@@ -276,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     },
     {
       "id": "7017b949a2d1",
@@ -292,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     },
     {
       "id": "a90d731bdc25",
@@ -308,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     },
     {
       "id": "2d8768529e22",
@@ -324,71 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7434
-    },
-    {
-      "id": "2024dd9482e4",
-      "headline": "A Dynamic Scene Interaction Reasoning Framework for Scene-level Lane-Change Intention and Trajectory Prediction of Multiple Interacting Vehicles",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09740",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09740v1 Announce Type: new Abstract: Safe motion planning in advanced driver-assistance systems and autonomous vehicles requires an accurate understanding of how the surrounding traffic scene is likely to evolve. However, many…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7434
-    },
-    {
-      "id": "b64b9fb26db5",
-      "headline": "Scaffolding the Strategist: Architecture-Dependent Reasoning Interventions in Hotelling Spatial Markets",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09743",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09743v1 Announce Type: new Abstract: We investigate whether structured reasoning interventions improve the strategic economic reasoning of large language models, and whether their effects depend on model architecture. Using…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7434
-    },
-    {
-      "id": "bb15dbce56c4",
-      "headline": "A Theory of Least Autonomy in AI",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09744",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09744v1 Announce Type: new Abstract: Least privilege, the principle that an identity should hold only the permissions strictly required for its task, has been a foundational primitive of access control for decades. We argue that…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7434
-    },
-    {
-      "id": "b1584fdd4ea8",
-      "headline": "SupplyNetPy: An Open-Source Python Library for High-Fidelity Modeling and Simulation of Arbitrary Supply Chain and Inventory Networks",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.09745",
-      "published_at": "2026-07-14T04:00:00+00:00",
-      "summary": "arXiv:2607.09745v1 Announce Type: new Abstract: This paper introduces SupplyNetPy, an open-source, well-documented Python library for modeling and discrete-event simulation of supply chain networks with arbitrary multi-echelon structures.…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7434
+      "rank_score": 0.7353
     }
   ]
 }
