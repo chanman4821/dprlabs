@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-15T21:06:51.261136+00:00",
+    "generated_at": "2026-07-15T23:02:53.750834+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "36b2bbf599ed",
+      "headline": "xAI sues a man for using Grok to generate CSAM ‘deepfakes’",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
+      "published_at": "2026-07-15T21:33:20+00:00",
+      "summary": "The Elon Musk-owned xAI is suing a South Carolina man who allegedly used the company's Grok AI chatbot to generate child sexual abuse material (CSAM). In a lawsuit reported earlier by Reuters, xAI claims Terry Wayne Harwood \"knowingly and…",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7868
+    },
     {
       "id": "aa32e1edecf7",
       "headline": "AI slop movies are the new direct-to-video cash grabs",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7895
+      "rank_score": 0.776
     },
     {
       "id": "99a19263a8c1",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7873
+      "rank_score": 0.7739
     },
     {
       "id": "4dc636eadcdf",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8362
+      "rank_score": 0.8232
     },
     {
       "id": "976a1a3eff5f",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.776
+      "rank_score": 0.763
     },
     {
       "id": "f8bec47bee6c",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.7982
+      "rank_score": 0.7853
     },
     {
       "id": "fe02d8addd90",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8648
+      "rank_score": 0.8521
     },
     {
       "id": "264ddc681c98",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7688
+      "rank_score": 0.7561
     },
     {
       "id": "4171beed3f2f",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7688
+      "rank_score": 0.7561
     },
     {
       "id": "8ed791a2a8b1",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7644
+      "rank_score": 0.7518
     },
     {
       "id": "18de27eea197",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7622
+      "rank_score": 0.7498
     },
     {
       "id": "84777b05d9b2",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.7861
+      "rank_score": 0.7737
     },
     {
       "id": "fe6ab2efc212",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8188
+      "rank_score": 0.8065
     },
     {
       "id": "a9eaf0c587df",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7556
+      "rank_score": 0.7435
     },
     {
       "id": "83d5a15310e3",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7442
+      "rank_score": 0.7325
     },
     {
       "id": "b4c19111324a",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7431
+      "rank_score": 0.7314
     },
     {
       "id": "110aa69c0257",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7431
+      "rank_score": 0.7314
     },
     {
       "id": "1e97faa490fa",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.832
+      "rank_score": 0.8205
     },
     {
       "id": "89bcfe85df02",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.737
+      "rank_score": 0.7255
     },
     {
       "id": "a7a2286fcda2",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.737
+      "rank_score": 0.7255
     },
     {
       "id": "ee230258f27f",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8202
+      "rank_score": 0.8092
     },
     {
       "id": "3c714e96b7c3",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.77
+      "rank_score": 0.7604
     },
     {
       "id": "a5c14178dab3",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.71
+      "rank_score": 0.7004
     },
     {
       "id": "aa5c3a854e4c",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.71
-    },
-    {
-      "id": "ac3ce273b680",
-      "headline": "Ontology-Amplified Distillation and Contextuality Auditing for Sovereign Enterprise Language Models: A Combined Proof-of-Mechanism and Negative-Results Method Study",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.11948",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.11948v1 Announce Type: new Abstract: Regulated financial institutions operating under data-residency rules need tenant-owned language models that can run inside the institution's perimeter. This paper combines two related FAOS…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.71
+      "rank_score": 0.7004
     }
   ]
 }
