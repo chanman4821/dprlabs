@@ -1,11 +1,75 @@
 {
   "meta": {
-    "generated_at": "2026-07-15T17:23:36.781207+00:00",
+    "generated_at": "2026-07-15T19:21:27.957558+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "301768e4ebfb",
+      "headline": "SpaceX slips below its $135 IPO price ahead of Starship launch",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/spacex-slips-below-its-135-ipo-price-ahead-of-starship-launch/",
+      "published_at": "2026-07-15T18:06:05+00:00",
+      "summary": "The stock has steadily fallen from the euphoric post-IPO high, showing that markets may be sobering up to the promises CEO Elon Musk made before and after SpaceX went public.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8485
+    },
+    {
+      "id": "976a1a3eff5f",
+      "headline": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+      "published_at": "2026-07-15T18:04:06+00:00",
+      "summary": "It's the company's first public proof point after a year and a half spent building AI infrastructure largely out of public view.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7882
+    },
+    {
+      "id": "f8bec47bee6c",
+      "headline": "Suno snatched millions of songs from YouTube, Genius, and Deezer",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack",
+      "published_at": "2026-07-15T17:48:01+00:00",
+      "summary": "Suno data obtained in a hacking incident has exposed that the AI music generator was trained by scraping millions of songs and lyrics from online audio platforms, including YouTube Music, Deezer, and Genius, 404 Media reports. Given that…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 2,
+      "credibility": 0.85,
+      "rank_score": 0.8103
+    },
+    {
+      "id": "fe02d8addd90",
+      "headline": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
+      "published_at": "2026-07-15T17:09:37+00:00",
+      "summary": "OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to help its other models boost their defenses against cyberattacks. Last week the company released the latest version of its flagship LLM, GPT-5.6.…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8768
+    },
     {
       "id": "264ddc681c98",
       "headline": "Hack suggests AI music generator Suno scraped YouTube for training data",
@@ -20,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7947
+      "rank_score": 0.7808
     },
     {
       "id": "4171beed3f2f",
@@ -36,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7946
+      "rank_score": 0.7807
     },
     {
       "id": "8ed791a2a8b1",
@@ -52,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7899
+      "rank_score": 0.7762
     },
     {
       "id": "18de27eea197",
@@ -68,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7876
+      "rank_score": 0.7739
     },
     {
       "id": "84777b05d9b2",
@@ -84,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.8115
+      "rank_score": 0.7979
     },
     {
       "id": "fe6ab2efc212",
@@ -93,14 +157,30 @@
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
       "published_at": "2026-07-15T15:29:33+00:00",
-      "summary": "Apple Intelligence is headed to China after regulators approved Apple’s AI services through a partnership with Alibaba. The long-rumored deal will bring Alibaba’s Qwen AI models to Apple’s operating systems, marking a major expansion of…",
+      "summary": "The deal, which was rumored to be in the works last year, marks an important step for Apple's AI ambitions in a key market.",
       "tags": [
         "Business"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8439
+      "rank_score": 0.8304
+    },
+    {
+      "id": "a9eaf0c587df",
+      "headline": "Inside Ode with Anthropic, the startup betting AI services are the future of enterprise",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/video/inside-ode-with-anthropic-the-startup-betting-ai-services-are-the-future-of-enterprise/",
+      "published_at": "2026-07-15T15:00:00+00:00",
+      "summary": "Can a handful of engineers really do the work of an army of consultants? That’s the bet behind Ode with Anthropic — the joint venture dedicated to embedding forward-deployed engineers in enterprise firms, backed by Anthropic, Blackstone,…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7671
     },
     {
       "id": "83d5a15310e3",
@@ -116,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7681
+      "rank_score": 0.7552
     },
     {
       "id": "b4c19111324a",
@@ -132,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7669
+      "rank_score": 0.7541
     },
     {
       "id": "110aa69c0257",
@@ -148,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7669
+      "rank_score": 0.7541
     },
     {
       "id": "1e97faa490fa",
@@ -164,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8553
+      "rank_score": 0.8428
     },
     {
       "id": "89bcfe85df02",
@@ -180,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7603
+      "rank_score": 0.7478
     },
     {
       "id": "a7a2286fcda2",
@@ -196,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7603
+      "rank_score": 0.7478
     },
     {
       "id": "ee230258f27f",
@@ -212,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8425
+      "rank_score": 0.8305
     },
     {
       "id": "3c714e96b7c3",
@@ -228,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7898
+      "rank_score": 0.7792
     },
     {
       "id": "a5c14178dab3",
@@ -244,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7298
+      "rank_score": 0.7192
     },
     {
       "id": "aa5c3a854e4c",
@@ -260,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7298
+      "rank_score": 0.7192
     },
     {
       "id": "ac3ce273b680",
@@ -276,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7298
+      "rank_score": 0.7192
     },
     {
       "id": "7d2e496f5634",
@@ -292,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7298
+      "rank_score": 0.7192
     },
     {
       "id": "bed298769c9c",
@@ -308,87 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7298
-    },
-    {
-      "id": "cb471305d1cc",
-      "headline": "Optimization Is Not All You Need",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.11977",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.11977v1 Announce Type: new Abstract: In 2019, OpenAI released two million GPT-2 outputs-ungrammatical, half broken-to aid the detection of machine-generated text. The alignment that produced their more fluent successors is…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7298
-    },
-    {
-      "id": "2f1cb8fce6a3",
-      "headline": "LP Mining with LP2Graph: A Use Case for Railway Rescheduling",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.11980",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.11980v1 Announce Type: new Abstract: Like many optimization-driven domains, railway rescheduling relies on Mixed-Integer Linear Programming (MILP), yet the field's modeling knowledge is scattered across hundreds of papers in…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7298
-    },
-    {
-      "id": "e479edf0eca9",
-      "headline": "Designing Agent-Ready Websites for AI Web Agents: A Framework for Machine Readability, Actionability, and Decision Reliability",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12056",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12056v1 Announce Type: new Abstract: Online shopping is increasingly shifting toward a model in which AI agents independently search for products, compare options, evaluate constraints, and carry out parts of the purchasing…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7298
-    },
-    {
-      "id": "0061f705c14a",
-      "headline": "Graph Feedback Controls Consensus and Clique Formation in Open-Weight Language-Model Populations",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12077",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12077v1 Announce Type: new Abstract: Multi-agent language-model systems increasingly route local interactions, yet the runtime interaction graph is often treated as an implementation detail. We study convention formation in…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7298
-    },
-    {
-      "id": "195590b25a9a",
-      "headline": "Operationalising Multi-Dimensional Evaluation for Conversational Agents: A Scalable, Governed Pipeline with Selective Re-evaluation and Model Benchmarking",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12085",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12085v1 Announce Type: new Abstract: Evaluating retail conversational agents requires methods beyond lexical-overlap metrics to assess intent alignment, factuality, helpfulness, clarity, tone, and overall response quality.…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7298
+      "rank_score": 0.7192
     }
   ]
 }
