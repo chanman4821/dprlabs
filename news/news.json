@@ -1,14 +1,30 @@
 {
   "meta": {
-    "generated_at": "2026-07-15T13:56:17.931232+00:00",
+    "generated_at": "2026-07-15T15:40:06.573975+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
+      "id": "fe6ab2efc212",
+      "headline": "Apple Intelligence approved for launch in China with Alibaba’s Qwen AI",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
+      "published_at": "2026-07-15T15:29:33+00:00",
+      "summary": "Apple Intelligence is headed to China after regulators approved Apple’s AI services through a partnership with Alibaba. The long-rumored deal will bring Alibaba’s Qwen AI models to Apple’s operating systems, marking a major expansion of…",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8562
+    },
+    {
       "id": "83d5a15310e3",
-      "headline": "Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not models",
+      "headline": "Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models",
       "source_name": "TechCrunch",
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.792
+      "rank_score": 0.7798
     },
     {
       "id": "b4c19111324a",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7907
+      "rank_score": 0.7786
     },
     {
       "id": "110aa69c0257",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7907
+      "rank_score": 0.7786
     },
     {
       "id": "89bcfe85df02",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7837
+      "rank_score": 0.7718
     },
     {
       "id": "a7a2286fcda2",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7837
+      "rank_score": 0.7718
     },
     {
       "id": "3c714e96b7c3",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8095
+      "rank_score": 0.7995
     },
     {
       "id": "a5c14178dab3",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "aa5c3a854e4c",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "ac3ce273b680",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "7d2e496f5634",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "bed298769c9c",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "cb471305d1cc",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "2f1cb8fce6a3",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "e479edf0eca9",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "0061f705c14a",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "195590b25a9a",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "a0c9001ca17c",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "4030a207c54b",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "994b41bafd9b",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "be0156598068",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "1b46ebf50c68",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "7144184f3046",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     },
     {
       "id": "6410747dbf4d",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7495
-    },
-    {
-      "id": "a5806770395c",
-      "headline": "On-Device Deep Research at 4B: Exposure Bounds Faithfulness, Retrieval Bounds Coverage",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12257",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12257v1 Announce Type: new Abstract: On-device research agents search a corpus, read sources, and write a cited brief on a personal laptop. Whether their citations are faithful, and at what cost, is unmeasured for a deployable…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7495
+      "rank_score": 0.7395
     }
   ]
 }
