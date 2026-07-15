@@ -1,26 +1,42 @@
 {
   "meta": {
-    "generated_at": "2026-07-14T23:57:42.285161+00:00",
+    "generated_at": "2026-07-15T03:22:12.114249+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
+      "id": "26ddb907f98c",
+      "headline": "OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
+      "published_at": "2026-07-15T00:27:04+00:00",
+      "summary": "The funding discussions point to investor interest in applying AI to make breakthroughs in life sciences.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8369
+    },
+    {
       "id": "4b61265926ed",
-      "headline": "Lorde says AI glasses are “not sexy”",
+      "headline": "Lorde says AI glasses are ‘not sexy’",
       "source_name": "TechCrunch",
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/14/lorde-says-ai-glasses-are-not-sexy/",
       "published_at": "2026-07-14T23:10:02+00:00",
-      "summary": "\"Increasingly in our world, it gets harder and harder to know what is real,\" Lorde said on stage.",
+      "summary": "\"Increasingly in our world, it gets harder and harder to know what is real,\" Lorde said onstage.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7918
+      "rank_score": 0.7682
     },
     {
       "id": "7218bca86f1b",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7861
+      "rank_score": 0.7629
     },
     {
       "id": "2175a7f109e2",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7844
+      "rank_score": 0.7613
     },
     {
       "id": "3e68f8ee554f",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7823
+      "rank_score": 0.7594
     },
     {
       "id": "dc52ec30e5cc",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7796
+      "rank_score": 0.7568
     },
     {
       "id": "343301f708c3",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7704
+      "rank_score": 0.7483
     },
     {
       "id": "f6d4f1f66693",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7678
+      "rank_score": 0.7459
     },
     {
       "id": "4ae01c6119d5",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7677
+      "rank_score": 0.7458
     },
     {
       "id": "2d8ed8e7da75",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7675
+      "rank_score": 0.7456
     },
     {
       "id": "2cc0275fccee",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7659
+      "rank_score": 0.7441
     },
     {
       "id": "b98c65f859f0",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7602
+      "rank_score": 0.7388
     },
     {
       "id": "e7820319ba06",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7566
+      "rank_score": 0.7354
     },
     {
       "id": "986155e62b49",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7551
+      "rank_score": 0.734
     },
     {
       "id": "a9b65061bfa7",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7522
+      "rank_score": 0.7313
     },
     {
       "id": "23767f964a63",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7469
+      "rank_score": 0.7264
     },
     {
       "id": "5ddf162e15a9",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7463
+      "rank_score": 0.7258
     },
     {
       "id": "ec4306596607",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.744
+      "rank_score": 0.7237
     },
     {
       "id": "e3be2bdde126",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.744
+      "rank_score": 0.7237
     },
     {
       "id": "274fe08b7f27",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7427
+      "rank_score": 0.7225
     },
     {
       "id": "a4b29ff806d7",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7397
+      "rank_score": 0.7197
     },
     {
       "id": "1ce55dc5e2a4",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7385
+      "rank_score": 0.7186
     },
     {
       "id": "97c9eefb0831",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7357
+      "rank_score": 0.7159
     },
     {
       "id": "07270bd7745b",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7344
-    },
-    {
-      "id": "d03c89151d09",
-      "headline": "Spotify expands its AI push with a ChatGPT-like music assistant",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/",
-      "published_at": "2026-07-14T14:06:47+00:00",
-      "summary": "Spotify is rolling out a new AI-powered conversational feature that lets Premium subscribers chat with the app to discover music, podcasts, audiobooks, and more.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7326
+      "rank_score": 0.7147
     }
   ]
 }
