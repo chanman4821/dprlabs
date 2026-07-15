@@ -1,394 +1,394 @@
 {
   "meta": {
-    "generated_at": "2026-07-15T03:22:12.114249+00:00",
+    "generated_at": "2026-07-15T06:21:28.944591+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
-      "id": "26ddb907f98c",
-      "headline": "OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
-      "published_at": "2026-07-15T00:27:04+00:00",
-      "summary": "The funding discussions point to investor interest in applying AI to make breakthroughs in life sciences.",
+      "id": "3c714e96b7c3",
+      "headline": "Isolation as a First-Class Principle for LLM-Agent System Safety: Concepts, Taxonomy, Challenges and Future Directions",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12406",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12406v1 Announce Type: new Abstract: The capability of LLM agents to function as the ``brain'' of a system fundamentally expands the scope of analysis beyond a standalone model. Consequently, safety is no longer only about…",
       "tags": [
-        "Business"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.8369
+      "credibility": 0.9,
+      "rank_score": 0.8582
     },
     {
-      "id": "4b61265926ed",
-      "headline": "Lorde says AI glasses are ‘not sexy’",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/lorde-says-ai-glasses-are-not-sexy/",
-      "published_at": "2026-07-14T23:10:02+00:00",
-      "summary": "\"Increasingly in our world, it gets harder and harder to know what is real,\" Lorde said onstage.",
+      "id": "a5c14178dab3",
+      "headline": "Optimal Adaptive Market Making: A Theoretical Framework for High-Yield Liquidity Provision in Perpetual Futures Markets",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11888",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.11888v1 Announce Type: new Abstract: We develop a rigorous theoretical framework for optimal market making in perpetual futures markets with zero maker fees. We model the market maker's problem as a stochastic optimal control…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7682
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "7218bca86f1b",
-      "headline": "OpenAI’s first hardware device is reportedly a screenless speaker that can move",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/",
-      "published_at": "2026-07-14T22:22:24+00:00",
-      "summary": "The device is weirdly described as involving \"mechanical elements that can move on their own\" and the Bloomberg report includes the detail that the device is designed to \"feel like a companion and become a physical manifestation of…",
+      "id": "aa5c3a854e4c",
+      "headline": "In-Context Reinforcement Learning under Non-Stationarity: A Survey",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11906",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.11906v1 Announce Type: new Abstract: The development of decision-pretrained transformers, algorithm distillation, long-context meta-RL, and retrieval-augmented agents has renewed interest in in-context reinforcement learning…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7629
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "2175a7f109e2",
-      "headline": "OpenAI pushes back on Apple trade secret lawsuit",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit/",
-      "published_at": "2026-07-14T22:07:42+00:00",
-      "summary": "OpenAI has issued another statement on the lawsuit, this time suggesting it lacks merit.",
+      "id": "ac3ce273b680",
+      "headline": "Ontology-Amplified Distillation and Contextuality Auditing for Sovereign Enterprise Language Models: A Combined Proof-of-Mechanism and Negative-Results Method Study",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11948",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.11948v1 Announce Type: new Abstract: Regulated financial institutions operating under data-residency rules need tenant-owned language models that can run inside the institution's perimeter. This paper combines two related FAOS…",
       "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7613
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "3e68f8ee554f",
-      "headline": "OpenAI’s new flagship model deletes files on its own, people keep warning",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/",
-      "published_at": "2026-07-14T21:50:11+00:00",
-      "summary": "A number of social media posts claim that GPT-5.6 Sol deleted files and data without warning. OpenAI had basically disclosed the problem in June.",
+      "id": "7d2e496f5634",
+      "headline": "GRID: Grammar-Railed Decoding for Enterprise SQL Generation",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11951",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.11951v1 Announce Type: new Abstract: Large language models can write SQL, but enterprise deployment demands more than plausible text: outputs must be syntactically valid, must respect per-role and per-schema policy, must carry…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7594
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "dc52ec30e5cc",
-      "headline": "OpenAI may announce a ChatGPT smart speaker this year",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/965670/openai-chatgpt-ai-smart-speaker-hardware-device",
-      "published_at": "2026-07-14T21:26:32+00:00",
-      "summary": "OpenAI's first device is set to be a smart speaker that lets you talk with ChatGPT, according to a report from Bloomberg. The device apparently won't have a screen, but will use a camera and additional sensors to \"understand\" your…",
+      "id": "bed298769c9c",
+      "headline": "Calibration-First Reward-Component Auditing for Reinforcement Learning Control in Smart Greenhouses",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11959",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.11959v1 Announce Type: new Abstract: Greenhouse reinforcement learning can test climate-control ideas at a speed and scale that is difficult to achieve with crop experiments alone. For smart-greenhouse control, however, a single…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7568
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "343301f708c3",
-      "headline": "Lawsuit claims Meta's layoff decisions were made by AI, not humans",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/tech-policy/2026/07/lawsuit-claims-metas-layoff-decisions-were-made-by-ai-not-humans/",
-      "published_at": "2026-07-14T20:05:53+00:00",
-      "summary": "Meta denies using AI to terminate workers with disabilities and medical problems.",
+      "id": "cb471305d1cc",
+      "headline": "Optimization Is Not All You Need",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11977",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.11977v1 Announce Type: new Abstract: In 2019, OpenAI released two million GPT-2 outputs-ungrammatical, half broken-to aid the detection of machine-generated text. The alignment that produced their more fluent successors is…",
       "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7483
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "f6d4f1f66693",
-      "headline": "Apple opens its new Siri AI to everyone with the iOS 27 public beta",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta/",
-      "published_at": "2026-07-14T19:42:27+00:00",
-      "summary": "If you’ve been waiting to try Apple’s revamped Siri without installing a developer beta, you now can. The company on Tuesday released the iOS 27 public beta, giving iPhone owners early access to its AI-powered assistant and other new…",
+      "id": "2f1cb8fce6a3",
+      "headline": "LP Mining with LP2Graph: A Use Case for Railway Rescheduling",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.11980",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.11980v1 Announce Type: new Abstract: Like many optimization-driven domains, railway rescheduling relies on Mixed-Integer Linear Programming (MILP), yet the field's modeling knowledge is scattered across hundreds of papers in…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7459
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "4ae01c6119d5",
-      "headline": "Anthropic’s newest ad is creeping people out",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out/",
-      "published_at": "2026-07-14T19:41:27+00:00",
-      "summary": "Anthropic has consistently attempted to depict itself as the ethical foil to other AI companies. This latest marketing stunt — which leans into criticism of AI as a way to make Anthropic seem aware of the responsibility it carries — would…",
+      "id": "e479edf0eca9",
+      "headline": "Designing Agent-Ready Websites for AI Web Agents: A Framework for Machine Readability, Actionability, and Decision Reliability",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12056",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12056v1 Announce Type: new Abstract: Online shopping is increasingly shifting toward a model in which AI agents independently search for products, compare options, evaluate constraints, and carry out parts of the purchasing…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7458
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "2d8ed8e7da75",
-      "headline": "The founder of Hinge raised $18M to build a new AI dating service, Overtone",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
-      "published_at": "2026-07-14T19:39:39+00:00",
-      "summary": "Overtone describes itself as \"a voice- and audio-forward service, enabled by AI, that provides highly curated introductions.\"",
+      "id": "0061f705c14a",
+      "headline": "Graph Feedback Controls Consensus and Clique Formation in Open-Weight Language-Model Populations",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12077",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12077v1 Announce Type: new Abstract: Multi-agent language-model systems increasingly route local interactions, yet the runtime interaction graph is often treated as an implementation detail. We study convention formation in…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7456
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "2cc0275fccee",
-      "headline": "SpaceXAI’s Grok programming tool was uploading its users’ entire codebase to cloud storage",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload",
-      "published_at": "2026-07-14T19:25:00+00:00",
-      "summary": "SpaceXAI's Grok Build AI coding tool was spotted uploading users' entire codebases to Google Cloud before it was reported, and the company turned it off. The Register reports that Cereblab published findings on Monday showing how the Grok…",
+      "id": "195590b25a9a",
+      "headline": "Operationalising Multi-Dimensional Evaluation for Conversational Agents: A Scalable, Governed Pipeline with Selective Re-evaluation and Model Benchmarking",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12085",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12085v1 Announce Type: new Abstract: Evaluating retail conversational agents requires methods beyond lexical-overlap metrics to assess intent alignment, factuality, helpfulness, clarity, tone, and overall response quality.…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7441
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "b98c65f859f0",
-      "headline": "Google faces another AI training lawsuit from major publishers",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/",
-      "published_at": "2026-07-14T18:33:31+00:00",
-      "summary": "Hachette, Cengage, Elsevier, and other publishers allege that Google trained its AI on copyrighted works without the necessary permissions.",
+      "id": "a0c9001ca17c",
+      "headline": "Representing and Generating Levels Over Time through Playtrace Reconstructive Partitioning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12097",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12097v1 Announce Type: new Abstract: Video games are a dynamic medium experienced over time. While there are many Procedural Content Generation (PCG) approaches for generating video game levels, they often use representations…",
       "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7388
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "e7820319ba06",
-      "headline": "US military sent explosive drone boats into combat for the first time",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/ai/2026/07/us-military-sent-explosive-drone-boats-into-combat-for-the-first-time/",
-      "published_at": "2026-07-14T18:00:01+00:00",
-      "summary": "US military’s drone boats struck an Iranian naval port as war heats up again.",
+      "id": "4030a207c54b",
+      "headline": "Connected by Construction: Learning Tractable Near-Tour Marginals for Traveling Salesman Problems",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12127",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12127v1 Announce Type: new Abstract: Learning-based methods for the traveling salesman problem (TSP) are often evaluated through the tours produced after decoding or search, but the learned object itself frequently lives in a…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7354
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "986155e62b49",
-      "headline": "DeepMind CEO calls for an independent standards body to regulate frontier AI",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/",
-      "published_at": "2026-07-14T17:45:55+00:00",
-      "summary": "DeepMind CEO Demis Hassabis is proposing an AI \"standards body\" modeled after FINRA, to test frontier models and develop best practices for their release.",
+      "id": "994b41bafd9b",
+      "headline": "The Emerging Paradigm of Geospatial Foundation Models: From Pre-Training to Agentic Reasoning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12177",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12177v1 Announce Type: new Abstract: The analysis of satellite and aerial imagery has entered a new era with the advent of foundation models. This paper describes the concept of Geospatial Foundation Models (GeoFMs), which are…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.734
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "a9b65061bfa7",
-      "headline": "Meta accused of using biased AI targeting for mass layoffs",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs",
-      "published_at": "2026-07-14T17:18:11+00:00",
-      "summary": "A group of 26 former Meta employees is suing the company over claims that it used AI tools to unfairly target workers on leave with layoffs, as reported earlier by Reuters. In the lawsuit, the employees allege Meta determined which workers…",
+      "id": "be0156598068",
+      "headline": "Cost-Governed RAG: Unified Per-Tenant Cost Attribution Across Retrieval and Generation in Multi-Tenant LLM Systems",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12188",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12188v1 Announce Type: new Abstract: Enterprise Retrieval-Augmented Generation (RAG) deployments face a critical governance gap: while LLM generation cost is metered per token, the retrieval layer - vector memory, similarity…",
       "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7313
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "23767f964a63",
-      "headline": "Google revamps image search for its 25th anniversary with more images and more AI",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/google/2026/07/google-revamps-image-search-for-its-25th-anniversary-with-more-images-and-more-ai/",
-      "published_at": "2026-07-14T16:28:14+00:00",
-      "summary": "The new Google image search will use your \"unique interests\" to create an always-updated gallery.",
+      "id": "1b46ebf50c68",
+      "headline": "A Threshold Exceedance Framework for CBRN Uplift Evaluation in Frontier Language Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12200",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12200v1 Announce Type: new Abstract: As frontier language models advance, policymakers and model developers need methods for assessing whether model access materially increases a non-expert actor's ability to plan…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7264
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "5ddf162e15a9",
-      "headline": "Meta’s Adam Mosseri says AI token budgets could soon be capped per engineer",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/metas-adam-mosseri-says-ai-token-budgets-could-soon-be-capped-per-engineer/",
-      "published_at": "2026-07-14T16:22:15+00:00",
-      "summary": "Instagram head Adam Mosseri believes companies will eventually need to manage AI token spending the same way they manage payroll or other operating expenses, predicting that engineers could soon face limits on how much they spend using AI…",
+      "id": "7144184f3046",
+      "headline": "Good Benchmarks",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12217",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12217v1 Announce Type: new Abstract: Good tasks are correct, solvable, verifiable, well-specified, and hard for interesting reasons. The best tasks describe a real problem an experienced practitioner would recognize, in language…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7258
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "ec4306596607",
-      "headline": "The Google Images homepage will recommend photos even before you search",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/965138/google-images-homepage-ai-overviews-search-nano-banana",
-      "published_at": "2026-07-14T16:00:00+00:00",
-      "summary": "Google is announcing a big change to the Google Images homepage in honor of the platform's 25th anniversary this week. Instead of a mostly blank page with a search bar, the homepage will soon show you a bunch of images that it thinks you…",
+      "id": "6410747dbf4d",
+      "headline": "Rethinking the Evaluation of Harness Evolution for Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12227",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12227v1 Announce Type: new Abstract: We revisit the evaluation of automatic harness evolution for LLM agents. Existing harness evolution methods use unit test cases to search for harness configurations and then report final…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7237
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "e3be2bdde126",
-      "headline": "Google Images gets a Pinterest-like redesign focused on discovery",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/google-images-gets-a-pinterest-like-redesign-focused-on-discovery/",
-      "published_at": "2026-07-14T16:00:00+00:00",
-      "summary": "Now, when users navigate to Google Images, they'll see a \"For You\" gallery of images tailored to their interests and browsing history.",
+      "id": "a5806770395c",
+      "headline": "On-Device Deep Research at 4B: Exposure Bounds Faithfulness, Retrieval Bounds Coverage",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12257",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12257v1 Announce Type: new Abstract: On-device research agents search a corpus, read sources, and write a cited brief on a personal laptop. Whether their citations are faithful, and at what cost, is unmeasured for a deployable…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7237
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "274fe08b7f27",
-      "headline": "Spotify is now an AI chatbot, too",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/entertainment/965358/spotify-ai-chatbot-interface-music-audiobooks-podcasts",
-      "published_at": "2026-07-14T15:47:36+00:00",
-      "summary": "Spotify is experimenting with a new AI feature that allows Premium subscribers to play and explore music, audiobooks, and podcasts by having conversations with a chatbot. The \"Talk to Spotify\" feature appears across the Home and Now…",
+      "id": "22c95c70b1dd",
+      "headline": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12338",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12338v1 Announce Type: new Abstract: Agent benchmarks often compare two agents after all tasks have run, but costly evaluations make partial runs tempting. A task fraction alone does not show whether a partial run supports the…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7225
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "a4b29ff806d7",
-      "headline": "New York State halts construction of all new data centers",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers/",
-      "published_at": "2026-07-14T15:17:59+00:00",
-      "summary": "New York has become the first state to temporarily halt approval of large data centers, as Gov. Kathy Hochul argues the AI-driven building boom shouldn’t come at the expense of higher electricity costs, water supplies, or local control.",
+      "id": "27dbef1f042c",
+      "headline": "PM-Bench: Evaluating Prospective Memory in LLM Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12385",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12385v1 Announce Type: new Abstract: A significant challenge in agentic AI is prospective memory: the ability to execute an intention at a specific future cue or state while other activities are ongoing. We introduce PM-Bench, a…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7197
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "1ce55dc5e2a4",
-      "headline": "New York bans data center construction for a year, rattling AI industry",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/tech-policy/2026/07/new-york-is-the-first-state-to-impose-a-data-center-moratorium/",
-      "published_at": "2026-07-14T15:06:28+00:00",
-      "summary": "New York’s data center moratorium may become the blueprint for anti-AI movement.",
+      "id": "13d378a774a4",
+      "headline": "Critic Experience Bank: Self-Evolving Step-Level Confidence Estimation for LLM Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12397",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12397v1 Announce Type: new Abstract: LLM agents act in external environments where each action changes the state that later decisions condition on, and where a single wrong step can waste interaction budget or trigger…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7186
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "97c9eefb0831",
-      "headline": "Reflection inks $1B compute deal with Nebius",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/",
-      "published_at": "2026-07-14T14:37:48+00:00",
-      "summary": "Reflection AI has signed a $1 billion deal to access Nebius' compute. Reflection was founded in 2024 and is developing open source AI technology.",
+      "id": "e2b79b1e3800",
+      "headline": "Accepted Prefixes Are Not All You Need: A Negative Result on PEFT-Based Block-Diffusion Drafting",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12422",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12422v1 Announce Type: new Abstract: Speculative decoding accelerates autoregressive language model inference by using a cheap drafter to propose multiple future tokens and a target model to verify them. A common design goal is…",
       "tags": [
-        "Open Source"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7159
+      "credibility": 0.9,
+      "rank_score": 0.7982
     },
     {
-      "id": "07270bd7745b",
-      "headline": "The real AI race may no longer be at the frontier",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/14/the-real-ai-race-may-no-longer-be-at-the-frontier-open-models-hugging-face/",
-      "published_at": "2026-07-14T14:24:53+00:00",
-      "summary": "Hugging Face CEO Clem Delangue says enterprises increasingly want open models, due to cost, accessibility, and ownership. Do frontier models still matter if most production AI ends up running on open models?",
+      "id": "3c895c70d789",
+      "headline": "EVOQUANT: Self-Evolving Verifier-Guided Strategy Optimization for Robust Quantitative Trading",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.12455",
+      "published_at": "2026-07-15T04:00:00+00:00",
+      "summary": "arXiv:2607.12455v1 Announce Type: new Abstract: Quantitative strategy optimization remains largely manual, requiring domain experts to identify weak signals, tune risk-control rules, and repeatedly validate iterative revisions. Large…",
       "tags": [
-        "Open Source"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7147
+      "credibility": 0.9,
+      "rank_score": 0.7982
     }
   ]
 }
