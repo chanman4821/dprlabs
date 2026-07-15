@@ -1,11 +1,91 @@
 {
   "meta": {
-    "generated_at": "2026-07-15T06:21:28.944591+00:00",
+    "generated_at": "2026-07-15T13:56:17.931232+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "83d5a15310e3",
+      "headline": "Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not models",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
+      "published_at": "2026-07-15T13:10:47+00:00",
+      "summary": "Anthropic-backed Ode launches as AI labs bet that embedding forward-deployed engineers inside enterprises is the key to accelerating enterprise AI adoption.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.792
+    },
+    {
+      "id": "b4c19111324a",
+      "headline": "Reelful’s AI turns your camera roll into short-form videos for social media",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/reelfuls-ai-turns-your-camera-roll-into-short-form-videos-for-social-media/",
+      "published_at": "2026-07-15T13:00:00+00:00",
+      "summary": "The app is designed for people who want to create social content, but find traditional video editing tools too complex or time-consuming.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7907
+    },
+    {
+      "id": "110aa69c0257",
+      "headline": "Rime picks up $24M Series A to help enterprises field customer calls",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls/",
+      "published_at": "2026-07-15T13:00:00+00:00",
+      "summary": "Rime is handling over 100 million calls each month across multiple companies.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7907
+    },
+    {
+      "id": "89bcfe85df02",
+      "headline": "Indian AI coding startup Emergent becomes a unicorn with $130M Series C",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
+      "published_at": "2026-07-15T12:00:00+00:00",
+      "summary": "The startup has reached a $120 million annualized revenue run rate and more than 200,000 paying customers.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7837
+    },
+    {
+      "id": "a7a2286fcda2",
+      "headline": "Vint Cerf is working on a plan to unleash AI agents on the open internet",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet/",
+      "published_at": "2026-07-15T12:00:00+00:00",
+      "summary": "The guy behind TCP/IP is working on a standard for identifying AI agents in the wild.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7837
+    },
     {
       "id": "3c714e96b7c3",
       "headline": "Isolation as a First-Class Principle for LLM-Agent System Safety: Concepts, Taxonomy, Challenges and Future Directions",
@@ -20,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8582
+      "rank_score": 0.8095
     },
     {
       "id": "a5c14178dab3",
@@ -36,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "aa5c3a854e4c",
@@ -52,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "ac3ce273b680",
@@ -68,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "7d2e496f5634",
@@ -84,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "bed298769c9c",
@@ -100,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "cb471305d1cc",
@@ -116,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "2f1cb8fce6a3",
@@ -132,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "e479edf0eca9",
@@ -148,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "0061f705c14a",
@@ -164,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "195590b25a9a",
@@ -180,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "a0c9001ca17c",
@@ -196,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "4030a207c54b",
@@ -212,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "994b41bafd9b",
@@ -228,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "be0156598068",
@@ -244,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "1b46ebf50c68",
@@ -260,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "7144184f3046",
@@ -276,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "6410747dbf4d",
@@ -292,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     },
     {
       "id": "a5806770395c",
@@ -308,87 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7982
-    },
-    {
-      "id": "22c95c70b1dd",
-      "headline": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12338",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12338v1 Announce Type: new Abstract: Agent benchmarks often compare two agents after all tasks have run, but costly evaluations make partial runs tempting. A task fraction alone does not show whether a partial run supports the…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7982
-    },
-    {
-      "id": "27dbef1f042c",
-      "headline": "PM-Bench: Evaluating Prospective Memory in LLM Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12385",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12385v1 Announce Type: new Abstract: A significant challenge in agentic AI is prospective memory: the ability to execute an intention at a specific future cue or state while other activities are ongoing. We introduce PM-Bench, a…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7982
-    },
-    {
-      "id": "13d378a774a4",
-      "headline": "Critic Experience Bank: Self-Evolving Step-Level Confidence Estimation for LLM Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12397",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12397v1 Announce Type: new Abstract: LLM agents act in external environments where each action changes the state that later decisions condition on, and where a single wrong step can waste interaction budget or trigger…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7982
-    },
-    {
-      "id": "e2b79b1e3800",
-      "headline": "Accepted Prefixes Are Not All You Need: A Negative Result on PEFT-Based Block-Diffusion Drafting",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12422",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12422v1 Announce Type: new Abstract: Speculative decoding accelerates autoregressive language model inference by using a cheap drafter to propose multiple future tokens and a target model to verify them. A common design goal is…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7982
-    },
-    {
-      "id": "3c895c70d789",
-      "headline": "EVOQUANT: Self-Evolving Verifier-Guided Strategy Optimization for Robust Quantitative Trading",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12455",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12455v1 Announce Type: new Abstract: Quantitative strategy optimization remains largely manual, requiring domain experts to identify weak signals, tune risk-control rules, and repeatedly validate iterative revisions. Large…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7982
+      "rank_score": 0.7495
     }
   ]
 }
