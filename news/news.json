@@ -1,11 +1,91 @@
 {
   "meta": {
-    "generated_at": "2026-07-15T15:40:06.573975+00:00",
+    "generated_at": "2026-07-15T17:23:36.781207+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "264ddc681c98",
+      "headline": "Hack suggests AI music generator Suno scraped YouTube for training data",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/",
+      "published_at": "2026-07-15T17:00:34+00:00",
+      "summary": "The hacker used an employee's credentials to access source code, which revealed how Suno scraped decades of audio.",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7947
+    },
+    {
+      "id": "4171beed3f2f",
+      "headline": "Whatnot acquires Shaped to power real-time live shopping recommendations",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/",
+      "published_at": "2026-07-15T17:00:00+00:00",
+      "summary": "Livestream shopping platform Whatnot has acquired AI startup Shaped, a machine learning company focused on real-time recommendations and search. The deal will bolster Whatnot’s personalization and discovery features as it expands into new…",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7946
+    },
+    {
+      "id": "8ed791a2a8b1",
+      "headline": "Microsoft patches record number of security vulnerabilities, citing its use of AI",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/",
+      "published_at": "2026-07-15T16:20:18+00:00",
+      "summary": "Microsoft's monthly release of security fixes, dubbed Patch Tuesday, resolved a record 570 security vulnerabilities across the company's product line, thanks to discoveries with AI.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7899
+    },
+    {
+      "id": "18de27eea197",
+      "headline": "OpenAI's first branded hardware is... a light-up keyboard?",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/openais-first-branded-hardware-is-a-light-up-keyboard/",
+      "published_at": "2026-07-15T16:00:33+00:00",
+      "summary": "The Codex Micro is designed to monitor multiple agentic threads at a glance.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7876
+    },
+    {
+      "id": "84777b05d9b2",
+      "headline": "OpenAI finally launches hardware… for Codex",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch",
+      "published_at": "2026-07-15T16:00:00+00:00",
+      "summary": "OpenAI is finally releasing some hardware. No, it isn't the mysterious AI-powered device the company is developing with former Apple designer Jony Ive, a project already tangled up in a messy lawsuit. Instead, it's a product designed to be…",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 2,
+      "credibility": 0.85,
+      "rank_score": 0.8115
+    },
     {
       "id": "fe6ab2efc212",
       "headline": "Apple Intelligence approved for launch in China with Alibaba’s Qwen AI",
@@ -20,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8562
+      "rank_score": 0.8439
     },
     {
       "id": "83d5a15310e3",
@@ -36,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7798
+      "rank_score": 0.7681
     },
     {
       "id": "b4c19111324a",
@@ -52,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7786
+      "rank_score": 0.7669
     },
     {
       "id": "110aa69c0257",
@@ -68,7 +148,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7786
+      "rank_score": 0.7669
+    },
+    {
+      "id": "1e97faa490fa",
+      "headline": "The US is advancing AI safety through state and federal action",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+      "published_at": "2026-07-15T12:00:00+00:00",
+      "summary": "OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI.",
+      "tags": [
+        "Safety"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8553
     },
     {
       "id": "89bcfe85df02",
@@ -84,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7718
+      "rank_score": 0.7603
     },
     {
       "id": "a7a2286fcda2",
@@ -100,7 +196,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7718
+      "rank_score": 0.7603
+    },
+    {
+      "id": "ee230258f27f",
+      "headline": "GPT-Red: Unlocking Self-Improvement for Robustness",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "published_at": "2026-07-15T10:00:00+00:00",
+      "summary": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
+      "tags": [
+        "Safety"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8425
     },
     {
       "id": "3c714e96b7c3",
@@ -116,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7995
+      "rank_score": 0.7898
     },
     {
       "id": "a5c14178dab3",
@@ -132,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7395
+      "rank_score": 0.7298
     },
     {
       "id": "aa5c3a854e4c",
@@ -148,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7395
+      "rank_score": 0.7298
     },
     {
       "id": "ac3ce273b680",
@@ -164,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7395
+      "rank_score": 0.7298
     },
     {
       "id": "7d2e496f5634",
@@ -180,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7395
+      "rank_score": 0.7298
     },
     {
       "id": "bed298769c9c",
@@ -196,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7395
+      "rank_score": 0.7298
     },
     {
       "id": "cb471305d1cc",
@@ -212,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7395
+      "rank_score": 0.7298
     },
     {
       "id": "2f1cb8fce6a3",
@@ -228,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7395
+      "rank_score": 0.7298
     },
     {
       "id": "e479edf0eca9",
@@ -244,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7395
+      "rank_score": 0.7298
     },
     {
       "id": "0061f705c14a",
@@ -260,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7395
+      "rank_score": 0.7298
     },
     {
       "id": "195590b25a9a",
@@ -276,119 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7395
-    },
-    {
-      "id": "a0c9001ca17c",
-      "headline": "Representing and Generating Levels Over Time through Playtrace Reconstructive Partitioning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12097",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12097v1 Announce Type: new Abstract: Video games are a dynamic medium experienced over time. While there are many Procedural Content Generation (PCG) approaches for generating video game levels, they often use representations…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7395
-    },
-    {
-      "id": "4030a207c54b",
-      "headline": "Connected by Construction: Learning Tractable Near-Tour Marginals for Traveling Salesman Problems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12127",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12127v1 Announce Type: new Abstract: Learning-based methods for the traveling salesman problem (TSP) are often evaluated through the tours produced after decoding or search, but the learned object itself frequently lives in a…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7395
-    },
-    {
-      "id": "994b41bafd9b",
-      "headline": "The Emerging Paradigm of Geospatial Foundation Models: From Pre-Training to Agentic Reasoning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12177",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12177v1 Announce Type: new Abstract: The analysis of satellite and aerial imagery has entered a new era with the advent of foundation models. This paper describes the concept of Geospatial Foundation Models (GeoFMs), which are…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7395
-    },
-    {
-      "id": "be0156598068",
-      "headline": "Cost-Governed RAG: Unified Per-Tenant Cost Attribution Across Retrieval and Generation in Multi-Tenant LLM Systems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12188",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12188v1 Announce Type: new Abstract: Enterprise Retrieval-Augmented Generation (RAG) deployments face a critical governance gap: while LLM generation cost is metered per token, the retrieval layer - vector memory, similarity…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7395
-    },
-    {
-      "id": "1b46ebf50c68",
-      "headline": "A Threshold Exceedance Framework for CBRN Uplift Evaluation in Frontier Language Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12200",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12200v1 Announce Type: new Abstract: As frontier language models advance, policymakers and model developers need methods for assessing whether model access materially increases a non-expert actor's ability to plan…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7395
-    },
-    {
-      "id": "7144184f3046",
-      "headline": "Good Benchmarks",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12217",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12217v1 Announce Type: new Abstract: Good tasks are correct, solvable, verifiable, well-specified, and hard for interesting reasons. The best tasks describe a real problem an experienced practitioner would recognize, in language…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7395
-    },
-    {
-      "id": "6410747dbf4d",
-      "headline": "Rethinking the Evaluation of Harness Evolution for Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12227",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12227v1 Announce Type: new Abstract: We revisit the evaluation of automatic harness evolution for LLM agents. Existing harness evolution methods use unit test cases to search for harness configurations and then report final…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7395
+      "rank_score": 0.7298
     }
   ]
 }
