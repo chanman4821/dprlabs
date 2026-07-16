@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-15T23:02:53.750834+00:00",
+    "generated_at": "2026-07-16T03:17:26.648335+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "cce1dcce4c53",
+      "headline": "Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
+      "published_at": "2026-07-15T23:59:44+00:00",
+      "summary": "Microsoft is looking to sell its in-house AI models as more efficient and cost-effective than its competitors' models.",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7743
+    },
     {
       "id": "36b2bbf599ed",
       "headline": "xAI sues a man for using Grok to generate CSAM ‘deepfakes’",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7868
+      "rank_score": 0.7581
     },
     {
       "id": "aa32e1edecf7",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.776
+      "rank_score": 0.7482
     },
     {
       "id": "99a19263a8c1",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7739
+      "rank_score": 0.7463
     },
     {
       "id": "4dc636eadcdf",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8232
+      "rank_score": 0.7965
     },
     {
       "id": "976a1a3eff5f",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.763
+      "rank_score": 0.7363
     },
     {
       "id": "f8bec47bee6c",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.7853
+      "rank_score": 0.7587
     },
     {
       "id": "fe02d8addd90",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8521
+      "rank_score": 0.8259
     },
     {
       "id": "264ddc681c98",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7561
+      "rank_score": 0.73
     },
     {
       "id": "4171beed3f2f",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7561
+      "rank_score": 0.73
     },
     {
       "id": "8ed791a2a8b1",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7518
+      "rank_score": 0.7261
     },
     {
       "id": "18de27eea197",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7498
+      "rank_score": 0.7242
     },
     {
       "id": "84777b05d9b2",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.7737
+      "rank_score": 0.7481
     },
     {
       "id": "fe6ab2efc212",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8065
+      "rank_score": 0.7812
     },
     {
       "id": "a9eaf0c587df",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7435
+      "rank_score": 0.7184
     },
     {
       "id": "83d5a15310e3",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7325
+      "rank_score": 0.7084
     },
     {
       "id": "b4c19111324a",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7314
+      "rank_score": 0.7074
     },
     {
       "id": "110aa69c0257",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7314
+      "rank_score": 0.7074
     },
     {
       "id": "1e97faa490fa",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8205
+      "rank_score": 0.797
     },
     {
       "id": "89bcfe85df02",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7255
+      "rank_score": 0.702
     },
     {
       "id": "a7a2286fcda2",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7255
+      "rank_score": 0.702
     },
     {
       "id": "ee230258f27f",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8092
+      "rank_score": 0.7866
     },
     {
       "id": "3c714e96b7c3",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7604
+      "rank_score": 0.7404
     },
     {
       "id": "a5c14178dab3",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7004
-    },
-    {
-      "id": "aa5c3a854e4c",
-      "headline": "In-Context Reinforcement Learning under Non-Stationarity: A Survey",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.11906",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.11906v1 Announce Type: new Abstract: The development of decision-pretrained transformers, algorithm distillation, long-context meta-RL, and retrieval-augmented agents has renewed interest in in-context reinforcement learning…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7004
+      "rank_score": 0.6804
     }
   ]
 }
