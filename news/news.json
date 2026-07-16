@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-16T06:25:08.664957+00:00",
+    "generated_at": "2026-07-16T11:45:33.733555+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "3090d72b6869",
+      "headline": "COMPUTER COPS: Inside the big business of selling AI to the police",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/965066/ai-police-cops",
+      "published_at": "2026-07-16T11:00:00+00:00",
+      "summary": "I stood before a hulking glass and brick structure in the heart of Fort Worth, Texas. Thousands gathered inside to see what had been billed as \"the future of policing in the digital age.\" As press, I was prohibited from entering, but from…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.792
+    },
+    {
+      "id": "e723c4e75250",
+      "headline": "Our approach to bioresilience",
+      "source_name": "Google DeepMind",
+      "source_id": "deepmind",
+      "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+      "published_at": "2026-07-16T09:30:42+00:00",
+      "summary": "Google DeepMind and Isomorphic Labs are sharing our joint approach to bioresilience and AI models.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8165
+    },
     {
       "id": "ee72f220c3e8",
       "headline": "EU officials peeved after Anthropic sends junior staffer to testify about safety",
@@ -13,14 +45,14 @@
       "source_id": "hn",
       "url": "https://www.politico.eu/article/anthropic-european-parliament-donny-greenberg-artificial-intelligence-ai/",
       "published_at": "2026-07-16T05:08:08+00:00",
-      "summary": "7 points and 0 comments on Hacker News.",
+      "summary": "19 points and 3 comments on Hacker News.",
       "tags": [
         "Safety"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.7608
+      "rank_score": 0.7249
     },
     {
       "id": "492599a7a3db",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8578
+      "rank_score": 0.8228
     },
     {
       "id": "e1d9ebeff816",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "a49c38739dd6",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "d23c105befda",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "9b1198f60daa",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "df30f82d4adb",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "d92e37384096",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "a1c6198eec72",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "fdbb7e9f93ca",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "3cb0525f9240",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "981500f8a596",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "09043779b448",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "676ba1578ff3",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "2dea0b4e4e1f",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "ddcd088ba492",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "a016d709595f",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "18ec19b00025",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "e9ea855a0aa5",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "75b7cf1496d2",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "1cdde7af2319",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     },
     {
       "id": "3747f5268193",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7978
-    },
-    {
-      "id": "60042f191f3b",
-      "headline": "Automatic Ordinary Differential Equations Discovery For Biological Systems Using Large Language Model Powered Agentic System",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13608",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13608v1 Announce Type: new Abstract: Automatic scientific discovery has long been a goal of computational scholars - a machine that can discover nature's secrets on its own, moving computational systems beyond data-fitting tools…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7978
-    },
-    {
-      "id": "4f2766aea724",
-      "headline": "STOCKTAKE: Measuring the Gap Between Perception and Action in LLM Agents with a Fair Oracle",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13618",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13618v1 Announce Type: new Abstract: LLM agents are increasingly evaluated on multi-week decision tasks in which the state that drives cost is never directly observed. On such tasks the final cost cannot say why an agent failed:…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7978
+      "rank_score": 0.7628
     }
   ]
 }
