@@ -1,11 +1,155 @@
 {
   "meta": {
-    "generated_at": "2026-07-16T14:08:25.117521+00:00",
+    "generated_at": "2026-07-16T16:22:24.981695+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "79ed56faeda9",
+      "headline": "Google is renaming NotebookLM to Gemini Notebook",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm",
+      "published_at": "2026-07-16T16:00:00+00:00",
+      "summary": "Google is giving its AI note-taking app a new name. The company announced on Thursday that NotebookLM is becoming Gemini Notebook, but will remain a standalone app even as it integrates more deeply across Gemini and Google Search. Google…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8548
+    },
+    {
+      "id": "8fe39edff791",
+      "headline": "Why teens deserve access to safe AI",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+      "published_at": "2026-07-16T16:00:00+00:00",
+      "summary": "Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8298
+    },
+    {
+      "id": "4ccf42e2190c",
+      "headline": "Google’s AI Mode now lets you link and interact with select apps",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/",
+      "published_at": "2026-07-16T16:00:00+00:00",
+      "summary": "With this new update, Google is expanding AI Mode beyond answering questions and into completing tasks across the apps they use regularly.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7948
+    },
+    {
+      "id": "e433f7530f10",
+      "headline": "Energy IPOs surge as investors hunt for ways to play AI boom",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/information-technology/2026/07/energy-ipos-surge-as-investors-hunt-for-ways-to-play-ai-boom/",
+      "published_at": "2026-07-16T15:48:21+00:00",
+      "summary": "Companies coming to market are raising money at fastest pace this century.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7934
+    },
+    {
+      "id": "5f22dfb9fcfe",
+      "headline": "Yes, you can now order DoorDash from the command line",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/",
+      "published_at": "2026-07-16T15:38:55+00:00",
+      "summary": "DoorDash is opening a limited beta of dd-cli, a command-line tool that lets developers and AI agents search stores, build carts, and place orders from the terminal, marking another step toward software designed for AI agents instead of…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7923
+    },
+    {
+      "id": "d322af2b7cf7",
+      "headline": "Why is OpenAI selling a ChatGPT basketball?",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/16/why-is-openai-selling-a-chatgpt-basketball/",
+      "published_at": "2026-07-16T15:31:09+00:00",
+      "summary": "You may have heard that OpenAI released its first piece of hardware this week. You may not have heard about the ChatGPT basketball.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7913
+    },
+    {
+      "id": "5e9c9fdf3aea",
+      "headline": "How a former DeepMind researcher raised at a $300M pre-seed valuation before launching a product",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/",
+      "published_at": "2026-07-16T15:02:00+00:00",
+      "summary": "Drawing on more than a decade spent helping build some of the world's most influential AI systems, including research that later informed the development of ChatGPT, Andrew Dai explains why he believes visual AI is one of the next major…",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7879
+    },
+    {
+      "id": "c7743c902ae3",
+      "headline": "Why AMI Labs’ Alexandre LeBrun won’t call his AI ‘AGI’ or ‘superintelligence’",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/16/why-ami-labs-alexandre-lebrun-wont-call-his-ai-agi-or-superintelligence/",
+      "published_at": "2026-07-16T14:40:00+00:00",
+      "summary": "While everyone in AI is chasing \"superintelligence,\" Alexandre LeBrun, CEO of Yann LeCun’s world model startup, AMI Labs, dismisses the word.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7853
+    },
+    {
+      "id": "652c69cdeba8",
+      "headline": "Moonshot’s upcoming Kimi 3 is expected to close the gap with Anthropic’s Opus 4.8",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/",
+      "published_at": "2026-07-16T14:26:29+00:00",
+      "summary": "The FT reports Kimi K3 will be the largest open AI model from China, with a parameter count between 2 trillion and 3 trillion.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7837
+    },
     {
       "id": "c599c61e0255",
       "headline": "Apple Intelligence approved for launch in China with Alibaba and Baidu",
@@ -20,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8514
+      "rank_score": 0.8358
     },
     {
       "id": "772e9ab44646",
@@ -29,14 +173,14 @@
       "source_id": "hn",
       "url": "https://www.propublica.org/article/trump-2020-election-georgia-fulton-artificial-intelligence-fbi",
       "published_at": "2026-07-16T13:10:03+00:00",
-      "summary": "5 points and 2 comments on Hacker News.",
+      "summary": "7 points and 2 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.556
+      "rank_score": 0.5416
     },
     {
       "id": "e9a82b74f6f5",
@@ -52,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8493
+      "rank_score": 0.8337
     },
     {
       "id": "e19d5041cdef",
@@ -68,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8784
+      "rank_score": 0.8631
     },
     {
       "id": "f2d4f0d12d3b",
@@ -84,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.783
+      "rank_score": 0.7678
     },
     {
       "id": "3090d72b6869",
@@ -100,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7753
+      "rank_score": 0.7604
     },
     {
       "id": "e723c4e75250",
@@ -116,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8003
+      "rank_score": 0.7859
     },
     {
       "id": "ee72f220c3e8",
@@ -132,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.7101
+      "rank_score": 0.6969
     },
     {
       "id": "492599a7a3db",
@@ -148,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8084
+      "rank_score": 0.7955
     },
     {
       "id": "e1d9ebeff816",
@@ -164,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7484
+      "rank_score": 0.7355
     },
     {
       "id": "a49c38739dd6",
@@ -180,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7484
+      "rank_score": 0.7355
     },
     {
       "id": "d23c105befda",
@@ -196,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7484
+      "rank_score": 0.7355
     },
     {
       "id": "9b1198f60daa",
@@ -212,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7484
+      "rank_score": 0.7355
     },
     {
       "id": "df30f82d4adb",
@@ -228,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7484
+      "rank_score": 0.7355
     },
     {
       "id": "d92e37384096",
@@ -244,151 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7484
-    },
-    {
-      "id": "a1c6198eec72",
-      "headline": "Oracle Agent Memory as an Enterprise Memory Substrate for Long-Horizon AI Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13157",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13157v1 Announce Type: new Abstract: Agent memory is a systems problem for long-horizon agents. Practical deployments require retention of task state across extended conversations, recovery of user-specific facts and preferences…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7484
-    },
-    {
-      "id": "fdbb7e9f93ca",
-      "headline": "Learning Safe Agent Behaviour from Human Preferences and Justifications via World Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13172",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13172v1 Announce Type: new Abstract: We address the problem of safely training an agent policy and deploying a good and safe policy, in settings where the environment dynamics are unknown and no suitable reward function is…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7484
-    },
-    {
-      "id": "3cb0525f9240",
-      "headline": "CayleyR: Solving the TopSpin puzzle via cycle intersection",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13219",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13219v1 Announce Type: new Abstract: We present cayleyR, an R package for solving permutation puzzles by detecting cycle intersections in Cayley graphs. The core algorithm performs an iterative bidirectional search: from both…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7484
-    },
-    {
-      "id": "981500f8a596",
-      "headline": "Networked Intelligence: Active Shared Context Graphs for Human-AI Team Science",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13220",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13220v1 Announce Type: new Abstract: Most AI-for-science systems focus on scaling a single reasoning process through better models, larger context windows, long-horizon agentic execution, or digital co-scientists working with…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7484
-    },
-    {
-      "id": "09043779b448",
-      "headline": "AI-Native Insurance for Agentic AI: Pricing, Underwriting, and End-to-End Automation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13230",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13230v1 Announce Type: new Abstract: Agentic AI introduces new insurance challenges because autonomous AI systems can make decisions, invoke tools, modify external environments, and interact with third-party services. This paper…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7484
-    },
-    {
-      "id": "676ba1578ff3",
-      "headline": "Cost-Optimal Foundation Model Deployment Portfolio for Transportation Management",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13239",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13239v1 Announce Type: new Abstract: Foundation models, including large language models (LLMs) and vision-language models (VLMs), are increasingly used for transportation management center (TMC) tasks such as anomaly detection,…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7484
-    },
-    {
-      "id": "2dea0b4e4e1f",
-      "headline": "Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13285",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13285v1 Announce Type: new Abstract: The capability of a modern AI agent depends not only on its foundation model but also on its harness, which constructs prompts, manages state, invokes tools, and coordinates execution. As…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7484
-    },
-    {
-      "id": "ddcd088ba492",
-      "headline": "Theory-Level Autoformalization: From Isolated Statements to Unified Formal Knowledge Bases",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13292",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13292v1 Announce Type: new Abstract: Autoformalization translates informal natural language into formal, machine-verifiable languages. While most work focuses on individual statements, real formalization efforts are inherently…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7484
-    },
-    {
-      "id": "a016d709595f",
-      "headline": "EZSMT Version 3, Matured",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13344",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13344v1 Announce Type: new Abstract: Constraint Answer Set Programming (CASP) is a hybrid reasoning paradigm that combines Answer Set Programming (ASP) with Constraint Processing and Satisfiability Modulo Theories (SMT),…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7484
+      "rank_score": 0.7355
     }
   ]
 }
