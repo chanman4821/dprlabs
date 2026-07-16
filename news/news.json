@@ -1,11 +1,75 @@
 {
   "meta": {
-    "generated_at": "2026-07-16T18:11:11.350268+00:00",
+    "generated_at": "2026-07-16T20:05:57.782150+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "67e2fbcf8be9",
+      "headline": "Cq: A Shared Knowledge Commons for AI Agents",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.i-programmer.info/news/105-artificial-intelligence/19009-cq-a-shared-knowledge-commons-for-ai-agents.html",
+      "published_at": "2026-07-16T19:40:15+00:00",
+      "summary": "1 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5575
+    },
+    {
+      "id": "ba15284a70a8",
+      "headline": "Linus Torvalds to critics of AI coding in Linux: \"Fork it. Or just walk away.\"",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/linus-torvalds-to-critics-of-ai-coding-in-linux-fork-it-or-just-walk-away/",
+      "published_at": "2026-07-16T19:18:23+00:00",
+      "summary": "Creator says he will \"very loudly ignore\" those arguing for a ban on AI tools.",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7918
+    },
+    {
+      "id": "d4ca69cf5d37",
+      "headline": "Google Vids now lets you star in your own AI videos",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
+      "published_at": "2026-07-16T18:32:54+00:00",
+      "summary": "Google is adding personalized AI avatars to Vids that let users create videos starring a digital version of themselves, alongside Gemini Omni-powered tools for generating and editing videos from prompts and reference images.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7864
+    },
+    {
+      "id": "e3176d1ee3b1",
+      "headline": "Roblox launches an AI-powered game-creation feature in its mobile app",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/",
+      "published_at": "2026-07-16T18:22:06+00:00",
+      "summary": "Roblox's new \"Build\" feature lets users generate basic games using a single text prompt.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7851
+    },
     {
       "id": "3ba9165b869a",
       "headline": "New York governor says she’s using AI to analyze ‘every single rule’ in the state",
@@ -20,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.796
+      "rank_score": 0.7824
     },
     {
       "id": "79ed56faeda9",
@@ -36,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8419
+      "rank_score": 0.8289
     },
     {
       "id": "8fe39edff791",
@@ -52,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8169
+      "rank_score": 0.8039
     },
     {
       "id": "4ccf42e2190c",
@@ -68,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7819
+      "rank_score": 0.7689
     },
     {
       "id": "e433f7530f10",
@@ -84,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7806
+      "rank_score": 0.7676
     },
     {
       "id": "5f22dfb9fcfe",
@@ -100,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7795
+      "rank_score": 0.7665
     },
     {
       "id": "d322af2b7cf7",
@@ -116,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7786
+      "rank_score": 0.7657
     },
     {
       "id": "5e9c9fdf3aea",
@@ -132,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7753
+      "rank_score": 0.7624
     },
     {
       "id": "c7743c902ae3",
@@ -148,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7728
+      "rank_score": 0.7601
     },
     {
       "id": "652c69cdeba8",
@@ -164,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7712
+      "rank_score": 0.7586
     },
     {
       "id": "c599c61e0255",
@@ -180,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8236
+      "rank_score": 0.8113
     },
     {
       "id": "772e9ab44646",
@@ -196,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5295
+      "rank_score": 0.5171
     },
     {
       "id": "e9a82b74f6f5",
@@ -212,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8217
+      "rank_score": 0.8094
     },
     {
       "id": "e19d5041cdef",
@@ -228,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8513
+      "rank_score": 0.8392
     },
     {
       "id": "f2d4f0d12d3b",
@@ -244,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7559
+      "rank_score": 0.7439
     },
     {
       "id": "3090d72b6869",
@@ -260,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7488
+      "rank_score": 0.7371
     },
     {
       "id": "e723c4e75250",
@@ -276,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7746
+      "rank_score": 0.7632
     },
     {
       "id": "ee72f220c3e8",
@@ -285,14 +349,14 @@
       "source_id": "hn",
       "url": "https://www.politico.eu/article/anthropic-european-parliament-donny-greenberg-artificial-intelligence-ai/",
       "published_at": "2026-07-16T05:08:08+00:00",
-      "summary": "21 points and 3 comments on Hacker News.",
+      "summary": "22 points and 3 comments on Hacker News.",
       "tags": [
         "Safety"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.6867
+      "rank_score": 0.6763
     },
     {
       "id": "492599a7a3db",
@@ -308,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7854
+      "rank_score": 0.7753
     },
     {
       "id": "e1d9ebeff816",
@@ -324,71 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7254
-    },
-    {
-      "id": "a49c38739dd6",
-      "headline": "SPINE: Bridging the Cyber-Physical Gap with Agentic AI",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13049",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13049v1 Announce Type: new Abstract: Foundation models have given robots a sophisticated brain for complex decision-making, yet deploying that intelligence into a physical platform still demands tedious, expert-driven…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7254
-    },
-    {
-      "id": "d23c105befda",
-      "headline": "Interventional Grounding Audits: Black-Box Premise-Dependency Tests for LLM Chain-of-Thought via Predicate Substitution",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13069",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13069v1 Announce Type: new Abstract: Large language models produce chain-of-thought (CoT) reasoning that appears logically sound yet may not genuinely depend on its stated premises. We introduce interventional grounding audits,…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7254
-    },
-    {
-      "id": "9b1198f60daa",
-      "headline": "Probabilistic Extension of Neuro-Symbolic AGI Robots based on Belnap's Typed Intensional FOL",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13073",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13073v1 Announce Type: new Abstract: Neuro-symbolic AI based on $IFOL_B$ is a way to combine neural learning and symbolic reasoning to overcome limitations of purely neural systems (like lack of interpretability and logical…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7254
-    },
-    {
-      "id": "df30f82d4adb",
-      "headline": "Self-Improvements in Modern Agentic Systems: A Survey",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13104",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13104v1 Announce Type: new Abstract: Self-improving autonomous agents are moving from research prototypes to deployed systems. The primary goal is controllable evolution, or adaptation, from experience with minimal or even no…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7254
+      "rank_score": 0.7153
     }
   ]
 }
