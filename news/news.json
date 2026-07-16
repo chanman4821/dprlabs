@@ -1,394 +1,394 @@
 {
   "meta": {
-    "generated_at": "2026-07-16T03:17:26.648335+00:00",
+    "generated_at": "2026-07-16T06:25:08.664957+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
-      "id": "cce1dcce4c53",
-      "headline": "Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
-      "published_at": "2026-07-15T23:59:44+00:00",
-      "summary": "Microsoft is looking to sell its in-house AI models as more efficient and cost-effective than its competitors' models.",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7743
-    },
-    {
-      "id": "36b2bbf599ed",
-      "headline": "xAI sues a man for using Grok to generate CSAM ‘deepfakes’",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
-      "published_at": "2026-07-15T21:33:20+00:00",
-      "summary": "The Elon Musk-owned xAI is suing a South Carolina man who allegedly used the company's Grok AI chatbot to generate child sexual abuse material (CSAM). In a lawsuit reported earlier by Reuters, xAI claims Terry Wayne Harwood \"knowingly and…",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7581
-    },
-    {
-      "id": "aa32e1edecf7",
-      "headline": "AI slop movies are the new direct-to-video cash grabs",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/entertainment/965616/ash-koosha-odysseus-the-fall-foundtain-zero-tilly-norwood",
-      "published_at": "2026-07-15T20:00:00+00:00",
-      "summary": "This weekend, cinephiles across the world will march to their local theaters to feast their eyes on Christopher Nolan's new adaptation of The Odyssey. It's on track to rake in anywhere between $80-$100 million in just a few days. People…",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7482
-    },
-    {
-      "id": "99a19263a8c1",
-      "headline": "Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/",
-      "published_at": "2026-07-15T19:41:38+00:00",
-      "summary": "OpenAI, which is in the middle of a legal battle with Apple over hardware trade theft allegations, just released a light-up keyboard designed to be paired with its agentic coding app.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7463
-    },
-    {
-      "id": "4dc636eadcdf",
-      "headline": "SpaceX falls to $135 IPO price ahead of Starship launch",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/spacex-falls-to-135-ipo-price-ahead-of-starship-launch/",
-      "published_at": "2026-07-15T18:06:05+00:00",
-      "summary": "The stock has steadily fallen from the euphoric post-IPO high, showing that markets may be sobering up to the promises CEO Elon Musk made before and after SpaceX went public.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7965
-    },
-    {
-      "id": "976a1a3eff5f",
-      "headline": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
-      "published_at": "2026-07-15T18:04:06+00:00",
-      "summary": "It's the company's first public proof point after a year and a half spent building AI infrastructure largely out of public view.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7363
-    },
-    {
-      "id": "f8bec47bee6c",
-      "headline": "Suno snatched millions of songs from YouTube, Genius, and Deezer",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack",
-      "published_at": "2026-07-15T17:48:01+00:00",
-      "summary": "Suno data obtained in a hacking incident has exposed that the AI music generator was trained by scraping millions of songs and lyrics from online audio platforms, including YouTube Music, Deezer, and Genius, 404 Media reports. Given that…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 2,
-      "credibility": 0.85,
-      "rank_score": 0.7587
-    },
-    {
-      "id": "fe02d8addd90",
-      "headline": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
-      "published_at": "2026-07-15T17:09:37+00:00",
-      "summary": "OpenAI has built an LLM super-hacker called GPT-Red that it uses as a sparring partner to help its other models boost their defenses against cyberattacks. Last week the company released the latest version of its flagship LLM, GPT-5.6.…",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.8259
-    },
-    {
-      "id": "264ddc681c98",
-      "headline": "Hack suggests AI music generator Suno scraped YouTube for training data",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/",
-      "published_at": "2026-07-15T17:00:34+00:00",
-      "summary": "The hacker used an employee's credentials to access source code, which revealed how Suno scraped decades of audio.",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.73
-    },
-    {
-      "id": "4171beed3f2f",
-      "headline": "Whatnot acquires Shaped to power real-time live shopping recommendations",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/",
-      "published_at": "2026-07-15T17:00:00+00:00",
-      "summary": "Livestream shopping platform Whatnot has acquired AI startup Shaped, a machine learning company focused on real-time recommendations and search. The deal will bolster Whatnot’s personalization and discovery features as it expands into new…",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.73
-    },
-    {
-      "id": "8ed791a2a8b1",
-      "headline": "Microsoft patches record number of security vulnerabilities, citing its use of AI",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/",
-      "published_at": "2026-07-15T16:20:18+00:00",
-      "summary": "Microsoft's monthly release of security fixes, dubbed Patch Tuesday, resolved a record 570 security vulnerabilities across the company's product line, thanks to discoveries with AI.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7261
-    },
-    {
-      "id": "18de27eea197",
-      "headline": "OpenAI's first branded hardware is... a light-up keyboard?",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/ai/2026/07/openais-first-branded-hardware-is-a-light-up-keyboard/",
-      "published_at": "2026-07-15T16:00:33+00:00",
-      "summary": "The Codex Micro is designed to monitor multiple agentic threads at a glance.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7242
-    },
-    {
-      "id": "84777b05d9b2",
-      "headline": "OpenAI finally launches hardware… for Codex",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch",
-      "published_at": "2026-07-15T16:00:00+00:00",
-      "summary": "OpenAI is finally releasing some hardware. No, it isn't the mysterious AI-powered device the company is developing with former Apple designer Jony Ive, a project already tangled up in a messy lawsuit. Instead, it's a product designed to be…",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 2,
-      "credibility": 0.85,
-      "rank_score": 0.7481
-    },
-    {
-      "id": "fe6ab2efc212",
-      "headline": "Apple Intelligence approved for launch in China with Alibaba’s Qwen AI",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
-      "published_at": "2026-07-15T15:29:33+00:00",
-      "summary": "The deal, which was rumored to be in the works last year, marks an important step for Apple's AI ambitions in a key market.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7812
-    },
-    {
-      "id": "a9eaf0c587df",
-      "headline": "Inside Ode with Anthropic, the startup betting AI services are the future of enterprise",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/video/inside-ode-with-anthropic-the-startup-betting-ai-services-are-the-future-of-enterprise/",
-      "published_at": "2026-07-15T15:00:00+00:00",
-      "summary": "Can a handful of engineers really do the work of an army of consultants? That’s the bet behind Ode with Anthropic — the joint venture dedicated to embedding forward-deployed engineers in enterprise firms, backed by Anthropic, Blackstone,…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7184
-    },
-    {
-      "id": "83d5a15310e3",
-      "headline": "Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
-      "published_at": "2026-07-15T13:10:47+00:00",
-      "summary": "Anthropic-backed Ode launches as AI labs bet that embedding forward-deployed engineers inside enterprises is the key to accelerating enterprise AI adoption.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7084
-    },
-    {
-      "id": "b4c19111324a",
-      "headline": "Reelful’s AI turns your camera roll into short-form videos for social media",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/reelfuls-ai-turns-your-camera-roll-into-short-form-videos-for-social-media/",
-      "published_at": "2026-07-15T13:00:00+00:00",
-      "summary": "The app is designed for people who want to create social content, but find traditional video editing tools too complex or time-consuming.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7074
-    },
-    {
-      "id": "110aa69c0257",
-      "headline": "Rime picks up $24M Series A to help enterprises field customer calls",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls/",
-      "published_at": "2026-07-15T13:00:00+00:00",
-      "summary": "Rime is handling over 100 million calls each month across multiple companies.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7074
-    },
-    {
-      "id": "1e97faa490fa",
-      "headline": "The US is advancing AI safety through state and federal action",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
-      "published_at": "2026-07-15T12:00:00+00:00",
-      "summary": "OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI.",
+      "id": "ee72f220c3e8",
+      "headline": "EU officials peeved after Anthropic sends junior staffer to testify about safety",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.politico.eu/article/anthropic-european-parliament-donny-greenberg-artificial-intelligence-ai/",
+      "published_at": "2026-07-16T05:08:08+00:00",
+      "summary": "7 points and 0 comments on Hacker News.",
       "tags": [
         "Safety"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.797
+      "credibility": 0.6,
+      "rank_score": 0.7608
     },
     {
-      "id": "89bcfe85df02",
-      "headline": "Indian AI coding startup Emergent becomes a unicorn with $130M Series C",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
-      "published_at": "2026-07-15T12:00:00+00:00",
-      "summary": "The startup has reached a $120 million annualized revenue run rate and more than 200,000 paying customers.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.702
-    },
-    {
-      "id": "a7a2286fcda2",
-      "headline": "Vint Cerf is working on a plan to unleash AI agents on the open internet",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet/",
-      "published_at": "2026-07-15T12:00:00+00:00",
-      "summary": "The guy behind TCP/IP is working on a standard for identifying AI agents in the wild.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.702
-    },
-    {
-      "id": "ee230258f27f",
-      "headline": "GPT-Red: Unlocking Self-Improvement for Robustness",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
-      "published_at": "2026-07-15T10:00:00+00:00",
-      "summary": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
-      "tags": [
-        "Safety"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7866
-    },
-    {
-      "id": "3c714e96b7c3",
-      "headline": "Isolation as a First-Class Principle for LLM-Agent System Safety: Concepts, Taxonomy, Challenges and Future Directions",
+      "id": "492599a7a3db",
+      "headline": "SAFETY SENTRY: Context-Aware Human Intervention via EXECUTE-ASK-REFUSE Routing",
       "source_name": "arXiv cs.AI",
       "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.12406",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.12406v1 Announce Type: new Abstract: The capability of LLM agents to function as the ``brain'' of a system fundamentally expands the scope of analysis beyond a standalone model. Consequently, safety is no longer only about…",
+      "url": "https://arxiv.org/abs/2607.13594",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13594v1 Announce Type: new Abstract: LLM agents act on real-world environments through tool calls, and a single misjudged action can cause irreversible harm. The standard safeguard is a guard model that labels each proposed…",
       "tags": [
         "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7404
+      "rank_score": 0.8578
     },
     {
-      "id": "a5c14178dab3",
-      "headline": "Optimal Adaptive Market Making: A Theoretical Framework for High-Yield Liquidity Provision in Perpetual Futures Markets",
+      "id": "e1d9ebeff816",
+      "headline": "OriginBlame: Record- and Token-Level Data Provenance for AI Training Datasets",
       "source_name": "arXiv cs.AI",
       "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.11888",
-      "published_at": "2026-07-15T04:00:00+00:00",
-      "summary": "arXiv:2607.11888v1 Announce Type: new Abstract: We develop a rigorous theoretical framework for optimal market making in perpetual futures markets with zero maker fees. We model the market maker's problem as a stochastic optimal control…",
+      "url": "https://arxiv.org/abs/2607.13037",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13037v1 Announce Type: new Abstract: When a data contributor requests removal, model trainers face a practical gap: unlearning algorithms require a forget set, yet no tool can locate which training records belong to a given…",
       "tags": [
         "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.6804
+      "rank_score": 0.7978
+    },
+    {
+      "id": "a49c38739dd6",
+      "headline": "SPINE: Bridging the Cyber-Physical Gap with Agentic AI",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13049",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13049v1 Announce Type: new Abstract: Foundation models have given robots a sophisticated brain for complex decision-making, yet deploying that intelligence into a physical platform still demands tedious, expert-driven…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "d23c105befda",
+      "headline": "Interventional Grounding Audits: Black-Box Premise-Dependency Tests for LLM Chain-of-Thought via Predicate Substitution",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13069",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13069v1 Announce Type: new Abstract: Large language models produce chain-of-thought (CoT) reasoning that appears logically sound yet may not genuinely depend on its stated premises. We introduce interventional grounding audits,…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "9b1198f60daa",
+      "headline": "Probabilistic Extension of Neuro-Symbolic AGI Robots based on Belnap's Typed Intensional FOL",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13073",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13073v1 Announce Type: new Abstract: Neuro-symbolic AI based on $IFOL_B$ is a way to combine neural learning and symbolic reasoning to overcome limitations of purely neural systems (like lack of interpretability and logical…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "df30f82d4adb",
+      "headline": "Self-Improvements in Modern Agentic Systems: A Survey",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13104",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13104v1 Announce Type: new Abstract: Self-improving autonomous agents are moving from research prototypes to deployed systems. The primary goal is controllable evolution, or adaptation, from experience with minimal or even no…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "d92e37384096",
+      "headline": "Improving Molecular Property Prediction in Small Language Models Using Graph-based Tools",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13115",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13115v1 Announce Type: new Abstract: Small language models (SLMs) have shown promise for zero-shot molecular property prediction from SMILES strings, yet they often suffer from structural blindness because sequence…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "a1c6198eec72",
+      "headline": "Oracle Agent Memory as an Enterprise Memory Substrate for Long-Horizon AI Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13157",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13157v1 Announce Type: new Abstract: Agent memory is a systems problem for long-horizon agents. Practical deployments require retention of task state across extended conversations, recovery of user-specific facts and preferences…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "fdbb7e9f93ca",
+      "headline": "Learning Safe Agent Behaviour from Human Preferences and Justifications via World Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13172",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13172v1 Announce Type: new Abstract: We address the problem of safely training an agent policy and deploying a good and safe policy, in settings where the environment dynamics are unknown and no suitable reward function is…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "3cb0525f9240",
+      "headline": "CayleyR: Solving the TopSpin puzzle via cycle intersection",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13219",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13219v1 Announce Type: new Abstract: We present cayleyR, an R package for solving permutation puzzles by detecting cycle intersections in Cayley graphs. The core algorithm performs an iterative bidirectional search: from both…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "981500f8a596",
+      "headline": "Networked Intelligence: Active Shared Context Graphs for Human-AI Team Science",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13220",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13220v1 Announce Type: new Abstract: Most AI-for-science systems focus on scaling a single reasoning process through better models, larger context windows, long-horizon agentic execution, or digital co-scientists working with…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "09043779b448",
+      "headline": "AI-Native Insurance for Agentic AI: Pricing, Underwriting, and End-to-End Automation",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13230",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13230v1 Announce Type: new Abstract: Agentic AI introduces new insurance challenges because autonomous AI systems can make decisions, invoke tools, modify external environments, and interact with third-party services. This paper…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "676ba1578ff3",
+      "headline": "Cost-Optimal Foundation Model Deployment Portfolio for Transportation Management",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13239",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13239v1 Announce Type: new Abstract: Foundation models, including large language models (LLMs) and vision-language models (VLMs), are increasingly used for transportation management center (TMC) tasks such as anomaly detection,…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "2dea0b4e4e1f",
+      "headline": "Harness Handbook: Making Evolving Agent Harnesses Readable,Navigable, and Editable",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13285",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13285v1 Announce Type: new Abstract: The capability of a modern AI agent depends not only on its foundation model but also on its harness, which constructs prompts, manages state, invokes tools, and coordinates execution. As…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "ddcd088ba492",
+      "headline": "Theory-Level Autoformalization: From Isolated Statements to Unified Formal Knowledge Bases",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13292",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13292v1 Announce Type: new Abstract: Autoformalization translates informal natural language into formal, machine-verifiable languages. While most work focuses on individual statements, real formalization efforts are inherently…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "a016d709595f",
+      "headline": "EZSMT Version 3, Matured",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13344",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13344v1 Announce Type: new Abstract: Constraint Answer Set Programming (CASP) is a hybrid reasoning paradigm that combines Answer Set Programming (ASP) with Constraint Processing and Satisfiability Modulo Theories (SMT),…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "18ec19b00025",
+      "headline": "Set-shifting Behavioral Test for Harnessed Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13396",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13396v1 Announce Type: new Abstract: What happens to an LLM agent's tool choice when the reliable tool silently changes within an ongoing session? We borrow set-shifting from cognitive psychology to study how well agents adapt…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "e9ea855a0aa5",
+      "headline": "LAPO: Leave-One-Turn Attribution for Self-Generated Process Rewards in Multi-Turn Search Reasoning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13501",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13501v1 Announce Type: new Abstract: Reinforcement learning for multi-turn search reasoning typically relies on terminal outcome rewards, which cannot distinguish useful, redundant, and harmful intermediate interactions. We…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "75b7cf1496d2",
+      "headline": "How Far Can Root Cause Analysis Go on Real-World Telemetry Data?",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13548",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13548v1 Announce Type: new Abstract: Identifying root causes in production microservice failures requires reasoning over large-scale, multimodal telemetry spanning metrics, logs, and traces, a problem that has proved resistant…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "1cdde7af2319",
+      "headline": "Multi-Agent Collaborative Reasoning with Tool-Augmented Evidence for Urban Region Profiling",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13558",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13558v1 Announce Type: new Abstract: Urban region profiling constitutes a core problem in urban computing, supporting applications such as population estimation, economic assessment, and environmental monitoring. Existing…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "3747f5268193",
+      "headline": "AI advice suppresses people's willingness to say \"I don't know\", even when the advice is wrong and accuracy is incentivized",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13562",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13562v1 Announce Type: new Abstract: Knowing when to say \"I don't know\" is fundamental to human judgment, yet AI assistants offer a fluent answer to almost any question. In five experiments (N = 3,132; four preregistered, one…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "60042f191f3b",
+      "headline": "Automatic Ordinary Differential Equations Discovery For Biological Systems Using Large Language Model Powered Agentic System",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13608",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13608v1 Announce Type: new Abstract: Automatic scientific discovery has long been a goal of computational scholars - a machine that can discover nature's secrets on its own, moving computational systems beyond data-fitting tools…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
+    },
+    {
+      "id": "4f2766aea724",
+      "headline": "STOCKTAKE: Measuring the Gap Between Perception and Action in LLM Agents with a Fair Oracle",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.13618",
+      "published_at": "2026-07-16T04:00:00+00:00",
+      "summary": "arXiv:2607.13618v1 Announce Type: new Abstract: LLM agents are increasingly evaluated on multi-week decision tasks in which the state that drives cost is never directly observed. On such tasks the final cost cannot say why an agent failed:…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.7978
     }
   ]
 }
