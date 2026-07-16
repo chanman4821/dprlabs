@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-16T16:22:24.981695+00:00",
+    "generated_at": "2026-07-16T18:11:11.350268+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "3ba9165b869a",
+      "headline": "New York governor says she’s using AI to analyze ‘every single rule’ in the state",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
+      "published_at": "2026-07-16T17:58:37+00:00",
+      "summary": "New York Governor Kathy Hochul might have just signed a moratorium on new AI data centers in the state, but she's not against using the technology herself. During an interview with Bloomberg's Odd Lots podcast, Hochul said that her team is…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.796
+    },
     {
       "id": "79ed56faeda9",
       "headline": "Google is renaming NotebookLM to Gemini Notebook",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8548
+      "rank_score": 0.8419
     },
     {
       "id": "8fe39edff791",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8298
+      "rank_score": 0.8169
     },
     {
       "id": "4ccf42e2190c",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7948
+      "rank_score": 0.7819
     },
     {
       "id": "e433f7530f10",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7934
+      "rank_score": 0.7806
     },
     {
       "id": "5f22dfb9fcfe",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7923
+      "rank_score": 0.7795
     },
     {
       "id": "d322af2b7cf7",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7913
+      "rank_score": 0.7786
     },
     {
       "id": "5e9c9fdf3aea",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7879
+      "rank_score": 0.7753
     },
     {
       "id": "c7743c902ae3",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7853
+      "rank_score": 0.7728
     },
     {
       "id": "652c69cdeba8",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7837
+      "rank_score": 0.7712
     },
     {
       "id": "c599c61e0255",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8358
+      "rank_score": 0.8236
     },
     {
       "id": "772e9ab44646",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5416
+      "rank_score": 0.5295
     },
     {
       "id": "e9a82b74f6f5",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8337
+      "rank_score": 0.8217
     },
     {
       "id": "e19d5041cdef",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8631
+      "rank_score": 0.8513
     },
     {
       "id": "f2d4f0d12d3b",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7678
+      "rank_score": 0.7559
     },
     {
       "id": "3090d72b6869",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7604
+      "rank_score": 0.7488
     },
     {
       "id": "e723c4e75250",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7859
+      "rank_score": 0.7746
     },
     {
       "id": "ee72f220c3e8",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.6969
+      "rank_score": 0.6867
     },
     {
       "id": "492599a7a3db",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7955
+      "rank_score": 0.7854
     },
     {
       "id": "e1d9ebeff816",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7355
+      "rank_score": 0.7254
     },
     {
       "id": "a49c38739dd6",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7355
+      "rank_score": 0.7254
     },
     {
       "id": "d23c105befda",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7355
+      "rank_score": 0.7254
     },
     {
       "id": "9b1198f60daa",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7355
+      "rank_score": 0.7254
     },
     {
       "id": "df30f82d4adb",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7355
-    },
-    {
-      "id": "d92e37384096",
-      "headline": "Improving Molecular Property Prediction in Small Language Models Using Graph-based Tools",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13115",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13115v1 Announce Type: new Abstract: Small language models (SLMs) have shown promise for zero-shot molecular property prediction from SMILES strings, yet they often suffer from structural blindness because sequence…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7355
+      "rank_score": 0.7254
     }
   ]
 }
