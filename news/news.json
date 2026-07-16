@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-16T20:05:57.782150+00:00",
+    "generated_at": "2026-07-16T22:08:31.548738+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "252ccc31ca52",
+      "headline": "It's official: EU will force Google to share search data and open up AI on Android",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android/",
+      "published_at": "2026-07-16T20:41:45+00:00",
+      "summary": "Google says these changes could endanger user privacy and security.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7871
+    },
+    {
+      "id": "976e25fe768e",
+      "headline": "xAI can’t deny Grok makes CSAM anymore. So it’s suing users.",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users/",
+      "published_at": "2026-07-16T20:26:23+00:00",
+      "summary": "Elon Musk's xAI files first lawsuit against Grok user accused of making child sex images.",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7853
+    },
+    {
+      "id": "4cd6d663b70d",
+      "headline": "Fear of humanoid robots spurs human workers to strike at Hyundai auto factory",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-spurs-human-workers-to-strike-at-hyundai-auto-factory/",
+      "published_at": "2026-07-16T20:09:48+00:00",
+      "summary": "Hyundai aims to deploy 25,000 Atlas robots starting with US factories in 2028.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7834
+    },
     {
       "id": "67e2fbcf8be9",
       "headline": "Cq: A Shared Knowledge Commons for AI Agents",
@@ -20,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5575
+      "rank_score": 0.543
     },
     {
       "id": "ba15284a70a8",
@@ -36,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7918
+      "rank_score": 0.7774
     },
     {
       "id": "d4ca69cf5d37",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7864
+      "rank_score": 0.7723
     },
     {
       "id": "e3176d1ee3b1",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7851
+      "rank_score": 0.771
     },
     {
       "id": "3ba9165b869a",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7824
+      "rank_score": 0.7684
     },
     {
       "id": "79ed56faeda9",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8289
+      "rank_score": 0.8155
     },
     {
       "id": "8fe39edff791",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8039
+      "rank_score": 0.7905
     },
     {
       "id": "4ccf42e2190c",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7689
+      "rank_score": 0.7555
     },
     {
       "id": "e433f7530f10",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7676
+      "rank_score": 0.7542
     },
     {
       "id": "5f22dfb9fcfe",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7665
+      "rank_score": 0.7532
     },
     {
       "id": "d322af2b7cf7",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7657
+      "rank_score": 0.7524
     },
     {
       "id": "5e9c9fdf3aea",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7624
+      "rank_score": 0.7493
     },
     {
       "id": "c7743c902ae3",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7601
+      "rank_score": 0.747
     },
     {
       "id": "652c69cdeba8",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7586
+      "rank_score": 0.7456
     },
     {
       "id": "c599c61e0255",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8113
+      "rank_score": 0.7986
     },
     {
       "id": "772e9ab44646",
@@ -253,14 +301,14 @@
       "source_id": "hn",
       "url": "https://www.propublica.org/article/trump-2020-election-georgia-fulton-artificial-intelligence-fbi",
       "published_at": "2026-07-16T13:10:03+00:00",
-      "summary": "7 points and 2 comments on Hacker News.",
+      "summary": "8 points and 2 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5171
+      "rank_score": 0.5051
     },
     {
       "id": "e9a82b74f6f5",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8094
+      "rank_score": 0.7968
     },
     {
       "id": "e19d5041cdef",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8392
+      "rank_score": 0.8268
     },
     {
       "id": "f2d4f0d12d3b",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7439
+      "rank_score": 0.7315
     },
     {
       "id": "3090d72b6869",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7371
+      "rank_score": 0.725
     },
     {
       "id": "e723c4e75250",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7632
-    },
-    {
-      "id": "ee72f220c3e8",
-      "headline": "EU officials peeved after Anthropic sends junior staffer to testify about safety",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.politico.eu/article/anthropic-european-parliament-donny-greenberg-artificial-intelligence-ai/",
-      "published_at": "2026-07-16T05:08:08+00:00",
-      "summary": "22 points and 3 comments on Hacker News.",
-      "tags": [
-        "Safety"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.6763
-    },
-    {
-      "id": "492599a7a3db",
-      "headline": "SAFETY SENTRY: Context-Aware Human Intervention via EXECUTE-ASK-REFUSE Routing",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13594",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13594v1 Announce Type: new Abstract: LLM agents act on real-world environments through tool calls, and a single misjudged action can cause irreversible harm. The standard safeguard is a guard model that labels each proposed…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7753
-    },
-    {
-      "id": "e1d9ebeff816",
-      "headline": "OriginBlame: Record- and Token-Level Data Provenance for AI Training Datasets",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.13037",
-      "published_at": "2026-07-16T04:00:00+00:00",
-      "summary": "arXiv:2607.13037v1 Announce Type: new Abstract: When a data contributor requests removal, model trainers face a practical gap: unlearning algorithms require a forget set, yet no tool can locate which training records belong to a given…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7153
+      "rank_score": 0.7515
     }
   ]
 }
