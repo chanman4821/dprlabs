@@ -1,14 +1,30 @@
 {
   "meta": {
-    "generated_at": "2026-07-17T16:20:17.493394+00:00",
+    "generated_at": "2026-07-17T18:10:57.605937+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
+      "id": "ac7be8d09d06",
+      "headline": "How Apple’s big lawsuit could disrupt OpenAI’s IPO plans",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
+      "published_at": "2026-07-17T17:45:46+00:00",
+      "summary": "Apple filed a trade secrets lawsuit against OpenAI last Friday, and it’s not messing around. The complaint alleges a pattern of misconduct reaching all the way up to OpenAI’s chief hardware officer and claims more than 400 former Apple…",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7945
+    },
+    {
       "id": "4d7667566888",
-      "headline": "Apple, Google must stop profiting off AI nudify apps, San Francisco AG says",
+      "headline": "San Francisco orders Apple, Google to remove nudify apps from app stores",
       "source_name": "Ars Technica",
       "source_id": "arstechnica",
       "url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7963
+      "rank_score": 0.7831
     },
     {
       "id": "7be29e0c57cb",
@@ -36,7 +52,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7904
+      "rank_score": 0.7775
+    },
+    {
+      "id": "457457131bff",
+      "headline": "Apple’s lawsuit couldn’t come at a worse time for OpenAI",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/podcast/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai/",
+      "published_at": "2026-07-17T14:00:00+00:00",
+      "summary": "Apple filed a trade secrets lawsuit against OpenAI last Friday, and it’s not messing around. The complaint alleges a pattern of misconduct reaching all the way up to OpenAI’s chief hardware officer and claims more than 400 former Apple…",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7683
     },
     {
       "id": "076335746e73",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8034
+      "rank_score": 0.7913
     },
     {
       "id": "9107ac2d5665",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7673
+      "rank_score": 0.7552
     },
     {
       "id": "3ebda52fc80e",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7892
+      "rank_score": 0.7776
     },
     {
       "id": "7d1eed8c6164",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "50e350980818",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "396e428869ba",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "fcd7043efcdf",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "edfff5893e18",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "29671be89151",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "9b6b7a85d449",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "6ab5658a100f",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "11c8f25a5b06",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "d06d8203ccd1",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "c9326eb6e768",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "ac3792639801",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "82d839e4830d",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "bddca5cb7679",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "505372ccd41a",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "89e3bd7e3bef",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     },
     {
       "id": "0edbeba304c7",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7357
-    },
-    {
-      "id": "173acf4a7a4f",
-      "headline": "The Steering Budget: Examples beat Knobs",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14246",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14246v1 Announce Type: new Abstract: Generative models are steered with knobs -- prompts, guidance scales, property tags. Turn one as hard as you like and, past a point, it stops moving the property you care about. We find that…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7357
-    },
-    {
-      "id": "b9b4050c5dbf",
-      "headline": "Automatic Hard Example Synthesis with Multi-Level Agentic Data Curation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14256",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14256v1 Announce Type: new Abstract: Multimodal Large Language Models (MLLMs) are increasingly deployed for nuanced content safety and moderation tasks, yet they remain vulnerable to adversarial attacks and out-of-distribution…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7357
+      "rank_score": 0.7255
     }
   ]
 }
