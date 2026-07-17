@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-17T18:10:57.605937+00:00",
+    "generated_at": "2026-07-17T20:10:51.118997+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "133497b699bf",
+      "headline": "AI-driven memory crunch jolts India’s smartphone market",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/",
+      "published_at": "2026-07-17T20:09:27+00:00",
+      "summary": "India's smartphone slowdown highlights how the AI boom is reshaping consumer electronics, from pricing and demand to corporate strategy.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7973
+    },
+    {
+      "id": "36b945dd1836",
+      "headline": "Google-backed satellites for wildfire detection launch as smoke chokes US, Canada",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/space/2026/07/google-backed-satellites-for-wildfire-detection-launch-as-smoke-chokes-us-canada/",
+      "published_at": "2026-07-17T19:50:18+00:00",
+      "summary": "The FireSat program can spot wildfires that other satellites miss.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.855
+    },
+    {
+      "id": "b51b6c107383",
+      "headline": "TikTok is testing an AI likeness detection tool",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool",
+      "published_at": "2026-07-17T19:34:30+00:00",
+      "summary": "TikTok is starting to test an opt-in tool that scans for AI likenesses and lets creators report them to the company, as spotted by social media consultant Matt Navarra. The tool is initially being tested with \"some\" US creators, TikTok US…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7931
+    },
     {
       "id": "ac7be8d09d06",
       "headline": "How Apple’s big lawsuit could disrupt OpenAI’s IPO plans",
@@ -20,7 +68,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7945
+      "rank_score": 0.7803
+    },
+    {
+      "id": "a49eed2391da",
+      "headline": "Apple’s plot to crush OpenAI",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
+      "published_at": "2026-07-17T17:41:32+00:00",
+      "summary": "Apple is suing OpenAI. The complaint is readable and intense, as these things often are, though many experts seem to think many of the allegations are just the ways things are done. So what does Apple really want here, and why is it…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7798
     },
     {
       "id": "4d7667566888",
@@ -36,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7831
+      "rank_score": 0.7694
     },
     {
       "id": "7be29e0c57cb",
@@ -52,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7775
+      "rank_score": 0.764
     },
     {
       "id": "457457131bff",
@@ -68,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7683
+      "rank_score": 0.7552
     },
     {
       "id": "076335746e73",
@@ -84,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7913
+      "rank_score": 0.7787
     },
     {
       "id": "9107ac2d5665",
@@ -100,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7552
+      "rank_score": 0.7427
     },
     {
       "id": "3ebda52fc80e",
@@ -109,14 +173,14 @@
       "source_id": "openai",
       "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
       "published_at": "2026-07-17T10:00:00+00:00",
-      "summary": "Sarah Friar, CFO of OpenaAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute.",
+      "summary": "Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7776
+      "rank_score": 0.7656
     },
     {
       "id": "7d1eed8c6164",
@@ -132,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "50e350980818",
@@ -148,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "396e428869ba",
@@ -164,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "fcd7043efcdf",
@@ -180,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "edfff5893e18",
@@ -196,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "29671be89151",
@@ -212,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "9b6b7a85d449",
@@ -228,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "6ab5658a100f",
@@ -244,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "11c8f25a5b06",
@@ -260,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "d06d8203ccd1",
@@ -276,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "c9326eb6e768",
@@ -292,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "ac3792639801",
@@ -308,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     },
     {
       "id": "82d839e4830d",
@@ -324,71 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7255
-    },
-    {
-      "id": "bddca5cb7679",
-      "headline": "ReasFlow: Assisting Reasoning-Centric Scientific Discovery in Applied Mathematics via a Knowledge-Based Multi-Agent System",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14178",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14178v1 Announce Type: new Abstract: Recent advances in Large Language Models have fueled autonomous AI agents capable of tackling complex scientific tasks, yet existing automated research systems remain predominantly focused on…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7255
-    },
-    {
-      "id": "505372ccd41a",
-      "headline": "RxBrain: Embodied Cognition Foundation Model with Joint Language-Visual Reasoning and Imagination",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14187",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14187v1 Announce Type: new Abstract: Embodied cognition requires agents to connect high-level task reasoning with the physical states to be achieved. We introduce Hy-Embodied-RxBrain, an embodied cognition foundation model with…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7255
-    },
-    {
-      "id": "89e3bd7e3bef",
-      "headline": "How Artificial Intelligence LLM Engines Shape the Global Conflict Information Environment",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14197",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14197v1 Announce Type: new Abstract: Artificial Intelligence (AI) answer engines now field a growing share of the questions that analysts, scholars, and the public ask about issues of peace and conflict. Large Language Models…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7255
-    },
-    {
-      "id": "0edbeba304c7",
-      "headline": "Align AI to Dynamic Human-AI Workflows",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14240",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14240v1 Announce Type: new Abstract: Current alignment approaches typically focus on emulating human behavior using static representations of human preferences, failing to capture the dynamic, context-dependent nature of…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7255
+      "rank_score": 0.7148
     }
   ]
 }
