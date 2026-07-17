@@ -1,11 +1,75 @@
 {
   "meta": {
-    "generated_at": "2026-07-17T20:10:51.118997+00:00",
+    "generated_at": "2026-07-17T21:59:17.909369+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "a49f55bafe0a",
+      "headline": "The Zoom hack that says, ‘Don’t record me’",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/17/the-zoom-hack-that-says-dont-record-me/",
+      "published_at": "2026-07-17T21:20:47+00:00",
+      "summary": "If every meeting, watercooler conversation, and date gets transcribed and summarized, who's actually reading any of it?",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7929
+    },
+    {
+      "id": "37bb5cd5186b",
+      "headline": "The Myth of Artificial Intelligence (2021)",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.hup.harvard.edu/books/9780674278660",
+      "published_at": "2026-07-17T21:19:49+00:00",
+      "summary": "1 points and 1 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5558
+    },
+    {
+      "id": "50d765bf3b47",
+      "headline": "MLB restricts using dugout iPads for AI-assisted in-game strategy",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.espn.com/mlb/story/_/id/49385415/mlb-restricts-dugout-ipad-use-prevent-artificial-intelligence-game-decision-making",
+      "published_at": "2026-07-17T20:20:03+00:00",
+      "summary": "2 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5493
+    },
+    {
+      "id": "9f01b3235308",
+      "headline": "Agility Robotics plants its flag in Tesla’s backyard",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/",
+      "published_at": "2026-07-17T20:19:49+00:00",
+      "summary": "Agility is opening a new training center for its Digit robots in Fremont, California.",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7856
+    },
     {
       "id": "133497b699bf",
       "headline": "AI-driven memory crunch jolts India’s smartphone market",
@@ -20,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7973
+      "rank_score": 0.7844
     },
     {
       "id": "36b945dd1836",
@@ -36,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.855
+      "rank_score": 0.8422
     },
     {
       "id": "b51b6c107383",
@@ -52,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7931
+      "rank_score": 0.7803
     },
     {
       "id": "ac7be8d09d06",
@@ -68,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7803
+      "rank_score": 0.768
     },
     {
       "id": "a49eed2391da",
@@ -84,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7798
+      "rank_score": 0.7675
     },
     {
       "id": "4d7667566888",
@@ -100,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7694
+      "rank_score": 0.7575
     },
     {
       "id": "7be29e0c57cb",
@@ -116,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.764
+      "rank_score": 0.7523
     },
     {
       "id": "457457131bff",
@@ -132,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7552
+      "rank_score": 0.7438
     },
     {
       "id": "076335746e73",
@@ -148,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7787
+      "rank_score": 0.7677
     },
     {
       "id": "9107ac2d5665",
@@ -164,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7427
+      "rank_score": 0.7318
     },
     {
       "id": "3ebda52fc80e",
@@ -180,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7656
+      "rank_score": 0.7552
     },
     {
       "id": "7d1eed8c6164",
@@ -196,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7148
+      "rank_score": 0.7056
     },
     {
       "id": "50e350980818",
@@ -212,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7148
+      "rank_score": 0.7056
     },
     {
       "id": "396e428869ba",
@@ -228,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7148
+      "rank_score": 0.7056
     },
     {
       "id": "fcd7043efcdf",
@@ -244,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7148
+      "rank_score": 0.7056
     },
     {
       "id": "edfff5893e18",
@@ -260,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7148
+      "rank_score": 0.7056
     },
     {
       "id": "29671be89151",
@@ -276,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7148
+      "rank_score": 0.7056
     },
     {
       "id": "9b6b7a85d449",
@@ -292,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7148
+      "rank_score": 0.7056
     },
     {
       "id": "6ab5658a100f",
@@ -308,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7148
+      "rank_score": 0.7056
     },
     {
       "id": "11c8f25a5b06",
@@ -324,71 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7148
-    },
-    {
-      "id": "d06d8203ccd1",
-      "headline": "Enhancing Small Language Models Reasoning through Knowledge Graph Grounding",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14149",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14149v1 Announce Type: new Abstract: Although large language models (LLMs) have set benchmarks for zero-shot reasoning, their deployment remains cost-prohibitive and environmentally taxing. Small Language Models (SLMs) offer a…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7148
-    },
-    {
-      "id": "c9326eb6e768",
-      "headline": "Orchestrating Power Grid Studies with Multi-Agent AI and MCP Servers",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14158",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14158v1 Announce Type: new Abstract: This position paper explores how Agentic AI and Model Context Protocol (MCP) can support power-grid studies in a Transmission System Operator (TSO) context. We focus on integrating Large…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7148
-    },
-    {
-      "id": "ac3792639801",
-      "headline": "MemoHarness: Agent Harnesses That Learn from Experience",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14159",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14159v1 Announce Type: new Abstract: An agent harness is the external control layer that turns a base LLM into an executable agent by managing context, tools, orchestration, memory, decoding, and output handling. While harness…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7148
-    },
-    {
-      "id": "82d839e4830d",
-      "headline": "When a Verified World Model Still Loses: Play-Adequacy vs Prediction-Accuracy in LLM-Synthesized Code World Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14169",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14169v1 Announce Type: new Abstract: Large language models can synthesize a game's rules as executable code - a Code World Model (CWM) - which a classical planner then searches over. Such models are typically accepted when they…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7148
+      "rank_score": 0.7056
     }
   ]
 }
