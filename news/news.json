@@ -1,394 +1,394 @@
 {
   "meta": {
-    "generated_at": "2026-07-16T22:08:31.548738+00:00",
+    "generated_at": "2026-07-17T04:12:57.011218+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
-      "id": "252ccc31ca52",
-      "headline": "It's official: EU will force Google to share search data and open up AI on Android",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android/",
-      "published_at": "2026-07-16T20:41:45+00:00",
-      "summary": "Google says these changes could endanger user privacy and security.",
+      "id": "7d1eed8c6164",
+      "headline": "Intelligent Three Level Learning Architecture for Autonomous UAV Swarms in Search and Rescue",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14093",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14093v1 Announce Type: new Abstract: This paper presents a novel three level hierarchical learning architecture for autonomous UAV swarms performing search and rescue operations. Unlike conventional approaches that apply a…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7871
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "976e25fe768e",
-      "headline": "xAI can’t deny Grok makes CSAM anymore. So it’s suing users.",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users/",
-      "published_at": "2026-07-16T20:26:23+00:00",
-      "summary": "Elon Musk's xAI files first lawsuit against Grok user accused of making child sex images.",
+      "id": "50e350980818",
+      "headline": "HG-RAG: Hierarchy-Guided Retrieval-Augmented Generation for Structured Knowledge Graphs",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14095",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14095v1 Announce Type: new Abstract: Retrieval Augmented Generation (RAG) has proven to be a widely successful process at improving the quality of outputs from a Large Language Model (LLM) for wider context. However, RAG systems…",
       "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7853
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "4cd6d663b70d",
-      "headline": "Fear of humanoid robots spurs human workers to strike at Hyundai auto factory",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-spurs-human-workers-to-strike-at-hyundai-auto-factory/",
-      "published_at": "2026-07-16T20:09:48+00:00",
-      "summary": "Hyundai aims to deploy 25,000 Atlas robots starting with US factories in 2028.",
+      "id": "396e428869ba",
+      "headline": "IMEX Interaction-Based Model Explanation",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14096",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14096v1 Announce Type: new Abstract: In predictive modeling, the ability to explain why a model produces a given target prediction has become increasingly important [5, 10]. Black-box models do not provide a transparent…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7834
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "67e2fbcf8be9",
-      "headline": "Cq: A Shared Knowledge Commons for AI Agents",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.i-programmer.info/news/105-artificial-intelligence/19009-cq-a-shared-knowledge-commons-for-ai-agents.html",
-      "published_at": "2026-07-16T19:40:15+00:00",
-      "summary": "1 points and 0 comments on Hacker News.",
+      "id": "fcd7043efcdf",
+      "headline": "RegNetAgents: A Multi-Agent Framework for Cross-Network Regulatory Driver Identification in Cancer Genomics",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14097",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14097v1 Announce Type: new Abstract: We introduce RegNetAgents, an AI-oriented multi-agent framework for structured, query-driven regulatory candidate identification across heterogeneous gene regulatory networks. The system…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.543
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "ba15284a70a8",
-      "headline": "Linus Torvalds to critics of AI coding in Linux: \"Fork it. Or just walk away.\"",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/ai/2026/07/linus-torvalds-to-critics-of-ai-coding-in-linux-fork-it-or-just-walk-away/",
-      "published_at": "2026-07-16T19:18:23+00:00",
-      "summary": "Creator says he will \"very loudly ignore\" those arguing for a ban on AI tools.",
+      "id": "edfff5893e18",
+      "headline": "DialogueVPR: Towards Conversational Visual Place Recognition",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14115",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14115v1 Announce Type: new Abstract: Inspired by how humans communicate spatial information, language-guided geo-localization has gained significant traction for its intuitive and practical value. Despite this progress, most…",
       "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7774
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "d4ca69cf5d37",
-      "headline": "Google Vids now lets you star in your own AI videos",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
-      "published_at": "2026-07-16T18:32:54+00:00",
-      "summary": "Google is adding personalized AI avatars to Vids that let users create videos starring a digital version of themselves, alongside Gemini Omni-powered tools for generating and editing videos from prompts and reference images.",
+      "id": "29671be89151",
+      "headline": "Interpretable Language Model for Closed-Loop Type 1 Diabetes Control",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14126",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14126v1 Announce Type: new Abstract: Type 1 Diabetes (T1D) is a chronic, life-threatening autoimmune condition characterized by the complete destruction of insulin-producing pancreatic beta cells. While Artificial Pancreas…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7723
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "e3176d1ee3b1",
-      "headline": "Roblox launches an AI-powered game-creation feature in its mobile app",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/",
-      "published_at": "2026-07-16T18:22:06+00:00",
-      "summary": "Roblox's new \"Build\" feature lets users generate basic games using a single text prompt.",
+      "id": "9b6b7a85d449",
+      "headline": "Human AI Construction of Bayesian Networks for Operational Decision Support -- A Virtual Survey Approach",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14141",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14141v1 Announce Type: new Abstract: Bayesian Belief Networks (BBNs) are powerful tools for decision-making under uncertainty. However, building their structures and estimating parameters are difficult. Currently, researchers…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.771
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "3ba9165b869a",
-      "headline": "New York governor says she’s using AI to analyze ‘every single rule’ in the state",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
-      "published_at": "2026-07-16T17:58:37+00:00",
-      "summary": "New York Governor Kathy Hochul might have just signed a moratorium on new AI data centers in the state, but she's not against using the technology herself. During an interview with Bloomberg's Odd Lots podcast, Hochul said that her team is…",
+      "id": "6ab5658a100f",
+      "headline": "Capability from Access Structure, Not Scale: Lower Bounds and Pre-Registered Tests for Hybrid Sequence Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14144",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14144v1 Announce Type: new Abstract: The Platonic Representation Hypothesis (PRH) holds that as models scale, representations of heterogeneous networks converge toward a shared model of reality. We propose its sequel and…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7684
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "79ed56faeda9",
-      "headline": "Google is renaming NotebookLM to Gemini Notebook",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm",
-      "published_at": "2026-07-16T16:00:00+00:00",
-      "summary": "Google is giving its AI note-taking app a new name. The company announced on Thursday that NotebookLM is becoming Gemini Notebook, but will remain a standalone app even as it integrates more deeply across Gemini and Google Search. Google…",
+      "id": "11c8f25a5b06",
+      "headline": "ToolAnchor: Anchoring Counterfactual Context to Boost Agentic Tool-use Capability",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14145",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14145v1 Announce Type: new Abstract: Tool-augmented large language model agents excel at long-horizon tasks, yet they are typically post-trained on fixed toolsets. When tasks demand new tools, these agents struggle to…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.8155
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "8fe39edff791",
-      "headline": "Why teens deserve access to safe AI",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/why-teens-deserve-access-safe-ai",
-      "published_at": "2026-07-16T16:00:00+00:00",
-      "summary": "Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships.",
+      "id": "d06d8203ccd1",
+      "headline": "Enhancing Small Language Models Reasoning through Knowledge Graph Grounding",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14149",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14149v1 Announce Type: new Abstract: Although large language models (LLMs) have set benchmarks for zero-shot reasoning, their deployment remains cost-prohibitive and environmentally taxing. Small Language Models (SLMs) offer a…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7905
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "4ccf42e2190c",
-      "headline": "Google’s AI Mode now lets you link and interact with select apps",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/",
-      "published_at": "2026-07-16T16:00:00+00:00",
-      "summary": "With this new update, Google is expanding AI Mode beyond answering questions and into completing tasks across the apps they use regularly.",
+      "id": "c9326eb6e768",
+      "headline": "Orchestrating Power Grid Studies with Multi-Agent AI and MCP Servers",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14158",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14158v1 Announce Type: new Abstract: This position paper explores how Agentic AI and Model Context Protocol (MCP) can support power-grid studies in a Transmission System Operator (TSO) context. We focus on integrating Large…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7555
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "e433f7530f10",
-      "headline": "Energy IPOs surge as investors hunt for ways to play AI boom",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/information-technology/2026/07/energy-ipos-surge-as-investors-hunt-for-ways-to-play-ai-boom/",
-      "published_at": "2026-07-16T15:48:21+00:00",
-      "summary": "Companies coming to market are raising money at fastest pace this century.",
+      "id": "ac3792639801",
+      "headline": "MemoHarness: Agent Harnesses That Learn from Experience",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14159",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14159v1 Announce Type: new Abstract: An agent harness is the external control layer that turns a base LLM into an executable agent by managing context, tools, orchestration, memory, decoding, and output handling. While harness…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7542
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "5f22dfb9fcfe",
-      "headline": "Yes, you can now order DoorDash from the command line",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/",
-      "published_at": "2026-07-16T15:38:55+00:00",
-      "summary": "DoorDash is opening a limited beta of dd-cli, a command-line tool that lets developers and AI agents search stores, build carts, and place orders from the terminal, marking another step toward software designed for AI agents instead of…",
+      "id": "82d839e4830d",
+      "headline": "When a Verified World Model Still Loses: Play-Adequacy vs Prediction-Accuracy in LLM-Synthesized Code World Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14169",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14169v1 Announce Type: new Abstract: Large language models can synthesize a game's rules as executable code - a Code World Model (CWM) - which a classical planner then searches over. Such models are typically accepted when they…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7532
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "d322af2b7cf7",
-      "headline": "Why is OpenAI selling a ChatGPT basketball?",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/16/why-is-openai-selling-a-chatgpt-basketball/",
-      "published_at": "2026-07-16T15:31:09+00:00",
-      "summary": "You may have heard that OpenAI released its first piece of hardware this week. You may not have heard about the ChatGPT basketball.",
+      "id": "bddca5cb7679",
+      "headline": "ReasFlow: Assisting Reasoning-Centric Scientific Discovery in Applied Mathematics via a Knowledge-Based Multi-Agent System",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14178",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14178v1 Announce Type: new Abstract: Recent advances in Large Language Models have fueled autonomous AI agents capable of tackling complex scientific tasks, yet existing automated research systems remain predominantly focused on…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7524
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "5e9c9fdf3aea",
-      "headline": "How a former DeepMind researcher raised at a $300M pre-seed valuation before launching a product",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/",
-      "published_at": "2026-07-16T15:02:00+00:00",
-      "summary": "Drawing on more than a decade spent helping build some of the world's most influential AI systems, including research that later informed the development of ChatGPT, Andrew Dai explains why he believes visual AI is one of the next major…",
+      "id": "505372ccd41a",
+      "headline": "RxBrain: Embodied Cognition Foundation Model with Joint Language-Visual Reasoning and Imagination",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14187",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14187v1 Announce Type: new Abstract: Embodied cognition requires agents to connect high-level task reasoning with the physical states to be achieved. We introduce Hy-Embodied-RxBrain, an embodied cognition foundation model with…",
       "tags": [
-        "Business"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7493
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "c7743c902ae3",
-      "headline": "Why AMI Labs’ Alexandre LeBrun won’t call his AI ‘AGI’ or ‘superintelligence’",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/16/why-ami-labs-alexandre-lebrun-wont-call-his-ai-agi-or-superintelligence/",
-      "published_at": "2026-07-16T14:40:00+00:00",
-      "summary": "While everyone in AI is chasing \"superintelligence,\" Alexandre LeBrun, CEO of Yann LeCun’s world model startup, AMI Labs, dismisses the word.",
+      "id": "89e3bd7e3bef",
+      "headline": "How Artificial Intelligence LLM Engines Shape the Global Conflict Information Environment",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14197",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14197v1 Announce Type: new Abstract: Artificial Intelligence (AI) answer engines now field a growing share of the questions that analysts, scholars, and the public ask about issues of peace and conflict. Large Language Models…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.747
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "652c69cdeba8",
-      "headline": "Moonshot’s upcoming Kimi 3 is expected to close the gap with Anthropic’s Opus 4.8",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/",
-      "published_at": "2026-07-16T14:26:29+00:00",
-      "summary": "The FT reports Kimi K3 will be the largest open AI model from China, with a parameter count between 2 trillion and 3 trillion.",
+      "id": "0edbeba304c7",
+      "headline": "Align AI to Dynamic Human-AI Workflows",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14240",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14240v1 Announce Type: new Abstract: Current alignment approaches typically focus on emulating human behavior using static representations of human preferences, failing to capture the dynamic, context-dependent nature of…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7456
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "c599c61e0255",
-      "headline": "Apple Intelligence approved for launch in China with Alibaba and Baidu",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
-      "published_at": "2026-07-16T13:17:59+00:00",
-      "summary": "The deal, which was rumored to be in the works last year, marks an important step for Apple's AI ambitions in a key market.",
+      "id": "173acf4a7a4f",
+      "headline": "The Steering Budget: Examples beat Knobs",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14246",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14246v1 Announce Type: new Abstract: Generative models are steered with knobs -- prompts, guidance scales, property tags. Turn one as hard as you like and, past a point, it stops moving the property you care about. We find that…",
       "tags": [
-        "Business"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7986
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "772e9ab44646",
-      "headline": "FBI Considers Using AI Tech to Review Signatures on Seized Mail-In Ballots",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.propublica.org/article/trump-2020-election-georgia-fulton-artificial-intelligence-fbi",
-      "published_at": "2026-07-16T13:10:03+00:00",
-      "summary": "8 points and 2 comments on Hacker News.",
+      "id": "b9b4050c5dbf",
+      "headline": "Automatic Hard Example Synthesis with Multi-Level Agentic Data Curation",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14256",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14256v1 Announce Type: new Abstract: Multimodal Large Language Models (MLLMs) are increasingly deployed for nuanced content safety and moderation tasks, yet they remain vulnerable to adversarial attacks and out-of-distribution…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5051
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "e9a82b74f6f5",
-      "headline": "Claude can now use your 1Password credentials for you",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration",
-      "published_at": "2026-07-16T13:00:00+00:00",
-      "summary": "1Password has launched a new browser integration for Claude that allows the Anthropic chatbot to access stored security credentials like usernames and passwords. The 1Password for Claude feature means that users can authorize Claude to…",
+      "id": "1c165c3c2936",
+      "headline": "AI Agents Do Not Fail Alone:The Context Fails First",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14275",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14275v1 Announce Type: new Abstract: Context engineering has become central to building reliable AI agents, yet it remains largely unmeasured. Agents do not fail in isolation: their behavior is shaped by the instructions, tools,…",
       "tags": [
-        "Models"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7968
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "e19d5041cdef",
-      "headline": "The Download: OpenAI unveils GPT-Red and heat pumps rise in the US",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us/",
-      "published_at": "2026-07-16T12:10:00+00:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer OpenAI has built an LLM…",
+      "id": "87bd96a49737",
+      "headline": "Measuring How Students Rely on Generative AI in Academic Writing: Development and Multi-Source Validation of the Generative AI Reliance Types Scale (GenAI-RTS)",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14301",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14301v1 Announce Type: new Abstract: As generative AI (GenAI) becomes increasingly embedded in undergraduate academic writing, how students rely on these tools, rather than simply whether they use them, has become a central…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.8268
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "f2d4f0d12d3b",
-      "headline": "Google ordered to open Android and Search to rivals in Europe",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
-      "published_at": "2026-07-16T12:06:51+00:00",
-      "summary": "Google must give rival AI assistants and search engines greater access to key parts of Android and Google Search after the European Union ordered the company to comply with the bloc's digital antitrust rules. The two decisions, handed down…",
+      "id": "56b888ffe3d5",
+      "headline": "Tracing LLM Behavior to the Training Data with Empirical Next-Token Distributions",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14306",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14306v1 Announce Type: new Abstract: In this paper, we study the connection between an LLM's output distribution and the data used to train it. Specifically, we study the degree to which an LLM's next-token distribution agrees…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7315
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "3090d72b6869",
-      "headline": "Computer cops",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/965066/ai-police-cops",
-      "published_at": "2026-07-16T11:00:00+00:00",
-      "summary": "I stood before a hulking glass and brick structure in the heart of Fort Worth, Texas. Thousands gathered inside to see what had been billed as \"the future of policing in the digital age.\" As press, I was prohibited from entering, but from…",
+      "id": "54cb0931d7cf",
+      "headline": "Traccia: An OpenTelemetry-Based Governance Platform for AI Systems",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14309",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14309v1 Announce Type: new Abstract: The rapid development of Large Language Models (LLMs) and Artificial Intelligent (AI) powered autonomous agents has fundamentally changed the existing forms of software governance. In spite…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.725
+      "credibility": 0.9,
+      "rank_score": 0.8134
     },
     {
-      "id": "e723c4e75250",
-      "headline": "Our approach to bioresilience",
-      "source_name": "Google DeepMind",
-      "source_id": "deepmind",
-      "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
-      "published_at": "2026-07-16T09:30:42+00:00",
-      "summary": "Google DeepMind and Isomorphic Labs are sharing our joint approach to bioresilience and AI models.",
+      "id": "40a40fbcdc72",
+      "headline": "CIPHER: A Decoupled Exploration-Selection Framework for Test-Time Scaling of Data Science Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14386",
+      "published_at": "2026-07-17T04:00:00+00:00",
+      "summary": "arXiv:2607.14386v1 Announce Type: new Abstract: Data science tasks span from closed-ended information extraction to open-ended analysis, presenting significant challenges for automation. Recent AI agents powered by language models show…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7515
+      "credibility": 0.9,
+      "rank_score": 0.8134
     }
   ]
 }
