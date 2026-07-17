@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-17T21:59:17.909369+00:00",
+    "generated_at": "2026-07-17T23:00:21.673052+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "2eed32c959cd",
+      "headline": "Vertu wants executives to pay $6,880 for an AI agent — here’s how it actually performs",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs/",
+      "published_at": "2026-07-17T22:55:09+00:00",
+      "summary": "From AI workflows to battery life and security, here's what it's really like to live with Vertu's luxury foldable every day.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7969
+    },
+    {
+      "id": "df39e0ae194b",
+      "headline": "Databricks hits $188B valuation, extending its run as AI’s favorite second act",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
+      "published_at": "2026-07-17T22:12:56+00:00",
+      "summary": "Databricks has remade its image into an AI company and has published research on the cost savings of open weight AI models for coding.",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7918
+    },
     {
       "id": "a49f55bafe0a",
       "headline": "The Zoom hack that says, ‘Don’t record me’",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7929
+      "rank_score": 0.7856
     },
     {
       "id": "37bb5cd5186b",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5558
+      "rank_score": 0.5486
     },
     {
       "id": "50d765bf3b47",
@@ -45,14 +77,14 @@
       "source_id": "hn",
       "url": "https://www.espn.com/mlb/story/_/id/49385415/mlb-restricts-dugout-ipad-use-prevent-artificial-intelligence-game-decision-making",
       "published_at": "2026-07-17T20:20:03+00:00",
-      "summary": "2 points and 0 comments on Hacker News.",
+      "summary": "3 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5493
+      "rank_score": 0.5429
     },
     {
       "id": "9f01b3235308",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7856
+      "rank_score": 0.7785
     },
     {
       "id": "133497b699bf",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7844
+      "rank_score": 0.7773
     },
     {
       "id": "36b945dd1836",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8422
+      "rank_score": 0.8352
     },
     {
       "id": "b51b6c107383",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7803
+      "rank_score": 0.7734
     },
     {
       "id": "ac7be8d09d06",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.768
+      "rank_score": 0.7613
     },
     {
       "id": "a49eed2391da",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7675
+      "rank_score": 0.7608
     },
     {
       "id": "4d7667566888",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7575
+      "rank_score": 0.751
     },
     {
       "id": "7be29e0c57cb",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7523
+      "rank_score": 0.7459
     },
     {
       "id": "457457131bff",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7438
+      "rank_score": 0.7376
     },
     {
       "id": "076335746e73",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7677
+      "rank_score": 0.7618
     },
     {
       "id": "9107ac2d5665",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7318
+      "rank_score": 0.7258
     },
     {
       "id": "3ebda52fc80e",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7552
+      "rank_score": 0.7494
     },
     {
       "id": "7d1eed8c6164",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7056
+      "rank_score": 0.7006
     },
     {
       "id": "50e350980818",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7056
+      "rank_score": 0.7006
     },
     {
       "id": "396e428869ba",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7056
+      "rank_score": 0.7006
     },
     {
       "id": "fcd7043efcdf",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7056
+      "rank_score": 0.7006
     },
     {
       "id": "edfff5893e18",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7056
+      "rank_score": 0.7006
     },
     {
       "id": "29671be89151",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7056
+      "rank_score": 0.7006
     },
     {
       "id": "9b6b7a85d449",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7056
-    },
-    {
-      "id": "6ab5658a100f",
-      "headline": "Capability from Access Structure, Not Scale: Lower Bounds and Pre-Registered Tests for Hybrid Sequence Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14144",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14144v1 Announce Type: new Abstract: The Platonic Representation Hypothesis (PRH) holds that as models scale, representations of heterogeneous networks converge toward a shared model of reality. We propose its sequel and…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7056
-    },
-    {
-      "id": "11c8f25a5b06",
-      "headline": "ToolAnchor: Anchoring Counterfactual Context to Boost Agentic Tool-use Capability",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14145",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14145v1 Announce Type: new Abstract: Tool-augmented large language model agents excel at long-horizon tasks, yet they are typically post-trained on fixed toolsets. When tasks demand new tools, these agents struggle to…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7056
+      "rank_score": 0.7006
     }
   ]
 }
