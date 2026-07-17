@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-17T12:15:02.490389+00:00",
+    "generated_at": "2026-07-17T14:48:08.642522+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "076335746e73",
+      "headline": "The Download: perimenopause misinformation and China’s latest AI leap",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/17/1140640/the-download-perimenopause-misinformation-china-moonshot-ai/",
+      "published_at": "2026-07-17T12:10:00+00:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. There’s a lot of hype around perimenopause. Don’t buy it. Perimenopause used to be considered taboo,…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8138
+    },
     {
       "id": "9107ac2d5665",
       "headline": "Why the first GPU financiers are turning to inference chips in a $400 million deal",
@@ -20,7 +36,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7957
+      "rank_score": 0.7777
+    },
+    {
+      "id": "3ebda52fc80e",
+      "headline": "A scorecard for the AI age",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "published_at": "2026-07-17T10:00:00+00:00",
+      "summary": "Sarah Friar, CFO of OpenaAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.7992
     },
     {
       "id": "7d1eed8c6164",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "50e350980818",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "396e428869ba",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "fcd7043efcdf",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "edfff5893e18",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "29671be89151",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "9b6b7a85d449",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "6ab5658a100f",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "11c8f25a5b06",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "d06d8203ccd1",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "c9326eb6e768",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "ac3792639801",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "82d839e4830d",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "bddca5cb7679",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "505372ccd41a",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "89e3bd7e3bef",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "0edbeba304c7",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "173acf4a7a4f",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "b9b4050c5dbf",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "1c165c3c2936",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     },
     {
       "id": "87bd96a49737",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7597
-    },
-    {
-      "id": "56b888ffe3d5",
-      "headline": "Tracing LLM Behavior to the Training Data with Empirical Next-Token Distributions",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14306",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14306v1 Announce Type: new Abstract: In this paper, we study the connection between an LLM's output distribution and the data used to train it. Specifically, we study the degree to which an LLM's next-token distribution agrees…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7597
-    },
-    {
-      "id": "54cb0931d7cf",
-      "headline": "Traccia: An OpenTelemetry-Based Governance Platform for AI Systems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14309",
-      "published_at": "2026-07-17T04:00:00+00:00",
-      "summary": "arXiv:2607.14309v1 Announce Type: new Abstract: The rapid development of Large Language Models (LLMs) and Artificial Intelligent (AI) powered autonomous agents has fundamentally changed the existing forms of software governance. In spite…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7597
+      "rank_score": 0.7445
     }
   ]
 }
