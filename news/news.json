@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-18T19:12:59.413680+00:00",
+    "generated_at": "2026-07-18T20:58:04.680780+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "3d89d3a43d6e",
+      "headline": "Dave Eggers told OpenAI staff that ChatGPT was ‘silencing an entire generation’",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
+      "published_at": "2026-07-18T20:54:42+00:00",
+      "summary": "Last year, Sam Altman invited author Dave Eggers to give a talk to around 200 OpenAI staffers. The man has written countless novels, screenplays, pieces of journalism, started McSweeney's, and founded multiple schools and nonprofits that…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7971
+    },
     {
       "id": "c60035e6bb3c",
       "headline": "Kimi: Threat or menace?",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7949
+      "rank_score": 0.7824
     },
     {
       "id": "e6e6f73e7525",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5221
+      "rank_score": 0.511
     },
     {
       "id": "3c5aa6201d26",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7486
+      "rank_score": 0.7379
     },
     {
       "id": "01582b84f950",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7443
+      "rank_score": 0.7337
     },
     {
       "id": "3a54b06e9c82",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7066
+      "rank_score": 0.6974
     },
     {
       "id": "7d1eed8c6164",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "50e350980818",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "396e428869ba",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "fcd7043efcdf",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "edfff5893e18",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "29671be89151",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "9b6b7a85d449",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "6ab5658a100f",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "11c8f25a5b06",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "d06d8203ccd1",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "c9326eb6e768",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "ac3792639801",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "82d839e4830d",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "bddca5cb7679",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "505372ccd41a",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "89e3bd7e3bef",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "0edbeba304c7",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     },
     {
       "id": "173acf4a7a4f",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7199
-    },
-    {
-      "id": "b9b4050c5dbf",
-      "headline": "Automatic Hard Example Synthesis with Multi-Level Agentic Data Curation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14256",
-      "published_at": "2026-07-18T04:00:00+00:00",
-      "summary": "arXiv:2607.14256v1 Announce Type: new Abstract: Multimodal Large Language Models (MLLMs) are increasingly deployed for nuanced content safety and moderation tasks, yet they remain vulnerable to adversarial attacks and out-of-distribution…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7199
+      "rank_score": 0.7108
     }
   ]
 }
