@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-18T07:02:30.689156+00:00",
+    "generated_at": "2026-07-18T13:35:48.646889+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "e6e6f73e7525",
+      "headline": "China's A.I. Play Is Different from America's",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.nytimes.com/2026/07/18/opinion/china-united-states-artificial-intelligence.html",
+      "published_at": "2026-07-18T13:26:22+00:00",
+      "summary": "1 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5595
+    },
+    {
+      "id": "3c5aa6201d26",
+      "headline": "The apps, gadgets, and tools every reader needs",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/967544/best-apps-gadgets-reading-installer",
+      "published_at": "2026-07-18T12:00:00+00:00",
+      "summary": "Hi, friends! Welcome to Installer No. 136, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, hope your neighborhood isn't as smoky as mine, and also you can read all the old editions at the Installer…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7861
+    },
+    {
+      "id": "01582b84f950",
+      "headline": "Will AI fix prior authorization—or make it worse?",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse/",
+      "published_at": "2026-07-18T11:18:25+00:00",
+      "summary": "The government is piloting a program that uses AI for insurance-coverage decisions.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7812
+    },
     {
       "id": "3a54b06e9c82",
       "headline": "Neil Rimer thinks the AI money is coming back out",
@@ -20,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7815
+      "rank_score": 0.7388
     },
     {
       "id": "7d1eed8c6164",
@@ -36,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "50e350980818",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "396e428869ba",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "fcd7043efcdf",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "edfff5893e18",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "29671be89151",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "9b6b7a85d449",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "6ab5658a100f",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "11c8f25a5b06",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "d06d8203ccd1",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "c9326eb6e768",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "ac3792639801",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "82d839e4830d",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "bddca5cb7679",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "505372ccd41a",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "89e3bd7e3bef",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "0edbeba304c7",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "173acf4a7a4f",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "b9b4050c5dbf",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     },
     {
       "id": "1c165c3c2936",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7935
-    },
-    {
-      "id": "87bd96a49737",
-      "headline": "Measuring How Students Rely on Generative AI in Academic Writing: Development and Multi-Source Validation of the Generative AI Reliance Types Scale (GenAI-RTS)",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14301",
-      "published_at": "2026-07-18T04:00:00+00:00",
-      "summary": "arXiv:2607.14301v1 Announce Type: new Abstract: As generative AI (GenAI) becomes increasingly embedded in undergraduate academic writing, how students rely on these tools, rather than simply whether they use them, has become a central…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7935
-    },
-    {
-      "id": "56b888ffe3d5",
-      "headline": "Tracing LLM Behavior to the Training Data with Empirical Next-Token Distributions",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14306",
-      "published_at": "2026-07-18T04:00:00+00:00",
-      "summary": "arXiv:2607.14306v1 Announce Type: new Abstract: In this paper, we study the connection between an LLM's output distribution and the data used to train it. Specifically, we study the degree to which an LLM's next-token distribution agrees…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7935
-    },
-    {
-      "id": "54cb0931d7cf",
-      "headline": "Traccia: An OpenTelemetry-Based Governance Platform for AI Systems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14309",
-      "published_at": "2026-07-18T04:00:00+00:00",
-      "summary": "arXiv:2607.14309v1 Announce Type: new Abstract: The rapid development of Large Language Models (LLMs) and Artificial Intelligent (AI) powered autonomous agents has fundamentally changed the existing forms of software governance. In spite…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7935
+      "rank_score": 0.7516
     }
   ]
 }
