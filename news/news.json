@@ -1,274 +1,18 @@
 {
   "meta": {
-    "generated_at": "2026-07-18T00:03:10.227055+00:00",
+    "generated_at": "2026-07-18T04:04:59.714331+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
-      "id": "f6fb65161f18",
-      "headline": "Brazilian scientist propose a \"shortcut\" to Mars in just 7 months",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://en.clickpetroleoegas.com.br/brazilian-scientist-uses-asteroid-data-and-artificial-intelligence-to-propose-a-shortcut-to-mars-in-just-7-months-and-the-study-is-reported-asaf04/",
-      "published_at": "2026-07-17T23:14:50+00:00",
-      "summary": "1 points and 1 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5548
-    },
-    {
-      "id": "2eed32c959cd",
-      "headline": "Vertu wants executives to pay $6,880 for an AI agent — here’s how it actually performs",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs/",
-      "published_at": "2026-07-17T22:55:09+00:00",
-      "summary": "From AI workflows to battery life and security, here's what it's really like to live with Vertu's luxury foldable every day.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7893
-    },
-    {
-      "id": "df39e0ae194b",
-      "headline": "Databricks hits $188B valuation, extending its run as AI’s favorite second act",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
-      "published_at": "2026-07-17T22:12:56+00:00",
-      "summary": "Databricks has remade its image into an AI company and has published research on the cost savings of open weight AI models for coding.",
-      "tags": [
-        "Open Source"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7844
-    },
-    {
-      "id": "a49f55bafe0a",
-      "headline": "The Zoom hack that says, ‘Don’t record me’",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/17/the-zoom-hack-that-says-dont-record-me/",
-      "published_at": "2026-07-17T21:20:47+00:00",
-      "summary": "If every meeting, watercooler conversation, and date gets transcribed and summarized, who's actually reading any of it?",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7783
-    },
-    {
-      "id": "37bb5cd5186b",
-      "headline": "The Myth of Artificial Intelligence (2021)",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.hup.harvard.edu/books/9780674278660",
-      "published_at": "2026-07-17T21:19:49+00:00",
-      "summary": "1 points and 1 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5413
-    },
-    {
-      "id": "50d765bf3b47",
-      "headline": "MLB restricts using dugout iPads for AI-assisted in-game strategy",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.espn.com/mlb/story/_/id/49385415/mlb-restricts-dugout-ipad-use-prevent-artificial-intelligence-game-decision-making",
-      "published_at": "2026-07-17T20:20:03+00:00",
-      "summary": "3 points and 0 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5357
-    },
-    {
-      "id": "9f01b3235308",
-      "headline": "Agility Robotics plants its flag in Tesla’s backyard",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/",
-      "published_at": "2026-07-17T20:19:49+00:00",
-      "summary": "Agility is opening a new training center for its Digit robots in Fremont, California.",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7714
-    },
-    {
-      "id": "133497b699bf",
-      "headline": "AI-driven memory crunch jolts India’s smartphone market",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/",
-      "published_at": "2026-07-17T20:09:27+00:00",
-      "summary": "India's smartphone slowdown highlights how the AI boom is reshaping consumer electronics, from pricing and demand to corporate strategy.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7702
-    },
-    {
-      "id": "36b945dd1836",
-      "headline": "Google-backed satellites for wildfire detection launch as smoke chokes US, Canada",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/space/2026/07/google-backed-satellites-for-wildfire-detection-launch-as-smoke-chokes-us-canada/",
-      "published_at": "2026-07-17T19:50:18+00:00",
-      "summary": "The FireSat program can spot wildfires that other satellites miss.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.8281
-    },
-    {
-      "id": "ac7be8d09d06",
-      "headline": "How Apple’s big lawsuit could disrupt OpenAI’s IPO plans",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
-      "published_at": "2026-07-17T17:45:46+00:00",
-      "summary": "Apple filed a trade secrets lawsuit against OpenAI last Friday, and it’s not messing around. The complaint alleges a pattern of misconduct reaching all the way up to OpenAI’s chief hardware officer and claims more than 400 former Apple…",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7545
-    },
-    {
-      "id": "4d7667566888",
-      "headline": "San Francisco orders Apple, Google to remove nudify apps from app stores",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/",
-      "published_at": "2026-07-17T16:10:05+00:00",
-      "summary": "Official estimates Google and Apple likely made millions in nudify app fees.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7445
-    },
-    {
-      "id": "7be29e0c57cb",
-      "headline": "Patreon stops asking AI bots not to scrape — and starts blocking them",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/",
-      "published_at": "2026-07-17T15:21:17+00:00",
-      "summary": "Patreon is strengthening its defenses against AI scraping by working with Cloudflare to block bots that train AI models on creators’ content without permission. The move marks a shift away from relying on websites using robots.txt alone to…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7395
-    },
-    {
-      "id": "457457131bff",
-      "headline": "Apple’s lawsuit couldn’t come at a worse time for OpenAI",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/podcast/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai/",
-      "published_at": "2026-07-17T14:00:00+00:00",
-      "summary": "Apple filed a trade secrets lawsuit against OpenAI last Friday, and it’s not messing around. The complaint alleges a pattern of misconduct reaching all the way up to OpenAI’s chief hardware officer and claims more than 400 former Apple…",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7314
-    },
-    {
-      "id": "076335746e73",
-      "headline": "The Download: perimenopause misinformation and China’s latest AI leap",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/17/1140640/the-download-perimenopause-misinformation-china-moonshot-ai/",
-      "published_at": "2026-07-17T12:10:00+00:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. There’s a lot of hype around perimenopause. Don’t buy it. Perimenopause used to be considered taboo,…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7557
-    },
-    {
-      "id": "9107ac2d5665",
-      "headline": "Why the first GPU financiers are turning to inference chips in a $400 million deal",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
-      "published_at": "2026-07-17T12:00:00+00:00",
-      "summary": "A $400 million chip-backed loan points to the next wave of AI infrastructure deals.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7198
-    },
-    {
-      "id": "3ebda52fc80e",
-      "headline": "A scorecard for the AI age",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
-      "published_at": "2026-07-17T10:00:00+00:00",
-      "summary": "Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7437
-    },
-    {
       "id": "7d1eed8c6164",
       "headline": "Intelligent Three Level Learning Architecture for Autonomous UAV Swarms in Search and Rescue",
       "source_name": "arXiv cs.AI",
       "source_id": "arxiv",
       "url": "https://arxiv.org/abs/2607.14093",
-      "published_at": "2026-07-17T04:00:00+00:00",
+      "published_at": "2026-07-18T04:00:00+00:00",
       "summary": "arXiv:2607.14093v1 Announce Type: new Abstract: This paper presents a novel three level hierarchical learning architecture for autonomous UAV swarms performing search and rescue operations. Unlike conventional approaches that apply a…",
       "tags": [
         "Research"
@@ -276,7 +20,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.6955
+      "rank_score": 0.8144
     },
     {
       "id": "50e350980818",
@@ -284,7 +28,7 @@
       "source_name": "arXiv cs.AI",
       "source_id": "arxiv",
       "url": "https://arxiv.org/abs/2607.14095",
-      "published_at": "2026-07-17T04:00:00+00:00",
+      "published_at": "2026-07-18T04:00:00+00:00",
       "summary": "arXiv:2607.14095v1 Announce Type: new Abstract: Retrieval Augmented Generation (RAG) has proven to be a widely successful process at improving the quality of outputs from a Large Language Model (LLM) for wider context. However, RAG systems…",
       "tags": [
         "Research"
@@ -292,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.6955
+      "rank_score": 0.8144
     },
     {
       "id": "396e428869ba",
@@ -300,7 +44,7 @@
       "source_name": "arXiv cs.AI",
       "source_id": "arxiv",
       "url": "https://arxiv.org/abs/2607.14096",
-      "published_at": "2026-07-17T04:00:00+00:00",
+      "published_at": "2026-07-18T04:00:00+00:00",
       "summary": "arXiv:2607.14096v1 Announce Type: new Abstract: In predictive modeling, the ability to explain why a model produces a given target prediction has become increasingly important [5, 10]. Black-box models do not provide a transparent…",
       "tags": [
         "Research"
@@ -308,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.6955
+      "rank_score": 0.8144
     },
     {
       "id": "fcd7043efcdf",
@@ -316,7 +60,7 @@
       "source_name": "arXiv cs.AI",
       "source_id": "arxiv",
       "url": "https://arxiv.org/abs/2607.14097",
-      "published_at": "2026-07-17T04:00:00+00:00",
+      "published_at": "2026-07-18T04:00:00+00:00",
       "summary": "arXiv:2607.14097v1 Announce Type: new Abstract: We introduce RegNetAgents, an AI-oriented multi-agent framework for structured, query-driven regulatory candidate identification across heterogeneous gene regulatory networks. The system…",
       "tags": [
         "Research"
@@ -324,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.6955
+      "rank_score": 0.8144
     },
     {
       "id": "edfff5893e18",
@@ -332,7 +76,7 @@
       "source_name": "arXiv cs.AI",
       "source_id": "arxiv",
       "url": "https://arxiv.org/abs/2607.14115",
-      "published_at": "2026-07-17T04:00:00+00:00",
+      "published_at": "2026-07-18T04:00:00+00:00",
       "summary": "arXiv:2607.14115v1 Announce Type: new Abstract: Inspired by how humans communicate spatial information, language-guided geo-localization has gained significant traction for its intuitive and practical value. Despite this progress, most…",
       "tags": [
         "Research"
@@ -340,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.6955
+      "rank_score": 0.8144
     },
     {
       "id": "29671be89151",
@@ -348,7 +92,7 @@
       "source_name": "arXiv cs.AI",
       "source_id": "arxiv",
       "url": "https://arxiv.org/abs/2607.14126",
-      "published_at": "2026-07-17T04:00:00+00:00",
+      "published_at": "2026-07-18T04:00:00+00:00",
       "summary": "arXiv:2607.14126v1 Announce Type: new Abstract: Type 1 Diabetes (T1D) is a chronic, life-threatening autoimmune condition characterized by the complete destruction of insulin-producing pancreatic beta cells. While Artificial Pancreas…",
       "tags": [
         "Research"
@@ -356,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.6955
+      "rank_score": 0.8144
     },
     {
       "id": "9b6b7a85d449",
@@ -364,7 +108,7 @@
       "source_name": "arXiv cs.AI",
       "source_id": "arxiv",
       "url": "https://arxiv.org/abs/2607.14141",
-      "published_at": "2026-07-17T04:00:00+00:00",
+      "published_at": "2026-07-18T04:00:00+00:00",
       "summary": "arXiv:2607.14141v1 Announce Type: new Abstract: Bayesian Belief Networks (BBNs) are powerful tools for decision-making under uncertainty. However, building their structures and estimating parameters are difficult. Currently, researchers…",
       "tags": [
         "Research"
@@ -372,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.6955
+      "rank_score": 0.8144
     },
     {
       "id": "6ab5658a100f",
@@ -380,7 +124,7 @@
       "source_name": "arXiv cs.AI",
       "source_id": "arxiv",
       "url": "https://arxiv.org/abs/2607.14144",
-      "published_at": "2026-07-17T04:00:00+00:00",
+      "published_at": "2026-07-18T04:00:00+00:00",
       "summary": "arXiv:2607.14144v1 Announce Type: new Abstract: The Platonic Representation Hypothesis (PRH) holds that as models scale, representations of heterogeneous networks converge toward a shared model of reality. We propose its sequel and…",
       "tags": [
         "Research"
@@ -388,7 +132,263 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.6955
+      "rank_score": 0.8144
+    },
+    {
+      "id": "11c8f25a5b06",
+      "headline": "ToolAnchor: Anchoring Counterfactual Context to Boost Agentic Tool-use Capability",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14145",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14145v1 Announce Type: new Abstract: Tool-augmented large language model agents excel at long-horizon tasks, yet they are typically post-trained on fixed toolsets. When tasks demand new tools, these agents struggle to…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "d06d8203ccd1",
+      "headline": "Enhancing Small Language Models Reasoning through Knowledge Graph Grounding",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14149",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14149v1 Announce Type: new Abstract: Although large language models (LLMs) have set benchmarks for zero-shot reasoning, their deployment remains cost-prohibitive and environmentally taxing. Small Language Models (SLMs) offer a…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "c9326eb6e768",
+      "headline": "Orchestrating Power Grid Studies with Multi-Agent AI and MCP Servers",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14158",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14158v1 Announce Type: new Abstract: This position paper explores how Agentic AI and Model Context Protocol (MCP) can support power-grid studies in a Transmission System Operator (TSO) context. We focus on integrating Large…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "ac3792639801",
+      "headline": "MemoHarness: Agent Harnesses That Learn from Experience",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14159",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14159v1 Announce Type: new Abstract: An agent harness is the external control layer that turns a base LLM into an executable agent by managing context, tools, orchestration, memory, decoding, and output handling. While harness…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "82d839e4830d",
+      "headline": "When a Verified World Model Still Loses: Play-Adequacy vs Prediction-Accuracy in LLM-Synthesized Code World Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14169",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14169v1 Announce Type: new Abstract: Large language models can synthesize a game's rules as executable code - a Code World Model (CWM) - which a classical planner then searches over. Such models are typically accepted when they…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "bddca5cb7679",
+      "headline": "ReasFlow: Assisting Reasoning-Centric Scientific Discovery in Applied Mathematics via a Knowledge-Based Multi-Agent System",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14178",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14178v1 Announce Type: new Abstract: Recent advances in Large Language Models have fueled autonomous AI agents capable of tackling complex scientific tasks, yet existing automated research systems remain predominantly focused on…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "505372ccd41a",
+      "headline": "RxBrain: Embodied Cognition Foundation Model with Joint Language-Visual Reasoning and Imagination",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14187",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14187v1 Announce Type: new Abstract: Embodied cognition requires agents to connect high-level task reasoning with the physical states to be achieved. We introduce Hy-Embodied-RxBrain, an embodied cognition foundation model with…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "89e3bd7e3bef",
+      "headline": "How Artificial Intelligence LLM Engines Shape the Global Conflict Information Environment",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14197",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14197v1 Announce Type: new Abstract: Artificial Intelligence (AI) answer engines now field a growing share of the questions that analysts, scholars, and the public ask about issues of peace and conflict. Large Language Models…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "0edbeba304c7",
+      "headline": "Align AI to Dynamic Human-AI Workflows",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14240",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14240v1 Announce Type: new Abstract: Current alignment approaches typically focus on emulating human behavior using static representations of human preferences, failing to capture the dynamic, context-dependent nature of…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "173acf4a7a4f",
+      "headline": "The Steering Budget: Examples beat Knobs",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14246",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14246v1 Announce Type: new Abstract: Generative models are steered with knobs -- prompts, guidance scales, property tags. Turn one as hard as you like and, past a point, it stops moving the property you care about. We find that…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "b9b4050c5dbf",
+      "headline": "Automatic Hard Example Synthesis with Multi-Level Agentic Data Curation",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14256",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14256v1 Announce Type: new Abstract: Multimodal Large Language Models (MLLMs) are increasingly deployed for nuanced content safety and moderation tasks, yet they remain vulnerable to adversarial attacks and out-of-distribution…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "1c165c3c2936",
+      "headline": "AI Agents Do Not Fail Alone:The Context Fails First",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14275",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14275v1 Announce Type: new Abstract: Context engineering has become central to building reliable AI agents, yet it remains largely unmeasured. Agents do not fail in isolation: their behavior is shaped by the instructions, tools,…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "87bd96a49737",
+      "headline": "Measuring How Students Rely on Generative AI in Academic Writing: Development and Multi-Source Validation of the Generative AI Reliance Types Scale (GenAI-RTS)",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14301",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14301v1 Announce Type: new Abstract: As generative AI (GenAI) becomes increasingly embedded in undergraduate academic writing, how students rely on these tools, rather than simply whether they use them, has become a central…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "56b888ffe3d5",
+      "headline": "Tracing LLM Behavior to the Training Data with Empirical Next-Token Distributions",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14306",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14306v1 Announce Type: new Abstract: In this paper, we study the connection between an LLM's output distribution and the data used to train it. Specifically, we study the degree to which an LLM's next-token distribution agrees…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "54cb0931d7cf",
+      "headline": "Traccia: An OpenTelemetry-Based Governance Platform for AI Systems",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14309",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14309v1 Announce Type: new Abstract: The rapid development of Large Language Models (LLMs) and Artificial Intelligent (AI) powered autonomous agents has fundamentally changed the existing forms of software governance. In spite…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
+    },
+    {
+      "id": "40a40fbcdc72",
+      "headline": "CIPHER: A Decoupled Exploration-Selection Framework for Test-Time Scaling of Data Science Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.14386",
+      "published_at": "2026-07-18T04:00:00+00:00",
+      "summary": "arXiv:2607.14386v1 Announce Type: new Abstract: Data science tasks span from closed-ended information extraction to open-ended analysis, presenting significant challenges for automation. Recent AI agents powered by language models show…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8144
     }
   ]
 }
