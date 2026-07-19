@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-19T19:14:53.718083+00:00",
+    "generated_at": "2026-07-19T20:58:55.522972+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "dde9b3e38531",
+      "headline": "Can an Apple lawsuit derail OpenAI’s hardware plans?",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/",
+      "published_at": "2026-07-19T19:24:45+00:00",
+      "summary": "On the latest episode of Equity, we debate whether Apple's lawsuit will cast over OpenAi's much-discussed plans to get into hardware and go public.",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7862
+    },
     {
       "id": "c0ef7a87d4b3",
       "headline": "I hate that I don’t hate this song made with Suno",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7857
+      "rank_score": 0.7737
     },
     {
       "id": "6a9003c90047",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.767
+      "rank_score": 0.7557
     },
     {
       "id": "b458c2b845e2",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5279
+      "rank_score": 0.5166
     },
     {
       "id": "5767ddd493bb",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7613
+      "rank_score": 0.7501
     },
     {
       "id": "426c2873541c",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4785
+      "rank_score": 0.4691
     },
     {
       "id": "97a6754c4a76",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.458
+      "rank_score": 0.4493
     },
     {
       "id": "3d89d3a43d6e",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.6913
+      "rank_score": 0.6835
     },
     {
       "id": "c60035e6bb3c",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.658
+      "rank_score": 0.6506
     },
     {
       "id": "e6e6f73e7525",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4005
+      "rank_score": 0.3938
     },
     {
       "id": "3c5aa6201d26",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.63
+      "rank_score": 0.6236
     },
     {
       "id": "01582b84f950",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6274
+      "rank_score": 0.621
     },
     {
       "id": "3a54b06e9c82",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6046
+      "rank_score": 0.599
     },
     {
       "id": "f9205aed0eb0",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3624
+      "rank_score": 0.357
     },
     {
       "id": "f6fb65161f18",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3511
+      "rank_score": 0.3462
     },
     {
       "id": "2eed32c959cd",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5865
+      "rank_score": 0.5816
     },
     {
       "id": "df39e0ae194b",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5845
+      "rank_score": 0.5796
     },
     {
       "id": "a49f55bafe0a",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.582
+      "rank_score": 0.5772
     },
     {
       "id": "37bb5cd5186b",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3451
+      "rank_score": 0.3403
     },
     {
       "id": "50d765bf3b47",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3453
+      "rank_score": 0.3406
     },
     {
       "id": "9f01b3235308",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5792
+      "rank_score": 0.5745
     },
     {
       "id": "133497b699bf",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5787
+      "rank_score": 0.5741
     },
     {
       "id": "36b945dd1836",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6379
+      "rank_score": 0.6332
     },
     {
       "id": "b51b6c107383",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5771
-    },
-    {
-      "id": "ac7be8d09d06",
-      "headline": "How Apple’s big lawsuit could disrupt OpenAI’s IPO plans",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
-      "published_at": "2026-07-17T17:45:46+00:00",
-      "summary": "Apple filed a trade secrets lawsuit against OpenAI last Friday, and it’s not messing around. The complaint alleges a pattern of misconduct reaching all the way up to OpenAI’s chief hardware officer and claims more than 400 former Apple…",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5723
+      "rank_score": 0.5725
     }
   ]
 }
