@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-19T06:35:56.563599+00:00",
+    "generated_at": "2026-07-19T15:02:30.760589+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "6a9003c90047",
+      "headline": "‘Odyssey’ director Christopher Nolan calls AI an obvious ‘Trojan horse’",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/19/odyssey-director-christopher-nolan-calls-ai-an-obvious-trojan-horse/",
+      "published_at": "2026-07-19T14:52:08+00:00",
+      "summary": "\"Everybody knows the Greeks are inside.\"",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7962
+    },
+    {
+      "id": "b458c2b845e2",
+      "headline": "Humanity at the Threshold: A Declaration on Artificial Intelligence and Nukes",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://globalnobelassembly.org/rome-declaration",
+      "published_at": "2026-07-19T14:26:43+00:00",
+      "summary": "1 points and 1 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5563
+    },
+    {
+      "id": "5767ddd493bb",
+      "headline": "Nonprofit Current AI is racing to build the World Wide Web of AI, free for all",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/19/nonprofit-current-ai-is-racing-to-build-the-world-wide-web-of-ai-free-for-all/",
+      "published_at": "2026-07-19T14:00:00+00:00",
+      "summary": "Current AI, a non-profit building AI that leaves no one culture behind, has made remarkable progress across devices, AI chat and more.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.79
+    },
     {
       "id": "426c2873541c",
       "headline": "Fayetteville officers fired for misusing license plate system",
@@ -13,14 +61,14 @@
       "source_id": "hn",
       "url": "https://www.washingtonpost.com/business/2025/03/14/programming-jobs-lost-artificial-intelligence/",
       "published_at": "2026-07-19T05:32:40+00:00",
-      "summary": "2 points and 1 comments on Hacker News.",
+      "summary": "9 points and 2 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5536
+      "rank_score": 0.5026
     },
     {
       "id": "97a6754c4a76",
@@ -29,14 +77,14 @@
       "source_id": "hn",
       "url": "https://www.abc.net.au/news/2026-07-19/china-cracks-down-on-artificial-intelligence-companions/106925352",
       "published_at": "2026-07-19T01:53:04+00:00",
-      "summary": "3 points and 1 comments on Hacker News.",
+      "summary": "7 points and 1 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5291
+      "rank_score": 0.4803
     },
     {
       "id": "3d89d3a43d6e",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.7575
+      "rank_score": 0.7114
     },
     {
       "id": "c60035e6bb3c",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7215
+      "rank_score": 0.6773
     },
     {
       "id": "e6e6f73e7525",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4572
+      "rank_score": 0.4177
     },
     {
       "id": "3c5aa6201d26",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6851
+      "rank_score": 0.6468
     },
     {
       "id": "01582b84f950",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6817
+      "rank_score": 0.6439
     },
     {
       "id": "3a54b06e9c82",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6519
+      "rank_score": 0.619
     },
     {
       "id": "f9205aed0eb0",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4082
+      "rank_score": 0.3763
     },
     {
       "id": "f6fb65161f18",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3933
+      "rank_score": 0.364
     },
     {
       "id": "2eed32c959cd",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6284
+      "rank_score": 0.5992
     },
     {
       "id": "df39e0ae194b",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6258
+      "rank_score": 0.597
     },
     {
       "id": "a49f55bafe0a",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6226
+      "rank_score": 0.5943
     },
     {
       "id": "37bb5cd5186b",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3856
+      "rank_score": 0.3574
     },
     {
       "id": "50d765bf3b47",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.385
+      "rank_score": 0.3574
     },
     {
       "id": "9f01b3235308",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6189
+      "rank_score": 0.5913
     },
     {
       "id": "133497b699bf",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6183
+      "rank_score": 0.5907
     },
     {
       "id": "36b945dd1836",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6772
+      "rank_score": 0.6498
     },
     {
       "id": "b51b6c107383",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6162
+      "rank_score": 0.589
     },
     {
       "id": "ac7be8d09d06",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.61
+      "rank_score": 0.5838
     },
     {
       "id": "a49eed2391da",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6097
-    },
-    {
-      "id": "4d7667566888",
-      "headline": "San Francisco orders Apple, Google to remove nudify apps from app stores",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/",
-      "published_at": "2026-07-17T16:10:05+00:00",
-      "summary": "Official estimates Google and Apple likely made millions in nudify app fees.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.6047
-    },
-    {
-      "id": "7be29e0c57cb",
-      "headline": "Patreon stops asking AI bots not to scrape — and starts blocking them",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/",
-      "published_at": "2026-07-17T15:21:17+00:00",
-      "summary": "Patreon is strengthening its defenses against AI scraping by working with Cloudflare to block bots that train AI models on creators’ content without permission. The move marks a shift away from relying on websites using robots.txt alone to…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.602
-    },
-    {
-      "id": "457457131bff",
-      "headline": "Apple’s lawsuit couldn’t come at a worse time for OpenAI",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/podcast/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai/",
-      "published_at": "2026-07-17T14:00:00+00:00",
-      "summary": "Apple filed a trade secrets lawsuit against OpenAI last Friday, and it’s not messing around. The complaint alleges a pattern of misconduct reaching all the way up to OpenAI’s chief hardware officer and claims more than 400 former Apple…",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5977
+      "rank_score": 0.5836
     }
   ]
 }
