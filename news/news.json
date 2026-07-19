@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-19T15:02:30.760589+00:00",
+    "generated_at": "2026-07-19T19:14:53.718083+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "c0ef7a87d4b3",
+      "headline": "I hate that I don’t hate this song made with Suno",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music",
+      "published_at": "2026-07-19T17:35:54+00:00",
+      "summary": "I would never go so far as to say there's no place for AI in music (I'm a fan of Holly Herndon, after all). But I generally find music made with generative AI to be offensively boring, especially the outputs of Suno. So I'm having a bit of…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7857
+    },
     {
       "id": "6a9003c90047",
       "headline": "‘Odyssey’ director Christopher Nolan calls AI an obvious ‘Trojan horse’",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7962
+      "rank_score": 0.767
     },
     {
       "id": "b458c2b845e2",
@@ -29,14 +45,14 @@
       "source_id": "hn",
       "url": "https://globalnobelassembly.org/rome-declaration",
       "published_at": "2026-07-19T14:26:43+00:00",
-      "summary": "1 points and 1 comments on Hacker News.",
+      "summary": "2 points and 2 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5563
+      "rank_score": 0.5279
     },
     {
       "id": "5767ddd493bb",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.79
+      "rank_score": 0.7613
     },
     {
       "id": "426c2873541c",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5026
+      "rank_score": 0.4785
     },
     {
       "id": "97a6754c4a76",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4803
+      "rank_score": 0.458
     },
     {
       "id": "3d89d3a43d6e",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.7114
+      "rank_score": 0.6913
     },
     {
       "id": "c60035e6bb3c",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6773
+      "rank_score": 0.658
     },
     {
       "id": "e6e6f73e7525",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4177
+      "rank_score": 0.4005
     },
     {
       "id": "3c5aa6201d26",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6468
+      "rank_score": 0.63
     },
     {
       "id": "01582b84f950",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6439
+      "rank_score": 0.6274
     },
     {
       "id": "3a54b06e9c82",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.619
+      "rank_score": 0.6046
     },
     {
       "id": "f9205aed0eb0",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3763
+      "rank_score": 0.3624
     },
     {
       "id": "f6fb65161f18",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.364
+      "rank_score": 0.3511
     },
     {
       "id": "2eed32c959cd",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5992
+      "rank_score": 0.5865
     },
     {
       "id": "df39e0ae194b",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.597
+      "rank_score": 0.5845
     },
     {
       "id": "a49f55bafe0a",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5943
+      "rank_score": 0.582
     },
     {
       "id": "37bb5cd5186b",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3574
+      "rank_score": 0.3451
     },
     {
       "id": "50d765bf3b47",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3574
+      "rank_score": 0.3453
     },
     {
       "id": "9f01b3235308",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5913
+      "rank_score": 0.5792
     },
     {
       "id": "133497b699bf",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5907
+      "rank_score": 0.5787
     },
     {
       "id": "36b945dd1836",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6498
+      "rank_score": 0.6379
     },
     {
       "id": "b51b6c107383",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.589
+      "rank_score": 0.5771
     },
     {
       "id": "ac7be8d09d06",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5838
-    },
-    {
-      "id": "a49eed2391da",
-      "headline": "Apple’s plot to crush OpenAI",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
-      "published_at": "2026-07-17T17:41:32+00:00",
-      "summary": "Apple is suing OpenAI. The complaint is readable and intense, as these things often are, though many experts seem to think many of the allegations are just the ways things are done. So what does Apple really want here, and why is it…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5836
+      "rank_score": 0.5723
     }
   ]
 }
