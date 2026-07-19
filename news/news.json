@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-19T20:58:55.522972+00:00",
+    "generated_at": "2026-07-19T22:02:35.553914+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "90851a797dd0",
+      "headline": "What to watch for after Jensen Huang’s Japan visit",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/",
+      "published_at": "2026-07-19T21:16:07+00:00",
+      "summary": "Jensen Huang left Tokyo with deals spanning Japan's entire tech ecosystem.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7919
+    },
     {
       "id": "dde9b3e38531",
       "headline": "Can an Apple lawsuit derail OpenAI’s hardware plans?",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7862
+      "rank_score": 0.7788
     },
     {
       "id": "c0ef7a87d4b3",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7737
+      "rank_score": 0.7665
     },
     {
       "id": "6a9003c90047",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7557
+      "rank_score": 0.7489
     },
     {
       "id": "b458c2b845e2",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5166
+      "rank_score": 0.51
     },
     {
       "id": "5767ddd493bb",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7501
+      "rank_score": 0.7435
     },
     {
       "id": "426c2873541c",
@@ -93,14 +109,14 @@
       "source_id": "hn",
       "url": "https://www.washingtonpost.com/business/2025/03/14/programming-jobs-lost-artificial-intelligence/",
       "published_at": "2026-07-19T05:32:40+00:00",
-      "summary": "9 points and 2 comments on Hacker News.",
+      "summary": "9 points and 4 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4691
+      "rank_score": 0.4636
     },
     {
       "id": "97a6754c4a76",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4493
+      "rank_score": 0.4442
     },
     {
       "id": "3d89d3a43d6e",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.6835
+      "rank_score": 0.6788
     },
     {
       "id": "c60035e6bb3c",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6506
+      "rank_score": 0.6461
     },
     {
       "id": "e6e6f73e7525",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3938
+      "rank_score": 0.3899
     },
     {
       "id": "3c5aa6201d26",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6236
+      "rank_score": 0.6197
     },
     {
       "id": "01582b84f950",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.621
+      "rank_score": 0.6172
     },
     {
       "id": "3a54b06e9c82",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.599
+      "rank_score": 0.5957
     },
     {
       "id": "f9205aed0eb0",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.357
+      "rank_score": 0.3538
     },
     {
       "id": "f6fb65161f18",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3462
+      "rank_score": 0.3432
     },
     {
       "id": "2eed32c959cd",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5816
+      "rank_score": 0.5786
     },
     {
       "id": "df39e0ae194b",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5796
+      "rank_score": 0.5767
     },
     {
       "id": "a49f55bafe0a",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5772
+      "rank_score": 0.5744
     },
     {
       "id": "37bb5cd5186b",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3403
+      "rank_score": 0.3375
     },
     {
       "id": "50d765bf3b47",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.3406
+      "rank_score": 0.3379
     },
     {
       "id": "9f01b3235308",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5745
+      "rank_score": 0.5717
     },
     {
       "id": "133497b699bf",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.5741
+      "rank_score": 0.5713
     },
     {
       "id": "36b945dd1836",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6332
-    },
-    {
-      "id": "b51b6c107383",
-      "headline": "TikTok is testing an AI likeness detection tool",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool",
-      "published_at": "2026-07-17T19:34:30+00:00",
-      "summary": "TikTok is starting to test an opt-in tool that scans for AI likenesses and lets creators report them to the company, as spotted by social media consultant Matt Navarra. The tool is initially being tested with \"some\" US creators, TikTok US…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.5725
+      "rank_score": 0.6305
     }
   ]
 }
