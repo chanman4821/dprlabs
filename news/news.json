@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-18T20:58:04.680780+00:00",
+    "generated_at": "2026-07-19T03:29:39.424828+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "97a6754c4a76",
+      "headline": "China cracks down on AI companions, forcing millions to break up",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.abc.net.au/news/2026-07-19/china-cracks-down-on-artificial-intelligence-companions/106925352",
+      "published_at": "2026-07-19T01:53:04+00:00",
+      "summary": "3 points and 1 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5503
+    },
     {
       "id": "3d89d3a43d6e",
       "headline": "Dave Eggers told OpenAI staff that ChatGPT was ‘silencing an entire generation’",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7971
+      "rank_score": 0.7527
     },
     {
       "id": "c60035e6bb3c",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7824
+      "rank_score": 0.7398
     },
     {
       "id": "e6e6f73e7525",
@@ -45,14 +61,14 @@
       "source_id": "hn",
       "url": "https://www.nytimes.com/2026/07/18/opinion/china-united-states-artificial-intelligence.html",
       "published_at": "2026-07-18T13:26:22+00:00",
-      "summary": "3 points and 0 comments on Hacker News.",
+      "summary": "4 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.511
+      "rank_score": 0.4736
     },
     {
       "id": "3c5aa6201d26",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7379
+      "rank_score": 0.7009
     },
     {
       "id": "01582b84f950",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7337
+      "rank_score": 0.6973
     },
     {
       "id": "3a54b06e9c82",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.6974
+      "rank_score": 0.6656
     },
     {
       "id": "7d1eed8c6164",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "50e350980818",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "396e428869ba",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "fcd7043efcdf",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "edfff5893e18",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "29671be89151",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "9b6b7a85d449",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "6ab5658a100f",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "11c8f25a5b06",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "d06d8203ccd1",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "c9326eb6e768",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "ac3792639801",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "82d839e4830d",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "bddca5cb7679",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "505372ccd41a",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "89e3bd7e3bef",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     },
     {
       "id": "0edbeba304c7",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7108
-    },
-    {
-      "id": "173acf4a7a4f",
-      "headline": "The Steering Budget: Examples beat Knobs",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.14246",
-      "published_at": "2026-07-18T04:00:00+00:00",
-      "summary": "arXiv:2607.14246v1 Announce Type: new Abstract: Generative models are steered with knobs -- prompts, guidance scales, property tags. Turn one as hard as you like and, past a point, it stops moving the property you care about. We find that…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7108
+      "rank_score": 0.6795
     }
   ]
 }
