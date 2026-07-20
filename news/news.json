@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-20T20:35:56.117184+00:00",
+    "generated_at": "2026-07-20T22:06:18.023798+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "e36f067a89a5",
+      "headline": "Firefighting drones in the works as wildfires plague US nearly year-round",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/firefighting-drones-in-the-works-as-wildfires-plague-us-nearly-year-round/",
+      "published_at": "2026-07-20T21:55:52+00:00",
+      "summary": "California and XPRIZE competition tests whether drones can stop wildfires early.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7962
+    },
+    {
+      "id": "d573260cad05",
+      "headline": "Google is working on a new AI chip designed to make Gemini more efficient",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/",
+      "published_at": "2026-07-20T21:21:15+00:00",
+      "summary": "Alphabet, Google's parent company, is reportedly working on a new chip designed to make its Gemini models run much more efficiently.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8521
+    },
+    {
+      "id": "17b501c7fe13",
+      "headline": "AI’s most important protocol is getting a little bit easier to use",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/",
+      "published_at": "2026-07-20T20:50:40+00:00",
+      "summary": "The Model Context Protocol (MCP) is one of the basic building blocks of AI interoperability, giving AI models a secure way to access external data sources and services. It’s the plumbing that lets a chatbot reach into your calendar, your…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7884
+    },
     {
       "id": "5bd99aaba04e",
       "headline": "Government can seize private land to make way for new AI data center power",
@@ -13,14 +61,14 @@
       "source_id": "hn",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/power-companies-can-seize-private-land-to-make-way-for-new-ai-data-center-transmission-lines-report-says-takeovers-could-be-implemented-using-eminent-domain-law-when-private-citizens-refuse-to-sell-land",
       "published_at": "2026-07-20T20:18:12+00:00",
-      "summary": "2 points and 0 comments on Hacker News.",
+      "summary": "2 points and 1 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5591
+      "rank_score": 0.5483
     },
     {
       "id": "288f9399dfa8",
@@ -36,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7905
+      "rank_score": 0.7799
     },
     {
       "id": "502e6d35fbb7",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.79
+      "rank_score": 0.7794
     },
     {
       "id": "b1ff081c1872",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8141
+      "rank_score": 0.8038
     },
     {
       "id": "8578cdf299be",
@@ -77,14 +125,14 @@
       "source_id": "hn",
       "url": "https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use",
       "published_at": "2026-07-20T17:22:50+00:00",
-      "summary": "6 points and 0 comments on Hacker News.",
+      "summary": "7 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5409
+      "rank_score": 0.5314
     },
     {
       "id": "a549b2f2489b",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7655
+      "rank_score": 0.7557
     },
     {
       "id": "cdc3fbd3b50a",
@@ -116,23 +164,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7639
+      "rank_score": 0.7541
     },
     {
       "id": "d139044a2145",
-      "headline": "Jaron Lanier: there is no AI (2023)",
+      "headline": "Mythologizing AI makes it more likely that we’ll fail to operate it well (2023)",
       "source_name": "Hacker News",
       "source_id": "hn",
       "url": "https://www.newyorker.com/science/annals-of-artificial-intelligence/there-is-no-ai",
       "published_at": "2026-07-20T15:28:32+00:00",
-      "summary": "33 points and 83 comments on Hacker News.",
+      "summary": "51 points and 87 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5444
+      "rank_score": 0.5455
     },
     {
       "id": "93c83145e8c7",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7615
+      "rank_score": 0.7518
     },
     {
       "id": "6e9ccb6e2fc1",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7761
+      "rank_score": 0.767
     },
     {
       "id": "190b56dc0bf0",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.501
+      "rank_score": 0.4921
     },
     {
       "id": "ee53b2e14da2",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7361
+      "rank_score": 0.7272
     },
     {
       "id": "90cef26b7e07",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7298
+      "rank_score": 0.7211
     },
     {
       "id": "d4ff9ec891b7",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8232
+      "rank_score": 0.8145
     },
     {
       "id": "3921df47f592",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7554
+      "rank_score": 0.7469
     },
     {
       "id": "d0be1ca5b431",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7727
+      "rank_score": 0.765
     },
     {
       "id": "05aa29019964",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7727
+      "rank_score": 0.765
     },
     {
       "id": "bce1ea0cbdf3",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7127
+      "rank_score": 0.705
     },
     {
       "id": "257ec8fb1ccc",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7127
+      "rank_score": 0.705
     },
     {
       "id": "5a7541dc56e3",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7127
+      "rank_score": 0.705
     },
     {
       "id": "8b67d15f9706",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7127
-    },
-    {
-      "id": "8a4f76283644",
-      "headline": "Precise but Uncoupled: Reviewer Precision Does Not Guarantee Critique Uptake in Multi-Agent Math Reasoning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15388",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15388v1 Announce Type: new Abstract: Many math- and science-oriented agent systems use hierarchical designs with specialized reviewer roles, assuming that a dedicated review stage should help turn wrong candidates into correct…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7127
-    },
-    {
-      "id": "4ba07574aad4",
-      "headline": "DrawingVQA: A Real-World Benchmark for Multi-Depth Visual-Textual Reasoning on Construction Drawings",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15418",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15418v1 Announce Type: new Abstract: We introduce DrawingVQA, the first benchmark designed to evaluate multimodal large language models (MLLMs) on real-world construction drawings -- a core media in architecture, civil, and many…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7127
-    },
-    {
-      "id": "f39222fdb76c",
-      "headline": "Do Coding Agents Need Executable World Models, Simplification, and Verification to Solve ARC-AGI-3?",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15439",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15439v1 Announce Type: new Abstract: Our previous ARC-AGI-3 agent bundled executable world modeling, scheduled simplification, and exact replay verification, leaving unclear which idea accounted for its performance. We address…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7127
+      "rank_score": 0.705
     }
   ]
 }
