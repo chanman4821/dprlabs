@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-20T16:37:34.202100+00:00",
+    "generated_at": "2026-07-20T18:57:22.407916+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "b1ff081c1872",
+      "headline": "China’s AI models have Trump’s AI world at war with itself",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/",
+      "published_at": "2026-07-20T18:00:00+00:00",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Over the weekend, several current and former advisors to President Donald Trump on AI publicly lobbed…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8256
+    },
+    {
+      "id": "8578cdf299be",
+      "headline": "How much energy do data centers and artificial intelligence use?",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use",
+      "published_at": "2026-07-20T17:22:50+00:00",
+      "summary": "5 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5517
+    },
     {
       "id": "a549b2f2489b",
       "headline": "Adobe’s ‘natural look’ camera app embraces generative AI",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.793
+      "rank_score": 0.7766
     },
     {
       "id": "d139044a2145",
@@ -29,14 +61,14 @@
       "source_id": "hn",
       "url": "https://www.newyorker.com/science/annals-of-artificial-intelligence/there-is-no-ai",
       "published_at": "2026-07-20T15:28:32+00:00",
-      "summary": "21 points and 12 comments on Hacker News.",
+      "summary": "32 points and 76 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5643
+      "rank_score": 0.5547
     },
     {
       "id": "93c83145e8c7",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7886
+      "rank_score": 0.7724
     },
     {
       "id": "6e9ccb6e2fc1",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8015
+      "rank_score": 0.7863
     },
     {
       "id": "190b56dc0bf0",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5259
+      "rank_score": 0.5111
     },
     {
       "id": "ee53b2e14da2",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.761
+      "rank_score": 0.7461
     },
     {
       "id": "90cef26b7e07",
@@ -116,7 +148,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7541
+      "rank_score": 0.7396
+    },
+    {
+      "id": "d4ff9ec891b7",
+      "headline": "Safety and alignment in an era of long-horizon models",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/safety-alignment-long-horizon-models",
+      "published_at": "2026-07-20T10:00:00+00:00",
+      "summary": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment.",
+      "tags": [
+        "Safety"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8329
     },
     {
       "id": "3921df47f592",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7789
+      "rank_score": 0.7649
     },
     {
       "id": "d0be1ca5b431",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7941
+      "rank_score": 0.7813
     },
     {
       "id": "05aa29019964",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7941
+      "rank_score": 0.7813
     },
     {
       "id": "bce1ea0cbdf3",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7341
+      "rank_score": 0.7213
     },
     {
       "id": "257ec8fb1ccc",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7341
+      "rank_score": 0.7213
     },
     {
       "id": "5a7541dc56e3",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7341
+      "rank_score": 0.7213
     },
     {
       "id": "8b67d15f9706",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7341
+      "rank_score": 0.7213
     },
     {
       "id": "8a4f76283644",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7341
+      "rank_score": 0.7213
     },
     {
       "id": "4ba07574aad4",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7341
+      "rank_score": 0.7213
     },
     {
       "id": "f39222fdb76c",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7341
+      "rank_score": 0.7213
     },
     {
       "id": "561d29dadd8c",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7341
+      "rank_score": 0.7213
     },
     {
       "id": "2be7b6b50deb",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7341
+      "rank_score": 0.7213
     },
     {
       "id": "403efb51ed01",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7341
+      "rank_score": 0.7213
     },
     {
       "id": "cea2fcbb2ebc",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7341
-    },
-    {
-      "id": "c785fbfeb0db",
-      "headline": "MGDT: MLLM-Guided Diffusion Transformer with Relation-Adaptive Mixture-of-Experts for Multimodal Knowledge Graph Completion",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15592",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15592v1 Announce Type: new Abstract: Multimodal Knowledge Graph Completion (MKGC) requires inferring missing entities from structural, textual, and visual cues. Existing diffusion-based MKGC methods usually denoise directly on…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7341
-    },
-    {
-      "id": "3924db9286e9",
-      "headline": "Neuro-Symbolic AI for LEED compliance: Document-Centric Benchmarking, Deterministic Numeric Checking, and When Multimodal Hurts",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15647",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15647v1 Announce Type: new Abstract: LEED v4.1 BD+C certification remains a document-intensive process that requires reviewers to read hundreds of pages of project evidence and apply credit-specific threshold logic by hand. This…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7341
-    },
-    {
-      "id": "36c3b605f806",
-      "headline": "ToolVerse: Unlocking Massive Environments and Long-Horizon Tasks for Agentic Reinforcement Learning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15660",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15660v1 Announce Type: new Abstract: While LLM agents demonstrate strong reasoning abilities in compact and well-defined scenarios, they struggle to maintain robustness and effectiveness when faced with large-scale, diverse, and…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7341
+      "rank_score": 0.7213
     }
   ]
 }
