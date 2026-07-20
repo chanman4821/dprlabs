@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-20T04:40:21.459018+00:00",
+    "generated_at": "2026-07-20T11:51:19.427666+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "190b56dc0bf0",
+      "headline": "Major AI models are likely to refuse criticizing restrictive leaders or govts",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://apnews.com/article/artificial-intelligence-chatbots-censorship-bias-free-speech-fed8fdbf90751c10fe77b77832e0ffba",
+      "published_at": "2026-07-20T11:26:15+00:00",
+      "summary": "1 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5576
+    },
+    {
+      "id": "ee53b2e14da2",
+      "headline": "Beyond grep: The case for a context-rich AI coding harness",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/beyond-grep-the-case-for-a-context-rich-ai-coding-harness/",
+      "published_at": "2026-07-20T11:20:10+00:00",
+      "summary": "Augment Code's Vinay Perneti talks models, harnesses, and context.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7937
+    },
+    {
+      "id": "3921df47f592",
+      "headline": "AI is more likely than humans to form biases when hiring",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
+      "published_at": "2026-07-20T08:39:01+00:00",
+      "summary": "The next time you apply for a job, AI may screen your résumé before any human sees it. But there’s good reason to question whether AI will judge you fairly. Researchers already know that LLMs pick up human biases from their training data.…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8099
+    },
     {
       "id": "d0be1ca5b431",
       "headline": "SeerGuard: A Safety Framework for Mobile GUI Agents via World Model Prediction",
@@ -20,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8701
+      "rank_score": 0.8222
     },
     {
       "id": "05aa29019964",
@@ -36,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8701
+      "rank_score": 0.8222
     },
     {
       "id": "bce1ea0cbdf3",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "257ec8fb1ccc",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "5a7541dc56e3",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "8b67d15f9706",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "8a4f76283644",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "4ba07574aad4",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "f39222fdb76c",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "561d29dadd8c",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "2be7b6b50deb",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "403efb51ed01",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "cea2fcbb2ebc",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "c785fbfeb0db",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "3924db9286e9",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "36c3b605f806",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "233dfacad8a7",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "d12389348e68",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "a7e35415d871",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "72b0418e31bc",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     },
     {
       "id": "942265efd51e",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8101
-    },
-    {
-      "id": "672d6ab1c90b",
-      "headline": "DSWorld: A Data Science World Model for Efficient Autonomous Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15901",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15901v1 Announce Type: new Abstract: Despite strong capabilities in data understanding and decision-making, autonomous data science agents still heavily rely on trial-and-error workflows that involve expensive computation. This…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.8101
-    },
-    {
-      "id": "b9de09b3a17a",
-      "headline": "A Formally Grounded ODRL Evaluator: Implementation and Comparison",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15987",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15987v1 Announce Type: new Abstract: The ODRL policy language is emerging as the de-facto standard for policy modelling data access and usage preferences, AI governance policies and data workflows in European dataspaces. The…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.8101
-    },
-    {
-      "id": "88beb11a9d9e",
-      "headline": "Closing the AI Trust Gap: The Case for Independent Certification for Trustworthy AI",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15992",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15992v1 Announce Type: new Abstract: Over the past decade, responsible AI (RAI) has produced a substantial body of practice for identifying and mitigating the risks AI poses in high-stakes settings. Yet this work has not…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.8101
+      "rank_score": 0.7622
     }
   ]
 }
