@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-20T14:21:38.857697+00:00",
+    "generated_at": "2026-07-20T16:37:34.202100+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "a549b2f2489b",
+      "headline": "Adobe’s ‘natural look’ camera app embraces generative AI",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/967791/adobe-indigo-camera-app-ai-playground-update",
+      "published_at": "2026-07-20T16:00:00+00:00",
+      "summary": "Adobe's experimental camera app has taken an unexpected turn. After Project Indigo was launched last year to provide a \"more natural (SLR-like) look\" for iPhone photography, the Indigo camera app is now being updated with a suite of…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.793
+    },
+    {
+      "id": "d139044a2145",
+      "headline": "Jaron Lanier: there is no AI (2023)",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.newyorker.com/science/annals-of-artificial-intelligence/there-is-no-ai",
+      "published_at": "2026-07-20T15:28:32+00:00",
+      "summary": "21 points and 12 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5643
+    },
+    {
+      "id": "93c83145e8c7",
+      "headline": "YouTube clarifies policies around AI slop and upsetting videos",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/",
+      "published_at": "2026-07-20T15:23:06+00:00",
+      "summary": "YouTube has updated its monetization policies to more clearly define the kinds of AI-generated and low-quality videos that can’t earn ad revenue.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7886
+    },
     {
       "id": "6e9ccb6e2fc1",
       "headline": "The Download: AI hiring biases, and weather data sabotage",
@@ -20,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8169
+      "rank_score": 0.8015
     },
     {
       "id": "190b56dc0bf0",
@@ -36,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5411
+      "rank_score": 0.5259
     },
     {
       "id": "ee53b2e14da2",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7761
+      "rank_score": 0.761
     },
     {
       "id": "90cef26b7e07",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.769
+      "rank_score": 0.7541
     },
     {
       "id": "3921df47f592",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7932
+      "rank_score": 0.7789
     },
     {
       "id": "d0be1ca5b431",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8071
+      "rank_score": 0.7941
     },
     {
       "id": "05aa29019964",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8071
+      "rank_score": 0.7941
     },
     {
       "id": "bce1ea0cbdf3",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "257ec8fb1ccc",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "5a7541dc56e3",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "8b67d15f9706",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "8a4f76283644",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "4ba07574aad4",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "f39222fdb76c",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "561d29dadd8c",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "2be7b6b50deb",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "403efb51ed01",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "cea2fcbb2ebc",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "c785fbfeb0db",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "3924db9286e9",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     },
     {
       "id": "36c3b605f806",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7471
-    },
-    {
-      "id": "233dfacad8a7",
-      "headline": "S1-Omni: A Unified Multimodal Reasoning Model for Scientific Understanding, Prediction, and Generation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15686",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15686v1 Announce Type: new Abstract: We present S1-Omni, a unified multimodal reasoning model for scientific understanding, prediction, and generation. AI for Science (AI4S) has advanced significantly through domain-specific…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7471
-    },
-    {
-      "id": "d12389348e68",
-      "headline": "Behavioral Controllability of Agentic Models for Information Extraction: From Fixed Workflows to Reflective Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15715",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15715v1 Announce Type: new Abstract: Large language model (LLM) agents are increasingly used for complex information-extraction tasks, yet it remains unclear whether agentic components such as reflection and memory lead to…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7471
-    },
-    {
-      "id": "a7e35415d871",
-      "headline": "NeurOWL: An LLM-Based Neural-symbolic Framework for Incomplete OWL Ontology Reasoning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15776",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15776v1 Announce Type: new Abstract: OWL ontologies provide a formal knowledge representation framework that enables semantic reasoning, and have been widely adopted across domains such as healthcare and bioinformatics. In…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7471
+      "rank_score": 0.7341
     }
   ]
 }
