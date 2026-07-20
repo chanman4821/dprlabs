@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-20T18:57:22.407916+00:00",
+    "generated_at": "2026-07-20T20:35:56.117184+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "5bd99aaba04e",
+      "headline": "Government can seize private land to make way for new AI data center power",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/power-companies-can-seize-private-land-to-make-way-for-new-ai-data-center-transmission-lines-report-says-takeovers-could-be-implemented-using-eminent-domain-law-when-private-citizens-refuse-to-sell-land",
+      "published_at": "2026-07-20T20:18:12+00:00",
+      "summary": "2 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5591
+    },
+    {
+      "id": "288f9399dfa8",
+      "headline": "X relaunches a rebuilt Android app after year-long effort",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/20/x-relaunches-a-rebuilt-android-app-after-year-long-effort/",
+      "published_at": "2026-07-20T19:37:39+00:00",
+      "summary": "X says the rebuilt version of its Android app is now available globally.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7905
+    },
+    {
+      "id": "502e6d35fbb7",
+      "headline": "OpenAI is scared of open-weight models. Should the US be?",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/",
+      "published_at": "2026-07-20T19:33:25+00:00",
+      "summary": "Talk of banning Chinese-made open-weight LLMs reveals the challenge of turning AI into a business.",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.79
+    },
     {
       "id": "b1ff081c1872",
       "headline": "China’s AI models have Trump’s AI world at war with itself",
@@ -20,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8256
+      "rank_score": 0.8141
     },
     {
       "id": "8578cdf299be",
@@ -29,14 +77,14 @@
       "source_id": "hn",
       "url": "https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use",
       "published_at": "2026-07-20T17:22:50+00:00",
-      "summary": "5 points and 0 comments on Hacker News.",
+      "summary": "6 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5517
+      "rank_score": 0.5409
     },
     {
       "id": "a549b2f2489b",
@@ -52,7 +100,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7766
+      "rank_score": 0.7655
+    },
+    {
+      "id": "cdc3fbd3b50a",
+      "headline": "Adobe camera app’s new feature will critique your photos using AI",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/20/adobe-camera-apps-new-feature-will-critique-your-photos-using-ai/",
+      "published_at": "2026-07-20T15:45:00+00:00",
+      "summary": "Adobe's Project Indigo can now remove all kinds of backgrounds from photos you snap using the app.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7639
     },
     {
       "id": "d139044a2145",
@@ -61,14 +125,14 @@
       "source_id": "hn",
       "url": "https://www.newyorker.com/science/annals-of-artificial-intelligence/there-is-no-ai",
       "published_at": "2026-07-20T15:28:32+00:00",
-      "summary": "32 points and 76 comments on Hacker News.",
+      "summary": "33 points and 83 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5547
+      "rank_score": 0.5444
     },
     {
       "id": "93c83145e8c7",
@@ -84,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7724
+      "rank_score": 0.7615
     },
     {
       "id": "6e9ccb6e2fc1",
@@ -100,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7863
+      "rank_score": 0.7761
     },
     {
       "id": "190b56dc0bf0",
@@ -116,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5111
+      "rank_score": 0.501
     },
     {
       "id": "ee53b2e14da2",
@@ -132,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7461
+      "rank_score": 0.7361
     },
     {
       "id": "90cef26b7e07",
@@ -148,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7396
+      "rank_score": 0.7298
     },
     {
       "id": "d4ff9ec891b7",
@@ -164,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8329
+      "rank_score": 0.8232
     },
     {
       "id": "3921df47f592",
@@ -180,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7649
+      "rank_score": 0.7554
     },
     {
       "id": "d0be1ca5b431",
@@ -196,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7813
+      "rank_score": 0.7727
     },
     {
       "id": "05aa29019964",
@@ -212,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7813
+      "rank_score": 0.7727
     },
     {
       "id": "bce1ea0cbdf3",
@@ -228,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7213
+      "rank_score": 0.7127
     },
     {
       "id": "257ec8fb1ccc",
@@ -244,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7213
+      "rank_score": 0.7127
     },
     {
       "id": "5a7541dc56e3",
@@ -260,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7213
+      "rank_score": 0.7127
     },
     {
       "id": "8b67d15f9706",
@@ -276,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7213
+      "rank_score": 0.7127
     },
     {
       "id": "8a4f76283644",
@@ -292,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7213
+      "rank_score": 0.7127
     },
     {
       "id": "4ba07574aad4",
@@ -308,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7213
+      "rank_score": 0.7127
     },
     {
       "id": "f39222fdb76c",
@@ -324,71 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7213
-    },
-    {
-      "id": "561d29dadd8c",
-      "headline": "Beyond a Joke: Multi-Angle Reasoning for Detecting and Explaining Harmful Humor in Memes",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15442",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15442v1 Announce Type: new Abstract: Internet memes intertwine visual cues, textual content, and cultural context, making them particularly challenging to interpret in scenarios where humor, sarcasm, and harmful intent coexist.…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7213
-    },
-    {
-      "id": "2be7b6b50deb",
-      "headline": "From Black Box to Executable Logic: Explainable Reinforcement Learning through Prolog Expert Systems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15459",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15459v1 Announce Type: new Abstract: A trained deep reinforcement learning policy is a black box, and we ask whether it can be made explainable by rewriting it as an executable logic program that reproduces its behaviour and…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7213
-    },
-    {
-      "id": "403efb51ed01",
-      "headline": "A Critical Analysis of Trustworthy AI Tools, Mark Frameworks, and the Implementation Chasms",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15480",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15480v1 Announce Type: new Abstract: As artificial intelligence (AI) systems increasingly impact society, ensuring their ethical and trustworthy deployment has become a global priority. While a myriad of high-level ethical…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7213
-    },
-    {
-      "id": "cea2fcbb2ebc",
-      "headline": "Logic, Optimization, and Artificial Intelligence",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15532",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15532v1 Announce Type: new Abstract: Logic and optimization can, in combination, make valuable contributions to rule-based AI. Logic is the obvious medium for encoding a rule base and drawing inferences from it, while…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7213
+      "rank_score": 0.7127
     }
   ]
 }
