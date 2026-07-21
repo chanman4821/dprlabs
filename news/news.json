@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-21T10:29:54.262854+00:00",
+    "generated_at": "2026-07-21T12:26:45.401974+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "ed3452d70ad2",
+      "headline": "America needs to stop getting shocked by Chinese AI",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/968136/chinese-ai-models-another-sputnik-moment",
+      "published_at": "2026-07-21T11:08:56+00:00",
+      "summary": "Last week, two Chinese AI companies unveiled models they say can credibly compete with the best systems from OpenAI and Anthropic. The response was swift and predictable. Markets wobbled, commentators declared Silicon Valley shooketh, and…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7882
+    },
+    {
+      "id": "e6f97166928c",
+      "headline": "Advancing next-gen AI with materials science innovation",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/21/1140602/advancing-next-gen-ai-with-materials-science-innovation/",
+      "published_at": "2026-07-21T10:37:34+00:00",
+      "summary": "The conversation about AI often centers on algorithms, computing power, or huge investments in new semiconductor fabrication plants and hyperscale data centers. But beneath each of these advances is another layer of innovation that makes…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8195
+    },
+    {
+      "id": "8e65b10b3710",
+      "headline": "Gritt exits stealth with $34 million for robots to build solar plants—then, everything else",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/",
+      "published_at": "2026-07-21T10:00:00+00:00",
+      "summary": "Gritt is coming out of stealth with $34 million and plan to automate the hardest tasks on construction sites.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7801
+    },
     {
       "id": "3a74f14e6034",
       "headline": "DeepSWE – Best Benchmark for Evaluating AI Coding Agents?",
@@ -20,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5418
+      "rank_score": 0.5287
     },
     {
       "id": "2b58a62a2712",
@@ -29,14 +77,14 @@
       "source_id": "hn",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-administration-reportedly-reviving-push-to-ban-chinese-ai-models-following-kimi-k3-launch-citing-cybersecurity-concerns-downloadable-open-weights-could-make-an-outright-u-s-ban-nearly-impossible-to-enforce-amid-growing-adoption",
       "published_at": "2026-07-21T07:35:33+00:00",
-      "summary": "3 points and 3 comments on Hacker News.",
+      "summary": "4 points and 4 comments on Hacker News.",
       "tags": [
         "Policy"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5412
+      "rank_score": 0.5287
     },
     {
       "id": "92507309f7d6",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "e44c60aec285",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "cd9e3973ce3b",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "2b43a7bcda6a",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "a185a58e05eb",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "589c40433a6d",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "e5180ad868cf",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "77f1defaef18",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "770d5a5cbec7",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "7509f1e6b45b",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "3491ee54223a",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "0816df351c4f",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "4bc927c9969b",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "967c60315bd7",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "392d9caa243d",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "7437d3e20ca4",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "343b50bfe6ce",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "78cf9190b7d6",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     },
     {
       "id": "3542db7e7b69",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
-    },
-    {
-      "id": "c204b342e7ff",
-      "headline": "Generalist AI Control: Towards Multi-purpose Adaptive Algorithms",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16313",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16313v1 Announce Type: new Abstract: Traditional controllers are designed for specific systems and do not transfer across different system orders and dynamics. We present a Generalist Controller, a learning-based controller…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7707
-    },
-    {
-      "id": "26564f2e281e",
-      "headline": "LaCache: Exact Caching and Precision-Adaptive Inference for Diffusion Large Language Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16339",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16339v1 Announce Type: new Abstract: Diffusion-based Large Language Models(DLLMs) enable parallel generation via Semi-Autoregressive (SAR) decoding in text generation. However, current methods suffer from severe operator-level…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7707
-    },
-    {
-      "id": "0890c12de659",
-      "headline": "Interactive Task Alignment as a POMDP",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16412",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16412v1 Announce Type: new Abstract: Current benchmarks for language models primarily evaluate execution on fully specified tasks. However, real user tasks are often ambiguous. Users arrive with incomplete, exploratory, or even…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7585
     }
   ]
 }
