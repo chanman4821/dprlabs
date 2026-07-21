@@ -1,394 +1,394 @@
 {
   "meta": {
-    "generated_at": "2026-07-21T00:02:22.456359+00:00",
+    "generated_at": "2026-07-21T04:19:07.583974+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
-      "id": "b1852fc14549",
-      "headline": "Colibrì proof-of-concept gains frontier-level 1.5-TB AI model",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/colibri-proof-of-concept-gains-frontier-level-1-5-tb-ai-model-novel-approach-runs-on-only-25gb-of-ram-and-shows-promise-for-local-ai-setups",
-      "published_at": "2026-07-20T22:58:51+00:00",
-      "summary": "1 points and 0 comments on Hacker News.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.553
-    },
-    {
-      "id": "ad12ceee353f",
-      "headline": "Trump’s latest AI czar has already resigned",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/",
-      "published_at": "2026-07-20T22:21:04+00:00",
-      "summary": "The director role for the Center for AI Standards and Innovation (CAISI) has become a revolving door since David Sacks left his position as czar.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7854
-    },
-    {
-      "id": "f09cbf6a0ec2",
-      "headline": "Here are the 30,000 songs Sony is suing Udio’s AI music generator over",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright",
-      "published_at": "2026-07-20T22:19:12+00:00",
-      "summary": "Sony Music Entertainment has filed another lawsuit against Udio, accusing the AI music generator of infringing the copyright of more than 30,000 of its songs, ranging from Elvis Presley's Hound Dog to Beyoncé's Say My Name, and Harry…",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7852
-    },
-    {
-      "id": "4b093e805e21",
-      "headline": "OpenAI Appears to Be Missing Its Sales Goals by a Margin",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://futurism.com/artificial-intelligence/openai-ad-revenue-ai-advertising-financial-projection",
-      "published_at": "2026-07-20T22:17:56+00:00",
-      "summary": "6 points and 1 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 2,
-      "credibility": 0.6,
-      "rank_score": 0.5751
-    },
-    {
-      "id": "e36f067a89a5",
-      "headline": "Firefighting drones in the works as wildfires plague US nearly year-round",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/ai/2026/07/firefighting-drones-in-the-works-as-wildfires-plague-us-nearly-year-round/",
-      "published_at": "2026-07-20T21:55:52+00:00",
-      "summary": "California and XPRIZE competition tests whether drones can stop wildfires early.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7825
-    },
-    {
-      "id": "d573260cad05",
-      "headline": "Google is working on a new AI chip designed to make Gemini more efficient",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/",
-      "published_at": "2026-07-20T21:21:15+00:00",
-      "summary": "Alphabet, Google's parent company, is reportedly working on a new chip designed to make its Gemini models run much more efficiently.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.8385
-    },
-    {
-      "id": "98f0a6b315f2",
-      "headline": "SpaceX in your index fund, explained",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/business/968257/spacex-in-your-index-fund-explained",
-      "published_at": "2026-07-20T21:00:00+00:00",
-      "summary": "Index funds are touted as one of the safest ways to invest. Rather than picking and choosing individual stocks, index funds let you bet on the market as a whole. So what happens when a company like SpaceX - a giant gamble, and, in my…",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.776
-    },
-    {
-      "id": "17b501c7fe13",
-      "headline": "AI’s most important protocol is getting a little bit easier to use",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/",
-      "published_at": "2026-07-20T20:50:40+00:00",
-      "summary": "Under the new system, the protocol will take a looser, \"stateless\" approach to session IDs on the server side, similar to how most ordinary websites already work.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.775
-    },
-    {
-      "id": "5bd99aaba04e",
-      "headline": "Government can seize private land to make way for new AI data center power",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/power-companies-can-seize-private-land-to-make-way-for-new-ai-data-center-transmission-lines-report-says-takeovers-could-be-implemented-using-eminent-domain-law-when-private-citizens-refuse-to-sell-land",
-      "published_at": "2026-07-20T20:18:12+00:00",
-      "summary": "2 points and 1 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.535
-    },
-    {
-      "id": "288f9399dfa8",
-      "headline": "X relaunches a rebuilt Android app after year-long effort",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/20/x-relaunches-a-rebuilt-android-app-after-year-long-effort/",
-      "published_at": "2026-07-20T19:37:39+00:00",
-      "summary": "X says the rebuilt version of its Android app is now available globally.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7668
-    },
-    {
-      "id": "502e6d35fbb7",
-      "headline": "OpenAI is scared of open-weight models. Should the US be?",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/",
-      "published_at": "2026-07-20T19:33:25+00:00",
-      "summary": "Talk of banning Chinese-made open-weight LLMs reveals the challenge of turning AI into a business.",
-      "tags": [
-        "Open Source"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7663
-    },
-    {
-      "id": "b1ff081c1872",
-      "headline": "China’s AI models have Trump’s AI world at war with itself",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/",
-      "published_at": "2026-07-20T18:00:00+00:00",
-      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Over the weekend, several current and former advisors to President Donald Trump on AI publicly lobbed…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7911
-    },
-    {
-      "id": "8578cdf299be",
-      "headline": "How much energy do data centers and artificial intelligence use?",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use",
-      "published_at": "2026-07-20T17:22:50+00:00",
-      "summary": "8 points and 0 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5195
-    },
-    {
-      "id": "a549b2f2489b",
-      "headline": "Adobe’s ‘natural look’ camera app embraces generative AI",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/967791/adobe-indigo-camera-app-ai-playground-update",
-      "published_at": "2026-07-20T16:00:00+00:00",
-      "summary": "Adobe's experimental camera app has taken an unexpected turn. After Project Indigo was launched last year to provide a \"more natural (SLR-like) look\" for iPhone photography, the Indigo camera app is now being updated with a suite of…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7435
-    },
-    {
-      "id": "cdc3fbd3b50a",
-      "headline": "Adobe camera app’s new feature will critique your photos using AI",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/20/adobe-camera-apps-new-feature-will-critique-your-photos-using-ai/",
-      "published_at": "2026-07-20T15:45:00+00:00",
-      "summary": "Adobe's Project Indigo can now remove all kinds of backgrounds from photos you snap using the app.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.742
-    },
-    {
-      "id": "d139044a2145",
-      "headline": "Mythologizing AI makes it more likely that we’ll fail to operate it well (2023)",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.newyorker.com/science/annals-of-artificial-intelligence/there-is-no-ai",
-      "published_at": "2026-07-20T15:28:32+00:00",
-      "summary": "57 points and 90 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.537
-    },
-    {
-      "id": "93c83145e8c7",
-      "headline": "YouTube clarifies policies around AI slop and upsetting videos",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/",
-      "published_at": "2026-07-20T15:23:06+00:00",
-      "summary": "YouTube has updated its monetization policies to more clearly define the kinds of AI-generated and low-quality videos that can’t earn ad revenue.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7398
-    },
-    {
-      "id": "6e9ccb6e2fc1",
-      "headline": "The Download: AI hiring biases, and weather data sabotage",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/20/1140664/the-download-ai-hiring-biases-weather-data-sabotage/",
-      "published_at": "2026-07-20T12:10:00+00:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI is more likely than humans to form biases when hiring The next time you apply for a job, AI may…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7558
-    },
-    {
-      "id": "190b56dc0bf0",
-      "headline": "Major AI models are likely to refuse criticizing restrictive leaders or govts",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://apnews.com/article/artificial-intelligence-chatbots-censorship-bias-free-speech-fed8fdbf90751c10fe77b77832e0ffba",
-      "published_at": "2026-07-20T11:26:15+00:00",
-      "summary": "3 points and 1 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.481
-    },
-    {
-      "id": "ee53b2e14da2",
-      "headline": "Beyond grep: The case for a context-rich AI coding harness",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/ai/2026/07/beyond-grep-the-case-for-a-context-rich-ai-coding-harness/",
-      "published_at": "2026-07-20T11:20:10+00:00",
-      "summary": "Augment Code's Vinay Perneti talks models, harnesses, and context.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7161
-    },
-    {
-      "id": "90cef26b7e07",
-      "headline": "China delivers a one-two punch to America’s AI dominance",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
-      "published_at": "2026-07-20T10:16:33+00:00",
-      "summary": "China's leading AI companies are ramping up the pressure on Silicon Valley, as Moonshot and Alibaba unveiled models they claim can go toe-to-toe with the best from OpenAI and Anthropic at a fraction of the cost. The rapid-fire releases…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7103
-    },
-    {
-      "id": "d4ff9ec891b7",
-      "headline": "Safety and alignment in an era of long-horizon models",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/safety-alignment-long-horizon-models",
-      "published_at": "2026-07-20T10:00:00+00:00",
-      "summary": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment.",
-      "tags": [
-        "Safety"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.8037
-    },
-    {
-      "id": "3921df47f592",
-      "headline": "AI is more likely than humans to form biases when hiring",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
-      "published_at": "2026-07-20T08:39:01+00:00",
-      "summary": "The next time you apply for a job, AI may screen your résumé before any human sees it. But there’s good reason to question whether AI will judge you fairly. Researchers already know that LLMs pick up human biases from their training data.…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7365
-    },
-    {
-      "id": "d0be1ca5b431",
-      "headline": "SeerGuard: A Safety Framework for Mobile GUI Agents via World Model Prediction",
+      "id": "92507309f7d6",
+      "headline": "Rater State Bias in RLHF Preference Data: An Audit Framework",
       "source_name": "arXiv cs.AI",
       "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.15550",
-      "published_at": "2026-07-20T04:00:00+00:00",
-      "summary": "arXiv:2607.15550v1 Announce Type: new Abstract: Mobile graphical user interface (GUI) agents have demonstrated remarkable capabilities in automating complex tasks, yet they introduce critical safety risks where a single erroneous action…",
+      "url": "https://arxiv.org/abs/2607.16195",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16195v1 Announce Type: new Abstract: We identify a structured confound in Reinforcement Learning from Human Feedback (RLHF). Pairwise preference labels are intended to reflect the compared outputs, but they may also reflect the…",
       "tags": [
         "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7555
+      "rank_score": 0.8127
+    },
+    {
+      "id": "e44c60aec285",
+      "headline": "Design and Validation of a Lightweight 1D CNN for Affective Touch Classification in Soft Plush Companions",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16196",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16196v1 Announce Type: new Abstract: Soft, sensorized companions offer a physically safe and emotionally intuitive interface for socially assistive technologies, yet their deformability and multichannel tactile sensing…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "cd9e3973ce3b",
+      "headline": "Some Large Language Models Exhibit Consistent Risk Attitudes",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16197",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16197v1 Announce Type: new Abstract: As artificial intelligence systems are deployed in open-ended, high-stakes settings, a critical dimension remains unmeasured: how perceived risk is translated into action. We test whether…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "2b43a7bcda6a",
+      "headline": "A Survey on GNN-based Link Prediction: Techniques, Applications, and Challenges",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16198",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16198v1 Announce Type: new Abstract: Graph Neural Networks (GNNs) have emerged as the leading paradigm for link prediction, enabling the inference of missing connections and the anticipation of potential future links. However,…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "a185a58e05eb",
+      "headline": "PlanFlip: Attacking Multi-Agent LLM Systems via Planning-Phase Prompt Injection",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16199",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16199v1 Announce Type: new Abstract: Multi-agent LLM systems increasingly rely on a Planner to decompose goals into sub-task sequences that downstream Executor and Critic agents execute and audit. We identify the planning phase…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "589c40433a6d",
+      "headline": "Deterministic Replay for AI Agent Systems",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16200",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16200v1 Announce Type: new Abstract: AI agent systems that couple large language models (LLMs) with external tools and APIs are inherently non-deterministic: LLM sampling variance, external API state, CDN infrastructure headers,…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "e5180ad868cf",
+      "headline": "Generative Ontology Induction: Domain-Agnostic Schema Discovery from Document Corpora Using Large Language Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16201",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16201v1 Announce Type: new Abstract: Ontology engineering remains a critical bottleneck in knowledge-intensive AI systems. Existing automated approaches either depend on predefined schemas, operate within narrow domains, or…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "77f1defaef18",
+      "headline": "Democratizing AI with Small Language Models: Structured Benchmarking and Parameter-Efficient Fine-Tuning for Local Deployment",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16202",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16202v1 Announce Type: new Abstract: AI democratization is not primarily a question of matching frontier-scale generality; it is a question of whether capable models can be selected, audited, and specialized under hardware and…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "770d5a5cbec7",
+      "headline": "Masked Diffusion Language Models are Strong and Steerable Text-Based World Models for Agentic RL",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16204",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16204v1 Announce Type: new Abstract: Recent growth in reinforcement learning (RL) has surfaced a need for diverse, specialized training environments. Hand-curated environments with fixed task and reward difficulties become…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "7509f1e6b45b",
+      "headline": "It Takes 8 Tokens: Weak-to-Strong Off-Policy RL via Auxiliary Branches",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16205",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16205v1 Announce Type: new Abstract: Reinforcement learning with verifiable rewards has emerged as a standard approach for enhancing reasoning in large language models, which typically optimizes the policy by contrasting…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "3491ee54223a",
+      "headline": "PPO-HSC: An Exploratory Reinforcement Learning Framework Based on Wide-Area Policy Coverage Optimization",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16206",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16206v1 Announce Type: new Abstract: This paper introduces PPO-HSC (Proximal Policy Optimization with High-order Sampling Coverage), an exploratory reinforcement learning framework designed to address the \"Invisible Shackles\" of…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "0816df351c4f",
+      "headline": "JUMP: Single-Pass Membership Inference on Fine-Tuned Diffusion Language Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16207",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16207v1 Announce Type: new Abstract: Membership inference attacks (MIAs) test whether a candidate example appeared in a model's training data. We study MIAs for fine-tuned discrete diffusion language models (dLLMs), where…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "4bc927c9969b",
+      "headline": "ColGraphRAG: Late-Interaction Evidence Retrieval for Multimodal GraphRAG",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16208",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16208v1 Announce Type: new Abstract: Graph-grounded multimodal question answering organizes text, tables, and images in a structured evidence graph, yet end-to-end accuracy depends on which multimodal assets are ranked highly…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "967c60315bd7",
+      "headline": "Shapley Context Pruning: A Cooperative Game Perspective for Context Reranking and Pruning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16209",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16209v1 Announce Type: new Abstract: Context reranking and pruning have become essential for improving the efficiency of modern Retrieval-Augmented Generation (RAG) systems, yet an interpretable and unified framework remains…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "392d9caa243d",
+      "headline": "A Survey on the Verification of Reinforcement Learning Policies",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16210",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16210v1 Announce Type: new Abstract: Reinforcement learning (RL) is increasingly applied in complex, safety-critical domains, yet the lack of rigorous behavioral guarantees for neural network-based policies remains a major…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "7437d3e20ca4",
+      "headline": "Accurate and Efficient Long-Term Memory for LLM Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16211",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16211v1 Announce Type: new Abstract: LLM agents augmented with persistent memory can recall past interactions, but existing systems suffer from two limitations: flat, unstructured storage loses relational context needed for…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "343b50bfe6ce",
+      "headline": "Symbolic Augmentation Closes a Canonical-Equivalence Blind Spot in Neural Fact-Checkers",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16212",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16212v1 Announce Type: new Abstract: Large language models hallucinate numbers and units when summarizing scientific text, a failure mode that can silently invert a scientific claim. We recast the detection of such errors as…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "78cf9190b7d6",
+      "headline": "SelKV: Selective KV Cache Merging with Per-Token Merge-or-Drop and Attention Compensation",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16213",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16213v1 Announce Type: new Abstract: Large Language Models (LLMs) generate text autoregressively, relying on a key-value (KV) cache whose memory footprint grows linearly with context length, creating a major bottleneck. Recent…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "3542db7e7b69",
+      "headline": "RAIL Guard: Closing the Evaluation-to-Remediation Gap in Responsible AI for LLM Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16215",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16215v1 Announce Type: new Abstract: Existing guardrail systems for large language model agents operate as binary classifiers that block unsafe content, leaving organizations to discard failing outputs and retry from scratch. We…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "c204b342e7ff",
+      "headline": "Generalist AI Control: Towards Multi-purpose Adaptive Algorithms",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16313",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16313v1 Announce Type: new Abstract: Traditional controllers are designed for specific systems and do not transfer across different system orders and dynamics. We present a Generalist Controller, a learning-based controller…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "26564f2e281e",
+      "headline": "LaCache: Exact Caching and Precision-Adaptive Inference for Diffusion Large Language Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16339",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16339v1 Announce Type: new Abstract: Diffusion-based Large Language Models(DLLMs) enable parallel generation via Semi-Autoregressive (SAR) decoding in text generation. However, current methods suffer from severe operator-level…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "0890c12de659",
+      "headline": "Interactive Task Alignment as a POMDP",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16412",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16412v1 Announce Type: new Abstract: Current benchmarks for language models primarily evaluate execution on fully specified tasks. However, real user tasks are often ambiguous. Users arrive with incomplete, exploratory, or even…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "4097a18286de",
+      "headline": "When to Plan: Learning to Select Between Reactive Control and Deliberative Planning",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16421",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16421v1 Announce Type: new Abstract: It has long been recognized that humans have the ability to switch between fast, reactive decision-making and slower, deliberative planning. In this paper, we study the question of how to…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
+    },
+    {
+      "id": "6032d1f85f9a",
+      "headline": "Berkeley and Heiserman as an Unexhausted Architecture for Embodied Machine Intelligence",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.16465",
+      "published_at": "2026-07-21T04:00:00+00:00",
+      "summary": "arXiv:2607.16465v1 Announce Type: new Abstract: Edmund C. Berkeley is usually remembered as a writer who helped connect symbolic logic to computing machinery. That description is correct, but incomplete. Read across Berkeley's…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.8127
     }
   ]
 }
