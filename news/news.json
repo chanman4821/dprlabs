@@ -1,14 +1,78 @@
 {
   "meta": {
-    "generated_at": "2026-07-21T17:35:42.288771+00:00",
+    "generated_at": "2026-07-21T19:40:23.362784+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
+      "id": "3dd9888813d8",
+      "headline": "AI and the rise of the universal entertainment app",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/21/ai-and-the-rise-of-the-universal-entertainment-app/",
+      "published_at": "2026-07-21T19:39:30+00:00",
+      "summary": "Over the past decade, streaming platforms competed by dominating individual formats like music, video, podcasts, or audiobooks. Now, as AI makes it easier to create, organize, and recommend content, those distinctions are fading, pushing…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7974
+    },
+    {
+      "id": "3a68379c0859",
+      "headline": "Substack adds an AI detector to help spot blogs written by no one",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/968855/substack-pangram-ai-detecting-tool",
+      "published_at": "2026-07-21T19:22:28+00:00",
+      "summary": "Substack will now help users determine whether what they're reading may have been written by AI. A new tool coming to the platform can scan posts, notes, replies, and comments to provide an estimate of how much text could be AI-generated…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 2,
+      "credibility": 0.85,
+      "rank_score": 0.8193
+    },
+    {
+      "id": "ade7e27dc611",
+      "headline": "Data centers expected to use 4x more electricity by 2035",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/21/data-centers-expected-to-use-4x-more-electricity-by-2035/",
+      "published_at": "2026-07-21T18:06:38+00:00",
+      "summary": "New data centers built through 2033 could consume as much electricity as India uses today.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7863
+    },
+    {
+      "id": "dc6069653cce",
+      "headline": "A Taxonomy of Omnicidal Futures Involving Artificial Intelligence (2025)",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://arxiv.org/abs/2507.09369",
+      "published_at": "2026-07-21T17:55:57+00:00",
+      "summary": "2 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5487
+    },
+    {
       "id": "55228da85192",
-      "headline": "Judge approves Anthropic’s $1.5 billion copyright settlement with authors",
+      "headline": "Anthropic’s $1.5B copyright settlement approved; only 350 authors opted out",
       "source_name": "Ars Technica",
       "source_id": "arstechnica",
       "url": "https://arstechnica.com/tech-policy/2026/07/judge-approves-anthropics-1-5-billion-copyright-settlement-with-authors/",
@@ -20,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7972
+      "rank_score": 0.7824
     },
     {
       "id": "01119b73028b",
@@ -36,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8546
+      "rank_score": 0.8399
     },
     {
       "id": "d42362617c64",
@@ -52,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8282
+      "rank_score": 0.8135
     },
     {
       "id": "08ae2218969a",
@@ -68,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.853
+      "rank_score": 0.8384
     },
     {
       "id": "0bd50127700b",
@@ -84,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7924
+      "rank_score": 0.7778
     },
     {
       "id": "8578cdf299be",
@@ -93,14 +157,14 @@
       "source_id": "hn",
       "url": "https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use",
       "published_at": "2026-07-21T16:18:24+00:00",
-      "summary": "2 points and 0 comments on Hacker News.",
+      "summary": "3 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.6,
-      "rank_score": 0.5759
+      "rank_score": 0.5621
     },
     {
       "id": "2a32c5e41363",
@@ -116,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7834
+      "rank_score": 0.7692
     },
     {
       "id": "5479f7ef8f00",
@@ -132,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.876
+      "rank_score": 0.8619
     },
     {
       "id": "7d7edea89fcf",
@@ -148,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7791
+      "rank_score": 0.765
     },
     {
       "id": "fcce09c921e5",
@@ -164,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7686
+      "rank_score": 0.755
     },
     {
       "id": "4191c27a8a3a",
@@ -180,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7656
+      "rank_score": 0.7521
     },
     {
       "id": "b0f10a48b3c9",
@@ -196,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7951
+      "rank_score": 0.7818
     },
     {
       "id": "ed3452d70ad2",
@@ -212,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7535
+      "rank_score": 0.7406
     },
     {
       "id": "e6f97166928c",
@@ -228,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7852
+      "rank_score": 0.7724
     },
     {
       "id": "8e65b10b3710",
@@ -244,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7463
+      "rank_score": 0.7336
     },
     {
       "id": "3a74f14e6034",
@@ -260,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4964
+      "rank_score": 0.4843
     },
     {
       "id": "2b58a62a2712",
@@ -276,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4966
+      "rank_score": 0.4845
     },
     {
       "id": "92507309f7d6",
@@ -292,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7287
+      "rank_score": 0.7175
     },
     {
       "id": "e44c60aec285",
@@ -308,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7287
+      "rank_score": 0.7175
     },
     {
       "id": "cd9e3973ce3b",
@@ -324,71 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7287
-    },
-    {
-      "id": "2b43a7bcda6a",
-      "headline": "A Survey on GNN-based Link Prediction: Techniques, Applications, and Challenges",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16198",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16198v1 Announce Type: new Abstract: Graph Neural Networks (GNNs) have emerged as the leading paradigm for link prediction, enabling the inference of missing connections and the anticipation of potential future links. However,…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7287
-    },
-    {
-      "id": "a185a58e05eb",
-      "headline": "PlanFlip: Attacking Multi-Agent LLM Systems via Planning-Phase Prompt Injection",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16199",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16199v1 Announce Type: new Abstract: Multi-agent LLM systems increasingly rely on a Planner to decompose goals into sub-task sequences that downstream Executor and Critic agents execute and audit. We identify the planning phase…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7287
-    },
-    {
-      "id": "589c40433a6d",
-      "headline": "Deterministic Replay for AI Agent Systems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16200",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16200v1 Announce Type: new Abstract: AI agent systems that couple large language models (LLMs) with external tools and APIs are inherently non-deterministic: LLM sampling variance, external API state, CDN infrastructure headers,…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7287
-    },
-    {
-      "id": "e5180ad868cf",
-      "headline": "Generative Ontology Induction: Domain-Agnostic Schema Discovery from Document Corpora Using Large Language Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16201",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16201v1 Announce Type: new Abstract: Ontology engineering remains a critical bottleneck in knowledge-intensive AI systems. Existing automated approaches either depend on predefined schemas, operate within narrow domains, or…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7287
+      "rank_score": 0.7175
     }
   ]
 }
