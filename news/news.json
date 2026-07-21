@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-21T21:17:39.712171+00:00",
+    "generated_at": "2026-07-21T23:02:52.050289+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "45095198141e",
+      "headline": "Neill Blomkamp’s new zombie AI ‘film’ is just slop warmed over",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/entertainment/968703/neill-blomkamps-nightborne-barley-studios-seedance",
+      "published_at": "2026-07-21T22:06:43+00:00",
+      "summary": "On Monday, District 9 and Gran Turismo director Neill Blomkamp unveiled his latest project: a 13-minute sci-fi short titled Nightborne that's loosely based on Peter Watts' 2014 novel Echopraxia. The short comes from Blomkamp's new AI…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7907
+    },
+    {
+      "id": "3e18d6f571fa",
+      "headline": "OpenAI says it accidentally hacked Hugging Face with a new AI system",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/968988/openai-hugging-face-hack-ai",
+      "published_at": "2026-07-21T21:48:54+00:00",
+      "summary": "OpenAI says its AI models mistakenly breached open-source AI platform Hugging Face during internal testing. In a blog post on Tuesday, OpenAI writes that GPT-5.6 Sol and \"an even more capable pre-release model\" discovered vulnerabilities…",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7886
+    },
     {
       "id": "69b7eb38cde7",
       "headline": "OpenAI says Hugging Face was breached by its own pre-release models",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.855
+      "rank_score": 0.8425
     },
     {
       "id": "af5997750127",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7863
+      "rank_score": 0.7741
     },
     {
       "id": "3dd9888813d8",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7858
+      "rank_score": 0.7736
     },
     {
       "id": "3a68379c0859",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.8078
+      "rank_score": 0.7957
     },
     {
       "id": "ade7e27dc611",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.775
+      "rank_score": 0.7633
     },
     {
       "id": "dc6069653cce",
@@ -93,14 +125,14 @@
       "source_id": "hn",
       "url": "https://arxiv.org/abs/2507.09369",
       "published_at": "2026-07-21T17:55:57+00:00",
-      "summary": "2 points and 0 comments on Hacker News.",
+      "summary": "3 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5375
+      "rank_score": 0.5264
     },
     {
       "id": "55228da85192",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7713
+      "rank_score": 0.7597
     },
     {
       "id": "01119b73028b",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8289
+      "rank_score": 0.8173
     },
     {
       "id": "d42362617c64",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8026
+      "rank_score": 0.7911
     },
     {
       "id": "08ae2218969a",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8274
+      "rank_score": 0.8159
     },
     {
       "id": "0bd50127700b",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7668
+      "rank_score": 0.7554
     },
     {
       "id": "8578cdf299be",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.6,
-      "rank_score": 0.5513
+      "rank_score": 0.5399
     },
     {
       "id": "2a32c5e41363",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7585
+      "rank_score": 0.7473
     },
     {
       "id": "5479f7ef8f00",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8513
+      "rank_score": 0.8402
     },
     {
       "id": "7d7edea89fcf",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7545
+      "rank_score": 0.7435
     },
     {
       "id": "fcce09c921e5",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7448
+      "rank_score": 0.7341
     },
     {
       "id": "4191c27a8a3a",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.742
+      "rank_score": 0.7314
     },
     {
       "id": "b0f10a48b3c9",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7719
+      "rank_score": 0.7615
     },
     {
       "id": "ed3452d70ad2",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7308
+      "rank_score": 0.7207
     },
     {
       "id": "e6f97166928c",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7628
+      "rank_score": 0.7527
     },
     {
       "id": "8e65b10b3710",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7241
+      "rank_score": 0.7142
     },
     {
       "id": "3a74f14e6034",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4752
-    },
-    {
-      "id": "2b58a62a2712",
-      "headline": "Trump administration reportedly reviving push to ban Chinese AI models, Kimi K3",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-administration-reportedly-reviving-push-to-ban-chinese-ai-models-following-kimi-k3-launch-citing-cybersecurity-concerns-downloadable-open-weights-could-make-an-outright-u-s-ban-nearly-impossible-to-enforce-amid-growing-adoption",
-      "published_at": "2026-07-21T07:35:33+00:00",
-      "summary": "4 points and 5 comments on Hacker News.",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.4755
-    },
-    {
-      "id": "20b0eb2d5c14",
-      "headline": "OpenAI and Hugging Face partner to address security incident during model evaluation",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
-      "published_at": "2026-07-21T07:00:00+00:00",
-      "summary": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders.",
-      "tags": [
-        "Open Source"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7424
+      "rank_score": 0.4658
     }
   ]
 }
