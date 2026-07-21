@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-21T19:40:23.362784+00:00",
+    "generated_at": "2026-07-21T21:17:39.712171+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "69b7eb38cde7",
+      "headline": "OpenAI says Hugging Face was breached by its own pre-release models",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-own-pre-release-models/",
+      "published_at": "2026-07-21T20:56:55+00:00",
+      "summary": "OpenAI has come forward to claim responsibility for the Hugging Face breach, saying it was the result of internal testing gone awry.",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.855
+    },
+    {
+      "id": "af5997750127",
+      "headline": "Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/",
+      "published_at": "2026-07-21T19:43:41+00:00",
+      "summary": "Buzz is a group chat platform for the workplace that puts humans and their AI agents in the same conversation.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7863
+    },
     {
       "id": "3dd9888813d8",
       "headline": "AI and the rise of the universal entertainment app",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7974
+      "rank_score": 0.7858
     },
     {
       "id": "3a68379c0859",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.85,
-      "rank_score": 0.8193
+      "rank_score": 0.8078
     },
     {
       "id": "ade7e27dc611",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7863
+      "rank_score": 0.775
     },
     {
       "id": "dc6069653cce",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5487
+      "rank_score": 0.5375
     },
     {
       "id": "55228da85192",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7824
+      "rank_score": 0.7713
     },
     {
       "id": "01119b73028b",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8399
+      "rank_score": 0.8289
     },
     {
       "id": "d42362617c64",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8135
+      "rank_score": 0.8026
     },
     {
       "id": "08ae2218969a",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8384
+      "rank_score": 0.8274
     },
     {
       "id": "0bd50127700b",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7778
+      "rank_score": 0.7668
     },
     {
       "id": "8578cdf299be",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.6,
-      "rank_score": 0.5621
+      "rank_score": 0.5513
     },
     {
       "id": "2a32c5e41363",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7692
+      "rank_score": 0.7585
     },
     {
       "id": "5479f7ef8f00",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8619
+      "rank_score": 0.8513
     },
     {
       "id": "7d7edea89fcf",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.765
+      "rank_score": 0.7545
     },
     {
       "id": "fcce09c921e5",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.755
+      "rank_score": 0.7448
     },
     {
       "id": "4191c27a8a3a",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7521
+      "rank_score": 0.742
     },
     {
       "id": "b0f10a48b3c9",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7818
+      "rank_score": 0.7719
     },
     {
       "id": "ed3452d70ad2",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7406
+      "rank_score": 0.7308
     },
     {
       "id": "e6f97166928c",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7724
+      "rank_score": 0.7628
     },
     {
       "id": "8e65b10b3710",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7336
+      "rank_score": 0.7241
     },
     {
       "id": "3a74f14e6034",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4843
+      "rank_score": 0.4752
     },
     {
       "id": "2b58a62a2712",
@@ -340,55 +372,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4845
+      "rank_score": 0.4755
     },
     {
-      "id": "92507309f7d6",
-      "headline": "Rater State Bias in RLHF Preference Data: An Audit Framework",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16195",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16195v1 Announce Type: new Abstract: We identify a structured confound in Reinforcement Learning from Human Feedback (RLHF). Pairwise preference labels are intended to reflect the compared outputs, but they may also reflect the…",
+      "id": "20b0eb2d5c14",
+      "headline": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "published_at": "2026-07-21T07:00:00+00:00",
+      "summary": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders.",
       "tags": [
-        "Research"
+        "Open Source"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7175
-    },
-    {
-      "id": "e44c60aec285",
-      "headline": "Design and Validation of a Lightweight 1D CNN for Affective Touch Classification in Soft Plush Companions",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16196",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16196v1 Announce Type: new Abstract: Soft, sensorized companions offer a physically safe and emotionally intuitive interface for socially assistive technologies, yet their deformability and multichannel tactile sensing…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7175
-    },
-    {
-      "id": "cd9e3973ce3b",
-      "headline": "Some Large Language Models Exhibit Consistent Risk Attitudes",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16197",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16197v1 Announce Type: new Abstract: As artificial intelligence systems are deployed in open-ended, high-stakes settings, a critical dimension remains unmeasured: how perceived risk is translated into action. We test whether…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7175
+      "credibility": 0.95,
+      "rank_score": 0.7424
     }
   ]
 }
