@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-21T07:36:26.495878+00:00",
+    "generated_at": "2026-07-21T10:29:54.262854+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "3a74f14e6034",
+      "headline": "DeepSWE – Best Benchmark for Evaluating AI Coding Agents?",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.i-programmer.info/news/105-artificial-intelligence/19016-deepswe-best-benchmark-for-evaluating-ai-coding-agents.html",
+      "published_at": "2026-07-21T07:45:59+00:00",
+      "summary": "2 points and 1 comments on Hacker News.",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5418
+    },
     {
       "id": "2b58a62a2712",
       "headline": "Trump administration reportedly reviving push to ban Chinese AI models, Kimi K3",
@@ -13,14 +29,14 @@
       "source_id": "hn",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-administration-reportedly-reviving-push-to-ban-chinese-ai-models-following-kimi-k3-launch-citing-cybersecurity-concerns-downloadable-open-weights-could-make-an-outright-u-s-ban-nearly-impossible-to-enforce-amid-growing-adoption",
       "published_at": "2026-07-21T07:35:33+00:00",
-      "summary": "1 points and 0 comments on Hacker News.",
+      "summary": "3 points and 3 comments on Hacker News.",
       "tags": [
         "Policy"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5605
+      "rank_score": 0.5412
     },
     {
       "id": "92507309f7d6",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "e44c60aec285",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "cd9e3973ce3b",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "2b43a7bcda6a",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "a185a58e05eb",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "589c40433a6d",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "e5180ad868cf",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "77f1defaef18",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "770d5a5cbec7",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "7509f1e6b45b",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "3491ee54223a",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "0816df351c4f",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "4bc927c9969b",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "967c60315bd7",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "392d9caa243d",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "7437d3e20ca4",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "343b50bfe6ce",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "78cf9190b7d6",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "3542db7e7b69",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "c204b342e7ff",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "26564f2e281e",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     },
     {
       "id": "0890c12de659",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7897
-    },
-    {
-      "id": "4097a18286de",
-      "headline": "When to Plan: Learning to Select Between Reactive Control and Deliberative Planning",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16421",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16421v1 Announce Type: new Abstract: It has long been recognized that humans have the ability to switch between fast, reactive decision-making and slower, deliberative planning. In this paper, we study the question of how to…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7897
+      "rank_score": 0.7707
     }
   ]
 }
