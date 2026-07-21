@@ -1,11 +1,75 @@
 {
   "meta": {
-    "generated_at": "2026-07-21T12:26:45.401974+00:00",
+    "generated_at": "2026-07-21T15:08:18.405493+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "7d7edea89fcf",
+      "headline": "Google launches a cheaper alternative to large AI security models like Mythos",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/968572/google-gemini-flash-cyber-ai-security-model",
+      "published_at": "2026-07-21T15:00:00+00:00",
+      "summary": "Google is launching an AI security model dedicated to quickly finding and patching security vulnerabilities. In a blog post on Tuesday, Google describes Gemini 3.5 Flash Cyber as a \"cost-efficient and highly capable alternative\" to larger,…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7965
+    },
+    {
+      "id": "fcce09c921e5",
+      "headline": "Music streamer Deezer says more than 50% of daily uploads are AI-generated",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/21/music-streamer-deezer-says-more-than-50-of-daily-uploads-are-ai-generated/",
+      "published_at": "2026-07-21T13:27:42+00:00",
+      "summary": "Deezer said more than 90,000 AI-generated tracks were uploaded daily on the platform in June.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7855
+    },
+    {
+      "id": "4191c27a8a3a",
+      "headline": "Halliday’s latest smart glasses feature a much-improved display",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/968255/halliday-gen-2-smart-glasses-hands-on-ai-wearables",
+      "published_at": "2026-07-21T13:00:00+00:00",
+      "summary": "I first slipped on Halliday's original smart glasses at CES 2025. I was not a fan. The glasses had a tiny, movable display window embedded into the frame that was incredibly finicky to see, and my 30-minute demo left me with achy eyeballs.…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7823
+    },
+    {
+      "id": "b0f10a48b3c9",
+      "headline": "The Download: Chinese AI divides the White House, and a record copyright payout",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/21/1140685/the-download-chinese-ai-divides-white-house-anthropic-copyright-settlement/",
+      "published_at": "2026-07-21T12:10:00+00:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. China’s AI models have Trump’s AI world at war with itself Last weekend, several current and former…",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8115
+    },
     {
       "id": "ed3452d70ad2",
       "headline": "America needs to stop getting shocked by Chinese AI",
@@ -20,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7882
+      "rank_score": 0.7696
     },
     {
       "id": "e6f97166928c",
@@ -36,23 +100,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8195
+      "rank_score": 0.8011
     },
     {
       "id": "8e65b10b3710",
-      "headline": "Gritt exits stealth with $34 million for robots to build solar plants—then, everything else",
+      "headline": "Gritt exits stealth with $32 million for robots to build solar plants — then, everything else",
       "source_name": "TechCrunch",
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/",
       "published_at": "2026-07-21T10:00:00+00:00",
-      "summary": "Gritt is coming out of stealth with $34 million and plan to automate the hardest tasks on construction sites.",
+      "summary": "Gritt is coming out of stealth with $34 million and plans to automate the hardest tasks on construction sites.",
       "tags": [
         "Business"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7801
+      "rank_score": 0.762
     },
     {
       "id": "3a74f14e6034",
@@ -68,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5287
+      "rank_score": 0.5114
     },
     {
       "id": "2b58a62a2712",
@@ -84,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5287
+      "rank_score": 0.5115
     },
     {
       "id": "92507309f7d6",
@@ -100,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "e44c60aec285",
@@ -116,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "cd9e3973ce3b",
@@ -132,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "2b43a7bcda6a",
@@ -148,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "a185a58e05eb",
@@ -164,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "589c40433a6d",
@@ -180,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "e5180ad868cf",
@@ -196,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "77f1defaef18",
@@ -212,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "770d5a5cbec7",
@@ -228,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "7509f1e6b45b",
@@ -244,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "3491ee54223a",
@@ -260,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "0816df351c4f",
@@ -276,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "4bc927c9969b",
@@ -292,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "967c60315bd7",
@@ -308,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     },
     {
       "id": "392d9caa243d",
@@ -324,71 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7585
-    },
-    {
-      "id": "7437d3e20ca4",
-      "headline": "Accurate and Efficient Long-Term Memory for LLM Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16211",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16211v1 Announce Type: new Abstract: LLM agents augmented with persistent memory can recall past interactions, but existing systems suffer from two limitations: flat, unstructured storage loses relational context needed for…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7585
-    },
-    {
-      "id": "343b50bfe6ce",
-      "headline": "Symbolic Augmentation Closes a Canonical-Equivalence Blind Spot in Neural Fact-Checkers",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16212",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16212v1 Announce Type: new Abstract: Large language models hallucinate numbers and units when summarizing scientific text, a failure mode that can silently invert a scientific claim. We recast the detection of such errors as…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7585
-    },
-    {
-      "id": "78cf9190b7d6",
-      "headline": "SelKV: Selective KV Cache Merging with Per-Token Merge-or-Drop and Attention Compensation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16213",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16213v1 Announce Type: new Abstract: Large Language Models (LLMs) generate text autoregressively, relying on a key-value (KV) cache whose memory footprint grows linearly with context length, creating a major bottleneck. Recent…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7585
-    },
-    {
-      "id": "3542db7e7b69",
-      "headline": "RAIL Guard: Closing the Evaluation-to-Remediation Gap in Responsible AI for LLM Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.16215",
-      "published_at": "2026-07-21T04:00:00+00:00",
-      "summary": "arXiv:2607.16215v1 Announce Type: new Abstract: Existing guardrail systems for large language model agents operate as binary classifiers that block unsafe content, leaving organizations to discard failing outputs and retry from scratch. We…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7585
+      "rank_score": 0.7425
     }
   ]
 }
