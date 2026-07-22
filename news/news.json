@@ -1,11 +1,91 @@
 {
   "meta": {
-    "generated_at": "2026-07-22T14:10:42.208996+00:00",
+    "generated_at": "2026-07-22T16:24:33.184179+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "3b599d5554b2",
+      "headline": "Arcee, a US open source AI lab, says Chinese models are not inherently dangerous",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/arcee-a-us-open-source-ai-lab-says-chinese-models-are-not-inherently-dangerous/",
+      "published_at": "2026-07-22T16:24:08+00:00",
+      "summary": "As Chinese AI models grow in capability and popularity among US companies, the arguing over what should be done about them has reached a fever pitch.",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7975
+    },
+    {
+      "id": "15ce799930d9",
+      "headline": "Substack’s new tool tells you who’s been writing their newsletters with AI",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/substacks-new-tool-tells-you-whos-been-writing-their-newsletters-with-ai/",
+      "published_at": "2026-07-22T16:23:09+00:00",
+      "summary": "Substack is giving readers a way to estimate how much of a newsletter was written by AI, signaling a broader shift toward transparency around AI-assisted content.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7973
+    },
+    {
+      "id": "6abe29e95794",
+      "headline": "OpenAI’s AI spending spree has ballooned to $750B",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/",
+      "published_at": "2026-07-22T16:13:30+00:00",
+      "summary": "OpenAI will spend the equivalent of Sweden's GDP on infrastructure through 2030.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7962
+    },
+    {
+      "id": "95e7cb7ccef9",
+      "headline": "Amazon cuts jobs in its artificial general intelligence group",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.reuters.com/business/world-at-work/amazon-cuts-jobs-its-artificial-general-intelligence-group-2026-07-22/",
+      "published_at": "2026-07-22T15:04:46+00:00",
+      "summary": "5 points and 1 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5534
+    },
+    {
+      "id": "ad3e75f937d6",
+      "headline": "AMD commits up to $5 billion to Anthropic",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/969285/amd-anthropic-ai-infrastructure-deal",
+      "published_at": "2026-07-22T14:44:27+00:00",
+      "summary": "AMD says it's going to invest up to $5 billion in Anthropic, while helping to expand the AI company's computing power, according to an announcement on Wednesday. As part of the new partnership, Anthropic will deploy up to 2 gigawatts of…",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7855
+    },
     {
       "id": "482712912042",
       "headline": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
@@ -20,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8287
+      "rank_score": 0.8129
     },
     {
       "id": "e7be2bf1f7fd",
@@ -36,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7932
+      "rank_score": 0.7775
     },
     {
       "id": "0c30deb43962",
@@ -52,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7915
+      "rank_score": 0.7758
     },
     {
       "id": "e5bfc20affea",
@@ -68,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.849
+      "rank_score": 0.8335
     },
     {
       "id": "bd6ce42035f5",
@@ -84,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.824
+      "rank_score": 0.8085
     },
     {
       "id": "9efdbeb54aea",
@@ -100,7 +180,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8181
+      "rank_score": 0.8029
+    },
+    {
+      "id": "fc3528d001b5",
+      "headline": "Advancing the next era of national science",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/advancing-the-next-era-of-national-science",
+      "published_at": "2026-07-22T12:00:00+00:00",
+      "summary": "OpenAI outlines its commitment to advancing American science working with the U.S. Department of Energy and national labs to use frontier AI to accelerate discovery.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8018
     },
     {
       "id": "cd499e47d059",
@@ -116,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7751
+      "rank_score": 0.7602
     },
     {
       "id": "cd41dfa17233",
@@ -132,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7697
+      "rank_score": 0.7551
     },
     {
       "id": "3f5db142d9f8",
@@ -148,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7683
+      "rank_score": 0.7538
     },
     {
       "id": "aab6fd66ee75",
@@ -164,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7552
+      "rank_score": 0.7413
     },
     {
       "id": "c54f46e53d48",
@@ -180,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7746
+      "rank_score": 0.7613
     },
     {
       "id": "083b549aec47",
@@ -196,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7481
+      "rank_score": 0.7353
     },
     {
       "id": "4c3e3797c50c",
@@ -212,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7481
+      "rank_score": 0.7353
     },
     {
       "id": "634a3edcc62e",
@@ -228,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7481
+      "rank_score": 0.7353
     },
     {
       "id": "9286ed9b3062",
@@ -244,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7481
+      "rank_score": 0.7353
     },
     {
       "id": "aa45004d05b1",
@@ -260,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7481
+      "rank_score": 0.7353
     },
     {
       "id": "4a15cd053a93",
@@ -276,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7481
+      "rank_score": 0.7353
     },
     {
       "id": "187055015b9f",
@@ -292,103 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7481
-    },
-    {
-      "id": "b2fd7bbaf640",
-      "headline": "Integro-differential equations in angular stabilization of drone motion by distributed feedback control",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18251",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18251v1 Announce Type: new Abstract: In this paper, we propose angular stabilization of drone motion using distributed feedback control in the form of an integral operator. It should be stressed that the memory of this integral…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7481
-    },
-    {
-      "id": "d9e73b292af1",
-      "headline": "MILP-Evo: Closed-Loop Fully Automatic Design of MILP Solvers",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18252",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18252v1 Announce Type: new Abstract: Machine learning methods have shown that data-driven policies can accelerate mixed-integer linear programming (MILP) solvers, but many such approaches remain difficult to inspect, adapt, and…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7481
-    },
-    {
-      "id": "cb0224796105",
-      "headline": "Beyond Accuracy and Cost: Latency-Aware LLM Query Routing for Dynamic Workloads",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18253",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18253v1 Announce Type: new Abstract: Modern language query routers improve inference efficiency by assigning each query to a model that balances response quality and monetary cost. However, current query routers are largely…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7481
-    },
-    {
-      "id": "083f391601b5",
-      "headline": "Cross-Dialect Generalization Without Retraining: Benchmarks and Evaluation of Schema-Derived Constrained Decoding for MLIR",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18254",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18254v1 Announce Type: new Abstract: Multi-Level Intermediate Representation (MLIR) underlies modern ML compiler infrastructure (TensorFlow, JAX/StableHLO, PyTorch Inductor, IREE), yet appears only in trace amounts in code-LM…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7481
-    },
-    {
-      "id": "0e3a356e4e5c",
-      "headline": "Semantic Cooperative Games for Contribution Attribution in LLM-Based Multi-Agent Systems",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18255",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18255v1 Announce Type: new Abstract: Contribution attribution has become a central problem in LLM-based multi-agent systems, where final outputs are produced through multiple agents, message exchanges, and ordered workflow…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7481
-    },
-    {
-      "id": "b1c95048e4bf",
-      "headline": "PEARL: Solver-in-the-Loop Interactive Optimization Modeling from Natural Language",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18256",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18256v1 Announce Type: new Abstract: Optimization modeling is the process of translating real-world decision problems, often described in natural language, into formal mathematical formulations and executable solver code. While…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7481
+      "rank_score": 0.7353
     }
   ]
 }
