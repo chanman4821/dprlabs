@@ -1,11 +1,107 @@
 {
   "meta": {
-    "generated_at": "2026-07-22T18:13:15.698269+00:00",
+    "generated_at": "2026-07-22T20:15:29.952937+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "5699d15319be",
+      "headline": "How OpenAI’s human mistake led to the AI-powered hack on Hugging Face",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/how-an-openais-human-mistake-led-to-the-ai-powered-hack-on-hugging-face/",
+      "published_at": "2026-07-22T19:11:46+00:00",
+      "summary": "OpenAI made a mistake setting up what it called a “highly isolated” testing environment and sandbox. According to cybersecurity experts, that human mistake is what made the AI-powered attack on Hugging Face possible.",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7898
+    },
+    {
+      "id": "ac83631ef90a",
+      "headline": "How 'Artificial Intelligence' Is Slowly Drowning in Its Own Droppings",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://bsdly.blogspot.com/2026/07/how-artificial-intelligence-is-slowly.html",
+      "published_at": "2026-07-22T19:05:50+00:00",
+      "summary": "4 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.554
+    },
+    {
+      "id": "416e3256e221",
+      "headline": "Travis Kalanick’s robotics company raises $1.7B, led by a16z",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
+      "published_at": "2026-07-22T18:50:44+00:00",
+      "summary": "Uber is also investing in Travis Kalanick's company Atoms, which has made gauzy claims about using industrial AI to modernize the world.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8474
+    },
+    {
+      "id": "1757b88de280",
+      "headline": "Amazon cuts some jobs in its artificial general intelligence unit",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.cnbc.com/2026/07/22/amazon-lays-off-some-employees-in-its-agi-unit.html",
+      "published_at": "2026-07-22T18:36:24+00:00",
+      "summary": "2 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5494
+    },
+    {
+      "id": "2a3fdf7df916",
+      "headline": "Hyundai claims humanoid robot plan is not part of talks with striking workers",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/hyundai-claims-humanoid-robot-plan-is-not-part-of-talks-with-striking-workers/",
+      "published_at": "2026-07-22T18:18:12+00:00",
+      "summary": "Union previously warned automaker that any robot deployment must be negotiated.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7835
+    },
+    {
+      "id": "88dc835355ff",
+      "headline": "Yope raises $12.3M to build a private social network without algorithms or ads",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/yope-raises-12-3m-to-build-a-private-social-network-without-algorithms-or-ads/",
+      "published_at": "2026-07-22T18:13:58+00:00",
+      "summary": "Yope, a fast-growing social app focused on private groups of friends and family, has raised $12.3 million in seed funding. Instead of chasing creators and algorithmic feeds, the startup is betting that the future of social networking lies…",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.843
+    },
     {
       "id": "485abf6a2bfd",
       "headline": "Amazon Cuts Jobs in Artificial General Intelligence Unit",
@@ -13,14 +109,14 @@
       "source_id": "hn",
       "url": "https://www.wsj.com/tech/ai/amazon-cuts-jobs-in-artificial-general-intelligence-unit-fb86e2ba",
       "published_at": "2026-07-22T18:11:05+00:00",
-      "summary": "1 points and 0 comments on Hacker News.",
+      "summary": "6 points and 2 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5603
+      "rank_score": 0.5488
     },
     {
       "id": "cb9c3c1e8192",
@@ -36,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7952
+      "rank_score": 0.7808
     },
     {
       "id": "f98db5d0ce92",
@@ -52,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7873
+      "rank_score": 0.7732
     },
     {
       "id": "bdbd14d002e3",
@@ -68,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7858
+      "rank_score": 0.7718
     },
     {
       "id": "3b599d5554b2",
@@ -84,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7845
+      "rank_score": 0.7705
     },
     {
       "id": "15ce799930d9",
@@ -100,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7844
+      "rank_score": 0.7704
     },
     {
       "id": "6abe29e95794",
@@ -116,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7832
+      "rank_score": 0.7693
     },
     {
       "id": "95e7cb7ccef9",
@@ -125,14 +221,14 @@
       "source_id": "hn",
       "url": "https://www.reuters.com/business/world-at-work/amazon-cuts-jobs-its-artificial-general-intelligence-group-2026-07-22/",
       "published_at": "2026-07-22T15:04:46+00:00",
-      "summary": "6 points and 1 comments on Hacker News.",
+      "summary": "7 points and 1 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5414
+      "rank_score": 0.5284
     },
     {
       "id": "ad3e75f937d6",
@@ -148,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.773
+      "rank_score": 0.7595
     },
     {
       "id": "d2e3d63694f8",
@@ -164,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.768
+      "rank_score": 0.7547
     },
     {
       "id": "482712912042",
@@ -180,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8007
+      "rank_score": 0.7875
     },
     {
       "id": "e7be2bf1f7fd",
@@ -196,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7653
+      "rank_score": 0.7521
     },
     {
       "id": "0c30deb43962",
@@ -212,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7637
+      "rank_score": 0.7505
     },
     {
       "id": "e5bfc20affea",
@@ -228,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8214
+      "rank_score": 0.8084
     },
     {
       "id": "bd6ce42035f5",
@@ -244,7 +340,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7964
+      "rank_score": 0.7834
+    },
+    {
+      "id": "130e23c4bd2f",
+      "headline": "How news organizations are using AI to advance their vital missions",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/how-news-organizations-are-using-ai",
+      "published_at": "2026-07-22T13:00:00+00:00",
+      "summary": "News organizations are using AI to strengthen reporting, grow audiences, and improve business operations, with OpenAI tools supporting journalists and publishers worldwide.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.7834
     },
     {
       "id": "9efdbeb54aea",
@@ -260,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.791
+      "rank_score": 0.7782
     },
     {
       "id": "fc3528d001b5",
@@ -276,119 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.79
-    },
-    {
-      "id": "cd499e47d059",
-      "headline": "Meta made its own AI detection system. It should have just used Google’s",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/968680/meta-ai-detection-labeling-content-seal-watermarks-synthid",
-      "published_at": "2026-07-22T11:00:00+00:00",
-      "summary": "IIn March, Meta's Oversight Board called on the company to \"meet its public commitments and employ its own tools\" to help quell the spread of deceptive generative AI content across platforms. Meta responded in July by introducing Content…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7486
-    },
-    {
-      "id": "cd41dfa17233",
-      "headline": "Utility companies promise to spare us from AI’s energy bill",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/969137/us-utility-ai-electricty-data-center-rate-pledge-trump",
-      "published_at": "2026-07-22T10:12:13+00:00",
-      "summary": "In the face of backlash to concerns the AI boom will increase consumer electricity bills, the largest utility companies and data center developers in the US are now promising to do something about it. The Wall Street Journal reports that…",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7437
-    },
-    {
-      "id": "3f5db142d9f8",
-      "headline": "Glow emerges from stealth at $1.2B valuation to challenge endpoint security in the AI era",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/",
-      "published_at": "2026-07-22T10:00:00+00:00",
-      "summary": "Glow is targeting a new class of endpoint risks created by the rapid adoption of AI agents and developer tools inside enterprises.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7424
-    },
-    {
-      "id": "aab6fd66ee75",
-      "headline": "Synthesia’s AI training platform is moving beyond videos into live coaching",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/22/synthesias-ai-training-platform-is-moving-beyond-videos-into-live-coaching/",
-      "published_at": "2026-07-22T08:00:00+00:00",
-      "summary": "Synthesia launched AI Roleplay Sessions, an interactive enterprise training platform where employees practice workplace conversations with AI avatars that provide feedback, scoring, and analytics to help companies measure training…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7304
-    },
-    {
-      "id": "c54f46e53d48",
-      "headline": "Introducing OpenAI Presence",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/introducing-openai-presence",
-      "published_at": "2026-07-22T05:30:00+00:00",
-      "summary": "Introducing OpenAI Presence, a proven enterprise AI agent platform that helps organizations deploy trusted voice and chat agents for customer and internal workflows.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.751
-    },
-    {
-      "id": "083b549aec47",
-      "headline": "SysAdmin: Measuring Instrumental Power-Seeking in Frontier AI",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18239",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18239v1 Announce Type: new Abstract: Power-seeking defined as behaviors where AI systems acquire resources, evade oversight, or resist termination beyond task requirements is identified as a key driver of Loss of Control (LoC)…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7253
-    },
-    {
-      "id": "4c3e3797c50c",
-      "headline": "Calibrated Selective Fact-Checking via Evidence Chain Evaluation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18240",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18240v1 Announce Type: new Abstract: Large language models (LLMs) can achieve strong fact-checking accuracy, yet forced binary decisions conceal a critical reliability problem: systems may issue confident verdicts even when…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7253
+      "rank_score": 0.7772
     }
   ]
 }
