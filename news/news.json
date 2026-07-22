@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-22T20:15:29.952937+00:00",
+    "generated_at": "2026-07-22T22:10:13.383333+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "6eed503eb164",
+      "headline": "Google justifies its massive AI spending with a booming cloud business",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/google-justifies-its-massive-ai-spending-with-a-booming-cloud-business/",
+      "published_at": "2026-07-22T22:01:52+00:00",
+      "summary": "Google's cloud business is thriving, as companies adopting its AI and AI infrastructure services help the tech giant to report record profits.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7965
+    },
+    {
+      "id": "b7f083bd5132",
+      "headline": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic’s Fable",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/treasury-threatens-sanctions-after-white-house-claims-moonshot-distilled-anthropics-fable/",
+      "published_at": "2026-07-22T20:49:03+00:00",
+      "summary": "The episode has also intensified a broader debate in Washington over the influx of Chinese open models.",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7878
+    },
     {
       "id": "5699d15319be",
       "headline": "How OpenAI’s human mistake led to the AI-powered hack on Hugging Face",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7898
+      "rank_score": 0.7765
     },
     {
       "id": "ac83631ef90a",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.554
+      "rank_score": 0.5407
     },
     {
       "id": "416e3256e221",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8474
+      "rank_score": 0.8341
     },
     {
       "id": "1757b88de280",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5494
+      "rank_score": 0.5362
     },
     {
       "id": "2a3fdf7df916",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7835
+      "rank_score": 0.7704
     },
     {
       "id": "88dc835355ff",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.843
+      "rank_score": 0.8299
     },
     {
       "id": "485abf6a2bfd",
@@ -109,14 +141,14 @@
       "source_id": "hn",
       "url": "https://www.wsj.com/tech/ai/amazon-cuts-jobs-in-artificial-general-intelligence-unit-fb86e2ba",
       "published_at": "2026-07-22T18:11:05+00:00",
-      "summary": "6 points and 2 comments on Hacker News.",
+      "summary": "6 points and 3 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5488
+      "rank_score": 0.5357
     },
     {
       "id": "cb9c3c1e8192",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7808
+      "rank_score": 0.7677
     },
     {
       "id": "f98db5d0ce92",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7732
+      "rank_score": 0.7604
     },
     {
       "id": "bdbd14d002e3",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7718
+      "rank_score": 0.7591
     },
     {
       "id": "3b599d5554b2",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7705
+      "rank_score": 0.7579
     },
     {
       "id": "15ce799930d9",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7704
+      "rank_score": 0.7578
     },
     {
       "id": "6abe29e95794",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7693
+      "rank_score": 0.7567
     },
     {
       "id": "95e7cb7ccef9",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5284
+      "rank_score": 0.5161
     },
     {
       "id": "ad3e75f937d6",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7595
+      "rank_score": 0.7473
     },
     {
       "id": "d2e3d63694f8",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7547
+      "rank_score": 0.7427
     },
     {
       "id": "482712912042",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7875
+      "rank_score": 0.7756
     },
     {
       "id": "e7be2bf1f7fd",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7521
+      "rank_score": 0.7402
     },
     {
       "id": "0c30deb43962",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7505
+      "rank_score": 0.7387
     },
     {
       "id": "e5bfc20affea",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8084
+      "rank_score": 0.7966
     },
     {
       "id": "bd6ce42035f5",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7834
+      "rank_score": 0.7716
     },
     {
       "id": "130e23c4bd2f",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7834
-    },
-    {
-      "id": "9efdbeb54aea",
-      "headline": "The Download: NASA’s new space telescope and OpenAI’s autonomous hacker",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/22/1140717/the-download-nasa-space-telescope-openai-hugging-face-hack/",
-      "published_at": "2026-07-22T12:10:00+00:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Shape-shifting mirrors on NASA’s new space telescope could unveil Jupiters like our own When NASA’s…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7782
-    },
-    {
-      "id": "fc3528d001b5",
-      "headline": "Advancing the next era of national science",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/advancing-the-next-era-of-national-science",
-      "published_at": "2026-07-22T12:00:00+00:00",
-      "summary": "OpenAI outlines its commitment to advancing American science working with the U.S. Department of Energy and national labs to use frontier AI to accelerate discovery.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7772
+      "rank_score": 0.7716
     }
   ]
 }
