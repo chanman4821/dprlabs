@@ -1,11 +1,75 @@
 {
   "meta": {
-    "generated_at": "2026-07-22T16:24:33.184179+00:00",
+    "generated_at": "2026-07-22T18:13:15.698269+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "485abf6a2bfd",
+      "headline": "Amazon Cuts Jobs in Artificial General Intelligence Unit",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.wsj.com/tech/ai/amazon-cuts-jobs-in-artificial-general-intelligence-unit-fb86e2ba",
+      "published_at": "2026-07-22T18:11:05+00:00",
+      "summary": "1 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5603
+    },
+    {
+      "id": "cb9c3c1e8192",
+      "headline": "Monday.com lays off hundreds to focus on AI",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/monday-com-lays-off-hundreds-to-focuses-on-ai/",
+      "published_at": "2026-07-22T17:54:14+00:00",
+      "summary": "The company said it is reducing its headcount by 20%, or about 630 staff, to \"support a leaner, more focused operating model\" as it focuses on its AI Work Platform.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7952
+    },
+    {
+      "id": "f98db5d0ce92",
+      "headline": "OpenAI says its AI agent broke out of testing sandbox to hack Hugging Face",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack/",
+      "published_at": "2026-07-22T16:47:49+00:00",
+      "summary": "\"This is day one for cybersecurity in the age of agents,\" Hugging Face CEO says.",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7873
+    },
+    {
+      "id": "bdbd14d002e3",
+      "headline": "Here’s what Samsung’s smart glasses actually look like",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/969382/samsung-google-smart-glasses-gentle-monster-warby-parker",
+      "published_at": "2026-07-22T16:35:34+00:00",
+      "summary": "Samsung has given us our first chance to check out its upcoming smart glasses in person, revealing two new designs and the first specs in the process, including an impressive 9-hour battery life. The glasses, developed in collaboration…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7858
+    },
     {
       "id": "3b599d5554b2",
       "headline": "Arcee, a US open source AI lab, says Chinese models are not inherently dangerous",
@@ -13,14 +77,14 @@
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/22/arcee-a-us-open-source-ai-lab-says-chinese-models-are-not-inherently-dangerous/",
       "published_at": "2026-07-22T16:24:08+00:00",
-      "summary": "As Chinese AI models grow in capability and popularity among US companies, the arguing over what should be done about them has reached a fever pitch.",
+      "summary": "As Chinese AI models grow in capability and popularity among U.S. companies, the arguing over what should be done about them has reached a fever pitch.",
       "tags": [
         "Open Source"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7975
+      "rank_score": 0.7845
     },
     {
       "id": "15ce799930d9",
@@ -36,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7973
+      "rank_score": 0.7844
     },
     {
       "id": "6abe29e95794",
@@ -52,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7962
+      "rank_score": 0.7832
     },
     {
       "id": "95e7cb7ccef9",
@@ -61,14 +125,14 @@
       "source_id": "hn",
       "url": "https://www.reuters.com/business/world-at-work/amazon-cuts-jobs-its-artificial-general-intelligence-group-2026-07-22/",
       "published_at": "2026-07-22T15:04:46+00:00",
-      "summary": "5 points and 1 comments on Hacker News.",
+      "summary": "6 points and 1 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5534
+      "rank_score": 0.5414
     },
     {
       "id": "ad3e75f937d6",
@@ -84,7 +148,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7855
+      "rank_score": 0.773
+    },
+    {
+      "id": "d2e3d63694f8",
+      "headline": "Menlo Ventures’ Matt Murphy explains what AI startups founders must do differently",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/podcast/menlo-ventures-matt-murphy-explains-what-ai-startups-founders-must-do-differently/",
+      "published_at": "2026-07-22T14:00:00+00:00",
+      "summary": "Anthropic leaped to a $47 billion revenue run rate by May, compared to $9 billion in 2025. It’s the kind of growth that Menlo Ventures’ Matt Murphy says he’s never seen in 25 years of investing, not in the internet wave, not in mobile, not…",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.768
     },
     {
       "id": "482712912042",
@@ -100,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8129
+      "rank_score": 0.8007
     },
     {
       "id": "e7be2bf1f7fd",
@@ -116,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7775
+      "rank_score": 0.7653
     },
     {
       "id": "0c30deb43962",
@@ -132,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7758
+      "rank_score": 0.7637
     },
     {
       "id": "e5bfc20affea",
@@ -148,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8335
+      "rank_score": 0.8214
     },
     {
       "id": "bd6ce42035f5",
@@ -164,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8085
+      "rank_score": 0.7964
     },
     {
       "id": "9efdbeb54aea",
@@ -180,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8029
+      "rank_score": 0.791
     },
     {
       "id": "fc3528d001b5",
@@ -196,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8018
+      "rank_score": 0.79
     },
     {
       "id": "cd499e47d059",
@@ -212,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7602
+      "rank_score": 0.7486
     },
     {
       "id": "cd41dfa17233",
@@ -228,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7551
+      "rank_score": 0.7437
     },
     {
       "id": "3f5db142d9f8",
@@ -244,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7538
+      "rank_score": 0.7424
     },
     {
       "id": "aab6fd66ee75",
@@ -260,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7413
+      "rank_score": 0.7304
     },
     {
       "id": "c54f46e53d48",
@@ -276,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7613
+      "rank_score": 0.751
     },
     {
       "id": "083b549aec47",
@@ -292,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7353
+      "rank_score": 0.7253
     },
     {
       "id": "4c3e3797c50c",
@@ -308,87 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7353
-    },
-    {
-      "id": "634a3edcc62e",
-      "headline": "BatchDAG: LLM-Planned Execution Graphs for Scalable Ad-Hoc Analysis Over Enterprise Data",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18241",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18241v1 Announce Type: new Abstract: Large language models (LLMs) excel at analyzing individual documents but break down on exhaustive, cross-entity analytical questions over enterprise-scale datasets due to context overflow,…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7353
-    },
-    {
-      "id": "9286ed9b3062",
-      "headline": "AI Tool Discovery at Scale: All You Need is DNS",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18242",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18242v1 Announce Type: new Abstract: The coming era of autonomous AI agents demands a discovery mechanism capable of navigating millions of tools, yet existing solutions buckle under O(N) complexity and centralized governance.…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7353
-    },
-    {
-      "id": "aa45004d05b1",
-      "headline": "From Agent Failure Paths to Quantified Residual Risk: A Compositional Framework for Resilient Agentic AI",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18243",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18243v1 Announce Type: new Abstract: Agentic AI is crossing trust boundaries faster than current risk models can represent. Existing approaches provide one of two partial views. They either describe failure mechanisms without…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7353
-    },
-    {
-      "id": "4a15cd053a93",
-      "headline": "SAAG: Structured Agent Assessment and Grounding",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18245",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18245v1 Announce Type: new Abstract: Exact-match evaluation of agent-calling obscures qualitatively different failure modes: a model may select the right function yet hallucinate argument values, or satisfy a schema while…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7353
-    },
-    {
-      "id": "187055015b9f",
-      "headline": "Phionyx: A Deterministic AI Runtime Architecture with Structured State Management and Pre-Response Governance",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18246",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18246v1 Announce Type: new Abstract: We present Phionyx, a deterministic AI runtime architecture derived from the broader Echoism interaction framework that introduces a governance-first approach to AI engineering: treating…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7353
+      "rank_score": 0.7253
     }
   ]
 }
