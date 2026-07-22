@@ -1,11 +1,107 @@
 {
   "meta": {
-    "generated_at": "2026-07-22T11:53:01.785026+00:00",
+    "generated_at": "2026-07-22T14:10:42.208996+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "482712912042",
+      "headline": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
+      "source_name": "Google DeepMind",
+      "source_id": "deepmind",
+      "url": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
+      "published_at": "2026-07-22T13:38:54+00:00",
+      "summary": "Google commits $40M in AI tokens and credits for the Genesis Mission",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8287
+    },
+    {
+      "id": "e7be2bf1f7fd",
+      "headline": "Unlimited AI tokens aren't unlimited after all as US Army burns through supply",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/us-army-faces-ai-use-limits-after-exhausting-years-supply-of-ai-tokens/",
+      "published_at": "2026-07-22T13:35:17+00:00",
+      "summary": "Troops received an email informing them that they were rapidly depleting their AI tokens.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7932
+    },
+    {
+      "id": "0c30deb43962",
+      "headline": "The browser wars aren’t about search anymore — here are the best alternatives to Chrome and Safari",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
+      "published_at": "2026-07-22T13:20:35+00:00",
+      "summary": "We’ve compiled an overview of some of the top alternative browsers available today aiming to challenge Chrome and Safari.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7915
+    },
+    {
+      "id": "e5bfc20affea",
+      "headline": "Passionfroot raises $15M to expand its B2B creator marketplace to the US",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/passionfroot-raises-15m-to-expand-its-b2b-creator-marketplace-to-the-us/",
+      "published_at": "2026-07-22T13:00:00+00:00",
+      "summary": "Passionfroot, a German startup building a marketplace connecting B2B creators with brands, has raised $15M in a Series A round led by Insight Partners.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.849
+    },
+    {
+      "id": "bd6ce42035f5",
+      "headline": "Building AI infrastructure with the Effingham County community",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+      "published_at": "2026-07-22T13:00:00+00:00",
+      "summary": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.824
+    },
+    {
+      "id": "9efdbeb54aea",
+      "headline": "The Download: NASA’s new space telescope and OpenAI’s autonomous hacker",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/22/1140717/the-download-nasa-space-telescope-openai-hugging-face-hack/",
+      "published_at": "2026-07-22T12:10:00+00:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Shape-shifting mirrors on NASA’s new space telescope could unveil Jupiters like our own When NASA’s…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8181
+    },
     {
       "id": "cd499e47d059",
       "headline": "Meta made its own AI detection system. It should have just used Google’s",
@@ -20,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7911
+      "rank_score": 0.7751
     },
     {
       "id": "cd41dfa17233",
@@ -36,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7855
+      "rank_score": 0.7697
     },
     {
       "id": "3f5db142d9f8",
@@ -52,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.784
+      "rank_score": 0.7683
     },
     {
       "id": "aab6fd66ee75",
@@ -68,7 +164,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7703
+      "rank_score": 0.7552
+    },
+    {
+      "id": "c54f46e53d48",
+      "headline": "Introducing OpenAI Presence",
+      "source_name": "OpenAI",
+      "source_id": "openai",
+      "url": "https://openai.com/index/introducing-openai-presence",
+      "published_at": "2026-07-22T05:30:00+00:00",
+      "summary": "Introducing OpenAI Presence, a proven enterprise AI agent platform that helps organizations deploy trusted voice and chat agents for customer and internal workflows.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.7746
     },
     {
       "id": "083b549aec47",
@@ -84,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "4c3e3797c50c",
@@ -100,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "634a3edcc62e",
@@ -116,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "9286ed9b3062",
@@ -132,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "aa45004d05b1",
@@ -148,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "4a15cd053a93",
@@ -164,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "187055015b9f",
@@ -180,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "b2fd7bbaf640",
@@ -196,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "d9e73b292af1",
@@ -212,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "cb0224796105",
@@ -228,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "083f391601b5",
@@ -244,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "0e3a356e4e5c",
@@ -260,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     },
     {
       "id": "b1c95048e4bf",
@@ -276,119 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.762
-    },
-    {
-      "id": "cb178814d172",
-      "headline": "S2T-RLHF: Hierarchical Credit Assignment for Stable Preference-Based RLHF",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18258",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18258v1 Announce Type: new Abstract: Reinforcement learning from human feedback (RLHF) with preference-based reward models often exhibits unstable training dynamics. A key contributing factor is that standard RLHF relies on a…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.762
-    },
-    {
-      "id": "281663eb3eb3",
-      "headline": "Probabilistic Concept-Aware Steering for Trustworthy LLM Inference",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18259",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18259v1 Announce Type: new Abstract: Steering vectors (SVs), an inference-time intervention technique for large language models (LLMs), guide the generation process by adding a concept-specific direction vector to intermediate…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.762
-    },
-    {
-      "id": "a04bab458ea1",
-      "headline": "FindStatBench: Evaluating Large Language Models on Combinatorial Code Synthesis",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18260",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18260v1 Announce Type: new Abstract: We introduce FindStatBench, an execution benchmark for evaluating large language models on combinatorial code synthesis. Built from FindStat, it contains 2,329 tasks across 24 collections and…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.762
-    },
-    {
-      "id": "bb2d6d33e95f",
-      "headline": "When JSON Is Not Enough: Semantic Reliability of Schema-Constrained LLM Ordering Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18261",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18261v1 Announce Type: new Abstract: LLM agents are increasingly used as transaction compilers: a user states an intent in natural language, and the model emits a structured object that an API can execute. JSON Schema and…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.762
-    },
-    {
-      "id": "f5aa90f30279",
-      "headline": "ProbSPARQL: Querying Knowledge Graphs with Multi-dimensional, Uncertain Numeric Data",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18262",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18262v1 Announce Type: new Abstract: The SFB 1574 Circular Factory is building a shared knowledge graph infrastructure for integrating data about returned products. A central challenge is that circular-factory data include…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.762
-    },
-    {
-      "id": "733537912fe9",
-      "headline": "Position: AI/ML Deepfake Research is Misaligned with AI-Generated Non-Consensual Intimate Imagery (AIG-NCII)",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18263",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18263v1 Announce Type: new Abstract: AI-generated non-consensual intimate imagery (AIG-NCII) is not adequately addressed in AI/ML literature regarding AI-generated media, commonly referred to as \"deepfakes\". While research on…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.762
-    },
-    {
-      "id": "b5a21895ab1b",
-      "headline": "MUX: Continuous Reasoning via Multiplexed Tokens",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.18264",
-      "published_at": "2026-07-22T04:00:00+00:00",
-      "summary": "arXiv:2607.18264v1 Announce Type: new Abstract: Language models solve complex problems by articulating intermediate reasoning steps in natural language. While effective, this process is computationally bottlenecked: each reasoning step…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.762
+      "rank_score": 0.7481
     }
   ]
 }
