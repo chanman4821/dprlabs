@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-23T07:37:15.959446+00:00",
+    "generated_at": "2026-07-23T10:29:47.138909+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "6bc4c560e199",
+      "headline": "Trump's Plan for Science: More Money for A.I., Less for Universities",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.nytimes.com/2026/07/22/us/politics/trump-research-funding-artificial-intelligence.html",
+      "published_at": "2026-07-23T09:24:39+00:00",
+      "summary": "3 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.554
+    },
+    {
+      "id": "aa63415bbfb1",
+      "headline": "World Artificial Intelligence Cooperation Organization",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://en.wikipedia.org/wiki/World_Artificial_Intelligence_Cooperation_Organization",
+      "published_at": "2026-07-23T08:56:47+00:00",
+      "summary": "1 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5495
+    },
     {
       "id": "a3f620aa6a10",
       "headline": "ServiceNow bets $40 million on Indian banking software specialist to expand its financial services push",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.787
+      "rank_score": 0.7672
     },
     {
       "id": "7fdcaaf58cf1",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8496
+      "rank_score": 0.8307
     },
     {
       "id": "b3461cda7dfd",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8496
+      "rank_score": 0.8307
     },
     {
       "id": "512d58a28c78",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "5f0f9145b683",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "404ae51a7170",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "2088cc721ccf",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "38b93ff2a0f9",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "b47675196603",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "236d0f00fdd4",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "70f8309f39d1",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "e1729168582b",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "a56c057d2a5b",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "c98a48571858",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "bf7c85346f91",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "e4768b0f5ecd",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "be4ee4022727",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "d802ba2a0423",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "cbddcf5aab54",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "2fbe794d9041",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "7ca37a15546c",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     },
     {
       "id": "1c54651c34cd",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7896
-    },
-    {
-      "id": "e0a0533ab58f",
-      "headline": "CrackedPDFs: A Controlled Benchmark for Hidden Prompt Injection in PDFs",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19396",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19396v1 Announce Type: new Abstract: Document-based LLM systems often flatten a PDF before guardrails inspect it. That step can discard evidence that an instruction was never visible to the user. We introduce CrackedPDFs, a…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7896
-    },
-    {
-      "id": "7ea675c1e249",
-      "headline": "HyGRL: Adaptive Hybrid Graph Reasoning for Multi-Entity Questions",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19398",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19398v1 Announce Type: new Abstract: Multi-entity compositional questions pose significant challenges to existing retrieval-augmented language models. Conventional methods fall into a dilemma: standard RAG lacks dynamic…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7896
+      "rank_score": 0.7707
     }
   ]
 }
