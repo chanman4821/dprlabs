@@ -1,11 +1,123 @@
 {
   "meta": {
-    "generated_at": "2026-07-23T15:14:59.186153+00:00",
+    "generated_at": "2026-07-23T17:37:18.363572+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "00359069d44f",
+      "headline": "Runway launches AI model router as generative media gets crowded",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/",
+      "published_at": "2026-07-23T17:07:35+00:00",
+      "summary": "Runway no longer wants to be just another AI model company. It wants to become the infrastructure layer for generative media. On Thursday, the startup launched Runway Media Router through Runway Dev, its developer platform, released…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7939
+    },
+    {
+      "id": "cb3c46e4e715",
+      "headline": "OpenAI is making big claims as it rolls out ChatGPT Health to everyone",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
+      "published_at": "2026-07-23T17:00:00+00:00",
+      "summary": "OpenAI is rolling out ChatGPT Health to everyone in the US on Thursday, allowing more people to connect their medical records and health-tracking information to the chatbot. During a briefing, Ashley Alexander, OpenAI's vice president of…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.793
+    },
+    {
+      "id": "03ca48c266f7",
+      "headline": "OpenAI makes ChatGPT Health available to all U.S. users",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/",
+      "published_at": "2026-07-23T17:00:00+00:00",
+      "summary": "Users can also integrate their personal data from services like Apple Health, Function, and MyFitnessPal.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.793
+    },
+    {
+      "id": "3790e5420a19",
+      "headline": "Meta launched a new AI optimism ad set to a song about human extinction",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/23/meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinction/",
+      "published_at": "2026-07-23T16:28:50+00:00",
+      "summary": "David Bowie's song \"Five Years,\" which Meta used in a supposedly inspiring advertisement, is about humans learning that they have five years left to live before the apocalypse.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7893
+    },
+    {
+      "id": "3cafe2ee039e",
+      "headline": "Google just had its first negative cash flow quarter due to massive AI spending",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/google/2026/07/google-just-had-its-first-negative-cash-flow-quarter-ever-due-to-massive-ai-spending/",
+      "published_at": "2026-07-23T16:04:19+00:00",
+      "summary": "Google continues to report big quarterly revenue, but its AI spending has skyrocketed.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7864
+    },
+    {
+      "id": "b8c9235a4da4",
+      "headline": "Amazon cuts jobs from its artificial general intelligence team",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://twitter.com/Polymarket/status/2079945560937672966",
+      "published_at": "2026-07-23T15:44:21+00:00",
+      "summary": "1 points and 1 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5471
+    },
+    {
+      "id": "d15a0dad264d",
+      "headline": "Nvidia is sending GPUs to the moon",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/23/nvidia-is-sending-gpus-to-the-moon/",
+      "published_at": "2026-07-23T15:00:00+00:00",
+      "summary": "If there's a place in the universe without GPUs, Nvidia is sending them there.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7789
+    },
     {
       "id": "d9ffdf3634eb",
       "headline": "AI chip startup Etched defies skeptics, hits $10.3B valuation from big-name investors",
@@ -20,27 +132,11 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7957
-    },
-    {
-      "id": "d15a0dad264d",
-      "headline": "Nvidia is sending GPUs to the Moon",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/nvidia-is-sending-gpus-to-the-moon/",
-      "published_at": "2026-07-23T15:00:00+00:00",
-      "summary": "If there's a place in the universe without GPUs, Nvidia is sending them there.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7957
+      "rank_score": 0.7789
     },
     {
       "id": "085548e5aa00",
-      "headline": "Google closes in on another billion- user product with Gemini",
+      "headline": "Google’s Gemini nears billion-user milestone",
       "source_name": "TechCrunch",
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini/",
@@ -52,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8548
+      "rank_score": 0.8381
     },
     {
       "id": "2568e67aa59b",
@@ -68,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7939
+      "rank_score": 0.7772
     },
     {
       "id": "8578cdf299be",
@@ -77,14 +173,14 @@
       "source_id": "hn",
       "url": "https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use",
       "published_at": "2026-07-23T14:40:30+00:00",
-      "summary": "3 points and 0 comments on Hacker News.",
+      "summary": "55 points and 56 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.6,
-      "rank_score": 0.5816
+      "rank_score": 0.5962
     },
     {
       "id": "01d83a6818a9",
@@ -100,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7901
+      "rank_score": 0.7736
     },
     {
       "id": "8d19bda52fec",
@@ -109,14 +205,14 @@
       "source_id": "hn",
       "url": "https://www.windowscentral.com/artificial-intelligence/microsoft-copilot/free-copilot-is-turning-into-a-demo-as-microsoft-shifts-real-features-to-paid-tiers",
       "published_at": "2026-07-23T14:07:54+00:00",
-      "summary": "2 points and 0 comments on Hacker News.",
+      "summary": "3 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5531
+      "rank_score": 0.5373
     },
     {
       "id": "9ae095cbc6ee",
@@ -132,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7885
+      "rank_score": 0.7721
     },
     {
       "id": "8ed929e370e8",
@@ -141,14 +237,14 @@
       "source_id": "hn",
       "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
       "published_at": "2026-07-23T13:09:10+00:00",
-      "summary": "181 points and 85 comments on Hacker News.",
+      "summary": "365 points and 166 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.6536
+      "rank_score": 0.7479
     },
     {
       "id": "652dcb8a96d7",
@@ -164,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8107
+      "rank_score": 0.7949
     },
     {
       "id": "02432db4adf2",
@@ -180,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.8096
+      "rank_score": 0.7938
     },
     {
       "id": "5becd4f5ac8e",
@@ -196,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7746
+      "rank_score": 0.7588
     },
     {
       "id": "1f97c93f772d",
@@ -212,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7678
+      "rank_score": 0.7524
     },
     {
       "id": "6bc4c560e199",
@@ -228,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5223
+      "rank_score": 0.5074
     },
     {
       "id": "aa63415bbfb1",
@@ -244,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5175
+      "rank_score": 0.5027
     },
     {
       "id": "a3f620aa6a10",
@@ -260,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7371
+      "rank_score": 0.7231
     },
     {
       "id": "7fdcaaf58cf1",
@@ -276,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8019
+      "rank_score": 0.7885
     },
     {
       "id": "b3461cda7dfd",
@@ -292,103 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8019
-    },
-    {
-      "id": "512d58a28c78",
-      "headline": "FineServe: A Fine-Grained Dataset and Characterization of Global LLM Serving Workloads",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19349",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19349v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed as always-on online services, making efficient LLM serving a critical systems challenge. Achieving low latency and high throughput under…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7419
-    },
-    {
-      "id": "5f0f9145b683",
-      "headline": "Hybrid LSTM-Graph Neural Framework for Robust Financial Fraud Detection and Adversarial Resilience",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19350",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19350v1 Announce Type: new Abstract: Financial institutions face significant challenges in detecting sophisticated money laundering patterns, such as smurfing and layering, due to extreme data imbalance (0.13% fraud rate) and…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7419
-    },
-    {
-      "id": "404ae51a7170",
-      "headline": "OpenEvoShield: Dual Non-Stationary Continual Defense for Open-World Multi-Agent System Attacks",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19351",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19351v1 Announce Type: new Abstract: LLM-based multi-agent systems (LLM-MAS) are increasingly deployed in safety-critical applications, where adversaries inject malicious instructions through inter-agent communication to…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7419
-    },
-    {
-      "id": "2088cc721ccf",
-      "headline": "Benchmarking Confidential GPU Inference on NVIDIA H100 under Intel TDX",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19353",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19353v1 Announce Type: new Abstract: Confidential computing is becoming a practical deployment requirement for AI inference workloads that process sensitive inputs or protect proprietary model assets. However, the performance…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7419
-    },
-    {
-      "id": "38b93ff2a0f9",
-      "headline": "FormulaSPIN: Self-Play Fine-Tuning for Natural Language to Spreadsheet Formula Generation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19354",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19354v1 Announce Type: new Abstract: Spreadsheet applications are used by hundreds of millions worldwide, yet writing formulas remains a significant barrier. Existing approaches rely on static supervised data, which quickly…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7419
-    },
-    {
-      "id": "b47675196603",
-      "headline": "Information Discernment in Large Language Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19355",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19355v1 Announce Type: new Abstract: LLMs are increasingly used with external knowledge sources like the internet. Do they weigh information appropriately -- updating more for reliable sources (source discernment) and more when…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7419
+      "rank_score": 0.7885
     }
   ]
 }
