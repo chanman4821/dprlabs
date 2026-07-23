@@ -1,14 +1,46 @@
 {
   "meta": {
-    "generated_at": "2026-07-23T21:11:44.478561+00:00",
+    "generated_at": "2026-07-23T23:02:39.434802+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
+      "id": "dc6069653cce",
+      "headline": "A Taxonomy of Omnicidal Futures Involving Artificial Intelligence",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://arxiv.org/abs/2507.09369",
+      "published_at": "2026-07-23T22:51:13+00:00",
+      "summary": "2 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 2,
+      "credibility": 0.6,
+      "rank_score": 0.5838
+    },
+    {
+      "id": "c6bad60c5902",
+      "headline": "Alexa Plus is getting an AI update to handle more complicated instructions",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices",
+      "published_at": "2026-07-23T21:15:06+00:00",
+      "summary": "Amazon is launching an update to its Alexa Plus assistant that will allow it to connect to smart home devices in new ways. With the update, Alexa Plus can link up with tech from Bosch, Delta, Ecovacs, iRobot, Yale Home, Whirlpool, Tapo,…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7847
+    },
+    {
       "id": "b4d4584e10a9",
-      "headline": "AMD takes on Nvidia with its Helios AI rack scale system",
+      "headline": "AMD takes on Nvidia with its Helios AI rack-scale system",
       "source_name": "TechCrunch",
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7928
+      "rank_score": 0.7798
     },
     {
       "id": "0b843e577a7e",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7828
+      "rank_score": 0.7701
     },
     {
       "id": "77885ca812d6",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8419
+      "rank_score": 0.8292
     },
     {
       "id": "c6a17a386bdb",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8419
+      "rank_score": 0.8292
     },
     {
       "id": "84bd7cfa0701",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7794
+      "rank_score": 0.7668
     },
     {
       "id": "440b0110dc04",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7773
+      "rank_score": 0.7648
     },
     {
       "id": "00359069d44f",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7691
+      "rank_score": 0.7569
     },
     {
       "id": "cb3c46e4e715",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7682
+      "rank_score": 0.7561
     },
     {
       "id": "03ca48c266f7",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7682
+      "rank_score": 0.7561
     },
     {
       "id": "3790e5420a19",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7648
+      "rank_score": 0.7528
     },
     {
       "id": "3cafe2ee039e",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7621
+      "rank_score": 0.7502
     },
     {
       "id": "b8c9235a4da4",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.523
+      "rank_score": 0.5112
     },
     {
       "id": "d15a0dad264d",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7551
+      "rank_score": 0.7435
     },
     {
       "id": "d9ffdf3634eb",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7551
+      "rank_score": 0.7435
     },
     {
       "id": "085548e5aa00",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8143
+      "rank_score": 0.8028
     },
     {
       "id": "2568e67aa59b",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7535
+      "rank_score": 0.742
     },
     {
       "id": "8578cdf299be",
@@ -269,14 +301,14 @@
       "source_id": "hn",
       "url": "https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use",
       "published_at": "2026-07-23T14:40:30+00:00",
-      "summary": "64 points and 68 comments on Hacker News.",
+      "summary": "67 points and 69 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.6,
-      "rank_score": 0.5779
+      "rank_score": 0.5682
     },
     {
       "id": "01d83a6818a9",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7502
+      "rank_score": 0.7388
     },
     {
       "id": "8d19bda52fec",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5139
+      "rank_score": 0.5025
     },
     {
       "id": "9ae095cbc6ee",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7488
+      "rank_score": 0.7374
     },
     {
       "id": "8ed929e370e8",
@@ -333,14 +365,14 @@
       "source_id": "hn",
       "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
       "published_at": "2026-07-23T13:09:10+00:00",
-      "summary": "504 points and 243 comments on Hacker News.",
+      "summary": "561 points and 272 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.806
+      "rank_score": 0.7948
     },
     {
       "id": "652dcb8a96d7",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7725
-    },
-    {
-      "id": "02432db4adf2",
-      "headline": "How AI helps scientists design the next generation of medicines",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines/",
-      "published_at": "2026-07-23T12:00:00+00:00",
-      "summary": "Designing and developing a new medicine is an expensive, failure-prone scientific challenge. A new drug can take many years to develop, at the cost of a significant investment. And even then, most possible candidates never reach the…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7715
-    },
-    {
-      "id": "5becd4f5ac8e",
-      "headline": "The right-wing boomers protesting data centers have a lot in common with the left",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/policy/969667/humans-first-data-center-protest-hernando-county-florida-republicans",
-      "published_at": "2026-07-23T12:00:00+00:00",
-      "summary": "On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community. There was no immediate threat -…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7365
+      "rank_score": 0.7615
     }
   ]
 }
