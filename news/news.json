@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-23T19:34:54.092074+00:00",
+    "generated_at": "2026-07-23T21:11:44.478561+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "b4d4584e10a9",
+      "headline": "AMD takes on Nvidia with its Helios AI rack scale system",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
+      "published_at": "2026-07-23T20:33:02+00:00",
+      "summary": "AMD is challenging its chipmaker rival with a new rack-scale system that will start shipping to customers later this year.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7928
+    },
+    {
+      "id": "0b843e577a7e",
+      "headline": "AI Kill Switch Act would let Trump admin order shutdown of rogue AI systems",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/tech-policy/2026/07/ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-systems/",
+      "published_at": "2026-07-23T19:08:01+00:00",
+      "summary": "Bill would let Homeland Security chief decide when an AI should be shut down.",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7828
+    },
     {
       "id": "77885ca812d6",
       "headline": "Claude’s voice mode is now available for Opus and Sonnet",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8533
+      "rank_score": 0.8419
     },
     {
       "id": "c6a17a386bdb",
@@ -29,14 +61,14 @@
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
       "published_at": "2026-07-23T19:00:00+00:00",
-      "summary": "Claude's new voice model will let you reschedule your meeting or draft an email",
+      "summary": "Claude's new voice model will let you reschedule your meeting or draft an email.",
       "tags": [
         "Models"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8533
+      "rank_score": 0.8419
     },
     {
       "id": "84bd7cfa0701",
@@ -45,14 +77,14 @@
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
       "published_at": "2026-07-23T18:38:34+00:00",
-      "summary": "The Series A was led by Battery Ventures, bringing AegisAI total funding to $49 million.",
+      "summary": "AegisAI co-founders developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.",
       "tags": [
-        "Business"
+        "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7907
+      "rank_score": 0.7794
     },
     {
       "id": "440b0110dc04",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7886
+      "rank_score": 0.7773
     },
     {
       "id": "00359069d44f",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7801
+      "rank_score": 0.7691
     },
     {
       "id": "cb3c46e4e715",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7792
+      "rank_score": 0.7682
     },
     {
       "id": "03ca48c266f7",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7792
+      "rank_score": 0.7682
     },
     {
       "id": "3790e5420a19",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7756
+      "rank_score": 0.7648
     },
     {
       "id": "3cafe2ee039e",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7728
+      "rank_score": 0.7621
     },
     {
       "id": "b8c9235a4da4",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5337
+      "rank_score": 0.523
     },
     {
       "id": "d15a0dad264d",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7656
+      "rank_score": 0.7551
     },
     {
       "id": "d9ffdf3634eb",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7656
+      "rank_score": 0.7551
     },
     {
       "id": "085548e5aa00",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8248
+      "rank_score": 0.8143
     },
     {
       "id": "2568e67aa59b",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.764
+      "rank_score": 0.7535
     },
     {
       "id": "8578cdf299be",
@@ -237,14 +269,14 @@
       "source_id": "hn",
       "url": "https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use",
       "published_at": "2026-07-23T14:40:30+00:00",
-      "summary": "62 points and 64 comments on Hacker News.",
+      "summary": "64 points and 68 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.6,
-      "rank_score": 0.5872
+      "rank_score": 0.5779
     },
     {
       "id": "01d83a6818a9",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7606
+      "rank_score": 0.7502
     },
     {
       "id": "8d19bda52fec",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5242
+      "rank_score": 0.5139
     },
     {
       "id": "9ae095cbc6ee",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7591
+      "rank_score": 0.7488
     },
     {
       "id": "8ed929e370e8",
@@ -301,14 +333,14 @@
       "source_id": "hn",
       "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
       "published_at": "2026-07-23T13:09:10+00:00",
-      "summary": "439 points and 210 comments on Hacker News.",
+      "summary": "504 points and 243 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.7795
+      "rank_score": 0.806
     },
     {
       "id": "652dcb8a96d7",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7824
+      "rank_score": 0.7725
     },
     {
       "id": "02432db4adf2",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7814
+      "rank_score": 0.7715
     },
     {
       "id": "5becd4f5ac8e",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7464
-    },
-    {
-      "id": "1f97c93f772d",
-      "headline": "Experts say exploiting Anthropic’s Fable isn’t how Kimi K3 got so good",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/experts-say-exploiting-anthropics-fable-isnt-how-kimi-k3-got-so-good/",
-      "published_at": "2026-07-23T11:00:00+00:00",
-      "summary": "\"I don't think you get a model this strong and this quickly on the heels of Fable doing strictly distillation,\" one expert told TechCrunch.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7402
-    },
-    {
-      "id": "6bc4c560e199",
-      "headline": "Trump's Plan for Science: More Money for A.I., Less for Universities",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.nytimes.com/2026/07/22/us/politics/trump-research-funding-artificial-intelligence.html",
-      "published_at": "2026-07-23T09:24:39+00:00",
-      "summary": "4 points and 0 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.4956
+      "rank_score": 0.7365
     }
   ]
 }
