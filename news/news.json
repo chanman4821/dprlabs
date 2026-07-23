@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-23T10:29:47.138909+00:00",
+    "generated_at": "2026-07-23T12:43:36.806902+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "652dcb8a96d7",
+      "headline": "The Download: energy transmission and US threats against Chinese AI",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/23/1140753/the-download-energy-transmission-and-us-threats-chinese-ai/",
+      "published_at": "2026-07-23T12:10:00+00:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The power line that could reshape New York’s grid is hitting snags During a heat wave on July 3, New…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8284
+    },
+    {
+      "id": "02432db4adf2",
+      "headline": "How AI helps scientists design the next generation of medicines",
+      "source_name": "MIT Technology Review",
+      "source_id": "mittr",
+      "url": "https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines/",
+      "published_at": "2026-07-23T12:00:00+00:00",
+      "summary": "Designing and developing a new medicine is an expensive, failure-prone scientific challenge. A new drug can take many years to develop, at the cost of a significant investment. And even then, most possible candidates never reach the…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.95,
+      "rank_score": 0.8272
+    },
+    {
+      "id": "1f97c93f772d",
+      "headline": "Experts say exploiting Anthropic’s Fable isn’t how Kimi K3 got so good",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/23/experts-say-exploiting-anthropics-fable-isnt-how-kimi-k3-got-so-good/",
+      "published_at": "2026-07-23T11:00:00+00:00",
+      "summary": "\"I don't think you get a model this strong and this quickly on the heels of Fable doing strictly distillation,\" one expert told TechCrunch.",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7851
+    },
     {
       "id": "6bc4c560e199",
       "headline": "Trump's Plan for Science: More Money for A.I., Less for Universities",
@@ -13,14 +61,14 @@
       "source_id": "hn",
       "url": "https://www.nytimes.com/2026/07/22/us/politics/trump-research-funding-artificial-intelligence.html",
       "published_at": "2026-07-23T09:24:39+00:00",
-      "summary": "3 points and 0 comments on Hacker News.",
+      "summary": "4 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.554
+      "rank_score": 0.539
     },
     {
       "id": "aa63415bbfb1",
@@ -36,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5495
+      "rank_score": 0.5341
     },
     {
       "id": "a3f620aa6a10",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7672
+      "rank_score": 0.7527
     },
     {
       "id": "7fdcaaf58cf1",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8307
+      "rank_score": 0.8168
     },
     {
       "id": "b3461cda7dfd",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.8307
+      "rank_score": 0.8168
     },
     {
       "id": "512d58a28c78",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "5f0f9145b683",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "404ae51a7170",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "2088cc721ccf",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "38b93ff2a0f9",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "b47675196603",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "236d0f00fdd4",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "70f8309f39d1",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "e1729168582b",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "a56c057d2a5b",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "c98a48571858",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "bf7c85346f91",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "e4768b0f5ecd",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "be4ee4022727",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "d802ba2a0423",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     },
     {
       "id": "cbddcf5aab54",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7707
-    },
-    {
-      "id": "2fbe794d9041",
-      "headline": "Beyond Tracking or Shortcut: Composition-Bounded Predictive States in Poker Autoregressive Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19369",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19369v1 Announce Type: new Abstract: Hidden-state probes often recover latent labels in imperfect-information sequence models, but this alone does not establish that a model maintains a posterior belief distribution over hidden…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7707
-    },
-    {
-      "id": "7ca37a15546c",
-      "headline": "Mitigating Scaffolding Collapse in Socratic Tutors via Representation Alignment",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19371",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19371v1 Announce Type: new Abstract: Large language model (LLM)-based Socratic tutors increasingly guide students through multi-turn questioning, but they can suffer from scaffolding collapse: under sustained student pressure, a…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7707
-    },
-    {
-      "id": "1c54651c34cd",
-      "headline": "Euclean: Automated Geometry Problem Formalization with Unified Verification in Lean",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19374",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19374v1 Announce Type: new Abstract: Recent formal reasoning systems have reached IMO-level performance, yet they leave a fragmented landscape: algebra and number theory are handled in Lean, while geometry still relies on…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7707
+      "rank_score": 0.7568
     }
   ]
 }
