@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-22T22:10:13.383333+00:00",
+    "generated_at": "2026-07-23T00:06:21.329755+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "2b0ee14bcadb",
+      "headline": "After shocking quarter, IBM insists that AI isn’t killing the mainframe",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/22/after-shocking-quarter-ibm-insists-that-ai-isnt-killing-the-mainframe/",
+      "published_at": "2026-07-22T23:47:54+00:00",
+      "summary": "After IBM's stock crashed last week on warnings of a poor mainframe sales, the CEO explained that AI wrecked corporate hardware budget, temporarily.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7953
+    },
     {
       "id": "6eed503eb164",
       "headline": "Google justifies its massive AI spending with a booming cloud business",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7965
+      "rank_score": 0.7827
     },
     {
       "id": "b7f083bd5132",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7878
+      "rank_score": 0.7743
     },
     {
       "id": "5699d15319be",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7765
+      "rank_score": 0.7635
     },
     {
       "id": "ac83631ef90a",
@@ -61,14 +77,14 @@
       "source_id": "hn",
       "url": "https://bsdly.blogspot.com/2026/07/how-artificial-intelligence-is-slowly.html",
       "published_at": "2026-07-22T19:05:50+00:00",
-      "summary": "4 points and 0 comments on Hacker News.",
+      "summary": "5 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5407
+      "rank_score": 0.5283
     },
     {
       "id": "416e3256e221",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8341
+      "rank_score": 0.8212
     },
     {
       "id": "1757b88de280",
@@ -93,14 +109,14 @@
       "source_id": "hn",
       "url": "https://www.cnbc.com/2026/07/22/amazon-lays-off-some-employees-in-its-agi-unit.html",
       "published_at": "2026-07-22T18:36:24+00:00",
-      "summary": "2 points and 0 comments on Hacker News.",
+      "summary": "3 points and 0 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5362
+      "rank_score": 0.5239
     },
     {
       "id": "2a3fdf7df916",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7704
+      "rank_score": 0.7577
     },
     {
       "id": "88dc835355ff",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8299
+      "rank_score": 0.8172
     },
     {
       "id": "485abf6a2bfd",
@@ -141,14 +157,14 @@
       "source_id": "hn",
       "url": "https://www.wsj.com/tech/ai/amazon-cuts-jobs-in-artificial-general-intelligence-unit-fb86e2ba",
       "published_at": "2026-07-22T18:11:05+00:00",
-      "summary": "6 points and 3 comments on Hacker News.",
+      "summary": "7 points and 3 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5357
+      "rank_score": 0.5236
     },
     {
       "id": "cb9c3c1e8192",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7677
+      "rank_score": 0.7551
     },
     {
       "id": "f98db5d0ce92",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7604
+      "rank_score": 0.7481
     },
     {
       "id": "bdbd14d002e3",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7591
+      "rank_score": 0.7468
     },
     {
       "id": "3b599d5554b2",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7579
+      "rank_score": 0.7456
     },
     {
       "id": "15ce799930d9",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7578
+      "rank_score": 0.7455
     },
     {
       "id": "6abe29e95794",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7567
+      "rank_score": 0.7445
     },
     {
       "id": "95e7cb7ccef9",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5161
+      "rank_score": 0.5042
     },
     {
       "id": "ad3e75f937d6",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7473
+      "rank_score": 0.7355
     },
     {
       "id": "d2e3d63694f8",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7427
+      "rank_score": 0.7311
     },
     {
       "id": "482712912042",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7756
+      "rank_score": 0.764
     },
     {
       "id": "e7be2bf1f7fd",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7402
+      "rank_score": 0.7286
     },
     {
       "id": "0c30deb43962",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7387
+      "rank_score": 0.7272
     },
     {
       "id": "e5bfc20affea",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7966
+      "rank_score": 0.7852
     },
     {
       "id": "bd6ce42035f5",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7716
-    },
-    {
-      "id": "130e23c4bd2f",
-      "headline": "How news organizations are using AI to advance their vital missions",
-      "source_name": "OpenAI",
-      "source_id": "openai",
-      "url": "https://openai.com/index/how-news-organizations-are-using-ai",
-      "published_at": "2026-07-22T13:00:00+00:00",
-      "summary": "News organizations are using AI to strengthen reporting, grow audiences, and improve business operations, with OpenAI tools supporting journalists and publishers worldwide.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7716
+      "rank_score": 0.7602
     }
   ]
 }
