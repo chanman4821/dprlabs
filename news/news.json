@@ -1,11 +1,75 @@
 {
   "meta": {
-    "generated_at": "2026-07-23T17:37:18.363572+00:00",
+    "generated_at": "2026-07-23T19:34:54.092074+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "77885ca812d6",
+      "headline": "Claude’s voice mode is now available for Opus and Sonnet",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai",
+      "published_at": "2026-07-23T19:00:00+00:00",
+      "summary": "Until now, voice mode has only been available on Claude Haiku, Anthropic's faster but less powerful model. Now the company is making its Opus and Sonnet models available in voice mode, and extending its reach into apps like Gmail, Slack,…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8533
+    },
+    {
+      "id": "c6a17a386bdb",
+      "headline": "Anthropic updates Claude voice mode with more capable models",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
+      "published_at": "2026-07-23T19:00:00+00:00",
+      "summary": "Claude's new voice model will let you reschedule your meeting or draft an email",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8533
+    },
+    {
+      "id": "84bd7cfa0701",
+      "headline": "AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
+      "published_at": "2026-07-23T18:38:34+00:00",
+      "summary": "The Series A was led by Battery Ventures, bringing AegisAI total funding to $49 million.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7907
+    },
+    {
+      "id": "440b0110dc04",
+      "headline": "Patreon is laying off 20 percent of workers",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/970211/patreon-layoffs-ai",
+      "published_at": "2026-07-23T18:20:30+00:00",
+      "summary": "Patreon is laying off 20 percent of its workers, or around 93 employees, as reported earlier by 404 Media. In a memo to employees, Patreon CEO Jack Conte writes that the company isn't making these changes \"because we believe AI replaces…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7886
+    },
     {
       "id": "00359069d44f",
       "headline": "Runway launches AI model router as generative media gets crowded",
@@ -13,14 +77,14 @@
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/",
       "published_at": "2026-07-23T17:07:35+00:00",
-      "summary": "Runway no longer wants to be just another AI model company. It wants to become the infrastructure layer for generative media. On Thursday, the startup launched Runway Media Router through Runway Dev, its developer platform, released…",
+      "summary": "The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed or cost.",
       "tags": [
         "Models"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7939
+      "rank_score": 0.7801
     },
     {
       "id": "cb3c46e4e715",
@@ -36,11 +100,11 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.793
+      "rank_score": 0.7792
     },
     {
       "id": "03ca48c266f7",
-      "headline": "OpenAI makes ChatGPT Health available to all U.S. users",
+      "headline": "OpenAI makes ChatGPT Health available to all US users",
       "source_name": "TechCrunch",
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/",
@@ -52,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.793
+      "rank_score": 0.7792
     },
     {
       "id": "3790e5420a19",
@@ -68,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7893
+      "rank_score": 0.7756
     },
     {
       "id": "3cafe2ee039e",
@@ -84,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7864
+      "rank_score": 0.7728
     },
     {
       "id": "b8c9235a4da4",
@@ -100,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5471
+      "rank_score": 0.5337
     },
     {
       "id": "d15a0dad264d",
@@ -116,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7789
+      "rank_score": 0.7656
     },
     {
       "id": "d9ffdf3634eb",
@@ -132,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7789
+      "rank_score": 0.7656
     },
     {
       "id": "085548e5aa00",
@@ -148,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8381
+      "rank_score": 0.8248
     },
     {
       "id": "2568e67aa59b",
@@ -164,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7772
+      "rank_score": 0.764
     },
     {
       "id": "8578cdf299be",
@@ -173,14 +237,14 @@
       "source_id": "hn",
       "url": "https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use",
       "published_at": "2026-07-23T14:40:30+00:00",
-      "summary": "55 points and 56 comments on Hacker News.",
+      "summary": "62 points and 64 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.6,
-      "rank_score": 0.5962
+      "rank_score": 0.5872
     },
     {
       "id": "01d83a6818a9",
@@ -196,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7736
+      "rank_score": 0.7606
     },
     {
       "id": "8d19bda52fec",
@@ -212,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5373
+      "rank_score": 0.5242
     },
     {
       "id": "9ae095cbc6ee",
@@ -228,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7721
+      "rank_score": 0.7591
     },
     {
       "id": "8ed929e370e8",
@@ -237,14 +301,14 @@
       "source_id": "hn",
       "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
       "published_at": "2026-07-23T13:09:10+00:00",
-      "summary": "365 points and 166 comments on Hacker News.",
+      "summary": "439 points and 210 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.7479
+      "rank_score": 0.7795
     },
     {
       "id": "652dcb8a96d7",
@@ -260,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7949
+      "rank_score": 0.7824
     },
     {
       "id": "02432db4adf2",
@@ -276,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.95,
-      "rank_score": 0.7938
+      "rank_score": 0.7814
     },
     {
       "id": "5becd4f5ac8e",
@@ -292,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7588
+      "rank_score": 0.7464
     },
     {
       "id": "1f97c93f772d",
@@ -308,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7524
+      "rank_score": 0.7402
     },
     {
       "id": "6bc4c560e199",
@@ -324,71 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5074
-    },
-    {
-      "id": "aa63415bbfb1",
-      "headline": "World Artificial Intelligence Cooperation Organization",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://en.wikipedia.org/wiki/World_Artificial_Intelligence_Cooperation_Organization",
-      "published_at": "2026-07-23T08:56:47+00:00",
-      "summary": "1 points and 0 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.5027
-    },
-    {
-      "id": "a3f620aa6a10",
-      "headline": "ServiceNow bets $40 million on Indian banking software specialist to expand its financial services push",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/22/servicenow-bets-40m-on-indian-firm-businessnext-at-700m-valuation-to-deepen-banking-ai-push/",
-      "published_at": "2026-07-23T06:09:13+00:00",
-      "summary": "ServiceNow's investment gives BusinessNext a strategic partner to expand its AI-powered banking software globally.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7231
-    },
-    {
-      "id": "7fdcaaf58cf1",
-      "headline": "NEXUS: Structured Runtime Safety for Tool-Using LLM Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19356",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19356v1 Announce Type: new Abstract: Tool-using LLM agents increasingly execute high-impact actions, making runtime safety monitoring essential. We present NEXUS (Neural EXecution Utility and Safety), a structured-plan safety…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7885
-    },
-    {
-      "id": "b3461cda7dfd",
-      "headline": "Geometry-Guided Constraint Learning for LLM Safety Classification",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.19366",
-      "published_at": "2026-07-23T04:00:00+00:00",
-      "summary": "arXiv:2607.19366v1 Announce Type: new Abstract: Safety as Polytope (SaP) learns linear half-space constraints in LLM hidden space but requires per-category tuning of the constraint count K. We show that sparse autoencoder (SAE) feature…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7885
+      "rank_score": 0.4956
     }
   ]
 }
