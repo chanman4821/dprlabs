@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T17:43:27.171953+00:00",
+    "generated_at": "2026-07-24T19:38:52.206666+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "2bbb3806a80c",
+      "headline": "Midjourney bought the astrology app Co-Star",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
+      "published_at": "2026-07-24T19:06:58+00:00",
+      "summary": "Midjourney, which has gone from generating AI cat images to full-body ultrasound scans, is getting into a new field: astrology. The AI startup announced on Thursday that it has acquired the personalized astrology app Co-Star, as reported…",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7936
+    },
+    {
+      "id": "8622540f1a85",
+      "headline": "Why Cognition bought Poke: AI personality is becoming a competitive advantage",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/",
+      "published_at": "2026-07-24T18:07:32+00:00",
+      "summary": "AI coding startup Cognition has acquired Poke, the AI assistant you text like a friend, in a deal valuing the startup in the low nine figures. The acquisition brings Poke’s conversational style and interaction model to Cognition’s coding…",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7866
+    },
     {
       "id": "aca42f6126e0",
       "headline": "Team uses AlphaFold AI to redesign gene-editing proteins to make them safer",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.796
+      "rank_score": 0.7824
     },
     {
       "id": "e69b66c36671",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7959
+      "rank_score": 0.7822
     },
     {
       "id": "6c939dbf7a8b",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7923
+      "rank_score": 0.7787
     },
     {
       "id": "e55b7467c003",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7923
+      "rank_score": 0.7787
     },
     {
       "id": "254c94d3b597",
@@ -77,14 +109,14 @@
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/",
       "published_at": "2026-07-24T17:00:00+00:00",
-      "summary": "Opus 5 will be both cheaper and less restrictive than Fable, likely making it preferable in most use cases",
+      "summary": "Opus 5 will be both cheaper and less restrictive than Fable, likely making it preferable in most use cases.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7923
+      "rank_score": 0.7787
     },
     {
       "id": "323b1220159c",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7842
+      "rank_score": 0.771
     },
     {
       "id": "fbd13f2c99b1",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7798
+      "rank_score": 0.7667
     },
     {
       "id": "3d1cb648c8e1",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7793
+      "rank_score": 0.7663
     },
     {
       "id": "f808bacb1e9c",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7764
+      "rank_score": 0.7634
     },
     {
       "id": "f38271175497",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7714
+      "rank_score": 0.7587
     },
     {
       "id": "e7f23367a271",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7702
+      "rank_score": 0.7575
     },
     {
       "id": "04ee318589b1",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7688
+      "rank_score": 0.7561
     },
     {
       "id": "57e3e7f7ca44",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5087
+      "rank_score": 0.497
     },
     {
       "id": "46d41b5281a9",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.728
+      "rank_score": 0.7176
     },
     {
       "id": "341e0a3f7888",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.728
+      "rank_score": 0.7176
     },
     {
       "id": "8092459feae0",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.728
+      "rank_score": 0.7176
     },
     {
       "id": "4fdb1d3870fe",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.728
+      "rank_score": 0.7176
     },
     {
       "id": "31c8a50f4a7f",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.728
+      "rank_score": 0.7176
     },
     {
       "id": "1ef4c4aa3d6c",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.728
+      "rank_score": 0.7176
     },
     {
       "id": "5b3a423c55bd",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.728
+      "rank_score": 0.7176
     },
     {
       "id": "cbb4ced4af1d",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.728
+      "rank_score": 0.7176
     },
     {
       "id": "99acc1d78117",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.728
-    },
-    {
-      "id": "7d84b79b81e0",
-      "headline": "Benchmarking the Personalization Capabilities of Large Language Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20471",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20471v1 Announce Type: new Abstract: Personalization, the act of varying a message to induce action from a specific receiver while keeping sender, channel, and time fixed, has a long tradition in psychology and marketing as a…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.728
-    },
-    {
-      "id": "1587e619ce2c",
-      "headline": "Robust Critics: Defending LLMs Against Multi-Turn Attacks",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20472",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20472v1 Announce Type: new Abstract: When a user asks a language model something harmful, is it a genuine attack or a misunderstood but well-meaning question? This ambiguity is one of the central challenges of LLM safety. A…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.728
+      "rank_score": 0.7176
     }
   ]
 }
