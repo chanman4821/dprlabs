@@ -1,26 +1,42 @@
 {
   "meta": {
-    "generated_at": "2026-07-23T23:02:39.434802+00:00",
+    "generated_at": "2026-07-24T03:22:37.904009+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
+      "id": "bbe4c3fea4dc",
+      "headline": "How AI guardrails are impeding the work of offensive cybersecurity researchers",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/",
+      "published_at": "2026-07-24T01:00:00+00:00",
+      "summary": "We spoke with several cybersecurity researchers, who look for unknown vulnerabilities and develop tools to exploit them, about how OpenAI’s and Anthropic’s guardrails affect their work.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7806
+    },
+    {
       "id": "dc6069653cce",
-      "headline": "A Taxonomy of Omnicidal Futures Involving Artificial Intelligence",
+      "headline": "A taxonomy of omnicidal futures involving artificial intelligence (2025)",
       "source_name": "Hacker News",
       "source_id": "hn",
       "url": "https://arxiv.org/abs/2507.09369",
       "published_at": "2026-07-23T22:51:13+00:00",
-      "summary": "2 points and 0 comments on Hacker News.",
+      "summary": "61 points and 48 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.6,
-      "rank_score": 0.5838
+      "rank_score": 0.5891
     },
     {
       "id": "c6bad60c5902",
@@ -29,14 +45,14 @@
       "source_id": "theverge",
       "url": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices",
       "published_at": "2026-07-23T21:15:06+00:00",
-      "summary": "Amazon is launching an update to its Alexa Plus assistant that will allow it to connect to smart home devices in new ways. With the update, Alexa Plus can link up with tech from Bosch, Delta, Ecovacs, iRobot, Yale Home, Whirlpool, Tapo,…",
+      "summary": "Amazon is launching an update to its Alexa Plus assistant that will allow it to connect to smart home devices in new ways. With the update, which is currently in preview, Alexa Plus can link up with tech from Bosch, Delta, Ecovacs, iRobot,…",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7847
+      "rank_score": 0.7556
     },
     {
       "id": "b4d4584e10a9",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7798
+      "rank_score": 0.7511
     },
     {
       "id": "0b843e577a7e",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7701
+      "rank_score": 0.7423
     },
     {
       "id": "77885ca812d6",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8292
+      "rank_score": 0.8015
     },
     {
       "id": "c6a17a386bdb",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8292
+      "rank_score": 0.8015
     },
     {
       "id": "84bd7cfa0701",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7668
+      "rank_score": 0.7393
     },
     {
       "id": "440b0110dc04",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7648
+      "rank_score": 0.7374
     },
     {
       "id": "00359069d44f",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7569
+      "rank_score": 0.7302
     },
     {
       "id": "cb3c46e4e715",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7561
+      "rank_score": 0.7295
     },
     {
       "id": "03ca48c266f7",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7561
+      "rank_score": 0.7295
     },
     {
       "id": "3790e5420a19",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7528
+      "rank_score": 0.7264
     },
     {
       "id": "3cafe2ee039e",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7502
+      "rank_score": 0.7241
     },
     {
       "id": "b8c9235a4da4",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5112
+      "rank_score": 0.4852
     },
     {
       "id": "d15a0dad264d",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7435
+      "rank_score": 0.718
     },
     {
       "id": "d9ffdf3634eb",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7435
+      "rank_score": 0.718
     },
     {
       "id": "085548e5aa00",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.8028
+      "rank_score": 0.7773
     },
     {
       "id": "2568e67aa59b",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.742
+      "rank_score": 0.7166
     },
     {
       "id": "8578cdf299be",
@@ -301,14 +317,14 @@
       "source_id": "hn",
       "url": "https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use",
       "published_at": "2026-07-23T14:40:30+00:00",
-      "summary": "67 points and 69 comments on Hacker News.",
+      "summary": "69 points and 71 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 2,
       "credibility": 0.6,
-      "rank_score": 0.5682
+      "rank_score": 0.544
     },
     {
       "id": "01d83a6818a9",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7388
+      "rank_score": 0.7136
     },
     {
       "id": "8d19bda52fec",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5025
+      "rank_score": 0.4774
     },
     {
       "id": "9ae095cbc6ee",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7374
+      "rank_score": 0.7124
     },
     {
       "id": "8ed929e370e8",
@@ -365,30 +381,14 @@
       "source_id": "hn",
       "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
       "published_at": "2026-07-23T13:09:10+00:00",
-      "summary": "561 points and 272 comments on Hacker News.",
+      "summary": "621 points and 310 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.7948
-    },
-    {
-      "id": "652dcb8a96d7",
-      "headline": "The Download: energy transmission and US threats against Chinese AI",
-      "source_name": "MIT Technology Review",
-      "source_id": "mittr",
-      "url": "https://www.technologyreview.com/2026/07/23/1140753/the-download-energy-transmission-and-us-threats-chinese-ai/",
-      "published_at": "2026-07-23T12:10:00+00:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The power line that could reshape New York’s grid is hitting snags During a heat wave on July 3, New…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.95,
-      "rank_score": 0.7615
+      "rank_score": 0.7702
     }
   ]
 }
