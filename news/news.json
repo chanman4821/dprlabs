@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T19:38:52.206666+00:00",
+    "generated_at": "2026-07-24T21:11:21.371525+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "70081e2eda02",
+      "headline": "Anthropic's Opus 5 is about token efficiency, not a capability leap",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap/",
+      "published_at": "2026-07-24T21:05:51+00:00",
+      "summary": "Models are improving quickly, but the cheaper options are often good enough.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7968
+    },
+    {
+      "id": "1bf093d16374",
+      "headline": "Political text messages could get more effective and annoying. Blame AI",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://www.npr.org/2026/07/12/nx-s1-5867763/ai-artificial-intelligence-data-texts-bots-voters-campaigns",
+      "published_at": "2026-07-24T20:03:03+00:00",
+      "summary": "4 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5542
+    },
+    {
+      "id": "e616440e259b",
+      "headline": "Opus 5 is currently #1 on Artificial Analysis Intelligence Leaderboard",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://artificialanalysis.ai/models",
+      "published_at": "2026-07-24T19:45:10+00:00",
+      "summary": "4 points and 3 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5521
+    },
     {
       "id": "2bbb3806a80c",
       "headline": "Midjourney bought the astrology app Co-Star",
@@ -20,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7936
+      "rank_score": 0.7827
     },
     {
       "id": "8622540f1a85",
@@ -36,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7866
+      "rank_score": 0.7759
     },
     {
       "id": "aca42f6126e0",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7824
+      "rank_score": 0.7718
     },
     {
       "id": "e69b66c36671",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7822
+      "rank_score": 0.7716
     },
     {
       "id": "6c939dbf7a8b",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7787
+      "rank_score": 0.7683
     },
     {
       "id": "e55b7467c003",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7787
+      "rank_score": 0.7683
     },
     {
       "id": "254c94d3b597",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7787
+      "rank_score": 0.7683
     },
     {
       "id": "323b1220159c",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.771
+      "rank_score": 0.7607
     },
     {
       "id": "fbd13f2c99b1",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7667
+      "rank_score": 0.7567
     },
     {
       "id": "3d1cb648c8e1",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7663
+      "rank_score": 0.7562
     },
     {
       "id": "f808bacb1e9c",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7634
+      "rank_score": 0.7535
     },
     {
       "id": "f38271175497",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7587
+      "rank_score": 0.7488
     },
     {
       "id": "e7f23367a271",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7575
+      "rank_score": 0.7477
     },
     {
       "id": "04ee318589b1",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7561
+      "rank_score": 0.7464
     },
     {
       "id": "57e3e7f7ca44",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.497
+      "rank_score": 0.4879
     },
     {
       "id": "46d41b5281a9",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7176
+      "rank_score": 0.7097
     },
     {
       "id": "341e0a3f7888",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7176
+      "rank_score": 0.7097
     },
     {
       "id": "8092459feae0",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7176
+      "rank_score": 0.7097
     },
     {
       "id": "4fdb1d3870fe",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7176
+      "rank_score": 0.7097
     },
     {
       "id": "31c8a50f4a7f",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7176
+      "rank_score": 0.7097
     },
     {
       "id": "1ef4c4aa3d6c",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7176
-    },
-    {
-      "id": "5b3a423c55bd",
-      "headline": "InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20468",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20468v1 Announce Type: new Abstract: AI agents are increasingly used to automate research and development tasks, yet existing benchmarks typically evaluate them on prescribed workflows or narrow action spaces. Even nominally…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7176
-    },
-    {
-      "id": "cbb4ced4af1d",
-      "headline": "DecodeShare: Tracing the Shared Subspace of LLM Decode-Time Decisions",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20469",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20469v1 Announce Type: new Abstract: Large language models (LLMs) handle many tasks with one set of parameters, but under KV-cached inference it is unclear what task-general structure, if any, is used at decode time rather than…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7176
-    },
-    {
-      "id": "99acc1d78117",
-      "headline": "PlanE: Meta Planning of Data, Tuning, and Inference for Extractive-based LLMs",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20470",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20470v1 Announce Type: new Abstract: Enhancing the task-specific capabilities of Large Language Models (LLMs) primarily requires substantial instruction-tuning datasets. However, the sheer volume of such data imposes a…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7176
+      "rank_score": 0.7097
     }
   ]
 }
