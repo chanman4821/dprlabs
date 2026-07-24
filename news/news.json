@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T11:46:35.074837+00:00",
+    "generated_at": "2026-07-24T13:59:00.235906+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "e7f23367a271",
+      "headline": "AI firms want more data centers; Trump's EPA may give neighbors less say",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/tech-policy/2026/07/ai-firms-want-more-data-centers-trumps-epa-may-give-neighbors-less-say/",
+      "published_at": "2026-07-24T13:49:38+00:00",
+      "summary": "Rule would allow states to decide how much—if any—public input there can be.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7964
+    },
+    {
+      "id": "04ee318589b1",
+      "headline": "OpenAI’s new voice mode makes it to the ChatGPT desktop app",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/",
+      "published_at": "2026-07-24T13:36:42+00:00",
+      "summary": "ChatGPT Voice on desktop can work with both ChatGPT Work and Codex to complete tasks and control agents.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7948
+    },
     {
       "id": "57e3e7f7ca44",
       "headline": "A Semioethical Framework for Artificial Intelligence",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5479
+      "rank_score": 0.5328
     },
     {
       "id": "46d41b5281a9",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "341e0a3f7888",
@@ -52,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "8092459feae0",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "4fdb1d3870fe",
@@ -84,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "31c8a50f4a7f",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "1ef4c4aa3d6c",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "5b3a423c55bd",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "cbb4ced4af1d",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "99acc1d78117",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "7d84b79b81e0",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "1587e619ce2c",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "c52a8d201809",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "c965b17d690d",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "49e6d7872d0e",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "5b9d1ab8eaae",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "d238d3a1b791",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "21459e9260bb",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "b5d75cd99fd8",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "e7e01d56aa27",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "5625677428a5",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     },
     {
       "id": "7e343b0026dd",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7627
-    },
-    {
-      "id": "33e23d463572",
-      "headline": "The Devil is in the Spectrum: Mitigating Representation Collapse in LLMs via Topologically Regularized Side-Path",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20484",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20484v1 Announce Type: new Abstract: Large Language Models (LLMs) are fundamentally limited by representation collapse, a bottleneck that severely degrades long-context performance. We identify that existing approaches risk…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7627
-    },
-    {
-      "id": "52ee6fbbe1d1",
-      "headline": "Expectation Alignment of Language Models for Real-World User Expectations",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20485",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20485v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated remarkable performance on standard benchmarks, yet it remains largely unexplored whether they truly meet user expectations. Existing evaluation…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7627
+      "rank_score": 0.7493
     }
   ]
 }
