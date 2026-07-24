@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>DPR AI — We build your AI. Proven in weeks, owned by you.</title>
 <meta name="description" content="DPR AI is a senior AI studio. We help businesses scale with AI, help founders build, and bring funding and founders together. AI built into your systems, measured by one honest number — and you own the code, weights, and tests." />
-<meta name="theme-color" content="#ffffff" />
+<meta name="theme-color" content="#0E1013" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
 <link rel="icon" type="image/svg+xml" href="assets/brand/mark.svg" />
 
-<link rel="stylesheet" href="site.css?v=21" />
-<link rel="stylesheet" href="assets/dpr.css?v=20" />
+<link rel="stylesheet" href="site.css?v=22" />
+<link rel="stylesheet" href="assets/dpr.css?v=22" />
 <link rel="stylesheet" href="slop.css?v=5" />
 <link rel="stylesheet" href="assets/slopcar.css?v=2" />
 
@@ -45,7 +45,7 @@
   .free-band-term{font-family:var(--mono);font-size:12.5px;line-height:1.75;color:#c9d1e6;background:#0f1222;border:1px solid #232842;border-radius:14px;padding:18px;overflow-x:auto}
   .free-band-term .cap{display:block;color:#8b93b8;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
   .free-band-term .c{color:#8a8f99}
-  .free-band-term .p{color:#e0b357}
+  .free-band-term .p{color:#a855f7}
   @media(max-width:760px){.free-band{grid-template-columns:1fr}}
 </style>
 <style>
@@ -110,23 +110,31 @@
   <!-- HERO — interactive hub -->
   <!-- HERO — owns / not rents -->
   <!-- HERO — editorial masthead -->
-  <section class="s-hero" id="hero" data-sp>
-    <div class="s-hero__inner">
-      <div class="s-hero__mast" data-rvl>
-        <span class="s-hero__eyebrow">The anti-slop AI studio</span>
-        <span class="s-hero__meta">Senior builders · you own the code, weights &amp; evals</span>
+  <section class="s-hero hx" id="hero" data-sp>
+    <div class="hx-wrap">
+      <p class="hx-kicker" data-rvl><span class="hx-scale"><i></i><i></i><i></i><i></i><i></i></span> The anti-slop AI studio <b>· measured</b></p>
+      <div class="hx-mast">
+        <h1 class="hx-h1" data-rvl>Production AI <span class="hx-own">that you own</span> &mdash; <span class="hx-rent">not <s>rent</s></span>.</h1>
+        <img class="hx-bot" src="assets/mascot/retint/bot-cube-chrome.png?v=2" alt="DPR robot mascot" />
       </div>
-      <h1 class="s-hero__h1" data-rvl>We build production AI your business actually <span class="s-hero__own">owns</span> — not <span class="s-hero__rent">rents<svg class="s-hero__strike" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M5 28 C 55 12, 145 34, 195 12" /></svg></span>.</h1>
-      <div class="s-hero__stage" aria-hidden="true">
-        <video class="s-hero__bot" data-io autoplay loop muted playsinline poster="assets/mascot/cut/bot-cube.png?v=1">
-          <source src="assets/anim/bot.webm?v=2" type="video/webm" />
-        </video>
-      </div>
-      <div class="s-hero__foot">
-        <p class="s-hero__sub" data-rvl>Real systems, senior-built, measured against one honest number, handed over with the code, weights, and evals.</p>
-        <div class="s-hero__cta" data-rvl>
-          <a href="contact.html" class="dpr-btn dpr-btn--gold">Start a build <span aria-hidden="true">→</span></a>
-          <a href="#what-we-build" class="dpr-btn dpr-btn--ink">See what we ship</a>
+      <hr class="hx-rule">
+      <div class="hx-base">
+        <div class="hx-left">
+          <p class="hx-sub" data-rvl>Real systems, senior-built and measured against one honest number &mdash; then handed over with the code, the weights, and the evals.</p>
+          <div class="hx-cta" data-rvl>
+            <a href="contact.html" class="dpr-btn dpr-btn--gold">Start a build <span aria-hidden="true">→</span></a>
+            <a href="#what-we-build" class="dpr-btn dpr-btn--ink">See what we ship</a>
+          </div>
+          <p class="hx-proof">Senior builders<span class="hx-sep"></span>A few real pilots<span class="hx-sep"></span>You own everything</p>
+        </div>
+        <div class="hx-manifest" aria-label="Handover manifest">
+          <div class="hx-mh"><span class="hx-dot"></span>Handover manifest<span class="hx-rt">no lock-in</span></div>
+          <ol>
+            <li><span class="hx-ix">01</span><span class="hx-k">Source code</span><span class="hx-v"><b>✓</b> yours</span></li>
+            <li><span class="hx-ix">02</span><span class="hx-k">Model weights</span><span class="hx-v"><b>✓</b> yours</span></li>
+            <li><span class="hx-ix">03</span><span class="hx-k">Evaluation suite</span><span class="hx-v"><b>✓</b> yours</span></li>
+            <li><span class="hx-ix">04</span><span class="hx-k">Full IP &amp; deployment</span><span class="hx-v"><b>✓</b> yours</span></li>
+          </ol>
         </div>
       </div>
     </div>
@@ -150,7 +158,7 @@
           <ul class="s-wb__keys"><li>Leads</li><li>Outreach</li><li>CRM</li></ul>
         </div>
         <div class="s-wb__fplate">
-          <video class="s-wb__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/sales-cut.png" aria-label="A gold AI sales agent finding leads and booking meetings"><source src="assets/anim/sales.webm" type="video/webm"><img src="assets/img/agents/sales-cut.png" alt="A gold AI sales agent presenting to a chat bubble"></video>
+          <img class="s-wb__vid" src="assets/img/agents/sales-cut-chrome.png?v=2" alt="A DPR AI sales agent presenting to a chat bubble" loading="lazy" />
         </div>
       </article>
 
@@ -163,7 +171,7 @@
             <ul class="s-wb__keys"><li>Workflows</li><li>Ops</li><li>Scale</li></ul>
           </div>
           <div class="s-wb__rplate">
-            <video class="s-wb__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/automations-cut.png" aria-label="A gold AI agent automating tasks on a conveyor"><source src="assets/anim/automations.webm" type="video/webm"><img src="assets/img/agents/automations-cut.png" alt="A gold AI agent orchestrating task tiles"></video>
+            <img class="s-wb__vid" src="assets/img/agents/automations-cut-chrome.png?v=2" alt="A DPR AI agent tinkering with a glowing gear" loading="lazy" />
           </div>
         </li>
         <li class="s-wb__row" data-rvl>
@@ -174,7 +182,7 @@
             <ul class="s-wb__keys"><li>Orchestration</li><li>Approvals</li><li>Guardrails</li></ul>
           </div>
           <div class="s-wb__rplate">
-            <video class="s-wb__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/multiagent-cut.png" aria-label="A team of three gold AI agents working together"><source src="assets/anim/multiagent.webm" type="video/webm"><img src="assets/img/agents/multiagent-cut.png" alt="A team of gold AI agents in formation"></video>
+            <img class="s-wb__vid" src="assets/img/agents/multiagent-cut-chrome.png?v=2" alt="A team of three DPR AI agents working together" loading="lazy" />
           </div>
         </li>
         <li class="s-wb__row" data-rvl>
@@ -185,7 +193,7 @@
             <ul class="s-wb__keys"><li>Retrieval</li><li>Evals</li><li>Actions</li></ul>
           </div>
           <div class="s-wb__rplate">
-            <video class="s-wb__vid" loop muted playsinline preload="metadata" poster="assets/img/agents/pipelines-cut.png" aria-label="A gold AI agent running a data pipeline"><source src="assets/anim/pipelines.webm" type="video/webm"><img src="assets/img/agents/pipelines-cut.png" alt="A gold AI agent guiding a data pipeline"></video>
+            <img class="s-wb__vid" src="assets/img/agents/pipelines-cut-chrome.png?v=2" alt="A DPR AI agent guiding a data pipeline of glowing cubes" loading="lazy" />
           </div>
         </li>
       </ol>

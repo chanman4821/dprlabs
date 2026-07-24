@@ -3,20 +3,20 @@
    Auto-plays, pauses on hover/focus, keyboard + swipe, reduced-motion safe. */
 #slop .slopcar{position:relative;margin-top:clamp(26px,4vw,44px)}
 #slop .slopcar-viewport{overflow:hidden;border:1px solid var(--line);border-radius:20px;
-  background:linear-gradient(180deg,#fff,var(--bg-soft));box-shadow:var(--shadow-1)}
+  background:linear-gradient(180deg,var(--bg-soft),var(--bg));box-shadow:var(--shadow-1)}
 #slop .slopcar-track{display:flex;transition:transform .6s cubic-bezier(.22,1,.36,1);will-change:transform}
 #slop .slopslide{flex:0 0 100%;display:grid;grid-template-columns:minmax(0,46%) 1fr;align-items:center;
   gap:clamp(20px,3vw,46px);padding:clamp(22px,3vw,42px);box-sizing:border-box}
 #slop .slopslide-visual{position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;
-  background:radial-gradient(120% 120% at 32% 22%,#fff,var(--bg-softer));
+  background:radial-gradient(120% 120% at 32% 22%,var(--bg-softer),var(--bg));
   display:flex;align-items:center;justify-content:center;border:1px solid var(--line)}
 /* faint engineered grid behind the illustration */
 #slop .slopslide-visual::after{content:"";position:absolute;inset:0;
-  background-image:linear-gradient(rgba(15,17,20,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(15,17,20,.06) 1px,transparent 1px);
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
   background-size:26px 26px;-webkit-mask-image:radial-gradient(78% 78% at 50% 50%,#000,transparent);
   mask-image:radial-gradient(78% 78% at 50% 50%,#000,transparent);pointer-events:none}
 #slop .slopslide-img,#slop .slopslide-video{width:78%;height:78%;object-fit:contain;position:relative;z-index:1;
-  mix-blend-mode:multiply}
+  mix-blend-mode:normal}
 /* Ken Burns drift on the ACTIVE slide only */
 #slop .slopslide.is-active .slopslide-img{animation:slopKen 9s ease-in-out infinite alternate}
 @keyframes slopKen{0%{transform:scale(1) translateY(0) rotate(0)}
@@ -31,7 +31,7 @@
 #slop .slopslide-the-tell b{color:var(--accent)}
 /* controls */
 #slop .slopcar-controls{display:flex;align-items:center;gap:12px;margin-top:18px}
-#slop .slopcar-btn{width:44px;height:44px;flex:0 0 auto;border:1px solid var(--line-2);background:#fff;border-radius:12px;
+#slop .slopcar-btn{width:44px;height:44px;flex:0 0 auto;border:1px solid var(--line-2);background:var(--bg-soft);border-radius:12px;
   font-size:20px;line-height:1;color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s ease}
 #slop .slopcar-btn:hover{border-color:var(--accent);color:var(--accent)}
 #slop .slopcar-btn:focus-visible{outline:none;box-shadow:0 0 0 3px var(--accent-soft);border-color:var(--accent)}
@@ -55,7 +55,7 @@
 #slop .shud-canvas{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:0;transition:opacity .55s ease}
 #slop .shud-readout{position:absolute;left:12px;bottom:12px;z-index:4;font-family:var(--mono);font-size:10px;line-height:1.5;
   color:var(--ink-2);opacity:0;transition:opacity .55s ease;width:min(54%,224px);pointer-events:none;
-  background:rgba(255,255,255,.64);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
+  background:rgba(14,16,19,.7);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
   border:1px solid rgba(59,91,219,.18);border-radius:9px;padding:9px 11px;box-shadow:0 10px 24px rgba(59,91,219,.10)}
 #slop .shud-hd{display:flex;align-items:center;gap:6px;font-size:9px;letter-spacing:.16em;color:var(--accent);margin-bottom:6px}
 #slop .shud-hd i{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:shudBlink 1.3s ease-in-out infinite}
@@ -66,7 +66,7 @@
 #slop .shud-vd{margin-top:7px;letter-spacing:.1em;color:var(--faint)}
 #slop .shud-vd b{color:#e5484d;font-weight:700}
 #slop .shud-score{position:absolute;right:13px;top:12px;z-index:4;text-align:right;font-family:var(--mono);opacity:0;
-  transition:opacity .55s ease;pointer-events:none;text-shadow:0 1px 3px rgba(255,255,255,.9)}
+  transition:opacity .55s ease;pointer-events:none;text-shadow:0 1px 3px rgba(0,0,0,.6)}
 #slop .shud-n{display:block;font-size:27px;font-weight:700;color:#e5484d;letter-spacing:-.02em;line-height:1}
 #slop .shud-l{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
 #slop .slopslide.is-active .shud-canvas,#slop .slopslide.is-active .shud-readout,#slop .slopslide.is-active .shud-score{opacity:1}

@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Training — practice AI prompting hands-on | DPR AI</title>
 <meta name="description" content="A free, hands-on AI training center. Build strong prompts with a guided builder, get transparent feedback (visible rules, never a fake AI score), and save your best prompts to an exportable library. No sign-up." />
-<meta name="theme-color" content="#ffffff" />
+<meta name="theme-color" content="#0E1013" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="../site.css?v=15" />
+<link rel="stylesheet" href="../site.css?v=22" />
 <link rel="icon" href="../assets/icons/logo-orb.png" />
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <style>
@@ -17,7 +17,7 @@
   .l-hero{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
   .l-hero .txt{flex:1;min-width:280px}
   .l-hero img{width:132px;height:auto;flex:0 0 auto}
-  .pb{border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);overflow:hidden;margin-top:8px}
+  .pb{border:1px solid var(--line);border-radius:var(--radius);background:#15181D;box-shadow:var(--shadow-1);overflow:hidden;margin-top:8px}
   .pb-head{display:flex;align-items:center;gap:12px;padding:20px 24px;border-bottom:1px solid var(--line)}
   .pb-head img{width:34px;height:34px}
   .pb-head h2{font-size:19px;margin:0}
@@ -28,11 +28,11 @@
   .pb-field{margin-bottom:16px}
   .pb-field label{display:block;font-size:13px;font-weight:600;margin-bottom:5px}
   .pb-field .hint{font-weight:400;color:var(--faint);font-size:12px}
-  .pb-field input,.pb-field textarea{width:100%;border:1px solid var(--line-2);border-radius:10px;padding:10px 12px;font:inherit;font-size:14px;background:#fff;color:var(--ink)}
+  .pb-field input,.pb-field textarea{width:100%;border:1px solid var(--line-2);border-radius:10px;padding:10px 12px;font:inherit;font-size:14px;background:#15181D;color:var(--ink)}
   .pb-field textarea{resize:vertical;min-height:56px}
   .pb-field input:focus,.pb-field textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
   .pb-out .k{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 8px;display:block}
-  #pb-preview{width:100%;min-height:210px;border:1px solid var(--line-2);border-radius:10px;padding:12px 14px;font-family:var(--mono);font-size:13px;line-height:1.6;background:#fff;color:var(--ink);resize:vertical}
+  #pb-preview{width:100%;min-height:210px;border:1px solid var(--line-2);border-radius:10px;padding:12px 14px;font-family:var(--mono);font-size:13px;line-height:1.6;background:#15181D;color:var(--ink);resize:vertical}
   .pb-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
   .pb-note{font-size:12px;color:var(--faint);margin-top:10px}
   .pb-check{list-style:none;margin:16px 0 0;padding:0}
@@ -41,7 +41,7 @@
   .pb-check li.on{color:var(--ink-2)}
   .pb-check li.on .mk{background:var(--accent);border-color:var(--accent);color:#fff}
   .pb-check li.req.off .mk{border-color:#c0392b;color:#c0392b}
-  .lib{border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:22px 24px;margin-top:22px}
+  .lib{border:1px solid var(--line);border-radius:var(--radius);background:#15181D;box-shadow:var(--shadow-1);padding:22px 24px;margin-top:22px}
   .lib-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
   .lib-head h2{font-size:18px;margin:0}
   .lib-actions{display:flex;gap:8px;flex-wrap:wrap}
@@ -52,7 +52,7 @@
   .lib-item .d{font-family:var(--mono);font-size:11px;color:var(--faint);margin:2px 0 0}
   .lib-item pre{white-space:pre-wrap;font-family:var(--mono);font-size:12px;color:var(--muted);margin:8px 0 0;max-height:80px;overflow:auto}
   .lib-item .row{display:flex;gap:8px;margin-top:8px}
-  .btn-sm{font-size:12.5px;padding:6px 12px;border-radius:8px;border:1px solid var(--line-2);background:#fff;color:var(--ink);cursor:pointer;font:inherit;font-weight:500}
+  .btn-sm{font-size:12.5px;padding:6px 12px;border-radius:8px;border:1px solid var(--line-2);background:#15181D;color:var(--ink);cursor:pointer;font:inherit;font-weight:500}
   .btn-sm:hover{border-color:var(--accent);color:var(--accent)}
   .btn-sm.danger:hover{border-color:#c0392b;color:#c0392b}
   .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:10px;font-size:13.5px;opacity:0;pointer-events:none;transition:.25s ease;z-index:50}

@@ -11,7 +11,7 @@
 }
 .tldr-badge{
   display:inline-flex;align-items:center;justify-content:center;
-  width:44px;height:44px;border-radius:12px;background:#fff;
+  width:44px;height:44px;border-radius:12px;background:#15181D;
   border:1px solid var(--line-2);color:var(--accent);flex:0 0 auto;
 }
 .tldr-badge svg{width:24px;height:24px}
@@ -20,8 +20,8 @@
 .tldr-list li{position:relative;padding-left:26px;color:var(--ink-2);font-size:15px;line-height:1.5}
 .tldr-list li::before{
   content:"";position:absolute;left:0;top:3px;width:16px;height:16px;border-radius:50%;
-  background:#fff;border:1.5px solid var(--accent);
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.4l2.6 2.6L12 5.4' fill='none' stroke='%233b5bdb' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background:#15181D;border:1.5px solid var(--accent);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.4l2.6 2.6L12 5.4' fill='none' stroke='%23BEF23F' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat:no-repeat;background-position:center;
 }
 @media(max-width:560px){.tldr{grid-template-columns:1fr;gap:14px}}
@@ -52,7 +52,7 @@
 .figure figcaption{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);margin-top:12px;text-align:center}
 
 /* ---- Concept panel: two plain boxes (e.g. "knows / doesn't know") ------- */
-.concept{display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;margin:28px 0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:var(--shadow-1)}
+.concept{display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:stretch;margin:28px 0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#15181D;box-shadow:var(--shadow-1)}
 .concept-side{padding:22px 24px}
 .concept-side h4{margin:0 0 12px;font-size:15px;display:flex;align-items:center;gap:9px}
 .concept-side .ico{width:26px;height:26px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
@@ -60,7 +60,7 @@
 .concept-yes .ico{background:var(--accent-soft);color:var(--accent)}
 .concept-no .ico{background:var(--gold-soft);color:var(--gold-hi)}
 .concept-div{width:1px;background:var(--line);position:relative}
-.concept-div span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;border:1px solid var(--line);border-radius:999px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;color:var(--faint)}
+.concept-div span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#15181D;border:1px solid var(--line);border-radius:999px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;color:var(--faint)}
 @media(max-width:600px){.concept{grid-template-columns:1fr}.concept-div{width:auto;height:1px}.concept-div span{width:30px;height:30px}}
 
 /* ---- "Trust it or check it?" sorting game (mobile-safe, tap-based) ------ */
@@ -69,11 +69,11 @@
 .sortgame-head h3{margin:0;font-size:19px}
 .sortgame-k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .sortgame-lead{color:var(--muted);font-size:14.5px;margin:0 0 18px;max-width:60ch}
-.sg-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin-bottom:12px;transition:border-color .18s ease,box-shadow .18s ease}
+.sg-item{background:#15181D;border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin-bottom:12px;transition:border-color .18s ease,box-shadow .18s ease}
 .sg-q{font-size:15px;color:var(--ink-2);margin:0 0 12px;line-height:1.5}
 .sg-choices{display:flex;gap:10px;flex-wrap:wrap}
 .sg-btn{font-family:var(--sans);font-size:14px;font-weight:500;cursor:pointer;
-  border:1px solid var(--line-2);background:#fff;color:var(--ink-2);border-radius:9px;padding:9px 16px;
+  border:1px solid var(--line-2);background:#15181D;color:var(--ink-2);border-radius:9px;padding:9px 16px;
   display:inline-flex;align-items:center;gap:7px;transition:.15s ease}
 .sg-btn:hover{border-color:var(--accent);color:var(--accent)}
 .sg-btn:focus-visible{outline:none;box-shadow:0 0 0 3px var(--accent-soft);border-color:var(--accent)}
@@ -99,8 +99,8 @@
 .twin .card.good{border-top:3px solid var(--accent)}
 .twin .card.warn{border-top:3px solid var(--gold-hi)}
 .twin .card.good h3,.twin .card.warn h3{display:flex;align-items:center;gap:8px}
-.twin .card.good h3::before{content:"";width:18px;height:18px;flex:0 0 auto;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23eef1fb' stroke='%233b5bdb' stroke-width='1'/%3E%3Cpath d='M4.5 8.2l2.3 2.3L11.5 5.5' fill='none' stroke='%233b5bdb' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
-.twin .card.warn h3::before{content:"";width:18px;height:18px;flex:0 0 auto;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 1.8l6.2 11.4H1.8z' fill='%23f7f2e6' stroke='%238a6416' stroke-width='1'/%3E%3Cpath d='M8 6.2v3.1M8 11.1v.01' stroke='%238a6416' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")}
+.twin .card.good h3::before{content:"";width:18px;height:18px;flex:0 0 auto;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23eef1fb' stroke='%23BEF23F' stroke-width='1'/%3E%3Cpath d='M4.5 8.2l2.3 2.3L11.5 5.5' fill='none' stroke='%23BEF23F' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.twin .card.warn h3::before{content:"";width:18px;height:18px;flex:0 0 auto;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 1.8l6.2 11.4H1.8z' fill='%23f7f2e6' stroke='%23BEF23F' stroke-width='1'/%3E%3Cpath d='M8 6.2v3.1M8 11.1v.01' stroke='%23BEF23F' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")}
 
 .learn-figure-right{float:right;width:clamp(130px,20vw,186px);margin:0 0 16px 26px;text-align:center}
 .learn-figure-right img{width:100%;height:auto;display:block;filter:drop-shadow(0 12px 22px rgba(15,23,42,.16))}

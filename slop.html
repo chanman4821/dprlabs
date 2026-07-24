@@ -5,27 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The AI slop problem — DPR AI</title>
 <meta name="description" content="Seven kinds of AI slop, and the tell that gives each away. Plus the Slop Sniff-Test you can run on any vendor — including us." />
-<meta name="theme-color" content="#ffffff" />
+<meta name="theme-color" content="#0E1013" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="site.css?v=15" />
+<link rel="stylesheet" href="site.css?v=22" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
 <style>
 .slop-compare{position:relative;overflow:hidden}
-.compare-shell{position:relative;margin-top:28px;--pos:50%;border:1px solid rgba(59,91,219,.18);border-radius:28px;background:#fff;box-shadow:0 24px 70px rgba(15,23,42,.08);overflow:hidden}
+.compare-shell{position:relative;margin-top:28px;--pos:50%;border:1px solid rgba(190,242,63,.18);border-radius:28px;background:#15181D;box-shadow:0 24px 70px rgba(0,0,0,.35);overflow:hidden}
 .compare-stage{position:relative;min-height:330px;user-select:none;touch-action:none}
 .compare-pane{position:absolute;inset:0;display:grid;align-content:center;padding:34px}
-.compare-before{background:linear-gradient(135deg,#f8fafc,#eef2ff)}
-.compare-after{background:linear-gradient(135deg,#fff,rgba(59,91,219,.09));clip-path:inset(0 0 0 var(--pos))}
-.compare-card{max-width:520px;border:1px solid rgba(15,23,42,.1);border-radius:22px;background:rgba(255,255,255,.88);padding:22px;box-shadow:0 16px 40px rgba(15,23,42,.08)}
+.compare-before{background:linear-gradient(135deg,#15181D,#1E232A)}
+.compare-after{background:linear-gradient(135deg,#15181D,rgba(190,242,63,.09));clip-path:inset(0 0 0 var(--pos))}
+.compare-card{max-width:520px;border:1px solid var(--line-2);border-radius:22px;background:rgba(21,24,29,.82);padding:22px;box-shadow:0 16px 40px rgba(0,0,0,.35)}
 .compare-card h3{margin:0 0 10px;font-size:clamp(22px,3vw,34px)}
 .compare-card p{margin:0;color:var(--muted);line-height:1.65}
-.compare-after .compare-card{margin-left:auto;border-color:rgba(59,91,219,.24)}
-.compare-divider{position:absolute;inset:0 auto 0 var(--pos);width:3px;transform:translateX(-50%);background:#3b5bdb;box-shadow:0 0 0 1px rgba(255,255,255,.9),0 0 28px rgba(59,91,219,.32);pointer-events:none}
-.compare-divider::after{content:"↔";position:absolute;top:50%;left:50%;display:grid;place-items:center;width:46px;height:46px;transform:translate(-50%,-50%);border-radius:999px;background:#3b5bdb;color:#fff;font-weight:800;box-shadow:0 12px 30px rgba(59,91,219,.28)}
+.compare-after .compare-card{margin-left:auto;border-color:rgba(190,242,63,.28)}
+.compare-divider{position:absolute;inset:0 auto 0 var(--pos);width:3px;transform:translateX(-50%);background:#BEF23F;box-shadow:0 0 0 1px rgba(255,255,255,.9),0 0 28px rgba(190,242,63,.32);pointer-events:none}
+.compare-divider::after{content:"↔";position:absolute;top:50%;left:50%;display:grid;place-items:center;width:46px;height:46px;transform:translate(-50%,-50%);border-radius:999px;background:#BEF23F;color:#0E1013;font-weight:800;box-shadow:0 12px 30px rgba(190,242,63,.28)}
 .compare-control{position:absolute;inset:0;cursor:ew-resize;outline:none}
-.compare-control:focus-visible{box-shadow:inset 0 0 0 3px #3b5bdb}
+.compare-control:focus-visible{box-shadow:inset 0 0 0 3px #BEF23F}
 .compare-labels{display:flex;justify-content:space-between;gap:12px;padding:14px 18px;border-top:1px solid rgba(15,23,42,.08);font-weight:800;color:#0f172a}
 .compare-buddy{position:absolute;right:clamp(18px,6vw,76px);top:8px;width:clamp(120px,14vw,178px);filter:drop-shadow(0 18px 26px rgba(210,154,45,.22));animation:peekFloat 5.5s ease-in-out infinite}
 @keyframes peekFloat{0%,100%{transform:translateY(0) rotate(1deg)}50%{transform:translateY(-9px) rotate(-1deg)}}

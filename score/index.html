@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Score your AI feature — a free 2-minute check | DPR AI</title>
 <meta name="description" content="Is your AI feature any good, or is it slop? Answer 8 honest questions and get a transparent readout of where it's solid and where it'll bite you — free, no sign-up. It maps to exactly what we check in a paid audit." />
-<meta name="theme-color" content="#ffffff" />
+<meta name="theme-color" content="#0E1013" />
 <link rel="canonical" href="https://dprai.io/score/" />
 <meta name="robots" content="index, follow" />
 <meta property="og:type" content="website" />
@@ -21,18 +21,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="../site.css?v=15" />
+<link rel="stylesheet" href="../site.css?v=22" />
 <link rel="icon" href="../assets/icons/logo-orb.png" />
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <style>
   .sc-intro{max-width:64ch}
   .sc-meta{font-family:var(--mono);font-size:12.5px;color:var(--faint);margin-top:14px}
-  .sc-q{border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-1);padding:20px 22px;margin:0 0 14px}
+  .sc-q{border:1px solid var(--line);border-radius:var(--radius);background:#15181D;box-shadow:var(--shadow-1);padding:20px 22px;margin:0 0 14px}
   .sc-q-h{display:flex;gap:10px;align-items:baseline;margin:0 0 12px}
   .sc-q-n{font-family:var(--mono);font-size:12px;color:var(--accent);flex:0 0 auto}
   .sc-q-t{font-size:16px;font-weight:600;color:var(--ink);line-height:1.35;margin:0}
   .sc-opts{display:flex;flex-direction:column;gap:8px}
-  .sc-opt{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:10px;padding:11px 14px;background:#fff;cursor:pointer;font-size:14.5px;color:var(--ink-2);transition:.15s ease}
+  .sc-opt{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:10px;padding:11px 14px;background:#15181D;cursor:pointer;font-size:14.5px;color:var(--ink-2);transition:.15s ease}
   .sc-opt:hover{border-color:var(--accent)}
   .sc-opt input{margin-top:3px}
   .sc-opt.sel{border-color:var(--accent);background:var(--accent-soft)}
@@ -40,7 +40,7 @@
   .sc-hint{font-size:13px;color:var(--faint)}
   .btn:disabled{opacity:.5;cursor:not-allowed;pointer-events:none}
   /* result */
-  .sc-result{border:1px solid var(--accent);border-radius:var(--radius);background:#fff;box-shadow:0 18px 44px rgba(59,91,219,.12);padding:clamp(24px,4vw,36px);margin-top:8px}
+  .sc-result{border:1px solid var(--accent);border-radius:var(--radius);background:#15181D;box-shadow:0 18px 44px rgba(59,91,219,.12);padding:clamp(24px,4vw,36px);margin-top:8px}
   .sc-band{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
   .sc-band.good{color:#1a9e6a}.sc-band.mid{color:#b8860b}.sc-band.low{color:#d64545}
   .sc-score{font-size:clamp(30px,5vw,42px);font-weight:800;letter-spacing:-.02em;margin:6px 0 0;font-variant-numeric:tabular-nums}
@@ -55,7 +55,7 @@
   .sc-gap p{margin:0;font-size:14px;line-height:1.5;color:var(--ink-2)}
   .sc-gap b{color:var(--ink)}
   .sc-strong{color:#1a9e6a;font-size:14px;margin:14px 0 0}
-  .sc-cta{border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#fff,var(--gold-soft));padding:22px 24px;margin-top:22px}
+  .sc-cta{border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#15181D,var(--gold-soft));padding:22px 24px;margin-top:22px}
   .sc-cta h3{font-size:18px;margin:0 0 6px}
   .sc-cta p{font-size:14.5px;color:var(--muted);line-height:1.55;margin:0 0 14px;max-width:60ch}
   .sc-how{font-size:12.5px;color:var(--faint);margin-top:16px;line-height:1.55}
