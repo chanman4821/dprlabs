@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="site.css?v=25" />
+<link rel="stylesheet" href="site.css?v=26" />
 <link rel="icon" href="assets/icons/logo-orb.png" />
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <link rel="canonical" href="https://dprai.io/own-it.html" />
@@ -57,6 +57,7 @@
   <section class="sec">
     <div class="wrap prose reveal">
       <h2>What you should actually own</h2>
+      <div class="di-block" data-reveal data-diagram="handover" style="margin:26px auto 12px" data-config='{"items":[{"k":"01","label":"Code","detail":"The application repo, data adapters, prompt logic, tests, and deploy config — run it without asking the builder for permission."},{"k":"02","label":"Evals","detail":"The scoreboard for what counts as good for your customers, your risk, and your margins. Own the evals, own the definition of good."},{"k":"03","label":"Prompts","detail":"Prompts and retrieval logic are operating procedure — how your company wants work done, and which facts the model is allowed to trust."},{"k":"04","label":"Model boundary","detail":"The interface, fallbacks, logs, and routing rules that let you switch model providers later without rebuilding the product."},{"k":"05","label":"Process IP","detail":"How you classify, resolve, and turn messy inputs into trusted work — plus the feedback loop that makes it harder to copy over time."}]}'></div>
       <p>Start with the code. You should have the application repo, the data adapters, the prompt files or prompt construction logic, the test harness, the deploy instructions, and the configuration needed to run it without asking the builder for permission. If someone says you own the “output” but not the code path that makes the output, you own a screenshot.</p>
       <p>Next are the evals. An eval is the scoreboard that tells you whether the AI system is getting better or worse. It may be a small set of golden examples, a grading rubric, a human review sheet, a red-team list, or a cost-and-latency log. Evals are strategic because they encode taste. They say, “This answer is acceptable for our customers, our risk, our brand, and our margins.” If a vendor owns the evals, they own the definition of good.</p>
       <p>You should also own the prompts and retrieval logic. A prompt is not magic copywriting; it is operating procedure. It captures how your company wants work done. Retrieval logic decides which facts the model sees, which sources are trusted, and which stale sources are excluded. Those choices become institutional memory.</p>
@@ -123,6 +124,6 @@
 <footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><a href="index.html" class="brand"><span class="dot" aria-hidden="true"></span> DPR&nbsp;AI</a><p>Owned, measured AI — or it's slop. We build it inside your business, prove it on one number, and hand you everything.</p></div><div class="foot-col"><h4>Studio</h4><a href="method.html">How it works</a><a href="case-studies.html">Case studies</a><a href="teardowns.html">Teardowns</a><a href="about.html">About</a></div><div class="foot-col"><h4>Playbooks</h4><a href="free/">Free tools</a><a href="score/">Score my AI</a><a href="slop.html">The slop problem</a><a href="playbook.html">AI-readiness scorecard</a><a href="contact.html">The first build</a><a href="blog/index.html">Field Notes</a></div><div class="foot-col"><h4>Get started</h4><a href="contact.html">Start a build</a><a href="contact.html">Contact</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div></div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
 <script src="site.js?v=14" defer></script>
 <script src="assets/anim.js?v=10" defer></script>
-<script src="assets/diagrams.js?v=10" defer></script>
+<script src="assets/diagrams.js?v=11" defer></script>
 </body>
 </html>
