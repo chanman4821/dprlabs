@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap');
 :root{
     --bg:#0E1013; --bg-soft:#15181D; --bg-softer:#1E232A;
     --ink:#F4F6F8; --ink-2:#E8ECF0; --muted:#AEB6C0; --faint:#727B86;
@@ -7,7 +8,7 @@
     --accent:#BEF23F; --accent-strong:#9BD22A; --accent-soft:rgba(190,242,63,.14);
     --blue:#BEF23F;
     --sans:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-    --display:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --display:'Bricolage Grotesque','Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
     --mono:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
     --maxw:1200px; --radius:16px;
     --shadow-1:0 1px 2px rgba(0,0,0,.4);
