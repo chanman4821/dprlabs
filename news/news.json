@@ -1,11 +1,107 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T15:38:30.851529+00:00",
+    "generated_at": "2026-07-24T17:43:27.171953+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "aca42f6126e0",
+      "headline": "Team uses AlphaFold AI to redesign gene-editing proteins to make them safer",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer/",
+      "published_at": "2026-07-24T17:31:26+00:00",
+      "summary": "Google's AlphaFold can help ID what parts of a gene editing protein enable mistakes.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.796
+    },
+    {
+      "id": "e69b66c36671",
+      "headline": "You can’t ignore Google Zero anymore",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/podcast/970735/google-zero-reddit-ai-publishers-vergecast",
+      "published_at": "2026-07-24T17:29:48+00:00",
+      "summary": "The web and Google once had a deal: Google collects data and indexes webpages and in exchange sends oceans of traffic to websites. The deal wasn't perfect and certainly made Google more money than it made the websites, but it worked for a…",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7959
+    },
+    {
+      "id": "6c939dbf7a8b",
+      "headline": "Anthropic releases Opus 5 with ‘close’ to Fable 5’s capabilities",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release",
+      "published_at": "2026-07-24T17:00:00+00:00",
+      "summary": "Weeks after Anthropic's latest toe-to-toe with the US government, and days after an OpenAI security incident that dominated tech industry discussions, Anthropic on Thursday released its newest model, Claude Opus 5. The company said in a…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7923
+    },
+    {
+      "id": "e55b7467c003",
+      "headline": "Meta is making its AI chatbot more like an assistant",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update",
+      "published_at": "2026-07-24T17:00:00+00:00",
+      "summary": "Meta is upgrading its AI chatbot with new productivity features in a bid to compete with rivals like Gemini, ChatGPT, and Claude. The update will allow Meta AI to tap into your calendar to help you plan events and generate daily briefings,…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7923
+    },
+    {
+      "id": "254c94d3b597",
+      "headline": "Anthropic launches Opus 5",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/",
+      "published_at": "2026-07-24T17:00:00+00:00",
+      "summary": "Opus 5 will be both cheaper and less restrictive than Fable, likely making it preferable in most use cases",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7923
+    },
+    {
+      "id": "323b1220159c",
+      "headline": "As US weighs response to Chinese AI, industry urges against broad open-weight restrictions",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
+      "published_at": "2026-07-24T15:51:49+00:00",
+      "summary": "AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation.",
+      "tags": [
+        "Open Source"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7842
+    },
     {
       "id": "fbd13f2c99b1",
       "headline": "Bluesky’s AI assistant Attie expands into an open social research tool",
@@ -20,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7945
+      "rank_score": 0.7798
     },
     {
       "id": "3d1cb648c8e1",
@@ -36,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.794
+      "rank_score": 0.7793
     },
     {
       "id": "f808bacb1e9c",
@@ -52,7 +148,23 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7909
+      "rank_score": 0.7764
+    },
+    {
+      "id": "f38271175497",
+      "headline": "‘AI communism’, rogue models, and the why Kimi K3 spooked Wall Street",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/podcast/ai-communism-rogue-models-and-the-why-kimi-k3-spooked-wall-street/",
+      "published_at": "2026-07-24T14:00:00+00:00",
+      "summary": "Chinese AI lab Moonshot’s open model Kimi went viral this week for reasons that had less to do with the model itself and more to do with how the U.S. AI industry reacted to it. Meanwhile, an unreleased OpenAI model wandered outside its…",
+      "tags": [
+        "Models"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7714
     },
     {
       "id": "e7f23367a271",
@@ -68,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7845
+      "rank_score": 0.7702
     },
     {
       "id": "04ee318589b1",
@@ -84,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.783
+      "rank_score": 0.7688
     },
     {
       "id": "57e3e7f7ca44",
@@ -100,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5219
+      "rank_score": 0.5087
     },
     {
       "id": "46d41b5281a9",
@@ -116,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7396
+      "rank_score": 0.728
     },
     {
       "id": "341e0a3f7888",
@@ -132,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7396
+      "rank_score": 0.728
     },
     {
       "id": "8092459feae0",
@@ -148,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7396
+      "rank_score": 0.728
     },
     {
       "id": "4fdb1d3870fe",
@@ -164,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7396
+      "rank_score": 0.728
     },
     {
       "id": "31c8a50f4a7f",
@@ -180,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7396
+      "rank_score": 0.728
     },
     {
       "id": "1ef4c4aa3d6c",
@@ -196,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7396
+      "rank_score": 0.728
     },
     {
       "id": "5b3a423c55bd",
@@ -212,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7396
+      "rank_score": 0.728
     },
     {
       "id": "cbb4ced4af1d",
@@ -228,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7396
+      "rank_score": 0.728
     },
     {
       "id": "99acc1d78117",
@@ -244,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7396
+      "rank_score": 0.728
     },
     {
       "id": "7d84b79b81e0",
@@ -260,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7396
+      "rank_score": 0.728
     },
     {
       "id": "1587e619ce2c",
@@ -276,119 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7396
-    },
-    {
-      "id": "c52a8d201809",
-      "headline": "Incomplete Prompt Jailbreaks in Large Language Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20473",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20473v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly released as open-weight models with safeguards against harmful requests. Nevertheless, sentence completion remains vulnerable to incomplete…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7396
-    },
-    {
-      "id": "c965b17d690d",
-      "headline": "VeriSimpl: Robust Optimization Modeling from Natural Language using Simplification-based Verification",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20474",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20474v1 Announce Type: new Abstract: Natural language interfaces can greatly benefit the accessibility and usability of optimization modeling, and recent advances in large language models (LLMs) show promise in automatically…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7396
-    },
-    {
-      "id": "49e6d7872d0e",
-      "headline": "SonicSampler: Unified Tile-Aware Kernels for LLM Sampling and Speculative Verification",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20475",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20475v1 Announce Type: new Abstract: Sampling in LLM inference comprises a combinatorial set of logit processing, token selection, and verification operations for speculative decoding. However, existing implementations either…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7396
-    },
-    {
-      "id": "5b9d1ab8eaae",
-      "headline": "Benchmarking Large Language Models on Multi-Sensor Physical Hazard Assessment",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20476",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20476v1 Announce Type: new Abstract: We present an empirical benchmark evaluating how five large language models assess multisensor physical hazard data. Testing 60 scenarios across three categories - multi-sensor joint…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7396
-    },
-    {
-      "id": "d238d3a1b791",
-      "headline": "Semi-Supervised Text-Attributed Graph Distillation",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20477",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20477v1 Announce Type: new Abstract: {\\em Text-Attributed Graphs} (TAGs) have emerged as an expressive data model for integrating graph topology with rich textual semantics. Existing representation learning methods over TAGs…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7396
-    },
-    {
-      "id": "21459e9260bb",
-      "headline": "Beyond Liars' Bench: The Impact of Lie Typology, Depth, and Sparsity on Deception Detection in LLMs",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20479",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20479v1 Announce Type: new Abstract: Training probes to detect deceptive outputs from large language models is still an open problem. Recent work has demonstrated that detection probes fail especially in out-of-domain scenarios…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7396
-    },
-    {
-      "id": "b5d75cd99fd8",
-      "headline": "Enabling Scalable Topology Inference in Distribution Systems via Constrained Multi-Source Inference",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20480",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20480v1 Announce Type: new Abstract: Accurate distribution system topology is essential for outage localization, voltage analytics, and operation of distribution grids, yet maintaining reliable connectivity records remains…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7396
+      "rank_score": 0.728
     }
   ]
 }
