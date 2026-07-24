@@ -1,11 +1,27 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T06:32:06.517226+00:00",
+    "generated_at": "2026-07-24T11:46:35.074837+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "57e3e7f7ca44",
+      "headline": "A Semioethical Framework for Artificial Intelligence",
+      "source_name": "Hacker News",
+      "source_id": "hn",
+      "url": "https://lyceum.institute/humanitas-technica/seppuai/",
+      "published_at": "2026-07-24T09:55:01+00:00",
+      "summary": "2 points and 0 comments on Hacker News.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.6,
+      "rank_score": 0.5479
+    },
     {
       "id": "46d41b5281a9",
       "headline": "AINTMA: Agentic AI Architecture for Autonomous Test Management with Generative Intelligence, Secure Cloud Communication and Adaptive Quality Analytics",
@@ -20,7 +36,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "341e0a3f7888",
@@ -36,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "8092459feae0",
@@ -52,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "4fdb1d3870fe",
@@ -68,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "31c8a50f4a7f",
@@ -84,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "1ef4c4aa3d6c",
@@ -100,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "5b3a423c55bd",
@@ -116,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "cbb4ced4af1d",
@@ -132,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "99acc1d78117",
@@ -148,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "7d84b79b81e0",
@@ -164,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "1587e619ce2c",
@@ -180,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "c52a8d201809",
@@ -196,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "c965b17d690d",
@@ -212,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "49e6d7872d0e",
@@ -228,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "5b9d1ab8eaae",
@@ -244,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "d238d3a1b791",
@@ -260,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "21459e9260bb",
@@ -276,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "b5d75cd99fd8",
@@ -292,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "e7e01d56aa27",
@@ -308,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "5625677428a5",
@@ -324,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "7e343b0026dd",
@@ -340,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "33e23d463572",
@@ -356,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     },
     {
       "id": "52ee6fbbe1d1",
@@ -372,23 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.797
-    },
-    {
-      "id": "481347b4244b",
-      "headline": "OPTScientist: Multi-Agent Discovery of Typed Optimizer Programs for Transformer Pretraining",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20486",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20486v1 Announce Type: new Abstract: Designing optimizers for modern deep learning remains a challenging scientific problem, requiring the joint consideration of optimization geometry, state dynamics, numerical stability,…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.797
+      "rank_score": 0.7627
     }
   ]
 }
