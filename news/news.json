@@ -1,394 +1,394 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T03:22:37.904009+00:00",
+    "generated_at": "2026-07-24T06:32:06.517226+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
     {
-      "id": "bbe4c3fea4dc",
-      "headline": "How AI guardrails are impeding the work of offensive cybersecurity researchers",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/",
-      "published_at": "2026-07-24T01:00:00+00:00",
-      "summary": "We spoke with several cybersecurity researchers, who look for unknown vulnerabilities and develop tools to exploit them, about how OpenAI’s and Anthropic’s guardrails affect their work.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7806
-    },
-    {
-      "id": "dc6069653cce",
-      "headline": "A taxonomy of omnicidal futures involving artificial intelligence (2025)",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://arxiv.org/abs/2507.09369",
-      "published_at": "2026-07-23T22:51:13+00:00",
-      "summary": "61 points and 48 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 2,
-      "credibility": 0.6,
-      "rank_score": 0.5891
-    },
-    {
-      "id": "c6bad60c5902",
-      "headline": "Alexa Plus is getting an AI update to handle more complicated instructions",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices",
-      "published_at": "2026-07-23T21:15:06+00:00",
-      "summary": "Amazon is launching an update to its Alexa Plus assistant that will allow it to connect to smart home devices in new ways. With the update, which is currently in preview, Alexa Plus can link up with tech from Bosch, Delta, Ecovacs, iRobot,…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7556
-    },
-    {
-      "id": "b4d4584e10a9",
-      "headline": "AMD takes on Nvidia with its Helios AI rack-scale system",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
-      "published_at": "2026-07-23T20:33:02+00:00",
-      "summary": "AMD is challenging its chipmaker rival with a new rack-scale system that will start shipping to customers later this year.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7511
-    },
-    {
-      "id": "0b843e577a7e",
-      "headline": "AI Kill Switch Act would let Trump admin order shutdown of rogue AI systems",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/tech-policy/2026/07/ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-systems/",
-      "published_at": "2026-07-23T19:08:01+00:00",
-      "summary": "Bill would let Homeland Security chief decide when an AI should be shut down.",
-      "tags": [
-        "Policy"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7423
-    },
-    {
-      "id": "77885ca812d6",
-      "headline": "Claude’s voice mode is now available for Opus and Sonnet",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai",
-      "published_at": "2026-07-23T19:00:00+00:00",
-      "summary": "Until now, voice mode has only been available on Claude Haiku, Anthropic's faster but less powerful model. Now the company is making its Opus and Sonnet models available in voice mode, and extending its reach into apps like Gmail, Slack,…",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.8015
-    },
-    {
-      "id": "c6a17a386bdb",
-      "headline": "Anthropic updates Claude voice mode with more capable models",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
-      "published_at": "2026-07-23T19:00:00+00:00",
-      "summary": "Claude's new voice model will let you reschedule your meeting or draft an email.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.8015
-    },
-    {
-      "id": "84bd7cfa0701",
-      "headline": "AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
-      "published_at": "2026-07-23T18:38:34+00:00",
-      "summary": "AegisAI co-founders developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7393
-    },
-    {
-      "id": "440b0110dc04",
-      "headline": "Patreon is laying off 20 percent of workers",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/tech/970211/patreon-layoffs-ai",
-      "published_at": "2026-07-23T18:20:30+00:00",
-      "summary": "Patreon is laying off 20 percent of its workers, or around 93 employees, as reported earlier by 404 Media. In a memo to employees, Patreon CEO Jack Conte writes that the company isn't making these changes \"because we believe AI replaces…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7374
-    },
-    {
-      "id": "00359069d44f",
-      "headline": "Runway launches AI model router as generative media gets crowded",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/",
-      "published_at": "2026-07-23T17:07:35+00:00",
-      "summary": "The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed or cost.",
-      "tags": [
-        "Models"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7302
-    },
-    {
-      "id": "cb3c46e4e715",
-      "headline": "OpenAI is making big claims as it rolls out ChatGPT Health to everyone",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
-      "published_at": "2026-07-23T17:00:00+00:00",
-      "summary": "OpenAI is rolling out ChatGPT Health to everyone in the US on Thursday, allowing more people to connect their medical records and health-tracking information to the chatbot. During a briefing, Ashley Alexander, OpenAI's vice president of…",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7295
-    },
-    {
-      "id": "03ca48c266f7",
-      "headline": "OpenAI makes ChatGPT Health available to all US users",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/",
-      "published_at": "2026-07-23T17:00:00+00:00",
-      "summary": "Users can also integrate their personal data from services like Apple Health, Function, and MyFitnessPal.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7295
-    },
-    {
-      "id": "3790e5420a19",
-      "headline": "Meta launched a new AI optimism ad set to a song about human extinction",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinction/",
-      "published_at": "2026-07-23T16:28:50+00:00",
-      "summary": "David Bowie's song \"Five Years,\" which Meta used in a supposedly inspiring advertisement, is about humans learning that they have five years left to live before the apocalypse.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7264
-    },
-    {
-      "id": "3cafe2ee039e",
-      "headline": "Google just had its first negative cash flow quarter due to massive AI spending",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/google/2026/07/google-just-had-its-first-negative-cash-flow-quarter-ever-due-to-massive-ai-spending/",
-      "published_at": "2026-07-23T16:04:19+00:00",
-      "summary": "Google continues to report big quarterly revenue, but its AI spending has skyrocketed.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7241
-    },
-    {
-      "id": "b8c9235a4da4",
-      "headline": "Amazon cuts jobs from its artificial general intelligence team",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://twitter.com/Polymarket/status/2079945560937672966",
-      "published_at": "2026-07-23T15:44:21+00:00",
-      "summary": "1 points and 1 comments on Hacker News.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.4852
-    },
-    {
-      "id": "d15a0dad264d",
-      "headline": "Nvidia is sending GPUs to the moon",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/nvidia-is-sending-gpus-to-the-moon/",
-      "published_at": "2026-07-23T15:00:00+00:00",
-      "summary": "If there's a place in the universe without GPUs, Nvidia is sending them there.",
-      "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.718
-    },
-    {
-      "id": "d9ffdf3634eb",
-      "headline": "AI chip startup Etched defies skeptics, hits $10.3B valuation from big-name investors",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
-      "published_at": "2026-07-23T15:00:00+00:00",
-      "summary": "Etched, founded by three Harvard dropouts, has created new chips and memory components that speed up inference on any AI model -- no GPUs required, it says.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.718
-    },
-    {
-      "id": "085548e5aa00",
-      "headline": "Google’s Gemini nears billion-user milestone",
-      "source_name": "TechCrunch",
-      "source_id": "techcrunch",
-      "url": "https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini/",
-      "published_at": "2026-07-23T14:52:44+00:00",
-      "summary": "Gemini had over 750 million monthly users in February.",
-      "tags": [
-        "Business"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7773
-    },
-    {
-      "id": "2568e67aa59b",
-      "headline": "AI arms race in line for a reckoning after OpenAI hacking incident",
-      "source_name": "Ars Technica",
-      "source_id": "arstechnica",
-      "url": "https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident/",
-      "published_at": "2026-07-23T14:45:05+00:00",
-      "summary": "Aggressive training techniques sharpens threat of bad behavior by leading models.",
+      "id": "46d41b5281a9",
+      "headline": "AINTMA: Agentic AI Architecture for Autonomous Test Management with Generative Intelligence, Secure Cloud Communication and Adaptive Quality Analytics",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20452",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20452v1 Announce Type: new Abstract: Modern software quality assurance demands intelligent, autonomous systems capable of adaptive decision-making across distributed cloud environments. This paper presents AINTMA (Agentic…",
       "tags": [
         "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7166
+      "credibility": 0.9,
+      "rank_score": 0.797
     },
     {
-      "id": "8578cdf299be",
-      "headline": "How much energy do data centers and artificial intelligence use?",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use",
-      "published_at": "2026-07-23T14:40:30+00:00",
-      "summary": "69 points and 71 comments on Hacker News.",
+      "id": "341e0a3f7888",
+      "headline": "Marking the Wrong Symptoms: Evaluating LLM Watermarks in Medical Texts",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20462",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20462v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly integrated into clinical workflows, stressing the need for reliable traceability of model-generated output with watermarking. Yet, most…",
       "tags": [
-        "Tools"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 2,
-      "credibility": 0.6,
-      "rank_score": 0.544
-    },
-    {
-      "id": "01d83a6818a9",
-      "headline": "Lawmakers prepare bill requiring AI ‘kill switch’",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal",
-      "published_at": "2026-07-23T14:13:35+00:00",
-      "summary": "Lawmakers are preparing to introduce an \"AI Kill Switch Act\" that would require AI companies to shut down or throttle their systems on orders from the Department of Homeland Security, according to a report from Politico. Reps. Ted Lieu…",
-      "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7136
+      "credibility": 0.9,
+      "rank_score": 0.797
     },
     {
-      "id": "8d19bda52fec",
-      "headline": "Free Copilot is turning into a demo as Microsoft shifts real features to paid",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://www.windowscentral.com/artificial-intelligence/microsoft-copilot/free-copilot-is-turning-into-a-demo-as-microsoft-shifts-real-features-to-paid-tiers",
-      "published_at": "2026-07-23T14:07:54+00:00",
-      "summary": "3 points and 0 comments on Hacker News.",
+      "id": "8092459feae0",
+      "headline": "ClickGuard: Detecting and Spoiling Clickbait News with Informativeness Measures and Large Language Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20463",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20463v1 Announce Type: new Abstract: This paper presents an AI-driven browser extension that identifies clickbait to help users avoid misleading Internet articles. Moving beyond traditional detection, the application employs a…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.4774
+      "credibility": 0.9,
+      "rank_score": 0.797
     },
     {
-      "id": "9ae095cbc6ee",
-      "headline": "Apple’s OpenAI lawsuit is about who gets to define the post-smartphone era",
-      "source_name": "The Verge",
-      "source_id": "theverge",
-      "url": "https://www.theverge.com/podcast/968787/apple-openai-trade-secrets-lawsuit-ai-hardware-smartphone-jony-ive",
-      "published_at": "2026-07-23T14:00:00+00:00",
-      "summary": "Today on Decoder, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the major trade secrets lawsuit between Apple and OpenAI and what this tells us about OpenAI’s future. By now I’m sure most Decoder listeners are…",
+      "id": "4fdb1d3870fe",
+      "headline": "Stochastic Sampling is Epistemically Shallow: The Dimensionality Gap Between Temperature Variation and Model Diversity in LLMs",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20464",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20464v1 Announce Type: new Abstract: When a language model gives different answers on repeated runs, does that variation reveal what it does not know? Self-consistency turns the variation into a per-question uncertainty estimate…",
       "tags": [
-        "Policy"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.85,
-      "rank_score": 0.7124
+      "credibility": 0.9,
+      "rank_score": 0.797
     },
     {
-      "id": "8ed929e370e8",
-      "headline": "AI Companies Are Trying to Hide a Staggering Amount of Debt",
-      "source_name": "Hacker News",
-      "source_id": "hn",
-      "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
-      "published_at": "2026-07-23T13:09:10+00:00",
-      "summary": "621 points and 310 comments on Hacker News.",
+      "id": "31c8a50f4a7f",
+      "headline": "JAXBench: Benchmarking Autonomous TPU Kernel Optimization",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20466",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20466v1 Announce Type: new Abstract: Rigorous benchmarks have driven progress in autonomous GPU kernel performance optimization by establishing a shared target to hillclimb on, but no equivalent exists for TPUs. We present…",
       "tags": [
-        "Tools"
+        "Research"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
-      "credibility": 0.6,
-      "rank_score": 0.7702
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "1ef4c4aa3d6c",
+      "headline": "DC-Leap: Training-Free Acceleration of dLLMs via Draft-Guided Contiguous Leaping Decoding",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20467",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20467v1 Announce Type: new Abstract: While parallel decoding is central to the efficiency of Diffusion Large Language Models (dLLMs), current strategies are often hindered by overly conservative confidence thresholds. These…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "5b3a423c55bd",
+      "headline": "InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20468",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20468v1 Announce Type: new Abstract: AI agents are increasingly used to automate research and development tasks, yet existing benchmarks typically evaluate them on prescribed workflows or narrow action spaces. Even nominally…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "cbb4ced4af1d",
+      "headline": "DecodeShare: Tracing the Shared Subspace of LLM Decode-Time Decisions",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20469",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20469v1 Announce Type: new Abstract: Large language models (LLMs) handle many tasks with one set of parameters, but under KV-cached inference it is unclear what task-general structure, if any, is used at decode time rather than…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "99acc1d78117",
+      "headline": "PlanE: Meta Planning of Data, Tuning, and Inference for Extractive-based LLMs",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20470",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20470v1 Announce Type: new Abstract: Enhancing the task-specific capabilities of Large Language Models (LLMs) primarily requires substantial instruction-tuning datasets. However, the sheer volume of such data imposes a…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "7d84b79b81e0",
+      "headline": "Benchmarking the Personalization Capabilities of Large Language Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20471",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20471v1 Announce Type: new Abstract: Personalization, the act of varying a message to induce action from a specific receiver while keeping sender, channel, and time fixed, has a long tradition in psychology and marketing as a…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "1587e619ce2c",
+      "headline": "Robust Critics: Defending LLMs Against Multi-Turn Attacks",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20472",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20472v1 Announce Type: new Abstract: When a user asks a language model something harmful, is it a genuine attack or a misunderstood but well-meaning question? This ambiguity is one of the central challenges of LLM safety. A…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "c52a8d201809",
+      "headline": "Incomplete Prompt Jailbreaks in Large Language Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20473",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20473v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly released as open-weight models with safeguards against harmful requests. Nevertheless, sentence completion remains vulnerable to incomplete…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "c965b17d690d",
+      "headline": "VeriSimpl: Robust Optimization Modeling from Natural Language using Simplification-based Verification",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20474",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20474v1 Announce Type: new Abstract: Natural language interfaces can greatly benefit the accessibility and usability of optimization modeling, and recent advances in large language models (LLMs) show promise in automatically…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "49e6d7872d0e",
+      "headline": "SonicSampler: Unified Tile-Aware Kernels for LLM Sampling and Speculative Verification",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20475",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20475v1 Announce Type: new Abstract: Sampling in LLM inference comprises a combinatorial set of logit processing, token selection, and verification operations for speculative decoding. However, existing implementations either…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "5b9d1ab8eaae",
+      "headline": "Benchmarking Large Language Models on Multi-Sensor Physical Hazard Assessment",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20476",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20476v1 Announce Type: new Abstract: We present an empirical benchmark evaluating how five large language models assess multisensor physical hazard data. Testing 60 scenarios across three categories - multi-sensor joint…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "d238d3a1b791",
+      "headline": "Semi-Supervised Text-Attributed Graph Distillation",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20477",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20477v1 Announce Type: new Abstract: {\\em Text-Attributed Graphs} (TAGs) have emerged as an expressive data model for integrating graph topology with rich textual semantics. Existing representation learning methods over TAGs…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "21459e9260bb",
+      "headline": "Beyond Liars' Bench: The Impact of Lie Typology, Depth, and Sparsity on Deception Detection in LLMs",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20479",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20479v1 Announce Type: new Abstract: Training probes to detect deceptive outputs from large language models is still an open problem. Recent work has demonstrated that detection probes fail especially in out-of-domain scenarios…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "b5d75cd99fd8",
+      "headline": "Enabling Scalable Topology Inference in Distribution Systems via Constrained Multi-Source Inference",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20480",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20480v1 Announce Type: new Abstract: Accurate distribution system topology is essential for outage localization, voltage analytics, and operation of distribution grids, yet maintaining reliable connectivity records remains…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "e7e01d56aa27",
+      "headline": "Routing Without Training: Controllable-Ratio LLM Offloading via Reliability Gating",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20481",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20481v1 Announce Type: new Abstract: Local-cloud collaboration is a practical way to deploy large language models under resource constraints, but existing methods often rely on trained routers or collaboration-aware finetuning…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "5625677428a5",
+      "headline": "PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20482",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20482v1 Announce Type: new Abstract: Recent advances in large language models have enabled web agents to autonomously execute complex tasks. In practice, users frequently provide underspecified instructions, requiring agents to…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "7e343b0026dd",
+      "headline": "Tractable Hierarchical Control of Autoregressive Language Models",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20483",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20483v1 Announce Type: new Abstract: Constraining the generation of autoregressive large language models (LLMs) is an important component of integrating language models into formal systems. In the generation of code and data for…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "33e23d463572",
+      "headline": "The Devil is in the Spectrum: Mitigating Representation Collapse in LLMs via Topologically Regularized Side-Path",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20484",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20484v1 Announce Type: new Abstract: Large Language Models (LLMs) are fundamentally limited by representation collapse, a bottleneck that severely degrades long-context performance. We identify that existing approaches risk…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "52ee6fbbe1d1",
+      "headline": "Expectation Alignment of Language Models for Real-World User Expectations",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20485",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20485v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated remarkable performance on standard benchmarks, yet it remains largely unexplored whether they truly meet user expectations. Existing evaluation…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
+    },
+    {
+      "id": "481347b4244b",
+      "headline": "OPTScientist: Multi-Agent Discovery of Typed Optimizer Programs for Transformer Pretraining",
+      "source_name": "arXiv cs.AI",
+      "source_id": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20486",
+      "published_at": "2026-07-24T04:00:00+00:00",
+      "summary": "arXiv:2607.20486v1 Announce Type: new Abstract: Designing optimizers for modern deep learning remains a challenging scientific problem, requiring the joint consideration of optimization geometry, state dynamics, numerical stability,…",
+      "tags": [
+        "Research"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.9,
+      "rank_score": 0.797
     }
   ]
 }
