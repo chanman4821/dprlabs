@@ -375,7 +375,7 @@
   .hero-split{display:grid;grid-template-columns:1.22fr .78fr;gap:40px;align-items:center}
   .hero-split .hero-copy{min-width:0}
   .hero-art{display:flex;justify-content:center;align-items:center;position:relative}
-  .hero-art::before{content:"";position:absolute;width:82%;height:82%;border-radius:50%;background:radial-gradient(circle at 50% 46%,rgba(79,70,229,.18),transparent 70%);z-index:0}
+  .hero-art::before{content:"";position:absolute;width:82%;height:82%;border-radius:50%;background:radial-gradient(circle at 50% 46%,rgba(190,242,63,.16),transparent 70%);z-index:0}
   .hero-art img{position:relative;z-index:1;max-width:100%;max-height:350px;object-fit:contain;filter:drop-shadow(0 24px 38px rgba(49,32,120,.22));animation:heroArtFloat 6s ease-in-out infinite}
   @keyframes heroArtFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
   /* small inline accent art woven into content sections */
@@ -779,7 +779,7 @@ header.nav{background:rgba(14,16,19,.82);backdrop-filter:saturate(1.4) blur(12px
 .btn-primary{background:var(--gold);border:0;color:#14200A;box-shadow:0 10px 24px rgba(190,242,63,.20)}
 .btn-primary:hover{filter:brightness(1.05);transform:translateY(-1px);background:var(--gold-bright)}
 .btn-ghost{border-color:var(--line-2);color:var(--ink)}
-.btn-ghost:hover{border-color:var(--c1);background:rgba(79,70,229,.06)}
+.btn-ghost:hover{border-color:var(--c1);background:rgba(190,242,63,.07)}
 .txt-link{color:var(--accent)}
 
 /* ---- EYEBROWS: gradient text + colored dot ---- */
@@ -824,11 +824,11 @@ header.nav{background:rgba(14,16,19,.82);backdrop-filter:saturate(1.4) blur(12px
 .scorecard::before,.member::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--grad-1)}
 
 /* ---- STEP numbers cycle color ---- */
-.steps .step:nth-child(1) .step-n{color:#4f46e5}
-.steps .step:nth-child(2) .step-n{color:#06b6d4}
-.steps .step:nth-child(3) .step-n{color:#10b981}
-.steps .step:nth-child(4) .step-n{color:#f59e0b}
-.steps .step:nth-child(5) .step-n{color:#ec4899}
+.steps .step:nth-child(1) .step-n{color:#BEF23F}
+.steps .step:nth-child(2) .step-n{color:#9BD22A}
+.steps .step:nth-child(3) .step-n{color:#CDF96A}
+.steps .step:nth-child(4) .step-n{color:#8FD14F}
+.steps .step:nth-child(5) .step-n{color:#7ED957}
 
 /* ---- big number figure ---- */
 .bignum:not(.sec-invert .bignum) .fig{color:var(--c1)}
@@ -938,3 +938,14 @@ main>section.sec:not(.sec-invert):nth-of-type(even){background:linear-gradient(1
   .hub::after{bottom:11%;width:148px;height:18px}
 }
 
+
+/* ============ COHESION: lime is the only accent ============ */
+/* Desaturate abstract 3D illustrations (arrows, book, staircase, agent scenes) so
+   electric-lime stays the ONLY color signature. Robots keep their gray+lime brand color.
+   !important beats per-page inline drop-shadow filters; a shadow is kept for depth. */
+img[src*="img/pages"],
+img[src*="img/agents"],
+img[src*="/services/"],
+.s-wb__vid{
+  filter:grayscale(1) contrast(1.05) brightness(1.03) drop-shadow(0 20px 30px rgba(0,0,0,.5)) !important;
+}

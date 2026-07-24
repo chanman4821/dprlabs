@@ -1,10 +1,10 @@
 /* scrollbar.js — drive the scroll-reactive scrollbar hue + progress bar.
-   Maps scroll progress (0..1) to a hue from cyan (190) to yellow (48). */
+   Maps scroll progress (0..1) to a subtle shift within the brand lime range. */
 (function () {
   'use strict';
   var root = document.documentElement;
   var bar = document.getElementById('scrollProgress');
-  var CYAN = 190, YELLOW = 48;
+  var CYAN = 84, YELLOW = 68;
   var raf = 0;
 
   function update() {
