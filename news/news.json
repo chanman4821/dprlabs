@@ -1,11 +1,43 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T21:11:21.371525+00:00",
+    "generated_at": "2026-07-24T23:07:35.934715+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "843db3fde969",
+      "headline": "Prentis, new AI lab co-founded by Reid Hoffman, Marc Pincus in talks to raise $100M",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-marc-pincus-in-talks-to-raise-100m/",
+      "published_at": "2026-07-24T22:25:58+00:00",
+      "summary": "The neolab is betting that automating routine computer tasks will soon outpace coding as AI's biggest use case.",
+      "tags": [
+        "Business"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.8525
+    },
+    {
+      "id": "e7c943659275",
+      "headline": "Canadian legislator reads out apparent LLM response in floor speech",
+      "source_name": "Ars Technica",
+      "source_id": "arstechnica",
+      "url": "https://arstechnica.com/ai/2026/07/canadian-legislator-reads-out-apparent-llm-response-in-floor-speech/",
+      "published_at": "2026-07-24T21:25:15+00:00",
+      "summary": "\"Here’s a more natural, flowing version of that section...\"",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7853
+    },
     {
       "id": "70081e2eda02",
       "headline": "Anthropic's Opus 5 is about token efficiency, not a capability leap",
@@ -20,7 +52,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7968
+      "rank_score": 0.783
     },
     {
       "id": "1bf093d16374",
@@ -36,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5542
+      "rank_score": 0.5407
     },
     {
       "id": "e616440e259b",
@@ -45,14 +77,14 @@
       "source_id": "hn",
       "url": "https://artificialanalysis.ai/models",
       "published_at": "2026-07-24T19:45:10+00:00",
-      "summary": "4 points and 3 comments on Hacker News.",
+      "summary": "34 points and 19 comments on Hacker News.",
       "tags": [
         "Tools"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5521
+      "rank_score": 0.5566
     },
     {
       "id": "2bbb3806a80c",
@@ -68,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7827
+      "rank_score": 0.7694
     },
     {
       "id": "8622540f1a85",
@@ -77,14 +109,14 @@
       "source_id": "techcrunch",
       "url": "https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/",
       "published_at": "2026-07-24T18:07:32+00:00",
-      "summary": "AI coding startup Cognition has acquired Poke, the AI assistant you text like a friend, in a deal valuing the startup in the low nine figures. The acquisition brings Poke’s conversational style and interaction model to Cognition’s coding…",
+      "summary": "The acquisition brings Poke’s conversational style and interaction model to Cognition’s coding agent Devin, reflecting a growing belief that how AI assistants interact with users is as important as the models powering them.",
       "tags": [
         "Business"
       ],
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7759
+      "rank_score": 0.7629
     },
     {
       "id": "aca42f6126e0",
@@ -100,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7718
+      "rank_score": 0.7589
     },
     {
       "id": "e69b66c36671",
@@ -116,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7716
+      "rank_score": 0.7588
     },
     {
       "id": "6c939dbf7a8b",
@@ -132,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7683
+      "rank_score": 0.7556
     },
     {
       "id": "e55b7467c003",
@@ -148,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7683
+      "rank_score": 0.7556
     },
     {
       "id": "254c94d3b597",
@@ -164,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7683
+      "rank_score": 0.7556
     },
     {
       "id": "323b1220159c",
@@ -180,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7607
+      "rank_score": 0.7484
     },
     {
       "id": "fbd13f2c99b1",
@@ -196,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7567
+      "rank_score": 0.7444
     },
     {
       "id": "3d1cb648c8e1",
@@ -212,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7562
+      "rank_score": 0.744
     },
     {
       "id": "f808bacb1e9c",
@@ -228,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7535
+      "rank_score": 0.7413
     },
     {
       "id": "f38271175497",
@@ -244,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7488
+      "rank_score": 0.7369
     },
     {
       "id": "e7f23367a271",
@@ -260,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7477
+      "rank_score": 0.7359
     },
     {
       "id": "04ee318589b1",
@@ -276,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7464
+      "rank_score": 0.7346
     },
     {
       "id": "57e3e7f7ca44",
@@ -292,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.4879
+      "rank_score": 0.477
     },
     {
       "id": "46d41b5281a9",
@@ -308,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7097
+      "rank_score": 0.7
     },
     {
       "id": "341e0a3f7888",
@@ -324,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7097
+      "rank_score": 0.7
     },
     {
       "id": "8092459feae0",
@@ -340,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7097
+      "rank_score": 0.7
     },
     {
       "id": "4fdb1d3870fe",
@@ -356,39 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7097
-    },
-    {
-      "id": "31c8a50f4a7f",
-      "headline": "JAXBench: Benchmarking Autonomous TPU Kernel Optimization",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20466",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20466v1 Announce Type: new Abstract: Rigorous benchmarks have driven progress in autonomous GPU kernel performance optimization by establishing a shared target to hillclimb on, but no equivalent exists for TPUs. We present…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7097
-    },
-    {
-      "id": "1ef4c4aa3d6c",
-      "headline": "DC-Leap: Training-Free Acceleration of dLLMs via Draft-Guided Contiguous Leaping Decoding",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20467",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20467v1 Announce Type: new Abstract: While parallel decoding is central to the efficiency of Diffusion Large Language Models (dLLMs), current strategies are often hindered by overly conservative confidence thresholds. These…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7097
+      "rank_score": 0.7
     }
   ]
 }
