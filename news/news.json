@@ -1,11 +1,59 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T13:59:00.235906+00:00",
+    "generated_at": "2026-07-24T15:38:30.851529+00:00",
     "version": 1,
     "count": 24,
     "note": "Faithful, extractive summaries; every item links to its original source."
   },
   "items": [
+    {
+      "id": "fbd13f2c99b1",
+      "headline": "Bluesky’s AI assistant Attie expands into an open social research tool",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/24/blueskys-ai-assistant-attie-expands-into-an-open-social-research-tool/",
+      "published_at": "2026-07-24T15:13:57+00:00",
+      "summary": "Users can now ask Attie questions about news, trends, and conversations on Bluesky and other apps on the AT Protocol.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7945
+    },
+    {
+      "id": "3d1cb648c8e1",
+      "headline": "Midjourney acquired the astrology app Co-Star",
+      "source_name": "TechCrunch",
+      "source_id": "techcrunch",
+      "url": "https://techcrunch.com/2026/07/24/midjourney-acquired-the-astrology-app-co-star/",
+      "published_at": "2026-07-24T15:09:55+00:00",
+      "summary": "The AI lab Midjourney continues to expand its purview beyond image and video generation.",
+      "tags": [
+        "Tools"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.794
+    },
+    {
+      "id": "f808bacb1e9c",
+      "headline": "The tech-broification of American science has officially begun",
+      "source_name": "The Verge",
+      "source_id": "theverge",
+      "url": "https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants",
+      "published_at": "2026-07-24T14:43:55+00:00",
+      "summary": "The Trump administration unveiled the first \"Genesis Mission\" grants on Thursday, directing $5 billion toward hundreds of AI-driven science projects in an effort the White House has described as \"comparable in urgency and ambition to the…",
+      "tags": [
+        "Policy"
+      ],
+      "is_opinion": false,
+      "corroboration_count": 1,
+      "credibility": 0.85,
+      "rank_score": 0.7909
+    },
     {
       "id": "e7f23367a271",
       "headline": "AI firms want more data centers; Trump's EPA may give neighbors less say",
@@ -20,7 +68,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7964
+      "rank_score": 0.7845
     },
     {
       "id": "04ee318589b1",
@@ -36,7 +84,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.85,
-      "rank_score": 0.7948
+      "rank_score": 0.783
     },
     {
       "id": "57e3e7f7ca44",
@@ -52,7 +100,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.6,
-      "rank_score": 0.5328
+      "rank_score": 0.5219
     },
     {
       "id": "46d41b5281a9",
@@ -68,7 +116,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "341e0a3f7888",
@@ -84,7 +132,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "8092459feae0",
@@ -100,7 +148,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "4fdb1d3870fe",
@@ -116,7 +164,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "31c8a50f4a7f",
@@ -132,7 +180,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "1ef4c4aa3d6c",
@@ -148,7 +196,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "5b3a423c55bd",
@@ -164,7 +212,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "cbb4ced4af1d",
@@ -180,7 +228,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "99acc1d78117",
@@ -196,7 +244,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "7d84b79b81e0",
@@ -212,7 +260,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "1587e619ce2c",
@@ -228,7 +276,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "c52a8d201809",
@@ -244,7 +292,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "c965b17d690d",
@@ -260,7 +308,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "49e6d7872d0e",
@@ -276,7 +324,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "5b9d1ab8eaae",
@@ -292,7 +340,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "d238d3a1b791",
@@ -308,7 +356,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "21459e9260bb",
@@ -324,7 +372,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     },
     {
       "id": "b5d75cd99fd8",
@@ -340,55 +388,7 @@
       "is_opinion": false,
       "corroboration_count": 1,
       "credibility": 0.9,
-      "rank_score": 0.7493
-    },
-    {
-      "id": "e7e01d56aa27",
-      "headline": "Routing Without Training: Controllable-Ratio LLM Offloading via Reliability Gating",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20481",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20481v1 Announce Type: new Abstract: Local-cloud collaboration is a practical way to deploy large language models under resource constraints, but existing methods often rely on trained routers or collaboration-aware finetuning…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7493
-    },
-    {
-      "id": "5625677428a5",
-      "headline": "PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20482",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20482v1 Announce Type: new Abstract: Recent advances in large language models have enabled web agents to autonomously execute complex tasks. In practice, users frequently provide underspecified instructions, requiring agents to…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7493
-    },
-    {
-      "id": "7e343b0026dd",
-      "headline": "Tractable Hierarchical Control of Autoregressive Language Models",
-      "source_name": "arXiv cs.AI",
-      "source_id": "arxiv",
-      "url": "https://arxiv.org/abs/2607.20483",
-      "published_at": "2026-07-24T04:00:00+00:00",
-      "summary": "arXiv:2607.20483v1 Announce Type: new Abstract: Constraining the generation of autoregressive large language models (LLMs) is an important component of integrating language models into formal systems. In the generation of code and data for…",
-      "tags": [
-        "Research"
-      ],
-      "is_opinion": false,
-      "corroboration_count": 1,
-      "credibility": 0.9,
-      "rank_score": 0.7493
+      "rank_score": 0.7396
     }
   ]
 }
