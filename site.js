@@ -275,3 +275,33 @@ window.DPR_FORM_ENDPOINT = window.DPR_FORM_ENDPOINT || 'https://formspree.io/f/Y
     '@media(max-width:640px){.dpr-capture{flex-direction:column;align-items:flex-start}.dpr-capture-form{width:100%}.dpr-capture-form input{min-width:0;flex:1}}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 })();
+
+/* ================= CINEMATIC STAGE + ambient cursor light (injected on every page) ================= */
+(function () {
+  "use strict";
+  var RM = window.matchMedia && window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+  var body = document.body;
+  function layer(cls) { var d = document.createElement("div"); d.className = cls; d.setAttribute("aria-hidden", "true"); body.appendChild(d); return d; }
+  if (!document.querySelector(".cine-vignette")) { layer("cine-vignette"); layer("film-grain"); }
+  if (RM || !(window.matchMedia && matchMedia("(pointer:fine)").matches)) return;
+  var glow = layer("cine-cursor");
+  var tx = innerWidth / 2, ty = innerHeight * 0.3, cx = tx, cy = ty, raf = 0, shown = false;
+  window.addEventListener("pointermove", function (e) {
+    tx = e.clientX; ty = e.clientY;
+    if (!shown) { shown = true; glow.style.opacity = "1"; }
+    if (!raf) raf = requestAnimationFrame(loop);
+  }, { passive: true });
+  function loop() {
+    raf = 0; cx += (tx - cx) * 0.12; cy += (ty - cy) * 0.12;
+    glow.style.transform = "translate3d(" + (cx - 170) + "px," + (cy - 170) + "px,0)";
+    if (Math.abs(tx - cx) > 0.4 || Math.abs(ty - cy) > 0.4) raf = requestAnimationFrame(loop);
+  }
+})();
+/* light-line narrator — inject the scroll-progress beam once, site-wide */
+(function () {
+  if (document.querySelector(".scroll-line")) return;
+  var RM = window.matchMedia && window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+  if (RM) return;
+  var l = document.createElement("div"); l.className = "scroll-line"; l.setAttribute("aria-hidden", "true");
+  document.body.appendChild(l);
+})();
