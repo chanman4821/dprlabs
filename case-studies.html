@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Case studies — DPR AI</title><meta name="description" content="One honest number cut ops handling time 74% — with the baseline, the sample size, and the caveat most case studies skip." /><meta name="theme-color" content="#0E1013" />
+<title>Case studies — DPR AI</title><meta name="description" content="How DPR AI helps operations teams reduce friction, improve efficiency, measure honestly, and own the systems they pay for." /><meta name="theme-color" content="#0E1013" />
 <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="site.css?v=24" /><link rel="icon" href="assets/icons/logo-orb.png" />
+<link rel="stylesheet" href="site.css?v=25" /><link rel="icon" href="assets/icons/logo-orb.png" />
 <style>
   .case-visual{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(220px,.75fr);gap:28px;align-items:center;border:1px solid rgba(15,17,20,.12);border-radius:24px;background:var(--bg-soft);padding:26px;box-shadow:0 18px 50px rgba(15,17,20,.06);margin-top:34px;overflow:hidden}
   .case-chart{min-width:0}
-  .case-chart h3,.delta-card h3{font-size:18px;margin:0 0 8px;letter-spacing:-.02em}
-  .case-chart p,.delta-card p{font-size:14.5px;line-height:1.55;color:var(--muted);margin:0}
-  .delta-grid{display:grid;gap:14px}
-  .delta-card{border:1px solid rgba(190,242,63,.16);border-radius:18px;background:linear-gradient(180deg,#15181D,#1E232A);padding:20px}
-  .delta-card strong{display:block;font-size:clamp(34px,5vw,54px);line-height:1;letter-spacing:-.05em;color:#BEF23F;margin-bottom:10px}
+  .case-chart h3{font-size:18px;margin:0 0 8px;letter-spacing:-.02em}
+  .case-chart p{font-size:14.5px;line-height:1.55;color:var(--muted);margin:0}
   .case-marker{display:flex;align-items:center;gap:24px;border:1px solid rgba(190,242,63,.14);border-radius:24px;background:linear-gradient(135deg,#15181D 0%,#1E232A 100%);padding:22px 26px;margin-top:30px;overflow:hidden}
   .case-buddy{width:clamp(120px,16vw,170px);height:auto;flex:0 0 auto;filter:drop-shadow(0 18px 28px rgba(59,91,219,.16));animation:caseFloat 5.8s ease-in-out infinite}
   .case-marker p{margin:0;color:var(--muted);font-size:15px;line-height:1.6}
   @keyframes caseFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
   @media(max-width:780px){.case-visual{grid-template-columns:1fr;padding:20px}.case-marker{align-items:flex-start}.case-buddy{width:128px}}
-  @media(max-width:520px){.case-marker{display:block}.case-buddy{float:right;width:116px;margin:0 0 10px 14px}.delta-card strong{font-size:38px}}
+  @media(max-width:520px){.case-marker{display:block}.case-buddy{float:right;width:116px;margin:0 0 10px 14px}}
   @media(prefers-reduced-motion:reduce){.case-buddy{animation:none}}
 </style>
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript><link rel="canonical" href="https://dprai.io/case-studies.html" />
@@ -26,12 +23,12 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="DPR AI" />
 <meta property="og:title" content="Case studies — DPR AI" />
-<meta property="og:description" content="One honest number cut ops handling time 74% — with the baseline, the sample size, and the caveat most case studies skip." />
+<meta property="og:description" content="How DPR AI helps operations teams reduce friction, improve efficiency, measure honestly, and own the systems they pay for." />
 <meta property="og:url" content="https://dprai.io/case-studies.html" />
 <meta property="og:image" content="https://dprai.io/assets/og-default.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Case studies — DPR AI" />
-<meta name="twitter:description" content="One honest number cut ops handling time 74% — with the baseline, the sample size, and the caveat most case studies skip." />
+<meta name="twitter:description" content="How DPR AI helps operations teams reduce friction, improve efficiency, measure honestly, and own the systems they pay for." />
 <meta name="twitter:image" content="https://dprai.io/assets/og-default.png" />
 </head>
 <body id="top"><a class="skip-link" href="#main">Skip to content</a>
@@ -46,112 +43,94 @@
     <div class="wrap">
       <div class="hero-split">
         <div class="hero-copy prose reveal">
-      <p class="eyebrow">Anonymized case study</p>
-      <h1>One number, agreed before we wrote a line of code.</h1>
-      <p class="lead" style="margin-top:20px">Most AI case studies are logo theater. They hide the baseline, blur the sample size, and call a demo a transformation. This one shows the number, the denominator, and the caveat.</p>
-      <p>DPR AI is an elite senior AI consulting studio for companies that want owned systems, not rented slop. We build inside your business, aim at one painful workflow, prove the result against a held-out set, then hand over the code, weights, prompts, evals, and operating notes. The client name below is withheld because the work touched live operations, but the method and numbers are the point.</p>
+      <p class="eyebrow">What we do</p>
+      <h1>We build AI systems that remove friction from real operations.</h1>
+      <p class="lead" style="margin-top:20px">DPR AI is a small senior AI consulting studio for teams that want useful systems, not rented slop. We look for repeat work that slows good people down, then build owned AI tools inside the way your team already works.</p>
+      <p>We are early, focused, and direct about it. Instead of borrowing logos or inventing client wins, we would rather show the method you can hold us to: choose one painful workflow, agree how success will be measured, test changes before they touch live work, and hand you the system you paid for.</p>
               </div>
-              <div class="hero-art reveal"><img src="assets/img/pages/case-studies-cut.png" alt="Conceptual 3D illustration of an upward arrow rising over ascending blocks — measured results" loading="eager" decoding="async" /></div>
+              <div class="hero-art reveal"><img src="assets/img/pages/case-studies-cut.png" alt="Conceptual 3D illustration of an upward arrow rising over ascending blocks" loading="eager" decoding="async" /></div>
             </div>
           </div>
         </section>
 
   <section class="sec" data-reveal>
     <div class="wrap reveal">
-      <p class="lead" style="max-width:66ch;margin:0 0 24px">Real engagement, client name withheld — these are the client's own before/after measurements, not a mock-up.</p>
-      <div class="metric-band" data-stagger>
-        <div class="mb"><div class="mv"><span data-count-to="10">0</span> min</div><div class="mk">Median handling time, down from 38 minutes</div><span class="mtag">Client-measured</span></div>
-        <div class="mb"><div class="mv"><span data-count-to="61" data-suffix="%">0</span></div><div class="mk">Exceptions resolved with no human in the loop</div><span class="mtag">Measured in production</span></div>
-        <div class="mb"><div class="mv">n=<span data-count-to="2431">0</span></div><div class="mk">Live freight exceptions in production</div><span class="mtag">Held-out set of 500</span></div>
-        <div class="mb"><div class="mv">100%</div><div class="mk">Code, weights, retrieval rules, and eval harness owned by the client</div><span class="mtag">Standard handover</span></div>
-      </div>
-      <p style="font-family:var(--mono);font-size:12.5px;color:var(--faint);margin-top:20px;line-height:1.6">Serious buyer? Under NDA we'll walk you through the actual eval harness and the misses — not a screenshot. That standing offer is the proof.</p>
-    </div>
-  </section>
-
-  <section class="sec problem" data-reveal>
-    <div class="wrap prose reveal">
-      <p class="eyebrow">The problem</p>
-      <h2 style="margin-top:14px">A 40-person logistics ops team was buried under exceptions.</h2>
-      <p style="margin-top:16px">The team handled freight-exception tickets: missed appointments, carrier status gaps, address mismatches, accessorial disputes, late pickup notices, and customer updates that had to be accurate before anyone moved freight. Volume averaged roughly 1,200 tickets per week. Median handling time was about 38 minutes. That meant thousands of operator minutes disappeared into repeat lookup work before the team even reached the judgment calls that deserved human attention.</p>
-      <p>The existing workflow was not stupid. It was just overloaded. Operators bounced between the ticketing system, carrier portals, old resolution notes, customer rules, and tribal knowledge. Senior people knew which exceptions could be resolved safely and which ones needed escalation, but that expertise lived in heads and scattered notes. Hiring more people would have widened the queue, not fixed the repeat decision loop.</p>
-      <p>The controversial decision was to reject the usual mandate: “automate logistics.” That is not a project. That is a fog machine. We agreed on one number before code: median handling time per exception. If that number did not move, the build failed.</p>
-    </div>
-  </section>
-
-  <section class="sec" data-reveal>
-    <div class="wrap prose reveal">
-      <p class="eyebrow">The build</p>
-      <h2 style="margin-top:14px">Classifier first. Retrieval second. No chatbot theater.</h2>
-      <p style="margin-top:16px">We built a classifier plus retrieval agent inside the ticketing system the team already used. The classifier sorted the exception type, confidence, and risk path. The retrieval layer pulled carrier context, prior resolutions, customer rules, and policy snippets. The agent then either resolved the ticket with a traceable reason or escalated it with the evidence already assembled.</p>
-      <p>The important part was not the model call. The important part was the measurement harness. We created a 500-ticket held-out eval set before production rollout, with labels that reflected the actual operating decision: resolve, draft for review, or escalate. Every prompt, rule, retrieval change, and classifier adjustment had to beat that held-out set before it touched live work. The team could inspect the misses instead of trusting a vendor screenshot.</p>
-      <p>We also refused to create a new app for operators to remember. The result appeared in the ticket sidebar, wrote back to the fields the team already used, and preserved a readable trail: source snippets, confidence, action taken, and why a human was still needed. Billion-dollar AI often looks less like a magic assistant and more like removing 12 tabs from a job no one should have to do by hand.</p>
-    </div>
-  </section>
-
-  <section class="sec problem" data-reveal>
-    <div class="wrap prose reveal">
-      <p class="eyebrow">Results</p>
-      <h2 style="margin-top:14px">The number moved: 38 minutes to 10 minutes.</h2>
+      <p class="lead" style="max-width:66ch;margin:0 0 24px">The work is practical: reduce friction, improve operational efficiency, and give your senior people more time for judgment calls.</p>
       <div class="case-visual" data-reveal>
         <div class="case-chart">
-          <h3>Flagship deltas, no invented numbers.</h3>
-          <p>Same baseline and rollout numbers from the text below: handling time moved from 38 minutes to 10 minutes, and no-human resolution moved from 0% to 61%.</p>
-          <div data-diagram="barDelta" data-config='{"items":[{"label":"Handling time","before":38,"after":10,"unit":" min"},{"label":"No-human resolution","before":0,"after":61,"unit":"%"}]}' style="margin-top:22px"></div>
-        </div>
-        <div class="delta-grid" data-stagger>
-          <div class="delta-card">
-            <strong><span data-count-to="74" data-prefix="-" data-suffix="%">0</span></strong>
-            <h3>Handling-time reduction</h3>
-            <p>38 minutes to 10 minutes on the agreed metric.</p>
-          </div>
-          <div class="delta-card">
-            <strong><span data-count-to="61" data-suffix="%">0</span></strong>
-            <h3>No-human resolution</h3>
-            <p>Only tickets that met the agreed standard counted.</p>
-          </div>
+          <h3>Where we usually help.</h3>
+          <p>Teams bring us a queue, inbox, review flow, triage process, or reporting loop that burns time because people keep hunting for the same context and making the same low-value decisions.</p>
+          <p style="margin-top:14px">We turn that into a measured workflow: the system gathers context, suggests the next action, writes back to the fields already in use, and leaves a readable trail a human can trust.</p>
         </div>
       </div>
-      <p style="margin-top:16px">Baseline was the team’s own pre-project measurement: roughly 1,200 freight-exception tickets per week, a 38-minute median handling time, and effectively 0% autonomous resolution. After rollout, measured across n=2,431 live exceptions in production, median handling time fell to 10 minutes. That is a 74% reduction on the single number we wrote down before work began.</p>
-      <p>Autonomous resolution moved from 0% to 61%. That does not mean the system pretended every ticket was safe. It means 61% met the agreed standard for no-human resolution, while the rest were escalated with context instead of dumped back into the queue cold. The operators still owned judgment. The machine owned repeat assembly, retrieval, and first-pass routing.</p>
-      <p>Ownership was part of the result. The client owns 100% of the code, weights, eval set, prompts, retrieval rules, and handoff notes. There is no per-seat rent on their own workflow and no vendor hostage situation if they want to retrain, fork, or fire us.</p>
-      <p class="callout"><strong>Why we show the caveat:</strong> this was one team in production. The result is strong, but it is not a universal guarantee. Peak season, carrier mix changes, and new exception types need eval-guided retraining. A number without its baseline, sample size, and limits is marketing, not proof.</p>
+      <p style="font-family:var(--mono);font-size:12.5px;color:var(--faint);margin-top:20px;line-height:1.6">No fake scoreboard. No borrowed credibility. Bring the workflow, the messy data, and the number that would make the work worth doing.</p>
+    </div>
+  </section>
+
+  <section class="sec problem" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="eyebrow">A typical fit</p>
+      <h2 style="margin-top:14px">Think of an operations team buried under repetitive exception tickets.</h2>
+      <p style="margin-top:16px">Maybe the work is logistics, support, compliance, finance ops, or internal service requests. The shape is usually the same: people bounce between a ticketing system, vendor portals, old notes, policy docs, spreadsheets, and tribal knowledge before they can make a decision.</p>
+      <p>The team is not broken. The workflow is overloaded. Senior people know which cases need judgment and which ones are repeat assembly work, but that expertise lives in heads, scattered notes, and side channels. More dashboards do not fix that. Another app rarely helps.</p>
+      <p>Our job is to narrow the problem until it is buildable: name the repeat decision, define the safe action path, agree on the one measurement that matters, and build the smallest owned system that can remove the friction without pretending every case should be automated.</p>
     </div>
   </section>
 
   <section class="sec" data-reveal>
     <div class="wrap prose reveal">
-      <p class="eyebrow">What made it work</p>
+      <p class="eyebrow">How we build</p>
+      <h2 style="margin-top:14px">Classifier first. Retrieval second. No chatbot theater.</h2>
+      <p style="margin-top:16px">For this kind of workflow, we often build a classifier plus retrieval agent inside the tool the team already uses. The classifier sorts the work type, confidence, and risk path. The retrieval layer pulls the relevant context: prior resolutions, customer rules, policy snippets, account notes, vendor status, or whatever the operator would otherwise hunt down by hand.</p>
+      <p>The important part is not the model call. The important part is the measurement harness. Before live use, we create a held-out eval set with labels that match the real operating decision: resolve, draft for review, escalate, or ask a human. Every prompt, rule, retrieval change, and classifier adjustment has to beat the agreed bar before it touches live work.</p>
+      <p>We also avoid giving operators another app to remember. The output should appear where the work already happens, write back into existing fields, and preserve a readable trail: source, confidence, suggested action, and why a human is still needed. Useful AI often looks less like a magic assistant and more like removing tabs from a job no one should have to do by hand.</p>
+    </div>
+  </section>
+
+  <section class="sec problem" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="eyebrow">What changes</p>
+      <h2 style="margin-top:14px">The machine owns repeat assembly. People keep judgment.</h2>
+      <p style="margin-top:16px">A good build reduces the low-value work around the decision: searching, copying, comparing, routing, drafting, and explaining the same thing again. It does not remove humans from judgment calls. It gives them a cleaner starting point, better context, and fewer stale tabs.</p>
+      <p>That can mean faster triage, fewer handoffs, cleaner internal notes, better escalation packets, more consistent routing, or less time spent re-deciding the same class of issue. We do not promise a universal outcome because the honest answer depends on your workflow, data quality, risk tolerance, and measurement discipline.</p>
+      <p>What we do promise is a serious process: one agreed measurement before code, a test set that changes must beat, a visible trail for every AI action, and a handover that leaves your team able to inspect, operate, retrain, or replace the system.</p>
+      <p class="callout"><strong>Why no fake metrics:</strong> DPR AI is a small, early, senior team. We have a few builds behind us, but we will not pad the page with invented customer results. The method is the proof we are willing to be held to.</p>
+    </div>
+  </section>
+
+  <section class="sec" data-reveal>
+    <div class="wrap prose reveal">
+      <p class="eyebrow">What makes it work</p>
       <h2 style="margin-top:14px">The system had a spine before it had a brain.</h2>
       <div class="case-marker" data-reveal>
         <img class="case-buddy" src="assets/mascot/retint/bot-cube-chrome.png" alt="DPR AI robot inspecting the measurement plan" loading="lazy" />
-        <p><strong>Measure before magic.</strong> The mascot sits here as a visual checkpoint: one metric, one workflow, one held-out set, one place to work, one owner.</p>
+        <p><strong>Measure before magic.</strong> The mascot sits here as a visual checkpoint: one metric, one workflow, one eval harness, one place to work, one owner.</p>
       </div>
       <ul style="margin-top:20px">
-        <li><strong>One metric:</strong> median handling time, not a dashboard designed to find a win after the fact.</li>
-        <li><strong>One workflow:</strong> freight exceptions, not a vague corporate AI transformation program.</li>
-        <li><strong>One held-out set:</strong> 500 tickets the build had to respect before touching production.</li>
+        <li><strong>One metric:</strong> the number your team agrees would make the build worth doing, not a dashboard designed to find a win after the fact.</li>
+        <li><strong>One workflow:</strong> a real operating bottleneck, not a vague corporate AI transformation program.</li>
+        <li><strong>One eval harness:</strong> a held-out test set the build has to respect before touching live work.</li>
         <li><strong>One place to work:</strong> the existing ticketing system, not another tab with a login screen.</li>
-        <li><strong>One owner:</strong> the ops team inherited the assets, not a dependency on DPR AI forever.</li>
+        <li><strong>One owner:</strong> you own 100% of the code, weights, prompts, retrieval rules, eval harness, and handoff notes.</li>
       </ul>
-      <p>This is why we are anti-slop. Slop is not merely low-quality text. Slop is any system that cannot tell you what number it is moving, where the test set came from, who owns the result, or what happens when the world changes. Serious AI work is less glamorous and far more profitable: choose the bottleneck, write the metric, build the harness, ship into the workflow, measure honestly.</p>
+      <p>This is why we are anti-slop. Slop is not merely low-quality text. Slop is any system that cannot tell you what number it is trying to improve, where the test set came from, who owns the result, or what happens when the world changes. Serious AI work is less glamorous and far more useful: choose the bottleneck, write the metric, build the harness, ship into the workflow, measure honestly.</p>
     </div>
   </section>
 
   <section class="sec problem" data-reveal>
     <div class="wrap prose reveal">
-      <p class="eyebrow">Mini case</p>
-      <h2 style="margin-top:14px">A smaller support triage win we will not overclaim.</h2>
-      <p style="margin-top:16px">A support operations group wanted faster first-pass triage on inbound customer queries. Same discipline: one agreed metric, a held-out sample, delivery inside the existing support tool, and full ownership at handoff. The system drafted routing, pulled relevant account context, and suggested a first response for human review.</p>
-      <p>Drafting time dropped meaningfully on the initial sample, and the team kept the harness. We are deliberately not quoting a giant headline percentage because the sample was too small to defend publicly. That restraint is the point. If a case study cannot survive its own caveat, it should not be a case study.</p>
+      <p class="eyebrow">What you keep</p>
+      <h2 style="margin-top:14px">No per-seat rent on your own workflow.</h2>
+      <p style="margin-top:16px">When we hand over a build, the client owns the working assets: code, model weights where applicable, prompts, retrieval rules, evaluation harness, operating notes, and the logic behind the decisions. You are not trapped in a black box just because the first version worked.</p>
+      <p>That ownership matters. Your team can inspect misses, retrain on new examples, fork the system, move it to another vendor, or ask us to keep improving it. The goal is not dependency on DPR AI forever. The goal is operational leverage you understand and control.</p>
     </div>
   </section>
 
   <section class="sec" data-reveal>
     <div class="wrap center prose reveal">
-      <p class="eyebrow">Bring one ugly queue</p>
+      <p class="eyebrow">Bring one ugly workflow</p>
       <h2 style="margin:14px auto 0">Agree the number first. See the eval before you scale.</h2>
-      <p class="lead" style="margin-top:16px">If you have a high-volume operational workflow and a metric you would stake a decision on, we will define success before code exists, prove it on your held-out data, and hand you the system you paid for.</p>
+      <p class="lead" style="margin-top:16px">If your team is losing time to repeat lookup work, messy handoffs, or the same operational decisions again and again, we can help define the build, measure it honestly, and hand you the system you paid for.</p>
       <p><a href="contact.html" class="btn btn-primary">Start a build <span class="arrow" aria-hidden="true">→</span></a></p>
       <p><a href="method.html" class="txt-link">Read the one-number method <span class="arrow" aria-hidden="true">→</span></a></p>
     </div>
@@ -163,6 +142,6 @@
 <div class="foot-col"><h4>Playbooks</h4><a href="free/">Free tools</a><a href="score/">Score my AI</a><a href="slop.html">The slop problem</a><a href="playbook.html">AI-readiness scorecard</a><a href="contact.html">The first build</a><a href="blog/index.html">Field Notes</a></div>
 <div class="foot-col"><h4>Get started</h4><a href="contact.html">Start a build</a><a href="contact.html">Contact</a><a href="mailto:hello@dprai.io">hello@dprai.io</a></div>
 </div><div class="foot-bottom"><small>© 2026 DPR AI — AI builds you own.</small><span class="status"><span class="d" aria-hidden="true"></span>All systems normal</span></div></div></footer>
-<script src="site.js?v=13" defer></script>
+<script src="site.js?v=14" defer></script>
 <script src="assets/anim.js?v=10" defer></script>
 <script src="assets/diagrams.js?v=10" defer></script></body></html>
